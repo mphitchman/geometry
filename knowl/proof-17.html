@@ -1,0 +1,47 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:50-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
+<p>First, suppose \(T(z) = (az+b)/(cz+d)\) and \(ad - bc
+\neq 0\text{.}\) We must show that \(T\) is a transformation. To show \(T\) is one-to-one, assume \(T(z_1) = T(z_2)\text{.}\)  Then</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{az_1 + b}{cz_1 + d} = \frac{az_2 + b}{cz_2 + d}.
+\end{equation*}
+</div>
+<p>Cross multiply this expression and simplify to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+(ad - bc)z_1 = (ad - bc)z_2.
+\end{equation*}
+</div>
+<p>Since \(ad - bc \neq 0\) we may divide this term out of the expression to see \(z_1 = z_2\text{,}\) so \(T\) is 1-1 and it remains to show that \(T\) is onto.</p>
+<p>Suppose \(w\) in \(\mathbb{C}^+\) is given. We must find \(z \in \mathbb{C}^+\) such that \(T(z) = w\text{.}\) If \(w = \infty\text{,}\) then \(z = -d/c\) (which is \(\infty\) if \(c = 0\)) does the trick, so assume \(w \neq \infty\text{.}\) To find \(z\) such that \(T(z) = w\) we solve the equation</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{az + b}{cz+d} = w
+\end{equation*}
+</div>
+<p>for \(z\text{,}\) which is possible so long as \(a\) and \(c\) are not both 0 (causing the \(z\) terms to vanish). Since \(ad-bc \neq 0\text{,}\) we can be assured that this is the case, and solving for \(z\) we obtain</p>
+<div class="displaymath">
+\begin{equation*}
+z = \frac{-dw + b}{cw-a}.
+\end{equation*}
+</div>
+<p>Thus \(T\) is onto, and \(T\) is a transformation.</p>
+<p>To prove the converse we show the contrapositive.  We suppose \(ad-bc=0\) and show \(T(z)=(az+b)/(cz+d)\) is not a transformation by tackling two cases.</p>
+<p><em class="emphasis">Case 1</em>: \(ad = 0\text{.}\)  In this case, \(bc = 0\) as well, so \(a\) or \(d\) is zero, and \(b\) or \(c\) is zero.  In all four scenarios, one can check immediately that \(T\) is not a transformation of \(\mathbb{C}^+\text{.}\)  For instance, if \(a = c = 0\) then \(T(z) = b/d\) is neither 1-1 nor onto \(\mathbb{C}^+\text{.}\)</p>
+<p><em class="emphasis">Case 2</em>: \(ad \neq 0\text{.}\)  In this case, all four constants are non-zero, and \(a/c = b/d\text{.}\)  Since \(T(0)=b/d\) and \(T(\infty)=a/c\text{,}\) \(T\) is not 1-1, and hence not a transformation of \(\mathbb{C}^+\text{.}\)</p></article><span class="incontext"><a href="section3-4.html#proof-17">in-context</a></span>
+</body>
+</html>

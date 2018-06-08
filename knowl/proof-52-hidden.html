@@ -1,0 +1,40 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:55:04-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>Suppose \(k \in \mathbb{R}\text{.}\)  If \(k = 0\) the equation reduces to \(c^2 = a^2 + b^2\text{,}\) which is true by the <a knowl="./knowl/thm-pythagoras.html" title="Theorem 1.2.1: The Pythagorean Theorem">Pythagorean Theorem 1.2.1</a>!  Otherwise, assume \(k \neq 0\) and let \(s = \frac{1}{\sqrt{|k|}}\text{,}\) as usual.  Without loss of generality we may assume our right triangle is defined by the points \(z = 0\text{,}\) \(p = x\text{,}\) and \(q = yi\text{,}\) where \(0 \lt x,y \lt s\text{.}\)  By construction, the legs \(zp\) and \(zq\) are Euclidean segments, and \(\angle pzq\) is right.</p>
+<p>Let \(a = d_k(z,p), b = d_k(z,q),\) and \(c = d_k(p,q)\text{.}\)  By <a knowl="./knowl/lemma-Gkarea.html" title="Lemma 7.4.6">Lemma 7.4.6</a>,</p>
+<div class="displaymath">
+\begin{equation*}
+A(a) = \frac{4\pi x^2}{1+kx^2},~~{\text and}~~A(b) = \frac{4\pi y^2}{1+ky^2}.
+\end{equation*}
+</div>
+<p>To find \(A(c)\text{,}\) we first find \(d_k(p,q)\text{.}\)  By invariance of distance,</p>
+<div class="displaymath">
+\begin{equation*}
+d_k(p,q)=d_k(0,|T(q)|),
+\end{equation*}
+</div>
+<p>where \(T(z) = \frac{z - p}{1+k\overline{p}z}\text{.}\)  Let \(t = |T(q)| =\frac{|yi-x|}{|1+kxyi|}\text{,}\) which is a real number.</p>
+<p>Now, \(A(c)\) is the area of a circle with radius \(c\text{,}\) and the circle centered at 0 through \(t\) has this radius, so</p>
+<div class="displaymath">
+\begin{equation*}
+A(c) = \frac{4\pi t^2}{1+kt^2}.
+\end{equation*}
+</div>
+<p>Using the fact that \(t^2 = \frac{x^2+y^2}{1 + k^2x^2y^2}\text{,}\) one can now check by direct substitution that</p>
+<div class="displaymath">
+\begin{equation*}
+A(c) = A(a) + A(b)-\frac{k}{2\pi}A(a)A(b)\text{.}
+\end{equation*}
+</div></article></body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:52-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="example-like"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">4.1.11</span> <span class="title">Euclidean geometry</span>
+</h6>
+<p><dfn class="terminology">Euclidean geometry</dfn> is the geometry \((\mathbb{C}, \cal{E})\text{,}\) where \(\cal{E}\) consists of all transformations of the form \(T(z) = e^{i\theta}z + b\text{,}\) where \(\theta\) is a real number and \(b\) is in \(\mathbb{C}\text{.}\) Note that \(\cal E\) consists of precisely those general linear transformations of the form \(T(z) = az+b\) in which \(|a| = 1\text{.}\) In the exercises, you check that this collection is indeed a group of transformations.</p>
+<p>The group \(\cal{E}\) includes rotations and translations, but not dilations. Let's take a look at some familiar properties of objects that should be invariant in Euclidean geometry.</p>
+<p>The <dfn class="terminology">Euclidean distance</dfn> between two points \(z_1\) and \(z_2\) is defined to be \(|z_1
+- z_2|\text{.}\) To show that this is an invariant function of \((\mathbb{C},
+\cal{E})\text{,}\) we need to show that for any \(T\) in the group \(\cal E\text{,}\) the distance between \(z_1\) and \(z_2\) equals the distance between \(T(z_1)\) and \(T(z_2)\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+|T(z_1) - T(z_2)| \amp = |(e^{i\theta}z_1 + b)-(e^{i\theta}z_2 + b)|\\
+\amp = |e^{i\theta}(z_1 - z_2)|\\
+\amp = |e^{i\theta}||z_1 - z_2|\\
+\amp = |z_1 - z_2|. \tag{since $|e^{i\theta}|=1$}
+\end{align*}
+</div>
+<p>Thus, Euclidean distance is preserved in \((\mathbb{C}, \cal{E})\text{.}\)</p>
+<p>Angles are preserved as well.   We have already proved that general linear transformations preserve angles (<a knowl="./knowl/thm_gltconformal.html" title="Theorem 3.1.12">Theorem 3.1.12</a>), and Euclidean transformations are general linear transformations, so angles are preserved in \((\mathbb{C}, \cal{E})\text{.}\)</p></article><span class="incontext"><a href="section4-1.html#ex-eucgeo">in-context</a></span>
+</body>
+</html>

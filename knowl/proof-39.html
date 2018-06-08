@@ -1,0 +1,49 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:55:00-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
+<p>Suppose \(T\) is a Möbius transformation that preserves antipodal points. If \(T\) is not the identity map then it must fix one or two points. However, if \(T\) preserves antipodal points and fixes a point \(p\text{,}\) then it must fix its antipodal point \(p_a\text{.}\) Thus, \(T\) must have two fixed points and \(T\) has normal form</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{T(z)-p}{T(z)-p_a} = \lambda\frac{z-p}{z-p_a}. 
+\end{equation*}
+</div>
+<p>To show \(T\) is an elliptic Möbius transformation, we must show that \(|\lambda| = 1\text{.}\) Setting \(z = 0\) the normal form reduces to</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{T(0) - p}{T(0)-p_a} = \lambda\frac{p}{p_a}.  
+\end{equation*}
+</div>
+<p>Solve for \(T(0)\) to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+T(0) = \frac{pp_a - \lambda pp_a}{p_a - \lambda p}. 
+\end{equation*}
+</div>
+<p>On the other hand, setting \(z = \infty\) and solving for \(T(\infty)\text{,}\) one checks that</p>
+<div class="displaymath">
+\begin{equation*}
+T(\infty) =\frac{p-\lambda p_a}{1-\lambda}.
+\end{equation*}
+</div>
+<p>Since \(T\) preserves antipodal points, \(T(0)\cdot
+\overline{T(\infty)} = -1\text{;}\) therefore, we have</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{pp_a - \lambda pp_a}{p_a - \lambda p} \cdot \frac{\overline{p}-\overline{\lambda}\overline{p_a}}{1-\overline{\lambda}} = -1. 
+\end{equation*}
+</div>
+<p>If we expand this expression and solve it for \(\lambda\overline{\lambda}\) (using the fact that \(p\cdot \overline{p_a} = -1\text{,}\) and \(p \neq p_a\)), we obtain \(\lambda \overline{\lambda} = 1\text{,}\) from which it follows that \(|\lambda| = 1\text{.}\) Thus \(T\) is an elliptic Möbius transformation.</p></article><span class="incontext"><a href="section6-2.html#proof-39">in-context</a></span>
+</body>
+</html>

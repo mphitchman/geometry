@@ -1,0 +1,329 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:40-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Elliptic Geometry</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section6-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section6-3.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section6-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section6-3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2" class="active">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section6-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.2</span> <span class="title">Elliptic Geometry</span>
+</h2>
+<a href="section6-2.html" class="permalink">¶</a><section class="introduction" id="introduction-26"><p id="p-1019">As was the case in hyperbolic geometry, the space in elliptic geometry is derived from \(\mathbb{C}^+\text{,}\) and the group of transformations consists of certain Möbius transformations. We first consider the transformations.</p>
+<article class="definition-like" id="definition-27"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.2.1</span>
+</h6>
+<p id="p-1020">Let \({\cal S}\) consist of all Möbius transformations \(T\) that preserve antipodal points. In other words, \(\cal S\) consists of all Möbius transformations \(T\) with the property that if \(z\) and \(z_a\) are antipodal points in \(\mathbb{C}^+\) then \(T(z)\) and \(T(z_a)\) are antipodal points in \(\mathbb{C}^+\text{.}\)</p></article><p id="p-1021">We leave it to the reader to verify that \(\cal{S}\) actually forms a group. Considering the antipodal point construction in <a knowl="./knowl/fig-antipodal.html" title="Figure 6.1.11">Figure 6.1.11</a>, it seems clear that rotation of \(\mathbb{C}^+\) about the origin should preserve antipodal points.  So, these rotations should be in \(\cal S\text{.}\)  Let's run through this.</p>
+<article class="example-like" id="example-55"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">6.2.2</span> <span class="title">Rotations about 0 are in \({\cal S}\)</span>
+</h6>
+<p id="p-1022">Suppose \(R(z)=e^{i\theta}z\) is a rotation about the origin and \(z\) and \(z_a\) are antipodal points. If \(z = \infty\) or \(0\text{,}\) then rotation about the origin fixes \(z\text{,}\) and it also fixes its antipodal point, so the map \(R\) preserves antipodal points in these cases.  Now suppose \(z \neq 0, \infty\text{.}\) Then \(z_a = -\frac{1}{\overline{z}}\text{.}\) Since \(\overline{R(z_a)} = -\frac{e^{-i\theta}}{z}\text{,}\) it follows that</p>
+<div class="displaymath">
+\begin{equation*}
+R(z)\cdot \overline{R(z_a)} = -e^{i\theta}z \cdot \frac{e^{-i\theta}}{z} = -1. 
+\end{equation*}
+</div>
+<p id="p-1023">Thus, the image points \(R(z)\) and \(R(z_a)\) are still antipodal points.  Rotations about the origin belong to the group \(\cal S\text{.}\)</p></article><p id="p-1024">Now we consider what a typical transformation in \(\cal{S}\) looks like.</p>
+<p id="p-1025">Suppose the Möbius transformation \(T\) is in \(\cal{S}\text{,}\) and that \(z\) and \(w\) are antipodal points. Then \(T(z)\cdot \overline{T(w)} = -1\text{.}\) Since \(z\) and \(w\) are antipodal points, \(w = -\frac{1}{\overline{z}}\text{,}\) so \(T(z)\cdot \overline{T(-1/\bar z)} = -1\text{,}\) or</p>
+<div class="displaymath">
+\begin{align*}
+T(z) \amp = \frac{-1}{\overline{T(-1/\bar z)}}. \tag{1}
+\end{align*}
+</div>
+<p id="p-1026">Assume \(T(z) = (az + b)/(cz + d)\text{,}\) and that it has determinant \(ad- bc = 1\text{.}\) (Recall, from <a knowl="./knowl/hmk_mobdet1.html" title="Exercise 3.4.4">Exercise 3.4.4</a> that we can always write a Möbius transformation in a form with determinant 1, and this form is unique up to sign.) Now,</p>
+<div class="displaymath">
+\begin{align*}
+\overline{T(-1/\bar z)} \amp = \overline{\bigg[\frac{-a/\bar z + b}{-c/\bar z + d}\bigg]}\\
+\amp =\frac{-\bar{a}/{z} + \bar{b}}{-\bar{c}/z +\bar{d}}\\
+\amp =\frac{\bar b z - \bar a}{\bar{d} z - \bar{c}}.
+\end{align*}
+</div>
+<p id="p-1027">Substituting into equation (1) of this derivation yields</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{az+b}{cz + d} = \frac{-\bar d z + \bar c}{\bar b z - \bar a}. 
+\end{equation*}
+</div>
+<p id="p-1028">The transformation on the right also has determinant one, so these two transformations are identical up to sign. We can assume that \(d = -\bar a\) and that \(c = \bar b\text{,}\) so that \(T\) may be expressed as follows:</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = \frac{az + b}{\bar b z - \bar a}. 
+\end{equation*}
+</div>
+<p id="p-1029">We can make this general form look a lot like the general form for a transformation in \({\cal H}\text{.}\) To do so, first multiply each term by \(-1/\bar a\text{,}\) assuming \(a \neq 0\text{.}\) (If \(a = 0\text{,}\) what would the transformation look like?)</p>
+<div class="displaymath">
+\begin{align*}
+T(z) \amp = \frac{-\frac{a}{\bar a} z - \frac{b}{\bar a}}{-\frac{\bar b}{\bar a} z + 1}\\
+\amp = \frac{-\frac{a}{\bar a}(z + \frac{b}{a})}{-\frac{\bar b}{\bar
+a} z + 1}\\
+\amp = e^{i\theta}\cdot \frac{z-z_0}{\overline{z}_0z + 1},
+\end{align*}
+</div>
+<p>where \(e^{i\theta} = -a/\bar{a}\) and \(z_0 = -b/a\text{.}\) Thus, we have derived the following algebraic description of transformations in \(\cal S\text{:}\)</p>
+<article class="assemblage-like" id="assemblage-11"><h6 class="heading"><span class="title">Transformations in \(\cal S\)</span></h6>
+<p id="p-1030">Any transformation \(T\) in the group \(\cal S\) has the form</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z - z_0}{1+\overline{z}_0z} 
+\end{equation*}
+</div>
+<p>for some angle \(\theta\) and some \(z_0\) in \(\mathbb{C}^+\text{.}\)</p></article><p id="p-1031">One can show that the following converse holds: Any transformation having the form above preserves antipodal points.  It follows that for any point \(z_0 \in \mathbb{C}^+\text{,}\) there exists a transformation \(T\) in \(\cal S\) such that \(T(z_0) = 0\text{,}\) and since rotations about the origin live in \(\cal S\) we can prove the following useful result (see <a knowl="./knowl/hmk-ell-sendszto0.html" title="Exercise 6.2.1">Exercise 6.2.1</a>).</p>
+<article class="theorem-like" id="lem_ellsendzto0"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">6.2.3</span>
+</h6>
+<p id="p-1032">Given distinct points \(z_0\) and \(z_1\) in \(\mathbb{C}^+\text{,}\) there exists a transformation in \({\cal S}\) that sends \(z_0\) to 0 and \(z_1\) to the real axis.</p></article><p id="p-1033">We now prove a theorem that helps us visualize the maps in \({\cal S}\text{.}\)</p>
+<article class="theorem-like" id="th_antinvimplieselliptic"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.2.4</span>
+</h6>
+<p id="p-1034">If a Möbius transformation preserves antipodal points, then it is an elliptic Möbius transformation.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-39" id="proof-39"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-39" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1035">Suppose \(T\) is a Möbius transformation that preserves antipodal points. If \(T\) is not the identity map then it must fix one or two points. However, if \(T\) preserves antipodal points and fixes a point \(p\text{,}\) then it must fix its antipodal point \(p_a\text{.}\) Thus, \(T\) must have two fixed points and \(T\) has normal form</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{T(z)-p}{T(z)-p_a} = \lambda\frac{z-p}{z-p_a}. 
+\end{equation*}
+</div>
+<p id="p-1036">To show \(T\) is an elliptic Möbius transformation, we must show that \(|\lambda| = 1\text{.}\) Setting \(z = 0\) the normal form reduces to</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{T(0) - p}{T(0)-p_a} = \lambda\frac{p}{p_a}.  
+\end{equation*}
+</div>
+<p id="p-1037">Solve for \(T(0)\) to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+T(0) = \frac{pp_a - \lambda pp_a}{p_a - \lambda p}. 
+\end{equation*}
+</div>
+<p id="p-1038">On the other hand, setting \(z = \infty\) and solving for \(T(\infty)\text{,}\) one checks that</p>
+<div class="displaymath">
+\begin{equation*}
+T(\infty) =\frac{p-\lambda p_a}{1-\lambda}.
+\end{equation*}
+</div>
+<p id="p-1039">Since \(T\) preserves antipodal points, \(T(0)\cdot
+\overline{T(\infty)} = -1\text{;}\) therefore, we have</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{pp_a - \lambda pp_a}{p_a - \lambda p} \cdot \frac{\overline{p}-\overline{\lambda}\overline{p_a}}{1-\overline{\lambda}} = -1. 
+\end{equation*}
+</div>
+<p id="p-1040">If we expand this expression and solve it for \(\lambda\overline{\lambda}\) (using the fact that \(p\cdot \overline{p_a} = -1\text{,}\) and \(p \neq p_a\)), we obtain \(\lambda \overline{\lambda} = 1\text{,}\) from which it follows that \(|\lambda| = 1\text{.}\) Thus \(T\) is an elliptic Möbius transformation.</p></article></div>
+<p id="p-1041">In <a knowl="./knowl/hmk_elliptic2inv.html" title="Exercise 3.5.8">Exercise 3.5.8</a> we showed that any elliptic Möbius transformation is the composition of two inversions about clines that intersect at the two fixed points. In the case of a Möbius transformation that preserves antipodal points, these two fixed points must be antipodal to each other. It follows by <a knowl="./knowl/lemma_antpts.html" title="Lemma 6.1.4">Lemma 6.1.4</a> that the two clines of inversion are great circles in \(\mathbb{C}^+\text{.}\)  Thus, we may view each transformation of \(\cal S\) as the composition of two inversions about great circles.  This is reassuring. By <a knowl="./knowl/th_reflectsphere.html" title="Theorem 6.1.6">Theorem 6.1.6</a>, these inversions correspond to reflections of the sphere about great circles, and composing two of these reflections of the sphere yields a rotation of the sphere. The transformation group \(\cal S\text{,}\) then, consists of Möbius transformations that correspond via stereographic projection to rotations of the sphere.  We summarize these facts below.</p>
+<article class="theorem-like" id="thm-S-via-inversions"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.2.5</span>
+</h6>
+<p id="p-1042">Any transformation in \(\cal S\) is the composition of two inversions about great circles in \(\mathbb{C}^+\text{,}\) and it corresponds via stereographic projection to a rotation of the unit 2-sphere.</p></article><p id="p-1043">Before turning to the space in elliptic geometry, we make one more comment about the group \({\cal S}\text{.}\)  The reader may have noticed a strong similarity, algebraically, between the maps in \({\cal S}\) and the maps in \({\cal H}\text{,}\) the transformation group in hyperbolic geometry. Recall, transformations in \({\cal H}\) have the form</p>
+<div class="displaymath">
+\begin{align*}
+T(z) \amp = e^{i\theta}\frac{z -
+z_0}{1-\overline{z}_0z}.\tag{transformation in $\cal{H}$}
+\end{align*}
+</div>
+<p id="p-1044">The single sign difference between the algebraic desciption of maps in \(\cal S\) from the maps in \(\cal H\) is not a coincidence. We could have defined the transformations in hyperbolic geometry as those Möbius transformations that preserve symmetric points with respect to the unit circle. That is, we <em class="emphasis">could</em> have defined the group \(\cal{H}\) to consist of all Möbius transformations satisfying this property: If \(z \cdot \bar w = 1\) then \(T(z) \cdot \overline{T(w)}
+= 1\text{.}\) If we had then asked what such a \(T\) would look like, we would have gone through the argument as we did in this section, with a \(+1\) initially instead of a -1. This sign difference propagates to the sign difference in the final form of the description of the map.</p></section><section class="subsection" id="note_P2"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">The space for elliptic geometry</span>
+</h3>
+<a href="section6-2.html#note_P2" class="permalink">¶</a><p id="p-1045">One could let the space be all of \(\mathbb{C}^+\text{.}\) If we take this tack, then we are reproducing the geometry of the sphere in \(\mathbb{C}^+\text{.}\) We call the geometry \((\mathbb{C}^+,{\cal S})\) <dfn class="terminology">spherical geometry</dfn>.  Distance can be defined to match distance on the unit sphere, and great cirlces in \(\mathbb{C}^+\) will be geodesics.  Rather than develop these details with this choice of spaces, we will focus instead on a different space.  We do so because we want to build a geometry in which there is a <em class="emphasis">unique</em> line between any two points. This is not quite true on the sphere, and so not quite true in \((\mathbb{C}^+,{\cal S})\text{.}\)  If two points in \(\mathbb{C}^+\) are antipodal points, such as 0 and \(\infty\text{,}\) then there are infinitely many lines (great circles) through these points.</p>
+<p id="p-1046">So, we choose to work primarily with a space in which this feature of many distinct lines through two points vanishes. The trick is to <em class="emphasis">identify antipodal points</em>. That is, the space we will consider is actually the space \(\mathbb{C}^+\) <em class="emphasis">with antipodal points identified.</em> What does this space look like?</p>
+<p id="p-1047">Remember the flat torus from Chapter 1? Each point on the boundary of the rectangle is identified with the corresponding point on the opposite edge. The two points are fused together into a single point.</p>
+<p id="p-1048">In elliptic space, <em class="emphasis">every</em> point gets fused together with another point, its antipodal point. So, for instance, the point \(2 + i\) gets identified with its antipodal point \(-\frac{2}{5}-\frac{i}{5}\text{.}\) In elliptic space, these points are one and the same.</p>
+<p id="p-1049">With the flat torus, we could visualize the space after identifying points by wrapping it up in three-dimensional space. This was possible since we were only identifying the edges of the rectangle. In the present case every point in \(\mathbb{C}^+\) gets paired up. To help visualize the space here we look at a region in the plane that contains one representative from each pair.</p>
+<p id="p-1050">Consider the closed unit disk, consisting of all complex numbers \(z\) such that \(|z| \leq 1\text{.}\) For each point \(w\) outside this disk, its antipodal point \(w_a\) is inside the disk. Thus, the closed unit disk contains a representative from each pair of antipodal points. However, there is some redundancy: for a point \(w\) on the boundary of the disk \((|w| = 1)\text{,}\) its antipodal point \(w_a\) is also on the boundary. To account for this redundancy, we identify each point on the boundary of the closed unit disk with its antipodal point.</p>
+<p id="p-1051">This will be our model for the space in elliptic geometry, and this space is called the projective plane.</p>
+<article class="definition-like" id="definition-28"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.2.6</span>
+</h6>
+<p id="p-1052">The <dfn class="terminology">projective plane</dfn>, denoted \(\mathbb{P}^2\text{,}\) consists of all complex numbers \(z\) such that \(|z| \leq 1\) with the additional feature that antipodal points on the unit circle are identified.</p></article><p id="p-1053">We can think of this space as the closed unit disk with its two edges (top-half circle and bottom-half circle) identified according to the arrows in <a knowl="./knowl/fig-p2.html" title="Figure 6.2.7">Figure 6.2.7</a>.  Notice the pleasant journey a bug has taken from \(p\) to \(q\) in this figure.  From \(p\) she heads off toward point \(c\text{,}\) which appears on the boundary of our model.  When she arrives there she simply keeps walking, though in our model we see her leave the “screen” and reappear at the antipodal point \(c_a\text{.}\)  She has her sights set on point \(d\) and saunters down there, continues on (reappearing at \(d_a\)), and heads on to \(q\text{,}\) hungry but content.</p>
+<figure class="figure-like" id="fig-p2"><img src="images/im-p2.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.2.7</span> A leisurely stroll from \(p\) to \(q\) in the projective plane \(\mathbb{P}^2\text{.}\)</figcaption></figure><article class="definition-like" id="note_ellgeo"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.2.8</span>
+</h6>
+<p id="p-1054">The <dfn class="terminology">disk model for elliptic geometry</dfn>, \((\mathbb{P}^2,{\cal S})\text{,}\) is the geometry whose space is \(\mathbb{P}^2\) and whose group of transformations \(\cal{S}\) consists of all Möbius transformations that preserve antipodal points.</p></article><p id="p-1055">Because the transformations of \(\cal S\) are generated by inversions about great circles, these circles ought to determine the lines in elliptic geometry.</p>
+<article class="definition-like" id="definition-30"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.2.9</span>
+</h6>
+<p id="p-1056">An <dfn class="terminology">elliptic line</dfn> in \((\mathbb{P}^2,{\cal S})\) is the portion of a great circle in \(\mathbb{C}^+\) that lives in the closed unit disk.</p></article><p id="p-1057">Two elliptic lines have been constructed in <a knowl="./knowl/fig-ellipticlines.html" title="Figure 6.2.10">Figure 6.2.10</a>.</p>
+<figure class="figure-like" id="fig-ellipticlines"><img src="images/im-ellipticlines.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.2.10</span> Elliptic lines go through antipodal points.</figcaption></figure><article class="theorem-like" id="th_elllines"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.2.11</span>
+</h6>
+<p id="p-1058">There is a unique elliptic line connecting two points \(p\) and \(q\) in \(\mathbb{P}^2\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-40" id="proof-40"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-40" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1059">Suppose \(p\) and \(q\) are distinct points in \(\mathbb{P}^2\text{.}\) This means \(q \neq p_a\) as points in \(\mathbb{C}^+\text{.}\) Construct the antipodal point \(p_a\text{,}\) which gives us three distinct points in \(\mathbb{C}^+\text{:}\) \(p,q\) and \(p_a\text{.}\) There exists a unique cline through these three points. Since this cline goes through \(p\) and \(p_a\text{,}\) it is an elliptic line by <a knowl="./knowl/lemma_antpts.html" title="Lemma 6.1.4">Lemma 6.1.4</a>.</p></article></div>
+<p id="p-1060">Note that elliptic lines through the origin are Euclidean lines, just as was the case in the Poincaré model of hyperbolic geometry. As a result, to prove facts about elliptic geometry, it can be convenient to transform a general picture to the special case where the origin is involved.</p>
+<article class="theorem-like" id="th_elllinesinv"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.2.12</span>
+</h6>
+<p id="p-1061">The set of elliptic lines is a minimally invariant set of elliptic geometry.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-41" id="proof-41"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-41" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1062">By definition, any transformation \(T\) in \(\cal{S}\) preserves antipodal points. Thus, if \(L\) is an elliptic line, then \(T(L)\) is as well, and the set of elliptic lines is an invariant set of elliptic geometry.</p>
+<p id="p-1063">To show the set is minimally invariant, we appeal to <a knowl="./knowl/thm_mininv.html" title="Theorem 4.1.10">Theorem 4.1.10</a>, and prove that any two elliptic lines are congruent. To see this, notice that any elliptic line \(L\) is congruent to the elliptic line on the real axis. Indeed, for any points \(z_0\) and \(z_1\) on \(L\text{,}\) <a knowl="./knowl/lem_ellsendzto0.html" title="Lemma 6.2.3">Lemma 6.2.3</a> ensures the existence of a transformation \(T\) in \(\cal{S}\) that sends \(z_0\) to the origin, and \(z_1\) to the real axis. It follows that \(T(L)\) is the real axis. Since all elliptic lines are congruent to the real axis, any two elliptic lines are congruent.</p></article></div>
+<article class="theorem-like" id="th_ellparallellines"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.2.13</span>
+</h6>
+<p id="p-1064">Any two elliptic lines intersect in \(\mathbb{P}^2\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-42" id="proof-42"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-42" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1065">Given any two elliptic lines, apply a transformation \(T\) in \(\cal{S}\) that sends one of them to the real axis. It is enough to prove that any elliptic line in \(\mathbb{P}^2\) must intersect the real axis. Suppose \(M\) is an arbitrary elliptic line in \(\mathbb{P}^2\) and \(z\) is a point on \(M\text{.}\) If Im\((z) = 0\) then \(z\) is on the real axis and we are done.</p>
+<p id="p-1066">If Im\((z) &gt; 0\text{,}\) then \(z\) lies above the real axis. It follows that Im\((z_a)\lt  0\) by the definition of the antipodal point \(z_a\text{.}\) Since \(M\) contains both \(z\) and \(z_a\) it intersects the real axis at some point.</p>
+<p id="p-1067">If Im\((z) \lt  0\text{,}\) then Im\((z_a) &gt; 0\) and \(M\) must intersect the real axis as before. In either case, \(M\) must intersect the real axis, and it follows that any two elliptic lines must intersect.</p></article></div>
+<p id="p-1068">As an immediate consequence of this theorem, there is no notion of parallel lines in elliptic geometry.</p>
+<article class="theorem-like" id="corollary-7"><h6 class="heading">
+<span class="type">Corollary</span> <span class="codenumber">6.2.14</span>
+</h6>
+<p id="p-1069">If \(p\) in \(\mathbb{P}^2\) is not on the elliptic line \(L\text{,}\) then every elliptic line through \(p\) intersects \(L\text{.}\)</p></article></section><section class="exercises" id="exercises-20"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<a href="section6-2.html#exercises-20" class="permalink">¶</a><article class="exercise-like" id="hmk-ell-sendszto0"><h6 class="heading">
+<span class="codenumber">1</span> </h6>
+<p id="p-1070"><em class="emphasis">The transformation group in elliptic geometry.</em></p>
+<p id="p-1071">a. Prove that \(\cal{S}\) is a group of transformations.</p>
+<p id="p-1072">b. For each \(\theta \in \mathbb{R}\) and \(z_0 \in \mathbb{C}\text{,}\) prove that the following Möbius transformation is in \(\cal S\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+T(z)=e^{i\theta}\frac{z-z_0}{1+\overline{z_0}z}.
+\end{equation*}
+</div>
+<p id="p-1073">c. For each \(\theta \in \mathbb{R}\text{,}\) prove that \(T(z) = e^{i\theta}\frac{1}{z}\) is in \(\cal S\text{.}\)</p>
+<p id="p-1074">d. Use (b) and (c) to prove that for any distinct points \(p, q \in \mathbb{C}^+\) there exists a transformation in \(\cal S\) that sends \(p\) to 0 and \(q\) to a point on the positive real axis, thus proving <a knowl="./knowl/lem_ellsendzto0.html" title="Lemma 6.2.3">Lemma 6.2.3</a>.</p></article><article class="exercise-like" id="exercise-148"><h6 class="heading">
+<span class="codenumber">2</span> </h6>
+<p id="p-1075">Prove that the disk model for elliptic geometry is homogeneous.</p></article><article class="exercise-like" id="exercise-149"><h6 class="heading">
+<span class="codenumber">3</span> </h6>
+<p id="p-1076">Given a point \(z\) not on an elliptic line \(L\text{,}\) prove there exists an elliptic line through \(z\) that intersects \(L\) at right angles. Hint: First transform \(z\) to a convenient location in \(\mathbb{P}^2\text{.}\)</p></article><article class="exercise-like" id="exercise-150"><h6 class="heading">
+<span class="codenumber">4</span> </h6>
+<p id="p-1077">Is there a nonidentity transformation in \(\cal{S}\) that fixes two distinct points in \(\mathbb{P}^2\text{?}\) If so, find one, otherwise explain why no such transformation exists.</p></article><article class="exercise-like" id="exercise-151"><h6 class="heading">
+<span class="codenumber">5</span> </h6>
+<p id="p-1078">Find a transformation in \(\cal{S}\) that sends the point \(\frac{1}{2}\) to the point \(\frac{1}{2} + \frac{1}{2}i\text{.}\)</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

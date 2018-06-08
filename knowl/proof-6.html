@@ -1,0 +1,37 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:47-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
+<p>Suppose \(T(z) = az+b\) where \(a \neq 0\text{.}\) Since the angle between curves is defined to be the angle between their tangent lines, it is sufficient to check that the angle between two lines is preserved. Suppose \(L_1\) and \(L_2\) intersect at \(z_0\text{,}\) and \(z_i\) is on \(L_i\) for \(i = 1,2\text{,}\) as in the following diagram.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-anglelines.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p>Then,</p>
+<div class="displaymath">
+\begin{equation*}
+\angle(L_1,L_2) = \arg\bigg(\frac{z_2-z_0}{z_1 -
+z_0}\bigg).
+\end{equation*}
+</div>
+<p>Since general linear transformations preserve lines, \(T(L_i)\) is the line through \(T(z_0)\) and \(T(z_i)\) for \(i = 1,2\) and it follows that</p>
+<div class="displaymath">
+\begin{align*}
+\angle(T(L_1),T(L_2)) \amp =
+\arg\bigg(\frac{T(z_2)-T(z_0)}{T(z_1)-T(z_0)}\bigg)\\
+\amp = \arg\bigg(\frac{az_2+b-az_0-b}{az_1+b-az_0-b}\bigg)\\
+\amp = \arg\bigg(\frac{z_2-z_0}{z_1-z_0}\bigg)\\
+\amp = \angle(L_1,L_2).
+\end{align*}
+</div>
+<p>Thus \(T\) preserves angles.</p></article><span class="incontext"><a href="section3-1.html#proof-6">in-context</a></span>
+</body>
+</html>

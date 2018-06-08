@@ -1,0 +1,43 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:55:03-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="paragraphs"><h5 class="heading"><span class="title">Parallax</span></h5>
+<p>If a star is relatively close to the Earth, then as the Earth moves in its annual orbit around the Sun, the star will appear to move relative to the backdrop of the more distant stars. In the idealized picture that follows, \(e_1\) and \(e_2\) denote the Earth's position at opposite points of its orbit, and the star \(s\) is orthogonal to the plane of the Earth's orbit. The angle \(p\) is called the <dfn class="terminology">parallax</dfn>, and in a Euclidean universe, \(p\) determines the star's distance from the Sun, \(D\text{,}\) by the equation \(D = d/\tan(p)\text{,}\) where \(d\) is the Earth's distance from the Sun.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-parallax.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p>We may determine \(p\) by observation, and \(d\) is the radius of Earth's orbit around the Sun (\(d\) is about 8.3 light-minutes.) In practice, \(p\) is quite small, so a working formula is \(D =
+\frac{d}{p}\text{.}\) The first accurate measurement of parallax was recorded in 1837 by Friedrich Bessel (1784-1846) . He found the stellar parallax of 0.3 arc seconds (1 arc second = 1/3600\(^\circ\)) for star 61 Cygni, which put the star at about 10.5 light-years away.</p>
+<p>If we live in a hyperbolic universe with curvature \(k\text{,}\) a detected parallax puts a bound on how curved the universe can be. Consider <a knowl="./knowl/fig-hyp-parallax.html" title="Figure 7.3.5">Figure 7.3.5</a>. As before, \(e_1\) and \(e_2\) represent the position of the Earth at opposite points of its orbit, so that the distance between them is \(2d\text{,}\) or about 16.6 light-minutes. Assume star \(s\) is on the positive real axis and we have detected a parallax \(p\text{,}\) so that angle \(\angle e_2se_1 = 2p\text{.}\)</p>
+<figure class="figure-like"><img src="images/im-hyp-parallax.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">7.3.5</span> A detected parallax in a hyperbolic universe puts a bound on its curvature</figcaption></figure><p>The angle \(\alpha = \angle e_1e_2s\) in <a knowl="./knowl/fig-hyp-parallax.html" title="Figure 7.3.5">Figure 7.3.5</a> is less than the angle of parallelism \(\theta = \angle e_1e_2u\text{.}\) Noting that \(\tan(x)\) is an increasing function and applying Lobatchevsky's formula it follows that</p>
+<div class="displaymath">
+\begin{equation*}
+\tan(\alpha/2) \lt  \tan(\theta/2) = e^{-\sqrt{|k|}2d}. 
+\end{equation*}
+</div>
+<p>We may solve this inequality for \(|k|\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\tan(\alpha/2) \amp \lt  e^{-\sqrt{|k|}2d} \amp \\
+\ln(\tan(\alpha/2)) \amp \lt  -\sqrt{|k|}2d  \amp \ln(x) ~\text{is increasing}\\
+\bigg[ \frac{\ln(\tan(\alpha/2))}{2d}\bigg]^2 \amp &gt; |k|.\amp x^2~ \text{is decreasing for}~x\lt 0
+\end{align*}
+</div>
+<p>To get a bound for \(|k|\) in terms of \(p\text{,}\) note that \(\alpha \approx \pi/2 - 2p\) (the triangles used in stellar parallax have no detectable angular deviation from 180\(^\circ\)), so</p>
+<div class="displaymath">
+\begin{equation*}
+|k| \lt  \bigg[\frac{\ln(\tan(\pi/4-p))}{2d}\bigg]^2.
+\end{equation*}
+</div>
+<p>We remark that for values of \(p\) near 0, the expression \(\ln(\tan(\pi/4-p))\) has linear approximation equal to \(-2p\text{,}\) so a working bound for \(k\text{,}\) which appeared in Schwarzschild's 1900 paper <a knowl="./knowl/schwarz.html" title="Bibliographic Entry 27: On the Permissible Curvature of Space">[27]</a>, is \(|k| \lt  (p/d)^2\text{.}\)</p></article><span class="incontext"><a href="section7-3.html#paragraphs-8">in-context</a></span>
+</body>
+</html>

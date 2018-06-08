@@ -1,0 +1,113 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:55:02-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>a. Position our triangle conveniently, with one corner at the origin, one on the positive real axis at the point \(r\) (\(0
+\lt  r \leq 1)\text{,}\) and one at the point \(q = ke^{i\gamma}\) (with \(0 \lt  k \leq
+1)\) as in <a knowl="./knowl/fig-elltrig.html" title="Figure 6.3.13">Figure 6.3.13</a>. Then \(a =
+d_S(0,r)=2\arctan(r)\text{,}\) so that</p>
+<div class="displaymath">
+\begin{align*}
+\cos(a) \amp = \cos(2\arctan(r))\\
+\amp = \cos^2(\arctan(r))-\sin^2(\arctan(r))
+\end{align*}
+</div>
+<p>by the cosine double angle formula. If we set \(\theta = \arctan(r)\) we may use the following right triangle to rewrite the above description of \(\cos(a)\) as follows:</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:70%;justify-content:flex-start;"><div class="displaymath">
+\begin{align*}
+\cos(a) \amp = \frac{1}{1+r^2}-\frac{r^2}{1+r^2}\\
+\amp = \frac{1-r^2}{1+r^2}.
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:30%;justify-content:flex-start;"><img src="images/im-ell-tri-trig-proof.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p>On the other hand,</p>
+<div class="displaymath">
+\begin{align*}
+\sin(a) \amp = \sin(2\arctan(r))\\
+\amp = 2\sin(\arctan(r))\cos(\arctan(r)),
+\end{align*}
+</div>
+<p>from which it follows that</p>
+<div class="displaymath">
+\begin{equation*}
+\sin(a) = \frac{2r}{1+r^2}.
+\end{equation*}
+</div>
+<p>Turning our attention to the side with length \(b\text{,}\) \(b = d_S(0,q) = 2\arctan(|q|)=2\arctan(k),\) since \(q = ke^{i\gamma}\) with \(k &gt; 0\text{.}\) It follows that</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(b) = \frac{1-k^2}{1+k^2}~~~\text{and}~~~\sin(b) =
+\frac{2k}{1+k^2}.
+\end{equation*}
+</div>
+<p>And the third side? <a knowl="./knowl/th_elldistance.html" title="Theorem 6.3.4">Theorem 6.3.4</a> tells us</p>
+<div class="displaymath">
+\begin{equation*}
+c =
+d_S(r,ke^{i\gamma}) = 2\arctan\bigg(\bigg|\frac{ke^{i\gamma} -
+r}{1+rke^{i\gamma}}\bigg|\bigg).
+\end{equation*}
+</div>
+<p>Since in general \(\cos(2\arctan(x)) = (1-x^2)/(1+x^2)\text{,}\) it follows that</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(c) = \frac{|1+rke^{i\gamma}|^2 - |ke^{i\gamma}-r|^2}{|1+rke^{i\gamma}|^2 + |ke^{i\gamma}-r|^2},
+\end{equation*}
+</div>
+<p>which can be expanded using \(|z|^2 = z \cdot \overline{z}\text{,}\) and then reduced to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(c) = \frac{1 + r^2k^2 - k^2 - r^2+2rk(e^{i\gamma}+e^{-i\gamma})}{1+r^2 + k^2 + r^2k^2}.
+\end{equation*}
+</div>
+<p>Now, \(e^{i\gamma}+e^{-i\gamma}=2\cos(\gamma)\text{,}\) so we have</p>
+<div class="displaymath">
+\begin{align*}
+\cos(c) \amp = \frac{(1-r^2)(1-k^2) + 2rk2\cos(\gamma)}{(1+r^2)(1+k^2)} \\
+\amp = \frac{1-r^2}{1+r^2}\cdot\frac{1-k^2}{1+k^2} +
+\frac{2r}{1+r^2}\cdot \frac{2k}{1+k^2}\cos(\gamma)\\
+\amp = \cos(a)\cos(b)+\sin(a)\sin(b)\cos(\gamma).
+\end{align*}
+</div>
+<p>Though we worked out the formula for a conveniently located triangle, it holds for any triangle in elliptic geometry because angles and distances are preserved by transformations in elliptic geometry, and there is a transformation that takes any triangle to this convenient location.</p>
+<p>b. To prove the elliptic law of sines, first construct the circle containing side \(c\text{.}\) This circle goes through \(r\) and \(q\) and their antipodal points \(-1/r\) and \(q_a\) as pictured in <a knowl="./knowl/fig-elllawsine.html" title="Figure 6.3.15">Figure 6.3.15</a>. We let \(p\) denote the center of the circle, and \(R\) its Euclidean radius.</p>
+<figure class="figure-like"><img src="images/im-elllawsine.svg" width="60%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.3.15</span> Deriving the elliptic law of sines.</figcaption></figure><p>Let \(m_r\) be the midpoint of the segment connecting \(r\) and \(-1/r\text{,}\) and let \(m_q\) be the midpoint of the segment connecting \(q\) and \(q_a\text{.}\) So,</p>
+<div class="displaymath">
+\begin{equation*}
+|m_r - r| =
+\frac{1}{2}\bigg(r+\frac{1}{r}\bigg) = \frac{1+r^2}{2r},
+\end{equation*}
+</div>
+<p>and</p>
+<div class="displaymath">
+\begin{equation*}
+|m_q - q| = \bigg|\frac{1}{2}\bigg(k+\frac{1}{k}\bigg)e^{i\gamma}\bigg| =
+\frac{1+k^2}{2k}.
+\end{equation*}
+</div>
+<p>Note further that \(\Delta pm_rr\) is right, and \(\angle m_r r p =
+\pi/2 - \beta\) so that \(\angle rpm_r = \beta\text{.}\) From this right triangle we see \(\sin(\beta) = (1+r^2)/(2rR).\)</p>
+<p>Similarly, \(\Delta pm_q q\) is right, and we have \(\angle m_q p q =
+\alpha\text{,}\) and \(\sin(\alpha) = (1+k^2)/(2kR)\text{.}\)</p>
+<p>Comparing ratios,</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\sin(a)}{\sin(\alpha)} \amp =
+\frac{2r}{1+r^2}\cdot\frac{2kR}{1+k^2}\\
+\amp = \frac{2k}{1+k^2}\cdot\frac{2rR}{1+r^2}\\
+\amp = \frac{\sin(b)}{\sin(\beta)}.
+\end{align*}
+</div>
+<p>To see that the ratio \(\sin(c)/\sin(\gamma)\) must match the preceding common ratio, note that transformations in elliptic geometry preserve distances and angles, so we may transform our triangle above to one in which the length \(c\) is now on the real axis with one end at the origin. The argument above ensures that the ratio \(\sin(c)/\sin(\gamma)\) then matches one of the other ratios, and so all three agree.</p></article></body>
+</html>

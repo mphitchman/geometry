@@ -1,0 +1,53 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:46-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="paragraphs"><h5 class="heading"><span class="title">Angle Measure</span></h5>
+<p>Given two rays \(L_1\) and \(L_2\) having common initial point, we let \(\angle(L_1,L_2)\) denote the <dfn class="terminology">angle between rays</dfn> \(L_1\) and \(L_2\), measured from \(L_1\) to \(L_2\text{.}\) We may rotate ray \(L_1\) onto ray \(L_2\) in either a counterclockwise direction or a clockwise direction. We adopt the convention that angles measured counterclockwise are positive, and angles measured clockwise are negative, and admit that angles are only well-defined up to multiples of \(2\pi\text{.}\) Notice that</p>
+<div class="displaymath">
+\begin{equation*}
+\angle(L_1,L_2) = - \angle(L_2,L_1).
+\end{equation*}
+</div>
+<p>To compute \(\angle(L_1,L_2)\) where \(z_0\) is the common initial point of the rays, let \(z_1\) be any point on \(L_1\text{,}\) and \(z_2\) any point on \(L_2\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+\angle(L_1,L_2) \amp = \arg\bigg(\frac{z_2-z_0}{z_1-z_0}\bigg) \notag\\
+\amp = \arg(z_2-z_0)-\arg(z_1-z_0). 
+\end{align*}
+</div>
+<article class="example-like"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">2.3.3</span> <span class="title">The angle between two rays</span>
+</h6>
+<p>Suppose \(L_1\) and \(L_2\) are rays emanating from \(2+2i\text{.}\) Ray \(L_1\) proceeds along the line \(y=x\) and \(L_2\) proceeds along \(y = 3-x/2\) as pictured.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-ray-angle.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p>To compute the angle \(\theta\) in the diagram, we choose \(z_1 = 3+3i\) and \(z_2 = 4+i\text{.}\) Then</p>
+<div class="displaymath">
+\begin{equation*}
+\angle(L_1,L_2) = \arg(2-i)-\arg(1+i) = -\tan^{-1}(1/2) -
+\pi/4 \approx -71.6^\circ.
+\end{equation*}
+</div>
+<p>That is, the angle from \(L_1\) to \(L_2\) is 71.6\(^\circ\) in the clockwise direction.</p></article><p><article class="assemblage-like"><h6 class="heading"><span class="title">The angle determined by three points</span></h6>
+<p>If \(u,v,\) and \(w\) are three complex numbers, let \(\angle
+uvw\) denote the angle \(\theta\) from ray \(\overrightarrow{vu}\) to \(\overrightarrow{vw}\text{.}\) In particular,</p>
+<div class="displaymath">
+\begin{equation*}
+\angle uvw = \theta = \arg\bigg(\frac{w-v}{u-v}\bigg).
+\end{equation*}
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-angle-uvw.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></article></p>
+<p>For instance, if \(u = 1\) on the positive real axis, \(v= 0\) is the origin in \(\mathbb{C}\text{,}\) and \(z\) is any point in \(\mathbb{C}\text{,}\) then \(\angle uvz =
+\arg(z)\text{.}\)</p></article><span class="incontext"><a href="section2-3.html#paragraphs-4">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:37-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Basic Transformations of \(\mathbb{C}\)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section3-2.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section3-2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1" class="active">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section3-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Basic Transformations of \(\mathbb{C}\)</span>
+</h2>
+<a href="section3-1.html" class="permalink">¶</a><section class="introduction" id="introduction-10"><p id="p-225">We begin with a definition. <article class="definition-like" id="definition-1"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.1</span>
+</h6>
+<p id="p-226">Given two sets \(A\) and \(B\text{,}\) a function \(f:A \to B\) is called <dfn class="terminology">one-to-one</dfn> (or 1-1) if whenever \(a_1 \neq a_2\) in \(A\text{,}\) then \(f(a_1) \neq
+f(a_2)\) in \(B\text{.}\) The function \(f\) is called <dfn class="terminology">onto</dfn> if for any \(b\) in \(B\) there exists an element \(a\) in \(A\) such that \(f(a) =
+b\text{.}\) A <dfn class="terminology">transformation</dfn> on a set \(A\) is a function \(T: A \to A\) that is one-to-one and onto.</p></article></p>
+<p id="p-227">Following are two schematics of functions. In the first case, \(f: A \to
+B\) is onto, but not one-to-one. In the second case, \(g: A \to B\) is one-to-one, but not onto.</p>
+<div class="sidebyside" id="sidebyside-9"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-functions.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-228">A transformation \(T\) of \(A\) has an inverse function, \(T^{-1}\text{,}\) characterized by the property that the compositions \(T^{-1}\circ T(a) = a\) and \(T\circ T^{-1}(a) = a\) for all \(a\) in \(A\text{.}\) The inverse function \(T^{-1}\) is itself a transformation of \(A\) and it “undoes” \(T\) in this sense: For elements \(z\) and \(w\) in \(A\text{,}\) \(T^{-1}(w)=z\) if and only if \(T(z) = w\text{.}\)</p>
+<p id="p-229">In this section we develop the following basic transformations of the plane, as well as some of their important features. <article class="assemblage-like" id="assemblage-3"><h6 class="heading"><span class="title">Basic Transformations of \(\mathbb{C}\)</span></h6>
+<ul id="p-230" class="disc">
+<li id="li-11">General linear transformation: \(T(z)=az+b\text{,}\) where \(a,b\) are in \(\mathbb{C}\) with \(a \neq 0\text{.}\)</li>
+<li id="li-12">
+<p id="p-231">Special cases of general linear transformations: </p>
+<ul class="circle">
+<li id="li-13">Translation by \(b\text{:}\) \(T_b(z) = z + b\)</li>
+<li id="li-14">Rotation by \(\theta\) about \(0\text{:}\) \(R_\theta(z)=e^{i\theta}z\)</li>
+<li id="li-15">Rotation by \(\theta\) about \(z_0\text{:}\) \(R(z)=e^{i\theta}(z-z_0)+z_0\)</li>
+<li id="li-16">Dilation by factor \(k \gt 0\text{:}\) \(T(z)=kz\)</li>
+</ul>
+</li>
+<li id="li-17">Reflection across a line \(L\text{:}\)  \(r_L(z) = e^{i\theta}\overline{z}+b\text{,}\) where \(b\) is in \(\mathbb{C}\text{,}\) and \(\theta\) is in \(\mathbb{R}\text{.}\)</li>
+</ul></article></p>
+<article class="example-like" id="example-14"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.2</span> <span class="title">Translation</span>
+</h6>
+<p id="p-232">Consider the fixed complex number \(b\text{,}\) and define the function \(T_b: \mathbb{C} \to \mathbb{C}\) by</p>
+<div class="displaymath">
+\begin{equation*}
+T_b(z) = z + b.
+\end{equation*}
+</div>
+<p id="p-233">The notation helps us remember that \(z\) is the variable, and \(b\) is a complex constant. We will prove that \(T_b\) is a transformation, but this fact can also be understood by <em class="emphasis">visualizing</em> the function. Each point in the plane gets moved by the vector \(b\text{,}\) as suggested in the following diagram.</p>
+<div class="sidebyside" id="sidebyside-10"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-translate.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-234">For instance, the origin gets moved to the point \(b\text{,}\) (i.e., \(T_b(0) = b\)), and every other point in the plane gets moved the same amount and in the same direction. It follows that two different points, such as \(v\) and \(w\) in the diagram, cannot get moved to the same image point (thus, the function is one-to-one). Also, any point in the plane is the image of some other point (just follow the vector \(-b\) to find this “pre-image” point), so the function is onto as well.</p>
+<p id="p-235">We now offer a formal argument that the translation \(T_b\) is a transformation.  Recall, \(b\) is a fixed complex number.</p>
+<p id="p-236"><em class="emphasis">That \(T_b\) is onto</em>:</p>
+<p id="p-237">To show that \(T_b\) is onto, let \(w\) denote an arbitrary element of \(\mathbb{C}\text{.}\) We must find a complex number \(z\) such that \(T_b(z) = w\text{.}\) Let \(z = w - b\text{.}\) Then \(T_b(z) = z + b = (w - b) + b = w\text{.}\)  Thus, \(T\) is onto.</p>
+<p id="p-238"><em class="emphasis">That \(T_b\) is one-to-one</em>:</p>
+<p id="p-239">To show that \(T_b\) is 1-1 we must show that if \(z_1 \neq z_2\) then \(T_b(z_1) \neq T_b(z_2)\text{.}\) We do so by proving the <em class="emphasis">contrapositive</em>.  Recall, the contrapositive of a statement of the form “If P is true then Q is true” is “If Q is false then P is false.”  These statements are logically equivalent, which means we may prove one by proving the other.  So, in the present case, the contrapositive of “If \(z_1 \neq z_2\) then \(T_b(z_1) \neq T_b(z_2)\)” is “If \(T_b(z_1) = T_b(z_2)\text{,}\) then \(z_1 = z_2\text{.}\)”  We now prove this statement.</p>
+<p id="p-240">Suppose \(z_1\) and \(z_2\) are two complex numbers such that \(T_b(z_1)
+= T_b(z_2)\text{.}\) Then \(z_1 + b = z_2 + b\text{.}\) Subtracting \(b\) from both sides we see that \(z_1 = z_2\text{,}\) and this completes the proof.</p></article><article class="example-like" id="example-15"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.3</span> <span class="title">Rotation about the origin</span>
+</h6>
+<p id="p-241">Let \(\theta\) be an angle, and define \(\displaystyle R_\theta: \mathbb{C} \to \mathbb{C}\) by \(\displaystyle R_\theta(z) = e^{i\theta}z.\)</p>
+<div class="sidebyside" id="sidebyside-11"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-rotation.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-242">This transformation causes points in the plane to rotate about the origin by the angle \(\theta\text{.}\) (If \(\theta &gt; 0\) the rotation is counterclockwise, and if \(\theta \lt  0\) the rotation is clockwise.) To see this is the case, suppose \(z = re^{i\beta}\text{,}\) and notice that</p>
+<div class="displaymath">
+\begin{equation*}
+R_\theta(z) = e^{i\theta}re^{i\beta} = re^{i(\theta+\beta)}.
+\end{equation*}
+</div></article><article class="example-like" id="ex_arb_rot"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.4</span> <span class="title">Rotation about any point</span>
+</h6>
+<p id="p-243">To achieve a rotation by angle \(\theta\) about a general point \(z_0\text{,}\) send points in the plane on a three-leg journey: First, translate the plane so that the center of rotation, \(z_0\text{,}\) goes to the origin. The translation that does the trick is \(T_{-z_0}\text{.}\) Then rotate each point by \(\theta\) about the origin (\(R_{\theta}\)). Then translate every point back (\(T_{z_0})\text{.}\) This sequence of transformations has the desired effect and can be tracked as follows:</p>
+<div class="displaymath">
+\begin{equation*}
+z \xmapsto{T_{-z_0}} z - z_0 \xmapsto{R_\theta} e^{i\theta}(z-z_0) \xmapsto{T_{z_0}} e^{i\theta}(z-z_0) + z_0.
+\end{equation*}
+</div>
+<p>In other words, the desired rotation \(R\) is the composition \(T_{z_0} \circ R_{\theta} \circ T_{-z_0}\) and</p>
+<div class="displaymath">
+\begin{equation*}
+R(z)=e^{i\theta}(z-z_0) + z_0.
+\end{equation*}
+</div>
+<p id="p-244">That the composition of these three transformations is itself a transformation follows from the next theorem.</p></article><article class="theorem-like" id="theorem-4"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">3.1.5</span>
+</h6>
+<p id="p-245">If \(T\) and \(S\) are two transformations of the set \(A\text{,}\) then the composition \(S \circ T\) is also a transformation of the set \(A\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-4" id="proof-4"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-246">We must prove that \(S \circ T: A \to A\) is 1-1 and onto.</p>
+<p id="p-247"><em class="emphasis">That \(S\circ T\) is onto</em>:</p>
+<p id="p-248">Suppose \(c\) is in \(A\text{.}\) We must find an element \(a\) in \(A\) such that \(S \circ T(a) = c\text{.}\)</p>
+<p id="p-249">Since \(S\) is onto, there exists some element \(b\) in \(A\) such that \(S(b) = c\text{.}\)</p>
+<p id="p-250">Since \(T\) is onto, there exists some element \(a\) in \(A\) such that \(T(a) = b\text{.}\)</p>
+<p id="p-251">Then \(S \circ T(a) = S(b) = c\text{,}\) and we have demonstrated that \(S
+\circ T\) is onto.</p>
+<p id="p-252"><em class="emphasis">That \(S \circ T\) is 1-1</em>:</p>
+<p id="p-253">Again, we prove the contrapositive. In particular, we show that if \(S\circ
+T(a_1)=S\circ T(a_2)\) then \(a_1 = a_2\text{.}\)</p>
+<p id="p-254">If \(S(T(a_1))=S(T(a_2))\) then \(T(a_1)=T(a_2)\) since \(S\) is 1-1.</p>
+<p id="p-255">And \(T(a_1)=T(a_2)\) implies that \(a_1\) = \(a_2\) since \(T\) is 1-1.</p>
+<p id="p-256">Therefore, \(S\circ T\) is 1-1.</p></article></div>
+<article class="example-like" id="example-17"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.6</span> <span class="title">Dilation</span>
+</h6>
+<p id="p-257">Suppose $k &gt; 0$ is a real number.  The transformation \(T(z) = kz\) is called a <dfn class="terminology">dilation</dfn>; such a map either stretches or shrinks points in the plane along rays emanating from the origin, depending on the value of $k$.</p>
+<p id="p-258">Indeed, if \(z = x + y i\text{,}\) then \(T(z) = k x + k y i\text{,}\) and \(z\) and \(T(z)\) are on the same line through the origin. If \(k \gt 1\) then \(T\) stretches points away from the origin. If \(0 \lt  k \lt  1\text{,}\) then \(T\) shrinks points toward the origin. In either case, such a map is called a dilation.</p></article><p id="p-259">Given complex constants \(a, b\) with \(a \neq 0\) the map \(T(z) = az + b\) is called a <dfn class="terminology">general linear tranformation</dfn>. We show in the following example that such a map is indeed a transformation of \(\mathbb{C}\text{.}\)</p>
+<article class="example-like" id="example-18"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.7</span> <span class="title">General Linear Transformations</span>
+</h6>
+<p id="p-260">Consider the general linear transformation \(T(z)=az+b\text{,}\) where \(a, b\) are in \(\mathbb{C}\) and \(a \neq 0\text{.}\)  We show \(T\) is a transformation of \(\mathbb{C}\text{.}\)</p>
+<p id="p-261"><em class="emphasis">That \(T\) is onto</em>:</p>
+<p id="p-262">Let \(w\) denote an arbitrary element of \(\mathbb{C}\text{.}\) We must find a complex number \(z\) such that \(T(z) = w\text{.}\) To find this \(z\text{,}\) we solve \(w = az
++ b\) for \(z\text{.}\) So, \(z = \frac{1}{a}(w - b)\) should work (since \(a \neq 0\text{,}\) \(z\) is a complex number). Indeed, \(T(\frac{1}{a}(w - b)) = a \cdot \big[\frac{1}{a}(w - b)\big] + b =
+w.\) Thus, \(T\) is onto.</p>
+<p id="p-263"><em class="emphasis">That \(T\) is one-to-one</em>:</p>
+<p id="p-264">To show that \(T\) is 1-1 we show that if \(T(z_1) = T(z_2)\text{,}\) then \(z_1 = z_2\text{.}\)</p>
+<p id="p-265">If \(z_1\) and \(z_2\) are two complex numbers such that \(T(z_1) =
+T(z_2)\text{,}\) then \(a z_1 + b = a z_2 + b\text{.}\) By subtracting \(b\) from both sides we see that \(a z_1 = a z_2\text{,}\) and then dividing both sides by \(a\) (which we can do since \(a \neq 0\)), we see that \(z_1 = z_2\text{.}\) Thus, \(T\) is 1-1 as well as onto, and we have proved \(T\) is a transformation.</p>
+<p id="p-266">Note that dilations, rotations, and translations are all special types of general linear transformations.</p></article><p id="p-267">We will often need to figure out how a transformation moves a collection of points such as a triangle or a disk.  As such, it is useful to introduce the following notation, which uses the standard convention in set theory that \(a \in A\) means the element \(a\) is a member of the set \(A\text{.}\)</p>
+<article class="definition-like" id="definition-2"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.8</span>
+</h6>
+<p id="p-268">Suppose \(T: A \to A\) is a transformation and \(D\) is a subset of \(A\text{.}\) The <dfn class="terminology">image</dfn> of \(D\text{,}\) denoted \(T(D)\text{,}\) consists of all points \(T(x)\) such that \(x \in D\text{.}\)  In other words,</p>
+<div class="displaymath">
+\begin{equation*}
+T(D) = \{a \in A ~|~ a = T(x) ~\text{for some}~ x \in D\}.
+\end{equation*}
+</div></article><p id="p-269">For instance, if \(L\) is a line and \(T_b\) is translation by \(b\text{,}\) then it is reasonable to expect that \(T(L)\) is also a line. If one translates a line in the plane, it ought to keep its linear shape. In fact, lines are preserved under any general linear transformation, as are circles.</p>
+<article class="theorem-like" id="thm_gltpreservecline"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">3.1.9</span>
+</h6>
+<p id="p-270">Suppose \(T\) is a general linear transformation.</p>
+<p id="p-271">a. \(T\) maps lines to lines.</p>
+<p id="p-272">b. \(T\) maps circles to circles.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-5" id="proof-5"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-5" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-273">a. We prove that if \(L\) is a line in \(\mathbb{C}\) then so is \(T(L)\text{.}\)  A line \(L\) is described by the line equation</p>
+<div class="displaymath">
+\begin{equation*}
+\alpha
+z + \overline{\alpha}\overline{z} + d = 0
+\end{equation*}
+</div>
+<p>for some complex constant \(\alpha\) and real number \(d\text{.}\) Suppose \(T(z) = az + b\) is a general linear transformation (so \(a \neq 0\)). All the points in \(T(L)\) have the form \(w = az + b\) where \(z\) satisfies the preceeding line equation. It follows that \(z = \frac{1}{a}(w - b)\) and when we plug this into the line equation we see that</p>
+<div class="displaymath">
+\begin{equation*}
+\alpha\frac{w-b}{a} +
+\overline{\alpha}\frac{\overline{w-b}}{\overline{a}} + d =0
+\end{equation*}
+</div>
+<p>which can be rewritten</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\alpha}{a}w +
+\frac{\overline{\alpha}}{\overline{a}}\overline{w}+d-\frac{\alpha
+b}{a}-\frac{\overline{\alpha b}}{\overline{a}}=0.
+\end{equation*}
+</div>
+<p id="p-274">Now, for any complex number \(\beta\) the sum \(\beta+\overline{\beta}\) is a real number, so in the above expression, \(d-(\frac{\alpha b}{a} + {\frac{\overline{\alpha
+b}}{\overline{a}}})\) is a real number. Therefore, all \(w\) in \(T(L)\) satisfy a line equation. That is, \(T(L)\) is a line.</p>
+<p id="p-275">b. The proof of this part is left as an exercise.</p></article></div>
+<article class="example-like" id="ex_diskmove"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.10</span> <span class="title">The image of a disk</span>
+</h6>
+<p id="p-276">The image of the disk \(D = \{z \in \mathbb{C}~|~|z-2i| \leq 1\}\) under the transformation \(T: \mathbb{C} \to \mathbb{C}\) given by \(T(z) = 2z + (4-i)\) is the disk \(T(D)\) centered at \(4+3i\) with radius 2 as pictured below.</p>
+<div class="sidebyside" id="sidebyside-12"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-diskmap.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></article><p id="p-277">We will be interested in working with transformations that preserve angles between smooth curves. A <dfn class="terminology">planar curve</dfn> is a function \(\boldsymbol{r}:[a,b] \to \mathbb{C}\) mapping an interval of real numbers into the plane.  A curve is <dfn class="terminology">smooth</dfn> if its derivative exists and is nonzero at every point. Suppose \(\boldsymbol{r}_1\) and \(\boldsymbol{r}_2\) are two smooth curves in \(\mathbb{C}\) that intersect at a point. The <dfn class="terminology">angle</dfn> between the curves measured from \(\boldsymbol{r}_1\) to \(\boldsymbol{r}_2\text{,}\) which we denote by \(\angle(\boldsymbol{r}_1,\boldsymbol{r}_2)\text{,}\) is defined to be the angle between the tangent lines at the point of intersection.</p>
+<article class="definition-like" id="definition-3"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.11</span>
+</h6>
+<p id="p-278">A transformation \(T\) of \(\mathbb{C}\) <dfn class="terminology">preserves angles at point \(z_0\)</dfn>  if \(\angle(\boldsymbol{r}_1,\boldsymbol{r}_2) =\angle(T(\boldsymbol{r}_1),T(\boldsymbol{r}_2))\) for all smooth curves \(\boldsymbol{r}_1\) and \(\boldsymbol{r}_2\) that intersect at \(z_0\text{.}\) A transformation \(T\) of \(\mathbb{C}\) <dfn class="terminology">preserves angles</dfn> if it preserves angles at all points in \(\mathbb{C}\text{.}\) A transformation \(T\) of \(\mathbb{C}\) <dfn class="terminology">preserves angle magnitudes</dfn> if, at any point in \(\mathbb{C}\text{,}\) \(|\angle(\boldsymbol{r}_1,\boldsymbol{r}_2)| =|\angle(T(\boldsymbol{r}_1),T(\boldsymbol{r}_2))|\) for all smooth curves \(\boldsymbol{r}_1\) and \(\boldsymbol{r}_2\) intersecting at the point.</p></article><article class="theorem-like" id="thm_gltconformal"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">3.1.12</span>
+</h6>
+<p id="p-279">General linear transformations preserve angles.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-6" id="proof-6"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-6" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-280">Suppose \(T(z) = az+b\) where \(a \neq 0\text{.}\) Since the angle between curves is defined to be the angle between their tangent lines, it is sufficient to check that the angle between two lines is preserved. Suppose \(L_1\) and \(L_2\) intersect at \(z_0\text{,}\) and \(z_i\) is on \(L_i\) for \(i = 1,2\text{,}\) as in the following diagram.</p>
+<div class="sidebyside" id="sidebyside-13"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-anglelines.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-281">Then,</p>
+<div class="displaymath">
+\begin{equation*}
+\angle(L_1,L_2) = \arg\bigg(\frac{z_2-z_0}{z_1 -
+z_0}\bigg).
+\end{equation*}
+</div>
+<p id="p-282">Since general linear transformations preserve lines, \(T(L_i)\) is the line through \(T(z_0)\) and \(T(z_i)\) for \(i = 1,2\) and it follows that</p>
+<div class="displaymath">
+\begin{align*}
+\angle(T(L_1),T(L_2)) \amp =
+\arg\bigg(\frac{T(z_2)-T(z_0)}{T(z_1)-T(z_0)}\bigg)\\
+\amp = \arg\bigg(\frac{az_2+b-az_0-b}{az_1+b-az_0-b}\bigg)\\
+\amp = \arg\bigg(\frac{z_2-z_0}{z_1-z_0}\bigg)\\
+\amp = \angle(L_1,L_2).
+\end{align*}
+</div>
+<p id="p-283">Thus \(T\) preserves angles.</p></article></div>
+<article class="definition-like" id="definition-4"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.13</span>
+</h6>
+<p id="p-284">A <dfn class="terminology">fixed point</dfn> of a transformation \(T: A \to A\) is an element \(a\) in the set \(A\) such that \(T(a) = a\text{.}\)</p></article><p id="p-285">If \(b \neq 0\text{,}\) the translation \(T_b\) of \(\mathbb{C}\) has no fixed points. Rotations of \(\mathbb{C}\) and dilations of \(\mathbb{C}\) have a single fixed point, and the general linear transformation \(T(z) = az + b\) has one fixed point as long as \(a \neq 1\text{.}\) To find this fixed point, solve</p>
+<div class="displaymath">
+\begin{equation*}
+z = az + b
+\end{equation*}
+</div>
+<p>for \(z\text{.}\) For instance, the fixed point of the transformation \(T(z) = 2z + (4-i)\) of <a knowl="./knowl/ex_diskmove.html" title="Example 3.1.10: The image of a disk">Example 3.1.10</a> is found by solving \(z = 2z + 4 - i\text{,}\) for \(z\text{,}\) which yields \(z =-4 + i\text{.}\) So, while the map \(T(z) = 2z + (4-i)\) moves the disk \(D\) in the example to the disk \(T(D)\text{,}\) the point \(-4+i\) happily stays where it is.</p>
+<article class="definition-like" id="definition-5"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.1.14</span>
+</h6>
+<p id="p-286">A <dfn class="terminology">Euclidean isometry</dfn> is a transformation \(T\) of \(\mathbb{C}\) with the feature that \(|T(z)-T(w)| = |z-w|\) for any points \(z\) and \(w\) in \(\mathbb{C}\text{.}\) That is, a Euclidean isometry preserves the Euclidean distance between any two points.</p></article><article class="example-like" id="example-20"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.15</span> <span class="title">Some Euclidean isometries of \(\mathbb{C}\)</span>
+</h6>
+<p id="p-287">It is perhaps clear that translations, which move each point in the plane by the same amount in the same direction, ought to be isometries. Rotations are also isometries.  In fact, the general linear transformation \(T(z)=az+b\) will be a Euclidean isometry so long as \(|a|=1\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+|T(z)-T(w)| \amp = |az + b - (aw + b)|\\
+\amp = |a(z-w)|\\
+\amp = |a| |z-w|.
+\end{align*}
+</div>
+<p>So, \(|T(z)-T(w)|=|z-w| \iff |a|=1\text{.}\)  Translations and rotations about a point in \(\mathbb{C}\) are general linear transformations of this type, so they are also Euclidean isometries.</p></article><article class="example-like" id="example-21"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">3.1.16</span> <span class="title">Reflection about a line</span>
+</h6>
+<p id="p-288"><dfn class="terminology">Reflection about a line \(L\)</dfn> is the transformation of \(\mathbb{C}\) defined as follows: Each point on \(L\) gets sent to itself, and if \(z\) is not on \(L\text{,}\) it gets sent to the point \(z^*\) such that line \(L\) is the perpendicular bisector of segment \(zz^*\text{.}\)</p>
+<div class="sidebyside" id="sidebyside-14"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-reflect.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-289">Reflection about \(L\) is defined algebraically as follows. If \(L\) happens to be the real axis then</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) = \overline{z}.
+\end{equation*}
+</div>
+<p id="p-290">For any other line \(L\) we may arrive at a formula for reflection by rotating and/or translating the line to the real axis, then taking the conjugate, and then reversing the rotation and/or translation.</p>
+<p id="p-291">For instance, to describe reflection about the line \(y = x + 5\text{,}\) we may translate vertically by \(-5i\text{,}\) rotate by \(-\frac{\pi}{4}\text{,}\) reflect about the real axis, rotate by \(\frac{\pi}{4}\text{,}\) and finally translate by \(5i\) to get the composition</p>
+<div class="displaymath">
+\begin{align*}
+z \amp \mapsto z - 5i\\
+\amp \mapsto e^{-\frac{\pi}{4}i}(z - 5i)\\
+\amp \mapsto \overline{e^{-\frac{\pi}{4}i}(z - 5i)}=
+e^{\frac{\pi}{4}i}(\overline{z} + 5i)\\
+\amp \mapsto e^{\frac{\pi}{4}i}\cdot e^{\frac{\pi}{4}i}(\overline{z} + 5i)=e^{\frac{\pi}{2}i}(\overline{z}+5i)\\
+\amp \mapsto e^{\frac{\pi}{2}i}(\overline{z}+5i) + 5i.
+\end{align*}
+</div>
+<p id="p-292">Simplifying (and noting that \(e^{\frac{\pi}{2}i} = i\)), the reflection about the line \(L: y = x + 5\) has formula</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) =
+i\overline{z} - 5 + 5i.
+\end{equation*}
+</div>
+<p id="p-293">In general, reflection across any line \(L\) in \(\mathbb{C}\) will have the form</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) = e^{i\theta}\overline{z}+b
+\end{equation*}
+</div>
+<p>for some angle \(\theta\) and some complex constant \(b\text{.}\)</p></article><p id="p-294">Reflections are more basic transformations than rotations and translations in that the latter are simply careful compositions of reflections.</p>
+<article class="theorem-like" id="th_reflect"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">3.1.17</span>
+</h6>
+<p id="p-295">A translation of \(\mathbb{C}\) is the composition of reflections about two parallel lines. A rotation of \(\mathbb{C}\) about a point \(z_0\) is the composition of reflections about two lines that intersect at \(z_0\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-7" id="proof-7"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-7" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-296">Given the translation \(T_b(z) = z + b\) let \(L_1\) be the line through the origin that is perpendicular to segment \(0b\) as pictured in <a knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(a). Let \(L_2\) be the line parallel to \(L_1\) through the midpoint of segment \(0b\text{.}\) Also let \(r_i\) denote reflection about line \(L_i\) for \(i = 1,2\text{.}\)</p>
+<p id="p-297">Now, given any \(z\) in \(\mathbb{C}\text{,}\) let \(L\) be the line through \(z\) that is parallel to vector \(b\) (and hence perpendicular to \(L_1\) and \(L_2\)). The image of \(z\) under the composition \(r_2 \circ r_1\) will be on this line. To find the exact location, let \(z_1\) be the intersection of \(L_1\) and \(L\text{,}\) and \(z_2\) the intersection of \(L_2\) and \(L\text{,}\) (see the figure). To reflect \(z\) about \(L_1\) we need to translate it along \(L\) twice by the vector \(z_1 - z\text{.}\) Thus \(r_1(z) = z + 2(z_1 - z) = 2z_1-z\text{.}\)</p>
+<p id="p-298">Next, to reflect \(r_1(z)\) about \(L_2\text{,}\) we need to translate it along \(L\) twice by the vector \(z_2 - r_1(z)\text{.}\) Thus,</p>
+<div class="displaymath">
+\begin{equation*}
+r_2(r_1(z)) =
+r_1(z) + 2(z_2 - r_1(z))  = 2z_2 - r_1(z) = 2z_2 - 2z_1 + z.
+\end{equation*}
+</div>
+<p id="p-299">Notice from <a knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(a) that \(z_2 - z_1\) is equal to \(b/2\text{.}\) Thus \(r_2(r_1(z)) = z + b\) is translation by \(b\text{.}\)</p>
+<p id="p-300">Rotation about the point \(z_0\) by angle \(\theta\) can be achieved by two reflections. The first reflection is about the line \(L_1\) through \(z_0\) parallel to the real axis, and the second reflection is about the line \(L_2\) that intersects \(L_1\) at \(z_0\) at an angle of \(\theta/2\text{,}\) as in <a knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(b).  In the exercises you will prove that this composition of reflections does indeed give the desired rotation.</p></article></div>
+<figure class="figure-like" id="fig-refgenisom"><img src="images/im-refgenisom.svg" width="100%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">3.1.18</span> (a) Translations and (b) rotations are compositions of reflections.</figcaption></figure><p id="p-301">We list some elementary features of reflections in the following theorem. We do not prove them here but encourage you to work through the details. We will focus our efforts in the following section on proving analogous features for inversion transformations, which are reflections about circles.</p>
+<article class="theorem-like" id="th_refconformal"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">3.1.19</span>
+</h6>
+<p id="p-302">Reflection across a line is a Euclidean isometry. Moreover, any reflection sends lines to lines, sends circles to circles, and preserves angle magnitudes.</p></article><p id="p-303">In fact, one can show that <em class="emphasis">any</em> Euclidean isometry can be expressed as the composition of at most three reflections. See, for instance, Stillwell <a knowl="./knowl/stillwell.html" title="Bibliographic Entry 10: Geometry on Surfaces">[10]</a> for a proof of this fact.</p>
+<article class="theorem-like" id="theorem-9"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">3.1.20</span>
+</h6>
+<p id="p-304">Any Euclidean isometry is the composition of, at most, three reflections.</p></article></section><section class="exercises" id="exercises-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<a href="section3-1.html#exercises-7" class="permalink">¶</a><article class="exercise-like" id="exercise-26"><h6 class="heading">
+<span class="codenumber">1</span> </h6>
+<p id="p-305">Is \(T(z) = -z\) a translation, dilation, rotation, or none of the above?</p></article><article class="exercise-like" id="exercise-27"><h6 class="heading">
+<span class="codenumber">2</span> </h6>
+<p id="p-306">Show that the general linear transformation \(T(z) = a z + b\text{,}\) where \(a\) and \(b\) are complex constants, is the composition of a rotation, followed by a dilation, followed by a translation. Hint: View the complex constant \(a\) in polar form.</p></article><article class="exercise-like" id="exercise-28"><h6 class="heading">
+<span class="codenumber">3</span> </h6>
+<p id="p-307">Prove that a general linear transformation maps circles to circles.</p></article><article class="exercise-like" id="exercise-29"><h6 class="heading">
+<span class="codenumber">4</span> </h6>
+<p id="p-308">Suppose \(T\) is a rotation by 30\(^\circ\) about the point 2, and \(S\) is a rotation by \(45^\circ\) about the point 4. What is \(T\circ
+S\text{?}\) Can you describe this transformation geometrically?</p></article><article class="exercise-like" id="exercise-30"><h6 class="heading">
+<span class="codenumber">5</span> </h6>
+<p id="p-309">Suppose \(T(z) = iz + 3\) and \(S(z) = -iz + 2\text{.}\) Find \(T\circ S\text{.}\) What type of transformation is this?</p></article><article class="exercise-like" id="exercise-31"><h6 class="heading">
+<span class="codenumber">6</span> </h6>
+<p id="p-310">Find a formula for a transformation of \(\mathbb{C}\) that maps the open disk \(D = \{z ~|~ |z| \lt  2\}\) to the open disk \(D^\prime = \{ z ~|~
+|z - i| \lt  5\}\text{.}\) Is this transformation unique, or can you think of two different ones that work?</p></article><article class="exercise-like" id="exercise-32"><h6 class="heading">
+<span class="codenumber">7</span> </h6>
+<p id="p-311">Find a formula for reflection about the vertical line \(x =
+k\text{.}\)</p></article><article class="exercise-like" id="exercise-33"><h6 class="heading">
+<span class="codenumber">8</span> </h6>
+<p id="p-312">Find a formula for reflection about the horizontal line \(y = k\text{.}\)</p></article><article class="exercise-like" id="exercise-34"><h6 class="heading">
+<span class="codenumber">9</span> </h6>
+<p id="p-313">Find a formula for reflection in the plane about the line \(y =
+mx + b\text{,}\) where \(m \neq 0\text{.}\) Hint: Think about what angle this line makes with the positive \(x\)-axis.</p></article><article class="exercise-like" id="exercise-35"><h6 class="heading">
+<span class="codenumber">10</span> </h6>
+<p id="p-314">Prove that the construction in <a knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(b) determines the desired rotation.</p></article><article class="exercise-like" id="exercise-36"><h6 class="heading">
+<span class="codenumber">11</span> </h6>
+<p id="p-315">\(S(z) = kz\) is a dilation about the origin. Find an equation for a dilation of \(\mathbb{C}\) by factor \(k\) about an arbitrary point \(z_0\) in \(\mathbb{C}\text{.}\)</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:40-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Upper Half-Plane Model</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section5-4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-5.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-6.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section5-4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-5.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter-6.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5" class="active">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section5-5"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.5</span> <span class="title">The Upper Half-Plane Model</span>
+</h2>
+<a href="section5-5.html" class="permalink">¶</a><section class="introduction" id="introduction-23"><p id="p-936">The Poincaré disk model is one way to represent hyperbolic geometry, and for most purposes it serves us very well. However, another model, called the upper half-plane model, makes some computations easier, including the calculation of the area of a triangle.</p></section><article class="definition-like" id="definition-23"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">5.5.1</span>
+</h6>
+<p id="p-937">The <dfn class="terminology">upper half-plane model of hyperbolic geometry</dfn> has space \(\mathbb{U}\) consisting of all complex numbers \(z\) such that Im(\(z)
+&gt; 0\text{,}\) and transformation group \(\cal U\) consisting of all Möbius transformations that send \(\mathbb{U}\) to itself. The space \(\mathbb{U}\) is called the upper half-plane of \(\mathbb{C}\text{.}\)</p></article><p id="p-938">The Poincaré disk model of hyperbolic geometry may be transferred to the upper half-plane model via a Möbius transformation built from two inversions as follows: </p>
+<ol class="decimal">
+<li id="li-48"><p id="p-939">Invert about the circle \(C\) centered at \(i\) passing through -1 and 1 as in <a knowl="./knowl/fig-disktoUHP.html" title="Figure 5.5.2">Figure 5.5.2</a>.</p></li>
+<li id="li-49"><p id="p-940">Reflect about the real axis.</p></li>
+</ol>
+<p id="p-941"><figure class="figure-like" id="fig-disktoUHP"><img src="images/im-disktoUHP.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.5.2</span> Inversion in \(C\) maps the unit disk to the upper-half plane.</figcaption></figure></p>
+<p id="p-942">Notice that inversion about the circle \(C\) fixes -1 and 1, and it takes \(i\) to \(\infty\text{.}\) Since reflection across the real axis leaves these image points fixed, the composition of the two inversions is a Möbius transformation that takes the unit circle to the real axis. The map also sends the interior of the disk into the upper half plane. Notice further that the Möbius transformation takes \(\infty\) to \(-i\text{;}\) therefore, by <a knowl="./knowl/th_mobfinitefix.html" title="Theorem 3.5.8">Theorem 3.5.8</a>, the map can be written as</p>
+<div class="displaymath">
+\begin{equation*}
+V(z) = \frac{-iz + 1}{z - i}.
+\end{equation*}
+</div>
+<p id="p-943">This Möbius transformation is the key to transferring the disk model of the hyperbolic plane to the upper half-plane model. In fact, when treading back and forth between these models it is convenient to adopt the following convention for this section: Let \(z\) denote a point in \(\mathbb{D}\text{,}\) and \(w\) denote a point in the upper half-plane \(\mathbb{U}\text{,}\) as in <a knowl="./knowl/fig-uphalfplane.html" title="Figure 5.5.3">Figure 5.5.3</a>. We record the transformations linking the spaces below.</p>
+<p id="p-944"><article class="assemblage-like" id="assemblage-10"><h6 class="heading"><span class="title">Going between \((\mathbb{D},{\cal H})\) and \((\mathbb{U},{\cal U})\)</span></h6>
+<p id="p-945">The Möbius transformation \(V\) mapping \(\mathbb{D}\) to \(\mathbb{U}\text{,}\) and its inverse \(V^{-1}\text{,}\) are given by:</p>
+<div class="displaymath">
+\begin{equation*}
+w = V(z) = \frac{-iz + 1}{z - i}
+~~~~\text{and}~~~~z = V^{-1}(w) = \frac{iw+1}{w+i}.
+\end{equation*}
+</div></article></p>
+<p id="p-946">Some features of the upper half-plane model immediately come to light. Since \(V\) is a Möbius transformation, it preserves clines and angles. This means that the ideal points in the disk model, namely the points on the circle at infinity, \(\mathbb{S}^1_\infty\text{,}\) have moved to the real axis and that hyperbolic lines in the disk model have become clines that intersect the real axis at right angles.</p>
+<figure class="figure-like" id="fig-uphalfplane"><img src="images/im-uphalfplane.svg" width="80%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.5.3</span> Mapping the disk to the upper half-plane.</figcaption></figure><p id="p-947">Define the hyperbolic distance between two points \(w_1, w_2\) in the upper half-plane model, denoted \(d_U(w_1, w_2)\text{,}\) to be the hyperbolic distance between their pre-images in the disk model.</p>
+<p id="p-948">Suppose \(w_1\) and \(w_2\) are two points in \(V\) whose pre-images in the unit disk are \(z_1\) and \(z_2\text{,}\) respectively. Then,</p>
+<div class="displaymath">
+\begin{equation*}
+d_U(w_1, w_2) = d_H(z_1,z_2) = \ln((z_1, z_2 ; u, v)),
+\end{equation*}
+</div>
+<p>where \(u\) and \(v\) are the ideal points of the hyperbolic line through \(z_1\) and \(z_2\text{.}\) But, since the cross ratio is preserved under Möbius transformations,</p>
+<div class="displaymath">
+\begin{equation*}
+d_U(w_1,w_2) = \ln((w_1,w_2; p, q)),
+\end{equation*}
+</div>
+<p>where \(p,q\) are the ideal points of the hyperbolic line in the upper half-plane through \(w_1\) and \(w_2\text{.}\) In particular, going from \(w_1\) to \(w_2\) we're heading toward ideal point \(p\text{.}\)</p>
+<article class="example-like" id="example-48"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.5.4</span> <span class="title">The distance between \(ri\) and \(si\)</span>
+</h6>
+<p id="p-949">For \(r &gt; s &gt; 0\) we compute the distance between \(ri\) and \(si\) in the upper half-plane model.</p>
+<p id="p-950">The hyperbolic line through \(ri\) and \(si\) is the positive imaginary axis, having ideal points \(0\) and \(\infty\text{.}\) Thus,</p>
+<div class="displaymath">
+\begin{align*}
+d_U(ri, si) \amp = \ln((ri, si; 0, \infty))\\
+\amp = \frac{ri - 0}{ri - \infty}\cdot\frac{si-\infty}{si-0}\\
+\amp = \ln\bigg(\frac{r}{s}\bigg).
+\end{align*}
+</div></article><article class="example-like" id="example-49"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.5.5</span> <span class="title">The distance between any two points</span>
+</h6>
+<p id="p-951">To find the distance between any two points \(w_1\) and \(w_2\) in \(\mathbb{U}\text{,}\) we first build a map in the upper half-plane model that moves these two points to the positive imaginary axis. To build this map, we work through the Poincaré disk model.</p>
+<p id="p-952">By the transformation \(V^{-1}\) we send \(w_1\) and \(w_2\) back to \(\mathbb{D}\text{.}\)  We let \(z_1 = V^{-1}(w_1)\) and \(z_2 = V^{-1}(w_2)\text{.}\)  Then, let \(S(z) = e^{i\theta}\frac{z-z_1}{1-\overline{z_1}z}\) be the transformation in \((\mathbb{D},{\cal H})\) that sends \(z_1\) to 0 with \(\theta\) chosen carefully so that \(z_2\) gets sent to the positive imaginary axis.  In fact, \(z_2\) gets sent to the point \(ki\) where \(k = |S(z_2)| = |S(V^{-1}(w_2))|\) (and \(0 \lt  k \lt  1\)). Then, applying \(V\) to the situation, \(0\) gets sent to \(i\) and \(ki\) gets sent to \(\frac{1+k}{1-k}i\text{.}\) Thus, \(V \circ S \circ V^{-1}\) sends \(w_1\) to \(i\) and \(w_2\) to \(\frac{1+k}{1-k}i\text{,}\) where by the previous example the distance between the points is known:</p>
+<div class="displaymath">
+\begin{equation*}
+d_U(w_1,w_2) = \ln(1+k) - \ln(1-k).
+\end{equation*}
+</div>
+<p id="p-953">Describing \(k\) in terms of \(w_1\) and \(w_2\) is left for the adventurous reader. We do not need to pursue that here.</p></article><p id="p-954">We now derive the hyperbolic arc-length differential for the upper half-plane model working once again through the disk model. Recall the arc-length differential in the disk model is</p>
+<div class="displaymath">
+\begin{equation*}
+ds =
+\frac{2|dz|}{1-|z|^2}.
+\end{equation*}
+</div>
+<p id="p-955">Since \(z = V^{-1}(w) = \frac{iw+1}{w+i}\) we may work out the arc-length differential in terms of \(dw\text{.}\) We will need to take the derivative of a complex expression, which can be done just as if it were a real valued expression. Here we go:</p>
+<div class="displaymath">
+\begin{align*}
+ds \amp = \frac{2|dz|}{1-|z|^2}\\
+\amp =\frac{2|d\bigg(\frac{iw+1}{w+i}\bigg)|}{1-\bigg|\frac{iw+1}{w+i}
+\bigg|^2} \tag{$z = \frac{iw+1}{w+i}$}\\
+\amp =\frac{2|i(w+i)dw-(iw+1)dw|}{|w+i|^2}\bigg/\bigg[1-\frac{|iw+1|^2}{|w+i|^2}\bigg]\tag{chain rule}\\
+\amp = \frac{4|dw|}{|w+i|^2-|iw+1|^2}\\
+\amp =
+\frac{4|dw|}{(w+i)(\overline{w}-i)-(iw+1)(-i\overline{w}+1)}\\
+\amp = \frac{4|dw|}{2i(\overline{w}-w)}\\
+\amp = \frac{|dw|}{{ Im}(w)}.
+\end{align*}
+</div>
+<p id="p-956">This leads us to the following definition:</p>
+<article class="definition-like" id="definition-24"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">5.5.6</span>
+</h6>
+<p id="p-957">The length of a smooth curve \(\boldsymbol{r}(t)\) for \(a \leq t \leq b\) in the upper half-plane model \((\mathbb{U},{\cal U})\text{,}\) denoted \({\cal L}(\boldsymbol{r})\text{,}\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{r}) = \int_a^b \frac{|\boldsymbol{r}^\prime(t)|}{\text{Im}(\boldsymbol{r}(t))}~dt
+\end{equation*}
+</div></article><article class="example-like" id="example-50"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.5.7</span> <span class="title">The length of a curve</span>
+</h6>
+<p id="p-958">To find the length of the horizontal curve \(\boldsymbol{r}(t) = t + ki\) for \(a \leq t \leq b\text{,}\) note that \(\boldsymbol{r}^\prime(t) = 1\) and \(\text{
+Im}(\boldsymbol{r}(t)) = k\text{.}\) Thus,</p>
+<div class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{r}) = \int_a^b \frac{1}{k}~dt = \frac{b-a}{k}.
+\end{equation*}
+</div></article><p id="p-959">From the arc-length differential \(ds = \frac{dw}{\text{Im}(w)}\) comes the area differential:</p>
+<article class="definition-like" id="definition-25"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">5.5.8</span>
+</h6>
+<p id="p-960">In the upper half-plane model \((\mathbb{U},{\cal U})\) of hyperbolic geometry, the area of a region \(R\) described in cartesian coordinates, denoted \(A(R)\text{,}\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+A(R) = \iint_R \frac{1}{y^2}~dxdy.
+\end{equation*}
+</div></article><article class="example-like" id="example-51"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.5.9</span> <span class="title">The area of a \(\frac{2}{3}\)-ideal triangle</span>
+</h6>
+<p id="p-961">Suppose \(w \in \mathbb{U}\) is on the unit circle, and consider the \(\frac{2}{3}\)-ideal triangle \(1w\infty\) as pictured.</p>
+<p id="p-962"><div class="sidebyside" id="sidebyside-32"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-UHP23ideal.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></p>
+<p id="p-963">In particular, suppose the interior angle at \(w\) is \(\alpha\text{,}\) so that \(w = e^{i(\pi-\alpha)}\) where \(0 \lt  \alpha \lt  \pi\text{.}\)</p>
+<p id="p-964">The area of this \(\frac{2}{3}\)-ideal triangle is thus</p>
+<div class="displaymath">
+\begin{align*}
+A \amp = \int_{\cos(\pi - \alpha)}^1 \int_{\sqrt{1-x^2}}^\infty
+\frac{1}{y^2}~dydx\\
+\amp = \int_{\cos(\pi - \alpha)}^1 \frac{1}{\sqrt{1-x^2}}~dx.
+\end{align*}
+</div>
+<p id="p-965">With the trig substituion \(\cos(\theta) = x\text{,}\) so that \(\sqrt{1-x^2} = \sin(\theta)\) and \(-\sin(\theta)d\theta = dx\text{,}\) the integral becomes</p>
+<div class="displaymath">
+\begin{align*}
+\amp =\int_{\pi - \alpha}^0\frac{-\sin(\theta)}{\sin(\theta)}~d\theta\\
+\amp = \pi - \alpha.
+\end{align*}
+</div></article><p id="p-966">It turns out that any \(\frac{2}{3}\)-ideal triangle is congruent to one of the form \(1w\infty\) where \(w\) is on the upper half of the unit circle (<a knowl="./knowl/hmk_2thirduhp.html" title="Exercise 5.5.3">Exercise 5.5.3</a>), and since our transformations preserve angles and area, we have proved the area formula for a \(\frac{2}{3}\)-ideal triangle.</p>
+<article class="theorem-like" id="theorem-44"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">5.5.10</span>
+</h6>
+<p id="p-967">The area of a \(\frac{2}{3}\)-ideal triangle having interior angle \(\alpha\) is equal to \(\pi -
+\alpha\text{.}\)</p></article><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<a href="section5-5.html#exercises-18" class="permalink">¶</a><article class="exercise-like" id="exercise-135"><h6 class="heading">
+<span class="codenumber">1</span> </h6>
+<p id="p-968">What becomes of horocycles when we transfer the disk model of hyperbolic geometry to the upper half-plane model?</p></article><article class="exercise-like" id="exercise-136"><h6 class="heading">
+<span class="codenumber">2</span> </h6>
+<p id="p-969">What do hyperbolic rotations in the disk model look like over in the upper half-plane model? What about hyperbolic translations?</p></article><article class="exercise-like" id="hmk_2thirduhp"><h6 class="heading">
+<span class="codenumber">3</span> </h6>
+<p id="p-970">Give an explicit description of a transformation that takes an arbitrary \(\frac{2}{3}\)-ideal triangle in the upper half-plane to one with ideal points 1 and \(\infty\) and an interior vertex on the upper half of the unit circle.</p></article><article class="exercise-like" id="exercise-138"><h6 class="heading">
+<span class="codenumber">4</span> </h6>
+<p id="p-971">Determine the area of the “triangular” region pictured below. What is the image of this triangle under \(V^{-1}\) in the disk model of hyperbolic geometry? Why doesn't this result contradict <a knowl="./knowl/thm_hyptriarea.html" title="Theorem 5.4.9">Theorem 5.4.9</a>?</p>
+<p id="p-972"><div class="sidebyside" id="sidebyside-33"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-UHPregion.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></p></article><article class="exercise-like" id="exercise-139"><h6 class="heading">
+<span class="codenumber">5</span> </h6>
+<p id="p-973"><em class="emphasis">Another type of block</em>. Consider the four-sided figure \(pqst\) in \((\mathbb{D},{\cal H})\) shown in the following diagram. This figure is determined by two horocycles \(C_1\) and \(C_2\text{,}\) and two hyperbolic lines \(L_1\) and \(L_2\) all sharing the same ideal point. Note that the lines are orthogonal to the horocycles, so that each angle in the four-sided figure is 90\(^\circ\text{.}\)</p>
+<p id="p-974">a. By rotation about the origin if necessary, assume the common ideal point is \(i\) and use the map \(V\) to transfer the figure to the upper half-plane. What does the transferred figure look like in \(\mathbb{U}\text{?}\) Answer parts (b)-(d) by using this transferred version of the figure.</p>
+<p id="p-975">b. Prove that the hyperbolic lengths of sides \(pq\) and \(st\) are equal.</p>
+<p id="p-976">c. Let \(c\) equal the hyperbolic length of the leg \(pt\) along the larger radius horocycle \(C_1\text{,}\) and let \(d\) equal the hyperbolic length of the leg \(sq\) on \(C_2\text{.}\) Show that \(c = e^x d\) where \(x\) is the common length found in part (b).</p>
+<p id="p-977">d. Prove that the area of the four-sided figure is \(c - d\text{.}\)</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

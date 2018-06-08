@@ -1,0 +1,251 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:39-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Poincaré Disk Model</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-5.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section5-2.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-5.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section5-2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1" class="active">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section5-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">The Poincaré Disk Model</span>
+</h2>
+<a href="section5-1.html" class="permalink">¶</a><section class="introduction" id="introduction-19"><article class="definition-like" id="note_hypgeo"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">5.1.1</span>
+</h6>
+<p id="p-690">The <dfn class="terminology">Poincaré disk model for hyperbolic geometry</dfn> is the pair \((\mathbb{D},{\cal H})\) where \(\mathbb{D}\) consists of all points \(z\) in \(\mathbb{C}\) such that \(|z| \lt  1\text{,}\) and \({\cal H}\) consists of all Möbius transformations \(T\) for which \(T(\mathbb{D}) = \mathbb{D}\text{.}\) The set \(\mathbb{D}\) is called the <dfn class="terminology">hyperbolic plane</dfn>, and \({\cal H}\) is called the <dfn class="terminology">transformation group in hyperbolic geometry.</dfn></p></article><p id="p-691">We note that \(\cal H\) does indeed form a group of transformations, a fact that is worked out in the exercises. Throughout this chapter the unit circle will be called <dfn class="terminology">the circle at infinity</dfn>, denoted by \(\mathbb{S}^1_\infty\text{.}\) Of course, the circle at infinity is not included in the hyperbolic plane \(\mathbb{D}\) but bounds it. The circle at infinity will be used extensively in our investigations. We note here that any Möbius transformation that sends \(\mathbb{D}\) to itself also sends \(\mathbb{S}^1_\infty\) to itself.</p>
+<figure class="figure-like" id="fig-hypreflect"><img src="images/im-hypreflect.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.1.2</span> Inversion about a cline orthogonal to the unit circle takes \(\mathbb{D}\) to \(\mathbb{D}\text{.}\)</figcaption></figure><p id="p-692">Consider a cline \(C\) that is orthogonal to the circle at infinity \(\mathbb{S}^1_\infty\text{,}\) as in <a knowl="./knowl/fig-hypreflect.html" title="Figure 5.1.2">Figure 5.1.2</a>. If we invert about \(C\text{,}\) \(\mathbb{S}^1_\infty\) is inverted to itself. Moreover, this inversion takes the interior of \(\mathbb{S}^1_\infty\text{,}\) namely the hyperbolic plane \(\mathbb{D}\text{,}\) to itself as well, (<a knowl="./knowl/hmk_orthinvinterior.html" title="Exercise 3.2.10">Exercise 3.2.10</a>). It follows that compositions of two such inversions is a Möbius transformation that sends \(\mathbb{D}\) to itself, and is thus in the group \({\cal H}\text{.}\) These inversions play an important role in hyperbolic geometry, and we give them a name.</p>
+<p id="p-693">An inversion in a cline \(C\) that is orthogonal to \(\mathbb{S}^1_\infty\) is called a <dfn class="terminology">reflection of the hyperbolic plane</dfn>,  or, a <dfn class="terminology">hyperbolic reflection</dfn>.</p>
+<p id="p-694">It turns out that these reflections generate all the maps in \({\cal H}\text{.}\) For instance, rotation about the origin is a Möbius transformation that sends \(\mathbb{D}\) to itself, so it is in \(\cal H\text{.}\) But rotation about the origin is also the composition of two reflections about lines that intersect at the origin. Since any line through the origin meets the unit circle at right angles, reflection about such a line is a reflection of the hyperbolic plane, so rotation about the origin is the composition of two such reflections. We now prove the following general result.</p>
+<article class="theorem-like" id="th_hyptrans"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">5.1.3</span>
+</h6>
+<p id="p-695">Any Möbius transformation in \({\cal H}\) is the composition of two reflections of the hyperbolic plane.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-27" id="proof-27"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-27" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-696">Suppose \(T\) is a Möbius transformation that sends \(\mathbb{D}\) to itself. This means some point in \(\mathbb{D}\text{,}\) say \(z_0\text{,}\) gets sent to the origin, 0. Let \(z_0^*\) be the point symmetric to \(z_0\) with respect to \(\mathbb{S}^1_\infty\text{.}\) Since \(T\) sends the unit circle to itself, and Möbius transformations preserve symmetry points, it follows that \(T\) sends \(z_0^*\) to \(\infty\text{.}\) Furthermore, some point \(z_1\) on \(\mathbb{S}^1_\infty\) gets sent to the point 1.</p>
+<p id="p-697">If \(z_0=0\text{,}\) then \(z_0^* = \infty\text{,}\) and \(T\) fixes 0 and \(\infty\text{.}\) Then by <a knowl="./knowl/ex_mobfix0inf.html" title="Example 3.5.3: Fixing 0 and \(\infty\)">Example 3.5.3</a>, \(T(z) = re^{i\theta}z\) is a dilation followed by a rotation. However, since \(T\) also sends \(\mathbb{D}\) onto \(\mathbb{D}\text{,}\) the dilation factor must be \(r = 1\text{.}\) So \(T\) is simply a rotation about the origin, which is the composition of two hyperbolic reflections about Euclidean lines through the origin.</p>
+<p id="p-698">Now assume \(z_0 \neq 0\text{.}\) In this case, by using \(z_0, z_0^*\text{,}\) and \(z_1\) as anchors, we may achieve \(T\) via two hyperbolic reflections, as follows:</p>
+<p id="p-699">First, invert about a circle \(C\) orthogonal to \(\mathbb{S}^1_\infty\) that sends \(z_0\) to the origin.</p>
+<p id="p-700">Such a circle does indeed exist, and we will construct it now. As in <a knowl="./knowl/fig-z0tozero.html" title="Figure 5.1.4">Figure 5.1.4</a>, draw circle \(C_1\) with diameter \(0z_0^*.\) Let \(p\) be a point of intersection of \(C_1\) and the unit circle \(\mathbb{S}^1_\infty\text{.}\) Construct the circle \(C\) through \(p\) centered at \(z_0^*\text{.}\) Since \(\angle 0pz_0^*\) is right, \(\mathbb{S}^1_\infty\) is orthogonal to \(C\text{,}\) so inversion about \(C\) sends \(\mathbb{S}^1_\infty\) to itself. Furthermore, since \(z_0^*\) gets sent to \(\infty\) and symmetry points must be preserved, inversion in \(C\) sends \(z_0\) to 0.</p>
+<p id="p-701">Thus, the first inversion takes \(z_0\) to 0 and \(z_0^*\) to \(\infty\text{.}\) To build \(T\) we must also send \(z_1\) to 1. Note that inversion in circle \(C\) will have sent \(z_1\) to some point \(z_1^\prime\) on the unit circle (since \(\mathbb{S}^1_\infty\) is sent to itself). Now reflect across the line through the origin that bisects angle \(\angle 10z_1^\prime\text{.}\) This sends \(z_1^\prime\) to 1, sends \(\mathbb{D}\) to \(\mathbb{D}\text{,}\) and leaves 0 and \(\infty\) fixed. Composing these two inversions yields a Möbius transformation that sends \(z_0\) to 0, \(z_0^*\) to \(\infty\) and \(z_1\) to 1. Since a Möbius transformation is uniquely determined by the image of three points, this Möbius transformation is \(T\text{.}\)</p></article></div>
+<figure class="figure-like" id="fig-z0tozero"><img src="images/im-z0tozero.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.1.4</span> Constructing a circle \(C\) orthogonal to \(\mathbb{S}^1_\infty\) about which \(z_0\) is inverted to 0.</figcaption></figure><p id="p-702">Notice that in proving <a knowl="./knowl/th_hyptrans.html" title="Theorem 5.1.3">Theorem 5.1.3</a> we proved the following useful fact.</p>
+<article class="theorem-like" id="cor_hypsendzto0"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">5.1.5</span>
+</h6>
+<p id="p-703">Given \(z_0\) in \(\mathbb{D}\) and \(z_1\) on \(\mathbb{S}^1_\infty\) there exists a transformation in \({\cal H}\) that sends \(z_0\) to 0 and \(z_1\) to \(1\text{.}\)</p></article><p id="p-704">Therefore, one may view any transformation in \({\cal H}\) as the composition of two inversions about clines orthogonal to \(\mathbb{S}^1_\infty\text{.}\) Moreover, these maps may be categorized according to whether the two clines of inversion intersect zero times, once, or twice.  In <a knowl="./knowl/fig-hypmaps.html" title="Figure 5.1.6">Figure 5.1.6</a> we illustrate these three cases.  In each case, we build a transformation \(T\) in \({\cal H}\) by inverting about the solid clines in the figure (first about \(L_1\text{,}\) then about \(L_2\)).  The figure also tracks the journey of a point \(z\) under these inversions, first to \(z^\prime\) by inverting about \(L_1\text{,}\) then onto \(T(z)\) by inverting \(z^\prime\) about \(L_2\text{.}\)  The dashed clines in the figure represent some of the clines of motion, the clines along which points are moved by the transformation. Notice these clines of motion are orthogonal to <em class="emphasis">both</em> clines of inversion.  Let's work through the three cases in some detail.</p>
+<figure class="figure-like" id="fig-hypmaps"><img src="images/im-hypmaps.svg" width="100%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.1.6</span> The three types of transformations in \({\cal H}\text{:}\) (a) hyperbolic rotation (b) parallel displacement (c) hyperbolic translation.</figcaption></figure><p id="p-705">If the two clines of inversion, \(L_1\) and \(L_2\text{,}\) intersect inside \(\mathbb{D}\text{,}\) say at the point \(p\text{,}\) then they also intersect outside \(\mathbb{D}\) at the point \(p^*\) symmetric to \(p\) with respect to the unit circle since both clines are orthogonal to \(\mathbb{S}^1_\infty\text{.}\) This scene is shown in <a knowl="./knowl/fig-hypmaps.html" title="Figure 5.1.6">Figure 5.1.6</a>(a). The resulting Möbius transformation will fix \(p\) (and \(p^*\)), causing a rotation of points in \(\mathbb{D}\) around \(p\) along type II clines of \(p\) and \(p^*\text{.}\)  Not surprisingly, we will call this type of map in \({\cal H}\) a <dfn class="terminology">rotation of the hyperbolic plane</dfn> about the point \(p\text{;}\) or, if the context is clear, we call such a map a rotation about \(p\text{.}\)</p>
+<p id="p-706">If the clines of inversion intersect just once, then it must be at a point \(p\) on the unit circle. Otherwise the symmetric point \(p^*\text{,}\) which would be distinct from \(p\text{,}\) would also belong to both clines, giving us two points of intersection. The resulting map moves points along circles in \(\mathbb{D}\) that are tangent to the unit circle at this point \(p\text{.}\) Circles in \(\mathbb{D}\) that are tangent to the unit circle are called <dfn class="terminology">horocycles</dfn>, and this type of map is called a <dfn class="terminology">parallel displacement.</dfn> See <a knowl="./knowl/fig-hypmaps.html" title="Figure 5.1.6">Figure 5.1.6</a>(b).</p>
+<p id="p-707">If the clines of inversion do not intersect, then at least one of the clines must be a circle; and according to <a knowl="./knowl/th_symmtwoclines.html" title="Theorem 3.2.16">Theorem 3.2.16</a>, there are two points \(p\) and \(q\) symmetric with respect to both clines. These two points will be fixed by the resulting Möbius transformation, since each inversion sends \(p\) to \(q\) and \(q\) to \(p\text{.}\) Furthermore, these two fixed points must live on the unit circle by a symmetric points argument (the details of which are left as an exercise).  In other words, if the clines of inversion \(L_1\) and \(L_2\) do not intersect, then they are type II clines of the fixed points \(p\) and \(q\) of the resulting transformation in \({\cal H}\text{.}\) Moreover, this transformation will push points along type I clines of \(p\) and \(q\text{.}\)  We call such a Möbius transformation  in \({\cal H}\) a <dfn class="terminology">translation of the hyperbolic plane</dfn> or, simply, a <em class="emphasis">translation</em>. See <a knowl="./knowl/fig-hypmaps.html" title="Figure 5.1.6">Figure 5.1.6</a>(c).</p>
+<figure class="figure-like" id="fig-moveM"><img src="images/im-moveM.svg" width="90%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.1.7</span> Moving an ‘M’ about the hyperbolic plane, by (a) rotation about \(p\text{;}\) and (b) translation fixing ideal points \(p\) and \(q\text{.}\)</figcaption></figure><article class="example-like" id="example-39"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">5.1.8</span> <span class="title">Moving an ‘M’ around in \((\mathbb{D},{\cal H})\)</span>
+</h6>
+<p id="p-708"><a knowl="./knowl/fig-moveM.html" title="Figure 5.1.7">Figure 5.1.7</a>(a) depicts the image of the figure \(M\) (resembling the letter ‘M’) under two applications of a rotation \(T\) of the hyperbolic plane about point \(p\text{.}\) This rotation is generated by two inversions about clines \(L_1\) and \(L_2\) that intersect at \(p\) (and meet \(\mathbb{S}^1_\infty\) at right angles). The figure \(M\) is pictured, as is \(T(M)\) and \(T(T(M))\text{.}\) The figure also tracks successive images of a point \(z\) on \(M\text{:}\) \(z\) gets mapped to \(T(z)\) which gets mapped to \(T^2(z) = T(T(z))\text{.}\) By this map \(T\text{,}\) any point \(z\) in \(\mathbb{D}\) rotates around \(p\) along the unique type II cline of \(p\) and \(p^*\) that contains \(z\text{.}\)</p>
+<p id="p-709"><a knowl="./knowl/fig-moveM.html" title="Figure 5.1.7">Figure 5.1.7</a>(b) depicts the image of \(M\) under two applications of a translation of the hyperbolic plane. The translation is generated by two inversions about non-intersecting clines \(L_1\) and \(L_2\) (that meet \(\mathbb{S}^1_\infty\) at right angles). The fixed points of the map are the points \(p\) and \(q\) on the circle at infinity. Under this translation, any point \(z\) in \(\mathbb{D}\) heads away from \(p\) and toward \(q\) on the unique cline through the three points \(p,q,\) and \(z\text{.}\)</p></article><p id="p-710">We now derive the following algebraic description of transformations in \(\cal H\text{:}\) <article class="assemblage-like" id="assemblage-8"><h6 class="heading"><span class="title">Transformations in \(\cal H\)</span></h6>
+<p id="p-711">Any transformation \(T\) in the group \(\cal H\) has the form</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z - z_0}{1-\overline{z}_0z}
+\end{equation*}
+</div>
+<p>where \(\theta\) is some angle, and \(z_0\) is the point inside \(\mathbb{D}\) that gets sent to 0.</p></article> Assume \(z_0\) is in \(\mathbb{D}\text{,}\) \(z_1\) is on the unit circle \(\mathbb{S}^1_\infty\text{,}\) and that the map \(T\) in \({\cal H}\) sends \(z_0 \mapsto 0\text{,}\) \(z_0^* \mapsto \infty\) and \(z_1 \mapsto 1\text{.}\) Using the cross ratio,</p>
+<div class="displaymath">
+\begin{equation*}
+T(z)
+= (z,z_1;z_0,z_0^*) =
+\frac{z_1-z_0^*}{z_1-z_0}\cdot\frac{z-z_0}{z-z_0^*}.
+\end{equation*}
+</div>
+<p id="p-712">But \(z_0^*
+= \frac{1}{\overline{z_0}}\text{,}\) so</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = \frac{z_1-1/\overline{z_0}}{z_1-z_0}\cdot\frac{z-z_0}{z-1/\overline{z_0}} = \frac{\overline{z_0}z_1 -
+1}{z_1-z_0}\cdot\frac{z-z_0}{\overline{z_0}z- 1}.
+\end{equation*}
+</div>
+<p id="p-713">Now, the quantity</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\overline{z_0}z_1 -
+1}{z_1-z_0}
+\end{equation*}
+</div>
+<p>is a complex constant, and it has modulus equal to 1. To see this, observe that since \(1 = |z_1|^2 = z_1\overline{z_1}\text{,}\)</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\overline{z_0}z_1 - 1}{z_1 - z_0}\amp =\frac{\overline{z_0}z_1 -
+z_1\overline{z_1}}{z_1 - z_0}\\
+\amp = \frac{-z_1(\overline{z_1 - z_0})}{z_1-z_0}.
+\end{align*}
+</div>
+<p id="p-714">Since \(|z_1| = 1\) and, in general \(|\beta| = |\overline{\beta}|\) we see that this expression has modulus 1, and can be expressed as \(e^{i\theta}\) for some \(\theta\text{.}\) Thus, if \(T\) is a transformation in \(\cal H\) it may be expressed as</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z - z_0}{1-\overline{z}_0z}
+\end{equation*}
+</div>
+<p>where \(\theta\) is some angle, and \(z_0\) is the point inside \(\mathbb{D}\) that gets sent to 0.</p>
+<p id="p-715">Is the converse true? Is every transformation in the form above actually a member of \({\cal H}\text{?}\) The answer is yes, and the reader is asked to work through the details in the exercises.</p></section><section class="exercises" id="exercises-14"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<a href="section5-1.html#exercises-14" class="permalink">¶</a><article class="exercise-like" id="exercise-101"><h6 class="heading">
+<span class="codenumber">1</span> </h6>
+<p id="p-716">Prove that \((\mathbb{D}, {\cal H})\) is homogeneous.</p></article><article class="exercise-like" id="exercise-102"><h6 class="heading">
+<span class="codenumber">2</span> </h6>
+<p id="p-717">Suppose \(T\) is a Möbius transformation of the form</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z - z_0}{1-\overline{z}_0z},
+\end{equation*}
+</div>
+<p>where \(z_0\) is in \(\mathbb{D}\text{.}\) Prove that \(T\) maps \(\mathbb{D}\) to \(\mathbb{D}\) by showing that if \(|z| \lt 
+1\) then \(|T(z)| \lt  1\text{.}\) Hint: It is easier to prove that \(|z|^2 \lt  1\) implies \(|T(z)|^2 \lt  1\text{.}\)</p></article><article class="exercise-like" id="exercise-103"><h6 class="heading">
+<span class="codenumber">3</span> </h6>
+<p id="p-718">Construct the fixed points of the hyperbolic translation defined by the inversion of two nonintersecting clines that intersect \(S^1\infty\) at right angles, as shown in the following diagram.</p></article><div class="sidebyside" id="sidebyside-22"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-ex513.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<article class="exercise-like" id="exercise-104"><h6 class="heading">
+<span class="codenumber">4</span> </h6>
+<p id="p-719">Suppose \(p\) and \(q\) are two points in \(\mathbb{D}\text{.}\) Construct two clines orthogonal to \(\mathbb{S}^1_\infty\) that, when inverted about in composition, send \(p\) to 0 and \(q\) to the positive real axis.</p></article><article class="exercise-like" id="exercise-105"><h6 class="heading">
+<span class="codenumber">5</span> </h6>
+<p id="p-720">Prove that any two horocycles in \((\mathbb{D},{\cal H})\) are congruent.</p></article><article class="exercise-like" id="exercise-106"><h6 class="heading">
+<span class="codenumber">6</span> </h6>
+<p id="p-721">Prove that \(\cal H\) is a group of transformations.</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

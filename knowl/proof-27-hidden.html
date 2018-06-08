@@ -1,0 +1,20 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:53-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>Suppose \(T\) is a Möbius transformation that sends \(\mathbb{D}\) to itself. This means some point in \(\mathbb{D}\text{,}\) say \(z_0\text{,}\) gets sent to the origin, 0. Let \(z_0^*\) be the point symmetric to \(z_0\) with respect to \(\mathbb{S}^1_\infty\text{.}\) Since \(T\) sends the unit circle to itself, and Möbius transformations preserve symmetry points, it follows that \(T\) sends \(z_0^*\) to \(\infty\text{.}\) Furthermore, some point \(z_1\) on \(\mathbb{S}^1_\infty\) gets sent to the point 1.</p>
+<p>If \(z_0=0\text{,}\) then \(z_0^* = \infty\text{,}\) and \(T\) fixes 0 and \(\infty\text{.}\) Then by <a knowl="./knowl/ex_mobfix0inf.html" title="Example 3.5.3: Fixing 0 and \(\infty\)">Example 3.5.3</a>, \(T(z) = re^{i\theta}z\) is a dilation followed by a rotation. However, since \(T\) also sends \(\mathbb{D}\) onto \(\mathbb{D}\text{,}\) the dilation factor must be \(r = 1\text{.}\) So \(T\) is simply a rotation about the origin, which is the composition of two hyperbolic reflections about Euclidean lines through the origin.</p>
+<p>Now assume \(z_0 \neq 0\text{.}\) In this case, by using \(z_0, z_0^*\text{,}\) and \(z_1\) as anchors, we may achieve \(T\) via two hyperbolic reflections, as follows:</p>
+<p>First, invert about a circle \(C\) orthogonal to \(\mathbb{S}^1_\infty\) that sends \(z_0\) to the origin.</p>
+<p>Such a circle does indeed exist, and we will construct it now. As in <a knowl="./knowl/fig-z0tozero.html" title="Figure 5.1.4">Figure 5.1.4</a>, draw circle \(C_1\) with diameter \(0z_0^*.\) Let \(p\) be a point of intersection of \(C_1\) and the unit circle \(\mathbb{S}^1_\infty\text{.}\) Construct the circle \(C\) through \(p\) centered at \(z_0^*\text{.}\) Since \(\angle 0pz_0^*\) is right, \(\mathbb{S}^1_\infty\) is orthogonal to \(C\text{,}\) so inversion about \(C\) sends \(\mathbb{S}^1_\infty\) to itself. Furthermore, since \(z_0^*\) gets sent to \(\infty\) and symmetry points must be preserved, inversion in \(C\) sends \(z_0\) to 0.</p>
+<p>Thus, the first inversion takes \(z_0\) to 0 and \(z_0^*\) to \(\infty\text{.}\) To build \(T\) we must also send \(z_1\) to 1. Note that inversion in circle \(C\) will have sent \(z_1\) to some point \(z_1^\prime\) on the unit circle (since \(\mathbb{S}^1_\infty\) is sent to itself). Now reflect across the line through the origin that bisects angle \(\angle 10z_1^\prime\text{.}\) This sends \(z_1^\prime\) to 1, sends \(\mathbb{D}\) to \(\mathbb{D}\text{,}\) and leaves 0 and \(\infty\) fixed. Composing these two inversions yields a Möbius transformation that sends \(z_0\) to 0, \(z_0^*\) to \(\infty\) and \(z_1\) to 1. Since a Möbius transformation is uniquely determined by the image of three points, this Möbius transformation is \(T\text{.}\)</p></article></body>
+</html>

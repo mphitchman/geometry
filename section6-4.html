@@ -1,0 +1,170 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:41-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Revisiting Euclid's Postulates</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section6-3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-7.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section6-3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter-7.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4" class="active">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section6-4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.4</span> <span class="title">Revisiting Euclid's Postulates</span>
+</h2>
+<a href="section6-4.html" class="permalink">¶</a><p id="p-1152">Without much fanfare, we have shown that the geometry \((\mathbb{P}^2, \cal{S})\) satisfies the first four of Euclid's postulates, but fails to satisfy the fifth. This is also the case with hyperbolic geometry \((\mathbb{D}, {\cal H})\text{.}\) Moreover, the elliptic version of the fifth postulate differs from the hyperbolic version. It is the purpose of this section to provide the proper fanfare for these facts.</p>
+<p id="p-1153">Recall Euclid's five postulates: </p>
+<ol class="decimal">
+<li id="li-50"><p id="p-1154">One can draw a straight line from any point to any point.</p></li>
+<li id="li-51"><p id="p-1155">One can produce a finite straight line continuously in a straight line.</p></li>
+<li id="li-52"><p id="p-1156">One can describe a circle with any center and radius</p></li>
+<li id="li-53"><p id="p-1157">All right angles equal one another.</p></li>
+<li id="li-54"><p id="p-1158">Given a line and a point not on the line, there is exactly one line through the point that does not intersect the given line.</p></li>
+</ol>
+<p id="p-1159">That the first postulate is satisfied in \((\mathbb{P}^2, \cal{S})\) is <a knowl="./knowl/th_elllines.html" title="Theorem 6.2.11">Theorem 6.2.11</a>.</p>
+<p id="p-1160">The second postulate holds here even though our elliptic space is finite. We can extend line segments indefinitely because the space has no boundary. If we are at a point in the space, and decide to head off in a certain direction along an elliptic straight line, we can walk for as long and far as we want (though we would eventually return to our starting point and continue making laps along the elliptic line).</p>
+<p id="p-1161">The third postulate follows by a similar argument. In the previous section we defined a circle about <em class="emphasis">any</em> point in \(\mathbb{P}^2\text{.}\) And since we can walk an arbitrarily long distance from any point, we can describe a circle of any radius about the point.</p>
+<p id="p-1162">The fourth postulate follows since Möbius transformations  preserve angles and the maps in \(\cal{S}\) are special Möbius transformations.</p>
+<p id="p-1163">The fifth postulate fails because any two elliptic lines intersect (<a knowl="./knowl/th_ellparallellines.html" title="Theorem 6.2.13">Theorem 6.2.13</a>). Thus, given a line and a point not on the line, there is <em class="emphasis">not a single line</em> through the point that does not intersect the given line.</p>
+<p id="p-1164">Recall that in our model of hyperbolic geometry, \((\mathbb{D},{\cal H})\text{,}\) we proved that given a line and a point not on the line, there <em class="emphasis">are two lines</em> through the point that do not intersect the given line.</p>
+<p id="p-1165">So we have three different, equally valid geometries that share Euclid's first four postulates, but each has its own parallel postulate. Furthermore, on a small scale, the three geometries all behave similarly. A tiny bug living on the surface of a sphere might reasonably suspect Euclid's fifth postulate holds, given his limited perspective. A tiny bug in the hyperbolic plane would reasonably conclude the same. Small triangles have angles adding up nearly to 180\(^\circ\text{,}\) and small circles have areas and circumferences that are accurately described by the Euclidean formulas \(\pi r^2\) and \(2\pi r\text{.}\) We explore geometry on surfaces in more detail in the next chapter.</p></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

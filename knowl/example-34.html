@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2017-08-01T15:13:04-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">4.1.13</span><span class="title">Euclidean geometry has Euclidean metric \(d(z,w)=|z-w|\)</span>
+</h5>
+<p id="p-549">The Euclidean metric is defined by \(d(z,w)=|z-w|\text{.}\) We have already shown that \(d\) is preserved under Euclidean transformations, and the first two conditions of being a metric follow directly from the definition of modulus. We establish the triangle inequality by direct computation in the following lemma.</p>
+<article class="theorem-like" id="lemma-2"><h5 class="heading">
+<span class="type">Lemma</span><span class="codenumber">4.1.14</span>
+</h5>
+<p id="p-550">For any points \(z, w, v\) in \(\mathbb{C}\text{,}\)
+\begin{equation*}
+|z - w| \leq |z -
+v| + |v - w|.
+\end{equation*}
+</p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-proof-18" id="proof-18"><article class="hiddenproof"><h5 class="heading"><span class="type">Proof</span></h5></article></a></div>
+<div id="hk-proof-18" style="display: none;" class="tex2jax_ignore"><article class="hiddenproof"><p id="p-551">If \(v = w\) then the the result holds, so we assume \(v \neq w\text{.}\) Since \(d\) is invariant under Euclidean transformations, we may assume that \(v = 0\) and \(w = r &gt; 0\) is a point on the positive real axis. (Translate the plane by \(-v\) to send \(v\) to 0, and then rotate about 0 until the image of \(w\) under the translation lands on the positive real axis.) Thus, it's enough to show that for any complex number \(z\) and any positive real number \(r\text{,}\)
+\begin{equation*}
+|z - r| \leq |z| + r.
+\end{equation*}
+</p>
+<p id="p-552">Notice that
+\begin{align*}
+|z - r| \leq |z| + r \amp \iff |z-r|^2 \leq (|z| + r)^2\\
+\amp \iff (z - r)(\overline{z}-r) \leq |z|^2 + 2r|z| + r^2\\
+\amp \iff |z|^2 - r(z+\overline{z}) + r^2 \leq |z|^2 + 2r|z| + r^2\\
+\amp \iff -2r Re(z) \leq 2r|z| \tag{$z + \overline{z} = 2 Re(z)$}\\
+\amp \iff -Re(z) \leq |z|.
+\end{align*}
+</p>
+<p id="p-553">By letting \(z = a + bi\text{,}\) we may restate the last inequality as
+\begin{equation*}
+-a \leq \sqrt{a^2 + b^2},
+\end{equation*}
+which is true since \(-a \leq |a| =
+\sqrt{a^2} \leq \sqrt{a^2 + b^2}\text{.}\)</p></article></div></article><span class="incontext"><a href="section4-1.html#example-34">in-context</a></span>
+</body>
+</html>

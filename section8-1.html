@@ -1,0 +1,302 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:43-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Three-Dimensional Geometry and 3-Manifolds</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-8.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-8.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section8-2.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-8.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-8.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section8-2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1" class="active">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section8-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">8.1</span> <span class="title">Three-Dimensional Geometry and 3-Manifolds</span>
+</h2>
+<a href="section8-1.html" class="permalink">¶</a><section class="introduction" id="introduction-39"><p id="p-1483">Recall that \(\mathbb{R}^3\) is the set of ordered triples of real numbers \((x,y,z)\text{,}\) and a 3-manifold is a space with the feature that every point has a neighborhood that is homeomorphic to an open 3-ball. We assume that the shape of the universe at any fixed time is a 3-manifold. Evidence points to a universe that is isotropic and homogeneous on the largest scales. If this is the case, then just as in the two-dimensional case, the universe admits one of three geometries: hyperbolic, elliptic, or Euclidean. This section offers a brief introduction to the three-dimensional versions of these geometries before turning to 3-manifolds. The reader is encouraged to see <a knowl="./knowl/weeks.html" title="Bibliographic Entry 12: The Shape of Space, 2nd Ed.">[12]</a> for a broader intuitive discussion of these ideas, or <a knowl="./knowl/thurston.html" title="Bibliographic Entry 11: Three-Dimensional Geometry and Topology, Vol. I">[11]</a> for a more rigorous approach.</p>
+<article class="paragraphs" id="paragraphs-10"><h5 class="heading"><span class="title">Euclidean Geometry in Three Dimensions</span></h5>
+<p id="p-1484">Euclidean geometry is the geometry of our experience in three dimensions. Planes look like infinite tabletops, lines in space are Euclidean straight lines. Any planar slice of 3-space inherits two-dimensional Euclidean geometry.</p>
+<p id="p-1485">The space for three-dimensional Euclidean geometry is \(\mathbb{R}^3\text{,}\) and we may use boldface notation \(\boldsymbol{v}\) to represent a point in \(\mathbb{R}^3\text{.}\) The group of transformations in this geometry consists of all rotations of \(\mathbb{R}^3\) about lines and all translations by vectors in \(\mathbb{R}^3\text{.}\) The distance between points \({\boldsymbol{v}}=(x_1,y_1,z_1)\) and \({\boldsymbol{w}}=(x_2,y_2,z_2)\) is given by the Euclidean distance formula</p>
+<div class="displaymath">
+\begin{equation*}
+|\boldsymbol{v}-\boldsymbol{w}| = \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2 + (z_1-z_2)^2}. 
+\end{equation*}
+</div>
+<p id="p-1486">Any transformation in the group can be expressed as a screw motion. A <dfn class="terminology">screw motion</dfn> is a transformation of \(\mathbb{R}^3\) consisting of a translation in the direction of a line followed by a rotation about that same line. Of course, rotations about lines and translations are special cases of this more general map.</p></article><article class="paragraphs" id="paragraphs-11"><h5 class="heading"><span class="title">Hyperbolic Geometry in Three Dimensions</span></h5>
+<p id="p-1487">The Poincaré disk model of hyperbolic geometry may be extended to three dimensions as follows. Let the space \(\mathbb{H}^3\) consist of all points inside the unit ball in \(\mathbb{R}^3\text{.}\) That is, let</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{H}^3 = \{(x,y,z) \in \mathbb{R}^3 | x^2 + y^2 + z^2 \lt  1 \}. 
+\end{equation*}
+</div>
+<p id="p-1488">The unit 2-sphere \(\mathbb{S}^2\) bounds \(\mathbb{H}^3\text{,}\) and is called the sphere at infinity. Points on the sphere at infinity are called ideal points and are not points in \(\mathbb{H}^3\text{.}\)</p>
+<p id="p-1489">The group of transformations for three-dimensional hyperbolic geometry is generated by inversions about spheres that are orthogonal to the sphere at infinity. Inversion about a sphere is defined analogously to inversion in a circle. Suppose \(S\) is a sphere in \(\mathbb{R}^3\) centered at \(\boldsymbol{v_0}\) with radius \(r\text{,}\) and \(\boldsymbol{v}\) is any point in \(\mathbb{R}^3\text{.}\) Define the point symmetric to \(\boldsymbol{v}\) with respect to \(S\) to be the point \(\boldsymbol{v}^*\) on the ray \(\overrightarrow{\boldsymbol{v_0v}}\) such that</p>
+<div class="displaymath">
+\begin{equation*}
+|{\boldsymbol{v}}-\boldsymbol{v_0}||\boldsymbol{v}^*-\boldsymbol{v_0}| = r^2. 
+\end{equation*}
+</div>
+<p id="p-1490">One may prove that inversion about a sphere \(S\) will send spheres orthogonal to \(S\) to themselves. So, composing two inversions about spheres orthogonal to \(\mathbb{S}^2_\infty\) generates an orientation preserving transformation of hyperbolic three-space \(\mathbb{H}^3\text{.}\) The transformation group consists of all such compositions. Lines in this geometry correspond to arcs of clines in \(\mathbb{H}^3\) that are orthogonal to the sphere at infinity (see line \(L\) in <a knowl="./knowl/fig-h3.html" title="Figure 8.1.1">Figure 8.1.1</a>). These lines are geodesics in \(\mathbb{H}^3\text{.}\) As in the two-dimensional case, Euclidean lines through the origin of \(\mathbb{H}^3\) are also hyperbolic lines. A plane in this geometry corresponds to the portion of a sphere or Euclidean plane inside \(\mathbb{H}^3\) that meets the sphere at infinity at right angles, such as planes \(P_1\) and \(P_2\) in <a knowl="./knowl/fig-h3.html" title="Figure 8.1.1">Figure 8.1.1</a>. If we restrict our attention to any plane in \(\mathbb{H}^3\text{,}\) we recover the two-dimensional hyperbolic geometry of Chapter 5.</p></article><figure class="figure-like" id="fig-h3"><img src="images/im-h3.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">8.1.1</span> One model of hyperbolic space \(\mathbb{H}^3\text{,}\) the open unit 2-ball.</figcaption></figure><article class="paragraphs" id="paragraphs-12"><h5 class="heading"><span class="title">Elliptic Geometry in three dimensions</span></h5>
+<p id="p-1491">Three-dimensional elliptic geometry is derived from the geometry that the 3-sphere \(\mathbb{S}^3\) inherits as a subspace of the Euclidean space \(\mathbb{R}^4\text{.}\) The 3-sphere consists of all points in 4-dimensional space one unit from the origin:</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{S}^3 = \{(x,y,z,w) \in \mathbb{R}^4~|~ x^2 + y^2 + z^2 + w^2 = 1\}.
+\end{equation*}
+</div>
+<p id="p-1492">Great circles in \(\mathbb{S}^3\) are circles of maximum diameter drawn in the space. Great circles correspond to geodesics in the space. Similarly, a great 2-sphere in \(\mathbb{S}^3\) is a 2-sphere of maximum diameter drawn in the space. As a subspace of \(\mathbb{S}^3\text{,}\) a great 2-sphere inherits the elliptic geometry of Chapter 6. The 3-sphere is discussed in more detail in <a knowl="./knowl/ex_3sphere.html" title="Example 8.1.3: The 3-sphere">Example 8.1.3</a>.</p>
+<p id="p-1493">The transformation group for elliptic geometry in three dimensions is conveniently described by viewing \(\mathbb{R}^4\) as the set of quaternions. A <dfn class="terminology">quaternion</dfn> has the form \(a +
+b\textbf{i} + c\textbf{j}+ d\textbf{k}\) where \(a, b, c, d\) are real numbers and \(\textbf{i}, \textbf{j},\) and \(\textbf{k}\) are imaginary numbers with the feature that \(\textbf{i}^2 = \textbf{j}^2 = \textbf{k}^2 = -1\) and the additional property that the product \(\textbf{ijk} = -1\text{.}\) The constant \(a\) is called the <dfn class="terminology">scalar term</dfn> of the quaternion \(q = a +
+b\textbf{i} + c\textbf{j}+ d\textbf{k}\text{.}\) The <dfn class="terminology">modulus</dfn> of \(q\) is \(|q|=\sqrt{a^2+b^2+c^2+d^2}\text{.}\) A quaternion \(q\) is called a <dfn class="terminology">unit quaternion</dfn>, if \(|q| = 1\text{.}\) The <dfn class="terminology">conjugate</dfn> of \(q\text{,}\) denoted \(q^*\text{,}\) is the quaternion \(q^* = a - b\textbf{i} - c\textbf{j} - d\textbf{k}\text{.}\) One can check that \(q \cdot q^* = |q|^2\text{.}\) The 3-sphere then consists of all unit quaternions.</p>
+<p id="p-1494">The transformation group for the geometry on \(\mathbb{S}^3\) is generated by multiplication on the left and/or right by unit quaternions. For fixed unit quaternions \(u\) and \(v\text{,}\) the map \(T:\mathbb{S}^3 \to \mathbb{S}^3\) by \(T(q) = u q v\) is a typical transformation in three-dimensional elliptic geometry. These transformations preserve antipodal points on the 3-sphere - distinct points on \(\mathbb{S}^3\) that are on the same Euclidean line through the origin in \(\mathbb{R}^4\text{.}\)</p></article><p id="p-1495">As in the two-dimensional case, three-dimensional Euclidean, hyperbolic, and elliptic geometries are homogenous, isotropic and metric. Furthermore, triangles distinguish the geometries: in Euclidean space \(\mathbb{R}^3\text{,}\) a triangle has angle sum equal to \(\pi\) radians; in \(\mathbb{S}^3\) any triangle angle sum exceeds \(\pi\) radians; in \(\mathbb{H}^3\) any triangle angle sum is less than \(\pi\) radians. As a result, if we place a solid like a dodecahedron in \(\mathbb{H}^3\) (so that the faces are portions of planes in \(\mathbb{H}^3\)), the angles at which the corners come together are smaller than the corner angles of the Euclidean dodecahedron. These angles shrink further as the corner points of the solid approach ideal points on the sphere at infinity. On the other hand, placing the dodecahedron in \(\mathbb{S}^3\) will increase the angles at the corners.</p>
+<p id="p-1496">This flexibility is very useful. Whereas surfaces can be constructed from polygons by identifying their edges in pairs, many 3-manifolds can be constructed from a 3-complex (such as the Platonic solids) by identifying its faces in pairs. A 3-manifold built in this way will admit either Euclidean geometry, hyperbolic geometry, or elliptic geometry depending on how, if at all, the corner angles need to change so that the corners come together to form a perfect patch of three-dimensional space. Now we investigate a few 3-manifolds and the geometry they admit.</p>
+<article class="example-like" id="ex_3torus"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">8.1.2</span> <span class="title">The 3-torus</span>
+</h6>
+<p id="p-1497"></p>
+<p id="p-1498">We may think of the 3-torus \(\mathbb{T}^3\) as a cubical room with the following face (or wall) identifications: if we propel ourselves (with a jet pack) up through the ceiling, we reappear through the floor directly below where we had been. For instance, the elliptical points in the following figure are identified. Each point on the top face is identified with the corresponding point on the bottom face. If we fly through the left wall we reappear through the right wall at the corresponding spot (see the triangles in the figure). If we fly through the front wall we reappear through the back wall at the corresponding spot (see the squares in the figure).</p>
+<div class="sidebyside" id="sidebyside-56"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-3torus.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-1499">The 3-torus is the three-dimensional analogue of the torus video screen we saw on the first pages of this text. In fact, a slice of the 3-torus in a plane parallel to one of the faces <em class="emphasis">is</em> a torus. One checks that under the face identification, all eight corners come together in a single point. The angles at these corners are such that they form a perfect patch of three-dimensional space. We do not need to inflate the corner angles (in elliptic space) or shrink the angles (in hyperbolic space) in order for the corners to come together perfectly.</p>
+<p id="p-1500">We can also view the 3-torus as an orbit space as discussed in Section 7.7. In particular, let \(T_x, T_y, T_z\) represent translations of \(\mathbb{R}^3\) by one unit in the \(x\)-direction, \(y\)-direction, and \(z\)-direction, respectively. That is, \(T_x(x,y,z) = (x+1,y,z)\text{,}\) \(T_y(x,y,z) = (x,y+1,z)\) and \(T_z(x,y,z)
+= (x,y,z+1)\text{.}\) These three transformations generate a group of transformations \(\Gamma\) of \(\mathbb{R}^3\text{,}\) and any transformation in the group has the form \(T(x,y,z) = (x + a, y + b, z + c)\) where \(a, b,
+c\) are integers. A fundamental domain of the quotient space \(\mathbb{R}^3/\Gamma\) is the unit cube</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{I}^3 = \{(x,y,z) ~|~ 0 \leq x, y,  z \leq 1 \}, 
+\end{equation*}
+</div>
+<p>and all the images of this cube under the transformations in \(\Gamma\) tile \(\mathbb{R}^3\text{.}\) The 3-torus is a quotient of \(\mathbb{R}^3\) generated by Euclidean isometries, and it inherits Euclidean geometry.</p></article><p id="p-1501">The 3-torus is one of just ten compact and connected 3-manifolds admiting Euclidean geometry. Of these ten, six are orientable, and four are non-orientable. The 3-torus is orientable, and the other five orientable Euclidean manifolds are presented below in <a knowl="./knowl/ex_hwman.html" title="Example 8.1.7: The Hantschze-Wendt manifold">Example 8.1.7</a> and <a knowl="./knowl/ex_4euc.html" title="Example 8.1.9: Four more Euclidean 3-manifolds">Example 8.1.9</a>.</p>
+<p id="p-1502">The elliptic 3-manifolds have also been classified. There are infinitely many different types, and it turns out they are all orientable. The 3-sphere is the simplest elliptic 3-manifold, and Albert Einstein assumed the universe had this shape when he first solved his equations for general relativity. He found a static, finite, simply connected universe without boundary appealing for aesthetic reasons, and it cleared up some paradoxes in physics that arise in an infinite universe. However, the equations of general relativity only tell us about the local nature of space, and do not fix the global shape of the universe. In 1917, the Dutch astronomer Willem De Sitter (1872-1934)  noticed that Einstein's solutions admitted a another, different global shape: namely three-dimensional elliptic space obtained from the 3-sphere by identifying antipodal points, just as we did in Chapter 6 in the two-dimensional case.</p>
+<article class="example-like" id="ex_3sphere"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">8.1.3</span> <span class="title">The 3-sphere</span>
+</h6>
+<p id="p-1503"></p>
+<p id="p-1504">Recall, the 3-sphere consists of all points in 4-dimensional space 1 unit from the origin:</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{S}^3 = \{(x,y,z,w) ~|~ x^2 + y^2 + z^2 + w^2 = 1\}.
+\end{equation*}
+</div>
+<p id="p-1505">One model of \(\mathbb{S}^3\) consists of two solid balls in \(\mathbb{R}^3\) whose boundary 2-spheres are identified point for point, as in the following figure.  The figure shows a path from point \(a\) to point \(b\) in \(\mathbb{S}^3\) that goes through the point \(p\) on the boundary of the left-hand solid ball before entering the right-hand solid ball through the point on its boundary with which \(p\) has been identified (also called \(p\)).</p>
+<div class="sidebyside" id="sidebyside-57"><div class="sbsrow" style="margin-left:12.5%;margin-right:12.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-3sphere.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-1506">The 3-sphere has interesting features, often accessible by analogy with the 2-sphere. If you slice the 2-sphere with a plane in \(\mathbb{R}^3\text{,}\) the intersection is a circle (or a single point if the plane is tangent to the 2-sphere). Moreover, the circle of intersection is a geodesic on the 2-sphere if it is a great circle: a circle of maximum radius drawn on the 2-sphere. Bumped up a dimension, if you “slice” the 3-sphere with \(\mathbb{R}^3\text{,}\) the intersection is a 2-sphere (or a single point if the slice is tangent to \(\mathbb{S}^3\)). Moreover, the 2-sphere of intersection is a great 2-sphere if it is a 2-sphere of maximum diameter drawn in \(\mathbb{S}^3\text{.}\) The boundary 2-sphere common to both solid balls in the figure is a great 2-sphere of \(\mathbb{S}^3\text{.}\)</p>
+<p id="p-1507">One may also view \(\mathbb{S}^3\) by stereographically projecting it into the space obtained from \(\mathbb{R}^3\) by adding a point at \(\infty\text{,}\) much as we identified \(\mathbb{S}^2\) with the extended plane via stereographic projection in Section 3.3. Let \(\widehat{\mathbb{R}^3}\) denote real 3-space with a point at infinity attached to it. To construct the stereographic projection map, it is convenient to first express \(\mathbb{R}^3\) in terms of pure quaternions. A <dfn class="terminology">pure quaternion</dfn> is a quaternion \(q\) whose scalar term is 0. That is, a pure quaternion has the form \(q =
+b\textbf{i} + c\textbf{j} + d\textbf{k}\text{.}\) The point \((x,y,z)\) in \(\mathbb{R}^3\) is identified with the pure quaternion \(q = x\textbf{i} + y\textbf{j} + z
+\textbf{k}.\)</p>
+<p id="p-1508">Though we are working in four-dimensional space, <a knowl="./knowl/fig-stpro.html" title="Figure 3.3.4">Figure 3.3.4</a> serves as a guide in the construction of the stereographic projection map. Let \(N = (0,0,0,1)\) be the north pole on \(\mathbb{S}^3\text{.}\) If \(P = (a,b,c,d)\) is any point on \(\mathbb{S}^3\) other than \(N\text{,}\) construct the Euclidean line through \(N\) and \(P\text{.}\) This line has parametric form</p>
+<div class="displaymath">
+\begin{equation*}
+{\cal L}(t)= \langle 0,0,0,1\rangle + t\langle a,b,c,d-1\rangle.
+\end{equation*}
+</div>
+<p id="p-1509">We define the image of \(P\) under stereographic projection to be the intersection of this line with the three-dimensional subspace consisting of all points \((x,y,z,0)\) in \(\mathbb{R}^4\text{.}\) This intersection occurs when \(1 + t(d-1) = 0\text{,}\) or when</p>
+<div class="displaymath">
+\begin{equation*}
+t = \frac{1}{1-d}. 
+\end{equation*}
+</div>
+<p id="p-1510">Then the stereographic projection map \(\phi:\mathbb{S}^3 \to
+\widehat{\mathbb{R}^3}\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+\phi((a,b,c,d)) =
+\begin{cases}\frac{a}{1-d}\textbf{i}+\frac{b}{1-d}\textbf{j}+\frac{c}{1-d}\textbf{k} \amp  \text{ if \(d \neq 1\); }  \\
+\infty \amp  \text{ if  \(d=1\). } 
+\end{cases} 
+\end{equation*}
+</div>
+<p id="p-1511">In this way, we can transfer the geometry of the 3-sphere into real 3-space with a point at infinity attached to it. For instance, if \(P = (a,b,c,d)\) is on the 3-sphere, its antipodal point is \(-P = (-a,-b,-c,-d)\) and one can show (in the exercises) that these points get mapped by \(\phi\) to points in \(\mathbb{R}^3\) (pure quaternions) \(q = \phi(P)\) and \(u = \phi(-P)\) with the property that \(q \cdot u^* = -1\text{.}\) As a result, two points \(q\) and \(u\) in \(\widehat{\mathbb{R}^3}\) are called antipodal points if they satisfy the equation \(q \cdot u^* = -1\text{.}\)</p></article><article class="example-like" id="ex_pdspace"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">8.1.4</span> <span class="title">The Poincaré dodecahedral space</span>
+</h6>
+<p id="p-1512">The <dfn class="terminology">Poincaré dodecahedral space</dfn> has been given consideration as a model for the shape of our universe (see <a knowl="./knowl/nature.html" title="Bibliographic Entry 25: Dodecahedral space topology as an explanation for weak wide-angle temperature correlations in the cosmic microwave background">[25]</a>). Start with a dodecahedron living in \(\mathbb{R}^3\) (we're thinking of it as a solid now, not a surface) and identify opposite faces with a one-tenth clockwise twist (rotation by \(2\pi/10\) radians). It is cumbersome to indicate all face identifications, so the figure below shows the identification of the front face with the back face.  For instance, the two corners labeled with a 1 get matched.Notice: no points in the interior of the dodecahedron get identified.</p>
+<p id="p-1513">With this face identification the twenty corners of the dodecahedron come together in five groups of four (one group of 4 is marked with vertices in the figure), and the angles are too small for the corners to create a full open ball of three-dimensional space when they come together. Placing the dodecahedron in elliptic space inflates the corner angles, and we may make these angles fat enough to determine a perfect three-dimensional patch of space.</p>
+<div class="sidebyside" id="sidebyside-58"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/poincare.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-1514">Extending the ideas of Section 7.7 to this case, one can show that the Poincaré dodecahedral space space is a quotient of the 3-sphere \(\mathbb{S}^3\) by a group of isometries. The dodecahedron pictured here is a fundamental domain of the space. Just as the polygons in Section 7.7 tiled the space in which they lived, and the cubical fundamental domain of the 3-torus tiles \(\mathbb{R}^3\text{,}\) the dodecahedron tiles \(\mathbb{S}^3\text{.}\) Although far from obvious, it turns out that \(\mathbb{S}^3\) is tiled by 120 copies of this dodecahedron!</p></article><p id="p-1515">Hyperbolic 3-manifolds have not been completely classified, but a remarkable relationship exists between geometry and shape in this case: a connected orientable 3-manifold supports at most one hyperbolic structure. This marks an important difference from the two-dimensional case. If a two-dimensional being knows that she lives in a two-holed torus, say, then the area of her universe is determined by its curvature, thanks to the Gauss-Bonnet formula, but other geometric properties may vary, such as the length of minimal-length closed geodesic paths in the universe, as we saw in <a knowl="./knowl/ex_pants.html" title="Example 7.6.6: Building hyperbolic surfaces from pants">Example 7.6.6</a>. No such freedom exists in the three-dimensional case.</p>
+<p id="p-1516">Here is one hyperbolic 3-manifold, also built as a quotient of the dodecahedron.</p>
+<article class="example-like" id="ex_swspace"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">8.1.5</span> <span class="title">The Seifert-Weber space</span>
+</h6>
+<p id="p-1517">Identify opposite faces of the dodecahedron with a three-tenths clockwise turn. With this identification, all twenty corners of the dodecahedron come together to a single point, and no such identification is possible unless we drastically shrink the corner angles. We may do this by placing the dodecahedron in hyperbolic space. The resulting hyperbolic 3-manifold is called the <dfn class="terminology">Seifert-Weber space</dfn>.</p>
+<div class="sidebyside" id="sidebyside-59"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/swspace.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></article><article class="example-like" id="ex_lenspace"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">8.1.6</span> <span class="title">Lens spaces</span>
+</h6>
+<p id="p-1518">The lens spaces \(L(p,q)\) form an infinite family of elliptic 3-manifolds. Assume \(p &gt; q\) are positive integers whose largest common factor is 1. The lens spaces may be defined as follows. Consider the unit solid ball living in \(\mathbb{R}^3\) whose boundary is the unit 2-sphere. The ball consists of all points \((x,y,z)\) such that \(x^2 + y^2 + z^2 \leq 1\text{.}\) Any point on the boundary 2-sphere can be expressed in coordinates \((z,t)\) where \(z\) is a complex number, \(t\) is real, and \(|z|^2 + t^2 = 1\text{.}\) The <dfn class="terminology">lens space \(L(p,q)\)</dfn>  is obtained from the solid ball by identifying each point \((z,t)\) on the boundary 2-sphere with the point \((e^{(2\pi q/p)i} z,-t)\text{.}\) Note that the north pole of the boundary 2-sphere is \((0,1)\) and it is identified with the south pole \((0,-1)\text{.}\) Any other point \(u\) in the northern hemisphere is identified with a single point in the southern hemisphere. This point is found by reflecting \(u\) across the \(xy\)-plane, then rotating around the \(z\)-axis by \(2\pi q/p\) radians. Each point on the equator is identified with \(p-1\) other points.</p>
+<p id="p-1519">The lens space \(L(p,q)\) can be obtained from a cell division of the unit solid ball. The cell division has \(p+2\) vertices: the north pole \(n\text{,}\) the south pole \(s\text{,}\) and \(p\) equally spaced vertices along the equator, label them \(v_0, v_1, \cdots,
+v_{p-1}\text{.}\) The following figure depicts this scene for \(p = 5\text{.}\) There is an edge connecting \(v_i\) to each of its neighbors on the equator, creating \(p\) edges around the equator. There is an edge connecting each \(v_i\) with \(n\) and an edge connecting each \(v_i\) with \(s\text{,}\) as pictured, for a total of \(3p\) edges. The vertices and edges create 2\(p\) triangular faces on the boundary sphere, half of them in the northern hemisphere. The 3-complex has a single 3-cell, corresponding to the interior of the solid ball.</p>
+<div class="sidebyside" id="sidebyside-60"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-lens.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-1520">Let \(N_i\) denote the face in the northern hemisphere whose vertices are \(v_i, v_{i+1}, n\text{.}\) Let \(S_i\) be the face in the southern hemisphere whose vertices are \(v_i, v_{i+1}\text{,}\) and \(s\text{.}\) The lens space \(L(p,q)\) is created by identifying face \(N_i\) with face \(S_{i+q}\) where the sum \(i + q\) is taken modulo \(p\text{.}\) For instance, in \(L(5,2)\text{,}\) the shaded face \(N_0\) in the figure is identified with the shaded face \(S_2\) (and the circle of points pictured in \(N_0\) gets sent to the circle of points in \(S_2\)). The faces \(N_1\) and \(S_3\) are identified, as are \(N_2\) with \(S_4\text{,}\) \(N_3\) with \(S_0\) and \(N_4\) with \(S_1\text{.}\)</p></article><article class="example-like" id="ex_hwman"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">8.1.7</span> <span class="title">The Hantschze-Wendt manifold</span>
+</h6>
+<p id="p-1521"> This interesting manifold can be constructed from two identically sized cubes that share a face, as in the following figure. The resulting box has 10 faces to be identified in pairs. A three-dimensional bug with a jet pack living in the manifold would experience the following face identifications. The top and bottom faces are identified just as they were in the 3-torus. Each point on the top back face (see the circle in the figure) is identified with a single point on the bottom back face. This point is the reflection of the given point across the vertical segment bisecting the face. The top front face and the bottom front face are identified the same way. The figure shows two square points on these faces that are identified. The top left face and bottom right face are identified with a 180\(^\circ\) rotation (see the elliptical point and its image point), as are the bottom left face and the top right face (the two triangular points are identified). This 3-manifold also inherits Euclidean geometry.</p>
+<div class="sidebyside" id="sidebyside-61"><div class="sbsrow" style="margin-left:37.5%;margin-right:37.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hwmanifold.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></article><p id="p-1522">A more elegant description of this manifold makes use of the orbit space construction of Section 7.7. Consider a unit cube sitting in \(\mathbb{R}^3\text{.}\) Let \(T_1\) be the following Euclidean transformation: Rotate by 180\(^\circ\) about segment 1 in <a knowl="./knowl/fig-hw2manifold.html" title="Figure 8.1.8">Figure 8.1.8</a>(a) and then translate along the length of that segment. The original cube and its image are pictured in <a knowl="./knowl/fig-hw2manifold.html" title="Figure 8.1.8">Figure 8.1.8</a>(b). Let \(T_2\) be defined similarly using segment 2 of <a knowl="./knowl/fig-hw2manifold.html" title="Figure 8.1.8">Figure 8.1.8</a>(a). The original cube and its image under \(T_2\) are pictured in <a knowl="./knowl/fig-hw2manifold.html" title="Figure 8.1.8">Figure 8.1.8</a>(c). The transformation \(T_3\) is defined the same way using segment 3, and <a knowl="./knowl/fig-hw2manifold.html" title="Figure 8.1.8">Figure 8.1.8</a>(d) depicts its effect on the original cube. Each of these transformations is a screw motion. In particular, each screw motion consists of rotation by 180\(^\circ\) and translation by unit length. The Hantzsche-Wendt manifold is then the quotient of \(\mathbb{R}^3\) by the group of Euclidean isometries generated by the three screw motions, and it inherits Euclidean geometry.</p>
+<figure class="figure-like" id="fig-hw2manifold"><img src="images/im-hw2manifold.svg" width="90%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">8.1.8</span> Describing the Hantzsche-Wendt Manifold via a group of transformations.</figcaption></figure><p id="p-1523">By repeated applications of the three transformations and their inverses one may produce image cubes covering half of \(\mathbb{R}^3\) in a checkerboard pattern. The other points in \(\mathbb{R}^3\) are themselves grouped into cubes and form the other half of the checkerboard pattern. It follows that the ten-faced solid in <a knowl="./knowl/ex_hwman.html" title="Example 8.1.7: The Hantschze-Wendt manifold">Example 8.1.7</a> is a fundamental domain of the manifold, and the face identifications are determined by the transformation group.</p>
+<article class="example-like" id="ex_4euc"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">8.1.9</span> <span class="title">Four more Euclidean 3-manifolds</span>
+</h6>
+<p id="p-1524">Two orientable 3-manifolds arise from slight changes to the 3-torus construction of <a knowl="./knowl/ex_3torus.html" title="Example 8.1.2: The 3-torus">Example 8.1.2</a>. The <dfn class="terminology">quarter turn manifold</dfn> results when the front and back faces of a cube are identified with a 90\(^\circ\) rotation, while the remaining 2 pairs of opposite faces are identified directly, as they were for the 3-torus. <a knowl="./knowl/fig-4eucman.html" title="Figure 8.1.10">Figure 8.1.10</a>(a) depicts this identification. The F on the front face is identified with an F on the back face by a one-quarter turn.</p>
+<p id="p-1525">The <dfn class="terminology">half turn manifold</dfn> results when the front and back faces of a cube are identified with a 180\(^\circ\) rotation, while the remaining 2 pairs of opposite faces are identified directly, as they were for the 3-torus. See Figure <a knowl="./knowl/fig-4eucman.html" title="Figure 8.1.10">Figure 8.1.10</a>(b).</p>
+<p id="p-1526">The remaining two connected, compact, orientable Euclidean 3-manifolds have a hexagonal prism as the fundamental domain. A hexagon can be used to tile the plane, and copies of a hexagonal prism as in <a knowl="./knowl/fig-4eucman.html" title="Figure 8.1.10">Figure 8.1.10</a>(c) can tile \(\mathbb{R}^3\text{.}\) Note that the prism has two hexagonal faces and the other six faces are parallelograms. The <dfn class="terminology">one-third turn manifold</dfn> is obtained as follows: directly identify parallelograms that are opposite one another, and identify the two hexagonal faces with a rotation of 120\(^\circ\text{,}\) as in <a knowl="./knowl/fig-4eucman.html" title="Figure 8.1.10">Figure 8.1.10</a>(c). The <dfn class="terminology">one-sixth turn manifold</dfn> is obtained by identifying the parallelograms as before, but the two hexagonal faces by a rotation of just 60\(^\circ\text{,}\) as in <a knowl="./knowl/fig-4eucman.html" title="Figure 8.1.10">Figure 8.1.10</a>(d). More detailed discussions of these and the non-orientable Euclidean 3-manifolds can be found in <a knowl="./knowl/weeks.html" title="Bibliographic Entry 12: The Shape of Space, 2nd Ed.">[12]</a> and <a knowl="./knowl/adams.html" title="Bibliographic Entry 16: The Shape of the Universe: Ten Possibilities">[16]</a>.</p></article><figure class="figure-like" id="fig-4eucman"><img src="images/im-4eucman.svg" width="65%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">8.1.10</span> Four Euclidean 3-manifolds: (a) the quarter turn manifold; (b) the half turn manifold; (c) the one-third turn manifold; and (d) the one-sixth turn manifold.</figcaption></figure></section><section class="exercises" id="exercises-29"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<a href="section8-1.html#exercises-29" class="permalink">¶</a><article class="exercise-like" id="exercise-202"><h6 class="heading">
+<span class="codenumber">1</span> </h6>
+<p id="p-1527"><em class="emphasis">Investigating quaternions</em>.</p>
+<p id="p-1528">a. Show that \(\textbf{ij} = \textbf{k}\text{,}\) \(\textbf{jk} = \textbf{i},\) and \(\textbf{ki}=\textbf{j}\text{.}\)</p>
+<p id="p-1529">b. Show that \(\textbf{ji} = -\textbf{k}\text{,}\) \(\textbf{kj} = -\textbf{i}\text{,}\) and \(\textbf{ik}= -\textbf{j}.\)</p>
+<p id="p-1530">c. The conjugate of a quaternion \(q = a + b\textbf{i} + c\textbf{j} +
+d\textbf{k}\) is \(q^* = a - b\textbf{i} - c\textbf{j} - d\textbf{k}\text{.}\) The modulus of \(q\) is \(|q| = \sqrt{a^2 + b^2 + c^2 + d^2}\text{.}\) Prove that \(q \cdot q^* = |q|^2\) for any quaternion.</p>
+<p id="p-1531">d. Prove that \(|uv| = |u| \cdot |v|\) for any quaternions. Thus, the transformations in three-dimensional elliptic geometry, which have the form \(T(q) = u q v\) where \(u, q, v\) are unit quaternions, do send a point of \(\mathbb{S}^3\) to a point on \(\mathbb{S}^3\text{.}\)</p></article><article class="exercise-like" id="exercise-203"><h6 class="heading">
+<span class="codenumber">2</span> </h6>
+<p id="p-1532">Suppose \(P = (a,b,c,d)\) and \(-P = (-a,-b,-c,-d)\) are diametrically opposed points on \(\mathbb{S}^3\text{.}\) Prove that</p>
+<div class="displaymath">
+\begin{equation*}
+\phi(P) \cdot \phi(-P)^* =-1,
+\end{equation*}
+</div>
+<p>where \(\phi : \mathbb{S}^3 \to \widehat{\mathbb{R}^3}\) is stereographic projection.</p></article><article class="exercise-like" id="exercise-204"><h6 class="heading">
+<span class="codenumber">3</span> </h6>
+<p id="p-1533">Verify that in the 3-torus of <a knowl="./knowl/ex_3torus.html" title="Example 8.1.2: The 3-torus">Example 8.1.2</a>, all eight corners come together at a single point.</p></article><article class="exercise-like" id="exercise-205"><h6 class="heading">
+<span class="codenumber">4</span> </h6>
+<p id="p-1534">Verify that in the Poincaré dodecahedral space of <a knowl="./knowl/ex_pdspace.html" title="Example 8.1.4: The Poincaré dodecahedral space">Example 8.1.4</a>, the corners come together in five groups of four. Specify the five groups.</p></article><article class="exercise-like" id="exercise-206"><h6 class="heading">
+<span class="codenumber">5</span> </h6>
+<p id="p-1535">Verify that in the Seifert-Weber space of <a knowl="./knowl/ex_swspace.html" title="Example 8.1.5: The Seifert-Weber space">Example 8.1.5</a>, all 20 corners come together in a single point.</p></article><article class="exercise-like" id="exercise-207"><h6 class="heading">
+<span class="codenumber">6</span> </h6>
+<p id="p-1536">What happens if you identify each pair of opposite faces in a cube with a one-quarter twist? Convince yourself that not all 8 corners come together at a single point, so that the result is not a Euclidean 3-manifold.</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

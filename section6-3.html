@@ -1,0 +1,462 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:41-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Measurement in Elliptic Geometry</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section6-2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section6-4.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section6-2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section6-4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3" class="active">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section6-3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Measurement in Elliptic Geometry</span>
+</h2>
+<a href="section6-3.html" class="permalink">¶</a><section class="introduction" id="introduction-27"><p id="p-1079">Rather than derive the arc-length formula here as we did for hyperbolic geometry, we state the following definition and note the single sign difference from the hyperbolic case. This sign difference is consistent with the sign difference in the algebraic descriptions of the transformations in the respective geometries.</p>
+<article class="definition-like" id="definition-31"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.3.1</span>
+</h6>
+<p id="p-1080">If \(\boldsymbol{r}: [a,b] \to \mathbb{P}^2\) is a smooth curve in  \((\mathbb{P}^2,{\cal S})\text{,}\) the <dfn class="terminology">length of \(\boldsymbol{r}\)</dfn>, denoted \({\cal L}(\boldsymbol{r})\text{,}\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{r}) = \int_a^b \frac{2|\boldsymbol{r}^\prime(t)|}{1 + |\boldsymbol{r}(t)|^2}~dt.
+\end{equation*}
+</div>
+<p id="p-1081">The <dfn class="terminology">area</dfn> of a figure \(R\) described in polar coordinates in the elliptic space \(\mathbb{P}^2\text{,}\) denoted \(A(R)\text{,}\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+A(R) = \iint_R \frac{4r}{(1+r^2)^2}dr d\theta. 
+\end{equation*}
+</div></article><article class="theorem-like" id="theorem-52"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.3.2</span>
+</h6>
+<p id="p-1082">Arc-length is an invariant of elliptic geometry.</p></article><p id="p-1083">The proof of this theorem is left as an exercise, and is essentially the same as the proof that hyperbolic arc-length is an invariant of hyperbolic geometry, from which it follows that area is invariant. One can also prove that the shortest path between two points is along the elliptic line between them.  That is, geodesics follows elliptic lines.</p>
+<p id="p-1084">However, one must be careful when measuring the shortest path between points in the projective plane. If \(p\) and \(q\) are two points in \(\mathbb{P}^2\) then there is exactly one elliptic line through them both, but we may view this line as consisting of two elliptic segments, both of which connect \(p\) to \(q\text{.}\) That is, if a bug finds herself at point \(p\) and wants to walk along an elliptic line to point \(q\text{,}\) she can do so by proceeding in either direction along the line, as shown in <a knowl="./knowl/fig-ellline.html" title="Figure 6.3.3">Figure 6.3.3</a>. The <dfn class="terminology">elliptic distance between \(p\) and \(q\)</dfn>, which we denote by \(d_S(p,q)\text{,}\) is then the minimum value of the two segment lengths.</p>
+<figure class="figure-like" id="fig-ellline"><img src="images/im-ellline.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.3.3</span> There is a single elliptic line joining points \(p\) and \(q\text{,}\) but two elliptic line segments.  The distance from \(p\) to \(q\) is the shorter of these two segments.</figcaption></figure><article class="theorem-like" id="th_elldistance"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.3.4</span>
+</h6>
+<p id="p-1085">The distance between two points \(p\) and \(q\) in in \((\mathbb{P}^2,{\cal S})\)  is</p>
+<div class="displaymath">
+\begin{equation*}
+d_S(p,q)=~\text{min}\bigg\{2\arctan\bigg(\bigg|\frac{q - p}{1+\overline{p}q}\bigg|\bigg), 2\arctan\bigg(\bigg|\frac{1+\overline{p}q}{q-p}\bigg|\bigg)\bigg\}.
+\end{equation*}
+</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-43" id="proof-43"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-43" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1086">We first determine the elliptic distance between the origin and a point \(x\) (with \(0 \lt  x \leq 1\)) on the positive real axis.</p>
+<p id="p-1087">The elliptic line through 0 and \(x\) lives on the real axis, and we may parameterize the “eastbound” segment connecting 0 to \(x\) by \(\boldsymbol{r}(t) = t\) for \(0 \leq t \leq x\text{.}\) (The “westbound” segment from 0 to \(x\) is clearly not shorter than the eastbound segment.) The length of this segment is</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^x\frac{2|\boldsymbol{r}^\prime(t)|}{1 + |\boldsymbol{r}(t)|^2}~dt\amp =\int_0^x\frac{2|1|}{1 + |t|^2}~dt\\
+\amp = 2\int_0^x\frac{1}{1+t^2}~dt\\
+\amp = 2\arctan(x).
+\end{align*}
+</div>
+<p id="p-1088">Thus, \(d_S(0,x)=2\arctan(x)\text{,}\) for \(0 \lt x \leq 1\text{.}\)</p>
+<p id="p-1089">To determine the distance \(d_S(p,q)\) between arbitrary points in \(\mathbb{P}^2\text{,}\) we may first apply a transformation in \(\cal{S}\) that sends \(p\) to the origin, and \(q\) to a point on the positive real axis. By an appropriate choice of \(\theta\text{,}\) the transformation</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z-p}{1+\overline{p}z}
+\end{equation*}
+</div>
+<p>will do the trick.  Now, \(T\) is a Möbius transformation of the entire extended plane, and it may take \(q\) outside the unit disk, in which case \(q_a\) will be mapped to a point on the real axis inside the unit disk.  So, either \(|T(q)|\) or \(|T(q_a)|\) will be a real number between 0 and 1.  If we call this number \(x\text{,}\) then \(d_S(p,q)=d_S(0,x)\text{,}\) since transformations in \(\cal{S}\) preserve distance between points.</p>
+<p id="p-1090">Now,</p>
+<div class="displaymath">
+\begin{equation*}
+|T(q)|= \bigg|\frac{q - p}{1+\overline{p}q}\bigg|\text{,}
+\end{equation*}
+</div>
+<p>and the reader can check, using the fact that \(q_a = -1/\overline{q}\text{,}\) that</p>
+<div class="displaymath">
+\begin{equation*}
+|T(q_a)| = \bigg|\frac{1+\overline{p}q}{q - p}\bigg|.
+\end{equation*}
+</div>
+<p>It follows that</p>
+<div class="displaymath">
+\begin{equation*}
+d_S(p,q)=~\text{min}\bigg\{2\arctan\bigg(\bigg|\frac{q -
+p}{1+\overline{p}q}\bigg|\bigg), 2\arctan\bigg(\bigg|\frac{1+\overline{p}q}{q-p}\bigg|\bigg)\bigg\}.
+\end{equation*}
+</div>
+<p id="p-1091">This completes the proof.</p></article></div>
+<p id="p-1092">With the sphere as our model, we can check our formulas against measurements on the sphere. For instance, \(d_S(0,1)=2\arctan(1)=\pi/2\text{.}\) The elliptic segment from 0 to 1 corresponds via stereographic projection to one-quarter of a great circle on the unit sphere.  Any great circle on the unit sphere has circumference \(2\pi\text{,}\) so one-quarter of a great circle has length \(\pi/2\) on the sphere.  We also note that the distance formula \(d_S(0,x) = 2\arctan(x)\) applies to spherical geometry \((\mathbb{C}^+,{\cal S})\) for all positive real numbers \(x\text{,}\) and this distance matches the corresponding distances of the points on the unit 2-sphere, see <a knowl="./knowl/hmk-sphere-distance.html" title="Exercise 6.3.12">Exercise 6.3.12</a>.</p>
+<p id="p-1093">We emphasize that \(\pi/2\) is an upper bound for the distance between two points in \((\mathbb{P}^2,{\cal S})\text{.}\) However, there is no upper bound on how long a journey along an elliptic line can be.  If Bormit the bug wants to head out from point \(p\) and travel \(r\) units along any line, Bormit can do it, without obstruction, for any \(r \gt 0\text{.}\)  Of course, if \(r\) is large enough, Bormit will do “laps” on this journey.  We say a path is a geodesic path if it follows along an elliptic line.</p>
+<article class="definition-like" id="definition-32"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">6.3.5</span>
+</h6>
+<p id="p-1094">In \((\mathbb{P}^2,{\cal S})\text{,}\) the <dfn class="terminology">elliptic circle</dfn> centered at \(z_0\) with radius \(r\) consists of all points \(z \in \mathbb{P}^2\) such that there exists a geodesic path of length \(r\) from \(z_0\) to \(z\text{.}\)</p></article><p id="p-1095">Each transformation \(T\) in \(\cal{S}\) is an elliptic Möbius transformation by <a knowl="./knowl/th_antinvimplieselliptic.html" title="Theorem 6.2.4">Theorem 6.2.4</a> that fixes two antipodal points, say \(p\) and \(p_a\text{.}\) So \(T\) pushes points along type II clines of \(p\) and \(p_a\text{,}\) and since transformations preserve distance between points, these type II clines of \(p\) and \(p_a\) determine elliptic circles; all points on these type II clines are equidistant from \(p\text{.}\)</p>
+<p id="p-1096">Now, suppose \(p\) and \(q\) are any distinct points in \(\mathbb{P}^2\text{.}\)  There exists a type II cline of \(p\) and \(p_a\) that goes through \(q\text{.}\)  If this cline lives entirely inside the closed unit disk it represents the elliptic circle centered at \(p\) through \(q\text{.}\)  Of course, this cline may not live entirely inside the disk, as is the case in <a knowl="./knowl/fig-ellcircle.html" title="Figure 6.3.6">Figure 6.3.6</a>.  But each point on the type II cline of \(p\) and \(p_a\) through \(q\) has antipodal point on the type II cline of \(p\) and \(p_a\) through \(q_a\text{.}\)  So, in \(\mathbb{P}^2\) we may represent the elliptic circle centered at \(p\) through \(q\) by the portions of these two type II clines of \(p\) and \(p_a\) that live in the closed unit disk.</p>
+<figure class="figure-like" id="fig-ellcircle"><img src="images/im-ellcircle.svg" width="65%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.3.6</span> The elliptic circle centered at \(p\) through \(q\) in \(\mathbb{P}^2\) may consist of portions of two distinct clines.</figcaption></figure><p id="p-1097">We note also that elliptic circles centered at the origin correpond to Euclidean circles centered at the origin.  In particular, a Euclidean circle centered at the origin with Euclidean radius \(a\) (with \(0 \lt  a \lt  1\)) corresponds to an elliptic circle centered at the origin with elliptic radius \(2\arctan(a)\text{.}\)</p>
+<article class="theorem-like" id="thm_ellcirc"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.3.7</span>
+</h6>
+<p id="p-1098">An elliptic circle in \(\mathbb{P}^2\) with elliptic radius \(r \lt  \pi/2\) has circumference \(C = 2\pi\sin(r)\text{.}\)</p></article><p id="p-1099">The proof of this theorem is left as an exercise. Circles with elliptic radius greater than or equal to \(\pi/2\) are also investigated in the exercises.  They may not look like circles!</p>
+<article class="paragraphs" id="paragraphs-7"><h5 class="heading"><span class="title">The area of a triangle</span></h5>
+<p id="p-1100">We now turn our attention to finding a formula for the area of a triangle in elliptic geometry.  We begin with lunes. A <dfn class="terminology">lune</dfn> is the region in \(\mathbb{P}^2\) bounded between two elliptic lines. How do two elliptic lines bound a region? Two lines trap a region because we are identifying antipodal points on the unit circle. A bug living in the shaded region of \(\mathbb{P}^2\) pictured in <a knowl="./knowl/fig-lune.html" title="Figure 6.3.8">Figure 6.3.8</a> would be able to visit all shaded points without crossing the boundary walls determined by the two elliptic lines. The shaded region is a single, connected region bounded by two lines. So what is the area of this region?</p>
+<figure class="figure-like" id="fig-lune"><img src="images/im-lune.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.3.8</span> A lune in \(\mathbb{P}^2\) with angle \(\alpha\text{.}\)</figcaption></figure><article class="theorem-like" id="lemma-lune"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">6.3.9</span> <span class="title">The area of a lune</span>
+</h6>
+<p id="p-1101">In \((\mathbb{P}^2,{\cal S})\text{,}\) the area of a lune with angle \(\alpha\) is \(2\alpha\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-44" id="proof-44"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-44" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1102">To compute the area of a lune, first move the vertex of the lune to the origin in such a way that one leg of the lune lies on the real axis, as in <a knowl="./knowl/fig-lune2.html" title="Figure 6.3.10">Figure 6.3.10</a>. Then half of the lunar region can be described in polar coordinates by \(0 \leq r
+\leq 1\) and \(0 \leq \theta \leq \alpha\text{.}\)</p>
+<figure class="figure-like" id="fig-lune2"><img src="images/im-lune2.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.3.10</span> A lune whose elliptic lines intersect at the origin.</figcaption></figure><p id="p-1103">So the area of a lune having angle \(\alpha\) is given by</p>
+<div class="displaymath">
+\begin{align*}
+A \amp = 2\int_0^\alpha\int_0^1 \frac{4r}{(1+r^2)^2}dr d\theta \tag{Let $u = 1+r^2$}\\
+\amp = 2\int_0^\alpha \bigg[\frac{-2}{1+r^2} \bigg|_0^1\bigg]~d\theta\\
+\amp = 2\int_0^\alpha 1 ~d\theta\\
+\amp = 2\alpha.
+\end{align*}
+</div></article></div>
+<article class="example-like" id="ex-elltriangle"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">6.3.11</span> <span class="title">Triangle area in \((\mathbb{P}^2,{\cal S})\)</span>
+</h6>
+<p id="p-1104">Triangle \(\Delta pqr\) below is formed from 3 elliptic lines. Notice that each corner of the triangle determines a lune, and that the three lunes cover the entire projective plane, with some overlap. In particular, the three lunes in sum cover the triangle three times, so the sum of the three lune areas equals the area of the entire projective plane plus two times the area of the triangle.</p>
+<div class="sidebyside" id="sidebyside-36"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-elltriangle.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<p id="p-1105">The area of the entire projective plane is \(2\pi\) (see <a knowl="./knowl/hmk_areaP2.html" title="Exercise 6.3.9">Exercise 6.3.9</a>), so we have the following relation:</p>
+<div class="displaymath">
+\begin{align*}
+2\pi + 2\cdot A(\Delta pqr) \amp = A(\text{Lune}~ p) + A(\text{Lune}~ q) + A(\text{Lune}~ r)\\
+2\pi + 2\cdot A(\Delta pqr) \amp = (2\alpha + 2\beta + 2\gamma)\\
+A(\Delta pqr) \amp = (\alpha + \beta + \gamma) - \pi.
+\end{align*}
+</div></article><p id="p-1106">We summarize the result of this example with the following theorem.</p>
+<article class="theorem-like" id="theorem-55"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.3.12</span>
+</h6>
+<p id="p-1107">In elliptic geometry \((\mathbb{P}^2,{\cal S})\text{,}\) the area of a triangle with angles \(\alpha,
+\beta, \gamma\) is</p>
+<div class="displaymath">
+\begin{equation*}
+A = (\alpha+\beta+\gamma) - \pi.
+\end{equation*}
+</div></article><p id="p-1108">From this theorem it follows that the angles of any triangle in elliptic geometry sum to more than 180\(^\circ\text{.}\)</p></article><p id="p-1109">We close this section with a discussion of trigonometry in elliptic geometry. We derive formulas analogous to those in <a knowl="./knowl/th_hyptrig.html" title="Theorem 5.4.12">Theorem 5.4.12</a> for hyperbolic triangles.  We assume here that the triangle determined by distinct points \(p, q\) and \(z\) in \((\mathbb{P}^2,{\cal S})\) is formed by considering the shortest paths connecting these three points.  So triangle side lenghths will not exceed \(\pi/2\) in what follows.</p>
+<figure class="figure-like" id="fig-elltrig"><img src="images/im-elltrig.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.3.13</span> An elliptic triangle with side lengths and angles marked.</figcaption></figure><article class="theorem-like" id="th_elltrig"><h6 class="heading">
+<span class="type">Theorem</span> <span class="codenumber">6.3.14</span>
+</h6>
+<p id="p-1110">Suppose we have an elliptic triangle with elliptic side lengths \(a,b,\) and \(c\text{,}\) and angles \(\alpha, \beta,\) and \(\gamma\) as in <a knowl="./knowl/fig-elltrig.html" title="Figure 6.3.13">Figure 6.3.13</a>. Then the following laws hold:</p>
+<p id="p-1111">a. <em class="emphasis">Elliptic law of cosines</em></p>
+<div class="displaymath">
+\begin{equation*}
+\cos(c)=\cos(a)\cos(b)+\sin(a)\sin(b)\cos(\gamma).
+\end{equation*}
+</div>
+<p id="p-1112">b. <em class="emphasis">Elliptic law of sines</em></p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\sin(a)}{\sin(\alpha)}=\frac{\sin(b)}{\sin(\beta)}=\frac{\sin(c)}{\sin(\gamma)}.
+\end{equation*}
+</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-45" id="proof-45"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-45" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1113">a. Position our triangle conveniently, with one corner at the origin, one on the positive real axis at the point \(r\) (\(0
+\lt  r \leq 1)\text{,}\) and one at the point \(q = ke^{i\gamma}\) (with \(0 \lt  k \leq
+1)\) as in <a knowl="./knowl/fig-elltrig.html" title="Figure 6.3.13">Figure 6.3.13</a>. Then \(a =
+d_S(0,r)=2\arctan(r)\text{,}\) so that</p>
+<div class="displaymath">
+\begin{align*}
+\cos(a) \amp = \cos(2\arctan(r))\\
+\amp = \cos^2(\arctan(r))-\sin^2(\arctan(r))
+\end{align*}
+</div>
+<p>by the cosine double angle formula. If we set \(\theta = \arctan(r)\) we may use the following right triangle to rewrite the above description of \(\cos(a)\) as follows:</p>
+<div class="sidebyside" id="sidebyside-37"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel" style="width:70%;justify-content:flex-start;"><div class="displaymath" id="p-1114">
+\begin{align*}
+\cos(a) \amp = \frac{1}{1+r^2}-\frac{r^2}{1+r^2}\\
+\amp = \frac{1-r^2}{1+r^2}.
+\end{align*}
+</div></div>
+<div class="sbspanel" style="width:30%;justify-content:flex-start;"><img src="images/im-ell-tri-trig-proof.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div>
+</div></div>
+<p id="p-1115">On the other hand,</p>
+<div class="displaymath">
+\begin{align*}
+\sin(a) \amp = \sin(2\arctan(r))\\
+\amp = 2\sin(\arctan(r))\cos(\arctan(r)),
+\end{align*}
+</div>
+<p>from which it follows that</p>
+<div class="displaymath">
+\begin{equation*}
+\sin(a) = \frac{2r}{1+r^2}.
+\end{equation*}
+</div>
+<p id="p-1116">Turning our attention to the side with length \(b\text{,}\) \(b = d_S(0,q) = 2\arctan(|q|)=2\arctan(k),\) since \(q = ke^{i\gamma}\) with \(k &gt; 0\text{.}\) It follows that</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(b) = \frac{1-k^2}{1+k^2}~~~\text{and}~~~\sin(b) =
+\frac{2k}{1+k^2}.
+\end{equation*}
+</div>
+<p id="p-1117">And the third side? <a knowl="./knowl/th_elldistance.html" title="Theorem 6.3.4">Theorem 6.3.4</a> tells us</p>
+<div class="displaymath">
+\begin{equation*}
+c =
+d_S(r,ke^{i\gamma}) = 2\arctan\bigg(\bigg|\frac{ke^{i\gamma} -
+r}{1+rke^{i\gamma}}\bigg|\bigg).
+\end{equation*}
+</div>
+<p id="p-1118">Since in general \(\cos(2\arctan(x)) = (1-x^2)/(1+x^2)\text{,}\) it follows that</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(c) = \frac{|1+rke^{i\gamma}|^2 - |ke^{i\gamma}-r|^2}{|1+rke^{i\gamma}|^2 + |ke^{i\gamma}-r|^2},
+\end{equation*}
+</div>
+<p>which can be expanded using \(|z|^2 = z \cdot \overline{z}\text{,}\) and then reduced to obtain</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(c) = \frac{1 + r^2k^2 - k^2 - r^2+2rk(e^{i\gamma}+e^{-i\gamma})}{1+r^2 + k^2 + r^2k^2}.
+\end{equation*}
+</div>
+<p id="p-1119">Now, \(e^{i\gamma}+e^{-i\gamma}=2\cos(\gamma)\text{,}\) so we have</p>
+<div class="displaymath">
+\begin{align*}
+\cos(c) \amp = \frac{(1-r^2)(1-k^2) + 2rk2\cos(\gamma)}{(1+r^2)(1+k^2)} \\
+\amp = \frac{1-r^2}{1+r^2}\cdot\frac{1-k^2}{1+k^2} +
+\frac{2r}{1+r^2}\cdot \frac{2k}{1+k^2}\cos(\gamma)\\
+\amp = \cos(a)\cos(b)+\sin(a)\sin(b)\cos(\gamma).
+\end{align*}
+</div>
+<p id="p-1120">Though we worked out the formula for a conveniently located triangle, it holds for any triangle in elliptic geometry because angles and distances are preserved by transformations in elliptic geometry, and there is a transformation that takes any triangle to this convenient location.</p>
+<p id="p-1121">b. To prove the elliptic law of sines, first construct the circle containing side \(c\text{.}\) This circle goes through \(r\) and \(q\) and their antipodal points \(-1/r\) and \(q_a\) as pictured in <a knowl="./knowl/fig-elllawsine.html" title="Figure 6.3.15">Figure 6.3.15</a>. We let \(p\) denote the center of the circle, and \(R\) its Euclidean radius.</p>
+<figure class="figure-like" id="fig-elllawsine"><img src="images/im-elllawsine.svg" width="60%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">6.3.15</span> Deriving the elliptic law of sines.</figcaption></figure><p id="p-1122">Let \(m_r\) be the midpoint of the segment connecting \(r\) and \(-1/r\text{,}\) and let \(m_q\) be the midpoint of the segment connecting \(q\) and \(q_a\text{.}\) So,</p>
+<div class="displaymath">
+\begin{equation*}
+|m_r - r| =
+\frac{1}{2}\bigg(r+\frac{1}{r}\bigg) = \frac{1+r^2}{2r},
+\end{equation*}
+</div>
+<p>and</p>
+<div class="displaymath">
+\begin{equation*}
+|m_q - q| = \bigg|\frac{1}{2}\bigg(k+\frac{1}{k}\bigg)e^{i\gamma}\bigg| =
+\frac{1+k^2}{2k}.
+\end{equation*}
+</div>
+<p id="p-1123">Note further that \(\Delta pm_rr\) is right, and \(\angle m_r r p =
+\pi/2 - \beta\) so that \(\angle rpm_r = \beta\text{.}\) From this right triangle we see \(\sin(\beta) = (1+r^2)/(2rR).\)</p>
+<p id="p-1124">Similarly, \(\Delta pm_q q\) is right, and we have \(\angle m_q p q =
+\alpha\text{,}\) and \(\sin(\alpha) = (1+k^2)/(2kR)\text{.}\)</p>
+<p id="p-1125">Comparing ratios,</p>
+<div class="displaymath">
+\begin{align*}
+\frac{\sin(a)}{\sin(\alpha)} \amp =
+\frac{2r}{1+r^2}\cdot\frac{2kR}{1+k^2}\\
+\amp = \frac{2k}{1+k^2}\cdot\frac{2rR}{1+r^2}\\
+\amp = \frac{\sin(b)}{\sin(\beta)}.
+\end{align*}
+</div>
+<p id="p-1126">To see that the ratio \(\sin(c)/\sin(\gamma)\) must match the preceding common ratio, note that transformations in elliptic geometry preserve distances and angles, so we may transform our triangle above to one in which the length \(c\) is now on the real axis with one end at the origin. The argument above ensures that the ratio \(\sin(c)/\sin(\gamma)\) then matches one of the other ratios, and so all three agree.</p></article></div>
+<article class="theorem-like" id="corollary-8"><h6 class="heading">
+<span class="type">Corollary</span> <span class="codenumber">6.3.16</span> <span class="title">Elliptic hypotenuse theorem</span>
+</h6>
+<p id="p-1127">In a right triangle in \((\mathbb{P}^2,{\cal S})\) with elliptic side lengths \(a\) and \(b\text{,}\) and hypotenuse \(c\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(c) =
+\cos(a)\cos(b).
+\end{equation*}
+</div></article></section><section class="exercises" id="exercises-21"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<a href="section6-3.html#exercises-21" class="permalink">¶</a><article class="exercise-like" id="exercise-152"><h6 class="heading">
+<span class="codenumber">1</span> </h6>
+<p id="p-1128">Prove <a knowl="./knowl/thm_ellcirc.html" title="Theorem 6.3.7">Theorem 6.3.7</a>.  Namely, prove that the circumference of a circle in elliptic geometry is \(C = 2\pi\sin(r)\text{,}\) where \(r \lt \pi/2\) is the elliptic radius.  Hint: Assume your circle is centered at the origin.</p></article><article class="exercise-like" id="exercise-153"><h6 class="heading">
+<span class="codenumber">2</span> </h6>
+<p id="p-1129">Prove</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{r \to 0^+}\frac{2\pi \sin(r)}{2\pi r}=1.
+\end{equation*}
+</div>
+<p id="p-1130">Thus, for small \(r\text{,}\) the Euclidean formula for the circumference of a circle is a good approximation to the true circumference of a circle in elliptic geometry.</p></article><article class="exercise-like" id="exercise-154"><h6 class="heading">
+<span class="codenumber">3</span> </h6>
+<p id="p-1131"><em class="emphasis">Circles with large radius.</em></p>
+<p id="p-1132">a. Give a careful sketch of the circle centered at 0 with elliptic radius \(\pi/2\text{.}\)</p>
+<p id="p-1133">b. Give a careful sketch of the circle centered at 0 with elliptic radius \(2\pi/3\text{.}\)</p>
+<p id="p-1134">c. Give a careful sketch of the circle centered at 0 with elliptic radius \(\pi\text{.}\)</p>
+<p id="p-1135">d. Give a careful sketch of the circle centered at 0 with elliptic radius \(2\pi\text{.}\)</p></article><article class="exercise-like" id="exercise-155"><h6 class="heading">
+<span class="codenumber">4</span> </h6>
+<p id="p-1136">Let \(C\) be an elliptic circle with center \(z_0\) and elliptic radius \(r\gt 0\text{.}\) For what value(s) of \(r\) is \(C\) an elliptic line? For what value(s) of \(r\) is \(C\) a single point?</p></article><article class="exercise-like" id="exercise-156"><h6 class="heading">
+<span class="codenumber">5</span> </h6>
+<p id="p-1137">Determine the elliptic distance between \(\frac{1}{2}\) and \(\frac{1}{2}i\text{.}\)</p></article><article class="exercise-like" id="exercise-157"><h6 class="heading">
+<span class="codenumber">6</span> </h6>
+<p id="p-1138">Prove that the area of a circle in elliptic geometry with radius \(r \lt \pi/2\) is</p>
+<div class="displaymath">
+\begin{equation*}
+A =
+4\pi\sin^2(r/2).
+\end{equation*}
+</div></article><article class="exercise-like" id="exercise-158"><h6 class="heading">
+<span class="codenumber">7</span> </h6>
+<p id="p-1139">Prove</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{r \to 0^+} \frac{4\pi\sin^2(r/2)}{\pi r^2} = 1.
+\end{equation*}
+</div>
+<p id="p-1140">Thus, for small \(r\text{,}\) the Euclidean formula for the area of a circle is a good approximation to the true area of a circle in elliptic geometry.</p></article><article class="exercise-like" id="exercise-159"><h6 class="heading">
+<span class="codenumber">8</span> </h6>
+<p id="p-1141">Prove that arc-length is an invariant of elliptic geometry.</p></article><article class="exercise-like" id="hmk_areaP2"><h6 class="heading">
+<span class="codenumber">9</span> </h6>
+<p id="p-1142">Prove that the area of \(\mathbb{P}^2\) is \(2\pi\text{.}\) Thus, unlike the hyperbolic case, the space in elliptic geometry has finite area.</p></article><article class="exercise-like" id="exercise-161"><h6 class="heading">
+<span class="codenumber">10</span> </h6>
+<p id="p-1143">An intrepid tax collector lives in a country in the elliptic space \(\mathbb{P}^2\text{.}\) For collection purposes, the country is divided into triangular grids. The collector observes that the angles of the triangle she collects in are \(92^\circ\text{,}\) \(62^\circ\text{,}\) and \(27^\circ\text{.}\) What is the area of her triangle? (Be sure to convert the angles to radians.)  Can the entire space \(\mathbb{P}^2\) be subdivided into a finite number of triangles?</p></article><article class="exercise-like" id="exercise-162"><h6 class="heading">
+<span class="codenumber">11</span> </h6>
+<p id="p-1144">Find a formula for the area of an \(n\)-gon in elliptic geometry \((\mathbb{P}^2,{\cal S})\text{,}\) given that its \(n\) angles are \(\alpha_1, \alpha_2, \cdots,
+\alpha_n\text{.}\)</p></article><article class="exercise-like" id="hmk-sphere-distance"><h6 class="heading">
+<span class="codenumber">12</span> </h6>
+<p id="p-1145">In this exercise we show the distance between any two points \(p\) and \(q\) in spherical geometry \((\mathbb{C}^+,{\cal S})\) is</p>
+<div class="displaymath">
+\begin{equation*}
+d_S(p,q)=2\arctan\bigg(\bigg|\frac{q - p}{1+\overline{p}q}\bigg|\bigg),
+\end{equation*}
+</div>
+<p>and that \(d_S(p,q)\) corresponds to the distance on the sphere between \(\phi^{-1}(p)\) and \(\phi^{-1}(q)\text{.}\)</p>
+<p id="p-1146">a. The definition of arc-length in spherical geometry \((\mathbb{C}^+,{\cal S})\) is the same as the one for \((\mathbb{P}^2,{\cal S})\text{.}\)  Using this definition, follow the proof of <a knowl="./knowl/th_elldistance.html" title="Theorem 6.3.4">Theorem 6.3.4</a> to show that for any positive real number \(x\) in \(\mathbb{C}^+\text{,}\) \(d_S(0,x)=2\arctan(x)\text{.}\)</p>
+<p id="p-1147">b. Use invariance of arc-length to explain why, for arbitrary \(p\) and \(q\) in \(\mathbb{C}^+\text{,}\)</p>
+<div class="displaymath">
+\begin{equation*}
+d_S(p,q)=2\arctan\bigg(\bigg|\frac{q - p}{1+\overline{p}q}\bigg|\bigg).
+\end{equation*}
+</div>
+<p id="p-1148">c. Suppose \(x &gt; 0\) is a real number.  Determine \(\phi^{-1}(x)\text{,}\) the point on the unit sphere corresponding to \(x\) via stereographic projection.  What is \(\phi^{-1}(0)\text{?}\)</p>
+<p id="p-1149">d. Determine the distance between \(\phi^{-1}(0)\) and \(\phi^{-1}(x)\) on the sphere.  In particular, show that this distance equals \(\arccos((1-x^2)/(1+x^2))\text{.}\)  Hint: the distance between these points will equal the angle between the vectors to these points, and this angle can be found using the formula \(\cos(\theta)=\vec{v}\cdot\vec{w}\) for two unit vectors.</p>
+<p id="p-1150">e. Show that for \(x \gt 0\text{,}\) \(\arccos((1-x^2)/(1+x^2)) = 2\arctan(x)\text{.}\)  Hint: You may find the following half-angle formula useful: \(\tan(\theta/2)=\tan(\theta)/(\sec(\theta)+1).\)</p></article><article class="exercise-like" id="exercise-164"><h6 class="heading">
+<span class="codenumber">13</span> </h6>
+<p id="p-1151">Prove that \((\mathbb{P}^2,{\cal S})\) is isotropic.</p></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>

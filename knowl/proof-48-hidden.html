@@ -1,0 +1,64 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:55:03-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>For this proof, let \(s = \frac{1}{\sqrt{|k|}}\text{.}\) Note that \(s\) is the Euclidean radius of the circle at infinity in the disk model for hyperbolic geometry with curvature \(k\text{.}\) Since angles and lines and distances are preserved, assume \(z\) is the origin and \(L\) is orthogonal to the positive real axis, intersecting it at the point \(x\) (with \(0 \lt  x \lt  s\)).</p>
+<figure class="figure-like"><img src="images/im-Lobatchevsky.svg" width="70%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">7.3.4</span> Deriving Lobatchevsky's formula.</figcaption></figure><p>Recall the half-angle formula</p>
+<div class="displaymath">
+\begin{equation*}
+\tan(\theta/2) =\frac{\tan(\theta)}{\sec(\theta)+1}.
+\end{equation*}
+</div>
+<p>According to <a knowl="./knowl/fig-Lobatchevsky.html" title="Figure 7.3.4">Figure 7.3.4</a>, \(\tan(\theta) =r/s\text{,}\) where \(r\) is the Euclidean radius of the circle containing the hyperbolic line \(L\text{.}\) Furthermore, \(\sec(\theta) = (x+r)/s\text{,}\) so</p>
+<div class="displaymath">
+\begin{equation*}
+\tan(\theta/2) = \frac{r}{x+r+s}.\tag{1}
+\end{equation*}
+</div>
+<p>We may express \(x\) and \(r\) in terms of the hyperbolic distance \(d\) from 0 to \(x\text{.}\) In <a knowl="./knowl/hmk_hypkdist.html" title="Exercise 7.3.2">Exercise 7.3.2</a> we prove the hyperbolic distance from 0 to \(x\) in \((\mathbb{D}_k,{\cal H}_k)\) is</p>
+<div class="displaymath">
+\begin{equation*}
+d = s \ln\bigg(\frac{s + x}{s-x}\bigg)
+\end{equation*}
+</div>
+<p>so that</p>
+<div class="displaymath">
+\begin{equation*}
+x = s \cdot \frac{e^{d/s} - 1}{e^{d/s}+1}. 
+\end{equation*}
+</div>
+<p>Express \(r\) in terms of \(d\) by first expressing it in terms of \(x\text{.}\) Note that segment \(x x^*\) is a diameter of the circle containing \(L\text{,}\) where \(x^* = \frac{-1}{kx}\) is the point symmetric to \(x\) with respect to the circle at infinity. Thus, \(r\) is half the distance from \(x\) to \(x^*\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+r = -\frac{1 + kx^2}{2kx}. 
+\end{equation*}
+</div>
+<p>Replacing \(k\) with \(-1/s^2\text{,}\) we have</p>
+<div class="displaymath">
+\begin{equation*}
+r=\frac{s^2-x^2}{2x}. 
+\end{equation*}
+</div>
+<p>One checks that after writing \(x\) in terms of \(d\text{,}\) \(r\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+r = \frac{2se^{d/s}}{e^{2d/s}-1}. 
+\end{equation*}
+</div>
+<p>Substitute this expression for \(r\) into the equation labeled (1) in this proof, and after a dose of satisfactory simplifying one obtains the desired result:</p>
+<div class="displaymath">
+\begin{equation*}
+\tan(\theta/2) = e^{-d/s}. 
+\end{equation*}
+</div>
+<p>Since \(s = 1/\sqrt{|k|}\) this completes the proof.</p></article></body>
+</html>

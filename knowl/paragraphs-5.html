@@ -1,0 +1,41 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:49-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="paragraphs"><h5 class="heading"><span class="title">Stereographic Projection</span></h5>
+<p>We close this section with a look at stereographic projection. By identifying the extended plane with a sphere, this map offers a very useful way for us to think about the point \(\infty\text{.}\)</p>
+<article class="definition-like"><h6 class="heading">
+<span class="type">Definition</span> <span class="codenumber">3.3.3</span>
+</h6>
+<p>The <dfn class="terminology">unit 2-sphere,</dfn> denoted \(\mathbb{S}^2\text{,}\) consists of all the points in 3-space that are one unit from the origin. That is,</p>
+<div class="displaymath">
+\begin{equation*}
+\mathbb{S}^2 = \{(a,b,c) \in \mathbb{R}^3 ~|~ a^2+b^2+c^2=1\}.
+\end{equation*}
+</div></article><p>We will usually refer to the unit 2-sphere as simply “the sphere.” Stereographic projection of the sphere onto the extended plane is defined as follows. Let \(N = (0,0,1)\) denote the north pole on the sphere. For any point \(P \neq N\) on the sphere, \(\phi(P)\) is the point on the ray \(\overrightarrow{NP}\) that lives in the \(xy\)-plane. See <a knowl="./knowl/fig-stpro.html" title="Figure 3.3.4">Figure 3.3.4</a> for the image of a typical point \(P\) of the sphere.</p>
+<figure class="figure-like"><img src="images/im-stpro.svg" width="60%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">3.3.4</span> Stereographic projection.</figcaption></figure><p>The stereographic projection map \(\phi\) can be described algebraically.  The line through \(N = (0,0,1)\) and \(P = (a,b,c)\) has directional vector \(\overrightarrow{NP}=\langle a,b,c-1\rangle\text{,}\) so the line equation can be expressed as</p>
+<div class="displaymath">
+\begin{equation*}
+{\vec r}(t) = \langle 0,0,1\rangle + t\langle a,b,c-1\rangle.
+\end{equation*}
+</div>
+<p>This line intersects the \(xy\)-plane when its \(z\) coordinate is zero. This occurs when \(t = \frac{1}{1-c}\text{,}\) which corresponds to the point \((\frac{a}{1-c}, \frac{b}{1-c},0)\text{.}\)</p>
+<p>Thus, for a point \((a,b,c)\) on the sphere with \(c \neq 1\text{,}\) stereographic projection \(\phi:\mathbb{S}^2 \to \mathbb{C}^+\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+\phi((a,b,c)) = \frac{a}{1-c}+\frac{b}{1-c}i.
+\end{equation*}
+</div>
+<p>Where does \(\phi\) send the north pole? To \(\infty\text{,}\) of course. A sequence of points on \(\mathbb{S}^2\) that approaches \(N\) will have image points in \(\mathbb{C}\) with magnitudes that approach \(\infty\text{.}\)</p></article><span class="incontext"><a href="section3-3.html#paragraphs-5">in-context</a></span>
+</body>
+</html>

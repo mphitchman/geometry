@@ -1,0 +1,282 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2018-06-08T13:54:41-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Elliptic Geometry with Curvature \(k \gt 0\)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="custom-styles.css">
+<link rel="stylesheet" type="text/css" href="title-period-fix.css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<p class="byline">Michael P. Hitchman</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section7-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section7-3.html" title="Next">Next</a></span>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section7-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section7-3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
+<ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+<li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+</ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
+<ul>
+<li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
+<li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
+<li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
+<ul>
+<li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
+<li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
+<li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
+<li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
+</ul>
+<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
+<ul>
+<li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
+<li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
+<li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
+<li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
+<li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
+</ul>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
+<ul>
+<li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
+<li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
+</ul>
+<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
+<ul>
+<li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
+<li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
+<li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
+<li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
+<li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
+</ul>
+<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
+<ul>
+<li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
+<li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
+<li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
+<li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
+</ul>
+<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
+<ul>
+<li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
+<li><a href="section7-2.html" data-scroll="section7-2" class="active">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
+<li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
+<li><a href="section7-4.html" data-scroll="section7-4">The Family of Geometries \((X_k,G_k)\)</a></li>
+<li><a href="section7-5.html" data-scroll="section7-5">Surfaces</a></li>
+<li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
+<li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
+</ul>
+<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
+<ul>
+<li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
+<li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
+<li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
+<li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
+</ul>
+<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
+<li><a href="references.html" data-scroll="references">References</a></li>
+<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section7-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Elliptic Geometry with Curvature \(k \gt 0\)</span>
+</h2>
+<a href="section7-2.html" class="permalink">¶</a><section class="introduction" id="introduction-30"><p id="p-1187">One may model elliptic geometry on spheres of varying radii, and a change in radius will cause a change in the curvature of the space as well as a change in the relationship between the area of a triangle and its angle sum.</p>
+<p id="p-1188">For any real number \(k \gt  0\text{,}\) we may construct a sphere with constant curvature \(k\text{.}\)  According to <a knowl="./knowl/ex_spherecurv.html" title="Example 7.1.5: The curvature of a sphere">Example 7.1.5</a>, the sphere centered at the origin with radius \(1/\sqrt{k}\) works. Geometry on this sphere can be modeled down in the extended plane via stereographic projection. This geometry will be called elliptic geometry with curvature \(k &gt; 0\text{.}\)</p>
+<p id="p-1189">Consider the sphere \(\mathbb{S}^2_k\) centered at the origin of \(\mathbb{R}^3\) with radius \(1/\sqrt{k}\text{.}\) Define stereographic projection \(\phi_k: \mathbb{S}^2_k \to \mathbb{C}^+\text{,}\) just as we did in Section 3.3, to obtain the formula</p>
+<div class="displaymath">
+\begin{equation*}
+\phi_k(a,b,c) = \begin{cases}\frac{a}{1-c\sqrt{k}}+\frac{b}{1-c\sqrt{k}}i \amp  \text{ if \(c \neq \frac{1}{\sqrt{k}}\); }  \\
+\infty \amp  \text{ if  \(c=\frac{1}{\sqrt{k}}\). } 
+\end{cases}
+\end{equation*}
+</div>
+<p id="p-1190">Diametrically opposed points on \(\mathbb{S}^2_k\) get mapped via \(\phi_k\) to points \(z\) and \(z_a\) that satisfy the equation \(z_a =\frac{-1}{k\overline{z}}\text{,}\) by analogy with <a knowl="./knowl/th_antipodal.html" title="Lemma 6.1.2">Lemma 6.1.2</a>. We call two such points in \(\mathbb{C}^+\) antipodal with respect to \(\mathbb{S}^2_k\text{,}\) or just antipodal points if the value of \(k\) is understood.</p>
+<p id="p-1191">Our model for elliptic geometry with curvature \(k\) has space \(\mathbb{P}^2_k\) equal to the closed disk in \(\mathbb{C}\) of radius \(1/\sqrt{k}\text{,}\) with antipodal points of the boundary identified.  This space is simply a scaled version of the projective plane from Chapter 6.</p>
+<p id="p-1192">The group of transformations, denoted \({\cal S}_k\text{,}\) consists of those Möbius transformations that preserve antipodal points with respect to \(\mathbb{S}^2_k\text{.}\)  That is, \(T \in {\cal S}_k\) if and only if the following holds:</p>
+<div class="displaymath">
+\begin{equation*}
+\text{if}~ z_a = -\frac{1}{k\overline{z}}~~ \text{then}~~ T(z_a) = -\frac{1}{k\overline{T(z)}}.
+\end{equation*}
+</div>
+<p id="p-1193">The geometry \((\mathbb{P}^2_k,{\cal S}_k)\) with \(k \gt 0\) is called <dfn class="terminology">elliptic geometry with curvature \(k\)</dfn>.  Note that \((\mathbb{P}^2_1,{\cal S}_1)\) is precisely the geometry we studied in Chapter 6.</p>
+<p id="p-1194">The transformations of \(\mathbb{C}^+\) in the group \({\cal S}_k\) correspond precisely with rotations of the sphere \(\mathbb{S}^2_k\text{.}\)  One can show that transformations in \({\cal S}_k\) have the form</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z}.
+\end{equation*}
+</div>
+<p id="p-1195">We define lines in elliptic geometry with curvature \(k\) to be clines with the property that if they go through \(z\) then they go through \(z_a = -\frac{1}{k\overline{z}}\text{.}\)  These lines correspond precisely to great circles on the sphere \(\mathbb{S}^2_k\text{.}\)</p>
+<p id="p-1196">The arc-length and area formulas also slip gently over from Chapter 6 to this more general setting.</p>
+<p id="p-1197">The arc-length of a smooth curve \(\boldsymbol{r}\) in \(\mathbb{P}^2_k\) is</p>
+<div class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{r}) = \int_a^b \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt.
+\end{equation*}
+</div>
+<p id="p-1198">As before, arc-length is an invariant, and the shortest path between two points is along the elliptic line through them.  In the exercises we derive a formula for the distance between points in this geometry.  The greatest possible distance between two points in \((\mathbb{P}^2_k,{\cal S}_k)\) turns out to be \(\pi/(2\sqrt{k})\text{.}\)</p>
+<p id="p-1199">The area of a region \(R\) given in polar form is computed by the formula</p>
+<div class="displaymath">
+\begin{equation*}
+A(R) = \iint_R \frac{4r}{(1+kr^2)^2}dr d\theta.
+\end{equation*}
+</div>
+<p id="p-1200">To compute the area of a triangle, proceed as in Chapter 6. First, tackle the area of a <dfn class="terminology">lune</dfn>, a 2-gon whose sides are elliptic lines in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</p>
+<article class="theorem-like" id="lemma-lune-Gk"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">7.2.1</span>
+</h6>
+<p id="p-1201">Assume \(k \gt 0\text{.}\)  A lune in \((\mathbb{P}^2_k,{\cal S}_k)\) with interior angle \(\alpha\) has area  \(2\alpha/k\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-46" id="proof-46"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-46" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1202">Without loss of generality, we may consider the vertex of our lune to be the origin. As before, elliptic lines through the origin must also pass through \(\infty\text{,}\) so our two lines forming the lune are Euclidean lines. After a convenient rotation, we may further assume one of these lines is the real axis, so that the lune resembles the one in <a knowl="./knowl/fig-lune2.html" title="Figure 6.3.10">Figure 6.3.10</a>. To compute the area of the lune, compute the integral</p>
+<div class="displaymath">
+\begin{equation*}
+A = 2 \int_0^\alpha \int_0^{1/\sqrt{k}}\frac{4r}{(1+kr^2)^2}drd\theta.
+\end{equation*}
+</div>
+<p id="p-1203">Letting \(u = 1 + kr^2\) so that \(du = 2krdr\text{,}\) the bounds of integration change from \([0,1/\sqrt{k}]\) to \([1,2]\text{.}\)  Then,</p>
+<div class="displaymath">
+\begin{equation*}
+A = 2 \int^\alpha_0 \frac{2}{k}\int_1^2 \frac{du}{u^2}d\theta = \frac{4}{k}\int_0^\alpha \frac{1}{2} d\theta =\frac{2\alpha}{k}.
+\end{equation*}
+</div>
+<p>Thus, the angle of a lune with interior angle \(\alpha\) is \(2\alpha/k\text{.}\)</p></article></div>
+<p id="p-1204">We remark that the lune with angle \(\pi\) actually covers the entire disk of radius \(1/\sqrt{k}\text{.}\)  Thus, the area of the entire space \(\mathbb{P}^2_k\) is \(2\pi/k\text{,}\) which matches half the surface area of a sphere of radius \(1/\sqrt{k}\text{.}\) We often call \(s =
+1/\sqrt{k}\)  the <dfn class="terminology">radius of curvature</dfn> for the geometry; it is the radius of the disk on which we model the geometry.</p>
+<p id="p-1205">Also, the integral computation in the proof of <a knowl="./knowl/lemma-lune-Gk.html" title="Lemma 7.2.1">Lemma 7.2.1</a> reveals the following useful antiderivative:</p>
+<div class="displaymath">
+\begin{equation*}
+\int \frac{4r}{(1+kr^2)^2}dr = \frac{-2}{k(1+kr^2)} + C.
+\end{equation*}
+</div>
+<p>This fact may speed up future integral computations.</p>
+<article class="theorem-like" id="lem-ktri-ell"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">7.2.2</span>
+</h6>
+<p id="p-1206">In elliptic geometry with curvature \(k\text{,}\) the area of a triangle with angles \(\alpha, \beta,\) and \(\gamma\) is</p>
+<div class="displaymath">
+\begin{equation*}
+A = \frac{1}{k}(\alpha+\beta+\gamma -\pi).
+\end{equation*}
+</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-47" id="proof-47"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-47" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1207">As in the case \(k = 1\text{,}\) the area of any triangle may be determined from the area of three lunes and the total area of \(\mathbb{P}^2_k\text{,}\) as depicted in <a knowl="./knowl/ex-elltriangle.html" title="Example 6.3.11: Triangle area in \((\mathbb{P}^2,{\cal S})\)">Example 6.3.11</a>.</p></article></div>
+<article class="example-like" id="example-59"><h6 class="heading">
+<span class="type">Example</span> <span class="codenumber">7.2.3</span> <span class="title">Triangles on the Earth</span>
+</h6>
+<p id="p-1208">The surface of the Earth is approximately spherical with radius about 6375 km. Therefore, the geometry on the surface of the Earth can be reasonably modeled by \((\mathbb{P}^2_k, {\cal S}_k)\) where \(k = 1/6375^2~ \text{km}^{-2}\text{.}\)  The area of a triangle on the Earth's surface having angles \(\alpha, \beta,\) and  \(\gamma\) is</p>
+<div class="displaymath">
+\begin{equation*}
+A = \frac{1}{k}(\alpha + \beta + \gamma - \pi).
+\end{equation*}
+</div>
+<p>Can you find the area of the triangle formed by Paris, New York, and Rio? Use a globe, a protractor, and some string.  The string follows a geodesic between two points when it is pulled taut.</p></article></section><section class="exercises" id="exercises-23"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<a href="section7-2.html#exercises-23" class="permalink">¶</a><article class="exercise-like" id="exercise-167"><h6 class="heading">
+<span class="codenumber">1</span> </h6>
+<p id="p-1209">Prove that for \(k &gt; 0\text{,}\) any transformation in \({\cal S}_k\) has the form</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z},
+\end{equation*}
+</div>
+<p>where \(\theta\) is any real number and \(z_0\) is a point in \(\mathbb{P}^2_k\text{.}\) Hint: Follow the derivation of the transformations in \({\cal S}\) found in Chapter 6.</p></article><article class="exercise-like" id="exercise-168"><h6 class="heading">
+<span class="codenumber">2</span> </h6>
+<p id="p-1210">Verify the formula for the stereographic projection map \(\phi_k\text{.}\)</p></article><article class="exercise-like" id="hmk_Gkpos"><h6 class="heading">
+<span class="codenumber">3</span> </h6>
+<p id="p-1211">Assume \(k \gt 0\) and let \(s = 1/\sqrt{k}\text{.}\)  Derive the following measurement formulas in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</p>
+<p id="p-1212">a. The length of a line segment from \(0\) to \(x\text{,}\) where \(0 \lt x \leq s\) is</p>
+<div class="displaymath">
+\begin{equation*}
+d_{k}(0,x) = 2s\arctan(x/s).
+\end{equation*}
+</div>
+<p id="p-1213">b. The circumference of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(C=2\pi s\sin(r/s).\)</p>
+<p id="p-1214">c. The area of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(\displaystyle A = 4\pi s^2 \sin^2\bigg(\frac{r}{2s}\bigg).\)</p></article><article class="exercise-like" id="exercise-170"><h6 class="heading">
+<span class="codenumber">4</span> </h6>
+<p id="p-1215">In this exercise we investigate the idea that the elliptic formulas in <a knowl="./knowl/hmk_Gkpos.html" title="Exercise 7.2.3">Exercise 7.2.3</a> for distance, circumference, and area approach Euclidean formulas when \(k \to 0^+\text{.}\)</p>
+<p id="p-1216">a. Show that the elliptic distance \(d_{k}(0,x)\) from \(0\) to \(x\text{,}\) where \(0 \lt x \leq s,\) approaches \(2x\) as \(k \to 0^+\) (twice the usual notion of Euclidean distance).</p>
+<p id="p-1217">b. Show that the elliptic circumference of a circle with elliptic radius \(r\) approaches \(2\pi r\) as \(k \to 0^+\text{.}\)</p>
+<p id="p-1218">c. Show that the elliptic area of this circle approaches \(\pi r^2\) as \(k \to 0^+\text{.}\)</p></article><article class="exercise-like" id="hmk-law-of-cosines-posk"><h6 class="heading">
+<span class="codenumber">5</span> </h6>
+<p id="p-1219"><em class="emphasis">Triangle trigonometry in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</em></p>
+<p id="p-1220">Suppose we have a triangle in \((\mathbb{P}^2_k,{\cal S}_k)\) with side lengths \(a,b,c\) and angles \(\alpha, \beta, \gamma\) as pictured in <a knowl="./knowl/fig-elltrig.html" title="Figure 6.3.13">Figure 6.3.13</a>.</p>
+<p id="p-1221">a. Prove the elliptic law of cosines in \((\mathbb{P}^2_k,{\cal S}_k)\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\cos(\sqrt{k}c)=\cos(\sqrt{k}a)\cos(\sqrt{k}b)+\sin(\sqrt{k}a)\sin(\sqrt{k}b)\cos(\gamma).
+\end{equation*}
+</div>
+<p id="p-1222">b. Prove the elliptic law of sines in \((\mathbb{P}^2_k,{\cal S}_k)\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\sin(\sqrt{k}a)}{\sin(\alpha)}=\frac{\sin(\sqrt{k}b)}{\sin(\beta)}=\frac{\sin(\sqrt{k}c)}{\sin(\gamma)}.
+\end{equation*}
+</div></article></section></section></div></main>
+</div>
+<!--Start: StatCounter code--><script>
+var sc_project=11625953;
+var sc_invisible=1;
+var sc_security="f68ed8d5";
+var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
+document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
+<!--End: StatCounter code-->
+</body>
+</html>
