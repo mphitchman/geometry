@@ -1,9 +1,9 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:41-07:00    *-->
+<!--*    on 2018-12-06T09:47:32-08:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -15,8 +15,14 @@
 <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
         extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
@@ -35,15 +41,21 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
 <link rel="stylesheet" type="text/css" href="title-period-fix.css">
+<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+</script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -132,11 +144,9 @@ MathJax.Hub.Config({
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
 <h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<ul>
-<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
-<li><a href="references.html" data-scroll="references">References</a></li>
-<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
+<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
+<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="mathbook-content"><section class="section" id="section7-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">Hyperbolic Geometry with Curvature \(k \lt 0\)</span>
@@ -185,7 +195,8 @@ A =\frac{1}{k}(\alpha+\beta+\gamma -\pi).
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Observing negative curvature</span>
 </h3>
 <a href="section7-3.html#subsection-4" class="permalink">¶</a><section class="introduction" id="introduction-32"><p id="p-1234">Suppose we are located at a point \(z\) in a hyperbolic universe with curvature \(k\text{.}\) We see in the distance a hyperbolic line \(L\) that seems to extend indefinitely. We might intuitively see the point \(w\) on the line that is closest to us, as suggested in <a knowl="./knowl/fig-angleofpar.html" title="Figure 7.3.2">Figure 7.3.2</a>. Now suppose we look down the road a bit to a point \(v\text{.}\) If \(v\) is close to \(w\) the angle \(\angle wzv\) will be close to 0. As \(v\) gets further and further away from \(w\text{,}\) the angle will grow, getting closer and closer to the angle \(\theta = \angle wzu\text{,}\) where \(u\) is an ideal point of the line \(L\text{.}\)</p>
-<figure class="figure-like" id="fig-angleofpar"><img src="images/im-angleofpar.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">7.3.2</span> The angle of parallelism \(\theta\) of a point \(z\) to a line \(L\text{.}\)</figcaption></figure><p id="p-1235">A curious fact about hyperbolic geometry is that this angle \(\theta\text{,}\) which is called the <dfn class="terminology">angle of parallelism of \(\boldsymbol{z}\) to \(\boldsymbol{L}\)</dfn>, is a function of \(z\)'s distance \(d\) to \(L\text{.}\) In Section 5.4 we saw that \(\cosh(d) = 1/\sin(\theta)\) in \((\mathbb{D},{\cal H})\text{.}\) In particular, one may deduce the distance \(d\) to the line \(L\) by computing \(\theta\text{.}\) No such analogy exists in Euclidean geometry. In a Euclidean world, if one looks farther and farther down the line \(L\text{,}\) the angle will approach 90\(^\circ\text{,}\) no matter one's distance \(d\) from the line.  The following theorem provides another formula relating the angle of parallelism to a point's distance to a line.</p>
+<figure class="figure-like" id="fig-angleofpar"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-angleofpar.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">7.3.2</span> The angle of parallelism \(\theta\) of a point \(z\) to a line \(L\text{.}\)</figcaption></figure><p id="p-1235">A curious fact about hyperbolic geometry is that this angle \(\theta\text{,}\) which is called the <dfn class="terminology">angle of parallelism of \(\boldsymbol{z}\) to \(\boldsymbol{L}\)</dfn>, is a function of \(z\)'s distance \(d\) to \(L\text{.}\) In Section 5.4 we saw that \(\cosh(d) = 1/\sin(\theta)\) in \((\mathbb{D},{\cal H})\text{.}\) In particular, one may deduce the distance \(d\) to the line \(L\) by computing \(\theta\text{.}\) No such analogy exists in Euclidean geometry. In a Euclidean world, if one looks farther and farther down the line \(L\text{,}\) the angle will approach 90\(^\circ\text{,}\) no matter one's distance \(d\) from the line.  The following theorem provides another formula relating the angle of parallelism to a point's distance to a line.</p>
 <article class="theorem-like" id="th_lobform"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">7.3.3</span> <span class="title">Lobatchevsky's formula</span>
 </h6>
@@ -194,8 +205,9 @@ A =\frac{1}{k}(\alpha+\beta+\gamma -\pi).
 \begin{equation*}
 \tan(\theta/2) = e^{-\sqrt{|k|}d}.
 \end{equation*}
-</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-48" id="proof-48"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-48" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1237">For this proof, let \(s = \frac{1}{\sqrt{|k|}}\text{.}\) Note that \(s\) is the Euclidean radius of the circle at infinity in the disk model for hyperbolic geometry with curvature \(k\text{.}\) Since angles and lines and distances are preserved, assume \(z\) is the origin and \(L\) is orthogonal to the positive real axis, intersecting it at the point \(x\) (with \(0 \lt  x \lt  s\)).</p>
-<figure class="figure-like" id="fig-Lobatchevsky"><img src="images/im-Lobatchevsky.svg" width="70%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">7.3.4</span> Deriving Lobatchevsky's formula.</figcaption></figure><p id="p-1238">Recall the half-angle formula</p>
+</div></article><article class="hiddenproof" id="proof-48"><a knowl="" class="id-ref" refid="hk-proof-48"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-48" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1237">For this proof, let \(s = \frac{1}{\sqrt{|k|}}\text{.}\) Note that \(s\) is the Euclidean radius of the circle at infinity in the disk model for hyperbolic geometry with curvature \(k\text{.}\) Since angles and lines and distances are preserved, assume \(z\) is the origin and \(L\) is orthogonal to the positive real axis, intersecting it at the point \(x\) (with \(0 \lt  x \lt  s\)).</p>
+<figure class="figure-like" id="fig-Lobatchevsky"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-Lobatchevsky.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">7.3.4</span> Deriving Lobatchevsky's formula.</figcaption></figure><p id="p-1238">Recall the half-angle formula</p>
 <div class="displaymath">
 \begin{equation*}
 \tan(\theta/2) =\frac{\tan(\theta)}{\sec(\theta)+1}.
@@ -207,7 +219,7 @@ A =\frac{1}{k}(\alpha+\beta+\gamma -\pi).
 \tan(\theta/2) = \frac{r}{x+r+s}.\tag{1}
 \end{equation*}
 </div>
-<p id="p-1240">We may express \(x\) and \(r\) in terms of the hyperbolic distance \(d\) from 0 to \(x\text{.}\) In <a knowl="./knowl/hmk_hypkdist.html" title="Exercise 7.3.2">Exercise 7.3.2</a> we prove the hyperbolic distance from 0 to \(x\) in \((\mathbb{D}_k,{\cal H}_k)\) is</p>
+<p id="p-1240">We may express \(x\) and \(r\) in terms of the hyperbolic distance \(d\) from 0 to \(x\text{.}\) In <a knowl="./knowl/hmk_hypkdist.html" title="Exercise 2">Exercise 2</a> we prove the hyperbolic distance from 0 to \(x\) in \((\mathbb{D}_k,{\cal H}_k)\) is</p>
 <div class="displaymath">
 \begin{equation*}
 d = s \ln\bigg(\frac{s + x}{s-x}\bigg)
@@ -245,11 +257,12 @@ r = \frac{2se^{d/s}}{e^{2d/s}-1}.
 </div>
 <p id="p-1245">Since \(s = 1/\sqrt{|k|}\) this completes the proof.</p></article></div></section><article class="paragraphs" id="paragraphs-8"><h5 class="heading"><span class="title">Parallax</span></h5>
 <p id="p-1246">If a star is relatively close to the Earth, then as the Earth moves in its annual orbit around the Sun, the star will appear to move relative to the backdrop of the more distant stars. In the idealized picture that follows, \(e_1\) and \(e_2\) denote the Earth's position at opposite points of its orbit, and the star \(s\) is orthogonal to the plane of the Earth's orbit. The angle \(p\) is called the <dfn class="terminology">parallax</dfn>, and in a Euclidean universe, \(p\) determines the star's distance from the Sun, \(D\text{,}\) by the equation \(D = d/\tan(p)\text{,}\) where \(d\) is the Earth's distance from the Sun.</p>
-<div class="sidebyside" id="sidebyside-39"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-parallax.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-parallax.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
 <p id="p-1247">We may determine \(p\) by observation, and \(d\) is the radius of Earth's orbit around the Sun (\(d\) is about 8.3 light-minutes.) In practice, \(p\) is quite small, so a working formula is \(D =
 \frac{d}{p}\text{.}\) The first accurate measurement of parallax was recorded in 1837 by Friedrich Bessel (1784-1846) . He found the stellar parallax of 0.3 arc seconds (1 arc second = 1/3600\(^\circ\)) for star 61 Cygni, which put the star at about 10.5 light-years away.</p>
 <p id="p-1248">If we live in a hyperbolic universe with curvature \(k\text{,}\) a detected parallax puts a bound on how curved the universe can be. Consider <a knowl="./knowl/fig-hyp-parallax.html" title="Figure 7.3.5">Figure 7.3.5</a>. As before, \(e_1\) and \(e_2\) represent the position of the Earth at opposite points of its orbit, so that the distance between them is \(2d\text{,}\) or about 16.6 light-minutes. Assume star \(s\) is on the positive real axis and we have detected a parallax \(p\text{,}\) so that angle \(\angle e_2se_1 = 2p\text{.}\)</p>
-<figure class="figure-like" id="fig-hyp-parallax"><img src="images/im-hyp-parallax.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">7.3.5</span> A detected parallax in a hyperbolic universe puts a bound on its curvature</figcaption></figure><p id="p-1249">The angle \(\alpha = \angle e_1e_2s\) in <a knowl="./knowl/fig-hyp-parallax.html" title="Figure 7.3.5">Figure 7.3.5</a> is less than the angle of parallelism \(\theta = \angle e_1e_2u\text{.}\) Noting that \(\tan(x)\) is an increasing function and applying Lobatchevsky's formula it follows that</p>
+<figure class="figure-like" id="fig-hyp-parallax"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-hyp-parallax.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">7.3.5</span> A detected parallax in a hyperbolic universe puts a bound on its curvature</figcaption></figure><p id="p-1249">The angle \(\alpha = \angle e_1e_2s\) in <a knowl="./knowl/fig-hyp-parallax.html" title="Figure 7.3.5">Figure 7.3.5</a> is less than the angle of parallelism \(\theta = \angle e_1e_2u\text{.}\) Noting that \(\tan(x)\) is an increasing function and applying Lobatchevsky's formula it follows that</p>
 <div class="displaymath">
 \begin{equation*}
 \tan(\alpha/2) \lt  \tan(\theta/2) = e^{-\sqrt{|k|}2d}. 
@@ -272,7 +285,7 @@ r = \frac{2se^{d/s}}{e^{2d/s}-1}.
 <p id="p-1252">We remark that for values of \(p\) near 0, the expression \(\ln(\tan(\pi/4-p))\) has linear approximation equal to \(-2p\text{,}\) so a working bound for \(k\text{,}\) which appeared in Schwarzschild's 1900 paper <a knowl="./knowl/schwarz.html" title="Bibliographic Entry 27: On the Permissible Curvature of Space">[27]</a>, is \(|k| \lt  (p/d)^2\text{.}\)</p></article></section><section class="exercises" id="exercises-24"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section7-3.html#exercises-24" class="permalink">¶</a><article class="exercise-like" id="exercise-172"><h6 class="heading">
+<a href="section7-3.html#exercises-24" class="permalink">¶</a><article class="exercise-like" id="exercise-170"><h6 class="heading">
 <span class="codenumber">1</span> </h6>
 <p id="p-1253">Prove that for \(k \lt  0\text{,}\) any transformation in \({\cal H}_k\) has the form</p>
 <div class="displaymath">
@@ -291,9 +304,9 @@ d_{k}(0,x) = s\ln\bigg(\frac{s+x}{s-x}\bigg).
 </div>
 <p>Hint: Evaluate the integral by partial fractions.</p>
 <p id="p-1256">b. The circumference of the circle centered at the origin with hyperbolic radius \(r\) is \(c=2\pi s\sinh(r/s).\)</p>
-<p id="p-1257">c. The area of the circle centered at the origin with hyperbolic radius \(r\) is \(A = 4\pi s^2 \sinh^2(\frac{r}{2s})\text{.}\)</p></article><article class="exercise-like" id="exercise-174"><h6 class="heading">
+<p id="p-1257">c. The area of the circle centered at the origin with hyperbolic radius \(r\) is \(A = 4\pi s^2 \sinh^2(\frac{r}{2s})\text{.}\)</p></article><article class="exercise-like" id="exercise-172"><h6 class="heading">
 <span class="codenumber">3</span> </h6>
-<p id="p-1258">Let's investigate the idea that the hyperbolic formulas in <a knowl="./knowl/hmk_hypkdist.html" title="Exercise 7.3.2">Exercise 7.3.2</a> for distance, circumference, and area approach Euclidean formulas when \(k \to 0^-\text{.}\)</p>
+<p id="p-1258">Let's investigate the idea that the hyperbolic formulas in <a knowl="./knowl/hmk_hypkdist.html" title="Exercise 2">Exercise 2</a> for distance, circumference, and area approach Euclidean formulas when \(k \to 0^-\text{.}\)</p>
 <p id="p-1259">a. Show that the hyperbolic distance \(d_{k}(0,x)\) from 0 to \(x\text{,}\) where \(0 \lt  x \lt  s,\) approaches \(2x\) as \(k \to 0^-\text{.}\)</p>
 <p id="p-1260">b. Show that the hyperbolic circumference of a circle with hyperbolic radius \(r\) approaches \(2\pi r\) as \(k \to 0^-\text{.}\)</p>
 <p id="p-1261">c. Show that the hyperbolic area of this circle approaches \(\pi r^2\) as \(k \to 0^-\text{.}\)</p></article><article class="exercise-like" id="hmk-law-of-cosines-negk"><h6 class="heading">
@@ -311,11 +324,11 @@ d_{k}(0,x) = s\ln\bigg(\frac{s+x}{s-x}\bigg).
 \begin{equation*}
 \frac{\sinh(a/s)}{\sin(\alpha)}=\frac{\sinh(b/s)}{\sin(\beta)}=\frac{\sinh(c/s)}{\sin(\gamma)}.
 \end{equation*}
-</div></article><article class="exercise-like" id="exercise-176"><h6 class="heading">
+</div></article><article class="exercise-like" id="exercise-174"><h6 class="heading">
 <span class="codenumber">5</span> </h6>
-<p id="p-1265">As \(k \lt  0\) approaches 0, the formulas of hyperbolic geoemtry \((\mathbb{D}_k,{\cal H}_k)\) approach those of Euclidean geometry. What happens to Lobatchevsky's formula as \(k\) approaches 0? What must be the angle of parallelism \(\theta\) in the limiting case? Is this value of \(\theta\) independent of \(d\text{?}\)</p></article><article class="exercise-like" id="exercise-177"><h6 class="heading">
+<p id="p-1265">As \(k \lt  0\) approaches 0, the formulas of hyperbolic geometry \((\mathbb{D}_k,{\cal H}_k)\) approach those of Euclidean geometry. What happens to Lobatchevsky's formula as \(k\) approaches 0? What must be the angle of parallelism \(\theta\) in the limiting case? Is this value of \(\theta\) independent of \(d\text{?}\)</p></article><article class="exercise-like" id="exercise-175"><h6 class="heading">
 <span class="codenumber">6</span> </h6>
-<p id="p-1266">Bessel determined a parallax of \(p = .3\) arcseconds for the star 61 Cygni. Convert this angle to radians and use it to estimate a bound for the curvature constant \(k\) if the universe is hyperbolic. The units for this bound should be light years\(^{-2}\) (convert the units for the Earth-Sun distance to light-years).</p></article><article class="exercise-like" id="exercise-178"><h6 class="heading">
+<p id="p-1266">Bessel determined a parallax of \(p = .3\) arcseconds for the star 61 Cygni. Convert this angle to radians and use it to estimate a bound for the curvature constant \(k\) if the universe is hyperbolic. The units for this bound should be light years\(^{-2}\) (convert the units for the Earth-Sun distance to light-years).</p></article><article class="exercise-like" id="exercise-176"><h6 class="heading">
 <span class="codenumber">7</span> </h6>
 <p id="p-1267">The smallest detectable parallax is determined by the resolving power of our best telescopes. Search the web to find the smallest detected parallax to date, and use it to estimate a bound on \(k\) if the universe is hyperbolic.</p></article></section></section></div></main>
 </div>
@@ -326,6 +339,7 @@ var sc_security="f68ed8d5";
 var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
 document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
 </script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
+<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

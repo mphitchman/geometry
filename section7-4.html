@@ -1,9 +1,9 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:42-07:00    *-->
+<!--*    on 2018-12-06T09:47:32-08:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -15,8 +15,14 @@
 <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
         extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
@@ -35,15 +41,21 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
 <link rel="stylesheet" type="text/css" href="title-period-fix.css">
+<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+</script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -132,11 +144,9 @@ MathJax.Hub.Config({
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
 <h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<ul>
-<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
-<li><a href="references.html" data-scroll="references">References</a></li>
-<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
+<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
+<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="mathbook-content"><section class="section" id="section7-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.4</span> <span class="title">The Family of Geometries \((X_k,G_k)\)</span>
@@ -177,13 +187,13 @@ A(R) = \iint_R \frac{4r}{(1+kr^2)^2}dr d\theta.
 </div></article></section><p id="p-1272">As we have seen, these geometries manifest themselves in strikingly different ways. If \(k
 \gt 0\text{,}\) the sum of the angles of a triangle must be greater than \(\pi\text{;}\) and if \(k \lt  0\) the sum of the angles of a triangle must be less than \(\pi\text{.}\) If \(k \gt 0\) the space \(X_k = \mathbb{P}^2_k\) has finite area; if \(k \lt  0\text{,}\) \(X_k = \mathbb{D}_k\) has infinite area. If \(k \gt 0\) the circumference of a circle with radius \(r\) is less than \(2\pi r\text{;}\) if \(k \lt  0\) the circumference is greater than \(2\pi r\text{.}\)</p>
 <p id="p-1273">What about when \(k = 0\text{?}\)  We may check that \((X_0,G_0)\) corresponds to Euclidean geometry, though with a scaled metric.  In particular, lines in \((X_0,G_0)\) correspond to Euclidean lines (since \(k = 0\text{,}\) \(-1/(k\overline{p}) = \infty\text{,}\) so the unique line through \(p\) and \(q\) is the Euclidean line), and when \(k = 0\) the arc-length is simply twice the usual Euclidean arc-length.  So while we are scaling distances in \((X_0,G_0)\text{,}\) Euclidean geometry applies: triangles are Euclidean triangles and have angle sum equal to 180\(^\circ\text{.}\)  Triangles with a right angle are Euclidean right triangles and satisfy the Pythagorean theorem.</p>
-<p id="p-1274">Thus, we treat \((X_k,G_k)\) as one big family of geometries. The <em class="emphasis">sign</em> of \(k\) dictates the <em class="emphasis">type</em> of geometry we have, and the magnitude of \(k\) dictates the radius of the disk in which we model the geometry (unless \(k = 0\) in which case the space is \(\mathbb{C}\)).  Morevoer, Euclidean geometry \((X_0,G_0)\) marks the edge of the knife from wihch we move into a hyperbolic world is \(k\) drops below 0, and into an elliptic world if \(k\) rises above 0.</p>
+<p id="p-1274">Thus, we treat \((X_k,G_k)\) as one big family of geometries. The <em class="emphasis">sign</em> of \(k\) dictates the <em class="emphasis">type</em> of geometry we have, and the magnitude of \(k\) dictates the radius of the disk in which we model the geometry (unless \(k = 0\) in which case the space is \(\mathbb{C}\)).  Morevoer, Euclidean geometry \((X_0,G_0)\) marks the edge of the knife from which we move into a hyperbolic world is \(k\) drops below 0, and into an elliptic world if \(k\) rises above 0.</p>
 <p id="p-1275">We now summarize some results established in the previous sections and emphasize key features common to all \((X_k,G_k)\text{.}\)</p>
 <p id="p-1276">First and foremost, we note that arc-length is an invariant function of \((X_k,G_k)\) and that the arc-length ensures that the shortest path from \(p\) to \(q\) in \((X_k,G_k)\) is along the line between them.  We have discussed these facts in the cases \(k = -1,0,1\text{,}\) and the result holds for arbitrary \(k\text{.}\)  So, the arc-length formula provides a metric on \((X_k,G_k)\text{:}\) Given \(p,q \in X_k\text{,}\) we define \(d_k(p,q)\) to be the length of the shortest path from \(p\) to \(q\text{.}\)  The circle in \((X_k,G_k)\) centered at \(p\) through \(q\) consists of all points in \(X_k\) whose distance from \(p\) equals \(d_k(p,q)\text{.}\)</p>
 <article class="theorem-like" id="theorem-58"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">7.4.2</span>
 </h6>
-<p id="p-1277">For all real numbers \(k\text{,}\) \((X_k,G_k)\) is homogeneous and isotropic.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-49" id="proof-49"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-49" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1278">Given any point \(p\) in \(X_k\text{,}\) the transformation \(T(z) = \frac{z-p}{1+k\overline{p}z}\) in \(G_k\) maps \(p\) to the origin.  So all points in \(X_k\) are congruent to \(0\text{.}\)  By the group structure of \(G_k\) it follows that any two points in \(X_k\) are congruent, so the geometry is homogeneous.</p>
+<p id="p-1277">For all real numbers \(k\text{,}\) \((X_k,G_k)\) is homogeneous and isotropic.</p></article><article class="hiddenproof" id="proof-49"><a knowl="" class="id-ref" refid="hk-proof-49"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-49" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1278">Given any point \(p\) in \(X_k\text{,}\) the transformation \(T(z) = \frac{z-p}{1+k\overline{p}z}\) in \(G_k\) maps \(p\) to the origin.  So all points in \(X_k\) are congruent to \(0\text{.}\)  By the group structure of \(G_k\) it follows that any two points in \(X_k\) are congruent, so the geometry is homogeneous.</p>
 <p id="p-1279">To show \((X_k,G_k)\) is isotropic we consider three cases.</p>
 <p id="p-1280">If \(k \lt 0\) then \((X_k,G_k)\) models hyperbolic geometry on the open disk with radius \(s = 1/\sqrt{|k|}\text{.}\)  As such, \(G_k\) contains the sorts of Möbius transformations discussed in Chapter 5 and pictured in <a knowl="./knowl/fig-hypmaps.html" title="Figure 5.1.6">Figure 5.1.6</a>.  In particular, for any point \(p \in \mathbb{D}_k\text{,}\) \(G_k\) contains all elliptic Möbius transformations that swirl points around type II clines of \(p\) and \(-1/(k\overline{p})\text{,}\) the point symmetric to \(p\) with respect to the circle at infinity.  These maps are preciley the rotations about the point \(p\) in this geometry: they rotate points in \(X_k\) around cicles centered at \(p\text{.}\)</p>
 <p id="p-1281">If \(k = 0\text{,}\) then transformations in \(G_0\) have the form \(T(z)=e^{i\theta}(z-z_0)\text{.}\)  Now, rotation by angle \(\theta\) about the point \(p\) in the Euclidean plane is given by \(T(z)=e^{i\theta}(z-p)+p\text{.}\)  Setting \(z_0 = p-pe^{-i\theta}\) we see that this rotation indeed lives in \(G_0\text{.}\)</p>
@@ -206,8 +216,9 @@ kA = (\alpha + \beta + \gamma - \pi).
 \begin{equation*}
 kA = \bigg(\sum_{i=1}^n\alpha_i\bigg) - (n-2)\pi. 
 \end{equation*}
-</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-50" id="proof-50"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-50" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1287">A convex \(n\)-gon can be divided into \(n-2\) triangles as in <a knowl="./knowl/fig-ngontri.html" title="Figure 7.4.5">Figure 7.4.5</a>.  Observe that the area of the \(n\)-gon equals the sum of the areas of these triangles.</p>
-<figure class="figure-like" id="fig-ngontri"><img src="images/im-ngontri.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">7.4.5</span> Splitting an \(n\)-gon into \(n-2\) triangles in the case \(n
+</div></article><article class="hiddenproof" id="proof-50"><a knowl="" class="id-ref" refid="hk-proof-50"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-50" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1287">A convex \(n\)-gon can be divided into \(n-2\) triangles as in <a knowl="./knowl/fig-ngontri.html" title="Figure 7.4.5">Figure 7.4.5</a>.  Observe that the area of the \(n\)-gon equals the sum of the areas of these triangles.</p>
+<figure class="figure-like" id="fig-ngontri"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-ngontri.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">7.4.5</span> Splitting an \(n\)-gon into \(n-2\) triangles in the case \(n
 = 8\text{.}\)</figcaption></figure><p id="p-1288">By <a knowl="./knowl/thm_ktriarea.html" title="Theorem 7.4.3">Theorem 7.4.3</a>, the area \(A_i\) of the \(i\)th triangle \(\Delta_i\) is related to its angle sum by</p>
 <div class="displaymath">
 \begin{equation*}
@@ -237,7 +248,7 @@ kA = \bigg(\sum_{i=1}^n \alpha_i \bigg) - (n-2)\pi.
 \begin{equation*}
 \frac{4\pi x^2}{1+kx^2}.
 \end{equation*}
-</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-51" id="proof-51"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-51" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1293">Consider the circle centered at the origin that goes through the point \(x\) on the positive real axis, where \(0 \lt x \lt s\text{.}\) The circular region matches the polar rectangle \(0 \lt \theta \lt 2\pi\) and \(0 \lt r \lt x\text{,}\) so the area is given by</p>
+</div></article><article class="hiddenproof" id="proof-51"><a knowl="" class="id-ref" refid="hk-proof-51"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-51" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1293">Consider the circle centered at the origin that goes through the point \(x\) on the positive real axis, where \(0 \lt x \lt s\text{.}\) The circular region matches the polar rectangle \(0 \lt \theta \lt 2\pi\) and \(0 \lt r \lt x\text{,}\) so the area is given by</p>
 <div class="displaymath">
 \begin{equation*}
 \int_0^{2\pi} \int_0^x \frac{4r}{(1+kr^2)^2}dr d\theta.
@@ -253,7 +264,7 @@ kA = \bigg(\sum_{i=1}^n \alpha_i \bigg) - (n-2)\pi.
 A(c)=A(a)+A(b)-\frac{k}{2\pi}A(a)A(b),
 \end{equation*}
 </div>
-<p>where \(A(r)\) denotes the area of a circle with radius \(r\) as measured in \((X_k,G_k)\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-52" id="proof-52"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-52" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1295">Suppose \(k \in \mathbb{R}\text{.}\)  If \(k = 0\) the equation reduces to \(c^2 = a^2 + b^2\text{,}\) which is true by the <a knowl="./knowl/thm-pythagoras.html" title="Theorem 1.2.1: The Pythagorean Theorem">Pythagorean Theorem 1.2.1</a>!  Otherwise, assume \(k \neq 0\) and let \(s = \frac{1}{\sqrt{|k|}}\text{,}\) as usual.  Without loss of generality we may assume our right triangle is defined by the points \(z = 0\text{,}\) \(p = x\text{,}\) and \(q = yi\text{,}\) where \(0 \lt x,y \lt s\text{.}\)  By construction, the legs \(zp\) and \(zq\) are Euclidean segments, and \(\angle pzq\) is right.</p>
+<p>where \(A(r)\) denotes the area of a circle with radius \(r\) as measured in \((X_k,G_k)\text{.}\)</p></article><article class="hiddenproof" id="proof-52"><a knowl="" class="id-ref" refid="hk-proof-52"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-52" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1295">Suppose \(k \in \mathbb{R}\text{.}\)  If \(k = 0\) the equation reduces to \(c^2 = a^2 + b^2\text{,}\) which is true by the <a knowl="./knowl/thm-pythagoras.html" title="Theorem 1.2.1: The Pythagorean Theorem">Pythagorean Theorem 1.2.1</a>!  Otherwise, assume \(k \neq 0\) and let \(s = \frac{1}{\sqrt{|k|}}\text{,}\) as usual.  Without loss of generality we may assume our right triangle is defined by the points \(z = 0\text{,}\) \(p = x\text{,}\) and \(q = yi\text{,}\) where \(0 \lt x,y \lt s\text{.}\)  By construction, the legs \(zp\) and \(zq\) are Euclidean segments, and \(\angle pzq\) is right.</p>
 <p id="p-1296">Let \(a = d_k(z,p), b = d_k(z,q),\) and \(c = d_k(p,q)\text{.}\)  By <a knowl="./knowl/lemma-Gkarea.html" title="Lemma 7.4.6">Lemma 7.4.6</a>,</p>
 <div class="displaymath">
 \begin{equation*}
@@ -284,9 +295,9 @@ A(c) = A(a) + A(b)-\frac{k}{2\pi}A(a)A(b)\text{.}
 <span class="type">Example</span> <span class="codenumber">7.4.8</span> <span class="title">Detecting curvature with triangles</span>
 </h6>
 <p id="p-1299">Suppose a two-dimensional bug in \((X_k,G_k)\) walks along a line for \(a \gt 0\) units, turns left 90\(^\circ\text{,}\) and walks on a line for another \(a\) units, thus creating a right triangle with legs of equal length. Let \(c\) denote the hypotenuse of this triangle.  The diagram below depicts such a route, in each of the three geometry types.  For convenience, we assume the journey begins at the origin and proceeds first along the positive real axis.</p>
-<div class="sidebyside" id="sidebyside-40"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hypotenuse-k.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
-<p id="p-1300">It turns out the value of \(c\) as a function of \(a\) can reveal the curvature \(k\) of the geometry.  If \(k = 0\) the Pythagorean theorem tells us that \(c^2 = 2a^2\text{.}\)  For \(k \lt 0\text{,}\) the hyperbolic law of cosines (<a knowl="./knowl/hmk-law-of-cosines-negk.html" title="Exercise 7.3.4">Exercise 7.3.4</a>) tells us that \(\cosh(\sqrt{|k|} c) = \cosh^2(\sqrt{|k|}a)\text{.}\)  For \(k \gt 0\text{,}\) the elliptic law of cosines (<a knowl="./knowl/hmk-law-of-cosines-posk.html" title="Exercise 7.2.5">Exercise 7.2.5</a>) tells us that \(\cos(\sqrt{k} c) = \cos^2(\sqrt{k}a)\text{.}\)  We may solve each of these equations for \(c\text{,}\) using the fact that \(a\)  and \(c\) are positive, to give us \(c\) as a function of \(a\) and the curvature \(k\text{.}\)  We have plotted these functions for \(k = -1,0,1\) below.  When \(k \lt 0\) the length of the hypotenuse of such a triangle is slightly longer than that predicted by the Euclidean formula (the Pythagorean theorem); when \(k \gt 0\) the length is smaller than the length predicted by the Euclidean formula.</p>
-<div class="sidebyside" id="sidebyside-41"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hypotenuse.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></article><p id="p-1301">We close by summarizing measurement formulas for these geometries.  Except for the case \(k=0\) these formulas were proved in the exercises of the previoius two sections.  The case \(k=0\) is tackled in <a knowl="./knowl/hmk-cur0geom.html" title="Exercise 7.4.1">Exercise 7.4.1</a>.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hypotenuse-k.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1300">It turns out the value of \(c\) as a function of \(a\) can reveal the curvature \(k\) of the geometry.  If \(k = 0\) the Pythagorean theorem tells us that \(c^2 = 2a^2\text{.}\)  For \(k \lt 0\text{,}\) the hyperbolic law of cosines (<a knowl="./knowl/hmk-law-of-cosines-negk.html" title="Exercise 4">Exercise 4</a>) tells us that \(\cosh(\sqrt{|k|} c) = \cosh^2(\sqrt{|k|}a)\text{.}\)  For \(k \gt 0\text{,}\) the elliptic law of cosines (<a knowl="./knowl/hmk-law-of-cosines-posk.html" title="Exercise 7.2.5">Exercise 7.2.5</a>) tells us that \(\cos(\sqrt{k} c) = \cos^2(\sqrt{k}a)\text{.}\)  We may solve each of these equations for \(c\text{,}\) using the fact that \(a\)  and \(c\) are positive, to give us \(c\) as a function of \(a\) and the curvature \(k\text{.}\)  We have plotted these functions for \(k = -1,0,1\) below.  When \(k \lt 0\) the length of the hypotenuse of such a triangle is slightly longer than that predicted by the Euclidean formula (the Pythagorean theorem); when \(k \gt 0\) the length is smaller than the length predicted by the Euclidean formula.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hypotenuse.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1301">We close by summarizing measurement formulas for these geometries.  Except for the case \(k=0\) these formulas were proved in the exercises of the previoius two sections.  The case \(k=0\) is tackled in <a knowl="./knowl/hmk-cur0geom.html" title="Exercise 7.4.1">Exercise 7.4.1</a>.</p>
 <article class="assemblage-like" id="summ-Xkforms"><h6 class="heading"><span class="title">Measurement Formulas in \((X_k,G_k)\)</span></h6>
 <p id="p-1302">Suppose \(k \in \mathbb{R}\text{,}\) \(s = \frac{1}{\sqrt{|k|}}\) and \(0 \lt x \lt s\) is a real number (with the convention that if \(k = 0\) we simply require \(0 \lt x\)).</p>
 <ul id="p-1303" class="disc">
@@ -331,23 +342,23 @@ C(r) =
 </h3>
 <a href="section7-4.html#exercises-25" class="permalink">¶</a><article class="exercise-like" id="hmk-cur0geom"><h6 class="heading">
 <span class="codenumber">1</span> </h6>
-<p id="p-1307">Check that the measurement formulas in \((X_k,G_k)\) are correct when \(k = 0\text{.}\)  In particular, show that \(d_0(0,x)=2x\) for any \(x \gt 0\) on the real axis, and that a circle with radius \(r\) as measured in \((X_0,G_0)\) has area \(A(r) = \pi r^2\) and circumference \(C(r)=2\pi r\text{.}\)</p></article><article class="exercise-like" id="exercise-180"><h6 class="heading">
+<p id="p-1307">Check that the measurement formulas in \((X_k,G_k)\) are correct when \(k = 0\text{.}\)  In particular, show that \(d_0(0,x)=2x\) for any \(x \gt 0\) on the real axis, and that a circle with radius \(r\) as measured in \((X_0,G_0)\) has area \(A(r) = \pi r^2\) and circumference \(C(r)=2\pi r\text{.}\)</p></article><article class="exercise-like" id="exercise-178"><h6 class="heading">
 <span class="codenumber">2</span> </h6>
-<p id="p-1308">Complete the proof of <a knowl="./knowl/lemma-Gkarea.html" title="Lemma 7.4.6">Lemma 7.4.6</a>.</p></article><article class="exercise-like" id="exercise-181"><h6 class="heading">
+<p id="p-1308">Complete the proof of <a knowl="./knowl/lemma-Gkarea.html" title="Lemma 7.4.6">Lemma 7.4.6</a>.</p></article><article class="exercise-like" id="exercise-179"><h6 class="heading">
 <span class="codenumber">3</span> </h6>
 <p id="p-1309">Use <a knowl="./knowl/def-curvature.html" title="Definition 7.1.4">Definition 7.1.4</a> to prove that for all real numbers \(k\text{,}\) the curvature of \((X_k, G_k)\) is indeed equal to \(k\text{.}\) Hint: Tackle three cases: \(k \lt  0, k = 0\text{,}\) and \(k \gt 0\text{.}\)</p></article><article class="exercise-like" id="ex_2dexplore"><h6 class="heading">
 <span class="codenumber">4</span> </h6>
-<p id="p-1310">Suppose an intrepid team of two-dimensional explorers sets out to determine which 2-dimensional geometry is theirs. Their cosmologists have told them there world is homogeneous, isotropic, and metric, so they believe that the geometry of their universe is modeled by \((X_k,G_k)\) for some real number \(k\text{.}\) They carefully measure the angles and area of a triangle. They find the angles to be 29.2438\(^\circ\text{,}\) 73.4526\(^\circ\text{,}\) and 77.2886\(^\circ\text{,}\) and the area is 8.81 km\(^2\text{.}\) Which geometry is theirs? What is the curvature of their universe?</p></article><article class="exercise-like" id="exercise-183"><h6 class="heading">
+<p id="p-1310">Suppose an intrepid team of two-dimensional explorers sets out to determine which 2-dimensional geometry is theirs. Their cosmologists have told them there world is homogeneous, isotropic, and metric, so they believe that the geometry of their universe is modeled by \((X_k,G_k)\) for some real number \(k\text{.}\) They carefully measure the angles and area of a triangle. They find the angles to be 29.2438\(^\circ\text{,}\) 73.4526\(^\circ\text{,}\) and 77.2886\(^\circ\text{,}\) and the area is 8.81 km\(^2\text{.}\) Which geometry is theirs? What is the curvature of their universe?</p></article><article class="exercise-like" id="exercise-181"><h6 class="heading">
 <span class="codenumber">5</span> </h6>
-<p id="p-1311">Prove that in \((X_k,G_k)\) the derivative of area with respect to \(r\) is circumference: \(\frac{d}{dr}[A(r)]=C(r).\)</p></article><article class="exercise-like" id="exercise-184"><h6 class="heading">
+<p id="p-1311">Prove that in \((X_k,G_k)\) the derivative of area with respect to \(r\) is circumference: \(\frac{d}{dr}[A(r)]=C(r).\)</p></article><article class="exercise-like" id="exercise-182"><h6 class="heading">
 <span class="codenumber">6</span> </h6>
-<p id="p-1312">Suppose a two-dimensional bug in \((X_k,G_k)\) traces the right triangle route from 0 to \(p\) as depicted in <a knowl="./knowl/ex-hypotenuse-k.html" title="Example 7.4.8: Detecting curvature with triangles">Example 7.4.8</a>. Argue that for a given value of \(a\text{,}\) the hyperbolic hypotenuse length exceeds the Euclidean hypotenuse length, which exceeds the elliptic hypotenuse length.  Hint: One might prove that for all \(k\text{,}\) when \(a = 0\text{,}\) \(c = 0\) and \(\frac{dc}{da}\vert_{a=0}=\sqrt{2}\text{;}\) and then show that for \(a \gt 0\text{,}\) \(\frac{d^2 c}{da^2}\) is positive for negative values of \(k\text{,}\) and it is negative for positive values of \(k\text{.}\)</p></article><article class="exercise-like" id="exercise-185"><h6 class="heading">
+<p id="p-1312">Suppose a two-dimensional bug in \((X_k,G_k)\) traces the right triangle route from 0 to \(p\) as depicted in <a knowl="./knowl/ex-hypotenuse-k.html" title="Example 7.4.8: Detecting curvature with triangles">Example 7.4.8</a>. Argue that for a given value of \(a\text{,}\) the hyperbolic hypotenuse length exceeds the Euclidean hypotenuse length, which exceeds the elliptic hypotenuse length.  Hint: One might prove that for all \(k\text{,}\) when \(a = 0\text{,}\) \(c = 0\) and \(\frac{dc}{da}\vert_{a=0}=\sqrt{2}\text{;}\) and then show that for \(a \gt 0\text{,}\) \(\frac{d^2 c}{da^2}\) is positive for negative values of \(k\text{,}\) and it is negative for positive values of \(k\text{.}\)</p></article><article class="exercise-like" id="exercise-183"><h6 class="heading">
 <span class="codenumber">7</span> </h6>
-<p id="p-1313">Suppose a team of two-dimensional explorers living in \((X_k,G_k)\) travels 8 units along a line.  Then they turn right (90\(^\circ\)) and travel 8 units along a line.  At this point they find they are 12 units from their starting point.  Which type of geometry applies to their universe?  Can they determine the value of \(k\) from this measurement? If so, what is it?</p></article><article class="exercise-like" id="exercise-186"><h6 class="heading">
+<p id="p-1313">Suppose a team of two-dimensional explorers living in \((X_k,G_k)\) travels 8 units along a line.  Then they turn right (90\(^\circ\)) and travel 8 units along a line.  At this point they find they are 12 units from their starting point.  Which type of geometry applies to their universe?  Can they determine the value of \(k\) from this measurement? If so, what is it?</p></article><article class="exercise-like" id="exercise-184"><h6 class="heading">
 <span class="codenumber">8</span> </h6>
-<p id="p-1314">Repeat the previous exercise using the measurements \(a = 8\) units and \(c = 11.2\) units.</p></article><article class="exercise-like" id="exercise-187"><h6 class="heading">
+<p id="p-1314">Repeat the previous exercise using the measurements \(a = 8\) units and \(c = 11.2\) units.</p></article><article class="exercise-like" id="exercise-185"><h6 class="heading">
 <span class="codenumber">9</span> </h6>
-<p id="p-1315">Suppose a team of two-dimensional explorers living in \((X_k,G_k)\) finds themselves at point \(p\text{.}\)  They travel 8 units along a line to a point \(z\text{,}\) turn right (90\(^\circ\)) and travel another 8 units along a line to the point \(q\text{.}\)  At this point they measure \(\angle pqz=.789\) radians.  Which type of geometry applies to their universe?  Can they determine the value of \(k\) from this measurement? If so, what is it?</p></article><article class="exercise-like" id="exercise-188"><h6 class="heading">
+<p id="p-1315">Suppose a team of two-dimensional explorers living in \((X_k,G_k)\) finds themselves at point \(p\text{.}\)  They travel 8 units along a line to a point \(z\text{,}\) turn right (90\(^\circ\)) and travel another 8 units along a line to the point \(q\text{.}\)  At this point they measure \(\angle pqz =.789\) radians.  Which type of geometry applies to their universe?  Can they determine the value of \(k\) from this measurement? If so, what is it?</p></article><article class="exercise-like" id="exercise-186"><h6 class="heading">
 <span class="codenumber">10</span> </h6>
 <p id="p-1316">Suppose a team of two-dimensional explorers living in \((X_k,G_k)\) tethers one of their team to a line 18 scrambles long (a scramble is the standard unit for measuring length in this world - and 24 scrambles equals one tubablast).  They swing the volunteer around in a circle, and though he laughs maniacally, he is able to record with confidence that he traveled 113.4 scrambles.  Assuming these measurements are correct, which type of geometry applies to their universe?  Can they determine the value of \(k\) from these measurements? If so, what is it?</p></article></section></section></div></main>
 </div>
@@ -358,6 +369,7 @@ var sc_security="f68ed8d5";
 var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
 document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
 </script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
+<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:39-07:00    *-->
+<!--*    on 2018-12-06T09:47:29-08:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -15,8 +15,14 @@
 <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
         extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
@@ -35,15 +41,21 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
 <link rel="stylesheet" type="text/css" href="title-period-fix.css">
+<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+</script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -132,11 +144,9 @@ MathJax.Hub.Config({
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
 <h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<ul>
-<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
-<li><a href="references.html" data-scroll="references">References</a></li>
-<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
+<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
+<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="mathbook-content"><section class="section" id="section5-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Figures of Hyperbolic Geometry</span>
@@ -145,47 +155,51 @@ MathJax.Hub.Config({
 <article class="definition-like" id="definition-17"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">5.2.1</span>
 </h6>
-<p id="p-723">A <dfn class="terminology">hyperbolic line</dfn> in \((\mathbb{D},{\cal H})\) is the portion of a cline inside \(\mathbb{D}\) that is orthogonal to the circle at infinity \(\mathbb{S}^1_\infty\text{.}\) A point on \(\mathbb{S}^1_\infty\) is called an <dfn class="terminology">ideal point</dfn>. Two hyperbolic lines are <dfn class="terminology">parallel</dfn> if they share one ideal point.</p></article><figure class="figure-like" id="fig-hyplines"><img src="images/im-hyplines.svg" width="35%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.2.2</span> A few hyperbolic lines in the Poincaré disk model.</figcaption></figure><article class="theorem-like" id="thm-hypline-through-pq"><h6 class="heading">
+<p id="p-723">A <dfn class="terminology">hyperbolic line</dfn> in \((\mathbb{D},{\cal H})\) is the portion of a cline inside \(\mathbb{D}\) that is orthogonal to the circle at infinity \(\mathbb{S}^1_\infty\text{.}\) A point on \(\mathbb{S}^1_\infty\) is called an <dfn class="terminology">ideal point</dfn>. Two hyperbolic lines are <dfn class="terminology">parallel</dfn> if they share one ideal point.</p></article><figure class="figure-like" id="fig-hyplines"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-hyplines.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.2.2</span> A few hyperbolic lines in the Poincaré disk model.</figcaption></figure><article class="theorem-like" id="thm-hypline-through-pq"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">5.2.3</span>
 </h6>
-<p id="p-724">There exists a unique hyperbolic line through any two distinct points in the hyperbolic plane.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-28" id="proof-28"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-28" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-725">Let \(p\) and \(q\) be arbitrary points in \(\mathbb{D}\text{.}\)  Construct the point \(p^*\) symmetric to \(p\) with respect to the unit circle, \(\mathbb{S}^1_\infty\text{.}\)  Then there exists a cline through \(p, q\) and \(p^*\text{,}\) and this cline will be orthogonal to \(\mathbb{S}^1_\infty\text{,}\) so it gives a hyperbolic line through \(p\) and \(q\text{.}\)  Since there is just one cline through \(p, q\) and \(p^*\text{,}\) this hyperbolic line is unique.</p></article></div>
+<p id="p-724">There exists a unique hyperbolic line through any two distinct points in the hyperbolic plane.</p></article><article class="hiddenproof" id="proof-28"><a knowl="" class="id-ref" refid="hk-proof-28"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-28" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-725">Let \(p\) and \(q\) be arbitrary points in \(\mathbb{D}\text{.}\)  Construct the point \(p^*\) symmetric to \(p\) with respect to the unit circle, \(\mathbb{S}^1_\infty\text{.}\)  Then there exists a cline through \(p, q\) and \(p^*\text{,}\) and this cline will be orthogonal to \(\mathbb{S}^1_\infty\text{,}\) so it gives a hyperbolic line through \(p\) and \(q\text{.}\)  Since there is just one cline through \(p, q\) and \(p^*\text{,}\) this hyperbolic line is unique.</p></article></div>
 <p id="p-726">Which hyperbolic lines happen to be portions of Euclidean lines (instead of Euclidean circles)? A Euclidean line intersects a circle at right angles if and only if it goes through the center of the circle. Thus, the only hyperbolic lines that also happen to be Euclidean lines are those that go through the origin.</p>
 <p id="p-727">One may also use a symmetric points argument to arrive at this last fact. Any Euclidean line goes through \(\infty\text{.}\)  To be a hyperbolic line (i.e., to be orthogonal to \(\mathbb{S}^1_\infty\)), the line must also pass through the point symmetric to \(\infty\) with respect to the unit circle. This point is 0. Thus, to be a <em class="emphasis">hyperbolic</em> line in \((\mathbb{D},{\cal H})\text{,}\) a Euclidean line must go through the origin.</p>
 <article class="theorem-like" id="theorem-32"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">5.2.4</span>
 </h6>
-<p id="p-728">Any two hyperbolic lines are congruent in hyperbolic geometry.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-29" id="proof-29"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-29" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-729">We first show that any given hyperbolic line \(L\) is congruent to the hyperbolic line on the real axis. Suppose \(p\) is a point on \(L\text{,}\) and \(v\) is one of its ideal points. By <a knowl="./knowl/cor_hypsendzto0.html" title="Lemma 5.1.5">Lemma 5.1.5</a> there is a transformation \(T\) in \({\cal H}\) that maps \(p\) to 0, \(v\) to 1, and \(p^*\) to \(\infty\text{.}\) Thus \(T(L)\) is the portion of the real axis inside \(\mathbb{D}\text{,}\) and \(L\) is congruent to the hyperbolic line on the real axis. Since any hyperbolic line is congruent to the hyperbolic line on the real axis, the group nature of \(\cal H\) ensures that any two hyperbolic lines are congruent.</p></article></div>
-<figure class="figure-like" id="fig-hyplinescong"><img src="images/im-hyplinescong.svg" width="35%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.2.5</span> Any hyperbolic line is congruent to the hyperbolic line on the real axis.</figcaption></figure><article class="theorem-like" id="th_hyppar"><h6 class="heading">
+<p id="p-728">Any two hyperbolic lines are congruent in hyperbolic geometry.</p></article><article class="hiddenproof" id="proof-29"><a knowl="" class="id-ref" refid="hk-proof-29"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-29" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-729">We first show that any given hyperbolic line \(L\) is congruent to the hyperbolic line on the real axis. Suppose \(p\) is a point on \(L\text{,}\) and \(v\) is one of its ideal points. By <a knowl="./knowl/cor_hypsendzto0.html" title="Lemma 5.1.5">Lemma 5.1.5</a> there is a transformation \(T\) in \({\cal H}\) that maps \(p\) to 0, \(v\) to 1, and \(p^*\) to \(\infty\text{.}\) Thus \(T(L)\) is the portion of the real axis inside \(\mathbb{D}\text{,}\) and \(L\) is congruent to the hyperbolic line on the real axis. Since any hyperbolic line is congruent to the hyperbolic line on the real axis, the group nature of \(\cal H\) ensures that any two hyperbolic lines are congruent.</p></article></div>
+<figure class="figure-like" id="fig-hyplinescong"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-hyplinescong.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.2.5</span> Any hyperbolic line is congruent to the hyperbolic line on the real axis.</figcaption></figure><article class="theorem-like" id="th_hyppar"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">5.2.6</span>
 </h6>
-<p id="p-730">Given a point \(z_0\) and a hyperbolic line \(L\) not through \(z_0\text{,}\) there exist two distinct hyperbolic lines through \(z_0\) that are parallel to \(L\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-30" id="proof-30"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-30" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-731">Consider the case where \(z_0\) is at the origin. The line \(L\) has two ideal points, call them \(u\) and \(v\text{,}\) as in <a knowl="./knowl/fig-hypparallel.html" title="Figure 5.2.7">Figure 5.2.7</a>. Moreover, since \(L\) does not go through the origin, Euclidean segment \(uv\) is not a diameter of the unit circle. Construct one Euclidean line through 0 and \(u\text{,}\) and a second Euclidean line through 0 and \(v\text{.}\) (These lines will be distinct because \(uv\) is not a diameter of the unit circle.) Each of these lines is a hyperbolic line through 0, and each shares exactly one ideal point with \(L\text{.}\) Thus, each is parallel to \(L\text{.}\) The fact that the result holds for general \(z_0\) is left as an exercise.</p></article></div>
-<figure class="figure-like" id="fig-hypparallel"><img src="images/im-hypparallel.svg" width="35%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.2.7</span> Through a point not on a given hyperbolic line \(L\) there exist two hyperbolic lines parallel to \(L\text{.}\)</figcaption></figure><p id="p-732"><a knowl="./knowl/fig-hypparallel.html" title="Figure 5.2.7">Figure 5.2.7</a> illustrates an unusual feature of parallel lines in hyperbolic geometry: there is no notion of <em class="emphasis">transitivity</em>. In Euclidean geometry we know that if line \(L\) is parallel to line \(M\text{,}\) and line \(M\) is parallel to line \(N\text{,}\) then line \(L\) is parallel to line \(N\text{.}\) This is not the case in hyperbolic geometry.</p>
-<article class="example-like" id="example-40"><h6 class="heading">
+<p id="p-730">Given a point \(z_0\) and a hyperbolic line \(L\) not through \(z_0\text{,}\) there exist two distinct hyperbolic lines through \(z_0\) that are parallel to \(L\text{.}\)</p></article><article class="hiddenproof" id="proof-30"><a knowl="" class="id-ref" refid="hk-proof-30"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-30" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-731">Consider the case where \(z_0\) is at the origin. The line \(L\) has two ideal points, call them \(u\) and \(v\text{,}\) as in <a knowl="./knowl/fig-hypparallel.html" title="Figure 5.2.7">Figure 5.2.7</a>. Moreover, since \(L\) does not go through the origin, Euclidean segment \(uv\) is not a diameter of the unit circle. Construct one Euclidean line through 0 and \(u\text{,}\) and a second Euclidean line through 0 and \(v\text{.}\) (These lines will be distinct because \(uv\) is not a diameter of the unit circle.) Each of these lines is a hyperbolic line through 0, and each shares exactly one ideal point with \(L\text{.}\) Thus, each is parallel to \(L\text{.}\) The fact that the result holds for general \(z_0\) is left as an exercise.</p></article></div>
+<figure class="figure-like" id="fig-hypparallel"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-hypparallel.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.2.7</span> Through a point not on a given hyperbolic line \(L\) there exist two hyperbolic lines parallel to \(L\text{.}\)</figcaption></figure><p id="p-732"><a knowl="./knowl/fig-hypparallel.html" title="Figure 5.2.7">Figure 5.2.7</a> illustrates an unusual feature of parallel lines in hyperbolic geometry: there is no notion of <em class="emphasis">transitivity</em>. In Euclidean geometry we know that if line \(L\) is parallel to line \(M\text{,}\) and line \(M\) is parallel to line \(N\text{,}\) then line \(L\) is parallel to line \(N\text{.}\) This is not the case in hyperbolic geometry.</p>
+<article class="example-like" id="example-42"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">5.2.8</span> <span class="title">Hyperbolic triangles</span>
 </h6>
 <p id="p-733">Three points in the hyperbolic plane \(\mathbb{D}\) that are not all on a single hyperbolic line determine a hyperbolic triangle. The hyperbolic triangle $\Delta pqr$ is pictured below. The sides of the triangle are portions of hyperbolic lines.</p>
 <p id="p-734">Are all hyperbolic triangles congruent? No. Since transformations in \(\cal H\) are Möbius transformations they preserve angles, so triangles with different angles are not congruent.</p>
-<div class="sidebyside" id="sidebyside-23"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hyptri.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></article><p id="p-735">The next section develops a distance function for the hyperbolic plane. As in Euclidean geometry, we want to be able to compute the distance between two points, the length of a path, the area of a region, and so on. Moreover, the distance function should be an invariant; the distance between points should not change under a transformation in \({\cal H}\text{.}\) With this in mind, consider again a hyperbolic rotation about a point \(p\text{,}\) as in <a knowl="./knowl/fig-hypmaps.html" title="Figure 5.1.6">Figure 5.1.6</a>(a). It fixes the point \(p\) and moves points around type II clines of \(p\) and \(p^*\text{.}\) If the distance between points is unchanged under transformations in \({\cal H}\text{,}\) then all points on a given type II cline of \(p\) and \(p^*\) will be the same distance away from \(p\text{.}\) This leads us to define a hyperbolic circle as follows.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hyptri.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-735">The next section develops a distance function for the hyperbolic plane. As in Euclidean geometry, we want to be able to compute the distance between two points, the length of a path, the area of a region, and so on. Moreover, the distance function should be an invariant; the distance between points should not change under a transformation in \({\cal H}\text{.}\) With this in mind, consider again a hyperbolic rotation about a point \(p\text{,}\) as in <a knowl="./knowl/fig-hypmaps.html" title="Figure 5.1.6">Figure 5.1.6</a>(a). It fixes the point \(p\) and moves points around type II clines of \(p\) and \(p^*\text{.}\) If the distance between points is unchanged under transformations in \({\cal H}\text{,}\) then all points on a given type II cline of \(p\) and \(p^*\) will be the same distance away from \(p\text{.}\) This leads us to define a hyperbolic circle as follows.</p>
 <article class="definition-like" id="definition-18"><h6 class="heading">
 <span class="type">Definition</span> <span class="codenumber">5.2.9</span>
 </h6>
 <p id="p-736">Suppose \(p\) is any point in \(\mathbb{D}\text{,}\) and \(p^*\) is the point symmetric to \(p\) with respect to the unit circle. A <dfn class="terminology">hyperbolic circle centered at \(\boldsymbol{p}\)</dfn> is a Euclidean circle \(C\) inside \(\mathbb{D}\) that is a type II circle of \(p\) and \(p^*\text{.}\)</p></article><p id="p-737"><a knowl="./knowl/fig-hypcircledef.html" title="Figure 5.2.10">Figure 5.2.10</a> shows a typical hyperbolic circle. This circle is centered at point \(p\) and contains point \(q\text{.}\) Construction of such a circle may be achieved with compass and ruler as in <a knowl="./knowl/hmk_hypcircles.html" title="Exercise 5.2.5">Exercise 5.2.5</a>.</p>
-<figure class="figure-like" id="fig-hypcircledef"><img src="images/im-hypcircledef.svg" width="35%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.2.10</span> A hyperbolic circle centered at \(p\) through \(q\text{.}\)</figcaption></figure><article class="theorem-like" id="thm-hyp-circle-pq"><h6 class="heading">
+<figure class="figure-like" id="fig-hypcircledef"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-hypcircledef.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.2.10</span> A hyperbolic circle centered at \(p\) through \(q\text{.}\)</figcaption></figure><article class="theorem-like" id="thm-hyp-circle-pq"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">5.2.11</span>
 </h6>
-<p id="p-738">Given any points \(p\) and \(q\) in \(\mathbb{D}\text{,}\) there exists a hyperbolic circle centered at \(p\) through \(q\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-31" id="proof-31"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-31" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-739">Given \(p, q \in \mathbb{D}\text{,}\) construct \(p^*\text{,}\) the point symmetric to \(p\) with respect to \(\mathbb{S}^1_\infty\text{.}\)  Then by <a knowl="./knowl/hmk-typeIIpqz.html" title="Exercise 3.5.15">Exercise 3.5.15</a> there exists a type II cline of \(p\) and \(p^*\) that goes through \(q\text{.}\)  This type II cline lives within \(\mathbb{D}\) because \(\mathbb{S}^1_\infty\) is also a type II cline of \(p\) and \(p^*\text{,}\) and distinct type II clines cannot intersect.  This type II cline is the hyperbolic circle centered at \(p\) through \(q\text{.}\)</p></article></div></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
+<p id="p-738">Given any points \(p\) and \(q\) in \(\mathbb{D}\text{,}\) there exists a hyperbolic circle centered at \(p\) through \(q\text{.}\)</p></article><article class="hiddenproof" id="proof-31"><a knowl="" class="id-ref" refid="hk-proof-31"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-31" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-739">Given \(p, q \in \mathbb{D}\text{,}\) construct \(p^*\text{,}\) the point symmetric to \(p\) with respect to \(\mathbb{S}^1_\infty\text{.}\)  Then by <a knowl="./knowl/hmk-typeIIpqz.html" title="Exercise 3.5.15">Exercise 3.5.15</a> there exists a type II cline of \(p\) and \(p^*\) that goes through \(q\text{.}\)  This type II cline lives within \(\mathbb{D}\) because \(\mathbb{S}^1_\infty\) is also a type II cline of \(p\) and \(p^*\text{,}\) and distinct type II clines cannot intersect.  This type II cline is the hyperbolic circle centered at \(p\) through \(q\text{.}\)</p></article></div></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section5-2.html#exercises-15" class="permalink">¶</a><article class="exercise-like" id="exercise-107"><h6 class="heading">
+<a href="section5-2.html#exercises-15" class="permalink">¶</a><article class="exercise-like" id="exercise-105"><h6 class="heading">
 <span class="codenumber">1</span> </h6>
-<p id="p-740">Suppose \(C\) is a hyperbolic circle centered at \(z_0\) through point \(p\text{.}\) Show that there exists a hyperbolic line \(L\) tangent to \(C\) at \(p\text{,}\) and that \(L\) is perpendicular to hyperbolic segment \(z_0p\text{.}\)</p></article><article class="exercise-like" id="exercise-108"><h6 class="heading">
+<p id="p-740">Suppose \(C\) is a hyperbolic circle centered at \(z_0\) through point \(p\text{.}\) Show that there exists a hyperbolic line \(L\) tangent to \(C\) at \(p\text{,}\) and that \(L\) is perpendicular to hyperbolic segment \(z_0p\text{.}\)</p></article><article class="exercise-like" id="exercise-106"><h6 class="heading">
 <span class="codenumber">2</span> </h6>
 <p id="p-741"><em class="emphasis">Constructing a hyperbolic line through two given points</em>.</p>
 <p id="p-742">a. Given a point \(p\) in \(\mathbb{D}\text{,}\) construct the point \(p^*\) symmetric to \(p\) with respect to the unit circle (see <a knowl="./knowl/fig-constructsymm.html" title="Figure 3.2.18">Figure 3.2.18</a>).</p>
 <p id="p-743">b. Suppose \(q\) is a second point in \(\mathbb{D}\text{.}\) Construct the cline through \(p\text{,}\) \(q\text{,}\) and \(p^*\text{.}\) Call this cline \(C\text{.}\) Explain why \(C\) intersects the unit circle at right angles.</p>
-<p id="p-744">c. Consider the portion of cline \(C\) you constructed in part (b) that lies in \(\mathbb{D}\text{.}\) This is the unique hyperbolic line through \(p\) and \(q\text{.}\) Mark the ideal points of this hyperbolic line.</p></article><article class="exercise-like" id="exercise-109"><h6 class="heading">
+<p id="p-744">c. Consider the portion of cline \(C\) you constructed in part (b) that lies in \(\mathbb{D}\text{.}\) This is the unique hyperbolic line through \(p\) and \(q\text{.}\) Mark the ideal points of this hyperbolic line.</p></article><article class="exercise-like" id="exercise-107"><h6 class="heading">
 <span class="codenumber">3</span> </h6>
-<p id="p-745">Can two distinct hyperbolic lines be tangent at some point in \(\mathbb{D}\text{?}\) Explain.</p></article><article class="exercise-like" id="exercise-110"><h6 class="heading">
+<p id="p-745">Can two distinct hyperbolic lines be tangent at some point in \(\mathbb{D}\text{?}\) Explain.</p></article><article class="exercise-like" id="exercise-108"><h6 class="heading">
 <span class="codenumber">4</span> </h6>
 <p id="p-746">Suppose \(L\) is a hyperbolic line that is part of a circle \(C\text{.}\) Can the origin of the complex plane be in the interior of \(C\text{?}\) Explain.</p></article><article class="exercise-like" id="hmk_hypcircles"><h6 class="heading">
 <span class="codenumber">5</span> </h6>
@@ -195,9 +209,9 @@ MathJax.Hub.Config({
 <p id="p-750">b. Construct the segment \(oq\text{.}\)</p>
 <p id="p-751">c. Construct the perpendicular to \(oq\) at \(q\text{.}\) This perpendicular intersects the Euclidean line through \(p\) and \(p^*\text{.}\) Call the intersection point \(o^\prime\text{.}\)</p>
 <p id="p-752">d. Construct the Euclidean circle centered at \(o^\prime\) through \(q\text{.}\)</p>
-<p id="p-753">e. Prove that this circle is the hyperbolic circle through \(q\) centered at \(p\text{.}\)</p></article><article class="exercise-like" id="exercise-112"><h6 class="heading">
+<p id="p-753">e. Prove that this circle is the hyperbolic circle through \(q\) centered at \(p\text{.}\)</p></article><article class="exercise-like" id="exercise-110"><h6 class="heading">
 <span class="codenumber">6</span> </h6>
-<p id="p-754">Explain why <a knowl="./knowl/th_hyppar.html" title="Theorem 5.2.6">Theorem 5.2.6</a> applies in the general case, when \(z_0\) is not at the origin.</p></article><article class="exercise-like" id="exercise-113"><h6 class="heading">
+<p id="p-754">Explain why <a knowl="./knowl/th_hyppar.html" title="Theorem 5.2.6">Theorem 5.2.6</a> applies in the general case, when \(z_0\) is not at the origin.</p></article><article class="exercise-like" id="exercise-111"><h6 class="heading">
 <span class="codenumber">7</span> </h6>
 <p id="p-755">Given a point and a hyperbolic line not passing through it, prove that there is a hyperbolic line through the point that is perpendicular to the given line. Is this perpendicular unique?</p></article></section></section></div></main>
 </div>
@@ -208,6 +222,7 @@ var sc_security="f68ed8d5";
 var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
 document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
 </script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
+<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

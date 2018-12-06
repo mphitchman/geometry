@@ -1,9 +1,9 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:40-07:00    *-->
+<!--*    on 2018-12-06T09:47:30-08:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -15,8 +15,14 @@
 <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
         extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
@@ -35,15 +41,21 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
 <link rel="stylesheet" type="text/css" href="title-period-fix.css">
+<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+</script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -132,11 +144,9 @@ MathJax.Hub.Config({
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
 <h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<ul>
-<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
-<li><a href="references.html" data-scroll="references">References</a></li>
-<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
+<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
+<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="mathbook-content"><section class="section" id="section5-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">Area and Triangle Trigonometry</span>
@@ -161,7 +171,7 @@ d\theta.
 a = \ln\bigg(\frac{1+x}{1-x}\bigg).
 \end{equation*}
 </div>
-<div class="sidebyside" id="sidebyside-28"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hypcircarea.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hypcircarea.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
 <p id="p-838">Solving for \(x\text{,}\) we have</p>
 <div class="displaymath">
 \begin{equation*}
@@ -206,11 +216,13 @@ x = \frac{e^a - 1}{e^a + 1}.
 </h6>
 <p id="p-846">The area of a \(\frac{2}{3}\)-ideal triangle having interior angle \(\alpha\) is equal to \(\pi -
 \alpha\text{.}\)</p></article><p id="p-847">The proof of this theorem is given in the following section. The proof there makes use of a different model for hyperbolic geometry, the so-called upper half-plane model.</p>
-<figure class="figure-like" id="fig-23idealtri"><img src="images/im-23idealtri.svg" width="35%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.6</span> A \(\frac{2}{3}\)-ideal triangle having interior angle \(\alpha\) has area equal to \(\pi - \alpha\text{.}\)</figcaption></figure><p id="p-848">An <dfn class="terminology">ideal triangle</dfn> consists of three ideal points and the three hyperbolic lines connecting them. It turns out that all ideal triangles are congruent (a fact proved in the exercises); the set of all ideal triangles is minimally invariant in \((\mathbb{D}, {\cal H})\text{.}\)</p>
-<figure class="figure-like" id="fig-idealtri"><img src="images/im-idealtri.svg" width="35%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.7</span> All ideal triangles are congruent to this one.</figcaption></figure><article class="theorem-like" id="theorem-40"><h6 class="heading">
+<figure class="figure-like" id="fig-23idealtri"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-23idealtri.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.6</span> A \(\frac{2}{3}\)-ideal triangle having interior angle \(\alpha\) has area equal to \(\pi - \alpha\text{.}\)</figcaption></figure><p id="p-848">An <dfn class="terminology">ideal triangle</dfn> consists of three ideal points and the three hyperbolic lines connecting them. It turns out that all ideal triangles are congruent (a fact proved in the exercises); the set of all ideal triangles is minimally invariant in \((\mathbb{D}, {\cal H})\text{.}\)</p>
+<figure class="figure-like" id="fig-idealtri"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-idealtri.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.7</span> All ideal triangles are congruent to this one.</figcaption></figure><article class="theorem-like" id="theorem-40"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">5.4.8</span>
 </h6>
-<p id="p-849">Any ideal triangle has area equal to \(\pi\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-34" id="proof-34"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-34" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-850">Since all ideal triangles are congruent, assume our triangle \(\Delta\) is the ideal triangle shown in <a knowl="./knowl/fig-idealtri.html" title="Figure 5.4.7">Figure 5.4.7</a>.</p>
+<p id="p-849">Any ideal triangle has area equal to \(\pi\text{.}\)</p></article><article class="hiddenproof" id="proof-34"><a knowl="" class="id-ref" refid="hk-proof-34"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-34" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-850">Since all ideal triangles are congruent, assume our triangle \(\Delta\) is the ideal triangle shown in <a knowl="./knowl/fig-idealtri.html" title="Figure 5.4.7">Figure 5.4.7</a>.</p>
 <p id="p-851">But then \(\Delta\) can be partitioned into two \(\frac{2}{3}\)-ideal triangles by drawing the vertical hyperbolic line from 0 along the imaginary axis to ideal point \(i\text{.}\) Each \(\frac{2}{3}\)-ideal triangle has interior angle \(\pi/2\text{,}\) so \(\Delta\) has area \(\pi/2+\pi/2 = \pi\text{.}\)</p></article></div>
 <p id="p-852">It is a remarkable fact that \(\pi\) is an upper bound for the area of any triangle in \((\mathbb{D},{\cal H})\text{.}\) No triangle in \((\mathbb{D},{\cal H})\) can have area as large as \(\pi\text{,}\) even though side lengths can be arbitrarily large!</p>
 <article class="theorem-like" id="thm_hyptriarea"><h6 class="heading">
@@ -222,7 +234,8 @@ x = \frac{e^a - 1}{e^a + 1}.
 \begin{equation*}
 A = \pi - (\alpha + \beta + \gamma). 
 \end{equation*}
-</div></article><figure class="figure-like" id="fig-hyptriarea"><img src="images/im-hyptriarea.svg" width="45%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.10</span> Determining the area of a hyperbolic triangle.</figcaption></figure><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-35" id="proof-35"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-35" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-854">Consider <a knowl="./knowl/fig-hyptriarea.html" title="Figure 5.4.10">Figure 5.4.10</a> containing triangle \(\Delta pqr\text{.}\)  We have extended segment \(qp\) to the ideal point \(t\text{,}\) \(u\) is an ideal point of line \(rq\text{,}\) and \(v\) is an ideal point of line \(pr\text{.}\) The area of the ideal triangle \(\Delta tuv\) is \(\pi\text{.}\) Notice that regions \(R_1\text{,}\) \(R_2\text{,}\) and \(R_3\) are all \(\frac{2}{3}\)-ideal triangles contained within the ideal triangle.  Consider \(R_1\text{,}\) whose ideal points are \(u\) and \(t\text{,}\) and whose interior angle is \(\angle uqt\text{.}\)  Since the line through \(q\) and \(r\) has ideal point \(u\text{,}\) the interior angle of \(R_1\) is \(\angle uqt=\pi-\beta\text{.}\)  Similarly, \(R_2\) has interior angle \(\pi - \alpha\) and \(R_3\) has interior angle \(\pi - \gamma\text{.}\)</p>
+</div></article><figure class="figure-like" id="fig-hyptriarea"><div style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="images/im-hyptriarea.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.10</span> Determining the area of a hyperbolic triangle.</figcaption></figure><article class="hiddenproof" id="proof-35"><a knowl="" class="id-ref" refid="hk-proof-35"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-35" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-854">Consider <a knowl="./knowl/fig-hyptriarea.html" title="Figure 5.4.10">Figure 5.4.10</a> containing triangle \(\Delta pqr\text{.}\)  We have extended segment \(qp\) to the ideal point \(t\text{,}\) \(u\) is an ideal point of line \(rq\text{,}\) and \(v\) is an ideal point of line \(pr\text{.}\) The area of the ideal triangle \(\Delta tuv\) is \(\pi\text{.}\) Notice that regions \(R_1\text{,}\) \(R_2\text{,}\) and \(R_3\) are all \(\frac{2}{3}\)-ideal triangles contained within the ideal triangle.  Consider \(R_1\text{,}\) whose ideal points are \(u\) and \(t\text{,}\) and whose interior angle is \(\angle uqt\text{.}\)  Since the line through \(q\) and \(r\) has ideal point \(u\text{,}\) the interior angle of \(R_1\) is \(\angle uqt=\pi-\beta\text{.}\)  Similarly, \(R_2\) has interior angle \(\pi - \alpha\) and \(R_3\) has interior angle \(\pi - \gamma\text{.}\)</p>
 <p id="p-855">Let \(R\) denote the triangle region \(\Delta pqr\) whose area \(A(R)\) we want to compute. We then have the following relationships among areas:</p>
 <div class="displaymath">
 \begin{align*}
@@ -239,7 +252,8 @@ A(R) = \pi - (\alpha + \beta + \gamma),
 </div>
 <p>and this completes the proof.</p></article></div>
 <p id="p-857">In Euclidean geometry trigonometric formulas relate the angles of a triangle to its side lengths. There are hyperbolic trigonometric formulas as well.</p>
-<figure class="figure-like" id="fig-hyptrigtriangle"><img src="images/im-hyptrigtriangle.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.11</span> Relating angles and lengths in a hyperbolic triangle.</figcaption></figure><article class="theorem-like" id="th_hyptrig"><h6 class="heading">
+<figure class="figure-like" id="fig-hyptrigtriangle"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-hyptrigtriangle.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.11</span> Relating angles and lengths in a hyperbolic triangle.</figcaption></figure><article class="theorem-like" id="th_hyptrig"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">5.4.12</span>
 </h6>
 <p id="p-858">Suppose a hyperbolic triangle in \(\mathbb{D}\) has angles \(\alpha\text{,}\) \(\beta\) and \(\gamma\) and opposite hyperbolic side lengths \(a\text{,}\) \(b\text{,}\) \(c\text{,}\) as pictured in <a knowl="./knowl/fig-hyptrigtriangle.html" title="Figure 5.4.11">Figure 5.4.11</a>. Then the following laws hold.</p>
@@ -274,7 +288,7 @@ A(R) = \pi - (\alpha + \beta + \gamma),
 \cosh(a)\cosh(b).
 \end{equation*}
 </div></article><p id="p-864">The second hyperbolic law of cosines also leads to an interesting result. In the hyperbolic plane, if we find ourselves at point \(z\text{,}\) we may infer our distance \(c\) to a point \(w\) by estimating a certain angle, called the angle of parallelism of \(z\) to the line \(L\) through \(w\) that is perpendicular to segment \(zw\text{.}\) The following is a picture of this scene:</p>
-<p id="p-865"><div class="sidebyside" id="sidebyside-29"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-angle-parallel.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></p>
+<p id="p-865"><div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-angle-parallel.svg" style="width: 100%; height: auto;" alt=""></div></div></div></p>
 <p id="p-866">In this setting, \(\Delta zwu\) is a \(\frac{1}{3}\)-ideal triangle, and the second hyperbolic law of cosines applies with \(\gamma = 0\) and \(\beta = \pi/2\) to yield the following result.</p>
 <article class="theorem-like" id="corollary-6"><h6 class="heading">
 <span class="type">Corollary</span> <span class="codenumber">5.4.14</span>
@@ -285,7 +299,7 @@ A(R) = \pi - (\alpha + \beta + \gamma),
 \cosh(c) = \frac{1}{\sin(\alpha)}.
 \end{equation*}
 </div></article><p id="p-868">The angle of parallelism is pursued further in Section 7.4.</p>
-<article class="example-like" id="example-45"><h6 class="heading">
+<article class="example-like" id="example-47"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">5.4.15</span> <span class="title">Flying around in \((\mathbb{D},{\cal H})\)</span>
 </h6>
 <p id="p-869">Suppose a two-dimensional ship is plopped down in \(\mathbb{D}\text{.}\) What would the pilot see? How would the ship move? How would the pilot describe the world? Are all points equivalent in this world? Could the pilot figure out whether the universe adheres to hyperbolic geometry as opposed to, say, Euclidean geometry?</p>
@@ -293,19 +307,22 @@ A(R) = \pi - (\alpha + \beta + \gamma),
 <p id="p-871">Second, the shortest path between two points is the hyperbolic line between them, so light would travel along these hyperbolic lines, assuming light follows geodesics. The pilot's line of sight would follow along these lines, and the ship would move along these lines to fly as quickly as possible from \(p\) to \(q\text{,}\) assuming no pesky asteroid fields block the path. To observe a galaxy at point \(q\) from the point \(p\) (as in the diagram below), the pilot would point a telescope in the direction of line \(L\text{,}\) the line along which the light from the galaxy travels to reach the telescope.</p>
 <p id="p-872">With a well-defined metric, we can say more. The pilot will view the hyperbolic plane as infinite and without boundary. In theory, the pilot can make an orbit of arbitrary radius about an asteroid located anywhere in the space.</p>
 <p id="p-873">To test for hyperbolic geometry, perhaps the pilot can turn to triangles. The angles of a triangle in the hyperbolic plane sum to less than 180\(^\circ\text{,}\) but only noticeably so for large enough triangles.  In our disk model of hyperbolic geometry, we can easily observe this angle deficiency.  In the figure below, triangle \(\Delta zuw\) has angle sum about \(130^\circ\text{,}\) and \(\Delta pqr\) has angle sum of about \(22^\circ\text{!}\)  Whether an intrepid 2-D explorer could map out such a large triangle depends on how much ground she could cover relative to the size of her universe.  We will have more to say about such things in Chapters 7 and 8.</p>
-<div class="sidebyside" id="sidebyside-30"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-2hyptri.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div></article><figure class="figure-like" id="fig-hyp3leftturns"><img src="images/im-hyp3leftturns.svg" width="30%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.16</span> A journey that would trace a square in the Euclidean plane does not get you home in \((\mathbb{D},{\cal H})\text{.}\)</figcaption></figure><article class="example-like" id="ex_block"><h6 class="heading">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-2hyptri.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><figure class="figure-like" id="fig-hyp3leftturns"><div style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/im-hyp3leftturns.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.16</span> A journey that would trace a square in the Euclidean plane does not get you home in \((\mathbb{D},{\cal H})\text{.}\)</figcaption></figure><article class="example-like" id="ex_block"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">5.4.17</span> <span class="title punctuated">Hyperbolic squares?</span>
 </h6>
 <p id="p-874">Simply put, hyperbolic squares don't exist. In fact, no four-sided figures with four right angles exist, <em class="emphasis">if we assume the sides are hyperbolic segments</em>. If such a figure existed, its angle sum would be 2\(\pi\text{.}\) But such a figure could be divided along a diagonal into two triangles whose total angle sum must then be \(2\pi\) as well. This means that one of the triangles would have angle sum at least \(\pi\text{,}\) which cannot happen.</p>
 <p id="p-875">On the other hand, there is no physical obstruction to a two-dimensional explorer making the following journey in the hyperbolic plane:  Starting at a point such as \(p\) in <a knowl="./knowl/fig-hyp3leftturns.html" title="Figure 5.4.16">Figure 5.4.16</a>, head along a line in a certain direction for \(a\) units, turn right (\(90^\circ\)) and proceed in a line for \(a\) more units, then turn right again and proceed in a line \(a\) units, and then turn right one more time and proceed in a line for \(a\) units.  Let \(q\) denote the point at which the explorer arrives at the end of this journey.  In the Euclidean plane, \(q\) will equal \(p\text{,}\) because the journey traces out a square built from line segments.  However, this is not the case in \((\mathbb{D},{\cal H})\) (though if we connect \(p\) and \(q\) with a hyperbolic line we obtain a geodesic pentagon with (at least) three right angles!). In the exercises we investigate the distance between \(p\) and \(q\) as a function of the length \(a\text{.}\)</p>
 <p id="p-876">However, we <em class="emphasis">can</em> build a four-sided figure closely resembling a rectangle, if we drop the requirement that the legs be hyperbolic line segments.</p>
-<p id="p-877">Through any point \(0 \lt  a \lt  1\) on the positive real axis, we may construct a hyperbolic line \(L_1\) through \(a\) that is perpendicular to the real axis. Also construct a hyperbolic line \(L_2\) through \(-a\) that is perpendicular to the real axis. Now pick a point \(z\) on \(L_1\) and construct the cline arc \(C_1\) through \(z, 1\) and \(-1\text{.}\) Also construct the cline arc \(C_2\) through \(\overline{z}, 1\) and \(-1\text{.}\) This creates a four sided figure, which we call a <dfn class="terminology">block</dfn>. We claim that each angle in the figure is right, and that opposite sides have equal length. Moreover, \(z\) and \(a\) can be chosen so that all four sides have the same length. This figure isn't a rectangle, however, in the sense that not all four sides are hyperbolic segments. The arcs \(C_1\) and \(C_2\) are not hyperbolic lines.</p></article><figure class="figure-like" id="fig-hypblock"><img src="images/im-hypblock.svg" width="38%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.18</span> Blocks in \(\mathbb{D}\text{:}\) Four-sided, right-angled figures whose opposite sides have equal length.</figcaption></figure><p id="p-878">While squares don't exist in the hyperbolic plane, we may build right-angled regular polygons with more than four sides using hyperbolic line segments. In fact, for each triple of positive real numbers \((a,b,c)\) we may build a right-angled hexagon in the hyperbolic plane with alternate side lengths \(a\text{,}\) \(b\text{,}\) and \(c\text{.}\) We encourage the reader to work carefully through the construction of this hexagon in the proof of <a knowl="./knowl/th_ranglehex.html" title="Theorem 5.4.19">Theorem 5.4.19</a>. We use all our hyperbolic constructions to get there.</p>
+<p id="p-877">Through any point \(0 \lt  a \lt  1\) on the positive real axis, we may construct a hyperbolic line \(L_1\) through \(a\) that is perpendicular to the real axis. Also construct a hyperbolic line \(L_2\) through \(-a\) that is perpendicular to the real axis. Now pick a point \(z\) on \(L_1\) and construct the cline arc \(C_1\) through \(z, 1\) and \(-1\text{.}\) Also construct the cline arc \(C_2\) through \(\overline{z}, 1\) and \(-1\text{.}\) This creates a four sided figure, which we call a <dfn class="terminology">block</dfn>. We claim that each angle in the figure is right, and that opposite sides have equal length. Moreover, \(z\) and \(a\) can be chosen so that all four sides have the same length. This figure isn't a rectangle, however, in the sense that not all four sides are hyperbolic segments. The arcs \(C_1\) and \(C_2\) are not hyperbolic lines.</p></article><figure class="figure-like" id="fig-hypblock"><div style="width: 38%; margin-left: 31%; margin-right: 31%;"><img src="images/im-hypblock.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.18</span> Blocks in \(\mathbb{D}\text{:}\) Four-sided, right-angled figures whose opposite sides have equal length.</figcaption></figure><p id="p-878">While squares don't exist in the hyperbolic plane, we may build right-angled regular polygons with more than four sides using hyperbolic line segments. In fact, for each triple of positive real numbers \((a,b,c)\) we may build a right-angled hexagon in the hyperbolic plane with alternate side lengths \(a\text{,}\) \(b\text{,}\) and \(c\text{.}\) We encourage the reader to work carefully through the construction of this hexagon in the proof of <a knowl="./knowl/th_ranglehex.html" title="Theorem 5.4.19">Theorem 5.4.19</a>. We use all our hyperbolic constructions to get there.</p>
 <article class="theorem-like" id="th_ranglehex"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">5.4.19</span>
 </h6>
-<p id="p-879">For any triple \((a,b,c)\) of positive real numbers there exists a right-angled hexagon in \((\mathbb{D},{\cal H})\) with alternate side lengths \(a, b,\) and \(c\text{.}\) Moreover, all right-angled hexagons with alternate side lengths \(a, b,\) and \(c\) are congruent.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-36" id="proof-36"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-36" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-880">We prove the existence of a right-angled hexagon with vertices \(v_0, v_1,
+<p id="p-879">For any triple \((a,b,c)\) of positive real numbers there exists a right-angled hexagon in \((\mathbb{D},{\cal H})\) with alternate side lengths \(a, b,\) and \(c\text{.}\) Moreover, all right-angled hexagons with alternate side lengths \(a, b,\) and \(c\) are congruent.</p></article><article class="hiddenproof" id="proof-36"><a knowl="" class="id-ref" refid="hk-proof-36"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-36" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-880">We prove the existence of a right-angled hexagon with vertices \(v_0, v_1,
 \cdots, v_5\) such that \(d_H(v_0,v_1) = a, d_H(v_2,v_3) = b\text{,}\) and \(d_H(v_4,v_5) = c\text{.}\)</p>
-<figure class="figure-like" id="fig-righthexagon"><img src="images/im-righthexagon.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.20</span> Building a right hexagon in the hyperbolic plane that has alternate side lengths \((a,b,c)\text{.}\)</figcaption></figure><p id="p-881">First, let \(v_0\) be the origin in the hyperbolic plane, and place \(v_1\) on the positive real axis so that \(d_H(v_0,v_1)= a\text{.}\)  Note that</p>
+<figure class="figure-like" id="fig-righthexagon"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-righthexagon.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.20</span> Building a right hexagon in the hyperbolic plane that has alternate side lengths \((a,b,c)\text{.}\)</figcaption></figure><p id="p-881">First, let \(v_0\) be the origin in the hyperbolic plane, and place \(v_1\) on the positive real axis so that \(d_H(v_0,v_1)= a\text{.}\)  Note that</p>
 <div class="displaymath">
 \begin{equation*}
 v_1 = \frac{e^a - 1}{e^a+1}.
@@ -320,13 +337,13 @@ v_1 = \frac{e^a - 1}{e^a+1}.
 <p id="p-888">If \(C\) and the imaginary axis intersect, no such perpendicular exists (think triangle angles), so drag \(v_2\) toward \(v_1\) until these lines do not intersect. Then construct \(D\) as in the preceeding paragraph. Let \(v_4\) and \(v_5\) be the points of intersection of \(D\) with \(C\) and the imaginary axis, respectively.</p>
 <p id="p-889">This construction gives us a right angled hexagon such that \(d_H(v_0,v_1) = a\) and \(d_H(v_2,v_3) = b\text{.}\) We also want \(d_H(v_4,v_5) =
 c\text{.}\) Notice that this last distance is a function of the position of vertex \(v_2\) on line A. As \(v_2\) goes along \(A\) to \(v_1\) there is a point beyond which \(D\) no longer exists, and as \(v_2\) goes along \(A\) to the circle at infinity, the length of segment \(v_4v_5\) takes on all positive real values. So, by the intermediate value theorem, there is some point at which the segment has length \(c\text{.}\) Finally, all right-angled hexagons with alternate side lengths \(a\text{,}\) \(b\text{,}\) and \(c\) are congruent to the one just constructed because angles, hyperbolic lines, and distances are preserved under transformations in \({\cal H}\text{.}\)</p></article></div>
-<article class="example-like" id="example-47"><h6 class="heading">
+<article class="example-like" id="example-49"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">5.4.21</span> <span class="title">Inscribe a circle in an ideal triangle</span>
 </h6>
 <p id="p-890">We show that if one inscribes a circle in any ideal triangle, its points of tangency form an equilateral triangle with side lengths equal to \(2\ln(\varphi)\) where \(\varphi\) is the golden ratio \((1+\sqrt{5})/2\text{.}\)</p>
 <p id="p-891">Since all ideal triangles are congruent, we choose one that is convenient to work with. Consider the ideal triangle with ideal points -1, 1, and \(i\text{.}\)</p>
 <p id="p-892">The hyperbolic line \(L_1\) joining -1 and \(i\) is part of the circle \(C_1\) with radius 1 centered at \(-1+i\text{.}\) The hyperbolic line \(L_2\) joining \(i\) and 1 is part of the circle \(C_2\) with radius 1 centered at \(1+i\text{.}\) Let \(C\) denote the circle with radius 2 centered at \(-1+2i\text{,}\) as pictured below.</p>
-<div class="sidebyside" id="sidebyside-31"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-inscribe.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-inscribe.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
 <p id="p-893">Inversion about \(C\) gives a hyperbolic reflection of \(\mathbb{D}\) that maps \(L_1\) onto the real axis. Indeed, the circle \(C_1\text{,}\) since it passes through the center of \(C\text{,}\) gets mapped to a line - the real axis, in fact. Moreover, hyperbolic reflection across the imaginary axis maps \(L_1\) onto \(L_2\text{.}\) Let \(c\) be the point of intersection of these two hyperbolic lines of reflection, as pictured. The hyperbolic circle with hyperbolic center \(c\) that passes through the origin will be tangent to the real axis, and will thus inscribe the ideal triangle. Let the points of tangency on \(L_1\) and \(L_2\) be \(p\) and \(q\text{,}\) respectively.</p>
 <p id="p-894">The point \(q\) can be found analytically as the point of intersection of circles \(C\) and \(C_2\text{.}\) Working it out, one finds \(q = \frac{1}{5}+\frac{2}{5}i.\) Thus,</p>
 <div class="displaymath">
@@ -342,7 +359,7 @@ d_H(0,q)\amp =\ln\bigg(\frac{1+|q|}{1-|q|}\bigg)\\
 </div></article></section><section class="exercises" id="exercises-17"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section5-4.html#exercises-17" class="permalink">¶</a><article class="exercise-like" id="exercise-121"><h6 class="heading">
+<a href="section5-4.html#exercises-17" class="permalink">¶</a><article class="exercise-like" id="exercise-119"><h6 class="heading">
 <span class="codenumber">1</span> </h6>
 <p id="p-895"><em class="emphasis">Properties of \(\sinh(x) = (e^x-e^{-x})/2\) and \(\cosh(x)=(e^x+e^{-x})/2\)</em>.</p>
 <p id="p-896">a. Verify that \(\sinh(0) = 0\) and \(\cosh(0) = 1\text{.}\)</p>
@@ -354,9 +371,9 @@ d_H(0,q)\amp =\ln\bigg(\frac{1+|q|}{1-|q|}\bigg)\\
 \cosh(x)\amp =1+\frac{x^2}{2}+\frac{x^4}{4!}+\cdots\\
 \sinh(x)\amp =x+\frac{x^3}{3!}+\frac{x^5}{5!}+\cdots.
 \end{align*}
-</div></article><article class="exercise-like" id="exercise-122"><h6 class="heading">
+</div></article><article class="exercise-like" id="exercise-120"><h6 class="heading">
 <span class="codenumber">2</span> </h6>
-<p id="p-900">Prove that the circumference of a hyperbolic circle having hyperbolic radius \(r\) is \(C = 2\pi \sinh(r)\text{.}\)</p></article><article class="exercise-like" id="exercise-123"><h6 class="heading">
+<p id="p-900">Prove that the circumference of a hyperbolic circle having hyperbolic radius \(r\) is \(C = 2\pi \sinh(r)\text{.}\)</p></article><article class="exercise-like" id="exercise-121"><h6 class="heading">
 <span class="codenumber">3</span> </h6>
 <p id="p-901"><em class="emphasis">The hyperbolic plane looks Euclidean on small scales.</em></p>
 <p id="p-902">a. Prove</p>
@@ -372,15 +389,15 @@ d_H(0,q)\amp =\ln\bigg(\frac{1+|q|}{1-|q|}\bigg)\\
 \lim_{r \to 0^+}\frac{2\pi \sinh(r)}{2\pi r}=1.
 \end{equation*}
 </div>
-<p id="p-905">Thus, for small \(r\text{,}\) the Euclidean formula for the circumference of a circle is a good approximation to the true circumference of a circle in the hyperbolic plane.</p></article><article class="exercise-like" id="exercise-124"><h6 class="heading">
+<p id="p-905">Thus, for small \(r\text{,}\) the Euclidean formula for the circumference of a circle is a good approximation to the true circumference of a circle in the hyperbolic plane.</p></article><article class="exercise-like" id="exercise-122"><h6 class="heading">
 <span class="codenumber">4</span> </h6>
-<p id="p-906">Prove that all ideal triangles are congruent in hyperbolic geometry. Hint: Prove any ideal triangle is congruent to the one whose ideal points are 1, \(i\text{,}\) and -1 (see <a knowl="./knowl/fig-idealtri.html" title="Figure 5.4.7">Figure 5.4.7</a>).</p></article><article class="exercise-like" id="exercise-125"><h6 class="heading">
+<p id="p-906">Prove that all ideal triangles are congruent in hyperbolic geometry. Hint: Prove any ideal triangle is congruent to the one whose ideal points are 1, \(i\text{,}\) and -1 (see <a knowl="./knowl/fig-idealtri.html" title="Figure 5.4.7">Figure 5.4.7</a>).</p></article><article class="exercise-like" id="exercise-123"><h6 class="heading">
 <span class="codenumber">5</span> </h6>
-<p id="p-907">An intrepid tax collector lives in a country in the hyperbolic plane. For collection purposes, the country is divided into triangular grids. The collector is responsible for collection in a triangle having angles \(12^\circ\text{,}\) \(32^\circ\text{,}\) and \(17^\circ\text{.}\) What is the area of the collector's triangle? Can the entire space \(\mathbb{D}\) be subdivided into a finite number of triangles?</p></article><article class="exercise-like" id="exercise-126"><h6 class="heading">
+<p id="p-907">An intrepid tax collector lives in a country in the hyperbolic plane. For collection purposes, the country is divided into triangular grids. The collector is responsible for collection in a triangle having angles \(12^\circ\text{,}\) \(32^\circ\text{,}\) and \(17^\circ\text{.}\) What is the area of the collector's triangle? Can the entire space \(\mathbb{D}\) be subdivided into a finite number of triangles?</p></article><article class="exercise-like" id="exercise-124"><h6 class="heading">
 <span class="codenumber">6</span> </h6>
-<p id="p-908">Consider the hyperbolic triangle with vertices at 0, \(\frac{1}{2}\text{,}\) and \(\frac{1}{2} + \frac{1}{2}i\text{.}\) Calculate the area of this triangle by determining the angle at each vertex. Hint: To determine the angle at a vertex it may be convenient to move it to the origin via an appropriate transformation in \(\cal H\text{.}\)</p></article><article class="exercise-like" id="exercise-127"><h6 class="heading">
+<p id="p-908">Consider the hyperbolic triangle with vertices at 0, \(\frac{1}{2}\text{,}\) and \(\frac{1}{2} + \frac{1}{2}i\text{.}\) Calculate the area of this triangle by determining the angle at each vertex. Hint: To determine the angle at a vertex it may be convenient to move it to the origin via an appropriate transformation in \(\cal H\text{.}\)</p></article><article class="exercise-like" id="exercise-125"><h6 class="heading">
 <span class="codenumber">7</span> </h6>
-<p id="p-909">Recall the block constructed in <a knowl="./knowl/ex_block.html" title="Example 5.4.17: Hyperbolic squares?">Example 5.4.17</a>. Prove that all four angles are \(90^\circ\text{,}\) and that for any choice of \(z\text{,}\) opposite sides have equal hyperbolic length.</p></article><article class="exercise-like" id="exercise-128"><h6 class="heading">
+<p id="p-909">Recall the block constructed in <a knowl="./knowl/ex_block.html" title="Example 5.4.17: Hyperbolic squares?">Example 5.4.17</a>. Prove that all four angles are \(90^\circ\text{,}\) and that for any choice of \(z\text{,}\) opposite sides have equal hyperbolic length.</p></article><article class="exercise-like" id="exercise-126"><h6 class="heading">
 <span class="codenumber">8</span> </h6>
 <p id="p-910">Find a formula for the area of an \(n\)-gon, comprised of \(n\) hyperbolic line segments in terms of its \(n\) interior angles \(\alpha_1, \alpha_2, \cdots, \alpha_n\text{.}\) Hint: Decompose the \(n\)-gon into triangles.</p></article><article class="exercise-like" id="hmk-45octagon"><h6 class="heading">
 <span class="codenumber">9</span> </h6>
@@ -405,10 +422,11 @@ v_0^*\) and show that \(\angle v_0 z_0 b = \pi/8\) precisely when the interior a
 \end{equation*}
 </div>
 <p>d. Solve the equation in (c) for \(r\) to obtain \(r =
-(1/2)^{(1/4)}\text{.}\)</p></article><p id="p-915"><figure class="figure-like" id="fig-45octagon"><img src="images/im-45octagon.svg" width="50%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.22</span> Building an octagon with interior angles equal to \(45^\circ\text{.}\)</figcaption></figure></p>
-<article class="exercise-like" id="exercise-130"><h6 class="heading">
+(1/2)^{(1/4)}\text{.}\)</p></article><p id="p-915"><figure class="figure-like" id="fig-45octagon"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-45octagon.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.22</span> Building an octagon with interior angles equal to \(45^\circ\text{.}\)</figcaption></figure></p>
+<article class="exercise-like" id="exercise-128"><h6 class="heading">
 <span class="codenumber">10</span> </h6>
-<p id="p-916">Suppose we construct a regular \(n\)-gon in the hyperbolic plane from the corner points \(r, re^{\frac{1}{n}2\pi i},\) \(re^{\frac{2}{n}2\pi i}\text{,}\) \(\cdots, re^{\frac{n-1}{n}2\pi i}\) where \(0 \lt  r \lt  1\text{.}\) Calculate the hyperbolic length of any of its sides.</p></article><article class="exercise-like" id="exercise-131"><h6 class="heading">
+<p id="p-916">Suppose we construct a regular \(n\)-gon in the hyperbolic plane from the corner points \(r, re^{\frac{1}{n}2\pi i},\) \(re^{\frac{2}{n}2\pi i}\text{,}\) \(\cdots, re^{\frac{n-1}{n}2\pi i}\) where \(0 \lt  r \lt  1\text{.}\) Calculate the hyperbolic length of any of its sides.</p></article><article class="exercise-like" id="exercise-129"><h6 class="heading">
 <span class="codenumber">11</span> </h6>
 <p id="p-917">Prove the first hyperbolic law of cosines by completing the following steps.</p>
 <p id="p-918">a. Show that for any positive real numbers \(x\) and \(y\text{,}\)</p>
@@ -426,7 +444,8 @@ v_0^*\) and show that \(\angle v_0 z_0 b = \pi/8\) precisely when the interior a
 </div>
 <p id="p-920">c. Now suppose our triangle has one vertex at the origin, and one point on the positive real axis. In particular, suppose \(p = r\) (\(0\lt  r\lt  1\)) and \(q = ke^{i\gamma}\) (\(0\lt k\lt 1\)), with angles \(\alpha,
 \beta, \gamma\) and hyperbolic side lengths \(a,b,\) and \(c\) as in <a knowl="./knowl/fig-hypcosine.html" title="Figure 5.4.23">Figure 5.4.23</a>.</p>
-<figure class="figure-like" id="fig-hypcosine"><img src="images/im-hypcosine.svg" width="50%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.23</span> A hyperbolic triangle with one corner at the origin and one leg on the positive real axis.</figcaption></figure><p id="p-921">Show</p>
+<figure class="figure-like" id="fig-hypcosine"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-hypcosine.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.23</span> A hyperbolic triangle with one corner at the origin and one leg on the positive real axis.</figcaption></figure><p id="p-921">Show</p>
 <div class="displaymath">
 \begin{equation*}
 \cosh(a) = \frac{1+r^2}{1-r^2}~~;~~\sinh(a) =
@@ -446,10 +465,11 @@ v_0^*\) and show that \(\angle v_0 z_0 b = \pi/8\) precisely when the interior a
 \cosh(a)\cosh(b)-\sinh(a)\sinh(b)\cos(\gamma).
 \end{equation*}
 </div>
-<p>e. Explain why this formula works for any triangle in \(\mathbb{D}\text{.}\)</p></article><article class="exercise-like" id="exercise-132"><h6 class="heading">
+<p>e. Explain why this formula works for any triangle in \(\mathbb{D}\text{.}\)</p></article><article class="exercise-like" id="exercise-130"><h6 class="heading">
 <span class="codenumber">12</span> </h6>
 <p id="p-922">In this exercise we prove the hyperbolic law of sines. We assume our triangle is as in <a knowl="./knowl/fig-hypsine.html" title="Figure 5.4.24">Figure 5.4.24</a>. Thus, \(q = ke^{i\gamma}\) for some \(0 \lt  k \lt  1\) and \(p = r\) for some real number \(0 \lt  r \lt  1\text{.}\) Suppose further that the circle containing side \(c\) has center \(z_0\) and Euclidean radius \(R\text{,}\) shown in the figure, and that \(m_q\) is the midpoint of segment \(qq^*\) and \(m_p\) is the midpoint of segment \(pp^*\text{,}\) so that \(\Delta z_0m_qq\) and \(\Delta pm_pz_0\) are right triangles.</p>
-<p id="p-923"><figure class="figure-like" id="fig-hypsine"><img src="images/im-hypsine.svg" width="40%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.24</span> Deriving the hyperbolic law of sines.</figcaption></figure></p>
+<p id="p-923"><figure class="figure-like" id="fig-hypsine"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-hypsine.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.24</span> Deriving the hyperbolic law of sines.</figcaption></figure></p>
 <p id="p-924">a. Verify that the triangle angles \(\alpha\) and \(\beta\) correspond to angles \(\angle m_qz_0q\) and \(\angle pz_0m_p\text{,}\) respectively.</p>
 <p id="p-925">b. Notice that \(\sin(\alpha) = |m_q-q|/R\) and \(\sin(\beta) = |m_p-p|/R.\) Verify that \(|m_q-q| = \frac{1/k -
 k}{2} = \frac{1 - k^2}{2k}\) and that \(|m_p-p| = \frac{1-r^2}{2r}\text{.}\)</p>
@@ -466,9 +486,9 @@ k}{2} = \frac{1 - k^2}{2k}\) and that \(|m_p-p| = \frac{1-r^2}{2r}\text{.}\)</p>
 \frac{\sinh(a)}{\sin(\alpha)} =
 \frac{\sinh(b)}{\sin(\beta)}=\frac{\sinh(c)}{\sin(\gamma)}.
 \end{equation*}
-</div></article><article class="exercise-like" id="exercise-133"><h6 class="heading">
+</div></article><article class="exercise-like" id="exercise-131"><h6 class="heading">
 <span class="codenumber">13</span> </h6>
-<p id="p-927">Prove the second law of hyperbolic cosines. Hint: This result follows from repeated applications of the first law and judicial use of the two identities \(\cos^2(x) + \sin^2(x) = 1\) and \(\cosh^2(x) - \sinh^2(x) = 1.\)</p></article><article class="exercise-like" id="exercise-134"><h6 class="heading">
+<p id="p-927">Prove the second law of hyperbolic cosines. Hint: This result follows from repeated applications of the first law and judicial use of the two identities \(\cos^2(x) + \sin^2(x) = 1\) and \(\cosh^2(x) - \sinh^2(x) = 1.\)</p></article><article class="exercise-like" id="exercise-132"><h6 class="heading">
 <span class="codenumber">14</span> </h6>
 <p id="p-928">Recall the journey in <a knowl="./knowl/ex_block.html" title="Example 5.4.17: Hyperbolic squares?">Example 5.4.17</a> in which a bug travels a path that would trace a square in the Euclidean plane.  For convenience, we assume the starting point \(p\) is such that the first right turn of \(90^\circ\) occurs at the point \(x\) on the positive real axis and the second turn occurs at the origin.  (This means that \(x = (e^a-1)/(e^a+1)\text{.}\))  The third corner must then occur at \(xi\text{.}\)  We have reproduced the journey with some more detail in <a knowl="./knowl/fig-hmk-hyp3leftturns.html" title="Figure 5.4.25">Figure 5.4.25</a>.  In this exercise we make use of hyperbolic triangle trig to measure some features of this journey from \(p\) to \(q\) in terms of the length \(a\) of each leg.</p>
 <p id="p-929">a. Determine the hyperbolic distance between \(p\) and the origin (corner two of the journey).  In particular, show that \(d_H(0,p) = \cosh^2(a)\text{.}\)  Note that if this journey had been done in the Euclidean plane, the corresponding distance would be \(\sqrt{2}a\text{.}\)  Is \(\cosh^2(a)\) close to \(\sqrt{2}a\) for small positive values of \(a\text{?}\)</p>
@@ -482,7 +502,8 @@ k}{2} = \frac{1 - k^2}{2k}\) and that \(|m_p-p| = \frac{1-r^2}{2r}\text{.}\)</p>
 \end{equation*}
 </div>
 <p id="p-934">f. Determine the area of the pentagon enclosed by the journey if, after reaching \(q\) we return to \(p\) along the geodesic. In particular, show that the area of this pentagon equals \(\frac{3\pi}{2}-2(\theta+\alpha)\text{.}\) What is the corresponding area if the journey had been done in the Euclidean plane?</p>
-<p id="p-935">g. Would any of these measurements change if we began at a different point in the hyperbolic plane and/or headed off in a different direction initially than the ones in <a knowl="./knowl/fig-hmk-hyp3leftturns.html" title="Figure 5.4.25">Figure 5.4.25</a>?</p></article><figure class="figure-like" id="fig-hmk-hyp3leftturns"><img src="images/im-hmk-hyp3leftturns.svg" width="30%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">5.4.25</span> A journey that would trace a square in the Euclidean plane does not get you home in \((\mathbb{D},{\cal H})\text{.}\) But how close will the finish point \(q\) be to the starting point \(p\text{?}\)</figcaption></figure></section></section></div></main>
+<p id="p-935">g. Would any of these measurements change if we began at a different point in the hyperbolic plane and/or headed off in a different direction initially than the ones in <a knowl="./knowl/fig-hmk-hyp3leftturns.html" title="Figure 5.4.25">Figure 5.4.25</a>?</p></article><figure class="figure-like" id="fig-hmk-hyp3leftturns"><div style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/im-hmk-hyp3leftturns.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">5.4.25</span> A journey that would trace a square in the Euclidean plane does not get you home in \((\mathbb{D},{\cal H})\text{.}\) But how close will the finish point \(q\) be to the starting point \(p\text{?}\)</figcaption></figure></section></section></div></main>
 </div>
 <!--Start: StatCounter code--><script>
 var sc_project=11625953;
@@ -491,6 +512,7 @@ var sc_security="f68ed8d5";
 var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
 document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
 </script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
+<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

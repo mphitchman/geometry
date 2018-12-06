@@ -1,9 +1,9 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:38-07:00    *-->
+<!--*    on 2018-12-06T09:47:27-08:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -15,8 +15,14 @@
 <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
         extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
@@ -35,15 +41,21 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
 <link rel="stylesheet" type="text/css" href="title-period-fix.css">
+<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+</script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -132,11 +144,9 @@ MathJax.Hub.Config({
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
 <h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<ul>
-<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
-<li><a href="references.html" data-scroll="references">References</a></li>
-<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
+<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
+<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="mathbook-content"><section class="section" id="section3-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Möbius Transformations</span>
@@ -153,7 +163,7 @@ T(z) = \frac{az
 \end{equation*}
 </div>
 <p>is a transformation of \(\mathbb{C}^+\) if and only if \(ad -
-bc \neq 0\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-17" id="proof-17"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-17" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-428">First, suppose \(T(z) = (az+b)/(cz+d)\) and \(ad - bc
+bc \neq 0\text{.}\)</p></article><article class="hiddenproof" id="proof-17"><a knowl="" class="id-ref" refid="hk-proof-17"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-17" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-428">First, suppose \(T(z) = (az+b)/(cz+d)\) and \(ad - bc
 \neq 0\text{.}\) We must show that \(T\) is a transformation. To show \(T\) is one-to-one, assume \(T(z_1) = T(z_2)\text{.}\)  Then</p>
 <div class="displaymath">
 \begin{equation*}
@@ -207,7 +217,7 @@ T^{-1}(z) = \frac{-dz + b}{cz - a}.
 <article class="theorem-like" id="th_mobsinv"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">3.4.4</span>
 </h6>
-<p id="p-439">A transformation of \(\mathbb{C}^+\) is a Möbius transformation if and only if it is the composition of an even number of inversions.</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-18" id="proof-18"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-18" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-440">We first observe that any general linear transformation \(T(z)=az+b\) is the composition of an even number of inversions.  Indeed, such a map is a dilation and rotation followed by a translation. Rotations and translations are each compositions of two reflections (<a knowl="./knowl/th_reflect.html" title="Theorem 3.1.17">Theorem 3.1.17</a>), and a dilation is the composition of two inversions about concentric circles (<a knowl="./knowl/hmk_invstretch.html" title="Exercise 3.2.4">Exericise 3.2.4</a>). So, in total, we have that \(T(z) = az+ b\) is the composition of an even number of inversions.</p>
+<p id="p-439">A transformation of \(\mathbb{C}^+\) is a Möbius transformation if and only if it is the composition of an even number of inversions.</p></article><article class="hiddenproof" id="proof-18"><a knowl="" class="id-ref" refid="hk-proof-18"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-18" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-440">We first observe that any general linear transformation \(T(z)=az+b\) is the composition of an even number of inversions.  Indeed, such a map is a dilation and rotation followed by a translation. Rotations and translations are each compositions of two reflections (<a knowl="./knowl/th_reflect.html" title="Theorem 3.1.17">Theorem 3.1.17</a>), and a dilation is the composition of two inversions about concentric circles (<a knowl="./knowl/hmk_invstretch.html" title="Exercise 3.2.4">Exericise 3.2.4</a>). So, in total, we have that \(T(z) = az+ b\) is the composition of an even number of inversions.</p>
 <p id="p-441">Now suppose  \(T\) is the Möbius transformation \(T(z) = (az+b)/(cz+d)\text{.}\)   If \(c = 0\) then \(T\) is a general linear transformation of the form \(T(z) = \frac{a}{d}z + \frac{b}{d}\text{,}\) and we have nothing to show.</p>
 <p id="p-442">So we assume \(c \neq 0\text{.}\) By doing some long division, the Möbius transformation can be rewritten as</p>
 <div class="displaymath">
@@ -244,7 +254,7 @@ i_{C_i} = \frac{r_i^2}{\overline{z-z_i}}+z_i,
 <article class="theorem-like" id="th_mobfixedpts"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">3.4.6</span>
 </h6>
-<p id="p-451">Any Möbius transformation \(T: \mathbb{C}^+ \to \mathbb{C}^+\) fixes 1, 2, or all points of \(\mathbb{C}^+\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-19" id="proof-19"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-19" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-452">To find fixed points of \(T(z) = (az+b)/(cz + d)\) we want to solve</p>
+<p id="p-451">Any Möbius transformation \(T: \mathbb{C}^+ \to \mathbb{C}^+\) fixes 1, 2, or all points of \(\mathbb{C}^+\text{.}\)</p></article><article class="hiddenproof" id="proof-19"><a knowl="" class="id-ref" refid="hk-proof-19"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-19" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-452">To find fixed points of \(T(z) = (az+b)/(cz + d)\) we want to solve</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{az + b}{cz + d} = z,
@@ -261,10 +271,11 @@ cz^2 + (d-a)z - b \amp = 0. \tag{1}
 b/(d-a) \neq \infty\) is a fixed point as well. So we have 2 fixed points in this case.</p>
 <p id="p-455">If \(c = 0\) and \(a = d\text{,}\) then equation (1) reduces to \(0 = -b\text{,}\) so \(b = 0\) too, and the transformation is the identity transformation \(T(z) = (az+0)/(0z + a) = z\text{.}\) This transformation fixes every point.</p></article></div>
 <p id="p-456">With this fixed point theorem in hand, we can now prove the Fundamental Theorem of Möbius Transformations, which says that if we want to induce a one-to-one and onto motion of the entire extended plane that sends my favorite three points (\(z_1, z_2, z_3\)) to your favorite three points (\(w_1, w_2, w_3)\text{,}\) as dramatized below, then there is a Möbius transformation that will do the trick, and there's <em class="emphasis">only</em> one.</p>
-<figure class="figure-like" id="figure-23"><img src="images/im-mob-moving-3points.svg" width="50%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">3.4.7</span> We can build a Möbius transformation that sends \(z_1 \mapsto w_1\text{,}\) \(z_2 \mapsto w_2\text{,}\) and \(z_3 \mapsto w_3\text{.}\)</figcaption></figure><article class="theorem-like" id="th_FTMT"><h6 class="heading">
+<figure class="figure-like" id="figure-23"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-mob-moving-3points.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">3.4.7</span> We can build a Möbius transformation that sends \(z_1 \mapsto w_1\text{,}\) \(z_2 \mapsto w_2\text{,}\) and \(z_3 \mapsto w_3\text{.}\)</figcaption></figure><article class="theorem-like" id="th_FTMT"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">3.4.8</span> <span class="title">Fundamental Theorem of Möbius Transformations</span>
 </h6>
-<p id="p-457">There is a unique Möbius transformation taking any three distinct points of \(\mathbb{C}^+\) to any three distinct points of \(\mathbb{C}^+\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-20" id="proof-20"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-20" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-458">Suppose \(z_1, z_2,\) and \(z_3\) are distinct points in \(\mathbb{C}^+\text{,}\) and \(w_1, w_2\text{,}\) and \(w_3\) are distinct points in \(\mathbb{C}^+\text{.}\) We show there exists a unique Möbius transformation that maps \(z_i \mapsto w_i\) for \(i = 1,2,3\text{.}\) To start, we show there exists a map, built from inversions, that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\) and \(z_3 \mapsto \infty\text{.}\)  We do so in the case that \(z_3 \neq \infty\text{.}\)  This special case is left to the exercises.</p>
+<p id="p-457">There is a unique Möbius transformation taking any three distinct points of \(\mathbb{C}^+\) to any three distinct points of \(\mathbb{C}^+\text{.}\)</p></article><article class="hiddenproof" id="proof-20"><a knowl="" class="id-ref" refid="hk-proof-20"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-20" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-458">Suppose \(z_1, z_2,\) and \(z_3\) are distinct points in \(\mathbb{C}^+\text{,}\) and \(w_1, w_2\text{,}\) and \(w_3\) are distinct points in \(\mathbb{C}^+\text{.}\) We show there exists a unique Möbius transformation that maps \(z_i \mapsto w_i\) for \(i = 1,2,3\text{.}\) To start, we show there exists a map, built from inversions, that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\) and \(z_3 \mapsto \infty\text{.}\)  We do so in the case that \(z_3 \neq \infty\text{.}\)  This special case is left to the exercises.</p>
 <p id="p-459">First, invert about any circle centered at \(z_3\text{.}\) This takes \(z_3\) to \(\infty\) as desired. Points \(z_1\) and \(z_2\) no doubt get moved, say to \(z_1^\prime\) and \(z_2^\prime\text{,}\) respectively, neither of which is \(\infty\text{.}\) Second, do a translation that takes \(z_2^\prime\) to 0. Such a translation will keep \(\infty\) fixed, and take \(z_1^\prime\) to some new spot \(z_1^{\prime\prime}\) in \(\mathbb{C}\text{.}\) Third, rotate and dilate about the origin, (which keeps 0 and \(\infty\) fixed) so that \(z_1^{\prime\prime}\) moves to 1. This process yields a composition of inversions that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\text{,}\) and \(z_3 \mapsto \infty\text{.}\) However, this composition actually involves an <em class="emphasis">odd</em> number of inversions, so it's not a Möbius transformation. To make a Möbius transformation out of this composition, we do one last inversion: reflect across the real axis. This keeps 1, 0, and \(\infty\) fixed. Thus, there <em class="emphasis">is</em> a Möbius transformation taking any three distinct points to the points 1, 0, \(\infty\text{.}\) For now, we let \(T\) denote the Möbius transformation that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\) and \(z_3 \mapsto \infty\text{.}\)</p>
 <p id="p-460">One can similarly construct a Möbius transformation, call it \(S\text{,}\) that takes \(w_1 \mapsto 1\text{,}\) \(w_2 \mapsto 0\text{,}\) and \(w_3 \mapsto \infty\text{.}\)</p>
 <p id="p-461">If we let \(S^{-1}\) denote the inverse transformation of \(S\text{,}\) then the composition \(S^{-1} \circ T\) is a Möbius transformation, and this transformation does what we set out to accomplish as suggested by <a knowl="./knowl/fig-mob-diagram.html" title="Figure 3.4.9">Figure 3.4.9</a>.  In particular,</p>
@@ -275,7 +286,8 @@ S^{-1} \circ T(z_2) \amp = S^{-1}(0) = w_2\\
 S^{-1} \circ T(z_3) \amp = S^{-1}(\infty) = w_3.
 \end{align*}
 </div>
-<p id="p-462"><figure class="figure-like" id="fig-mob-diagram"><img src="images/im-mob-diagram.svg" width="50%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">3.4.9</span> A schematic for building a Möbius transformation that sends \(z_i \mapsto w_i\) for \(i=1,2,3\text{.}\)  Go through the points \(1,0,\infty\text{.}\)</figcaption></figure></p>
+<p id="p-462"><figure class="figure-like" id="fig-mob-diagram"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-mob-diagram.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span> <span class="codenumber">3.4.9</span> A schematic for building a Möbius transformation that sends \(z_i \mapsto w_i\) for \(i=1,2,3\text{.}\)  Go through the points \(1,0,\infty\text{.}\)</figcaption></figure></p>
 <p id="p-463">Finally, to prove that this Möbius transformation is unique, assume that there are two Möbius transformations \(U\) and \(V\) that map \(z_1 \mapsto w_1\text{,}\) \(z_2 \mapsto w_2\) and \(z_3
 \mapsto w_3\text{.}\) Then \(V^{-1} \circ U\) is a Möbius transformation that fixes \(z_1, z_2\text{,}\) and \(z_3\text{.}\) According to <a knowl="./knowl/th_mobfixedpts.html" title="Theorem 3.4.6">Theorem 3.4.6</a> there is only one Möbius transformation that fixes more than two points, and this is the identity transformation. Thus \(V^{-1} \circ U(z) = z\) for all \(z \in \mathbb{C}^+\text{.}\) Similarly, \(U \circ V^{-1}(z) = z\text{,}\) and it follows that \(U(z) = V(z)\) for all \(z \in \mathbb{C}^+\text{.}\) That is, \(U\) and \(V\) are the same map.</p></article></div>
 <p id="p-464">There is an algebraic description of the very useful Möbius transformation mapping \(z_1
@@ -298,7 +310,7 @@ z_3)}{(z_1-z_2)}.
 \end{equation*}
 </div></article><p id="p-468">If \(z\) is a variable, and \(w, u,\) and \(v\) are distinct complex constants, then \(T(z) = (z,w;u,v)\) is the (unique!) Möbius transformation that sends \(w \mapsto
 1\text{,}\) \(u \mapsto 0\text{,}\) and \(v \mapsto \infty\text{.}\)</p>
-<article class="example-like" id="example-25"><h6 class="heading">
+<article class="example-like" id="example-27"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">3.4.11</span> <span class="title">Building a Möbius transformation</span>
 </h6>
 <p id="p-469">Find the unique Möbius transformation that sends \(1 \mapsto 3\text{,}\) \(i \mapsto
@@ -334,7 +346,7 @@ V(z) = \frac{-3z + 3i}{(7-4i)z + (-8+5i)}.
 \begin{equation*}
 (z_0,z_1;z_2,z_3) = (T(z_0), T(z_1); T(z_2), T(z_3)).
 \end{equation*}
-</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-21" id="proof-21"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-21" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-476">Let \(T\) be an arbitrary Möbius transformation, and define \(S(z) = (z,z_1; z_2, z_3)\text{,}\) which sends \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\text{,}\) and \(z_3 \mapsto \infty\text{.}\) Notice, the composition \(S \circ
+</div></article><article class="hiddenproof" id="proof-21"><a knowl="" class="id-ref" refid="hk-proof-21"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-21" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-476">Let \(T\) be an arbitrary Möbius transformation, and define \(S(z) = (z,z_1; z_2, z_3)\text{,}\) which sends \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\text{,}\) and \(z_3 \mapsto \infty\text{.}\) Notice, the composition \(S \circ
 T^{-1}\) is a Möbius transformation that sends \(T(z_1) \mapsto 1\text{,}\) \(T(z_2) \mapsto
 0\text{,}\) and \(T(z_3) \mapsto \infty\text{.}\) So this map can be expressed as a cross ratio:</p>
 <div class="displaymath">
@@ -354,7 +366,7 @@ S\circ T^{-1}(T(z_0)) = (T(z_0), T(z_1); T(z_2), T(z_3))\text{.}
 (z_0,z_1;z_2,z_3)= (T(z_0), T(z_1); T(z_2), T(z_3)).
 \end{equation*}
 </div></article></div>
-<article class="example-like" id="example-26"><h6 class="heading">
+<article class="example-like" id="example-28"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">3.4.13</span> <span class="title punctuated">Do four points lie on a single cline?</span>
 </h6>
 <p id="p-479">In addition to defining maps that send points to 1, 0, and \(\infty\text{,}\) the cross ratio can proclaim whether four points lie on the same cline: If \((z,w;u,v)\) is a real number then the points are all on the same cline; if \((z,w;u,v)\) is complex, then they aren't. The proof of this fact is left as an exercise.</p>
@@ -375,51 +387,51 @@ S\circ T^{-1}(T(z_0)) = (T(z_0), T(z_1); T(z_2), T(z_3))\text{.}
 <article class="theorem-like" id="th_clinvariantmob"><h6 class="heading">
 <span class="type">Theorem</span> <span class="codenumber">3.4.15</span>
 </h6>
-<p id="p-484">Given any two clines \(C_1\) and \(C_2\text{,}\) there exists a Möbius transformation \(T\) that maps \(C_1\) onto \(C_2\text{.}\) That is, \(T(C_1) = C_2\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-22" id="proof-22"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-22" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-485">Let \(p_1\) be a point on \(C_1\) and \(q_1\) and \(q_1^*\) symmetric with respect to \(C_1\text{.}\) Similarly, let \(p_2\) be a point on \(C_2\) and \(q_2\) and \(q_2^*\) be symmetric with respect to \(C_2\text{.}\) Build the Möbius transformation that sends \(p_1 \mapsto p_2\text{,}\) \(q_1 \mapsto q_2\) and \(q_1^*
+<p id="p-484">Given any two clines \(C_1\) and \(C_2\text{,}\) there exists a Möbius transformation \(T\) that maps \(C_1\) onto \(C_2\text{.}\) That is, \(T(C_1) = C_2\text{.}\)</p></article><article class="hiddenproof" id="proof-22"><a knowl="" class="id-ref" refid="hk-proof-22"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-22" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-485">Let \(p_1\) be a point on \(C_1\) and \(q_1\) and \(q_1^*\) symmetric with respect to \(C_1\text{.}\) Similarly, let \(p_2\) be a point on \(C_2\) and \(q_2\) and \(q_2^*\) be symmetric with respect to \(C_2\text{.}\) Build the Möbius transformation that sends \(p_1 \mapsto p_2\text{,}\) \(q_1 \mapsto q_2\) and \(q_1^*
 \mapsto q_2^*\text{.}\)  Then \(T(C_1)=C_2\text{.}\)</p></article></div></section><section class="exercises" id="exercises-10"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section3-4.html#exercises-10" class="permalink">¶</a><article class="exercise-like" id="exercise-53"><h6 class="heading">
+<a href="section3-4.html#exercises-10" class="permalink">¶</a><article class="exercise-like" id="exercise-51"><h6 class="heading">
 <span class="codenumber">1</span> </h6>
-<p id="p-486">Find a transformation of \(\mathbb{C}^+\) that rotates points about \(2i\) by an angle \(\pi/4\text{.}\) Show that this transformation has the form of a Möbius transformation.</p></article><article class="exercise-like" id="exercise-54"><h6 class="heading">
+<p id="p-486">Find a transformation of \(\mathbb{C}^+\) that rotates points about \(2i\) by an angle \(\pi/4\text{.}\) Show that this transformation has the form of a Möbius transformation.</p></article><article class="exercise-like" id="exercise-52"><h6 class="heading">
 <span class="codenumber">2</span> </h6>
 <p id="p-487">Find the inverse transformation of \(T(z) = \frac{3z + i}{2z +
 1}\text{.}\)</p></article><article class="exercise-like" id="hmk_mobcomp"><h6 class="heading">
 <span class="codenumber">3</span> </h6>
 <p id="p-488">Prove <a knowl="./knowl/thm_mobcomp.html" title="Theorem 3.4.3">Theorem 3.4.3</a>. That is, suppose \(T\) and \(S\) are two Möbius transformations and prove that the composition \(T\circ S\) is again a Möbius transformation.</p></article><article class="exercise-like" id="hmk_mobdet1"><h6 class="heading">
 <span class="codenumber">4</span> </h6>
-<p id="p-489">Prove that any Möbius transformation can be written in a form with determinant 1, and that this form is unique up to sign. Hint: How does the determinant of \(T(z) = (az+b)/(cz+d)\) change if we multiply top and bottom of the map by some constant \(k\text{?}\)</p></article><article class="exercise-like" id="exercise-57"><h6 class="heading">
+<p id="p-489">Prove that any Möbius transformation can be written in a form with determinant 1, and that this form is unique up to sign. Hint: How does the determinant of \(T(z) = (az+b)/(cz+d)\) change if we multiply top and bottom of the map by some constant \(k\text{?}\)</p></article><article class="exercise-like" id="exercise-55"><h6 class="heading">
 <span class="codenumber">5</span> </h6>
 <p id="p-490">Find the unique Möbius transformation that sends \(1 \mapsto i\text{,}\) \(i \mapsto -1\text{,}\) and \(-1
-\mapsto -i\text{.}\) What are the fixed points of this transformation? What is \(T(0)\text{?}\) What is \(T(\infty)\text{?}\)</p></article><article class="exercise-like" id="exercise-58"><h6 class="heading">
+\mapsto -i\text{.}\) What are the fixed points of this transformation? What is \(T(0)\text{?}\) What is \(T(\infty)\text{?}\)</p></article><article class="exercise-like" id="exercise-56"><h6 class="heading">
 <span class="codenumber">6</span> </h6>
-<p id="p-491">Repeat the previous exercise, but send \(2 \to 0\text{,}\) \(1 \to 3\) and \(4 \to 4\text{.}\)</p></article><article class="exercise-like" id="exercise-59"><h6 class="heading">
+<p id="p-491">Repeat the previous exercise, but send \(2 \to 0\text{,}\) \(1 \to 3\) and \(4 \to 4\text{.}\)</p></article><article class="exercise-like" id="exercise-57"><h6 class="heading">
 <span class="codenumber">7</span> </h6>
 <p id="p-492">Prove this feature of the cross ratio: \(\overline{(z, z_1; z_2,
 z_3)} =
-(\overline{z},\overline{z_1};\overline{z_2},\overline{z_3})\text{.}\)</p></article><article class="exercise-like" id="exercise-60"><h6 class="heading">
+(\overline{z},\overline{z_1};\overline{z_2},\overline{z_3})\text{.}\)</p></article><article class="exercise-like" id="exercise-58"><h6 class="heading">
 <span class="codenumber">8</span> </h6>
-<p id="p-493">Prove that the cross ratio of four distinct real numbers is a real number.</p></article><article class="exercise-like" id="exercise-61"><h6 class="heading">
+<p id="p-493">Prove that the cross ratio of four distinct real numbers is a real number.</p></article><article class="exercise-like" id="exercise-59"><h6 class="heading">
 <span class="codenumber">9</span> </h6>
-<p id="p-494">Prove that the cross ratio of four distinct complex numbers is a real number if and only if the four points lie on the same cline. Hint: Use the previous exercise and the invariance of the cross ratio.</p></article><article class="exercise-like" id="exercise-62"><h6 class="heading">
+<p id="p-494">Prove that the cross ratio of four distinct complex numbers is a real number if and only if the four points lie on the same cline. Hint: Use the previous exercise and the invariance of the cross ratio.</p></article><article class="exercise-like" id="exercise-60"><h6 class="heading">
 <span class="codenumber">10</span> </h6>
-<p id="p-495">Do the points \(2+i, 3, 5,\) and \(6 + i\) lie on a single cline?</p></article><article class="exercise-like" id="exercise-63"><h6 class="heading">
+<p id="p-495">Do the points \(2+i, 3, 5,\) and \(6 + i\) lie on a single cline?</p></article><article class="exercise-like" id="exercise-61"><h6 class="heading">
 <span class="codenumber">11</span> </h6>
 <p id="p-496">More on Möbius transformations.</p>
 <p id="p-497">a. Give an example of a Möbius transformation \(T\) such that \(\overline{T(z)} \neq
 T(\overline{z})\) for some \(z\) in \(\mathbb{C}^+\text{.}\)</p>
-<p id="p-498">b. Suppose \(T\) is a Möbius transformation that sends the real axis onto itself. Prove that in this case, \(\overline{T(z)} = T(\overline{z})\) for all \(z\) in \(\mathbb{C}\text{.}\)</p></article><article class="exercise-like" id="exercise-64"><h6 class="heading">
+<p id="p-498">b. Suppose \(T\) is a Möbius transformation that sends the real axis onto itself. Prove that in this case, \(\overline{T(z)} = T(\overline{z})\) for all \(z\) in \(\mathbb{C}\text{.}\)</p></article><article class="exercise-like" id="exercise-62"><h6 class="heading">
 <span class="codenumber">12</span> </h6>
-<p id="p-499">Is there a Möbius transformation that sends 1 to 3, \(i\) to 4, -1 to \(2 + i\) and \(-i\) to \(4 + i\text{?}\) Hint: It may help to observe that the input points are on a single cline.</p></article><article class="exercise-like" id="exercise-65"><h6 class="heading">
+<p id="p-499">Is there a Möbius transformation that sends 1 to 3, \(i\) to 4, -1 to \(2 + i\) and \(-i\) to \(4 + i\text{?}\) Hint: It may help to observe that the input points are on a single cline.</p></article><article class="exercise-like" id="exercise-63"><h6 class="heading">
 <span class="codenumber">13</span> </h6>
 <p id="p-500">Find the fixed points of these transformations on \(\mathbb{C}^+\text{.}\) Remember that \(\infty\) can be a fixed point of such a transformation.</p>
 <p id="p-501">a. \(T(z) = \frac{2z}{3z-1}\)</p>
 <p id="p-502">b. \(T(z) = iz\)</p>
-<p id="p-503">c. \(T(z) = \frac{-iz}{(1-i)z - 1}\)</p></article><article class="exercise-like" id="exercise-66"><h6 class="heading">
+<p id="p-503">c. \(T(z) = \frac{-iz}{(1-i)z - 1}\)</p></article><article class="exercise-like" id="exercise-64"><h6 class="heading">
 <span class="codenumber">14</span> </h6>
-<p id="p-504">Find a Möbius transformation that takes the circle \(|z| = 4\) to the straight line \(3x + y  = 4\text{.}\) Hint: Track the progress of three points, and the rest will follow.</p></article><article class="exercise-like" id="exercise-67"><h6 class="heading">
+<p id="p-504">Find a Möbius transformation that takes the circle \(|z| = 4\) to the straight line \(3x + y  = 4\text{.}\) Hint: Track the progress of three points, and the rest will follow.</p></article><article class="exercise-like" id="exercise-65"><h6 class="heading">
 <span class="codenumber">15</span> </h6>
-<p id="p-505">Find a non-trivial Möbius transformation that fixes the points -1 and 1, and call this transformation \(T\text{.}\) Then, let \(C\) be the imaginary axis. What is the image of \(C\) under this map. That is, what cline is \(T(C)\text{?}\)</p></article><article class="exercise-like" id="exercise-68"><h6 class="heading">
+<p id="p-505">Find a non-trivial Möbius transformation that fixes the points -1 and 1, and call this transformation \(T\text{.}\) Then, let \(C\) be the imaginary axis. What is the image of \(C\) under this map. That is, what cline is \(T(C)\text{?}\)</p></article><article class="exercise-like" id="exercise-66"><h6 class="heading">
 <span class="codenumber">16</span> </h6>
 <p id="p-506">Suppose \(z_1, z_2, z_3\) are distinct points in \(\mathbb{C}^+\text{.}\)  Show that by an even number of inversions we can map \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\text{,}\) and \(z_3 \mapsto \infty\) in the case that \(z_3 = \infty\text{.}\)</p></article></section></section></div></main>
 </div>
@@ -430,6 +442,7 @@ var sc_security="f68ed8d5";
 var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
 document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
 </script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
+<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

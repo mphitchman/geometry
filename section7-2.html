@@ -1,9 +1,9 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:41-07:00    *-->
+<!--*    on 2018-12-06T09:47:31-08:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <html lang="en-US">
@@ -15,8 +15,14 @@
 <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
-        inlineMath: [['\\(','\\)']],
+        inlineMath: [['\\(','\\)']]
     },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
     TeX: {
         extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
@@ -35,15 +41,21 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
 <link rel="stylesheet" type="text/css" href="title-period-fix.css">
+<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+</script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content">\(\require{cancel}\newcommand{\nin}{}
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -132,11 +144,9 @@ MathJax.Hub.Config({
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
 <h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<ul>
-<li><a href="notation.html" data-scroll="notation">List of Symbols</a></li>
-<li><a href="references.html" data-scroll="references">References</a></li>
-<li><a href="index-part.html" data-scroll="index-part">Index</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
+<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
+<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="mathbook-content"><section class="section" id="section7-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Elliptic Geometry with Curvature \(k \gt 0\)</span>
@@ -185,7 +195,7 @@ A(R) = \iint_R \frac{4r}{(1+kr^2)^2}dr d\theta.
 <article class="theorem-like" id="lemma-lune-Gk"><h6 class="heading">
 <span class="type">Lemma</span> <span class="codenumber">7.2.1</span>
 </h6>
-<p id="p-1201">Assume \(k \gt 0\text{.}\)  A lune in \((\mathbb{P}^2_k,{\cal S}_k)\) with interior angle \(\alpha\) has area  \(2\alpha/k\text{.}\)</p></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-46" id="proof-46"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-46" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1202">Without loss of generality, we may consider the vertex of our lune to be the origin. As before, elliptic lines through the origin must also pass through \(\infty\text{,}\) so our two lines forming the lune are Euclidean lines. After a convenient rotation, we may further assume one of these lines is the real axis, so that the lune resembles the one in <a knowl="./knowl/fig-lune2.html" title="Figure 6.3.10">Figure 6.3.10</a>. To compute the area of the lune, compute the integral</p>
+<p id="p-1201">Assume \(k \gt 0\text{.}\)  A lune in \((\mathbb{P}^2_k,{\cal S}_k)\) with interior angle \(\alpha\) has area  \(2\alpha/k\text{.}\)</p></article><article class="hiddenproof" id="proof-46"><a knowl="" class="id-ref" refid="hk-proof-46"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-46" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1202">Without loss of generality, we may consider the vertex of our lune to be the origin. As before, elliptic lines through the origin must also pass through \(\infty\text{,}\) so our two lines forming the lune are Euclidean lines. After a convenient rotation, we may further assume one of these lines is the real axis, so that the lune resembles the one in <a knowl="./knowl/fig-lune2.html" title="Figure 6.3.10">Figure 6.3.10</a>. To compute the area of the lune, compute the integral</p>
 <div class="displaymath">
 \begin{equation*}
 A = 2 \int_0^\alpha \int_0^{1/\sqrt{k}}\frac{4r}{(1+kr^2)^2}drd\theta.
@@ -215,8 +225,8 @@ A = 2 \int^\alpha_0 \frac{2}{k}\int_1^2 \frac{du}{u^2}d\theta = \frac{4}{k}\int_
 \begin{equation*}
 A = \frac{1}{k}(\alpha+\beta+\gamma -\pi).
 \end{equation*}
-</div></article><article class="hiddenproof"><a knowl="" class="id-ref" refid="hk-proof-47" id="proof-47"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-47" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1207">As in the case \(k = 1\text{,}\) the area of any triangle may be determined from the area of three lunes and the total area of \(\mathbb{P}^2_k\text{,}\) as depicted in <a knowl="./knowl/ex-elltriangle.html" title="Example 6.3.11: Triangle area in \((\mathbb{P}^2,{\cal S})\)">Example 6.3.11</a>.</p></article></div>
-<article class="example-like" id="example-59"><h6 class="heading">
+</div></article><article class="hiddenproof" id="proof-47"><a knowl="" class="id-ref" refid="hk-proof-47"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-47" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1207">As in the case \(k = 1\text{,}\) the area of any triangle may be determined from the area of three lunes and the total area of \(\mathbb{P}^2_k\text{,}\) as depicted in <a knowl="./knowl/ex-elltriangle.html" title="Example 6.3.11: Triangle area in \((\mathbb{P}^2,{\cal S})\)">Example 6.3.11</a>.</p></article></div>
+<article class="example-like" id="example-61"><h6 class="heading">
 <span class="type">Example</span> <span class="codenumber">7.2.3</span> <span class="title">Triangles on the Earth</span>
 </h6>
 <p id="p-1208">The surface of the Earth is approximately spherical with radius about 6375 km. Therefore, the geometry on the surface of the Earth can be reasonably modeled by \((\mathbb{P}^2_k, {\cal S}_k)\) where \(k = 1/6375^2~ \text{km}^{-2}\text{.}\)  The area of a triangle on the Earth's surface having angles \(\alpha, \beta,\) and  \(\gamma\) is</p>
@@ -228,7 +238,7 @@ A = \frac{1}{k}(\alpha + \beta + \gamma - \pi).
 <p>Can you find the area of the triangle formed by Paris, New York, and Rio? Use a globe, a protractor, and some string.  The string follows a geodesic between two points when it is pulled taut.</p></article></section><section class="exercises" id="exercises-23"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section7-2.html#exercises-23" class="permalink">¶</a><article class="exercise-like" id="exercise-167"><h6 class="heading">
+<a href="section7-2.html#exercises-23" class="permalink">¶</a><article class="exercise-like" id="exercise-165"><h6 class="heading">
 <span class="codenumber">1</span> </h6>
 <p id="p-1209">Prove that for \(k &gt; 0\text{,}\) any transformation in \({\cal S}_k\) has the form</p>
 <div class="displaymath">
@@ -236,7 +246,7 @@ A = \frac{1}{k}(\alpha + \beta + \gamma - \pi).
 T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z},
 \end{equation*}
 </div>
-<p>where \(\theta\) is any real number and \(z_0\) is a point in \(\mathbb{P}^2_k\text{.}\) Hint: Follow the derivation of the transformations in \({\cal S}\) found in Chapter 6.</p></article><article class="exercise-like" id="exercise-168"><h6 class="heading">
+<p>where \(\theta\) is any real number and \(z_0\) is a point in \(\mathbb{P}^2_k\text{.}\) Hint: Follow the derivation of the transformations in \({\cal S}\) found in Chapter 6.</p></article><article class="exercise-like" id="exercise-166"><h6 class="heading">
 <span class="codenumber">2</span> </h6>
 <p id="p-1210">Verify the formula for the stereographic projection map \(\phi_k\text{.}\)</p></article><article class="exercise-like" id="hmk_Gkpos"><h6 class="heading">
 <span class="codenumber">3</span> </h6>
@@ -248,7 +258,7 @@ d_{k}(0,x) = 2s\arctan(x/s).
 \end{equation*}
 </div>
 <p id="p-1213">b. The circumference of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(C=2\pi s\sin(r/s).\)</p>
-<p id="p-1214">c. The area of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(\displaystyle A = 4\pi s^2 \sin^2\bigg(\frac{r}{2s}\bigg).\)</p></article><article class="exercise-like" id="exercise-170"><h6 class="heading">
+<p id="p-1214">c. The area of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(\displaystyle A = 4\pi s^2 \sin^2\bigg(\frac{r}{2s}\bigg).\)</p></article><article class="exercise-like" id="exercise-168"><h6 class="heading">
 <span class="codenumber">4</span> </h6>
 <p id="p-1215">In this exercise we investigate the idea that the elliptic formulas in <a knowl="./knowl/hmk_Gkpos.html" title="Exercise 7.2.3">Exercise 7.2.3</a> for distance, circumference, and area approach Euclidean formulas when \(k \to 0^+\text{.}\)</p>
 <p id="p-1216">a. Show that the elliptic distance \(d_{k}(0,x)\) from \(0\) to \(x\text{,}\) where \(0 \lt x \leq s,\) approaches \(2x\) as \(k \to 0^+\) (twice the usual notion of Euclidean distance).</p>
@@ -277,6 +287,7 @@ var sc_security="f68ed8d5";
 var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
 document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
 </script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code-->
+<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>
