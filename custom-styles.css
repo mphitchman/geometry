@@ -1,0 +1,180 @@
+:root {
+  --documenttitle: #2A5EA4;
+  --bodytitle: #A62E1C;
+  --bodysubtitle: #2B5F82;
+  --bodytitlehighlight:   #a9cce3;
+  --bodysubtitlehighlight: #20477B;
+
+  --chaptertoc: #555555;
+  --chaptertoctext: white;  
+  --chaptertocactive: #2A5EA4;
+  --chaptertoctextactive: white;
+  --sectiontoc: #F0F0F0;
+  --sectiontoctext: #20477B;
+  --sectiontocactive: var(--chaptertocactive);
+  --sectiontoctextactive: var(--chaptertoctextactive);
+  --tocborder: #CCCCCC;
+
+  --highlighttoc: #20477B;
+  --highlighttoctext: white;
+  --highlighttocborder: white;
+
+  --assemblageborder: #bfd5ec;
+  --assemblagebackground: #e9eff5;
+
+  --knowlborder: #e0e9ff;
+  --knowlbackground: #f5f8ff;
+
+}
+
+
+.pretext-content .assemblage-like {
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.pretext-content .assemblage-like .heading{
+    margin-top: -1.25em;
+    background-color: #bfd5ec;
+    display: table;
+    padding: 5px 10px;
+}
+
+.pretext-content .assemblage-like .MJXc-display {
+    background-image: none;
+    background-image: linear-gradient(to right, #e9eff5, #e9eff5), linear-gradient(to right, #e9eff5, #e9eff5), linear-gradient(to right, rgba(0,0,0,.25), rgba(242,242,254,0)), linear-gradient(to left, rgba(0,0,0,.25), rgba(242,242,254,0));
+}
+
+/* Remove Greg-L on assemblage and everything else */
+.pretext-content article.theorem-like::after, .pretext-content article.definition-like::after, .pretext-content article.example-like::after, .pretext-content article.project-like::after, .pretext-content article.objectives::after, .pretext-content article.outcomes::after, .pretext-content article.remark-like::after {
+  border-bottom: none !important;
+}
+
+article.definition-like {
+    border-left: solid 1pt #555555 !important;
+    border-bottom: solid 1pt #d1d1d1;
+    /* border-right: solid 1pt #d1d1d1 !important; */
+    /* background-color: #f0f0f0; */
+}
+/*
+article[id*='example'] {
+  border-left: solid 2pt  #555555 !important; 
+  border-bottom: solid 1pt #555555; 
+  padding-left: 1ex !important;
+  padding-bottom: 1ex !important;
+}
+*/
+
+.posterior {
+  margin-left: 1ex;
+  padding-left: 1ex;
+  margin-top: -1.25em !important;
+  padding-top: 1ex;
+  border-left: solid 1pt gray;
+}
+
+/*separate proof environment in example solutions:*/
+/* article .remark-like .proof {
+  margin-top: 1em;
+  padding-left: 1ex;
+} */
+
+article.proof {
+  padding-top: 1ex !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  border-right: none !important;
+  border-left: solid 1.5pt #2A5EA4 !important;
+  border-bottom: solid 1.5pt #2A5EA4; 
+}
+
+/* article.example-like:after {
+  border-bottom: none !important;
+} */
+
+article.example-like {
+    border-left: solid 1pt #555555 !important;
+    border-bottom: solid 1pt #555555;
+    padding-left: 1ex !important;
+    padding-bottom: 1ex !important;
+    /* border-right: solid 1pt #d1d1d1 !important; */
+    /*background-color: #f0f0f0;*/
+}
+
+article.theorem-like {
+    border-left: solid 1.5pt #2A5EA4 !important;
+    /* border-bottom: solid 1.5pt #2A5EA4; */
+    /* border-right: solid 1pt #d1d1d1 !important; */
+    /*background-color: #f0f0f0;*/
+}
+
+/* article.theorem-like:after {
+  border-bottom: solid 1pt #d1d1d1 !important;
+}
+*/
+
+/*style toc */
+/*#toc ul li a, #toc ul li a:link, #toc ul li a:visited {
+    color: #20477b;
+    background: #e2e6e8;
+}*/
+
+pretext-content .summary-links a, .pretext-content .summary-links a:link, .pretext-content .summary-links a:visited {
+    color: #20477B;
+    background: #f0f0f0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.pretext-content .summary-links a:hover, .pretext-content .summary-links a:focus {
+    color: white;
+    background: #20477B;
+    text-decoration: none;
+}
+
+
+#masthead #logo-link img, #masthead .logo-link img {
+    width: auto;
+    height: auto;
+    max-height: 1.2em;
+}
+
+/* #masthead #title-container > .heading, #masthead .title-container > .heading, #masthead .title-container > .heading a:link, #masthead .title-container > .heading a:visited {
+  color: #395E66 !important;
+} */
+
+/* #toc ul li a, #toc ul li a:link, #toc ul li a:visited {
+  color: #395E66;
+} */
+
+/* #toc h2 a, #toc h2 a:link, #toc h2 a:visited {
+    color: white;
+    background: #395E66;
+} */
+
+/* #toc ul li a.active, #toc ul li a:active, #toc h2 a:active {
+    color: white;
+    background: #00A092;
+} */
+
+/*#toc h2.link.active a {
+  background: #1a4e94;
+}*/
+
+/* #toc h2 a:hover, #toc ul li a:hover {
+  color: white;
+  background: #223843;
+  border-color: #223843;
+} */
+
+/* style case headings
+.pretext-content .case > .heading{
+  display: inline;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.pretext-content .case > .heading + p {
+  display: inline;
+} */
