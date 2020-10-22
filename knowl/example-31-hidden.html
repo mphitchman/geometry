@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-21T08:22:56-07:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="example example-like"><p>Consider the Möbius transformation</p>
+<div class="displaymath">
+\begin{equation*}
+T(z) = \frac{(6+3i)z+(2-3i)}{z+3}.
+\end{equation*}
+</div>
+<p>First we find the fixed points and the normal form of \(T\text{.}\) To find the fixed points we solve \(T(z) = z\) for \(z\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\frac{(6+3i)z+(2-3i)}{z+3}\amp = z\\
+(6+3i)z + (2-3i)\amp = z^2+3z\\
+z^2 - (3+3i)z - (2-3i) \amp = 0.
+\end{align*}
+</div>
+<p>Hey! Wait a moment! This looks familiar. Let's see \(\ldots\) yes! We showed in <a class="xref" data-knowl="./knowl/ex_quadroot.html" title="Example 2.4.4: Solving a quadratic equation">Example 2.4.4</a> that this quadratic equation has solutions \(z = i\) and \(z = 3+2i\text{.}\)</p>
+<p>So the map has these two fixed points, and the normal form of \(T\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{T(z)-i}{T(z)-(3+2i)}=\lambda\frac{z-i}{z-(3+2i)}.
+\end{equation*}
+</div>
+<p>To find the value of \(\lambda\text{,}\) plug into the normal form a convenient value of \(z\text{.}\) For instance, \(T(-3)=\infty\text{,}\) so</p>
+<div class="displaymath">
+\begin{equation*}
+1=\lambda\frac{-3-i}{-3-(3+2i)}.
+\end{equation*}
+</div>
+<p>It follows that \(\lambda = 2\text{,}\) so \(T\) is a hyperbolic map that pushes points along clines through \(i\) and \(3+2i\text{.}\) Below is a schematic for how the map pushes points around in \(\mathbb{C}^+\text{.}\) Notice \(T(0) =\frac{2}{3}-i\text{,}\) \(T(1)=2\text{,}\) and \(T(4i) = 2.16+4.12i\text{.}\) Points are moving along type I clines of \(i\) and \(3+2i\) away from \(i\) and toward \(3 + 2i\text{.}\)</p>
+<p>From the original description of \(T\) we observe that the pole of the map is \(z_\infty = -3\text{,}\) and the inverse pole of the map is \(w_{\infty} = 6+3i\text{.}\) Notice that \(z_\infty\text{,}\) \(w_\infty\text{,}\) and the two fixed points all lie on the same Euclidean line. This will always be the case for a hyperbolic Möbius transformation (<a class="xref" data-knowl="./knowl/hmk_pqpoles.html" title="Exercise 9">Exercise 9</a>).</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-ex-analyze-mob.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article></body>
+</html>

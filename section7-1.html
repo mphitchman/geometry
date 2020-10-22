@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:31-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:41-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Curvature</title>
+<title>GCT Curvature</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section7-2.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section7-2.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1" class="active">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,113 +146,97 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section7-1"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section7-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">Curvature</span>
 </h2>
-<a href="section7-1.html" class="permalink">¶</a><section class="introduction" id="introduction-29"><p id="p-1168">Consider the smooth curve in <a knowl="./knowl/fig-kcurve.html" title="Figure 7.1.1">Figure 7.1.1</a>. The curvature of the curve at a point is a measure of how drastically the curve bends away from its tangent line, and this curvature is often studied in a multivariable calculus course. The radius of curvature at a point corresponds to the radius of the circle that best approximates the curve at this point. The radius \(r\) of this circle is the reciprocal of the curvature \(k\) of the curve at the point: \(k = 1/r\text{.}\)</p>
-<figure class="figure-like" id="fig-kcurve"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-kcurve.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.1.1</span> The curvature of a curve.</figcaption></figure><p id="p-1169">The curvature of a surface (such as the graph of a function \(z =
-f(x,y)\)) at a particular point is a measure of how drastically the surface bends away from its tangent plane at the point. There are three fundamental types of curvature. A surface has positive curvature at a point if the surface lives entirely on one side of the tangent plane, at least near the point of interest. The surface has negative curvature at a point if it is saddle-shaped, in the sense that the tangent plane cuts through the surface. Between these two cases is the case of zero curvature. In this case the surface has a line along which the surface agrees with the tangent plane. For instance, a cylinder has zero curvature, as suggested in <a knowl="./knowl/fig-curvature.html" title="Figure 7.1.2">Figure 7.1.2</a>(c).</p>
-<figure class="figure-like" id="fig-curvature"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/curvature.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.1.2</span> The curvature of a surface at a point can be (a) positive; (b) negative; or (c) zero.</figcaption></figure><p id="p-1170">This informal description of curvature makes use of how the surface is embedded in space. One of Gauss' great theorems, one he called his <em class="emphasis">Theorem Egregium</em>, states that the curvature of a surface is an intrinsic property of the surface. The curvature doesn't change if the surface is bent without stretching, and our tireless two-dimensional inhabitant living in the space can determine the curvature by taking measurements.</p>
-<p id="p-1171">A two-dimensional bug living in the hyperbolic plane, the projective plane, or the Euclidean plane would notice that a small circle's circumference is related to its radius by the Euclidean formula \(c \approx 2\pi r\text{.}\) In Euclidean geometry this formula applies to all circles, but in the non-Euclidean cases, the observant bug might notice in large circles a significant difference between the actual circumference of a circle and the circumference predicted by \(c = 2\pi r\text{.}\) Large circles about a cup-shaped point with positive curvature will have circumference less than that predicted by Euclidean geometry. This fact explains why a large chunk of orange peel fractures if pressed flat onto a table. Large circles drawn around a saddle-shaped point with negative curvature will have circumference greater than that predicted by the Euclidean formula.</p>
-<p id="p-1172">Calculus may be used to precisely capture this deviation between the Euclidean-predicted circumference \(2\pi r\) and the actual circumference \(c\) for circles of radius \(r\) in the different geometries.</p>
-<p id="p-1173">Recall that in the hyperbolic plane, \(c = 2\pi \sinh(r)\text{;}\) in the Euclidean plane \(c = 2\pi r\text{;}\) and in the elliptic plane \(c = 2\pi \sin(r)\text{.}\)  In <a knowl="./knowl/fig-circratio.html" title="Figure 7.1.3">Figure 7.1.3</a> we have graphed the ratio \(\frac{c}{2\pi r}\) where \(c\) is the circumference of a circle with radius \(r\) in (a) the hyperbolic plane; (b) the Euclidean plane; and (c) the elliptic plane.</p>
-<figure class="figure-like" id="fig-circratio"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-circratio.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.1.3</span> Plotting the ratio \(c/2\pi r\) against \(r\) in (a) hyperbolic geometry, (b) Euclidean geometry, and (c) elliptic geometry.</figcaption></figure><p id="p-1174">In all three cases, the ratio \(c/2\pi r\) approaches 1 as \(r\) shrinks to 0. Furthermore, in all three cases the <em class="emphasis">derivative</em> of the ratio approaches 0 as \(r \to 0^+\text{.}\) But with the <em class="emphasis">second</em> derivative of the ratio we may distinguish these geometries. It can be shown that the curvature at a point is proportional to this second derivative evaluated in the limit as \(r \rightarrow 0^+\text{.}\) We will not derive this formula for curvature, but will use this working definition as it appears in Thurston's book <a knowl="./knowl/thurston.html" title="Bibliographic Entry 11: Three-Dimensional Geometry and Topology, Vol. I">[11]</a>.</p>
-<article class="definition-like" id="def-curvature"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">7.1.4</span>
+<section class="introduction" id="introduction-18"><p id="p-1248">Consider the smooth curve in <a class="xref" data-knowl="./knowl/fig-kcurve.html" title="Figure 7.1.1">Figure 7.1.1</a>. The curvature of the curve at a point is a measure of how drastically the curve bends away from its tangent line, and this curvature is often studied in a multivariable calculus course. The radius of curvature at a point corresponds to the radius of the circle that best approximates the curve at this point. The radius \(r\) of this circle is the reciprocal of the curvature \(k\) of the curve at the point: \(k = 1/r\text{.}\)</p>
+<figure class="figure figure-like" id="fig-kcurve"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-kcurve.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.1<span class="period">.</span></span><span class="space"> </span>The curvature of a curve.</figcaption></figure><p id="p-1249">The curvature of a surface (such as the graph of a function \(z = f(x,y)\)) at a particular point is a measure of how drastically the surface bends away from its tangent plane at the point. There are three fundamental types of curvature. A surface has positive curvature at a point if the surface lives entirely on one side of the tangent plane, at least near the point of interest. The surface has negative curvature at a point if it is saddle-shaped, in the sense that the tangent plane cuts through the surface. Between these two cases is the case of zero curvature. In this case the surface has a line along which the surface agrees with the tangent plane. For instance, a cylinder has zero curvature, as suggested in <a class="xref" data-knowl="./knowl/fig-curvature.html" title="Figure 7.1.2">Figure 7.1.2</a>(c).</p>
+<figure class="figure figure-like" id="fig-curvature"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/curvature.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.2<span class="period">.</span></span><span class="space"> </span>The curvature of a surface at a point can be (a) positive; (b) negative; or (c) zero.</figcaption></figure><p id="p-1250">This informal description of curvature makes use of how the surface is embedded in space. One of Gauss' great theorems, one he called his <em class="emphasis">Theorem Egregium</em>, states that the curvature of a surface is an intrinsic property of the surface. The curvature doesn't change if the surface is bent without stretching, and our tireless two-dimensional inhabitant living in the space can determine the curvature by taking measurements.</p>
+<p id="p-1251">A two-dimensional bug living in the hyperbolic plane, the projective plane, or the Euclidean plane would notice that a small circle's circumference is related to its radius by the Euclidean formula \(c \approx 2\pi r\text{.}\) In Euclidean geometry this formula applies to all circles, but in the non-Euclidean cases, the observant bug might notice in large circles a significant difference between the actual circumference of a circle and the circumference predicted by \(c = 2\pi r\text{.}\) Large circles about a cup-shaped point with positive curvature will have circumference less than that predicted by Euclidean geometry. This fact explains why a large chunk of orange peel fractures if pressed flat onto a table. Large circles drawn around a saddle-shaped point with negative curvature will have circumference greater than that predicted by the Euclidean formula.</p>
+<p id="p-1252">Calculus may be used to precisely capture this deviation between the Euclidean-predicted circumference \(2\pi r\) and the actual circumference \(c\) for circles of radius \(r\) in the different geometries.</p>
+<p id="p-1253">Recall that in the hyperbolic plane, \(c = 2\pi \sinh(r)\text{;}\) in the Euclidean plane \(c = 2\pi r\text{;}\) and in the elliptic plane \(c = 2\pi \sin(r)\text{.}\)  In <a class="xref" data-knowl="./knowl/fig-circratio.html" title="Figure 7.1.3">Figure 7.1.3</a> we have graphed the ratio \(\frac{c}{2\pi r}\) where \(c\) is the circumference of a circle with radius \(r\) in (a) the hyperbolic plane; (b) the Euclidean plane; and (c) the elliptic plane.</p>
+<figure class="figure figure-like" id="fig-circratio"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-circratio.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span>Plotting the ratio \(c/2\pi r\) against \(r\) in (a) hyperbolic geometry, (b) Euclidean geometry, and (c) elliptic geometry.</figcaption></figure><p id="p-1254">In all three cases, the ratio \(c/2\pi r\) approaches 1 as \(r\) shrinks to 0. Furthermore, in all three cases the <em class="emphasis">derivative</em> of the ratio approaches 0 as \(r \to 0^+\text{.}\) But with the <em class="emphasis">second</em> derivative of the ratio we may distinguish these geometries. It can be shown that the curvature at a point is proportional to this second derivative evaluated in the limit as \(r \rightarrow 0^+\text{.}\) We will not derive this formula for curvature, but will use this working definition as it appears in Thurston's book <a class="xref" data-knowl="./knowl/thurston.html" title="Bibliographic Entry 11: Three-Dimensional Geometry and Topology, Vol. I">[11]</a>.</p>
+<article class="definition definition-like" id="def-curvature"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span>
 </h6>
-<p id="p-1175">Suppose a circle of radius \(r\) about a point \(p\) is drawn in a space<a knowl="" class="id-ref" refid="hk-fn-5" id="fn-5"><sup> 5 </sup></a><span id="hk-fn-5" class="hidden-content tex2jax_ignore"><span class="footnote">the term `space' is intentionally vague here. Our space needs to have a well-defined metric, so that it makes sense to talk about radius and circumference.  The space might be the Euclidean plane, the hyperbolic plane or the sphere. Other spaces are discussed in Section 7.5.</span></span>, and its circumference is \(c\text{.}\) The <dfn class="terminology">curvature of the space at \(p\)</dfn>  is</p>
+<p id="p-1255">Suppose a circle of radius \(r\) about a point \(p\) is drawn in a space<a data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-5" id="fn-5"><sup> 1 </sup></a>, and its circumference is \(c\text{.}\) The <dfn class="terminology">curvature of the space at \(p\)</dfn>  is</p>
 <div class="displaymath">
 \begin{equation*}
-k = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[\frac{c}{2\pi r}\bigg].
-\end{equation*}
-</div></article><p id="p-1176">Since we are interested in worlds that are homogeneous and isotropic, we will focus our attention on worlds in which the curvature is the same at all points.  That is, we investigate surfaces of constant curvature.</p>
-<article class="example-like" id="ex_spherecurv"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.1.5</span> <span class="title">The curvature of a sphere</span>
-</h6>
-<p id="p-1177">Consider the sphere with radius \(s\) in the following diagram, and note the circle centered at the north pole \(N\) having surface radius \(r\text{.}\) The circle is parallel to the plane \(z = 0\text{,}\) has Euclidean radius \(x\text{,}\) and hence circumference \(2\pi x\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-spherecurve.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1178">But \(x = s\sin(\theta)\) and \(r = \theta\cdot s\text{,}\) from which we deduce \(x = s\sin(\frac{r}{s})\text{,}\) and in terms of the surface radius \(r\) of the circle, its circumference is</p>
-<div class="displaymath">
-\begin{equation*}
-c = 2\pi s\sin\bigg(\frac{r}{s}\bigg).
+k = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[\frac{c}{2\pi r}\bigg]\text{.}
 \end{equation*}
 </div>
-<p id="p-1179">The curvature of the sphere at \(N\) is thus</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-5"><div class="fn">the term `space' is intentionally vague here. Our space needs to have a well-defined metric, so that it makes sense to talk about radius and circumference.  The space might be the Euclidean plane, the hyperbolic plane or the sphere. Other spaces are discussed in Section 7.5.</div></div></article><p id="p-1256">Since we are interested in worlds that are homogeneous and isotropic, we will focus our attention on worlds in which the curvature is the same at all points.  That is, we investigate surfaces of constant curvature.</p>
+<article class="example example-like" id="ex_spherecurv"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">The curvature of a sphere.</span>
+</h6>
+<p id="p-1257">Consider the sphere with radius \(s\) in the following diagram, and note the circle centered at the north pole \(N\) having surface radius \(r\text{.}\) The circle is parallel to the plane \(z = 0\text{,}\) has Euclidean radius \(x\text{,}\) and hence circumference \(2\pi x\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-spherecurve.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1258">But \(x = s\sin(\theta)\) and \(r = \theta\cdot s\text{,}\) from which we deduce \(x = s\sin(\frac{r}{s})\text{,}\) and in terms of the surface radius \(r\) of the circle, its circumference is</p>
 <div class="displaymath">
 \begin{equation*}
-k = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[\frac{2\pi s\sin(r/s)}{2\pi r}\bigg].
+c = 2\pi s\sin\bigg(\frac{r}{s}\bigg)\text{.}
 \end{equation*}
 </div>
-<p id="p-1180">Cancelling the \(2\pi\) terms and replacing \(\sin(r/s)\) with its power series expansion, we have</p>
+<p id="p-1259">The curvature of the sphere at \(N\) is thus</p>
+<div class="displaymath">
+\begin{equation*}
+k = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[\frac{2\pi s\sin(r/s)}{2\pi r}\bigg]\text{.}
+\end{equation*}
+</div>
+<p id="p-1260">Cancelling the \(2\pi\) terms and replacing \(\sin(r/s)\) with its power series expansion, we have</p>
 <div class="displaymath">
 \begin{align*}
-k \amp = -3 \lim_{r \to
-0^+}\frac{d^2}{dr^2}\bigg[\frac{s(\frac{r}{s}-\frac{r^3}{6s^3}+\frac{r^5}{120s^5}-\cdots)}{r}\bigg]\\
-\amp = -3 \lim_{r \to
-0^+}\frac{d^2}{dr^2}\bigg[1-\frac{r^2}{6s^2}+\frac{r^4}{120s^4}-\cdots\bigg]\\
-\amp = -3\lim_{r \to 0^+}\bigg[\frac{-1}{3s^2} + \frac{12r^2}{120s^4}
-- \cdots \bigg].
+k \amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[\frac{s(\frac{r}{s}-\frac{r^3}{6s^3}+\frac{r^5}{120s^5}-\cdots)}{r}\right]\\
+\amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[1-\frac{r^2}{6s^2}+\frac{r^4}{120s^4}-\cdots\right]\\
+\amp = -3\lim_{r \to 0^+}\left[\frac{-1}{3s^2} + \frac{12r^2}{120s^4} - \cdots \right]\text{.}
 \end{align*}
 </div>
-<p id="p-1181">Note that all the terms of the second derivative after the first have powers of \(r\) in the numerator, so these terms go to 0 as \(r
-\to 0^+\text{,}\) and the curvature of the sphere at the north pole is \(1/s^2\text{.}\) In fact because the sphere is homogeneous, the curvature at any point is</p>
+<p id="p-1261">Note that all the terms of the second derivative after the first have powers of \(r\) in the numerator, so these terms go to 0 as \(r \to 0^+\text{,}\) and the curvature of the sphere at the north pole is \(1/s^2\text{.}\) In fact because the sphere is homogeneous, the curvature at any point is</p>
 <div class="displaymath">
 \begin{equation*}
-k=\frac{1}{s^2}.
+k=\frac{1}{s^2}\text{.}
 \end{equation*}
-</div></article><article class="example-like" id="example-60"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.1.6</span> <span class="title">Curvature of the hyperbolic plane</span>
+</div></article><article class="example example-like" id="example-60"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Curvature of the hyperbolic plane.</span>
 </h6>
-<p id="p-1182">Because hyperbolic geometry is homogeneous and its transformations preserve circles and lengths, the curvature is the same at all points in the hyperbolic plane. We choose to compute the curvature at the origin.</p>
-<p id="p-1183">Recall, the circumference of a circle in \((\mathbb{D},\cal{H})\) is \(c =
-2\pi \sinh(r).\) To compute the curvature, use the power series expansion</p>
+<p id="p-1262">Because hyperbolic geometry is homogeneous and its transformations preserve circles and lengths, the curvature is the same at all points in the hyperbolic plane. We choose to compute the curvature at the origin.</p>
+<p id="p-1263">Recall, the circumference of a circle in \((\mathbb{D},\cal{H})\) is \(c = 2\pi \sinh(r).\) To compute the curvature, use the power series expansion</p>
 <div class="displaymath">
 \begin{equation*}
-\sinh(r)=r + \frac{r^3}{3!}+\frac{r^5}{5!}+\cdots.
+\sinh(r)=r + \frac{r^3}{3!}+\frac{r^5}{5!}+\cdots\text{.}
 \end{equation*}
 </div>
 <div class="displaymath">
 \begin{align*}
-k \amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[\frac{2\pi
-\sinh(r)}{2\pi r}\bigg]\\
-\amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[1+\frac{r^2}{3!}+\frac{r^4}{5!}+\cdots\bigg]\\
-\amp = -3 \lim_{r \to 0^+}\bigg[
-\frac{1}{3}+\frac{12r^2}{5!}+\cdots\bigg].
+k \amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[\frac{2\pi \sinh(r)}{2\pi r}\right]\\
+\amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[1+\frac{r^2}{3!}+\frac{r^4}{5!}+\cdots\right]\\
+\amp = -3 \lim_{r \to 0^+}\left[\frac{1}{3}+\frac{12r^2}{5!}+\cdots\right]\text{.}
 \end{align*}
 </div>
-<p id="p-1184">Again, each term of the second derivative after the first has a power of \(r\) in its numerator, so in the limit as \(r \to 0^+\text{,}\) each of these terms vanishes. Thus, the curvature of the hyperbolic plane in (\(\mathbb{D},{\cal H})\) is \(k = -1.\)</p></article></section><section class="exercises" id="exercises-22"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+<p id="p-1264">Again, each term of the second derivative after the first has a power of \(r\) in its numerator, so in the limit as \(r \to 0^+\text{,}\) each of these terms vanishes. Thus, the curvature of the hyperbolic plane in (\(\mathbb{D},{\cal H})\) is \(k = -1.\)</p></article></section><section class="exercises" id="exercises-22"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section7-1.html#exercises-22" class="permalink">¶</a><article class="exercise-like" id="exercise-163"><h6 class="heading">
-<span class="codenumber">1</span> </h6>
-<p id="p-1185">Use our working definition to show that the curvature of the projective plane in elliptic geometry is 1. Recall, \(c =
-2\pi\sin(r)\) in this geometry.</p></article><article class="exercise-like" id="exercise-164"><h6 class="heading">
-<span class="codenumber">2</span> </h6>
-<p id="p-1186">Use our working definition to explain why the curvature of the Euclidean plane is \(k = 0\text{.}\)</p></article></section></section></div></main>
+<article class="exercise exercise-like" id="exercise-163"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1265">Use our working definition to show that the curvature of the projective plane in elliptic geometry is 1. Recall, \(c = 2\pi\sin(r)\) in this geometry.</p></article><article class="exercise exercise-like" id="exercise-164"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1267">Use our working definition to explain why the curvature of the Euclidean plane is \(k = 0\text{.}\)</p></article></section></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

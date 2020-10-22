@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:30-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:37-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Antipodal Points</title>
+<title>GCT Antipodal Points</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-6.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section6-2.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-6.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section6-2.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1" class="active">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,196 +146,181 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section6-1"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section6-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Antipodal Points</span>
 </h2>
-<a href="section6-1.html" class="permalink">¶</a><section class="introduction" id="introduction-25"><p id="p-979">Recall, the unit 2-sphere \(\mathbb{S}^2\) consists of all points \((a,b,c)\) in \(\mathbb{R}^3\) for which \(a^2 + b^2 + c^2 = 1\text{,}\) and \(\mathbb{S}^2\) may be mapped onto the extended plane by the stereographic projection map \(\phi: \mathbb{S}^2 \to
-\mathbb{C}^+\) defined by</p>
+<section class="introduction" id="introduction-14"><p id="p-1047">Recall, the unit 2-sphere \(\mathbb{S}^2\) consists of all points \((a,b,c)\) in \(\mathbb{R}^3\) for which \(a^2 + b^2 + c^2 = 1\text{,}\) and \(\mathbb{S}^2\) may be mapped onto the extended plane by the stereographic projection map \(\phi: \mathbb{S}^2 \to \mathbb{C}^+\) defined by</p>
 <div class="displaymath">
 \begin{equation*}
 \phi(a,b,c) =
 \begin{cases}\frac{a}{1-c}+\frac{b}{1-c}i \amp  \text{ if \(c \neq 1\); }  \\
-\infty \amp  \text{ if  \(c=1\). } 
-\end{cases}
+\infty \amp  \text{ if  \(c=1\) } 
+\end{cases}\text{.}
 \end{equation*}
 </div>
-<p id="p-980">Two distinct points on a sphere are called <dfn class="terminology">diametrically opposed points</dfn> if they are on the same line through the center of the sphere. Diametrically opposed points on the sphere are also called antipodal points. If \(P = (a,b,c)\) is on \(\mathbb{S}^2\) then the point diametrically opposed to it is \(-P=(-a,-b,-c)\text{.}\) It turns out that \(\phi\) maps diametrically opposed points of the sphere to points in the extended plane that satisfy a particular equation.</p>
-<article class="definition-like" id="definition-26"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">6.1.1</span>
+<p id="p-1048">Two distinct points on a sphere are called <dfn class="terminology">diametrically opposed points</dfn> if they are on the same line through the center of the sphere. Diametrically opposed points on the sphere are also called antipodal points. If \(P = (a,b,c)\) is on \(\mathbb{S}^2\) then the point diametrically opposed to it is \(-P=(-a,-b,-c)\text{.}\) It turns out that \(\phi\) maps diametrically opposed points of the sphere to points in the extended plane that satisfy a particular equation.</p></section><article class="definition definition-like" id="definition-26"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
 </h6>
-<p id="p-981">Two points \(z\) and \(w\) in \(\mathbb{C}^+\) are called <dfn class="terminology">antipodal points</dfn> if they satisfy the equation</p>
+<p id="p-1049">Two points \(z\) and \(w\) in \(\mathbb{C}^+\) are called <dfn class="terminology">antipodal points</dfn> if they satisfy the equation</p>
 <div class="displaymath">
 \begin{equation*}
-z \cdot \overline{w} = -1.
+z \cdot \overline{w} = -1\text{.}
 \end{equation*}
 </div>
-<p>Furthermore, we set 0 and \(\infty\) to be antipodal points in \(\mathbb{C}^+\text{.}\) If \(z\) and \(w\) are antipodal points, we say \(w\) is antipodal to \(z\text{,}\) and vice versa.</p></article><p id="p-982">Each \(z\) in \(\mathbb{C}^+\) has a unique antipodal point, \(z_a\text{,}\) given as follows:</p>
+<p data-braille="continuation">Furthermore, we set 0 and \(\infty\) to be antipodal points in \(\mathbb{C}^+\text{.}\) If \(z\) and \(w\) are antipodal points, we say \(w\) is antipodal to \(z\text{,}\) and vice versa.</p></article><p id="p-1050">Each \(z\) in \(\mathbb{C}^+\) has a unique antipodal point, \(z_a\text{,}\) given as follows:</p>
 <div class="displaymath">
 \begin{equation*}
 z_a =\begin{cases}-1/\overline{z} \amp \text{ if \(z \neq 0, \infty\); } \\
 \infty \amp  \text{ if \(z = 0\); } \\
-0 \amp  \text{ if \(z=\infty\). } 
-\end{cases} 
+0 \amp  \text{ if \(z=\infty\) } 
+\end{cases} \text{.}
 \end{equation*}
 </div>
-<p id="p-983">Since \(-\frac{1}{\overline{z}} = -\frac{1}{|z|^2}z\text{,}\) we note that \(z_a\) is a scaled version of \(z\text{,}\) so that \(z\) and \(z_a\) live on the same Euclidean line through the origin. Again, since 0 and \(\infty\) are antipodal points, this notion extends to all points \(z \in \mathbb{C}^+\text{.}\)</p>
-<article class="theorem-like" id="th_antipodal"><h6 class="heading">
-<span class="type">Lemma</span> <span class="codenumber">6.1.2</span>
+<p id="p-1051">Since \(-\frac{1}{\overline{z}} = -\frac{1}{|z|^2}z\text{,}\) we note that \(z_a\) is a scaled version of \(z\text{,}\) so that \(z\) and \(z_a\) live on the same Euclidean line through the origin. Again, since 0 and \(\infty\) are antipodal points, this notion extends to all points \(z \in \mathbb{C}^+\text{.}\)</p>
+<article class="lemma theorem-like" id="th_antipodal"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span>
 </h6>
-<p id="p-984">Given two diametrically opposed points on the unit sphere, their image points under stereographic projection are antipodal points in \(\mathbb{C}^+\text{.}\)</p></article><article class="hiddenproof" id="proof-37"><a knowl="" class="id-ref" refid="hk-proof-37"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-37" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-985">First note that the north pole \(N = (0,0,1)\) and the south pole \(S = (0,0,-1)\) are diametrically opposed points and they get sent by \(\phi\) to \(\infty\) and 0, respectively, in \(\mathbb{C}^+\text{;}\) so the lemma holds in this case.</p>
-<p id="p-986">Now suppose \(P = (a,b,c)\) is a point on the sphere with \(|c| \neq 1\text{,}\) and \(Q = (-a,-b,-c)\) is diametrically opposed to \(P\text{.}\) The images of these two points under stereographic projection are</p>
+<p id="p-1052">Given two diametrically opposed points on the unit sphere, their image points under stereographic projection are antipodal points in \(\mathbb{C}^+\text{.}\)</p></article><article class="hiddenproof" id="proof-37"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-37"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-37"><article class="hiddenproof"><p id="p-1053">First note that the north pole \(N = (0,0,1)\) and the south pole \(S = (0,0,-1)\) are diametrically opposed points and they get sent by \(\phi\) to \(\infty\) and 0, respectively, in \(\mathbb{C}^+\text{;}\) so the lemma holds in this case.</p>
+<p id="p-1054">Now suppose \(P = (a,b,c)\) is a point on the sphere with \(|c| \neq 1\text{,}\) and \(Q = (-a,-b,-c)\) is diametrically opposed to \(P\text{.}\) The images of these two points under stereographic projection are</p>
 <div class="displaymath">
 \begin{equation*}
-\phi(P) = \frac{a}{1-c} + \frac{b}{1-c} i~~\text{and}~~\phi(Q) = \frac{-a}{1+c} - \frac{b}{1+c} i.
+\phi(P) = \frac{a}{1-c} + \frac{b}{1-c} i~~\text{and}~~\phi(Q) = \frac{-a}{1+c} - \frac{b}{1+c} i\text{.}
 \end{equation*}
 </div>
-<p id="p-987">If we expand the following product</p>
+<p id="p-1055">If we expand the following product</p>
 <div class="displaymath">
 \begin{equation*}
-\phi(P) \cdot \overline{\phi(Q)} = \bigg[\frac{a}{1-c} +\frac{b}{1-c} i\bigg]\cdot \bigg[\frac{-a}{1+c} + \frac{b}{1+c} i\bigg],
+\phi(P) \cdot \overline{\phi(Q)} = \left[\frac{a}{1-c} +\frac{b}{1-c} i\right]\cdot \left[\frac{-a}{1+c} + \frac{b}{1+c} i\right]\text{,}
 \end{equation*}
 </div>
-<p>we obtain</p>
+<p data-braille="continuation">we obtain</p>
 <div class="displaymath">
 \begin{equation*}
 \phi(P) \cdot \overline{\phi(Q)} = -\frac{a^2 + b^2}{1-c^2}
 \end{equation*}
 </div>
-<p>which reduces to \(-1\) since \(a^2+b^2+c^2=1\text{.}\)</p>
-<p id="p-988">Thus, diametrically opposed points on the sphere get mapped via stereographic projection to antipodal points in the extended plane.</p></article></div>
-<p id="p-989">A cline \(C\) in \(\mathbb{C}^+\) is called a <dfn class="terminology">great circle</dfn> if whenever \(z\) is on \(C\text{,}\) so is its antipodal point \(z_a\text{.}\)  Some great circles are drawn in <a knowl="./knowl/fig-great-circles.html" title="Figure 6.1.3">Figure 6.1.3</a>.  We note that the unit circle is a great circle in \(\mathbb{C}^+\) as is any line through the origin.</p>
-<figure class="figure-like" id="fig-great-circles"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-great-circles.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">6.1.3</span> Five great circles in \(\mathbb{C}^+\text{.}\)</figcaption></figure><p id="p-990">To construct a great circle in the extended plane, it is enough to ensure that it passes through one particular pair of antipodal points.  This can be proved with the aid of stereographic projection, but an alternative proof is given below, one that does not leave the plane, but rather uses a proposition from Book III of Euclid's <em class="emphasis">Elements</em>.</p>
-<article class="theorem-like" id="lemma_antpts"><h6 class="heading">
-<span class="type">Lemma</span> <span class="codenumber">6.1.4</span>
+<p data-braille="continuation">which reduces to \(-1\) since \(a^2+b^2+c^2=1\text{.}\)</p>
+<p id="p-1056">Thus, diametrically opposed points on the sphere get mapped via stereographic projection to antipodal points in the extended plane.</p></article></div>
+<p id="p-1057">A cline \(C\) in \(\mathbb{C}^+\) is called a <dfn class="terminology">great circle</dfn> if whenever \(z\) is on \(C\text{,}\) so is its antipodal point \(z_a\text{.}\)  Some great circles are drawn in <a class="xref" data-knowl="./knowl/fig-great-circles.html" title="Figure 6.1.3">Figure 6.1.3</a>.  We note that the unit circle is a great circle in \(\mathbb{C}^+\) as is any line through the origin.</p>
+<figure class="figure figure-like" id="fig-great-circles"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-great-circles.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.1.3<span class="period">.</span></span><span class="space"> </span>Five great circles in \(\mathbb{C}^+\text{.}\)</figcaption></figure><p id="p-1058">To construct a great circle in the extended plane, it is enough to ensure that it passes through one particular pair of antipodal points.  This can be proved with the aid of stereographic projection, but an alternative proof is given below, one that does not leave the plane, but rather uses a proposition from Book III of Euclid's <em class="emphasis">Elements</em>.</p>
+<article class="lemma theorem-like" id="lemma_antpts"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span>
 </h6>
-<p id="p-991">If a cline in \(\mathbb{C}^+\) contains two antipodal points then it is a great circle.</p></article><article class="hiddenproof" id="proof-38"><a knowl="" class="id-ref" refid="hk-proof-38"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-38" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-992">Suppose \(C\) is a cline in \(\mathbb{C}^+\) containing antipodal points \(p\) and \(p_a\text{,}\) and suppose \(q\) is any other point on \(C\text{.}\)  We show \(q_a\) is also on \(C\text{.}\)</p>
-<p id="p-993">If \(C\) is a line, it must go through the origin since \(p\) and \(p_a\) are on the same line through the origin.  Since \(q\) and \(q_a\) are also on the same line through the origin, if \(q\) is on \(C\) then \(q_a\) is too.</p>
-<p id="p-994">If \(C\) is a circle, then the origin of the plane is in the interior of \(C\) and the chord \(pp_a\) contains the origin, as pictured in <a knowl="./knowl/fig-intersecting-chords.html" title="Figure 6.1.5">Figure 6.1.5</a>.  The line through \(q\) and the origin intersects \(C\) at another point, say \(w\text{.}\)  We show \(w=q_a\text{.}\)</p>
-<figure class="figure-like" id="fig-intersecting-chords"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-intersecting-chords.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">6.1.5</span> A cline \(C\) containing a pair of antipodal points \(p\) and \(p_a\) must be a great cirlce.  In the figure, \(w = q_a\text{.}\)</figcaption></figure><p id="p-995">The intersecting chords theorem (Book III, Proposition 35 of Euclid's <em class="emphasis">Elements</em>) applied to this figure tells us that \(|p|\cdot |p_a| = |q|\cdot |w|\text{.}\)  (We leave the proof to <a knowl="./knowl/hmk-int-chords.html" title="Exercise 6.1.7">Exercise 6.1.7</a>.  The proof essentially follows that of <a knowl="./knowl/lemma-III36.html" title="Lemma 3.2.7">Lemma 3.2.7</a>, except we consider a point inside the given circle.)  As antipodal points, \(|p|\cdot|p_a| = 1\text{,}\) and it follows that \(|w|=1/|q|\text{.}\)  Since the segment \(wq\) contains the origin, it follows that \(w\) is the point antipodal to \(q\text{.}\)</p></article></div>
-<p id="p-996">The following theorem tells us that inversions will play a central role in elliptic geometry, just as they do in hyperbolic geometry.</p>
-<article class="theorem-like" id="th_reflectsphere"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">6.1.6</span>
+<p id="p-1059">If a cline in \(\mathbb{C}^+\) contains two antipodal points then it is a great circle.</p></article><article class="hiddenproof" id="proof-38"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-38"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-38"><article class="hiddenproof"><p id="p-1060">Suppose \(C\) is a cline in \(\mathbb{C}^+\) containing antipodal points \(p\) and \(p_a\text{,}\) and suppose \(q\) is any other point on \(C\text{.}\)  We show \(q_a\) is also on \(C\text{.}\)</p>
+<p id="p-1061">If \(C\) is a line, it must go through the origin since \(p\) and \(p_a\) are on the same line through the origin.  Since \(q\) and \(q_a\) are also on the same line through the origin, if \(q\) is on \(C\) then \(q_a\) is too.</p>
+<p id="p-1062">If \(C\) is a circle, then the origin of the plane is in the interior of \(C\) and the chord \(pp_a\) contains the origin, as pictured in <a class="xref" data-knowl="./knowl/fig-intersecting-chords.html" title="Figure 6.1.5">Figure 6.1.5</a>.  The line through \(q\) and the origin intersects \(C\) at another point, say \(w\text{.}\)  We show \(w=q_a\text{.}\)</p>
+<figure class="figure figure-like" id="fig-intersecting-chords"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-intersecting-chords.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.1.5<span class="period">.</span></span><span class="space"> </span>A cline \(C\) containing a pair of antipodal points \(p\) and \(p_a\) must be a great cirlce.  In the figure, \(w = q_a\text{.}\)</figcaption></figure><p id="p-1063">The intersecting chords theorem (Book III, Proposition 35 of Euclid's <em class="emphasis">Elements</em>) applied to this figure tells us that \(|p|\cdot |p_a| = |q|\cdot |w|\text{.}\)  (We leave the proof to <a class="xref" data-knowl="./knowl/hmk-int-chords.html" title="Exercise 6.1.7">Exercise 6.1.7</a>.  The proof essentially follows that of <a class="xref" data-knowl="./knowl/lemma-III36.html" title="Lemma 3.2.7">Lemma 3.2.7</a>, except we consider a point inside the given circle.)  As antipodal points, \(|p|\cdot|p_a| = 1\text{,}\) and it follows that \(|w|=1/|q|\text{.}\)  Since the segment \(wq\) contains the origin, it follows that \(w\) is the point antipodal to \(q\text{.}\)</p></article></div>
+<p id="p-1064">The following theorem tells us that inversions will play a central role in elliptic geometry, just as they do in hyperbolic geometry.</p>
+<article class="theorem theorem-like" id="th_reflectsphere"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span>
 </h6>
-<p id="p-997">Reflection of \(\mathbb{S}^2\) about a great circle corresponds via stereographic projection to inversion about a great circle in \(\mathbb{C}^+\text{.}\)</p></article><p id="p-998">We work through the relationship in one case, and refer the interested reader to <a knowl="./knowl/stillwell.html" title="Bibliographic Entry 10: Geometry on Surfaces">[10]</a> for the general proof.</p>
-<article class="example-like" id="example-54"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">6.1.7</span> <span class="title">Reflection of \(\mathbb{S}^2\) about the equator</span>
+<p id="p-1065">Reflection of \(\mathbb{S}^2\) about a great circle corresponds via stereographic projection to inversion about a great circle in \(\mathbb{C}^+\text{.}\)</p></article><p id="p-1066">We work through the relationship in one case, and refer the interested reader to <a class="xref" data-knowl="./knowl/stillwell.html" title="Bibliographic Entry 10: Geometry on Surfaces">[10]</a> for the general proof.</p>
+<article class="example example-like" id="example-54"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Reflection of \(\mathbb{S}^2\) about the equator.</span>
 </h6>
-<p id="p-999">We argue that reflection of \(\mathbb{S}^2\) about the equator corresponds to inversion about the unit circle.</p>
-<p id="p-1000">First of all, stereographic projection sends the equator of \(\mathbb{S}^2\) to the unit circle in \(\mathbb{C}^+\text{.}\) Now, reflection of \(\mathbb{S}^2\) across the equator sends the point \(P = (a,b,c)\) to the point \(P^* = (a,b,-c)\text{.}\) We must argue that \(\phi(P)\) and \(\phi(P^*)\) are symmetric with respect to the unit circle.</p>
-<p id="p-1001">If \(|c| = 1\) then \(P\) and \(P^*\) correspond to the north and south poles, and their image points are 0 and \(\infty\text{,}\) and these points are symmetric with respect to the unit circle. So, assume \(|c|
-\neq 1\text{.}\) Notice that</p>
+<p id="p-1067">We argue that reflection of \(\mathbb{S}^2\) about the equator corresponds to inversion about the unit circle.</p>
+<p id="p-1068">First of all, stereographic projection sends the equator of \(\mathbb{S}^2\) to the unit circle in \(\mathbb{C}^+\text{.}\) Now, reflection of \(\mathbb{S}^2\) across the equator sends the point \(P = (a,b,c)\) to the point \(P^* = (a,b,-c)\text{.}\) We must argue that \(\phi(P)\) and \(\phi(P^*)\) are symmetric with respect to the unit circle.</p>
+<p id="p-1069">If \(|c| = 1\) then \(P\) and \(P^*\) correspond to the north and south poles, and their image points are 0 and \(\infty\text{,}\) and these points are symmetric with respect to the unit circle. So, assume \(|c| \neq 1\text{.}\) Notice that</p>
 <div class="displaymath">
 \begin{equation*}
 \phi(P) = \frac{a}{1-c}+\frac{b}{1-c}i
 ~~\text{and }~~\phi(P^*) = \frac{a}{1+c}+\frac{b}{1+c}i
 \end{equation*}
 </div>
-<p>are on the same ray beginning at the origin. Indeed, one is the positive scalar multiple of the other:</p>
+<p data-braille="continuation">are on the same ray beginning at the origin. Indeed, one is the positive scalar multiple of the other:</p>
 <div class="displaymath">
 \begin{equation*}
-\phi(P^*) = \frac{1-c}{1+c}\phi(P). 
+\phi(P^*) = \frac{1-c}{1+c}\phi(P)\text{.}
 \end{equation*}
 </div>
-<p id="p-1002">Moreover,</p>
+<p id="p-1070">Moreover,</p>
 <div class="displaymath">
 \begin{align*}
 |\phi(P)|\cdot|\phi(P^*)|
 \amp = \frac{1-c}{1+c}\cdot |\phi(P)|^2\\
 \amp = \frac{1-c}{1+c}\cdot \frac{a^2+b^2}{(1-c)^2}\\
 \amp = \frac{a^2+b^2}{1-c^2}\\
-\amp = 1.
+\amp = 1\text{.}
 \end{align*}
 </div>
-<p id="p-1003">Again, the last equality holds because \(a^2 + b^2 + c^2 = 1\text{.}\)  Thus, \(\phi(P)\) and \(\phi(P^*)\) are symmetric with respect to the unit circle.  It follows that inversion in the unit circle, \(i_{\mathbb{S}^1}\text{,}\) corresponds to reflection of \(\mathbb{S}^2\) across the equator, call this map \(R\text{,}\) by the equation</p>
+<p id="p-1071">Again, the last equality holds because \(a^2 + b^2 + c^2 = 1\text{.}\)  Thus, \(\phi(P)\) and \(\phi(P^*)\) are symmetric with respect to the unit circle.  It follows that inversion in the unit circle, \(i_{\mathbb{S}^1}\text{,}\) corresponds to reflection of \(\mathbb{S}^2\) across the equator, call this map \(R\text{,}\) by the equation</p>
 <div class="displaymath">
 \begin{equation*}
-i_{\mathbb{S}^1} \circ \phi = \phi \circ R. 
+i_{\mathbb{S}^1} \circ \phi = \phi \circ R\text{.}
 \end{equation*}
-</div></article><p id="p-1004">We end the section with one more feature of the stereographic projection map.  The proof can be found in <a knowl="./knowl/stillwell.html" title="Bibliographic Entry 10: Geometry on Surfaces">[10]</a>.</p>
-<article class="theorem-like" id="theorem-46"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">6.1.8</span>
+</div></article><p id="p-1072">We end the section with one more feature of the stereographic projection map.  The proof can be found in <a class="xref" data-knowl="./knowl/stillwell.html" title="Bibliographic Entry 10: Geometry on Surfaces">[10]</a>.</p>
+<article class="theorem theorem-like" id="thm-stereo-preserves-clines"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.1.8</span><span class="period">.</span>
 </h6>
-<p id="p-1005">The image of a circle on \(\mathbb{S}^2\) via stereographic projection is a cline in \(\mathbb{C}^+\text{.}\) Moreover, the pre-image of a circle in \(\mathbb{C}^+\) is a circle on \(\mathbb{S}^2\text{.}\) The pre-image of a line in \(\mathbb{C}^+\) is a circle on \(\mathbb{S}^2\) that goes through \(N= (0,0,1)\text{.}\)</p></article><p id="p-1006">In fact, one can offer a constructive proof of this theorem. A circle on \(\mathbb{S}^2\) can be represented as the intersection of \(\mathbb{S}^2\) with a plane \(Ax + By + Cz + D = 0\) in 3-dimensional space. One can show that the circle in \(\mathbb{S}^2\) defined by \(Ax + By + Cz + D = 0\) gets mapped by \(\phi\) to the cline \((C+D)(u^2 + v^2)+2Au + 2Bv + (D-C)=0\) in the plane (described via \(u,v\) cartesian coordinates); conversely the circle \(|w - w_0| = r\) in \(\mathbb{C}\) gets mapped by the inverse function \(\phi^{-1}\) to the circle in \(\mathbb{S}^2\) given by the plane \(-2x_0 x - 2y_o y + (1 - |w_0|^2+r^2)z + (1 + |w_0|^2
-- r^2) = 0\) where \(w_0 = x_0 + y_0i\text{.}\)</p>
-<article class="example-like" id="example-55"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">6.1.9</span> <span class="title">The image of a circle under \(\phi\)</span>
+<p id="p-1073">The image of a circle on \(\mathbb{S}^2\) via stereographic projection is a cline in \(\mathbb{C}^+\text{.}\) Moreover, the pre-image of a circle in \(\mathbb{C}^+\) is a circle on \(\mathbb{S}^2\text{.}\) The pre-image of a line in \(\mathbb{C}^+\) is a circle on \(\mathbb{S}^2\) that goes through \(N= (0,0,1)\text{.}\)</p></article><p id="p-1074">In fact, one can offer a constructive proof of this theorem. A circle on \(\mathbb{S}^2\) can be represented as the intersection of \(\mathbb{S}^2\) with a plane \(Ax + By + Cz + D = 0\) in 3-dimensional space. One can show that the circle in \(\mathbb{S}^2\) defined by \(Ax + By + Cz + D = 0\) gets mapped by \(\phi\) to the cline \((C+D)(u^2 + v^2)+2Au + 2Bv + (D-C)=0\) in the plane (described via \(u,v\) cartesian coordinates); conversely the circle \(|w - w_0| = r\) in \(\mathbb{C}\) gets mapped by the inverse function \(\phi^{-1}\) to the circle in \(\mathbb{S}^2\) given by the plane \(-2x_0 x - 2y_o y + (1 - |w_0|^2+r^2)z + (1 + |w_0|^2 - r^2) = 0\) where \(w_0 = x_0 + y_0i\text{.}\)</p>
+<article class="example example-like" id="example-55"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">The image of a circle under \(\phi\).</span>
 </h6>
-<p id="p-1007">Consider the circle on \(\mathbb{S}^2\) defined by the vertical plane \(x = -\frac{1}{2}\text{.}\) In standard form, this plane has constants \(A = 2, B = C = 0,\) and \(D = 1\text{,}\) so the image under \(\phi\) is the circle</p>
+<p id="p-1075">Consider the circle on \(\mathbb{S}^2\) defined by the vertical plane \(x = -\frac{1}{2}\text{.}\) In standard form, this plane has constants \(A = 2, B = C = 0\text{,}\) and \(D = 1\text{,}\) so the image under \(\phi\) is the circle</p>
 <div class="displaymath">
 \begin{equation*}
-(u^2+v^2)+4u+1 = 0.
+(u^2+v^2)+4u+1 = 0\text{.}
 \end{equation*}
 </div>
-<p id="p-1008">Completing the square we obtain the circle</p>
+<p id="p-1076">Completing the square we obtain the circle</p>
 <div class="displaymath">
 \begin{equation*}
 (u+2)^2 + v^2 = 3 
 \end{equation*}
 </div>
-<p>having center \((-2,0)\) and radius \(\sqrt{3}\text{.}\)</p></article><article class="example-like" id="example-56"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">6.1.10</span> <span class="title">The pre-image of a circle under \(\phi\)</span>
+<p data-braille="continuation">having center \((-2,0)\) and radius \(\sqrt{3}\text{.}\)</p></article><article class="example example-like" id="example-56"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">The pre-image of a circle under \(\phi\).</span>
 </h6>
-<p id="p-1009">The pre-image of the circle \(|w - (3 + 2i)| = 4\) in \(\mathbb{C}\) is the circle on \(\mathbb{S}^2\) defined by the plane</p>
+<p id="p-1077">The pre-image of the circle \(|w - (3 + 2i)| = 4\) in \(\mathbb{C}\) is the circle on \(\mathbb{S}^2\) defined by the plane</p>
 <div class="displaymath">
 \begin{equation*}
 -2 \cdot 3 x - 2\cdot 2 y + (1 - 13+4) z + (1 + 13 - 4) = 0 
 \end{equation*}
 </div>
-<p>or</p>
+<p data-braille="continuation">or</p>
 <div class="displaymath">
 \begin{equation*}
--3x - 2y  - 4z + 5 = 0.
+-3x - 2y  - 4z + 5 = 0\text{.}
 \end{equation*}
-</div></article></section><section class="exercises" id="exercises-19"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</div></article><section class="exercises" id="exercises-19"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section6-1.html#exercises-19" class="permalink">¶</a><article class="exercise-like" id="exercise-138"><h6 class="heading">
-<span class="codenumber">1</span> </h6>
-<p id="p-1010"><em class="emphasis">Constructing an antipodal point</em>. Suppose \(z\) is a point inside the unit circle. Prove that the following construction, which is depicted in <a knowl="./knowl/fig-antipodal.html" title="Figure 6.1.11">Figure 6.1.11</a>, gives \(z_a\text{,}\) the point antipodal to \(z\text{:}\) (1) Draw the line through \(z\) and the origin; (2) draw the line through the origin perpendicular to line (1), and let \(T\) be on line (2) and the unit circle; (3) construct the segment \(zT\text{;}\) (4) construct the perpendicular to segment (3) at point \(T\text{.}\) Line (4) intersects line (1) at the point \(z_a\text{.}\) Use similar triangles to prove that \(z_a = -\frac{1}{|z|^2}z.\)</p></article><figure class="figure-like" id="fig-antipodal"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-antipodal.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">6.1.11</span> Constructing the antipodal point to \(z\text{.}\)</figcaption></figure><article class="exercise-like" id="exercise-139"><h6 class="heading">
-<span class="codenumber">2</span> </h6>
-<p id="p-1011">Explain why any great circle in \(\mathbb{C}^+\) either contains 0 or has 0 in its interior.</p></article><article class="exercise-like" id="exercise-140"><h6 class="heading">
-<span class="codenumber">3</span> </h6>
-<p id="p-1012">Characterize those great circles in \(\mathbb{C}^+\) that are actually Euclidean lines.</p></article><article class="exercise-like" id="exercise-141"><h6 class="heading">
-<span class="codenumber">4</span> </h6>
-<p id="p-1013">Prove that reflection of \(\mathbb{S}^2\) across the great circle through (0,0,1), (0,0,-1) and (1,0,0) corresponds via stereographic projection to reflection of \(\mathbb{C}^+\) across the real axis.</p></article><article class="exercise-like" id="exercise-142"><h6 class="heading">
-<span class="codenumber">5</span> </h6>
-<p id="p-1014">Determine the image under \(\phi\) of the circle \(z = 1/2\) on the unit sphere.</p></article><article class="exercise-like" id="exercise-143"><h6 class="heading">
-<span class="codenumber">6</span> </h6>
-<p id="p-1015">Explain why reflection of \(\mathbb{S}^2\) across any longitudinal great circle (i.e. a great circle through the north and south poles) corresponds to reflection of \(\mathbb{C}^+\) across a line through the origin.</p></article><article class="exercise-like" id="hmk-int-chords"><h6 class="heading">
-<span class="codenumber">7</span> </h6>
-<p id="p-1016">Prove the intersecting chords theorem in two parts.</p>
-<p id="p-1017">a. Suppose \(C\) is a circle with radius \(r\) centered at \(o\text{.}\)  Suppose \(p\) is a point inside \(C\) and a line through \(p\) intersects \(C\) at points \(m\) and \(n\text{,}\)  as pictured below.  If we let \(s = |p-o|\) prove that \(|p-m|\cdot|p-n|=r^2-s^2\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-Euc3-35.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1018">b. Prove the intersecting chords theorem: If \(mn\) and \(ab\) are any two chords of \(C\) passing through a given interior point \(p\text{,}\) then</p>
-<div class="displaymath">
+<article class="exercise exercise-like" id="exercise-138"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1078"><em class="emphasis">Constructing an antipodal point</em>. Suppose \(z\) is a point inside the unit circle. Prove that the following construction, which is depicted in <a class="xref" data-knowl="./knowl/fig-antipodal.html" title="Figure 6.1.11">Figure 6.1.11</a>, gives \(z_a\text{,}\) the point antipodal to \(z\text{:}\) (1) Draw the line through \(z\) and the origin; (2) draw the line through the origin perpendicular to line (1), and let \(T\) be on line (2) and the unit circle; (3) construct the segment \(zT\text{;}\) (4) construct the perpendicular to segment (3) at point \(T\text{.}\) Line (4) intersects line (1) at the point \(z_a\text{.}\) Use similar triangles to prove that \(z_a = -\frac{1}{|z|^2}z.\)</p></article><figure class="figure figure-like" id="fig-antipodal"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-antipodal.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.1.11<span class="period">.</span></span><span class="space"> </span>Constructing the antipodal point to \(z\text{.}\)</figcaption></figure><article class="exercise exercise-like" id="exercise-139"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1080">Explain why any great circle in \(\mathbb{C}^+\) either contains 0 or has 0 in its interior.</p></article><article class="exercise exercise-like" id="exercise-140"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1082">Characterize those great circles in \(\mathbb{C}^+\) that are actually Euclidean lines.</p></article><article class="exercise exercise-like" id="exercise-141"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1084">Prove that reflection of \(\mathbb{S}^2\) across the great circle through \((0,0,1)\text{,}\) \((0,0,-1)\text{,}\) and \((1,0,0)\) corresponds via stereographic projection to reflection of \(\mathbb{C}^+\) across the real axis.</p></article><article class="exercise exercise-like" id="exercise-142"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1086">Determine the image under \(\phi\) of the circle \(z = 1/2\) on the unit sphere.</p></article><article class="exercise exercise-like" id="exercise-143"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-1088">Explain why reflection of \(\mathbb{S}^2\) across any longitudinal great circle (i.e. a great circle through the north and south poles) corresponds to reflection of \(\mathbb{C}^+\) across a line through the origin.</p></article><article class="exercise exercise-like" id="hmk-int-chords"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-1090">Prove the intersecting chords theorem in two parts.</p>
+<ol class="lower-alpha">
+<li id="li-239">Suppose \(C\) is a circle with radius \(r\) centered at \(o\text{.}\)  Suppose \(p\) is a point inside \(C\) and a line through \(p\) intersects \(C\) at points \(m\) and \(n\text{,}\)  as pictured below.  If we let \(s = |p-o|\) prove that \(|p-m|\cdot|p-n|=r^2-s^2\text{.}\) <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-Euc3-35.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+</li>
+<li id="li-240">Prove the intersecting chords theorem: If \(mn\) and \(ab\) are any two chords of \(C\) passing through a given interior point \(p\text{,}\) then<div class="displaymath">
 \begin{equation*}
-|m-p|\cdot|n-p|=|a-p|\cdot|b-p|.
+|m-p|\cdot|a-p|=|m-p|\cdot|b-p|\text{.}
 \end{equation*}
-</div></article></section></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
+</li>
+</ol></article></section></section></div></main>
+</div>
 </body>
 </html>

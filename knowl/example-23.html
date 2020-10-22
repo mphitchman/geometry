@@ -1,42 +1,55 @@
-<!doctype html>
-<html>
-<!--**************************************-->
-<!--* Generated from MathBook XML source *-->
-<!--*    on 2017-08-01T15:13:02-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:17-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">3.3.11</span><span class="title">The image of three points determines a Möbius transformation</span>
-</h5>
-<p id="p-381">Find the unique Möbius transformation that sends \(1 \mapsto 3\text{,}\) \(i \mapsto
-0\text{,}\) and \(2 \mapsto -1\text{.}\)</p>
-<p id="p-382">One approach: Find \(T(z) = (z,1;i,2)\) and \(S(w) = (w,3;0,-1)\text{.}\) In this case, the transformation we want is \(S^{-1} \circ T\text{.}\)</p>
-<p id="p-383">To find this transformation, we set the cross ratios equal:
-\begin{align*}
-(z,1;i,2) \amp = (w,3;0,-1)\\
-\frac{z-i}{z-2}\cdot\frac{1-2}{1-i} \amp = \frac{w-0}{w+1}\cdot\frac{3+1}{3-0}\\
-\frac{-z+i}{(1-i)z-2+2i} \amp = \frac{4w}{3w+3}.
-\end{align*}
-</p>
-<p id="p-384">Then solve for \(w\text{:}\)
-\begin{align*}
--3zw + 3iw + 3i - 3z \amp = 4[(1-i)z-2+2i]w\\
--3z+3i \amp = [3z-3i+4[(1-i)z-2+2i]]w\\
-w \amp = \frac{-3z + 3i}{(7-4i)z + (-8+5i)}.
-\end{align*}
-</p>
-<p id="p-385">Thus, our Möbius transformation is
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Reflection about a line.</span>
+</h6>
+<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">Reflection about a line \(L\)</dfn> is the transformation of \(\mathbb{C}\) defined as follows: Each point on \(L\) gets sent to itself, and if \(z\) is not on \(L\text{,}\) it gets sent to the point \(z^*\) such that line \(L\) is the perpendicular bisector of segment \(zz^*\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-reflect.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p>Reflection about \(L\) is defined algebraically as follows. If \(L\) happens to be the real axis then</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-V(z) = \frac{-3z + 3i}{(7-4i)z + (-8+5i)}.
+r_L(z) = \overline{z}\text{.}
 \end{equation*}
-</p>
-<p id="p-386">It's quite easy to check our answer here. Since there is exactly one Möbius transformation that does the trick, all we need to do is check whether \(V(1) = 3, V(i) = 0\) and \(V(2) = -1\text{.}\) Ok... yes... yes... yep! We've got our map!</p></article><span class="incontext"><a href="section3-4.html#example-23">in-context</a></span>
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">For any other line \(L\) we may arrive at a formula for reflection by rotating and/or translating the line to the real axis, then taking the conjugate, and then reversing the rotation and/or translation.</p>
+<p>For instance, to describe reflection about the line \(y = x + 5\text{,}\) we may translate vertically by \(-5i\text{,}\) rotate by \(-\frac{\pi}{4}\text{,}\) reflect about the real axis, rotate by \(\frac{\pi}{4}\text{,}\) and finally translate by \(5i\) to get the composition</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+z \amp \mapsto z - 5i\\
+\amp \mapsto e^{-\frac{\pi}{4}i}(z - 5i)\\
+\amp \mapsto \overline{e^{-\frac{\pi}{4}i}(z - 5i)}=
+e^{\frac{\pi}{4}i}(\overline{z} + 5i)\\
+\amp \mapsto e^{\frac{\pi}{4}i}\cdot e^{\frac{\pi}{4}i}(\overline{z} + 5i)=e^{\frac{\pi}{2}i}(\overline{z}+5i)\\
+\amp \mapsto e^{\frac{\pi}{2}i}(\overline{z}+5i) + 5i\text{.}
+\end{align*}
+</div>
+<p>Simplifying (and noting that \(e^{\frac{\pi}{2}i} = i\)), the reflection about the line \(L: y = x + 5\) has formula</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+r_L(z) =
+i\overline{z} - 5 + 5i\text{.}
+\end{equation*}
+</div>
+<p>In general, reflection across any line \(L\) in \(\mathbb{C}\) will have the form</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+r_L(z) = e^{i\theta}\overline{z}+b
+\end{equation*}
+</div>
+<p data-braille="continuation">for some angle \(\theta\) and some complex constant \(b\text{.}\)</p></article><span class="incontext"><a href="section3-1.html#example-23">in-context</a></span>
 </body>
 </html>

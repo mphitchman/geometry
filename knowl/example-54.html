@@ -1,30 +1,51 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:55:00-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:48-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">6.1.10</span> <span class="title">The pre-image of a circle under \(\phi\)</span>
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Reflection of \(\mathbb{S}^2\) about the equator.</span>
 </h6>
-<p>The pre-image of the circle \(|w - (3 + 2i)| = 4\) in \(\mathbb{C}\) is the circle on \(\mathbb{S}^2\) defined by the plane</p>
-<div class="displaymath">
+<p xmlns:svg="http://www.w3.org/2000/svg">We argue that reflection of \(\mathbb{S}^2\) about the equator corresponds to inversion about the unit circle.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">First of all, stereographic projection sends the equator of \(\mathbb{S}^2\) to the unit circle in \(\mathbb{C}^+\text{.}\) Now, reflection of \(\mathbb{S}^2\) across the equator sends the point \(P = (a,b,c)\) to the point \(P^* = (a,b,-c)\text{.}\) We must argue that \(\phi(P)\) and \(\phi(P^*)\) are symmetric with respect to the unit circle.</p>
+<p>If \(|c| = 1\) then \(P\) and \(P^*\) correspond to the north and south poles, and their image points are 0 and \(\infty\text{,}\) and these points are symmetric with respect to the unit circle. So, assume \(|c| \neq 1\text{.}\) Notice that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
--2 \cdot 3 x - 2\cdot 2 y + (1 - 13+4) z + (1 + 13 - 4) = 0 
+\phi(P) = \frac{a}{1-c}+\frac{b}{1-c}i
+~~\text{and }~~\phi(P^*) = \frac{a}{1+c}+\frac{b}{1+c}i
 \end{equation*}
 </div>
-<p>or</p>
-<div class="displaymath">
+<p data-braille="continuation">are on the same ray beginning at the origin. Indeed, one is the positive scalar multiple of the other:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
--3x - 2y  - 4z + 5 = 0.
+\phi(P^*) = \frac{1-c}{1+c}\phi(P)\text{.}
+\end{equation*}
+</div>
+<p>Moreover,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+|\phi(P)|\cdot|\phi(P^*)|
+\amp = \frac{1-c}{1+c}\cdot |\phi(P)|^2\\
+\amp = \frac{1-c}{1+c}\cdot \frac{a^2+b^2}{(1-c)^2}\\
+\amp = \frac{a^2+b^2}{1-c^2}\\
+\amp = 1\text{.}
+\end{align*}
+</div>
+<p>Again, the last equality holds because \(a^2 + b^2 + c^2 = 1\text{.}\)  Thus, \(\phi(P)\) and \(\phi(P^*)\) are symmetric with respect to the unit circle.  It follows that inversion in the unit circle, \(i_{\mathbb{S}^1}\text{,}\) corresponds to reflection of \(\mathbb{S}^2\) across the equator, call this map \(R\text{,}\) by the equation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+i_{\mathbb{S}^1} \circ \phi = \phi \circ R\text{.}
 \end{equation*}
 </div></article><span class="incontext"><a href="section6-1.html#example-54">in-context</a></span>
 </body>

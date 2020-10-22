@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:39-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>Suppose \(\boldsymbol{r}(t)\) is a smooth curve in \(\mathbb{D}\text{,}\) defined for \(a \leq t \leq b\text{,}\) and</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z - z_0}{1 - \overline{z_0}z}
+\end{equation*}
+</div>
+<p data-braille="continuation">is an element of \(\cal H\text{.}\)  Consider the image curve \(\boldsymbol{s}(t) = T(\boldsymbol{r}(t))\text{,}\) also defined for \(a \leq t \leq b\text{.}\)  We argue that \({\cal L}(\boldsymbol{r}) = {\cal L}(\boldsymbol{s})\text{.}\)</p>
+<p>Note that by the quotient rule,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+T^\prime(z) \amp = e^{i\theta}\frac{(1-\overline{z_0}z)+(z-z_0)\overline{z_0}}{(1-\overline{z_0}z)^2}\\
+\amp = e^{i\theta}\frac{1-|z_0|^2}{(1-\overline{z_0}z)^2}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">By the chain rule,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\boldsymbol{s}^\prime(t) = T^\prime(\boldsymbol{r}(t))\cdot \boldsymbol{r}^\prime(t)\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">or</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\boldsymbol{s}^\prime(t) = e^{i\theta}\frac{1-|z_0|^2}{(1-\overline{z_0}\boldsymbol{r}(t))^2}\cdot \boldsymbol{r}^\prime(t)\text{.}
+\end{equation*}
+</div>
+<p>Then</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{s}(t)) = \int_a^b \frac{2|\boldsymbol{s}^\prime(t)|}{1 - |\boldsymbol{s}(t)|^2} ~dt\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the integrand equals</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\frac{2|\boldsymbol{s}^\prime(t)|}{1 - |\boldsymbol{s}(t)|^2} \amp= \frac{2\bigg|\frac{1-|\overline{z_0}|^2}{(1-\overline{z_0}\boldsymbol{r}(t))^2}\cdot \boldsymbol{r}^\prime(t)\bigg|}{1-\bigg|\frac{\boldsymbol{r}(t)-z_0}{1-\overline{z_0}\boldsymbol{r}(t)}\bigg|^2}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|\cdot\frac{1}{|1-\overline{z_0} \boldsymbol{r}(t)|^2}}{\frac{|1-\overline{z_0}\boldsymbol{r}(t)|^2 - |\boldsymbol{r}(t) - z_0|^2}{|1-\overline{z_0}\boldsymbol{r}(t)|^2}}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{|1-\overline{z_0}\boldsymbol{r}(t)|^2 - |\boldsymbol{r}(t) - z_0|^2}\\
+\amp=\frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{(1 - \overline{z_0}\boldsymbol{r}(t)-z_0\overline{\boldsymbol{r}(t)} + |z_0|^2|\boldsymbol{r}(t)|^2)-(|\boldsymbol{r}(t)|^2 - \boldsymbol{r}(t)\overline{z_0}- \overline{\boldsymbol{r}(t)}z_0 + |z_0|^2)}\\
+\amp=\frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{1 - |\boldsymbol{r}(t)|^2 - |z_0|^2 + |z_0|^2|\boldsymbol{r}(t)|^2}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{(1-|z_0|^2)(1-|\boldsymbol{r}(t)|^2)}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|}{1 - |\boldsymbol{r}(t)|^2}\text{.}
+\end{align*}
+</div>
+<p>This long computation shows that the integrand for \({\cal L}(\boldsymbol{s}(t))\) matches the integrand for \({\cal L}(\boldsymbol{r}(t))\text{,}\) and since both curves are defined for \(a \leq t \leq b\text{,}\) it follows that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{s}(t)) = {\cal L}(\boldsymbol{r}(t))\text{.}
+\end{equation*}
+</div>
+</div></body>
+</html>

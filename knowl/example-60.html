@@ -1,22 +1,36 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-03-18T11:24:10-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:56-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span><span class="codenumber">7.4.8</span><span class="title">Detecting curvature with right triangles</span>
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Curvature of the hyperbolic plane.</span>
 </h6>
-<p>Suppose a two-dimensional bug in \((X_k,G_k)\) walks along a line for \(a \gt 0\) units, turns left 90\(^\circ\text{,}\) and walks on a line for another \(a\) units, thus creating a right triangle with legs of equal length. Let \(c\) denote the hypotenuse of this triangle.  See <a knowl="./knowl/fig-hypotenuse-k.html" knowl-id="xref-fig-hypotenuse-k" alt="Figure 7.4.9 " title="Figure 7.4.9 ">Figure 7.4.9</a> for such a route, depicted in each of the three geometry types.  For convenience, we assume the journey begins at the origin and proceeds first along the positive real axis.</p>
-<figure class="figure-like"><img src="images/im-hypotenuse-k.svg" width="90%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span><span class="codenumber">7.4.9</span>The hypotenuse \(c\) of a right triangle with equal leg lengths \(a\) in (a) hyperbolic, (b) Euclidean, and (c) elliptic geometry. The value of \(c\) as a function of \(a\) can reveal the curvature \(k\) of the geometry.</figcaption></figure><p>If \(k = 0\) the Pythagorean theorem tells us that \(c^2 = 2a^2\text{.}\)  For \(k \lt 0\text{,}\) the hyperbolic law of cosines (<a knowl="./knowl/hmk-law-of-cosines-negk.html" knowl-id="xref-hmk-law-of-cosines-negk" alt="Exercise 7.3.4 " title="Exercise 7.3.4 ">Exercise 7.3.4</a>) tells us that \(\cosh(\sqrt{|k|} c) = \cosh^2(\sqrt{|k|}a)\text{.}\)  For \(k \gt 0\text{,}\) the elliptic law of cosines (<a knowl="./knowl/hmk-law-of-cosines-posk.html" knowl-id="xref-hmk-law-of-cosines-posk" alt="Exercise 7.2.5 " title="Exercise 7.2.5 ">Exercise 7.2.5</a>) tells us that \(\cos(\sqrt{k} c) = \cos^2(\sqrt{k}a)\text{.}\)  We may solve each of these equations for \(c\text{,}\) using the fact that \(a\)  and \(c\) are positive, to give us \(c\) as a function of \(a\) and the curvature \(k\text{.}\)  We have plotted these functions for \(k = -1,0,1\) in <a knowl="./knowl/fig-hypotenuse.html" knowl-id="xref-fig-hypotenuse" alt="Figure 7.4.10 " title="Figure 7.4.10 ">Figure 7.4.10</a>.  When \(k \lt 0\) the length of the hypotenuse of such a triangle is slightly longer than that predicted by the Euclidean formula (the Pythagorean theorem); when \(k \gt 0\) the length is smaller than the length predicted by the Euclidean formula.</p>
-<figure class="figure-like"><img src="images/im-hypotenuse.svg" width="60%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span><span class="codenumber">7.4.10</span>The hypotenuse \(c\) of a right triangle, as a function of common leg length \(a\text{,}\) when \(k = -1,0,1\text{.}\)</figcaption></figure></article><span class="incontext"><a href="section7-4.html#example-60">in-context</a></span>
+<p xmlns:svg="http://www.w3.org/2000/svg">Because hyperbolic geometry is homogeneous and its transformations preserve circles and lengths, the curvature is the same at all points in the hyperbolic plane. We choose to compute the curvature at the origin.</p>
+<p>Recall, the circumference of a circle in \((\mathbb{D},\cal{H})\) is \(c = 2\pi \sinh(r).\) To compute the curvature, use the power series expansion</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\sinh(r)=r + \frac{r^3}{3!}+\frac{r^5}{5!}+\cdots\text{.}
+\end{equation*}
+</div>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+k \amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[\frac{2\pi \sinh(r)}{2\pi r}\right]\\
+\amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[1+\frac{r^2}{3!}+\frac{r^4}{5!}+\cdots\right]\\
+\amp = -3 \lim_{r \to 0^+}\left[\frac{1}{3}+\frac{12r^2}{5!}+\cdots\right]\text{.}
+\end{align*}
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">Again, each term of the second derivative after the first has a power of \(r\) in its numerator, so in the limit as \(r \to 0^+\text{,}\) each of these terms vanishes. Thus, the curvature of the hyperbolic plane in (\(\mathbb{D},{\cal H})\) is \(k = -1.\)</p></article><span class="incontext"><a href="section7-1.html#example-60">in-context</a></span>
 </body>
 </html>

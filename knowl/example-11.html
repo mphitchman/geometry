@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-02-13T11:24:22-08:00    *-->
+<!--*    on 2020-06-27T22:33:45-07:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <head>
@@ -12,25 +12,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">2.3.6</span><span class="title">Complex expressions and regions in the plane</span>
-</h5>
-<p>Describe each complex expression below as a region in the plane.</p>
-<ol style="list-style-type: decimal;">
-<li>
-<p>\(|1/z| \gt 2\text{.}\)</p>
-<p>Taking the reciprocal of both sides, we have \(|z| \lt  1/2\text{,}\) which is the interior of the circle centered at 0 with radius \(1/2\text{.}\)</p>
-</li>
-<li>
-<p>Im\((z)\lt\) Re\((z)\text{.}\)</p>
-<p>Set \(z = x + yi\) in which case the inequality becomes \(y \lt  x\text{.}\) This inequality describes all points in the plane under the line \(y = x\text{,}\) as pictured below.</p>
-</li>
-<li>
-<p>Im\((z) = |z|\text{.}\)</p>
-<p>Setting \(z = x + yi\text{,}\) this equation is equivalent to \(y =
-\sqrt{y^2 + x^2}\text{.}\) Squaring both sides we obtain \(0 = x^2\text{,}\) so that \(x = 0\text{.}\) It follows that \(y = \sqrt{y^2} = |y|\) so the equation describes the points \((0,y)\) with \(y \geq 0\text{.}\) These points determine a ray on the positive imaginary axis.</p>
-</li>
-</ol>
-<p><object type="image/svg+xml" style="width:85%; margin:auto; display:block;" data="images/im-plane-region.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></p></article><span class="incontext"><a href="section2-4.html#example-11">in-context</a></span>
+<article class="example example-like"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Translation.</span>
+</h6>
+<p>Consider the fixed complex number \(b\text{,}\) and define the function \(T_b: \mathbb{C} \to \mathbb{C}\) by</p>
+<div class="displaymath">
+\begin{equation*}
+T_b(z) = z + b\text{.}
+\end{equation*}
+</div>
+<p>The notation helps us remember that \(z\) is the variable, and \(b\) is a complex constant. We will prove that \(T_b\) is a transformation, but this fact can also be understood by <em class="emphasis">visualizing</em> the function. Each point in the plane gets moved by the vector \(b\text{,}\) as suggested in the following diagram.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-translate.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p>For instance, the origin gets moved to the point \(b\text{,}\) (i.e., \(T_b(0) = b\)), and every other point in the plane gets moved the same amount and in the same direction. It follows that two different points, such as \(v\) and \(w\) in the diagram, cannot get moved to the same image point (thus, the function is one-to-one). Also, any point in the plane is the image of some other point (just follow the vector \(-b\) to find this “pre-image” point), so the function is onto as well.</p>
+<p>We now offer a formal argument that the translation \(T_b\) is a transformation.  Recall, \(b\) is a fixed complex number.</p>
+<p><em class="emphasis">That \(T_b\) is onto</em>:</p>
+<p>To show that \(T_b\) is onto, let \(w\) denote an arbitrary element of \(\mathbb{C}\text{.}\) We must find a complex number \(z\) such that \(T_b(z) = w\text{.}\) Let \(z = w - b\text{.}\) Then \(T_b(z) = z + b = (w - b) + b = w\text{.}\)  Thus, \(T\) is onto.</p>
+<p><em class="emphasis">That \(T_b\) is one-to-one</em>:</p>
+<p>To show that \(T_b\) is 1-1 we must show that if \(z_1 \neq z_2\) then \(T_b(z_1) \neq T_b(z_2)\text{.}\) We do so by proving the <em class="emphasis">contrapositive</em>.  Recall, the contrapositive of a statement of the form “If P is true then Q is true” is “If Q is false then P is false.”  These statements are logically equivalent, which means we may prove one by proving the other.  So, in the present case, the contrapositive of “If \(z_1 \neq z_2\) then \(T_b(z_1) \neq T_b(z_2)\)” is “If \(T_b(z_1) = T_b(z_2)\text{,}\) then \(z_1 = z_2\text{.}\)”  We now prove this statement.</p>
+<p>Suppose \(z_1\) and \(z_2\) are two complex numbers such that \(T_b(z_1) = T_b(z_2)\text{.}\) Then \(z_1 + b = z_2 + b\text{.}\) Subtracting \(b\) from both sides we see that \(z_1 = z_2\text{,}\) and this completes the proof.</p></article><span class="incontext"><a href="section3-1.html#example-11">in-context</a></span>
 </body>
 </html>

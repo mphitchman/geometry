@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-21T08:22:53-07:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="example example-like"><p><dfn class="terminology">Reflection about a line \(L\)</dfn> is the transformation of \(\mathbb{C}\) defined as follows: Each point on \(L\) gets sent to itself, and if \(z\) is not on \(L\text{,}\) it gets sent to the point \(z^*\) such that line \(L\) is the perpendicular bisector of segment \(zz^*\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-reflect.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p>Reflection about \(L\) is defined algebraically as follows. If \(L\) happens to be the real axis then</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) = \overline{z}.
+\end{equation*}
+</div>
+<p>For any other line \(L\) we may arrive at a formula for reflection by rotating and/or translating the line to the real axis, then taking the conjugate, and then reversing the rotation and/or translation.</p>
+<p>For instance, to describe reflection about the line \(y = x + 5\text{,}\) we may translate vertically by \(-5i\text{,}\) rotate by \(-\frac{\pi}{4}\text{,}\) reflect about the real axis, rotate by \(\frac{\pi}{4}\text{,}\) and finally translate by \(5i\) to get the composition</p>
+<div class="displaymath">
+\begin{align*}
+z \amp \mapsto z - 5i\\
+\amp \mapsto e^{-\frac{\pi}{4}i}(z - 5i)\\
+\amp \mapsto \overline{e^{-\frac{\pi}{4}i}(z - 5i)}=
+e^{\frac{\pi}{4}i}(\overline{z} + 5i)\\
+\amp \mapsto e^{\frac{\pi}{4}i}\cdot e^{\frac{\pi}{4}i}(\overline{z} + 5i)=e^{\frac{\pi}{2}i}(\overline{z}+5i)\\
+\amp \mapsto e^{\frac{\pi}{2}i}(\overline{z}+5i) + 5i.
+\end{align*}
+</div>
+<p>Simplifying (and noting that \(e^{\frac{\pi}{2}i} = i\)), the reflection about the line \(L: y = x + 5\) has formula</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) =
+i\overline{z} - 5 + 5i.
+\end{equation*}
+</div>
+<p>In general, reflection across any line \(L\) in \(\mathbb{C}\) will have the form</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) = e^{i\theta}\overline{z}+b
+\end{equation*}
+</div>
+<p data-braille="continuation">for some angle \(\theta\) and some complex constant \(b\text{.}\)</p></article></body>
+</html>

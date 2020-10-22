@@ -1,10 +1,10 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:50-07:00    *-->
+<!--*    on 2020-06-27T22:33:49-07:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <head>
@@ -12,34 +12,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.4.11</span> <span class="title">Building a Möbius transformation</span>
+<article class="example example-like"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.9</span><span class="period">.</span><span class="space"> </span><span class="title">Fix -1 and 1 and send \(i \mapsto \infty\).</span>
 </h6>
-<p>Find the unique Möbius transformation that sends \(1 \mapsto 3\text{,}\) \(i \mapsto
-0\text{,}\) and \(2 \mapsto -1\text{.}\)</p>
-<p>One approach: Find \(T(z) = (z,1;i,2)\) and \(S(w) = (w,3;0,-1)\text{.}\) In this case, the transformation we want is \(S^{-1} \circ T\text{.}\)</p>
-<p>To find this transformation, we set the cross ratios equal:</p>
-<div class="displaymath">
-\begin{align*}
-(z,1;i,2) \amp = (w,3;0,-1)\\
-\frac{z-i}{z-2}\cdot\frac{1-2}{1-i} \amp = \frac{w-0}{w+1}\cdot\frac{3+1}{3-0}\\
-\frac{-z+i}{(1-i)z-2+2i} \amp = \frac{4w}{3w+3}.
-\end{align*}
-</div>
-<p>Then solve for \(w\text{:}\)</p>
-<div class="displaymath">
-\begin{align*}
--3zw + 3iw + 3i - 3z \amp = 4[(1-i)z-2+2i]w\\
--3z+3i \amp = [3z-3i+4[(1-i)z-2+2i]]w\\
-w \amp = \frac{-3z + 3i}{(7-4i)z + (-8+5i)}.
-\end{align*}
-</div>
-<p>Thus, our Möbius transformation is</p>
+<p>By <a class="xref" data-knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a>, the Möbius transformation sends \(\infty\) to \(-i\text{,}\) so by <a class="xref" data-knowl="./knowl/th_mobfinitefix.html" title="Theorem 3.5.8">Theorem 3.5.8</a>,</p>
 <div class="displaymath">
 \begin{equation*}
-V(z) = \frac{-3z + 3i}{(7-4i)z + (-8+5i)}.
+T(z) = \frac{-iz-(1)(-1)}{z-i} = \frac{-iz+1}{z-i}.
 \end{equation*}
-</div>
-<p>It's quite easy to check our answer here. Since there is exactly one Möbius transformation that does the trick, all we need to do is check whether \(V(1) = 3, V(i) = 0\) and \(V(2) = -1\text{.}\) Ok... yes... yes... yep! We've got our map!</p></article><span class="incontext"><a href="section3-4.html#example-25">in-context</a></span>
+</div></article><span class="incontext"><a href="section3-5.html#example-25">in-context</a></span>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:44-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>We express \(d_H(r,re^{2\pi i/n})\) in terms of \(r\) and \(n\) with the working formula for hyperbolic distance.  For convenience, set \(\alpha = \frac{2\pi}{n}\text{.}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+d_H(r,re^{i \alpha}) \amp= \ln\bigg(\frac{|1 - r^2e^{i\alpha}|+|re^{i \alpha} - r|}{|1 - r^2e^{i\alpha}|-|re^{i \alpha} - r|}\bigg)\\
+\amp= \ln\bigg(\frac{|1 - r^2\cos(\alpha)-r^2\sin(\alpha)i|+r|\cos(\alpha) - 1+\sin(\alpha)i|}{|1 - r^2\cos(\alpha)-r^2\sin(\alpha)i|-r|\cos(\alpha) - 1+\sin(\alpha)i|}\bigg)\\
+\amp= \ln\bigg(\frac{\sqrt{(1-r^2\cos(\alpha))^2 + (r^2\sin(\alpha))^2}+r\sqrt{(\cos(\alpha)-1)^2 + \sin^2(\alpha)}}{\sqrt{(1-r^2\cos(\alpha))^2 + (r^2\sin(\alpha))^2}-r\sqrt{(\cos(\alpha)-1)^2 + \sin^2(\alpha)}}\bigg)\\
+\amp= \ln\bigg(\frac{\sqrt{1-2r^2\cos(\alpha)+r^4}+r\sqrt{2-2\cos(\alpha)}} {\sqrt{1-2r^2\cos(\alpha)+r^4}-r\sqrt{2-2\cos(\alpha)}}\bigg)
+\end{align*}
+</div>
+<p data-braille="continuation">Multiplying top and bottom by the conjugate, the expression simplifies to</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\amp~~ \ln\bigg(\frac{(1-2r^2\cos(\alpha)+r^4)+2r\sqrt{1-2r^2\cos(\alpha)+r^4}\sqrt{2-2\cos(\alpha)}+r^2(2-2\cos(\alpha))} {(1-2r^2\cos(\alpha)+r^4)-r^2(2-2\cos(\alpha))}\bigg)\\
+\amp= \ln\bigg(\frac{1 +2r^2 + r^4 - 4r^2\cos(\alpha) + 2r\sqrt{[1-2r^2\cos(\alpha)+r^4][2-2\cos(\alpha)]}}{1 - 2r^2 + r^4}\bigg)\\
+\amp= \ln\bigg(\frac{(1+r^2)^2 - 4r^2\cos(\alpha)+2r\sqrt{[1-2r^2\cos(\alpha)+r^4][2-2\cos(\alpha)]}}{(1-r^2)^2}\bigg)
+\end{align*}
+</div>
+<p data-braille="continuation">Replacing \(\alpha\) with \(\frac{2\pi}{n}\) and the distance is expressed in terms of \(r\) and \(n\text{,}\) though it's not too pretty.</p>
+</div></body>
+</html>

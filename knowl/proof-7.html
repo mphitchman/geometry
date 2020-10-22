@@ -1,28 +1,30 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:48-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:17-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
-<p>Given the translation \(T_b(z) = z + b\) let \(L_1\) be the line through the origin that is perpendicular to segment \(0b\) as pictured in <a knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(a). Let \(L_2\) be the line parallel to \(L_1\) through the midpoint of segment \(0b\text{.}\) Also let \(r_i\) denote reflection about line \(L_i\) for \(i = 1,2\text{.}\)</p>
-<p>Now, given any \(z\) in \(\mathbb{C}\text{,}\) let \(L\) be the line through \(z\) that is parallel to vector \(b\) (and hence perpendicular to \(L_1\) and \(L_2\)). The image of \(z\) under the composition \(r_2 \circ r_1\) will be on this line. To find the exact location, let \(z_1\) be the intersection of \(L_1\) and \(L\text{,}\) and \(z_2\) the intersection of \(L_2\) and \(L\text{,}\) (see the figure). To reflect \(z\) about \(L_1\) we need to translate it along \(L\) twice by the vector \(z_1 - z\text{.}\) Thus \(r_1(z) = z + 2(z_1 - z) = 2z_1-z\text{.}\)</p>
+<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Proof</span></h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Given the translation \(T_b(z) = z + b\) let \(L_1\) be the line through the origin that is perpendicular to segment \(0b\) as pictured in <a class="xref" data-knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(a). Let \(L_2\) be the line parallel to \(L_1\) through the midpoint of segment \(0b\text{.}\) Also let \(r_i\) denote reflection about line \(L_i\) for \(i = 1,2\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Now, given any \(z\) in \(\mathbb{C}\text{,}\) let \(L\) be the line through \(z\) that is parallel to vector \(b\) (and hence perpendicular to \(L_1\) and \(L_2\)). The image of \(z\) under the composition \(r_2 \circ r_1\) will be on this line. To find the exact location, let \(z_1\) be the intersection of \(L_1\) and \(L\text{,}\) and \(z_2\) the intersection of \(L_2\) and \(L\text{,}\) (see the figure). To reflect \(z\) about \(L_1\) we need to translate it along \(L\) twice by the vector \(z_1 - z\text{.}\) Thus \(r_1(z) = z + 2(z_1 - z) = 2z_1-z\text{.}\)</p>
 <p>Next, to reflect \(r_1(z)\) about \(L_2\text{,}\) we need to translate it along \(L\) twice by the vector \(z_2 - r_1(z)\text{.}\) Thus,</p>
-<div class="displaymath">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 r_2(r_1(z)) =
-r_1(z) + 2(z_2 - r_1(z))  = 2z_2 - r_1(z) = 2z_2 - 2z_1 + z.
+r_1(z) + 2(z_2 - r_1(z))  = 2z_2 - r_1(z) = 2z_2 - 2z_1 + z\text{.}
 \end{equation*}
 </div>
-<p>Notice from <a knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(a) that \(z_2 - z_1\) is equal to \(b/2\text{.}\) Thus \(r_2(r_1(z)) = z + b\) is translation by \(b\text{.}\)</p>
-<p>Rotation about the point \(z_0\) by angle \(\theta\) can be achieved by two reflections. The first reflection is about the line \(L_1\) through \(z_0\) parallel to the real axis, and the second reflection is about the line \(L_2\) that intersects \(L_1\) at \(z_0\) at an angle of \(\theta/2\text{,}\) as in <a knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(b).  In the exercises you will prove that this composition of reflections does indeed give the desired rotation.</p></article><span class="incontext"><a href="section3-1.html#proof-7">in-context</a></span>
+<p xmlns:svg="http://www.w3.org/2000/svg">Notice from <a class="xref" data-knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(a) that \(z_2 - z_1\) is equal to \(b/2\text{.}\) Thus \(r_2(r_1(z)) = z + b\) is translation by \(b\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Rotation about the point \(z_0\) by angle \(\theta\) can be achieved by two reflections. The first reflection is about the line \(L_1\) through \(z_0\) parallel to the real axis, and the second reflection is about the line \(L_2\) that intersects \(L_1\) at \(z_0\) at an angle of \(\theta/2\text{,}\) as in <a class="xref" data-knowl="./knowl/fig-refgenisom.html" title="Figure 3.1.18">Figure 3.1.18</a>(b).  In the exercises you will prove that this composition of reflections does indeed give the desired rotation.</p></article><span class="incontext"><a href="section3-1.html#proof-7">in-context</a></span>
 </body>
 </html>

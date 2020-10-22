@@ -1,10 +1,10 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:47-07:00    *-->
+<!--*    on 2020-06-27T22:33:46-07:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <head>
@@ -12,18 +12,42 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.1.7</span> <span class="title">General Linear Transformations</span>
+<article class="example example-like"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Reflection about a line.</span>
 </h6>
-<p>Consider the general linear transformation \(T(z)=az+b\text{,}\) where \(a, b\) are in \(\mathbb{C}\) and \(a \neq 0\text{.}\)  We show \(T\) is a transformation of \(\mathbb{C}\text{.}\)</p>
-<p><em class="emphasis">That \(T\) is onto</em>:</p>
-<p>Let \(w\) denote an arbitrary element of \(\mathbb{C}\text{.}\) We must find a complex number \(z\) such that \(T(z) = w\text{.}\) To find this \(z\text{,}\) we solve \(w = az
-+ b\) for \(z\text{.}\) So, \(z = \frac{1}{a}(w - b)\) should work (since \(a \neq 0\text{,}\) \(z\) is a complex number). Indeed, \(T(\frac{1}{a}(w - b)) = a \cdot \big[\frac{1}{a}(w - b)\big] + b =
-w.\) Thus, \(T\) is onto.</p>
-<p><em class="emphasis">That \(T\) is one-to-one</em>:</p>
-<p>To show that \(T\) is 1-1 we show that if \(T(z_1) = T(z_2)\text{,}\) then \(z_1 = z_2\text{.}\)</p>
-<p>If \(z_1\) and \(z_2\) are two complex numbers such that \(T(z_1) =
-T(z_2)\text{,}\) then \(a z_1 + b = a z_2 + b\text{.}\) By subtracting \(b\) from both sides we see that \(a z_1 = a z_2\text{,}\) and then dividing both sides by \(a\) (which we can do since \(a \neq 0\)), we see that \(z_1 = z_2\text{.}\) Thus, \(T\) is 1-1 as well as onto, and we have proved \(T\) is a transformation.</p>
-<p>Note that dilations, rotations, and translations are all special types of general linear transformations.</p></article><span class="incontext"><a href="section3-1.html#example-18">in-context</a></span>
+<p><dfn class="terminology">Reflection about a line \(L\)</dfn> is the transformation of \(\mathbb{C}\) defined as follows: Each point on \(L\) gets sent to itself, and if \(z\) is not on \(L\text{,}\) it gets sent to the point \(z^*\) such that line \(L\) is the perpendicular bisector of segment \(zz^*\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-reflect.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p>Reflection about \(L\) is defined algebraically as follows. If \(L\) happens to be the real axis then</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) = \overline{z}\text{.}
+\end{equation*}
+</div>
+<p>For any other line \(L\) we may arrive at a formula for reflection by rotating and/or translating the line to the real axis, then taking the conjugate, and then reversing the rotation and/or translation.</p>
+<p>For instance, to describe reflection about the line \(y = x + 5\text{,}\) we may translate vertically by \(-5i\text{,}\) rotate by \(-\frac{\pi}{4}\text{,}\) reflect about the real axis, rotate by \(\frac{\pi}{4}\text{,}\) and finally translate by \(5i\) to get the composition</p>
+<div class="displaymath">
+\begin{align*}
+z \amp \mapsto z - 5i\\
+\amp \mapsto e^{-\frac{\pi}{4}i}(z - 5i)\\
+\amp \mapsto \overline{e^{-\frac{\pi}{4}i}(z - 5i)}=
+e^{\frac{\pi}{4}i}(\overline{z} + 5i)\\
+\amp \mapsto e^{\frac{\pi}{4}i}\cdot e^{\frac{\pi}{4}i}(\overline{z} + 5i)=e^{\frac{\pi}{2}i}(\overline{z}+5i)\\
+\amp \mapsto e^{\frac{\pi}{2}i}(\overline{z}+5i) + 5i\text{.}
+\end{align*}
+</div>
+<p>Simplifying (and noting that \(e^{\frac{\pi}{2}i} = i\)), the reflection about the line \(L: y = x + 5\) has formula</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) =
+i\overline{z} - 5 + 5i\text{.}
+\end{equation*}
+</div>
+<p>In general, reflection across any line \(L\) in \(\mathbb{C}\) will have the form</p>
+<div class="displaymath">
+\begin{equation*}
+r_L(z) = e^{i\theta}\overline{z}+b
+\end{equation*}
+</div>
+<p data-braille="continuation">for some angle \(\theta\) and some complex constant \(b\text{.}\)</p></article><span class="incontext"><a href="section3-1.html#example-18">in-context</a></span>
 </body>
 </html>

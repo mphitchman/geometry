@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:59-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">7.3.3.1</span><span class="period">.</span>
+</h6>
+<ol class="lower-alpha">
+<li>Letting \(k \to 0^-\) is equivalent to letting \(s \to \infty\) where \(s = 1/\sqrt{|k|}\text{.}\) By Exercise 7.3.3 the distance from 0 to \(x\) (where \(0 \lt x \lt s\)) as \(s \to \infty\text{,}\) is<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\lim_{s \to \infty} s\ln\left(\frac{s + x}{s-x}\right) = \lim_{s \to \infty} \frac{\ln\left(\frac{s + x}{s-x}\right)}{s^{-1}}
+\end{equation*}
+</div>which has indeterminate form \(\frac{0}{0}\) as \(s \to \infty\text{.}\)  By l'Hôpital's rule (differentiating with respect to \(s\)), the limit is equal to<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\lim_{s \to \infty} \frac{\frac{1}{x+s}-\frac{1}{x-s}}{-s^{-2}}\amp= \lim_{s \to \infty} \frac{s^2}{s-x}-\frac{s^2}{s+x}\\
+\amp= \lim_{s \to \infty}\frac{2s^2x}{s^2 - x^2}\\
+\amp= \lim_{s \to \infty}\frac{2x}{1-\frac{x^2}{s^2}}\text{.}
+\end{align*}
+</div>This last limit is \(2x\text{,}\) which is twice the Euclidean distance from 0 to \(x\text{.}\)</li>
+<li>The circumference of a circle, as \(k \to 0^-\text{,}\) is<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\lim_{s \to \infty} 2\pi s \sinh\bigg(\frac{r}{s}\bigg) = 2\pi \lim_{s \to \infty} \frac{\sinh\left(\frac{r}{s}\right)}{s^{-1}}\text{.}
+\end{equation*}
+</div>By l'Hôpital's rule, the limit is equivalent to<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+2\pi \lim_{s \to \infty} \frac{\cosh\left(\frac{r}{s}\right)\frac{-r}{s^2}}{-s^{-2}} = 2\pi \lim_{s \to \infty} \cosh\left(\frac{r}{s}\right) r\text{.}
+\end{equation*}
+</div>Since \(\cosh(0) = 1\text{,}\) the limit is \(2\pi r\text{.}\)</li>
+<li>The area of the circle, as \(k \to 0^+\text{,}\) is found with the help of l'Hôpital's rule:<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\lim_{s \to \infty} 4\pi s^2 \sinh^2\left(\frac{r}{2s}\right) \amp= 4\pi \lim_{s \to \infty}\frac{\sinh^2(\frac{r}{2s})}{s^{-2}}\\
+\amp= 4\pi \lim_{s \to \infty} \frac{ 2\sinh(\frac{r}{2s})\cosh(\frac{r}{2s})[-\frac{r}{2}s^{-2}]}{-2s^{-3}}\\
+\amp= 2\pi r \lim_{s \to \infty} \frac{\sinh(\frac{r}{2s})\cosh(\frac{r}{2s})}{s^{-1}}\\
+\amp= 2\pi r \lim_{s \to \infty} \frac{\cosh^2(\frac{r}{2s})[-\frac{r}{2}s^{-2}] + \sinh^2(\frac{r}{2s})[-\frac{r}{2}s^{-2}]}{-s^{-2}}\\
+\amp= \pi r^2 \lim_{s \to \infty} \left[\cosh^2\left(\frac{r}{2s}\right) +\sinh^2\left(\frac{r}{2s}\right)\right] \\
+\amp= \pi r^2 \left[ 1 + 0\right] \\
+\amp = \pi r^2\text{.}
+\end{align*}
+</div>Thus as \(k \to 0^{-}\text{,}\) the area formula for a circle approaches the Euclidean formula \(\pi r^2\text{.}\)</li>
+</ol>
+</div>
+<span class="incontext"><a href="section7-3.html#solution-172">in-context</a></span>
+</body>
+</html>

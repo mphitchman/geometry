@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:35-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:54-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Circles in the Sky</title>
+<title>GCT Circles in the Sky</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section8-2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-8.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section8-4.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section8-2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-8.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section8-4.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,56 +146,48 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3" class="active">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section8-3"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section8-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.3</span> <span class="title">Circles in the Sky</span>
 </h2>
-<a href="section8-3.html" class="permalink">¶</a><p id="p-1579">Immediately after the big bang, the universe was so hot that the usual constituents of matter could not form. Photons could not move freely in space, as they were constantly bumping into free electrons. Eventually, about 350,000 years after the big bang, the universe had expanded and cooled to the point that light could travel unimpeded. This free radiation is called the cosmic microwave background (CMB) radiation, and much of it is still travelling today. The universe has cooled and expanded to the point that this radiation has stretched to the microwave end of the electromagnetic spectrum, having a wavelength of about 1 or 2 millimeters.</p>
-<p id="p-1580">The CMB radiation is coming to us from every direction, and it has all been travelling for the same amount of time - and at the same speed. This means that it has all traveled the same distance to reach us at this moment. Thus, we may think of the CMB radiation that we can detect at this instant as having come from the surface of a giant 2-sphere with us at the sphere's center. This giant 2-sphere is called the <dfn class="terminology">last scattering surface</dfn> (LSS).</p>
-<p id="p-1581">It is perhaps comforting to think that everyone in the universe has their own last scattering surface, that everyone's LSS has the same radius, and that this radius is growing in time.</p>
-<p id="p-1582">The CMB radiation coming to us has a temperature that is remarkably uniform: it is constant to a few parts in 100,000, which makes the temperature of the radiation in the LSS very nearly perfectly uniform. As Craig Hogan points out in <a knowl="./knowl/hogan.html" title="Bibliographic Entry 14: The Little Book of the Big Bang">[14]</a>, this is much smoother than a billiard ball. Nonetheless, there are slight variations in the temperature. These variations, due to slight imbalances in the distribution of matter in the early universe, were predicted well before they were finally found (when our instruments became sensitive enough to detect them). These very slight temperature differences might reveal the shape of the universe.</p>
-<p id="p-1583">Imagine our universe is a giant 3-torus. Assume a fundamental domain for the universe is a rectangular box as shown in <a knowl="./knowl/ex_3torus.html" title="Example 8.1.2: The 3-torus">Example 8.1.2</a>, and that this box is our Dirichlet domain (we're at the center of this box). We may tile \(\mathbb{R}^3\) with copies of this fundamental domain, placing ourselves in the same position of each copy of the fundamental domain. Now, imagine our last scattering surface in the fundamental domain. In fact, there will be a copy of our last scattering surface surrounding each copy of us in each copy of the fundamental domain.</p>
-<p id="p-1584">If our last scattering surface is small relative to the size of the fundamental domain, as in <a knowl="./knowl/fig-cmbsizes.html" title="Figure 8.3.1">Figure 8.3.1</a>(a), then it will not intersect any of its copies. However, if the last scattering surface is large relative to the size of the fundamental domain, as in <a knowl="./knowl/fig-cmbsizes.html" title="Figure 8.3.1">Figure 8.3.1</a>(b), then it will intersect one or more of its copies. Moreover, adjacent copies of the LSS will intersect in a circle. In this happy case, our last scattering surface will contain circles with matching temperature distributions. Look again at <a knowl="./knowl/fig-cmbsizes.html" title="Figure 8.3.1">Figure 8.3.1</a>(b). We have three copies of our fundamental domain pictured as well as three copies of the LSS (only one of which is shaded to make the situation less cluttered). Two vertical circles of intersection appear in the figure. From our point of view at the center of the LSS, the two images of the circle will be directly opposite one another in the sky. Since these circles are one and the same, the temperature distribution around the two circles will agree. Therein lies the hope. Scan the temperature distribution in the last scattering surface for matching circles.</p>
-<figure class="figure-like" id="fig-cmbsizes"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-cmbsizes.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">8.3.1</span> The LSS compared to the size of a 3-torus universe.  In (a) the LSS is small, so it won't reveal the shape of the universe; in (b) the LSS intersects itself and will have circles of matching temperature distributions.</figcaption></figure><p id="p-1585">This strategy for detecting a finite universe is called the <dfn class="terminology">circles-in-the-sky</dfn> method, which, in cosmic topology, has advantages over the cosmic crystallography method. In theory, the circles-in-the-sky method can be used to detect any compact manifold, regardless of the geometry it admits. Also, the search for matching circles is independent of a metric. One doesn't need to make a claim about the geometry of the universe to detect a finite universe.</p>
-<p id="p-1586">This method is computationally very intensive. The search for matching circles on this giant 2-sphere involves the analysis of a six parameter space: the center \((\theta_1,\phi_1)\) of one circle on the LSS, the center of the second circle \((\theta_2,\phi_2)\text{,}\) the common angular radius \(\alpha\) of the two circles (since these circles are copies of the same circle they will have the same radius), and the relative phase of the two circles, say \(\beta\text{.}\) (See the diagram that follows.) In general, \(\beta
-\neq 0\) if the face identifications in the 3-manifold involve rotations. It remains for us to analyze whether a statistically significant correlation exists between the temperatures as we proceed around the circles.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-circparams.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1587">When comparing the size of the LSS relative to the size of space, it is convenient to define the following length dimension. The <dfn class="terminology">injectivity radius</dfn> at a point in a manifold, denoted \(r_{inj}\text{,}\) is half the distance of the shortest closed geodesic path that starts and ends at that point. A necessary condition, then, for detecting matching circles in the LSS at our location is that our observable radius \(r_{obs}\) exceeds our injectivity radius \(r_{inj}\text{.}\)</p>
-<article class="example-like" id="example-88"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">8.3.2</span> <span class="title">Detecting the 3-torus from the LSS</span>
+<p id="p-1688">Immediately after the big bang, the universe was so hot that the usual constituents of matter could not form. Photons could not move freely in space, as they were constantly bumping into free electrons. Eventually, about 350,000 years after the big bang, the universe had expanded and cooled to the point that light could travel unimpeded. This free radiation is called the cosmic microwave background (CMB) radiation, and much of it is still travelling today. The universe has cooled and expanded to the point that this radiation has stretched to the microwave end of the electromagnetic spectrum, having a wavelength of about 1 or 2 millimeters.</p>
+<p id="p-1689">The CMB radiation is coming to us from every direction, and it has all been travelling for the same amount of time - and at the same speed. This means that it has all traveled the same distance to reach us at this moment. Thus, we may think of the CMB radiation that we can detect at this instant as having come from the surface of a giant 2-sphere with us at the sphere's center. This giant 2-sphere is called the <dfn class="terminology">last scattering surface</dfn> (LSS).</p>
+<p id="p-1690">It is perhaps comforting to think that everyone in the universe has their own last scattering surface, that everyone's LSS has the same radius, and that this radius is growing in time.</p>
+<p id="p-1691">The CMB radiation coming to us has a temperature that is remarkably uniform: it is constant to a few parts in 100,000, which makes the temperature of the radiation in the LSS very nearly perfectly uniform. As Craig Hogan points out in <a class="xref" data-knowl="./knowl/hogan.html" title="Bibliographic Entry 14: The Little Book of the Big Bang">[14]</a>, this is much smoother than a billiard ball. Nonetheless, there are slight variations in the temperature. These variations, due to slight imbalances in the distribution of matter in the early universe, were predicted well before they were finally found (when our instruments became sensitive enough to detect them). These very slight temperature differences might reveal the shape of the universe.</p>
+<p id="p-1692">Imagine our universe is a giant 3-torus. Assume a fundamental domain for the universe is a rectangular box as shown in <a class="xref" data-knowl="./knowl/ex_3torus.html" title="Example 8.1.2: The 3-torus">Example 8.1.2</a>, and that this box is our Dirichlet domain (we're at the center of this box). We may tile \(\mathbb{R}^3\) with copies of this fundamental domain, placing ourselves in the same position of each copy of the fundamental domain. Now, imagine our last scattering surface in the fundamental domain. In fact, there will be a copy of our last scattering surface surrounding each copy of us in each copy of the fundamental domain.</p>
+<p id="p-1693">If our last scattering surface is small relative to the size of the fundamental domain, as in <a class="xref" data-knowl="./knowl/fig-cmbsizes.html" title="Figure 8.3.1">Figure 8.3.1</a>(a), then it will not intersect any of its copies. However, if the last scattering surface is large relative to the size of the fundamental domain, as in <a class="xref" data-knowl="./knowl/fig-cmbsizes.html" title="Figure 8.3.1">Figure 8.3.1</a>(b), then it will intersect one or more of its copies. Moreover, adjacent copies of the LSS will intersect in a circle. In this happy case, our last scattering surface will contain circles with matching temperature distributions. Look again at <a class="xref" data-knowl="./knowl/fig-cmbsizes.html" title="Figure 8.3.1">Figure 8.3.1</a>(b). We have three copies of our fundamental domain pictured as well as three copies of the LSS (only one of which is shaded to make the situation less cluttered). Two vertical circles of intersection appear in the figure. From our point of view at the center of the LSS, the two images of the circle will be directly opposite one another in the sky. Since these circles are one and the same, the temperature distribution around the two circles will agree. Therein lies the hope. Scan the temperature distribution in the last scattering surface for matching circles.</p>
+<figure class="figure figure-like" id="fig-cmbsizes"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-cmbsizes.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.3.1<span class="period">.</span></span><span class="space"> </span>The LSS compared to the size of a 3-torus universe.  In (a) the LSS is small, so it won't reveal the shape of the universe; in (b) the LSS intersects itself and will have circles of matching temperature distributions.</figcaption></figure><p id="p-1694">This strategy for detecting a finite universe is called the <dfn class="terminology">circles-in-the-sky</dfn> method, which, in cosmic topology, has advantages over the cosmic crystallography method. In theory, the circles-in-the-sky method can be used to detect any compact manifold, regardless of the geometry it admits. Also, the search for matching circles is independent of a metric. One doesn't need to make a claim about the geometry of the universe to detect a finite universe.</p>
+<p id="p-1695">This method is computationally very intensive. The search for matching circles on this giant 2-sphere involves the analysis of a six parameter space: the center \((\theta_1,\phi_1)\) of one circle on the LSS, the center of the second circle \((\theta_2,\phi_2)\text{,}\) the common angular radius \(\alpha\) of the two circles (since these circles are copies of the same circle they will have the same radius), and the relative phase of the two circles, say \(\beta\text{.}\) (See the diagram that follows.) In general, \(\beta \neq 0\) if the face identifications in the 3-manifold involve rotations. It remains for us to analyze whether a statistically significant correlation exists between the temperatures as we proceed around the circles.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-circparams.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1696">When comparing the size of the LSS relative to the size of space, it is convenient to define the following length dimension. The <dfn class="terminology">injectivity radius</dfn> at a point in a manifold, denoted \(r_{inj}\text{,}\) is half the distance of the shortest closed geodesic path that starts and ends at that point. A necessary condition, then, for detecting matching circles in the LSS at our location is that our observable radius \(r_{obs}\) exceeds our injectivity radius \(r_{inj}\text{.}\)</p>
+<article class="example example-like" id="example-88"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Detecting the 3-torus from the LSS.</span>
 </h6>
-<p id="p-1588">If the universe is a 3-torus, and our LSS has diameter larger than some dimension of the 3-torus, then the LSS will intersect copies of itself, and the matching circles would be diametrically opposed to one another on the LSS. Suppose our Dirichlet domain in a 3-torus universe is an \(a\) by \(b\) by \(c\) box in \(\mathbb{R}^3\text{,}\) where \(a \lt  b \lt  c\text{.}\) Our LSS is then centered at the center of the box. The injectivity radius of the universe is \(a/2\text{.}\) In the following figure, we assume that \(r_{obs}\text{,}\) the radius of the LSS, is greater than \(a/2\) but less than \(b/2\text{.}\) In this case, the circles-in-the-sky method would detect one pair of matching circles in the temperature distribution of the LSS. From the Earth \(E\text{,}\) we would observe that circle \(C_1\text{,}\) when traced in the counterclockwise direction, matches circle \(C_2\) when traced in the clockwise direction, with no relative phase shift.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-3torusLSS.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1589">If the size is right, all six compact orientable Euclidean 3-manifolds would have matching circles that are diametrically opposed to one another on the LSS. The phase shift on these matching circles will be non-zero if the faces are identified with a rotation.</p>
-<article class="example-like" id="example-89"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">8.3.3</span> <span class="title">LSS in a Poincaré dodecahedral space</span>
+<p id="p-1697">If the universe is a 3-torus, and our LSS has diameter larger than some dimension of the 3-torus, then the LSS will intersect copies of itself, and the matching circles would be diametrically opposed to one another on the LSS. Suppose our Dirichlet domain in a 3-torus universe is an \(a\) by \(b\) by \(c\) box in \(\mathbb{R}^3\text{,}\) where \(a \lt  b \lt  c\text{.}\) Our LSS is then centered at the center of the box. The injectivity radius of the universe is \(a/2\text{.}\) In the following figure, we assume that \(r_{obs}\text{,}\) the radius of the LSS, is greater than \(a/2\) but less than \(b/2\text{.}\) In this case, the circles-in-the-sky method would detect one pair of matching circles in the temperature distribution of the LSS. From the Earth \(E\text{,}\) we would observe that circle \(C_1\text{,}\) when traced in the counterclockwise direction, matches circle \(C_2\) when traced in the clockwise direction, with no relative phase shift.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-3torusLSS.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1698">If the size is right, all six compact orientable Euclidean 3-manifolds would have matching circles that are diametrically opposed to one another on the LSS. The phase shift on these matching circles will be non-zero if the faces are identified with a rotation.</p>
+<article class="example example-like" id="example-89"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">LSS in a Poincaré dodecahedral space.</span>
 </h6>
-<p id="p-1590">If we live in a Poincaré dodecahedral space and our LSS is large enough, we might see six pairs of matching circles, each pair consisting of diametrically opposed circles in the sky with matching temperature distributions after a relative phase shift of \(36^\circ\text{.}\) The following figure indicates the matching circles that would arise from the identification of the front face and rear face of the dodecahedron. From the Earth \(E\text{,}\) we would observe that circle \(C_1\) when traced in the counterclockwise direction matches circle \(C_2\) when traced in the clockwise direction, with a phase shift of 36\(^\circ\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/poincareLSS.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1591">In general, the matching circles we (might) see can depend not only on the shape of the universe, but also on where we happen to be in the universe. This follows because the Dirichlet domain can vary from point to point (see <a knowl="./knowl/ex_dirichletK2.html" title="Example 7.7.14: Dirichlet domains in a Klein bottle">Example 7.7.14</a> for the two-dimensional case). Of the 10 Euclidean 3-manifolds, only the 3-torus has the feature that the Dirichlet domain is location independent. Some (but not all) elliptic 3-manifolds have this feature, and in any hyperbolic 3-manifold, the Dirichlet domain depends on your location. Thus, if we do observe matching circles, it can not only reveal topology but also the Earth's location in the universe.</p>
-<p id="p-1592">Searches to date have focused on circles that are diametrically opposed to one another on the LSS (or nearly so). This restriction reduces the search space from six parameters to four. Happily, most detectable universe shapes would have matching circles diametrically opposite one another, or nearly so. At the time of this writing, no matching circles have been found, and this negative result places bounds on the size of our universe. For instance, an article written by the people who first realized a small finite universe would imprint itself on the LSS <a knowl="./knowl/cornish.html" title="Bibliographic Entry 19: Constraining the Topology of the Universe">[19]</a>, concludes from the absence of matching circles that the universe has topology scale (i.e., injectivity radius \(r_{inj}\)) bigger than 24 gigaparsecs, which works out to \(24 \times 3.26 \times
-10^9 \approx 78\) billion light-years. So, a geodesic closed path trip in the universe would be at least 156 billion light years long.</p>
-<p id="p-1593">This stupendous distance is hard to fathom, but it appears safe to say that we might abandon the possibility of gazing into the heavens and seeing a distant image of our beloved Milky Way Galaxy.</p>
-<p id="p-1594">In addition to <a knowl="./knowl/cornish.html" title="Bibliographic Entry 19: Constraining the Topology of the Universe">[19]</a>, other accessible papers have been written on the circles-in-the-sky method, as well as the cosmic crystallography method. (See <a knowl="./knowl/levin.html" title="Bibliographic Entry 23: Topology and the Cosmic Microwave Background">[23]</a>, <a knowl="./knowl/reboucas.html" title="Bibliographic Entry 26: Cosmic Topology: A Brief Overview">[26]</a>, and <a knowl="./knowl/luminet.html" title="Bibliographic Entry 24: Cosmic Topology">[24]</a>.) Jeff Weeks also discusses both programs of research in <em class="emphasis">The Shape of Space</em>, <a knowl="./knowl/weeks.html" title="Bibliographic Entry 12: The Shape of Space, 2nd Ed.">[12]</a>.</p></section></div></main>
+<p id="p-1699">If we live in a Poincaré dodecahedral space and our LSS is large enough, we might see six pairs of matching circles, each pair consisting of diametrically opposed circles in the sky with matching temperature distributions after a relative phase shift of \(36^\circ\text{.}\) The following figure indicates the matching circles that would arise from the identification of the front face and rear face of the dodecahedron. From the Earth \(E\text{,}\) we would observe that circle \(C_1\) when traced in the counterclockwise direction matches circle \(C_2\) when traced in the clockwise direction, with a phase shift of \(36^\circ\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/poincareLSS.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1700">In general, the matching circles we (might) see can depend not only on the shape of the universe, but also on where we happen to be in the universe. This follows because the Dirichlet domain can vary from point to point (see <a class="xref" data-knowl="./knowl/ex_dirichletK2.html" title="Example 7.7.14: Dirichlet domains in a Klein bottle">Example 7.7.14</a> for the two-dimensional case). Of the 10 Euclidean 3-manifolds, only the 3-torus has the feature that the Dirichlet domain is location independent. Some (but not all) elliptic 3-manifolds have this feature, and in any hyperbolic 3-manifold, the Dirichlet domain depends on your location. Thus, if we do observe matching circles, it can not only reveal topology but also the Earth's location in the universe.</p>
+<p id="p-1701">Searches to date have focused on circles that are diametrically opposed to one another on the LSS (or nearly so). This restriction reduces the search space from six parameters to four. Happily, most detectable universe shapes would have matching circles diametrically opposite one another, or nearly so. At the time of this writing, no matching circles have been found, and this negative result places bounds on the size of our universe. For instance, an article written by the people who first realized a small finite universe would imprint itself on the LSS <a class="xref" data-knowl="./knowl/cornish.html" title="Bibliographic Entry 19: Constraining the Topology of the Universe">[19]</a>, concludes from the absence of matching circles that the universe has topology scale (i.e., injectivity radius \(r_{inj}\)) bigger than 24 gigaparsecs, which works out to \(24 \times 3.26 \times 10^9 \approx 78\) billion light-years. So, a geodesic closed path trip in the universe would be at least 156 billion light-years long.</p>
+<p id="p-1702">This stupendous distance is hard to fathom, but it appears safe to say that we might abandon the possibility of gazing into the heavens and seeing a distant image of our beloved Milky Way Galaxy.</p>
+<p id="p-1703">In addition to <a class="xref" data-knowl="./knowl/cornish.html" title="Bibliographic Entry 19: Constraining the Topology of the Universe">[19]</a>, other accessible papers have been written on the circles-in-the-sky method, as well as the cosmic crystallography method. (See <a class="xref" data-knowl="./knowl/levin.html" title="Bibliographic Entry 23: Topology and the Cosmic Microwave Background">[23]</a>, <a class="xref" data-knowl="./knowl/reboucas.html" title="Bibliographic Entry 26: Cosmic Topology: A Brief Overview">[26]</a>, and <a class="xref" data-knowl="./knowl/luminet.html" title="Bibliographic Entry 24: Cosmic Topology">[24]</a>.) Jeff Weeks also discusses both programs of research in <em class="emphasis">The Shape of Space</em>, <a class="xref" data-knowl="./knowl/weeks.html" title="Bibliographic Entry 12: The Shape of Space, 2nd Ed.">[12]</a>.</p></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

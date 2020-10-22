@@ -1,30 +1,38 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:50-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:23-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.4.13</span> <span class="title punctuated">Do four points lie on a single cline?</span>
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Some transformations not fixing \(\infty\).</span>
 </h6>
-<p>In addition to defining maps that send points to 1, 0, and \(\infty\text{,}\) the cross ratio can proclaim whether four points lie on the same cline: If \((z,w;u,v)\) is a real number then the points are all on the same cline; if \((z,w;u,v)\) is complex, then they aren't. The proof of this fact is left as an exercise.</p>
-<p>Take the points \(1, i, -1, -i\text{.}\) We know these four points lie on the circle \(|z| = 1\text{,}\) so according to the statement above, \((1,i;-1,-i)\) is a real number. Let's check:</p>
-<div class="displaymath">
-\begin{align*}
-(1,i;-1,-i) \amp = \frac{1+1}{1+i}\cdot\frac{i+i}{i+1}\\
-\amp = \frac{2}{1+i}\frac{2i}{1+i}\\
-\amp = \frac{4i}{(1-1)+2i}\\
-\amp = \frac{4i}{2i}\\
-\amp = 2. \tag{Yep!}
-\end{align*}
-</div></article><span class="incontext"><a href="section3-4.html#example-26">in-context</a></span>
+<p>The following function is a transformation of \({\mathbb{C}}^+\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = \frac{i+1}{z+2i}\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">a fact we prove in the next section.  For now, we ask where \(T\) sends \(\infty\text{,}\) and which point gets sent to \(\infty\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">We tackle the second question first. The input that gets sent to \(\infty\) is the complex number that makes the denominator 0. Thus, \(T(-2i) = \infty.\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">To answer the first question, take your favorite sequence that marches off to \(\infty\text{,}\) for example, \(1, 2, 3,\ldots\text{.}\) The image of this sequence, \(T(1), T(2),\) \(T(3),\ldots\) consists of complex fractions in which the numerator is constant, but the denominator grows unbounded in magnitude along the horizontal line \(\text{Im}(z) = 2\text{.}\) Thus, the quotient tends to 0, and \(T(\infty) = 0\text{.}\)</p>
+<p>As a second example, you can check that if</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) =
+\frac{iz+(3i+1)}{2iz+1},
+\end{equation*}
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">then \(T(i/2) = \infty\) and \(T(\infty) = 1/2\text{.}\)</p></article><span class="incontext"><a href="section3-3.html#example-26">in-context</a></span>
 </body>
 </html>

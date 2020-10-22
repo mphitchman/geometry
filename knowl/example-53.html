@@ -1,32 +1,38 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:55:00-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:46-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">6.1.9</span> <span class="title">The image of a circle under \(\phi\)</span>
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.5.9</span><span class="period">.</span><span class="space"> </span><span class="title">The area of a \(\frac{2}{3}\)-ideal triangle.</span>
 </h6>
-<p>Consider the circle on \(\mathbb{S}^2\) defined by the vertical plane \(x = -\frac{1}{2}\text{.}\) In standard form, this plane has constants \(A = 2, B = C = 0,\) and \(D = 1\text{,}\) so the image under \(\phi\) is the circle</p>
-<div class="displaymath">
-\begin{equation*}
-(u^2+v^2)+4u+1 = 0.
-\end{equation*}
+<p xmlns:svg="http://www.w3.org/2000/svg">Suppose \(w \in \mathbb{U}\) is on the unit circle, and consider the \(\frac{2}{3}\)-ideal triangle \(1w\infty\) as pictured.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg"><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-UHP23ideal.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></p>
+<p xmlns:svg="http://www.w3.org/2000/svg">In particular, suppose the interior angle at \(w\) is \(\alpha\text{,}\) so that \(w = e^{i(\pi-\alpha)}\) where \(0 \lt  \alpha \lt  \pi\text{.}\)</p>
+<p>The area of this \(\frac{2}{3}\)-ideal triangle is thus</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+A \amp = \int_{\cos(\pi - \alpha)}^1 \int_{\sqrt{1-x^2}}^\infty \frac{1}{y^2}~dydx\\
+\amp = \int_{\cos(\pi - \alpha)}^1 \frac{1}{\sqrt{1-x^2}}~dx\text{.}
+\end{align*}
 </div>
-<p>Completing the square we obtain the circle</p>
-<div class="displaymath">
-\begin{equation*}
-(u+2)^2 + v^2 = 3 
-\end{equation*}
-</div>
-<p>having center \((-2,0)\) and radius \(\sqrt{3}\text{.}\)</p></article><span class="incontext"><a href="section6-1.html#example-53">in-context</a></span>
+<p>With the trig substituion \(\cos(\theta) = x\text{,}\) so that \(\sqrt{1-x^2} = \sin(\theta)\) and \(-\sin(\theta)d\theta = dx\text{,}\) the integral becomes</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\amp =\int_{\pi - \alpha}^0\frac{-\sin(\theta)}{\sin(\theta)}~d\theta\\
+\amp = \pi - \alpha\text{.}
+\end{align*}
+</div></article><span class="incontext"><a href="section5-5.html#example-53">in-context</a></span>
 </body>
 </html>

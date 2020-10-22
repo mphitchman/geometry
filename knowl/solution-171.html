@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:58-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">7.3.2.1</span><span class="period">.</span>
+</h6>
+<ol class="lower-alpha">
+<li>Let \(\boldsymbol{r}(t) = t + 0i\) with \(0 \leq t \leq x\) describe the line segment from 0 to \(x\text{,}\) where \(0 \lt x \lt s = 1/\sqrt{|k|}\text{.}\)  Then<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+{\cal L}(\boldsymbol{r}) \amp= \int_0^x \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt\\
+\amp=\int_0^x \frac{2\cdot 1}{1 + kt^2}~dt\text{.}
+\end{align*}
+</div>Since \(k \lt 0\) the antiderivative is not an arctangent expression. Instead, we use partial fractions:<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{2}{1+kt^2} = \frac{2}{1-|k|t^2} = \frac{A}{1 - \sqrt{|k|}t}+\frac{B}{1 + \sqrt{|k|}t}\text{.}
+\end{equation*}
+</div>Solving for the constants, \(A = B = 1\text{,}\) so we determine the length of the curve by evaluating two integrals, during which we recall that \(s = \frac{1}{\sqrt{|k|}}\text{:}\)<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+{\cal L}(\boldsymbol{r}) \amp= \int_0^x \frac{1}{1-\sqrt{|k|}t}~dt + \int_0^x \frac{1}{1+\sqrt{|k|}t}~dt\\
+\amp= -\frac{1}{\sqrt{|k|}}\ln(1 - \sqrt{|k|}t) + \frac{1}{\sqrt{|k|}}\ln(1 + \sqrt{|k|}t)\bigg|_0^x\\
+\amp=-\frac{1}{\sqrt{|k|}}\ln(1 - \sqrt{|k|}x) + \frac{1}{\sqrt{|k|}}\ln(1 + \sqrt{|k|}x)\\
+\amp=\frac{1}{\sqrt{|k|}}\ln\left(\frac{1+\sqrt{|k|}x}{1-\sqrt{|k|}x}\right)\\
+\amp= s\ln\left(\frac{1 + \frac{x}{s}}{1-\frac{x}{s}}\right)\\
+\amp=s\ln\left(\frac{s + x}{s-x}\right)\text{.}
+\end{align*}
+</div>
+</li>
+<li>Let \(\boldsymbol{r}(t) = x\cos(t) + x\sin(t) i\) for \(0 \leq t \leq 2\pi\) denote the circle centered at 0 with hyperbolic radius \(r\text{.}\) To have this (hyperbolic) radius, \(x\) must satisfy the equation \(r = s \ln(\frac{s+x}{s-x})\text{,}\) so that<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x = s\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}\text{.}
+\end{equation*}
+</div>Now,<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+{\cal L}(\boldsymbol{r}) \amp= \int_0^{2\pi} \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt\\
+\amp=\int_0^{2\pi} \frac{2\cdot x}{1 + kx^2}~dt\\
+\amp= 2\pi \frac{2\cdot x}{1 + kx^2}\text{.}
+\end{align*}
+</div>Then express this circumference in terms of the hyperbolic radius \(r\text{:}\)<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+{\cal L}(\boldsymbol{r}) \amp= \frac{4\pi s \frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}}{1-\bigg(\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}\bigg)^2}\\
+\amp=4\pi s \frac{(e^{\frac{r}{s}}-1)(e^{\frac{r}{s}}+1)}{(e^{\frac{r}{s}}+1)^2-(e^{\frac{r}{s}}-1)^2}\\
+\amp=4\pi s \frac{e^{\frac{2r}{s}}-1}{4e^{\frac{r}{s}}}\\
+\amp= 2\pi s \frac{e^{\frac{r}{s}}-e^{-\frac{r}{s}}}{2}\\
+\amp= 2\pi s \sinh\left(\frac{r}{s}\right)\text{.}
+\end{align*}
+</div>
+</li>
+<li>Suppose the circle with hyperbolic radius \(r\) is centered at the origin. Let \(x\) denote its Euclidean radius. The area of the circle, in terms of the Euclidean radius \(x\text{,}\) is<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+A \amp= \int_0^{2\pi}\int_0^x\frac{4r}{(1+kr^2)^2}~dr~d\theta\\
+\amp= \int_0^{2\pi}\frac{-2}{k(1+kr^2)}\bigg|_0^x~d\theta\\
+\amp= 2\pi\left(\frac{2}{k}-\frac{2}{k(1+kx^2)}\right)\\
+\amp= 4\pi\frac{k^2x^2}{k^2(1+kx^2)}\\
+\amp= 4\pi \frac{x^2}{1+kx^2}\text{.}
+\end{align*}
+</div>To express the area in terms of the hyperbolic radius \(r\text{,}\) set<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x = s\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}
+\end{equation*}
+</div>so that<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+A\amp= 4\pi s^2 \frac{\left(\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}\right)^2}{1-\left(\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}\right)}\\
+\amp= \frac{4\pi s^2 (e^{\frac{r}{s}}-1)^2}{(e^{\frac{r}{s}}+1)^2-(e^{\frac{r}{s}}-1)^2}\\
+\amp= 4\pi s^2 \frac{(e^{\frac{r}{s}}-1)^2}{4e^{\frac{r}{s}}}\\
+\amp= 4\pi s^2\left(\frac{e^{\frac{r}{s}}-1}{2e^{\frac{r}{2s}}}\right)^2\\
+\amp= 4\pi s^2\left(\frac{e^{\frac{r}{2s}}-e^{-\frac{r}{2s}}}{2}\right)^2\\
+\amp= 4\pi s^2 \sinh^2\left(\frac{r}{2s}\right)\text{.}
+\end{align*}
+</div>
+</li>
+</ol>
+</div>
+<span class="incontext"><a href="section7-3.html#solution-171">in-context</a></span>
+</body>
+</html>

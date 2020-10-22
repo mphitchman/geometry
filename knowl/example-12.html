@@ -1,10 +1,10 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:47-07:00    *-->
+<!--*    on 2020-06-27T22:33:45-07:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <head>
@@ -12,25 +12,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">2.4.5</span> <span class="title">Circle equations</span>
+<article class="example example-like"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Rotation about the origin.</span>
 </h6>
-<p>If we let \(z = x + yi\) and \(z_0 = h + ki\text{,}\) then the complex equation</p>
+<p>Let \(\theta\) be an angle, and define \(\displaystyle R_\theta: \mathbb{C} \to \mathbb{C}\) by \(\displaystyle R_\theta(z) = e^{i\theta}z\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-rotation.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p>This transformation causes points in the plane to rotate about the origin by the angle \(\theta\text{.}\) (If \(\theta &gt; 0\) the rotation is counterclockwise, and if \(\theta \lt  0\) the rotation is clockwise.) To see this is the case, suppose \(z = re^{i\beta}\text{,}\) and notice that</p>
 <div class="displaymath">
-\begin{gather*}
-|z - z_0| = r \tag{equation of a circle}
-\end{gather*}
-</div>
-<p>describes the circle in the plane centered at \(z_0\) with radius \(r&gt;
-0\text{.}\)</p>
-<p>To see this, note that</p>
-<div class="displaymath">
-\begin{align*}
-|z - z_0| \amp = |(x-h)+(y-k)i|\\
-\amp =\sqrt{(x-h)^2 + (y-k)^2}.
-\end{align*}
-</div>
-<p>So \(|z - z_0| = r\) is equivalent to the equation \((x-h)^2 + (y-k)^2 = r^2\) of the circle centered at \(z_0\) with radius \(r\text{.}\)</p>
-<p>For instance, \(|z - 3-2i| = 3\) describes the set of all points that are 3 units away from \(3+2i\text{.}\) All such \(z\) form a circle of radius 3 in the plane, centered at the point \((3,2)\text{.}\)</p></article><span class="incontext"><a href="section2-4.html#example-12">in-context</a></span>
+\begin{equation*}
+R_\theta(z) = e^{i\theta}re^{i\beta} = re^{i(\theta+\beta)}\text{.}
+\end{equation*}
+</div></article><span class="incontext"><a href="section3-1.html#example-12">in-context</a></span>
 </body>
 </html>

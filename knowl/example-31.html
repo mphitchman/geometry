@@ -1,49 +1,51 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:51-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:28-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.5.13</span> <span class="title">Normal form, one fixed point.</span>
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.10</span><span class="period">.</span><span class="space"> </span><span class="title">Analyze a Möbius transformation.</span>
 </h6>
-<p>Consider \(T(z) = (7z-12)/(3z-5)\text{.}\)  To find its normal form we start by finding its fixed points.</p>
-<div class="displaymath">
+<p>Consider the Möbius transformation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = \frac{(6+3i)z+(2-3i)}{z+3}\text{.}
+\end{equation*}
+</div>
+<p>First we find the fixed points and the normal form of \(T\text{.}\) To find the fixed points we solve \(T(z) = z\) for \(z\text{.}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-z\amp =T(z)\\
-z(3z-5) \amp = 7z-12\\
-3z^2-12z + 12 \amp = 0\\
-z^2-4z + 4 \amp = 0\\
-(z-2)^2 \amp = 0\\
-z\amp = 2.
+\frac{(6+3i)z+(2-3i)}{z+3}\amp = z\\
+(6+3i)z + (2-3i)\amp = z^2+3z\\
+z^2 - (3+3i)z - (2-3i) \amp = 0\text{.}
 \end{align*}
 </div>
-<p>So \(T\) is parabolic and has normal form</p>
-<div class="displaymath">
+<p xmlns:svg="http://www.w3.org/2000/svg">Hey! Wait a moment! This looks familiar. Let's see \(\ldots\) yes! We showed in <a class="xref" data-knowl="./knowl/ex_quadroot.html" title="Example 2.4.4: Solving a quadratic equation">Example 2.4.4</a> that this quadratic equation has solutions \(z = i\) and \(z = 3+2i\text{.}\)</p>
+<p>So the map has these two fixed points, and the normal form of \(T\) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\frac{1}{T(z)-2} =
-\frac{1}{z-2}+d.
+\frac{T(z)-i}{T(z)-(3+2i)}=\lambda\frac{z-i}{z-(3+2i)}\text{.}
 \end{equation*}
 </div>
-<p>To find \(d\) plug in the image of another point. Using the original description of the map, we know \(T(0)=2.4\) so</p>
-<div class="displaymath">
+<p>To find the value of \(\lambda\text{,}\) plug into the normal form a convenient value of \(z\text{.}\) For instance, \(T(-3)=\infty\text{,}\) so</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\frac{1}{0.4}=\frac{1}{-2}+d
+1=\lambda\frac{-3-i}{-3-(3+2i)}\text{.}
 \end{equation*}
 </div>
-<p>so that \(d = 3\text{.}\) The normal form is then</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{1}{T(z)-2} = \frac{1}{z-2}+3.
-\end{equation*}
-</div></article><span class="incontext"><a href="section3-5.html#example-31">in-context</a></span>
+<p xmlns:svg="http://www.w3.org/2000/svg">It follows that \(\lambda = 2\text{,}\) so \(T\) is a hyperbolic map that pushes points along clines through \(i\) and \(3+2i\text{.}\) Below is a schematic for how the map pushes points around in \(\mathbb{C}^+\text{.}\) Notice \(T(0) =\frac{2}{3}-i\text{,}\) \(T(1)=2\text{,}\) and \(T(4i) = 2.16+4.12i\text{.}\) Points are moving along type I clines of \(i\) and \(3+2i\) away from \(i\) and toward \(3 + 2i\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">From the original description of \(T\) we observe that the pole of the map is \(z_\infty = -3\text{,}\) and the inverse pole of the map is \(w_{\infty} = 6+3i\text{.}\) Notice that \(z_\infty\text{,}\) \(w_\infty\text{,}\) and the two fixed points all lie on the same Euclidean line. This will always be the case for a hyperbolic Möbius transformation (<a class="xref" data-knowl="./knowl/hmk_pqpoles.html" title="Exercise 3.5.9">Exercise 3.5.9</a>).</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-ex-analyze-mob.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><span class="incontext"><a href="section3-5.html#example-31">in-context</a></span>
 </body>
 </html>

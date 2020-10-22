@@ -1,45 +1,46 @@
-<!doctype html>
-<html>
-<!--**************************************-->
-<!--* Generated from MathBook XML source *-->
-<!--*    on 2017-08-01T15:13:03-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:25-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">3.4.10</span><span class="title">Analyze and classify a Möbius transformation</span>
-</h5>
-<p id="p-456">Consider the Möbius transformation
-\begin{equation*}
-T(z) = \frac{(6+3i)z+(2-3i)}{z+3}.
-\end{equation*}
-</p>
-<p id="p-457">First we find the fixed points and the normal form of \(T\text{.}\) To find the fixed points we solve \(T(z) = z\) for \(z\text{.}\)
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">Building a Möbius transformation.</span>
+</h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Find the unique Möbius transformation that sends \(1 \mapsto 3\text{,}\) \(i \mapsto 0\text{,}\) and \(2 \mapsto -1\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">One approach: Find \(T(z) = (z,1;i,2)\) and \(S(w) = (w,3;0,-1)\text{.}\) In this case, the transformation we want is \(S^{-1} \circ T\text{.}\)</p>
+<p>To find this transformation, we set the cross ratios equal:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-\frac{(6+3i)z+(2-3i)}{z+3}\amp = z\\
-(6+3i)z + (2-3i)\amp = z^2+3z\\
-z^2 - (3+3i)z - (2-3i) \amp = 0.
+(z,1;i,2) \amp = (w,3;0,-1)\\
+\frac{z-i}{z-2}\cdot\frac{1-2}{1-i} \amp = \frac{w-0}{w+1}\cdot\frac{3+1}{3-0}\\
+\frac{-z+i}{(1-i)z-2+2i} \amp = \frac{4w}{3w+3}\text{.}
 \end{align*}
-</p>
-<p id="p-458">Hey! Wait a moment! This looks familiar. Let's see \(\ldots\) yes! We showed in <a knowl="./knowl/ex_quadroot.html" knowl-id="xref-ex_quadroot" alt="Example 2.4.4 Find the solution(s) of \(z^2 - (3+3i)z = 2-3i\)" title="Example 2.4.4 Find the solution(s) of \(z^2 - (3+3i)z = 2-3i\)">Example 2.4.4</a> that this quadratic equation has solutions \(z = i\) and \(z = 3+2i\text{.}\)</p>
-<p id="p-459">So the map has these two fixed points, and the normal form of \(T\) is
+</div>
+<p>Then solve for \(w\text{:}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+-3zw + 3iw + 3i - 3z \amp = 4[(1-i)z-2+2i]w\\
+-3z+3i \amp = [3z-3i+4[(1-i)z-2+2i]]w\\
+w \amp = \frac{-3z + 3i}{(7-4i)z + (-8+5i)}\text{.}
+\end{align*}
+</div>
+<p>Thus, our Möbius transformation is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\frac{T(z)-i}{T(z)-(3+2i)}=\lambda\frac{z-i}{z-(3+2i)}.
+V(z) = \frac{-3z + 3i}{(7-4i)z + (-8+5i)}\text{.}
 \end{equation*}
-</p>
-<p id="p-460">To find the value of \(\lambda\text{,}\) plug into the normal form a convenient value of \(z\text{.}\) For instance, \(T(-3)=\infty\text{,}\) so
-\begin{equation*}
-1=\lambda\frac{-3-i}{-3-(3+2i)}.
-\end{equation*}
-</p>
-<p id="p-461">It follows that \(\lambda = 2\text{,}\) so \(T\) is a hyperbolic map that pushes points along clines through \(i\) and \(3+2i\text{.}\) Below is a schematic for how the map pushes points around in \(\mathbb{C}^+\text{.}\) Notice \(T(0) =\frac{2}{3}-i\text{,}\) \(T(1)=2\text{,}\) and \(T(4i) = 2.16+4.12i\text{.}\) Points are moving along type I clines of \(i\) and \(3+2i\) away from \(i\) and toward \(3 + 2i\text{.}\)</p>
-<p id="p-462">From the original description of \(T\) we observe that the pole of the map is \(z_\infty = -3\text{,}\) and the inverse pole of the map is \(w_{\infty} = 6+3i\text{.}\) Notice that \(z_\infty\text{,}\) \(w_\infty\text{,}\) and the two fixed points all lie on the same Euclidean line. This will always be the case for a hyperbolic Möbius transformation (<a knowl="./knowl/hmk_pqpoles.html" knowl-id="xref-hmk_pqpoles" alt="Exercise 3.4.9 " title="Exercise 3.4.9 ">Exercise 3.4.9</a>).</p>
-<figure class="figure-like" id="figure-37"><object type="image/svg+xml" style="width:60%; margin:auto; display:block;" data="images/im-ex-analyze-mob.svg" alt=""><p style="margin:auto">&lt;&lt;SVG image is unavailable, or your browser cannot render it&gt;&gt;</p></object></figure></article><span class="incontext"><a href="section3-5.html#example-27">in-context</a></span>
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">It's quite easy to check our answer here. Since there is exactly one Möbius transformation that does the trick, all we need to do is check whether \(V(1) = 3, V(i) = 0\) and \(V(2) = -1\text{.}\) Ok... yes... yes... yep! We've got our map!</p></article><span class="incontext"><a href="section3-4.html#example-27">in-context</a></span>
 </body>
 </html>

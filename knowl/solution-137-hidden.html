@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:47-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like"><ol class="lower-alpha">
+<li>It is remarkably convenient to transfer the situation to the upper half-plane.  By a rotation in \(\mathbb{D}\) assume the ideal point common to both horocycles is \(i\text{.}\)  Then \(V\) takes the horocycles to parallel, horizontal Euclidean lines in \(\mathbb{U}\) and the other legs to vertical Euclidean lines, so that the region is a Euclidean rectangle.  We assume that the rectangle is determined by \(a \leq x \leq b\) and \(m \leq y \leq n\) as pictured. <div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/soln-im-horocycle-uhp.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div> </li>
+<li>The segments \(pq\) and \(st\) get mapped by \(V\) to the two vertical legs. These legs are described by the curves<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\boldsymbol{r}_3(t) = a + ti~~\text{ for }~ m \leq t \leq n
+\end{equation*}
+</div>and<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\boldsymbol{r}_4(t) = b + ti~~\text{ for }~ m \leq t \leq n\text{.}
+\end{equation*}
+</div>The lengths of these curve are easily shown to be equal, with<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+{\cal L}(\boldsymbol{r}_3) \amp = {\cal L}(\boldsymbol{r}_4)\\
+\amp  = \ln\left(\frac{n}{m}\right)\text{.}
+\end{align*}
+</div>
+</li>
+<li>To compute the side lengths, let<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\boldsymbol{r}_1(t) = t + mi ~~\text{ for }~ a \leq t \leq b
+\end{equation*}
+</div>and<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\boldsymbol{r}_2(t) = t + ni ~~\text{ for }~~ a \leq t \leq b
+\end{equation*}
+</div>describe the two horizontal segments in the block. Following the statement of the problem, set \(c = {\cal L}(\boldsymbol{r}_1)\) and \(d = {\cal L}(\boldsymbol{r}_2)\text{.}\)  Note that \(\boldsymbol{r}_1^\prime(t) = \boldsymbol{r}_2^\prime(t) = 1\text{,}\) so<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+c = \int_a^b \frac{1}{m}~dt = \frac{b-a}{m}
+\end{equation*}
+</div>and<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+d = \int_a^b \frac{1}{n}~dt = \frac{b-a}{n}\text{.}
+\end{equation*}
+</div>Let \(x = \ln(n/m)\) denote the common length from part (b) so that \(e^x = \frac{n}{m}\text{.}\) Then<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+d e^x \amp= \frac{b-a}{n}\cdot \frac{n}{m}\\
+\amp= \frac{b-a}{m}\\
+\amp= c
+\end{align*}
+</div>as desired.</li>
+<li>The area of the block is simply the difference of the two horizontal leg lengths:<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+A \amp= \int_a^b\int_m^n \frac{1}{y^2}~dy~dx\\
+\amp= (b-a)(\frac{1}{m}-\frac{1}{n}) \\
+\amp= \frac{b-a}{m}-\frac{b-a}{n}\\
+\amp= c - d\text{.}
+\end{align*}
+</div>
+</li>
+</ol></div></body>
+</html>

@@ -1,10 +1,10 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:48-07:00    *-->
+<!--*    on 2020-06-27T22:33:48-07:00    *-->
 <!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
 <!--**************************************-->
 <head>
@@ -12,42 +12,25 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.1.16</span> <span class="title">Reflection about a line</span>
+<article class="example example-like"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Some transformations not fixing \(\infty\).</span>
 </h6>
-<p><dfn class="terminology">Reflection about a line \(L\)</dfn> is the transformation of \(\mathbb{C}\) defined as follows: Each point on \(L\) gets sent to itself, and if \(z\) is not on \(L\text{,}\) it gets sent to the point \(z^*\) such that line \(L\) is the perpendicular bisector of segment \(zz^*\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-reflect.svg" width="100%" style="display: block; margin: 0 auto;" alt=""></div></div></div>
-<p>Reflection about \(L\) is defined algebraically as follows. If \(L\) happens to be the real axis then</p>
+<p>The following function is a transformation of \({\mathbb{C}}^+\)</p>
 <div class="displaymath">
 \begin{equation*}
-r_L(z) = \overline{z}.
+T(z) = \frac{i+1}{z+2i},
 \end{equation*}
 </div>
-<p>For any other line \(L\) we may arrive at a formula for reflection by rotating and/or translating the line to the real axis, then taking the conjugate, and then reversing the rotation and/or translation.</p>
-<p>For instance, to describe reflection about the line \(y = x + 5\text{,}\) we may translate vertically by \(-5i\text{,}\) rotate by \(-\frac{\pi}{4}\text{,}\) reflect about the real axis, rotate by \(\frac{\pi}{4}\text{,}\) and finally translate by \(5i\) to get the composition</p>
-<div class="displaymath">
-\begin{align*}
-z \amp \mapsto z - 5i\\
-\amp \mapsto e^{-\frac{\pi}{4}i}(z - 5i)\\
-\amp \mapsto \overline{e^{-\frac{\pi}{4}i}(z - 5i)}=
-e^{\frac{\pi}{4}i}(\overline{z} + 5i)\\
-\amp \mapsto e^{\frac{\pi}{4}i}\cdot e^{\frac{\pi}{4}i}(\overline{z} + 5i)=e^{\frac{\pi}{2}i}(\overline{z}+5i)\\
-\amp \mapsto e^{\frac{\pi}{2}i}(\overline{z}+5i) + 5i.
-\end{align*}
-</div>
-<p>Simplifying (and noting that \(e^{\frac{\pi}{2}i} = i\)), the reflection about the line \(L: y = x + 5\) has formula</p>
+<p data-braille="continuation">a fact we prove in the next section.  For now, we ask where \(T\) sends \(\infty\text{,}\) and which point gets sent to \(\infty\text{.}\)</p>
+<p>We tackle the second question first. The input that gets sent to \(\infty\) is the complex number that makes the denominator 0. Thus, \(T(-2i) = \infty.\)</p>
+<p>To answer the first question, take your favorite sequence that marches off to \(\infty\text{,}\) for example, \(1, 2, 3,\ldots\text{.}\) The image of this sequence, \(T(1), T(2),\) \(T(3),\ldots\) consists of complex fractions in which the numerator is constant, but the denominator grows unbounded in magnitude along the horizontal line \(\text{Im}(z) = 2\text{.}\) Thus, the quotient tends to 0, and \(T(\infty) = 0.\)</p>
+<p>As a second example, you can check that if</p>
 <div class="displaymath">
 \begin{equation*}
-r_L(z) =
-i\overline{z} - 5 + 5i.
+T(z) =
+\frac{iz+(3i+1)}{2iz+1},
 \end{equation*}
 </div>
-<p>In general, reflection across any line \(L\) in \(\mathbb{C}\) will have the form</p>
-<div class="displaymath">
-\begin{equation*}
-r_L(z) = e^{i\theta}\overline{z}+b
-\end{equation*}
-</div>
-<p>for some angle \(\theta\) and some complex constant \(b\text{.}\)</p></article><span class="incontext"><a href="section3-1.html#example-21">in-context</a></span>
+<p>then \(T(i/2) = \infty\) and \(T(\infty) = 1/2\text{.}\)</p></article><span class="incontext"><a href="section3-3.html#example-21">in-context</a></span>
 </body>
 </html>

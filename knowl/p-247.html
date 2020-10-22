@@ -1,19 +1,32 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:47-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:16-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<p><em class="emphasis">That \(S\circ T\) is onto</em>:</p>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>To achieve a rotation by angle \(\theta\) about a general point \(z_0\text{,}\) send points in the plane on a three-leg journey: First, translate the plane so that the center of rotation, \(z_0\text{,}\) goes to the origin. The translation that does the trick is \(T_{-z_0}\text{.}\) Then rotate each point by \(\theta\) about the origin (\(R_{\theta}\)). Then translate every point back (\(T_{z_0})\text{.}\) This sequence of transformations has the desired effect and can be tracked as follows:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+z \xmapsto{T_{-z_0}} z - z_0 \xmapsto{R_\theta} e^{i\theta}(z-z_0) \xmapsto{T_{z_0}} e^{i\theta}(z-z_0) + z_0\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">In other words, the desired rotation \(R\) is the composition \(T_{z_0} \circ R_{\theta} \circ T_{-z_0}\) and</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+R(z)=e^{i\theta}(z-z_0) + z_0\text{.}
+\end{equation*}
+</div>
 <span class="incontext"><a href="section3-1.html#p-247">in-context</a></span>
 </body>
 </html>

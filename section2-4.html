@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:26-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:20-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Complex Expressions</title>
+<title>GCT Complex Expressions</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section2-3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-2.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-3.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section2-3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-2.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter-3.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4" class="active">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,254 +146,237 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section2-4"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section2-4"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Complex Expressions</span>
 </h2>
-<a href="section2-4.html" class="permalink">¶</a><section class="introduction" id="introduction-8"><p id="p-173">In this section we look at some equations and inequalities that will come up throughout the text.</p>
-<article class="example-like" id="example-11"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">2.4.1</span> <span class="title">Line equations</span>
+<section class="introduction" id="introduction-3"><p id="p-176">In this section we look at some equations and inequalities that will come up throughout the text.</p></section><article class="example example-like" id="ex-line-equation"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Line equations.</span>
 </h6>
-<p id="p-174">The standard form for the equation of a line in the \(xy\)-plane is \(ax +
-by + d = 0\text{.}\) This line may be expressed via the complex variable \(z = x + yi\text{.}\) For an arbitrary complex number \(\beta = s + ti\text{,}\) note that</p>
+<p id="p-177">The standard form for the equation of a line in the \(xy\)-plane is \(ax + by + d = 0\text{.}\) This line may be expressed via the complex variable \(z = x + yi\text{.}\) For an arbitrary complex number \(\beta = s + ti\text{,}\) note that</p>
 <div class="displaymath">
 \begin{align*}
 \beta z + \overline{\beta z} \amp = \big[(sx -
 ty)+(sy+tx)i\big] + \big[(sx - ty) -
 (sy+tx)i\big]\\
-\amp = 2sx - 2ty.
+\amp = 2sx - 2ty\text{.}
 \end{align*}
 </div>
-<p id="p-175">It follows that the line \(ax + by + d = 0\) can be represented by the equation</p>
+<p id="p-178">It follows that the line \(ax + by + d = 0\) can be represented by the equation</p>
 <div class="displaymath">
 \begin{gather*}
 \alpha z + \overline{\alpha z} + d = 0 \tag{equation of a line}
 \end{gather*}
 </div>
-<p>where \(\alpha = \frac{1}{2}(a - bi)\) is a complex constant and \(d\) is a real number.</p>
-<p id="p-176">Conversely, for any complex number \(\alpha\) and real number \(d\text{,}\) the equation</p>
+<p data-braille="continuation">where \(\alpha = \frac{1}{2}(a - bi)\) is a complex constant and \(d\) is a real number.</p>
+<p id="p-179">Conversely, for any complex number \(\alpha\) and real number \(d\text{,}\) the equation</p>
 <div class="displaymath">
 \begin{equation*}
 \alpha z + \overline{\alpha z} + d = 0
 \end{equation*}
 </div>
-<p>determines a line in \(\mathbb{C}\text{.}\)</p></article><p id="p-177">We may also view any line in \(\mathbb{C}\) as the collection of points equidistant from two given points.</p>
-<article class="theorem-like" id="thm_euclines"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">2.4.2</span>
+<p data-braille="continuation">determines a line in \(\mathbb{C}\text{.}\)</p></article><p id="p-180">We may also view any line in \(\mathbb{C}\) as the collection of points equidistant from two given points.</p>
+<article class="theorem theorem-like" id="thm_euclines"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
 </h6>
-<p id="p-178">Any line in \(\mathbb{C}\) can be expressed by the equation \(\displaystyle |z - \gamma| = |z - \beta|\) for suitably chosen points \(\gamma\) and \(\beta\) in \(\mathbb{C}\text{,}\) and the set of all points (Euclidean) equidistant from distinct points \(\gamma\) and \(\beta\) forms a line.</p></article><article class="hiddenproof" id="proof-3"><a knowl="" class="id-ref" refid="hk-proof-3"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-3" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-179">Given two points \(\gamma\) and \(\beta\) in \(\mathbb{C}\text{,}\) \(z\) is equidistant from both if and only if \(|z - \gamma|^2
-= |z - \beta |^2\text{.}\) Expanding this equation, we obtain</p>
+<p id="p-181">Any line in \(\mathbb{C}\) can be expressed by the equation \(\displaystyle |z - \gamma| = |z - \beta|\) for suitably chosen points \(\gamma\) and \(\beta\) in \(\mathbb{C}\text{,}\) and the set of all points (Euclidean) equidistant from distinct points \(\gamma\) and \(\beta\) forms a line.</p></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-182">Given two points \(\gamma\) and \(\beta\) in \(\mathbb{C}\text{,}\) \(z\) is equidistant from both if and only if \(|z - \gamma|^2 = |z - \beta |^2\text{.}\) Expanding this equation, we obtain</p>
 <div class="displaymath">
 \begin{align*}
 (z - \gamma)(\overline{z - \gamma}) \amp = (z - \beta)(\overline{z - \beta})\\
 |z|^2 - \overline{\gamma}z - \gamma\overline{z} + |\gamma|^2 \amp = |z|^2 - \overline{\beta}z - \beta\overline{z} + |\beta|^2\\
-\overline{(\beta-\gamma)}z + (\beta-\gamma)\overline{z} +
-(|\gamma|^2 - |\beta|^2) \amp = 0.
+\overline{(\beta-\gamma)}z + (\beta-\gamma)\overline{z} + (|\gamma|^2 - |\beta|^2) \amp = 0\text{.}
 \end{align*}
 </div>
-<p id="p-180">This last equation has the form of a line, letting \(\alpha =
-\overline{(\beta - \gamma)}\) and \(d = |\gamma|^2 - |\beta|^2\text{.}\)</p>
-<p id="p-181">Conversely, starting with a line we can find complex numbers \(\gamma\) and \(\beta\) that do the trick. In particular, if the given line is the perpendicular bisector of the segment \(\gamma\beta\text{,}\) then \(|z -
-\gamma| = |z - \beta|\) describes the line. We leave the details to the reader.</p></article></div>
-<article class="example-like" id="ex_quadratic"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">2.4.3</span> <span class="title">Quadratic equations</span>
+<p id="p-183">This last equation has the form of a line, letting \(\alpha = \overline{(\beta - \gamma)}\) and \(d = |\gamma|^2 - |\beta|^2\text{.}\)</p>
+<p id="p-184">Conversely, starting with a line we can find complex numbers \(\gamma\) and \(\beta\) that do the trick. In particular, if the given line is the perpendicular bisector of the segment \(\gamma\beta\text{,}\) then \(|z - \gamma| = |z - \beta|\) describes the line. We leave the details to the reader.</p></article></div>
+<article class="example example-like" id="ex_quadratic"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Quadratic equations.</span>
 </h6>
-<p id="p-182">Suppose \(z_0\) is a complex constant and consider the equation \(z^2
-= z_0.\) A complex number \(z\) that satisfies this equation will be called a square root of \(z_0\), and will be written as \(\sqrt{z_0}\text{.}\)</p>
-<p id="p-183">If we view \(z_0 = r_0e^{i\theta_0}\) in polar form with \(r_0 \geq 0\text{,}\) then a complex number \(z = re^{i\theta}\) satisfies the equation \(z^2 = z_0\) if and only if</p>
+<p id="p-185">Suppose \(z_0\) is a complex constant and consider the equation \(z^2 = z_0\text{.}\) A complex number \(z\) that satisfies this equation will be called a square root of \(z_0\), and will be written as \(\sqrt{z_0}\text{.}\)</p>
+<p id="p-186">If we view \(z_0 = r_0e^{i\theta_0}\) in polar form with \(r_0 \geq 0\text{,}\) then a complex number \(z = re^{i\theta}\) satisfies the equation \(z^2 = z_0\) if and only if</p>
 <div class="displaymath">
 \begin{equation*}
-re^{i\theta}\cdot re^{i\theta} =r_0e^{i\theta_0}.
+re^{i\theta}\cdot re^{i\theta} =r_0e^{i\theta_0}\text{.}
 \end{equation*}
 </div>
-<p id="p-184">In other words, \(z\) satisfies the equation if and only if \(r^2 =
-r_0\) and \(2\theta = \theta_0\) (modulo \(2\pi\)).</p>
-<p id="p-185">As long as \(r_0\) is greater than zero, we have two solutions to the equation, so that \(z_0\) has two square roots:</p>
+<p id="p-187">In other words, \(z\) satisfies the equation if and only if \(r^2 = r_0\) and \(2\theta = \theta_0\) (modulo \(2\pi\)).</p>
+<p id="p-188">As long as \(r_0\) is greater than zero, we have two solutions to the equation, so that \(z_0\) has two square roots:</p>
 <div class="displaymath">
 \begin{equation*}
-\pm \sqrt{r_0}e^{i\theta_0/2}.
+\pm \sqrt{r_0}e^{i\theta_0/2}\text{.}
 \end{equation*}
 </div>
-<p id="p-186">For instance, \(z^2 = i\) has two solutions. Since \(i =1
-e^{i\pi/2}\text{,}\) \(\sqrt{i} = \pm e^{i\pi/4}\text{.}\) In Cartesian form, \(\sqrt{i} = \pm (\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i)\text{.}\)</p>
-<p id="p-187">More generally, the complex quadratic equation \(\alpha z^2 + \beta
-z + \gamma = 0\) where \(\alpha, \beta, \gamma\) are complex constants, will have one or two solutions. This marks an important difference from the real case, where a quadratic equation might not have any real solutions. In both cases we may use the quadratic formula to hunt for roots, and in the complex case we have solutions</p>
+<p id="p-189">For instance, \(z^2 = i\) has two solutions. Since \(i =1 e^{i\pi/2}\text{,}\) \(\sqrt{i} = \pm e^{i\pi/4}\text{.}\) In Cartesian form, \(\sqrt{i} = \pm (\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i)\text{.}\)</p>
+<p id="p-190">More generally, the complex quadratic equation \(\alpha z^2 + \beta z + \gamma = 0\) where \(\alpha\text{,}\) \(\beta\text{,}\) and \(\gamma\) are complex constants, will have one or two solutions. This marks an important difference from the real case, where a quadratic equation might not have any real solutions. In both cases we may use the quadratic formula to hunt for roots, and in the complex case we have solutions</p>
 <div class="displaymath">
 \begin{equation*}
-z = \frac{-\beta \pm \sqrt{\beta^2 - 4\alpha\gamma}}{2\alpha}.
+z = \frac{-\beta \pm \sqrt{\beta^2 - 4\alpha\gamma}}{2\alpha}\text{.}
 \end{equation*}
 </div>
-<p id="p-188">For instance, \(z^2 + 2z + 4 = 0\) has two solutions:</p>
+<p id="p-191">For instance, \(z^2 + 2z + 4 = 0\) has two solutions:</p>
 <div class="displaymath">
 \begin{equation*}
 z = \frac{-2
 \pm \sqrt{-12}}{2} = -1 \pm \sqrt{3}i
 \end{equation*}
 </div>
-<p>since \(\sqrt{-1} = i\text{.}\)</p></article><article class="example-like" id="ex_quadroot"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">2.4.4</span> <span class="title">Solving a quadratic equation</span>
+<p data-braille="continuation">since \(\sqrt{-1} = i\text{.}\)</p></article><article class="example example-like" id="ex_quadroot"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Solving a quadratic equation.</span>
 </h6>
-<p id="p-189">Consider the equation \(z^2 - (3+3i)z = 2-3i\text{.}\)  To solve this equation for \(z\) we first rewrite it as</p>
+<p id="p-192">Consider the equation \(z^2 - (3+3i)z = 2-3i\text{.}\)  To solve this equation for \(z\) we first rewrite it as</p>
 <div class="displaymath">
 \begin{equation*}
-z^2-(3+3i)z-(2-3i)=0.
+z^2-(3+3i)z-(2-3i)=0\text{.}
 \end{equation*}
 </div>
-<p>We use the quadratic formula with \(\alpha = 1\text{,}\) \(\beta = -(3+3i)\text{,}\) and \(\gamma = -(2-3i)\text{,}\) to obtain the solution(s)</p>
+<p data-braille="continuation">We use the quadratic formula with \(\alpha = 1\text{,}\) \(\beta = -(3+3i)\text{,}\) and \(\gamma = -(2-3i)\text{,}\) to obtain the solution(s)</p>
 <div class="displaymath">
 \begin{align*}
 z \amp = \frac{3+3i \pm \sqrt{(3+3i)^2+4(2-3i)}}{2}\\
-z \amp = \frac{3+3i\pm \sqrt{8+6i}}{2}.
+z \amp = \frac{3+3i\pm \sqrt{8+6i}}{2}\text{.}
 \end{align*}
 </div>
-<p id="p-190">To determine the solutions in Cartesian form, we need to evaluate \(\sqrt{8+6i}\text{.}\) We offer two approaches. The first approach considers the following task: Set \(x + yi = \sqrt{8+6i}\) and solve for \(x\) and \(y\) directly by squaring both sides to obtain a system of equations.</p>
+<p id="p-193">To determine the solutions in Cartesian form, we need to evaluate \(\sqrt{8+6i}\text{.}\) We offer two approaches. The first approach considers the following task: Set \(x + yi = \sqrt{8+6i}\) and solve for \(x\) and \(y\) directly by squaring both sides to obtain a system of equations.</p>
 <div class="displaymath">
 \begin{align*}
 x+yi \amp = \sqrt{8+6i}\\
 (x+yi)^2 \amp = 8+6i\\
-x^2-y^2+2xy i \amp = 8 + 6i.
+x^2-y^2+2xy i \amp = 8 + 6i\text{.}
 \end{align*}
 </div>
-<p id="p-191">Thus, we have two equations and two unknowns:</p>
+<p id="p-194">Thus, we have two equations and two unknowns:</p>
 <div class="displaymath">
 \begin{align*}
 x^2-y^2 \amp = 8 \tag{1}\\
-2xy \amp = 6. \tag{2}
+2xy \amp = 6 \tag{2}\text{.}
 \end{align*}
 </div>
-<p id="p-192">In fact, we also know that \(x^2+y^2 = |x+yi|^2 = |(x+yi)^2| =|8+6i| = 10\text{,}\) giving us a third equation</p>
+<p id="p-195">In fact, we also know that \(x^2+y^2 = |x+yi|^2 = |(x+yi)^2| =|8+6i| = 10\text{,}\) giving us a third equation</p>
 <div class="displaymath">
 \begin{align*}
-x^2+y^2 \amp = 10. \tag{3}
+x^2+y^2 \amp = 10 \tag{3}\text{.}
 \end{align*}
 </div>
-<p id="p-193">Adding equations (1) and (3) yields \(x^2 = 9\) so \(x = \pm 3\text{.}\) Substituting \(x = 3\) into equation (2) yields \(y = 1\text{;}\) substituting \(x = -3\) into (2) yields \(y = -1\text{.}\) Thus we have two solutions:</p>
+<p id="p-196">Adding equations (1) and (3) yields \(x^2 = 9\) so \(x = \pm 3\text{.}\) Substituting \(x = 3\) into equation (2) yields \(y = 1\text{;}\) substituting \(x = -3\) into (2) yields \(y = -1\text{.}\) Thus we have two solutions:</p>
 <div class="displaymath">
 \begin{equation*}
-\sqrt{8+6i} = \pm (3+i).
+\sqrt{8+6i} = \pm (3+i)\text{.}
 \end{equation*}
 </div>
-<p id="p-194">We may also use the polar form to determine \(\sqrt{8+6i}\text{.}\) Consider the right triangle determined by the point \(8+6i = 10e^{i\theta}\) pictured in the following diagram.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-square-root.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-195">We know \(\sqrt{8+6i} = \pm \sqrt{10}e^{i\theta/2}\text{,}\) so we want to find \(\theta/2\text{.}\) Well, we can determine \(\tan(\theta/2)\) easily enough using the half-angle formula</p>
+<p id="p-197">We may also use the polar form to determine \(\sqrt{8+6i}\text{.}\) Consider the right triangle determined by the point \(8+6i = 10e^{i\theta}\) pictured in the following diagram.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-square-root.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-198">We know \(\sqrt{8+6i} = \pm \sqrt{10}e^{i\theta/2}\text{,}\) so we want to find \(\theta/2\text{.}\) Well, we can determine \(\tan(\theta/2)\) easily enough using the half-angle formula</p>
 <div class="displaymath">
 \begin{equation*}
-\tan(\theta/2) = \frac{\sin(\theta)}{1+\cos(\theta)}.
+\tan(\theta/2) = \frac{\sin(\theta)}{1+\cos(\theta)}\text{.}
 \end{equation*}
 </div>
-<p id="p-196">The right triangle in the diagram shows us that \(\sin(\theta) = 3/5\) and \(\cos(\theta)=4/5\text{,}\) so \(\tan(\theta/2) = 1/3\text{.}\) This means that any point \(re^{i\theta/2}\) lives on the line through the origin having slope 1/3, and can be described by \(k(3+i)\) for some scalar \(k\text{.}\) Since \(\sqrt{8+6i}\) has this form, it follows that \(\sqrt{8+6i} = k(3+i)\) for some \(k\text{.}\) Since \(|\sqrt{8+6i}| = \sqrt{10}\text{,}\) it follows that \(|k(3+i)| = \sqrt{10}\text{,}\) so \(k = \pm 1\text{.}\) In other words, \(\sqrt{8+6i} = \pm (3+i)\text{.}\)</p>
-<p id="p-197">Now let's return to the solution of the original quadratic equation in this example:</p>
+<p id="p-199">The right triangle in the diagram shows us that \(\sin(\theta) = 3/5\) and \(\cos(\theta)=4/5\text{,}\) so \(\tan(\theta/2) = 1/3\text{.}\) This means that any point \(re^{i\theta/2}\) lives on the line through the origin having slope 1/3, and can be described by \(k(3+i)\) for some scalar \(k\text{.}\) Since \(\sqrt{8+6i}\) has this form, it follows that \(\sqrt{8+6i} = k(3+i)\) for some \(k\text{.}\) Since \(|\sqrt{8+6i}| = \sqrt{10}\text{,}\) it follows that \(|k(3+i)| = \sqrt{10}\text{,}\) so \(k = \pm 1\text{.}\) In other words, \(\sqrt{8+6i} = \pm (3+i)\text{.}\)</p>
+<p id="p-200">Now let's return to the solution of the original quadratic equation in this example:</p>
 <div class="displaymath">
 \begin{align*}
 z \amp = \frac{3+3i\pm \sqrt{8+6i}}{2}\\
-z \amp = \frac{3+3i\pm (3+i)}{2}.
+z \amp = \frac{3+3i\pm (3+i)}{2}\text{.}
 \end{align*}
 </div>
-<p id="p-198">Thus, \(z = 3+2i\) or \(z = i\text{.}\)</p></article><article class="example-like" id="example-14"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">2.4.5</span> <span class="title">Circle equations</span>
+<p id="p-201">Thus, \(z = 3+2i\) or \(z = i\text{.}\)</p></article><article class="example example-like" id="example-14"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Circle equations.</span>
 </h6>
-<p id="p-199">If we let \(z = x + yi\) and \(z_0 = h + ki\text{,}\) then the complex equation</p>
+<p id="p-202">If we let \(z = x + yi\) and \(z_0 = h + ki\text{,}\) then the complex equation</p>
 <div class="displaymath">
 \begin{gather*}
 |z - z_0| = r \tag{equation of a circle}
 \end{gather*}
 </div>
-<p>describes the circle in the plane centered at \(z_0\) with radius \(r&gt;
-0\text{.}\)</p>
-<p id="p-200">To see this, note that</p>
+<p data-braille="continuation">describes the circle in the plane centered at \(z_0\) with radius \(r&gt; 0\text{.}\)</p>
+<p id="p-203">To see this, note that</p>
 <div class="displaymath">
 \begin{align*}
 |z - z_0| \amp = |(x-h)+(y-k)i|\\
-\amp =\sqrt{(x-h)^2 + (y-k)^2}.
+\amp =\sqrt{(x-h)^2 + (y-k)^2}\text{.}
 \end{align*}
 </div>
-<p id="p-201">So \(|z - z_0| = r\) is equivalent to the equation \((x-h)^2 + (y-k)^2 = r^2\) of the circle centered at \(z_0\) with radius \(r\text{.}\)</p>
-<p id="p-202">For instance, \(|z - 3-2i| = 3\) describes the set of all points that are 3 units away from \(3+2i\text{.}\) All such \(z\) form a circle of radius 3 in the plane, centered at the point \((3,2)\text{.}\)</p></article><article class="example-like" id="example-15"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">2.4.6</span> <span class="title">Complex expressions as regions</span>
+<p id="p-204">So \(|z - z_0| = r\) is equivalent to the equation \((x-h)^2 + (y-k)^2 = r^2\) of the circle centered at \(z_0\) with radius \(r\text{.}\)</p>
+<p id="p-205">For instance, \(|z - 3-2i| = 3\) describes the set of all points that are 3 units away from \(3+2i\text{.}\) All such \(z\) form a circle of radius 3 in the plane, centered at the point \((3,2)\text{.}\)</p></article><article class="example example-like" id="example-15"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Complex expressions as regions.</span>
 </h6>
-<p id="p-203">Describe each complex expression below as a region in the plane.</p>
-<ol class="decimal">
-<li id="li-6">
-<p id="p-204">\(|1/z| \gt 2\text{.}\)</p>
-<p id="p-205">Taking the reciprocal of both sides, we have \(|z| \lt  1/2\text{,}\) which is the interior of the circle centered at 0 with radius \(1/2\text{.}\)</p>
+<p id="p-206">Describe each complex expression below as a region in the plane.</p>
+<ol class="lower-alpha">
+<li id="li-43">
+<p id="p-207">\(|1/z| \gt 2\text{.}\)</p>
+<p id="p-208">Taking the reciprocal of both sides, we have \(|z| \lt  1/2\text{,}\) which is the interior of the circle centered at 0 with radius \(1/2\text{.}\)</p>
 </li>
-<li id="li-7">
-<p id="p-206">Im\((z)\lt\) Re\((z)\text{.}\)</p>
-<p id="p-207">Set \(z = x + yi\) in which case the inequality becomes \(y \lt  x\text{.}\) This inequality describes all points in the plane under the line \(y = x\text{,}\) as pictured below.</p>
+<li id="li-44">
+<p id="p-209">Im\((z)\lt\) Re\((z)\text{.}\)</p>
+<p id="p-210">Set \(z = x + yi\) in which case the inequality becomes \(y \lt  x\text{.}\) This inequality describes all points in the plane under the line \(y = x\text{,}\) as pictured below.</p>
 </li>
-<li id="li-8">
-<p id="p-208">Im\((z) = |z|\text{.}\)</p>
-<p id="p-209">Setting \(z = x + yi\text{,}\) this equation is equivalent to \(y =
-\sqrt{y^2 + x^2}\text{.}\) Squaring both sides we obtain \(0 = x^2\text{,}\) so that \(x = 0\text{.}\) It follows that \(y = \sqrt{y^2} = |y|\) so the equation describes the points \((0,y)\) with \(y \geq 0\text{.}\) These points determine a ray on the positive imaginary axis.</p>
+<li id="li-45">
+<p id="p-211">Im\((z) = |z|\text{.}\)</p>
+<p id="p-212">Setting \(z = x + yi\text{,}\) this equation is equivalent to \(y = \sqrt{y^2 + x^2}\text{.}\) Squaring both sides we obtain \(0 = x^2\text{,}\) so that \(x = 0\text{.}\) It follows that \(y = \sqrt{y^2} = |y|\) so the equation describes the points \((0,y)\) with \(y \geq 0\text{.}\) These points determine a ray on the positive imaginary axis.</p>
 </li>
 </ol>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-plane-region.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-210">Moving forward, lines and circles will be especially important objects for us, so we end the section with a summary of their descriptions in the complex plane.</p>
-<article class="assemblage-like" id="assemblage-2"><h6 class="heading"><span class="title">Lines and circles in \(\mathbb{C}\)</span></h6>
-<p id="p-211">Lines and circles in the plane can be expressed with a complex variable \(z = x + yi\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-plane-region.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-213">Moving forward, lines and circles will be especially important objects for us, so we end the section with a summary of their descriptions in the complex plane.</p>
+<article class="assemblage assemblage-like" id="assemblage-2"><h6 class="heading"><span class="title">Lines and circles in \(\mathbb{C}\).</span></h6>
+<p id="p-214">Lines and circles in the plane can be expressed with a complex variable \(z = x + yi\text{.}\)</p>
 <ul class="disc">
-<li id="li-9">
-<p id="p-212">The line \(ax + by + d = 0\) in the plane can be represented by the equation</p>
+<li id="li-46">
+<p id="p-215">The line \(ax + by + d = 0\) in the plane can be represented by the equation</p>
 <div class="displaymath">
 \begin{equation*}
 \alpha z + \overline{\alpha z} + d = 0
 \end{equation*}
 </div>
-<p>where \(\alpha = \frac{1}{2}(a - bi)\) is a complex constant and \(d\) is a real number.</p>
+<p data-braille="continuation">where \(\alpha = \frac{1}{2}(a - bi)\) is a complex constant and \(d\) is a real number.</p>
 </li>
-<li id="li-10">
-<p id="p-213">The circle in the plane centered at \(z_0\) with radius \(r \gt 0\) can be represented by the equation</p>
+<li id="li-47">
+<p id="p-216">The circle in the plane centered at \(z_0\) with radius \(r \gt 0\) can be represented by the equation</p>
 <div class="displaymath">
 \begin{equation*}
-|z - z_0| = r.
+|z - z_0| = r\text{.}
 \end{equation*}
 </div>
 </li>
-</ul></article></section><section class="exercises" id="exercises-6"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</ul></article><section class="exercises" id="exercises-6"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section2-4.html#exercises-6" class="permalink">¶</a><article class="exercise-like" id="ex_lineclineeq"><h6 class="heading">
-<span class="codenumber">1</span> </h6>
-<p id="p-214">Use a complex variable to describe the equation of the line \(y
-= mx + b\text{.}\) Assume \(m \neq 0\text{.}\) In particular, show that this line is described by the equation</p>
+<article class="exercise exercise-like" id="ex_lineclineeq"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-217">Use a complex variable to describe the equation of the line \(y = mx + b\text{.}\) Assume \(m \neq 0\text{.}\) In particular, show that this line is described by the equation</p>
 <div class="displaymath">
 \begin{equation*}
-(m+i)z + (m-i)\overline{z} + 2b =
-0.
+(m+i)z + (m-i)\overline{z} + 2b = 0\text{.}
 \end{equation*}
-</div></article><article class="exercise-like" id="exercise-21"><h6 class="heading">
-<span class="codenumber">2</span> </h6>
-<p id="p-215">In each case, sketch the set of complex numbers \(z\) satisfying the given condition.</p>
-<p id="p-216">a. \(|z + i| = 3\text{.}\)</p>
-<p id="p-217">b. \(|z+i|=|z-i|\text{.}\)</p>
-<p id="p-218">c. Re\((z) = 1\text{.}\)</p>
-<p id="p-219">d. \(|z/10 + 1 - i| \lt  5\text{.}\)</p>
-<p id="p-220">e. Im\((z) &gt;\) Re\((z)\text{.}\)</p>
-<p id="p-221">f. Re\((z) = | z - 2 |\text{.}\)</p></article><article class="exercise-like" id="exercise-22"><h6 class="heading">
-<span class="codenumber">3</span> </h6>
-<p id="p-222">Suppose \(u, v, w\) are three complex numbers not all on the same line. Prove that any point \(z\) in \(\mathbb{C}\) is uniquely determined by its distances from these three points. Hint: Suppose \(\beta\) and \(\gamma\) are complex numbers such that \(|u - \beta| = |u - \gamma|\text{,}\) \(|v -
-\beta| = |v - \gamma|\) and \(|w - \beta| = |w - \gamma|\text{.}\) Argue that \(\beta\) and \(\gamma\) must in fact be equal complex numbers.</p></article><article class="exercise-like" id="exercise-23"><h6 class="heading">
-<span class="codenumber">4</span> </h6>
-<p id="p-223">Find all solutions to the quadratic equation \(z^2 + iz - (2+6i) = 0.\)</p></article></section></section></div></main>
+</div></article><article class="exercise exercise-like" id="exercise-21"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-219">In each case, sketch the set of complex numbers \(z\) satisfying the given condition.</p>
+<ol class="lower-alpha">
+<li id="li-48">\(|z + i| = 3\text{.}\)</li>
+<li id="li-49">\(|z+i|=|z-i|\text{.}\)</li>
+<li id="li-50">Re\((z) = 1\text{.}\)</li>
+<li id="li-51">\(|z/10 + 1 - i| \lt  5\text{.}\)</li>
+<li id="li-52">Im\((z) &gt;\) Re\((z)\text{.}\)</li>
+<li id="li-53">Re\((z) = | z - 2 |\text{.}\)</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-2" id="hint-2"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-2"><div class="hint solution-like"><p id="p-220">It may be helpful to set \(z = x + yi\) and rewrite the expression in terms of \(x\) and \(y\text{.}\)</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-22"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-222">Suppose \(u, v, w\) are three complex numbers not all on the same line. Prove that any point \(z\) in \(\mathbb{C}\) is uniquely determined by its distances from these three points.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-3" id="hint-3"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-3"><div class="hint solution-like"><p id="p-223">Suppose \(\beta\) and \(\gamma\) are complex numbers such that \(|u - \beta| = |u - \gamma|\text{,}\) \(|v - \beta| = |v - \gamma|\) and \(|w - \beta| = |w - \gamma|\text{.}\) Argue that \(\beta\) and \(\gamma\) must in fact be equal complex numbers.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-23"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-225">Find all solutions to the quadratic equation \(z^2 + iz - (2+6i) = 0.\)</p></article></section></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

@@ -1,23 +1,51 @@
-<!doctype html>
-<html>
-<!--**************************************-->
-<!--* Generated from MathBook XML source *-->
-<!--*    on 2017-08-01T15:13:04-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:28-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">4.1.11</span><span class="title">Homogeneous geometry</span>
-</h5>
-<p id="p-542">Translational geometry \((\mathbb{C},{\cal T})\) is homogeneous because there is a translation that will map any point of \(\mathbb{C}\) to any other point of \(\mathbb{C}\text{.}\) That is, any two points of \(\mathbb{C}\) are congruent. Of course, without rotations, translational geometry is not isotropic. Here's a formal argument that \((\mathbb{C},{\cal T})\) is homogeneous:</p>
-<p id="p-543">Suppose \(p\) and \(q\) are arbitrary points in \(\mathbb{C}\text{.}\) We must find a translation \(T\) in \(\cal{T}\) such that \(T(p) = q\text{.}\) Let \(w = q -
-p\text{,}\) and consider the translation \(T_w\) in \(\cal{T}\text{.}\) Then \(T_w(p) = p + w = p + (q - p) = q\text{.}\) Thus \(T_w(p) = q\) and \(p \cong q\text{.}\) Since \(p\) and \(q\) are arbitrary points in \(\mathbb{C}\) it follows that \((\mathbb{C},\cal{T})\) is homogeneous.</p>
-<p id="p-544">Euclidean geometry \((\mathbb{C},\cal{E})\) is homogeneous since it contains all translations, and it is isotropic, a fact left to the exercises.</p></article><span class="incontext"><a href="section4-1.html#example-33">in-context</a></span>
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.13</span><span class="period">.</span><span class="space"> </span><span class="title">Normal form, one fixed point..</span>
+</h6>
+<p>Consider \(T(z) = (7z-12)/(3z-5)\text{.}\)  To find its normal form we start by finding its fixed points.</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+z\amp =T(z)\\
+z(3z-5) \amp = 7z-12\\
+3z^2-12z + 12 \amp = 0\\
+z^2-4z + 4 \amp = 0\\
+(z-2)^2 \amp = 0\\
+z\amp = 2\text{.}
+\end{align*}
+</div>
+<p>So \(T\) is parabolic and has normal form</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{T(z)-2} =
+\frac{1}{z-2}+d\text{.}
+\end{equation*}
+</div>
+<p>To find \(d\) plug in the image of another point. Using the original description of the map, we know \(T(0)=2.4\text{,}\) so</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{0.4}=\frac{1}{-2}+d
+\end{equation*}
+</div>
+<p data-braille="continuation">so that \(d = 3\text{.}\) The normal form is then</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{T(z)-2} = \frac{1}{z-2}+3\text{.}
+\end{equation*}
+</div></article><span class="incontext"><a href="section3-5.html#example-33">in-context</a></span>
 </body>
 </html>

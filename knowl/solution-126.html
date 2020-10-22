@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:43-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.4.8.1</span><span class="period">.</span>
+</h6>
+<p>We prove by induction that the area of an \(n\)-gon in the hyperbolic plane consisting of hyperbolic segments, and whose \(n\) interior angles are \(\alpha_1, \alpha_2, \cdots \alpha_n\) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A = (n - 2)\pi - \sum_{i=1}^n \alpha_i\text{.}
+\end{equation*}
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg"><em class="emphasis">Basis Step</em>: \(n = 3\text{.}\)  The area formula holds for triangles.  This is <a class="xref" data-knowl="./knowl/thm_hyptriarea.html" title="Theorem 5.4.9">Theorem 5.4.9</a></p>
+<p xmlns:svg="http://www.w3.org/2000/svg"><em class="emphasis">Inductive Step</em>: \(n \gt 3\text{.}\) Assuming that the area formula holds for all \(k\)-gons for \(k = 3, \cdots, n-1\text{,}\) we prove the formula holds for \(n\)-gons as well.  Suppose an \(n\)-gon in the hyperbolic plane has vertices \(v_1, v_2, \cdots, v_n\) and that the interior angle at vertex \(v_i\) is \(\alpha_i\text{.}\)  Call this \(n\)-gon \(P_n\text{.}\) Construct the hyperbolic segment connecting \(v_1\) and \(v_{n-1}\text{.}\) This partitions the \(n\)-gon into a triangle (\(\Delta\)) and an \((n-1)\)-gon (\(P_{n-1}\)) as pictured in the following diagram.</p>
+<p>Note that in the figure the angle at vertex \(v_1\) has been expressed as \(\alpha_1 =  \tau_1 + \gamma_1\text{.}\)  Similarly, \(\alpha_{n-1} = \tau_{n-1}+\gamma_{n-1}\text{.}\)  Now by the inductive hypothesis, the area of the triangle \(\Delta\) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(\Delta) = \pi - (\alpha_n + \tau_1 + \tau_{n-1})
+\end{equation*}
+</div>
+<p data-braille="continuation">and the area of the \((n-1)\)-gon \(P_{n-1}\) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A(P_{n-1}) = (n-3)\pi - (\gamma_1 + \alpha_2 + \cdots + \alpha_{n-2}+\gamma_{n-1})\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">The area of \(P_n\) is thus</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+A(P_n) \amp= A(\Delta) + A(P_{n-1}) \\
+\amp= \pi - (\alpha_n + \tau_1 + \tau_{n-1}) + (n-3)\pi - (\gamma_1 + \alpha_2 + \cdots + \alpha_{n-2}+\gamma_{n-1}) \\
+\amp= (n-2)\pi - ((\tau_1 + \gamma_1)+\alpha_2 + \cdots + \alpha_{n-2} + (\tau_{n-1}+\gamma_{n-1})+\alpha_n) \\
+\amp= (n-2)\pi - \sum_{i=1}^n \alpha_i\text{.}
+\end{align*}
+</div>
+</div>
+<span class="incontext"><a href="section5-4.html#solution-126">in-context</a></span>
+</body>
+</html>

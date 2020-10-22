@@ -1,25 +1,33 @@
-<!doctype html>
-<html>
-<!--**************************************-->
-<!--* Generated from MathBook XML source *-->
-<!--*    on 2017-08-01T16:24:57-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:39-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="example-like"><h5 class="heading">
-<span class="type">Example</span><span class="codenumber">5.4.7</span><span class="title">The length of a curve</span>
-</h5>
-<p id="p-843">To find the length of the horizontal curve \(\vec{r}(t) = t + ki\) for \(a \leq t \leq b\text{,}\) note that \(\vec{r}\hskip.04in^\prime(t) = 1\) and \(\text{
-Im}(\vec{r}(t)) = k\text{.}\) Thus,
-\begin{equation*}
-{\cal L}(\vec{r}) = \int_a^b \frac{1}{k}~dt = \frac{b-a}{k}.
-\end{equation*}
-</p></article><span class="incontext"><a href="section5-5.html#example-44">in-context</a></span>
+<article class="example example-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.11</span><span class="period">.</span><span class="space"> </span><span class="title">Two paths from \(\boldsymbol{p}\) to \(\boldsymbol{q}\).</span>
+</h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Two paths from \(p = .5i\) to \(q = .5+.5i\) are shown below: the (solid) hyperbolic segment from \(p\) to \(q\text{,}\) and the (dashed) path \(\boldsymbol{r}\) that looks like a Euclidean segment.  Which path is shorter?</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">We may compute the length of the hyperbolic segment connecting \(p\) and \(q\) with the distance formula from <a class="xref" data-knowl="./knowl/thm_hypdist.html" title="Theorem 5.3.3">Theorem 5.3.3</a>.  This distance is approximately 1.49 units.</p>
+<p>By contrast, consider the path in \(\mathbb{D}\) corresponding to the Euclidean line segment from \(p\) to \(q\text{.}\) This path may be described by \(\boldsymbol{r}(t) = t + \frac{1}{2}i\) for \(0 \leq t \leq \frac{1}{2}\text{.}\)  Then \(\boldsymbol{r}^\prime(t) = 1\) and</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+{\cal L}(\boldsymbol{r}) \amp =
+\int_0^{\frac{1}{2}}\frac{2}{1-(t^2+\frac{1}{4})}dt\\
+\amp \approx 1.52\text{.}
+\end{align*}
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">It is no surprise that the hyperbolic segment connecting \(p\) to \(q\) is a shorter path in \((\mathbb{D},{\cal H})\) than the Euclidean line segment connecting them.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-workhypdist.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><span class="incontext"><a href="section5-3.html#example-44">in-context</a></span>
 </body>
 </html>

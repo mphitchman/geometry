@@ -1,19 +1,42 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:46-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:12-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>The <dfn class="terminology">division</dfn> of the complex number \(z\) by \(w \neq 0\text{,}\) denoted \(\frac{z}{w}\text{,}\) is the complex number \(u\) that satisfies the equation \(z = w \cdot u\text{.}\)</p>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>Suppose we wish to find \(z/w\) where \(z = re^{i\theta}\) and \(w = se^{i\beta} \neq 0\text{.}\) The reader can check that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{w} =
+\frac{1}{s}e^{-i\beta}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Then we may apply <a class="xref" data-knowl="./knowl/th_polarmult.html" title="Theorem 2.2.3">Theorem 2.2.3</a> to obtain the following result:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\frac{z}{w} \amp = z\cdot\frac{1}{w}\\
+\amp = re^{i\theta}\cdot \frac{1}{s}e^{-i\beta}\\
+\amp = \frac{r}{s}e^{i(\theta-\beta)}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">So,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\arg\bigg(\frac{z}{w}\bigg)=\arg(z)-\arg(w)
+\end{equation*}
+</div>
+<p data-braille="continuation">where equality is taken modulo \(2\pi\text{.}\)</p>
 <span class="incontext"><a href="section2-3.html#p-153">in-context</a></span>
 </body>
 </html>

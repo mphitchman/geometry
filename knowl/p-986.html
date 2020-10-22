@@ -1,24 +1,69 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:55:00-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:44-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Now suppose \(P = (a,b,c)\) is a point on the sphere with \(|c| \neq 1\text{,}\) and \(Q = (-a,-b,-c)\) is diametrically opposed to \(P\text{.}\) The images of these two points under stereographic projection are</p>
-<div class="displaymath">
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<ol class="lower-alpha">
+<li>The center of the circle containing hyperbolic segment \(v_0v_1\text{,}\) denoted \(z_0\text{,}\) has real component equal to \(b\text{,}\) as indicated in <a class="xref" data-knowl="./knowl/fig-45octagon.html" title="Figure 5.4.22">Figure 5.4.22</a>. The point \(b\) is the midpoint of Euclidean segment \(v_0 v_0^*\text{,}\) where \(v_0 = r\) and so \(v_0^* = \frac{1}{r}\text{.}\)  Thus<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\phi(P) = \frac{a}{1-c} + \frac{b}{1-c} i~~\text{and}~~\phi(Q) = \frac{-a}{1+c} - \frac{b}{1+c} i.
+b = \frac{r + \frac{1}{r}}{2} = \frac{1+r^2}{2r}\text{.}
+\end{equation*}
+</div>Since \(\angle b0z_0 = \pi/8\) it follows that the imaginary component of \(z_0\) is \(b \cdot \tan(\pi/8)\text{.}\)  That is,<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+z_0 = \frac{1+r^2}{2r} + \frac{1+r^2}{2r}\tan(\pi/8)i\text{.}
 \end{equation*}
 </div>
-<span class="incontext"><a href="section6-1.html#p-986">in-context</a></span>
+</li>
+<li>Refer to the following diagram.  The angle at \(v_0\) in the octagon is \(\pi/4\) if and only if the angle \(\alpha = \angle v_1 v_0 0 = \pi/8\text{.}\)  But \(\alpha = \pi/8\) if and only if angle \(\tau\) in the figure equals \(\pi - \pi/2 - \pi/8 = 3\pi/8\text{.}\)  But right triangle \(\Delta v_0 b z_0\) ensures that \(\tau = 3\pi/8\) if and only if \(\beta = \pi/8\text{.}\)  Since \(\beta = \angle bz_0v_0\) we have proved the result.</li>
+<li>Consider the right triangle \(\Delta v_0 b z_0\text{.}\)  We know that \(\angle bz_0v_0 = \pi/8\) so<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\tan(\pi/8) = \frac{|b-v_0|}{|z_0-b|}=\frac{\frac{1+r^2}{2r} - r}{\frac{1+r^2}{2r}\tan(\pi/8)}\text{.}
+\end{equation*}
+</div>We solve this equation for \(r\) to obtain the result.</li>
+<li>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\tan^2(\pi/8) \amp= \frac{\frac{1+r^2}{2r} - r}{\frac{1+r^2}{2r}} \\
+\tan^2(\pi/8) \amp= \frac{1 + r^2 - 2r^2}{1+r^2} \\
+\tan^2(\pi/8) \amp= \frac{1 - r^2}{1+r^2} \\
+\tan^2(\pi/8) + \tan^2(\pi/8) r^2 \amp= 1 - r^2 \\
+(1+\tan^2(\pi/8))r^2 = 1 - \tan^2(\pi/8) \\
+r^2 = \frac{1 - \tan^2(\pi/8)}{1 + \tan^2(\pi/8)}. 
+\end{align*}
+</div>Using the trig identity<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\tan^2(x) = \frac{1-\cos(2x)}{1+\cos(2x)}
+\end{equation*}
+</div>it follows that<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\tan^2(\pi/8) = \frac{2-\sqrt{2}}{2 + \sqrt{2}}
+\end{equation*}
+</div>so that<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+r^2 \amp= \frac{1 - \frac{2-\sqrt{2}}{2 + \sqrt{2}}}{1+\frac{2-\sqrt{2}}{2 + \sqrt{2}}} \\
+\amp= \frac{2+\sqrt{2}- (2-\sqrt{2})}{2+\sqrt{2} + (2-\sqrt{2})}\\
+\amp= \frac{2\sqrt{2}}{4}\\
+\amp= \bigg(\frac{1}{2}\bigg)^{\frac{1}{2}}. 
+\end{align*}
+</div>It follows that<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+r = \bigg(\frac{1}{2}\bigg)^{\frac{1}{4}}\text{.}
+\end{equation*}
+</div>
+</li>
+</ol>
+<span class="incontext"><a href="section5-4.html#p-986">in-context</a></span>
 </body>
 </html>

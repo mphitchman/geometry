@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:59-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="solution solution-like">
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">7.3.4.1</span><span class="period">.</span>
+</h6>
+<ol class="lower-alpha">
+<li>
+<p>Consider the hyperbolic triangle in the following figure TODO, where \(p = r\) (with \(0 \lt r \lt s = 1/\sqrt{|k|}\)), and \(q = me^{i\gamma}\) (with \(0 \lt m \lt s\)).  The length of segment \(0r\) is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+a = d_{H_k}(0,r) = s\ln\left(\frac{s+r}{s-r}\right)\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">and since \(\sqrt{|k|}s = 1\) we use Exercise 5.4.11 to see</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\sinh(\sqrt{|k|}a) \amp= \sinh\left(\ln\left(\frac{s+r}{s-r}\right)\right)\\
+\amp= \frac{(s+r)^2-(s-r)^2}{2(s+r)(s-r)}\\
+\amp= \frac{2sr}{s^2-r^2}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Similarly,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\cosh(\sqrt{|k|}a) \amp= \cosh\bigg(\ln\bigg(\frac{s+r}{s-r}\bigg)\bigg)\\
+\amp= \frac{(s+r)^2+(s-r)^2}{2(s+r)(s-r)}\\
+\amp= \frac{s^2 + r^2}{s^2-r^2}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Turning to the other side,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+b = d_{H_k}(0,me^{i\gamma}) = s\ln\bigg(\frac{s+m}{s-m}\bigg)
+\end{equation*}
+</div>
+<p data-braille="continuation">so, following the derivation above,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\sinh(\sqrt{|k|}b) = \frac{2sm}{s^2-m^2}~~ \text{ and }~~\cosh(\sqrt{|k|}b) = \frac{s^2+m^2}{s^2-m^2}\text{.}
+\end{equation*}
+</div>
+<p>The third side has length</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+c = s\ln\left(\frac{s+|T(r)|}{s-|T(r)|}\right)
+\end{equation*}
+</div>
+<p data-braille="continuation">where</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = \frac{z - me^{i\gamma}}{1 + kme^{-i\gamma}z}
+\end{equation*}
+</div>
+<p data-braille="continuation">is a transformation in \(G_k\) taking \(me^{i\gamma}\) to 0.  Thus,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\cosh(\sqrt{|k|}c) \amp= \cosh\left(\ln\left(\frac{s+|T(r)|}{s-|T(r)|}\right)\right)\\
+\amp= \frac{(s+|T(r)|)^2+(s-|T(r)|)^2}{2(s+|T(r)|)(s-|T(r)|)}\\
+\amp= \frac{s^2 + |T(r)|^2}{s^2-|T(r)|^2}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Now,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+|T(r)|^2 \amp= \frac{|r - me^{i\gamma}|^2}{|1 + kmre^{-i\gamma}|^2}\\
+\amp= \frac{(r - me^{i\gamma})(r - me^{-i\gamma})}{(1+krme^{i\gamma})(1 + krme^{-i\gamma})}\\
+\amp= \frac{r^2 + m^2 - 2rm\cos(\gamma)}{1+(krm)^2 + 2krm\cos(\gamma)}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Then,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\cosh(\sqrt{|k|}c) \amp= \frac{s^2 + |T(r)|^2}{s^2-|T(r)|^2}\\
+\amp= \frac{s^2[1+(krm)^2 + 2krm\cos(\gamma)]+[r^2+m^2-2rm\cos(\gamma)]}{s^2[1+(krm)^2 + 2krm\cos(\gamma)]-[r^2+m^2-2rm\cos(\gamma)]}\\
+\amp= \frac{[s^2 + (skrm)^2-2rm\cos(\gamma)]+[r^2 + m^2 - 2rm\cos(\gamma)]}{[s^2 + (skrm)^2-2rm\cos(\gamma)]-[r^2 + m^2 - 2rm\cos(\gamma)]}\\
+\amp= \frac{s^2 + (skrm)^2 + r^2 + m^2 - 4rm\cos(\gamma)}{s^2 + (skrm)^2 - r^2 - m^2}\\
+\amp= \frac{s^4 + (s^2krm)^2 + s^2r^2 + s^2m^2 - 4rms^2\cos(\gamma)}{s^4+(s^2krm)^2 - s^2r^2-s^2m^2}\\
+\amp= \frac{(s^2 + r^2)(s^2+m^2) - (2rs)(2ms)\cos(\gamma)}{(s^2 - r^2)(s^2-m^2)}\\
+\amp=\cosh(\sqrt{|k|}a)\cosh(\sqrt{|k|}b)-\sinh(\sqrt{|k|}a)\sinh(\sqrt{|k|}b)\cos(\gamma)\text{.}
+\end{align*}
+</div>
+</li>
+<li>Using the expressions for \(\sinh(\sqrt{|k|}a)\) and \(\sinh(\sqrt{|k|}b)\) from part (a), and the correct expressions for the symmetric points of \(p = r\) and \(q = me^{i\gamma}\) (\(p^* = -\frac{1}{kr}\) and \(q^* = -\frac{1}{km}e^{i\gamma}\)) the general hyperbolic law of sines may be proved by following the proof of Exercise 5.4.12.</li>
+</ol>
+</div>
+<span class="incontext"><a href="section7-3.html#solution-173">in-context</a></span>
+</body>
+</html>

@@ -1,19 +1,40 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:59-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:43-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>What becomes of horocycles when we transfer the disk model of hyperbolic geometry to the upper half-plane model?</p>
-<span class="incontext"><a href="section5-5.html#p-968">in-context</a></span>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<ol class="lower-alpha">
+<li>Use l'Hôpital's rule twice on a ratio with indeterminate form \(\frac{0}{0}\text{.}\)<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\lim_{r \to 0} \frac{4\pi\sinh^2(r/2)}{\pi r^2} \amp= \lim_{r \to 0} \frac{8\sinh(\frac{r}{2})\cosh(\frac{r}{2})\frac{1}{2}}{2r} \\
+\amp= \lim_{r \to 0} \frac{4[\cosh^2(\frac{r}{2})\frac{1}{2}+\sinh^2(\frac{r}{2})\frac{1}{2}]}{2}\\
+\amp= \lim_{r \to 0} \left[\cosh^2\left(\frac{r}{2}\right)+\sinh^2\left(\frac{r}{2}\right)\right]\\
+\amp= 1\text{,}
+\end{align*}
+</div>since \(\cosh(0) = 1\) and \(\sinh(0)=0\text{.}\)</li>
+<li>
+<p xmlns:svg="http://www.w3.org/2000/svg">Again, use l'Hôpital's rule.</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\lim_{r \to 0}\frac{2\pi \sinh(r)}{2\pi r} \amp= \lim_{r \to 0}\frac{\cosh(r)}{1} \\
+\amp= 1 \text{,}
+\end{align*}
+</div>
+<p data-braille="continuation">since \(\cosh(0) = 1\text{.}\)</p>
+</li>
+</ol>
+<span class="incontext"><a href="section5-4.html#p-968">in-context</a></span>
 </body>
 </html>

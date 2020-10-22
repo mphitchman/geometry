@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:59-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="li"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">7.3.3.a</span><span class="period">.</span>
+</h6>Letting \(k \to 0^-\) is equivalent to letting \(s \to \infty\) where \(s = 1/\sqrt{|k|}\text{.}\) By Exercise 7.3.3 the distance from 0 to \(x\) (where \(0 \lt x \lt s\)) as \(s \to \infty\text{,}\) is<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\lim_{s \to \infty} s\ln\left(\frac{s + x}{s-x}\right) = \lim_{s \to \infty} \frac{\ln\left(\frac{s + x}{s-x}\right)}{s^{-1}}
+\end{equation*}
+</div>which has indeterminate form \(\frac{0}{0}\) as \(s \to \infty\text{.}\)  By l'Hôpital's rule (differentiating with respect to \(s\)), the limit is equal to<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\lim_{s \to \infty} \frac{\frac{1}{x+s}-\frac{1}{x-s}}{-s^{-2}}\amp= \lim_{s \to \infty} \frac{s^2}{s-x}-\frac{s^2}{s+x}\\
+\amp= \lim_{s \to \infty}\frac{2s^2x}{s^2 - x^2}\\
+\amp= \lim_{s \to \infty}\frac{2x}{1-\frac{x^2}{s^2}}\text{.}
+\end{align*}
+</div>This last limit is \(2x\text{,}\) which is twice the Euclidean distance from 0 to \(x\text{.}\)</article><span class="incontext"><a href="section7-3.html#li-290">in-context</a></span>
+</body>
+</html>

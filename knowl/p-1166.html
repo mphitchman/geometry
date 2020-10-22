@@ -1,20 +1,27 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:55:02-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:51-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In hyperbolic geometry \((\mathbb{D},{\cal H})\) and elliptic geometry \((\mathbb{P}^2,{\cal S})\text{,}\) the area of a triangle is determined by the sum of its angles. This is a significant difference from Euclidean geometry, in which a triangle with three given angles can be built to have any desired area. Does this mean that if a bug lives in a world adhering to elliptic geometry, it can never stumble upon a triangle with three right angles having area \(3\pi\text{?}\) Yes and no. In the elliptic geometry as defined in Chapter 6, no such triangle exists because a triangle with 3 right angles must have area \((\frac{\pi}{2} + \frac{\pi}{2} + \frac{\pi}{2})-\pi =
-\frac{\pi}{2}\text{.}\) So the answer appears to be yes. However, the elliptic geometry \((\mathbb{P}^2,{\cal S})\) models the geometry of the <em class="emphasis">unit</em> sphere, and this choice of sphere radius is somewhat arbitrary. What if the radius of the sphere changes? Imagine a triangle with three right angles having one vertex at the north pole and two vertices on the equator. If the sphere uniformly expands, the angles of the triangle will stay the same, but the area of the triangle will increase. So, if a bug is convinced she lives in a world with elliptic geometry, but is also convinced she has found a triangle with three right angles and area \(3\pi\text{,}\) the bug might be drawn to conclude she lives in a world modeled on a larger sphere than the unit 2-sphere.</p>
-<span class="incontext"><a href="chapter-7.html#p-1166">in-context</a></span>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>To determine the distance \(d_S(p,q)\) between arbitrary points in \(\mathbb{P}^2\text{,}\) we may first apply a transformation in \(\cal{S}\) that sends \(p\) to the origin, and \(q\) to a point on the positive real axis. By an appropriate choice of \(\theta\text{,}\) the transformation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z-p}{1+\overline{p}z}
+\end{equation*}
+</div>
+<p data-braille="continuation">will do the trick.  Now, \(T\) is a Möbius transformation of the entire extended plane, and it may take \(q\) outside the unit disk, in which case \(q_a\) will be mapped to a point on the real axis inside the unit disk.  So, either \(|T(q)|\) or \(|T(q_a)|\) will be a real number between 0 and 1.  If we call this number \(x\text{,}\) then \(d_S(p,q)=d_S(0,x)\text{,}\) since transformations in \(\cal{S}\) preserve distance between points.</p>
+<span class="incontext"><a href="section6-3.html#p-1166">in-context</a></span>
 </body>
 </html>

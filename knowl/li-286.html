@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:59-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="li"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">7.3.2.c</span><span class="period">.</span>
+</h6>Suppose the circle with hyperbolic radius \(r\) is centered at the origin. Let \(x\) denote its Euclidean radius. The area of the circle, in terms of the Euclidean radius \(x\text{,}\) is<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+A \amp= \int_0^{2\pi}\int_0^x\frac{4r}{(1+kr^2)^2}~dr~d\theta\\
+\amp= \int_0^{2\pi}\frac{-2}{k(1+kr^2)}\bigg|_0^x~d\theta\\
+\amp= 2\pi\left(\frac{2}{k}-\frac{2}{k(1+kx^2)}\right)\\
+\amp= 4\pi\frac{k^2x^2}{k^2(1+kx^2)}\\
+\amp= 4\pi \frac{x^2}{1+kx^2}\text{.}
+\end{align*}
+</div>To express the area in terms of the hyperbolic radius \(r\text{,}\) set<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x = s\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}
+\end{equation*}
+</div>so that<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+A\amp= 4\pi s^2 \frac{\left(\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}\right)^2}{1-\left(\frac{e^{\frac{r}{s}}-1}{e^{\frac{r}{s}}+1}\right)}\\
+\amp= \frac{4\pi s^2 (e^{\frac{r}{s}}-1)^2}{(e^{\frac{r}{s}}+1)^2-(e^{\frac{r}{s}}-1)^2}\\
+\amp= 4\pi s^2 \frac{(e^{\frac{r}{s}}-1)^2}{4e^{\frac{r}{s}}}\\
+\amp= 4\pi s^2\left(\frac{e^{\frac{r}{s}}-1}{2e^{\frac{r}{2s}}}\right)^2\\
+\amp= 4\pi s^2\left(\frac{e^{\frac{r}{2s}}-e^{-\frac{r}{2s}}}{2}\right)^2\\
+\amp= 4\pi s^2 \sinh^2\left(\frac{r}{2s}\right)\text{.}
+\end{align*}
+</div></article><span class="incontext"><a href="section7-3.html#li-286">in-context</a></span>
+</body>
+</html>

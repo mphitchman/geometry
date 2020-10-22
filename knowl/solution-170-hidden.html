@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:58-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>If \(T\) is a Möbius transformation in \(G_k\) where \(k \lt 0\text{,}\) then \(T\) sends \(S_k\) to itself, and some point \(z_0\) in \(S_k\) gets sent to 0. Since the circle at infinity is mapped to itself and \(T\) must preserve symmetry points, the point symmetric to \(z_0\) with respect to the circle at infinity, \(z_0^* = \frac{-1}{k\overline{z}}\text{,}\) gets sent to \(\infty\text{.}\) Moreover, some point \(z_1\) on the circle at infinity (so \(|z_1| = \frac{1}{\sqrt{|k|}}\)) gets sent to the point \(\frac{1}{\sqrt{|k|}}\text{.}\) The transformation that moves the three points \(z_0\text{,}\) \(z_0^*\text{,}\) and \(z_1\) as advertised may be described algebraically by a scaled version of the cross ratio:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = \frac{z-z_0}{z-z_0^*}\cdot \frac{z_1 - z_0^*}{z_1 - z_0}\cdot \frac{1}{\sqrt{|k|}}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">But then,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+T(z) \amp= \frac{z - z_0}{z + \frac{1}{k\overline{z_0}}}\cdot \frac{z_1+ \frac{1}{k\overline{z_0}}}{z_1 - z_0}\cdot \frac{1}{\sqrt{|k|}}\\
+\amp= \frac{z-z_0}{k\overline{z_0}z+1}\cdot \frac{k\overline{z_0}z_1 + 1}{z_1 - z_0}\cdot\frac{1}{\sqrt{|k|}}\\
+\amp= \frac{z-z_0}{k\overline{z_0}z+1}\cdot \frac{k\overline{z_0}z_1 -kz_1\overline{z_1}}{z_1 - z_0}\cdot\frac{1}{\sqrt{|k|}}\\
+\amp=\frac{z-z_0}{k\overline{z_0}z+1}\cdot \frac{kz_1(\overline{z_0} -\overline{z_1})}{z_1 - z_0}\cdot\frac{1}{\sqrt{|k|}}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Now, we claim</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{\sqrt{|k|}}\cdot\frac{kz_1(\overline{z_0} -\overline{z_1})}{z_1 - z_0} = e^{i\theta}
+\end{equation*}
+</div>
+<p data-braille="continuation">for some \(\theta\text{.}\) Indeed,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\left|\frac{1}{\sqrt{|k|}}\cdot\frac{kz_1(\overline{z_0} -\overline{z_1})}{z_1 - z_0}\right| = |z_1|\sqrt{|k|} = 1\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">and it follows that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z}\text{.}
+\end{equation*}
+</div>
+</div></body>
+</html>

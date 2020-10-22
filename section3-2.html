@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:27-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:23-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Inversion</title>
+<title>GCT Inversion</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section3-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section3-3.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section3-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section3-3.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2" class="active">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,325 +146,303 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section3-2"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section3-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Inversion</span>
 </h2>
-<a href="section3-2.html" class="permalink">¶</a><section class="introduction" id="introduction-11"><p id="p-316">Inversion offers a way to reflect points across a circle. This transformation plays a central role in visualizing the transformations of non-Euclidean geometry, and this section is the foundation of much of what follows.</p>
-<p id="p-317">Suppose \(C\) is a circle with radius \(r\) and center \(z_0\text{.}\) <dfn class="terminology">Inversion in the circle \(C\)</dfn> sends a point \(z \neq z_0\) to the point \(z^*\) defined as follows: First, construct the ray from \(z_0\) through \(z\text{.}\) Then, let \(z^*\) be the unique point on this ray that satisfies the equation</p>
+<section class="introduction" id="introduction-5"><p id="p-333">Inversion offers a way to reflect points across a circle. This transformation plays a central role in visualizing the transformations of non-Euclidean geometry, and this section is the foundation of much of what follows.</p></section><p id="p-334">Suppose \(C\) is a circle with radius \(r\) and center \(z_0\text{.}\) <dfn class="terminology">Inversion in the circle \(C\)</dfn> sends a point \(z \neq z_0\) to the point \(z^*\) defined as follows: First, construct the ray from \(z_0\) through \(z\text{.}\) Then, let \(z^*\) be the unique point on this ray that satisfies the equation</p>
 <div class="displaymath">
 \begin{equation*}
-|z-z_0|\cdot|z^*-z_0| = r^2.
+|z-z_0|\cdot|z^*-z_0| = r^2\text{.}
 \end{equation*}
 </div>
-<p>The point \(z^*\) is called the <dfn class="terminology">symmetric point</dfn> to \(z\) with respect to \(C\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-inversion.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-318">Inversion in a circle centered at \(z_0\) is a transformation on the set \(\mathbb{C}-\{z_0\}\) consisting of all complex numbers except \(z_0\text{.}\) We usually denote inversion in the circle \(C\) by by \(i_C(z) =
-z^*\text{.}\) In the next section we will discuss how to extend this transformation in a way to include the center \(z_0\text{.}\)</p>
-<p id="p-319">You will work through several features of circle inversions in the exercises, including how to construct symmetry points with compass and ruler (see <a knowl="./knowl/fig-constructsymm.html" title="Figure 3.2.18">Figure 3.2.18</a>). We note here that \(i_C\) fixes all the points on the circle \(C\text{,}\) and points inside the circle get mapped to points outside the circle and vice versa. The closer \(z\) gets to the center of the circle, the further \(i_C(z)\) gets from the circle.</p>
-<article class="example-like" id="example-inv-S1"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.2.1</span> <span class="title">Inversion in the unit circle</span>
+<p data-braille="continuation">The point \(z^*\) is called the <dfn class="terminology">symmetric point</dfn> to \(z\) with respect to \(C\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-inversion.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-335">Inversion in a circle centered at \(z_0\) is a transformation on the set \(\mathbb{C}-\{z_0\}\) consisting of all complex numbers except \(z_0\text{.}\) We usually denote inversion in the circle \(C\) by by \(i_C(z) = z^*\text{.}\) In the next section we will discuss how to extend this transformation in a way to include the center \(z_0\text{.}\)</p>
+<p id="p-336">You will work through several features of circle inversions in the exercises, including how to construct symmetry points with compass and ruler (see <a class="xref" data-knowl="./knowl/fig-constructsymm.html" title="Figure 3.2.18">Figure 3.2.18</a>). We note here that \(i_C\) fixes all the points on the circle \(C\text{,}\) and points inside the circle get mapped to points outside the circle and vice versa. The closer \(z\) gets to the center of the circle, the further \(i_C(z)\) gets from the circle.</p>
+<article class="example example-like" id="example-inv-S1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Inversion in the unit circle.</span>
 </h6>
-<p id="p-320">The <dfn class="terminology">unit circle</dfn> in \(\mathbb{C}\text{,}\) denoted \(\mathbb{S}^1\text{,}\) is the circle with center \(z_0 = 0\) and radius \(r = 1\text{.}\) The equation for the point \(z^*\) symmetric to a point \(z \neq 0\) with respect to \(\mathbb{S}^1\) thus reduces from \(|z-z_0|\cdot|z^*-z_0| = r^2\) to</p>
+<p id="p-337">The <dfn class="terminology">unit circle</dfn> in \(\mathbb{C}\text{,}\) denoted \(\mathbb{S}^1\text{,}\) is the circle with center \(z_0 = 0\) and radius \(r = 1\text{.}\) The equation for the point \(z^*\) symmetric to a point \(z \neq 0\) with repsect to \(\mathbb{S}^1\) thus reduces from \(|z-z_0|\cdot|z^*-z_0| = r^2\) to</p>
 <div class="displaymath">
 \begin{equation*}
-|z|\cdot|z^*| = 1.
+|z|\cdot|z^*| = 1\text{.}
 \end{equation*}
 </div>
-<p id="p-321">Moreover, \(z^*\) is just a scaled version of \(z\) since they are on the same ray through the origin. That is, \(z^* = kz\) for some positive real number \(k\text{.}\) Plug this description of \(z^*\) into the symmetry point equation to see \(|z| \cdot |kz| = 1,\) which implies \(k = 1/|z|^2\text{.}\)  Thus, \(z^*=(1/|z|^2)z\text{.}\)  Moreover, \(|z|^2 = z \cdot \overline{z}\text{,}\) so inversion in the unit circle \(\mathbb{S}^1\) may be written as</p>
+<p id="p-338">Moreover, \(z^*\) is just a scaled version of \(z\) since they are on the same ray through the origin. That is, \(z^* = kz\) for some positive real number \(k\text{.}\) Plug this description of \(z^*\) into the symmetry point equation to see \(|z| \cdot |kz| = 1\text{,}\) which implies \(k = 1/|z|^2\text{.}\)  Thus, \(z^*=(1/|z|^2)z\text{.}\)  Moreover, \(|z|^2 = z \cdot \overline{z}\text{,}\) so inversion in the unit circle \(\mathbb{S}^1\) may be written as</p>
 <div class="displaymath">
 \begin{equation*}
-i_{\mathbb{S}^1}(z) =  1/\overline{z}.
+i_{\mathbb{S}^1}(z) =  1/\overline{z}\text{.}
 \end{equation*}
-</div></article><p id="p-322">The following formula for inversion about an arbitrary circle can be obtained by composition of inversion in the unit circle with some general linear transformations.  The details are left to <a knowl="./knowl/hmk_invformula.html" title="Exercise 3.2.1">Exercise 3.2.1</a>.</p>
-<p id="p-323"><article class="assemblage-like" id="assemblage-4"><h6 class="heading"><span class="title">Inversion in the circle \(C\) centered at \(z_0\) with radius \(r\)</span></h6>
-<p id="p-324">Inversion in the circle \(C\) centered at \(z_0\) with radius \(r\) is given by</p>
+</div></article><p id="p-339">The following formula for inversion about an arbitrary circle can be obtained by composition of inversion in the unit circle with some general linear transformations.  The details are left to <a class="xref" data-knowl="./knowl/hmk_invformula.html" title="Exercise 3.2.1">Exercise 3.2.1</a>.</p>
+<p id="p-340"><article class="assemblage assemblage-like" id="assemblage-4"><h6 class="heading"><span class="title">Inversion in the circle \(C\) centered at \(z_0\) with radius \(r\).</span></h6>
+<p id="p-341">Inversion in the circle \(C\) centered at \(z_0\) with radius \(r\) is given by</p>
 <div class="displaymath">
 \begin{align*}
-i_C(z) \amp = \frac{r^2}{(\overline{z-z_0})} + z_0.
+i_C(z) \amp = \frac{r^2}{(\overline{z-z_0})} + z_0\text{.}
 \end{align*}
 </div></article></p>
-<article class="example-like" id="example-inv-figs"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.2.2</span> <span class="title">Inverting some figures in a circle</span>
+<article class="example example-like" id="example-inv-figs"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Inverting some figures in a circle.</span>
 </h6>
-<p id="p-325">Below we have inverted a circle, the letter ‘M,’ and a small grid across the circle \(C\) centered at \(z_0\text{.}\) It looks as if the image of the circle is another circle, which we will soon prove is the case. We will also prove that lines not intersecting the center of \(C\) get inverted into circles. It follows that the line segments in the ‘M’ get mapped to arcs of circles.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:17.5%;margin-right:17.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-invsample.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-326">As <a knowl="./knowl/example-inv-figs.html" title="Example 3.2.2: Inverting some figures in a circle">Example 3.2.2</a> suggests, the distinction between lines and circles gets muddied a bit by inversion. A line can get mapped to a circle and vice versa. In what follows, it will be helpful to view reflection in a line and inversion in a circle as special cases of the same general map. To arrive at this view we first make lines and circles special cases of the same general type of figure.</p>
-<article class="definition-like" id="definition-6"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">3.2.3</span>
+<p id="p-342">Below we have inverted a circle, the letter ‘M,’ and a small grid across the circle \(C\) centered at \(z_0\text{.}\) It looks as if the image of the circle is another circle, which we will soon prove is the case. We will also prove that lines not intersecting the center of \(C\) get inverted into circles. It follows that the line segments in the ‘M’ get mapped to arcs of circles.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17.5%;margin-right:17.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-invsample.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-343">As <a class="xref" data-knowl="./knowl/example-inv-figs.html" title="Example 3.2.2: Inverting some figures in a circle">Example 3.2.2</a> suggests, the distinction between lines and circles gets muddied a bit by inversion. A line can get mapped to a circle and vice versa. In what follows, it will be helpful to view reflection in a line and inversion in a circle as special cases of the same general map. To arrive at this view we first make lines and circles special cases of the same general type of figure.</p>
+<article class="definition definition-like" id="definition-6"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
 </h6>
-<p id="p-327">A <dfn class="terminology">cline</dfn> is a Euclidean circle or line. Any cline can be described algebraically by an equation of the form</p>
+<p id="p-344">A <dfn class="terminology">cline</dfn> is a Euclidean circle or line. Any cline can be described algebraically by an equation of the form</p>
 <div class="displaymath">
 \begin{equation*}
 cz\overline{z} + \alpha  z + \overline{\alpha}\overline{z} + d = 0
 \end{equation*}
 </div>
-<p>where \(z = x + yi\) is a complex variable, \(\alpha\) is a complex constant, and \(c, d\) are real numbers. If \(c = 0\) the equation describes a line, and if \(c
-\neq 0\) and \(|\alpha|^2 &gt; cd\) the equation describes a circle.</p></article><p id="p-328">The word “cline” (pronounced ‘Klein’) might seem a bit forced, but it represents the shift in thinking we aim to achieve. We need to start thinking of lines and circles as different manifestations of the same general class of objects. What class? The class of clines.</p>
-<p id="p-329">Letting \(\alpha = a + bi\) and \(z = x + yi\text{,}\) the cline equation \(cz\overline{z} + \alpha  z + \overline{\alpha} \overline{z} + d = 0\) can be written as</p>
+<p data-braille="continuation">where \(z = x + yi\) is a complex variable, \(\alpha\) is a complex constant, and \(c, d\) are real numbers. If \(c = 0\) the equation describes a line, and if \(c
+\neq 0\) and \(|\alpha|^2 &gt; cd\) the equation describes a circle.</p></article><p id="p-345">The word “cline” (pronounced ‘Klein’) might seem a bit forced, but it represents the shift in thinking we aim to achieve. We need to start thinking of lines and circles as different manifestations of the same general class of objects. What class? The class of clines.</p>
+<p id="p-346">Letting \(\alpha = a + bi\) and \(z = x + yi\text{,}\) the cline equation \(cz\overline{z} + \alpha  z + \overline{\alpha} \overline{z} + d = 0\) can be written as</p>
 <div class="displaymath">
 \begin{equation*}
 c(x^2+y^2)+[ax - by + (ay+bx)i]+[ax-by - (ay+bx)i] + d = 0
 \end{equation*}
 </div>
-<p>which simplifies to</p>
+<p data-braille="continuation">which simplifies to</p>
 <div class="displaymath">
 \begin{equation*}
-c(x^2+y^2) + 2(ax - by)  + d = 0.
+c(x^2+y^2) + 2(ax - by)  + d = 0\text{.}
 \end{equation*}
 </div>
-<p id="p-330">If \(c = 0\) then we have the equation of a line, and if \(c \neq 0\) we have the equation of a circle, so long as \(a^2 + b^2 &gt; cd\text{.}\) In this case, the equation can be put into standard form by completing the square. Let's run through this.</p>
-<p id="p-331">If \(c \neq 0\text{,}\)</p>
+<p id="p-347">If \(c = 0\) then we have the equation of a line, and if \(c \neq 0\) we have the equation of a circle, so long as \(a^2 + b^2 &gt; cd\text{.}\) In this case, the equation can be put into standard form by completing the square. Let's run through this.</p>
+<p id="p-348">If \(c \neq 0\text{,}\)</p>
 <div class="displaymath">
 \begin{align*}
 c(x^2+y^2) + 2ax - 2by + d \amp = 0\\
 x^2 + \frac{2a}{c}x + y^2 - \frac{2b}{c}y \amp = -\frac{d}{c}\\
-x^2 + \frac{2a}{c}x + \bigg(\frac{a}{c}\bigg)^2 + y^2 - \frac{2b}{c}y + \bigg(\frac{b}{c}\bigg)^2 \amp = -\frac{d}{c}+\bigg(\frac{a}{c}\bigg)^2+\bigg(\frac{b}{c}\bigg)^2\\
-\bigg(x+\frac{a}{c}\bigg)^2+\bigg(y-\frac{b}{c}\bigg)^2\amp =\frac{ a^2
-+ b^2-cd}{c^2}
+x^2 + \frac{2a}{c}x + \bigg(\frac{a}{c}\bigg)^2 + y^2 - \frac{2b}{c}y + \left(\frac{b}{c}\right)^2 \amp = -\frac{d}{c}+\left(\frac{a}{c}\right)^2+\left(\frac{b}{c}\right)^2\\
+\left(x+\frac{a}{c}\right)^2+\left(y-\frac{b}{c}\right)^2\amp =\frac{ a^2 + b^2-cd}{c^2}
 \end{align*}
 </div>
-<p>and we have the equation of a circle so long as the right-hand side (the radius term) is positive.  In other words, we have the equation of a circle so long as \(a^2 + b^2&gt;cd\text{.}\)  We summarize this information below.</p>
-<p id="p-332"><article class="assemblage-like" id="assemblage-5"><h6 class="heading"><span class="title">The cline equation</span></h6>
-<p id="p-333">Given \(c, d \in \mathbb{R}\text{,}\) \(\alpha \in \mathbb{C}\text{,}\) if \(c \neq 0\text{,}\) the cline equation</p>
+<p data-braille="continuation">and we have the equation of a circle so long as the right-hand side (the radius term) is positive.  In other words, we have the equation of a circle so long as \(a^2 + b^2&gt;cd\text{.}\)  We summarize this information below.</p>
+<p id="p-349"><article class="assemblage assemblage-like" id="assemblage-5"><h6 class="heading"><span class="title">The cline equation.</span></h6>
+<p id="p-350">Given \(c, d \in \mathbb{R}\text{,}\) \(\alpha \in \mathbb{C}\text{,}\) if \(c \neq 0\text{,}\) the cline equation</p>
 <div class="displaymath">
 \begin{equation*}
 cz\overline{z} + \alpha z + \overline{\alpha}
 \overline{z} + d = 0
 \end{equation*}
 </div>
-<p>gives a circle with center \(z_0\) and radius \(r\text{,}\) where</p>
+<p data-braille="continuation">gives a circle with center \(z_0\) and radius \(r\text{,}\) where</p>
 <div class="displaymath">
 \begin{equation*}
 z_0=\bigg(-\frac{\text{Re}(\alpha)}{c},
 \frac{\text{Im}(\alpha)}{c}\bigg)~~~\text{and}~~~ r =
-\sqrt{\frac{|\alpha|^2-cd}{c^2}},
+\sqrt{\frac{|\alpha|^2-cd}{c^2}}\text{,}
 \end{equation*}
 </div>
-<p>so long as \(|\alpha|^2 &gt; cd\text{.}\)  If \(c = 0\text{,}\) the cline equation gives a line.</p></article></p>
-<p id="p-334">From now on, if you read the phrase “inversion in a cline,” know that this means inversion in a circle or reflection about a line, and if someone hands you a cline \(C\text{,}\) you might say, “Thanks!  By the way, is this a line or a circle?”</p>
-<p id="p-335">We note here the construction of a cline through three points in \(\mathbb{C}\text{.}\) This construction is used often in later chapters to generate figures in non-Euclidean geometry.</p>
-<article class="theorem-like" id="th-unique-cline"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.2.4</span>
+<p data-braille="continuation">so long as \(|\alpha|^2 &gt; cd\text{.}\)  If \(c = 0\text{,}\) the cline equation gives a line.</p></article></p>
+<p id="p-351">From now on, if you read the phrase “inversion in a cline,” know that this means inversion in a circle or reflection about a line, and if someone hands you a cline \(C\text{,}\) you might say, “Thanks!  By the way, is this a line or a circle?”</p>
+<p id="p-352">We note here the construction of a cline through three points in \(\mathbb{C}\text{.}\) This construction is used often in later chapters to generate figures in non-Euclidean geometry.</p>
+<article class="theorem theorem-like" id="th-unique-cline"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
 </h6>
-<p id="p-336">There exists a unique cline through any three distinct points in \(\mathbb{C}\text{.}\)</p></article><article class="hiddenproof" id="proof-8"><a knowl="" class="id-ref" refid="hk-proof-8"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-8" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-337">Suppose \(u\text{,}\) \(v\text{,}\) and \(w\) are distinct complex numbers. If \(v\) is on the line through \(u\) and \(w\) then this line is the unique cline through the three points.  Otherwise, the three points do not lie on a single line, and we may build a circle through these three points as demonstrated in <a knowl="./knowl/fig-3ptcircle.html" title="Figure 3.2.5">Figure 3.2.5</a>. Construct the perpendicular bisector to segment \(uv\text{,}\) and the perpendicular bisector to segment \(vw\text{.}\) These bisectors will intersect because the three points are not collinear. If we call the point of intersection \(z_0\text{,}\) then the circle centered at \(z_0\) through \(w\) is the unique cline through the three points.</p></article></div>
-<figure class="figure-like" id="fig-3ptcircle"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-3ptcircle.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.2.5</span> Constructing the unique circle through three points not on a single line.</figcaption></figure><article class="theorem-like" id="th_invclines"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.2.6</span>
+<p id="p-353">There exists a unique cline through any three distinct points in \(\mathbb{C}\text{.}\)</p></article><article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-8"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-8"><article class="hiddenproof"><p id="p-354">Suppose \(u\text{,}\) \(v\text{,}\) and \(w\) are distinct complex numbers. If \(v\) is on the line through \(u\) and \(w\) then this line is the unique cline through the three points.  Otherwise, the three points do not lie on a single line, and we may build a circle through these three points as demonstrated in <a class="xref" data-knowl="./knowl/fig-3ptcircle.html" title="Figure 3.2.5">Figure 3.2.5</a>. Construct the perpendicular bisector to segment \(uv\text{,}\) and the perpendicular bisector to segment \(vw\text{.}\) These bisectors will intersect because the three points are not collinear. If we call the point of intersection \(z_0\text{,}\) then the circle centered at \(z_0\) through \(w\) is the unique cline through the three points.</p></article></div>
+<figure class="figure figure-like" id="fig-3ptcircle"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-3ptcircle.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.5<span class="period">.</span></span><span class="space"> </span>Constructing the unique circle through three points not on a single line.</figcaption></figure><article class="theorem theorem-like" id="th_invclines"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
 </h6>
-<p id="p-338">Inversion in a circle maps clines to clines. In particular, if a cline goes through the center of the circle of inversion, its image will be a line; otherwise the image of a cline will be a circle.</p></article><article class="hiddenproof" id="proof-9"><a knowl="" class="id-ref" refid="hk-proof-9"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-9" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-339">We prove the result in the case of inversion in the unit circle. The general proof will then follow, since any inversion is the composition of this particular inversion together with translations and dilations, which also preserve clines by <a knowl="./knowl/thm_gltpreservecline.html" title="Theorem 3.1.9">Theorem 3.1.9</a>.</p>
-<p id="p-340">Suppose the cline \(C\) is described by the cline equation</p>
+<p id="p-355">Inversion in a circle maps clines to clines. In particular, if a cline goes through the center of the circle of inversion, its image will be a line; otherwise the image of a cline will be a circle.</p></article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-9"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><p id="p-356">We prove the result in the case of inversion in the unit circle. The general proof will then follow, since any inversion is the composition of this particular inversion together with translations and dilations, which also preserve clines by <a class="xref" data-knowl="./knowl/thm_gltpreservecline.html" title="Theorem 3.1.9">Theorem 3.1.9</a>.</p>
+<p id="p-357">Suppose the cline \(C\) is described by the cline equation</p>
 <div class="displaymath">
 \begin{equation*}
-cz\overline{z}+\alpha z + \overline{\alpha} \overline{z} +
-d = 0,
+cz\overline{z}+\alpha z + \overline{\alpha} \overline{z} + d = 0\text{,}
 \end{equation*}
 </div>
-<p>where \(c, d \in \mathbb{R}\text{,}\) \(\alpha \in \mathbb{C}\text{.}\)</p>
-<p id="p-341">We want to show that the image of this cline under inversion in the unit circle, \(i_{\mathbb{S}^1}(C)\text{,}\) is also a cline. Well, \(i_{\mathbb{S}^1}(C)\)  consists of all points \(w = 1/\overline{z}\text{,}\) where \(z\) satisfies the cline equation for \(C\text{.}\)   We show that all such \(w\) live on a cline.</p>
-<p id="p-342">If \(z \neq 0\) then we may multiply each side of the cline equation by \(1/(z\cdot \overline{z})\) to obtain</p>
+<p data-braille="continuation">where \(c, d \in \mathbb{R}\text{,}\) \(\alpha \in \mathbb{C}\text{.}\)</p>
+<p id="p-358">We want to show that the image of this cline under inversion in the unit circle, \(i_{\mathbb{S}^1}(C)\text{,}\) is also a cline. Well, \(i_{\mathbb{S}^1}(C)\) consists of all points \(w = 1/\overline{z}\text{,}\) where \(z\) satisfies the cline equation for \(C\text{.}\)   We show that all such \(w\) live on a cline.</p>
+<p id="p-359">If \(z \neq 0\) then we may multiply each side of the cline equation by \(1/(z\cdot \overline{z})\) to obtain</p>
 <div class="displaymath">
 \begin{equation*}
-c +\alpha \frac{1}{\overline{z}} + \overline{\alpha} \frac{1}{z} +d\frac{1}{z}\frac{1}{\overline{z}}=0.
+c +\alpha \frac{1}{\overline{z}} + \overline{\alpha} \frac{1}{z} +d\frac{1}{z}\frac{1}{\overline{z}}=0\text{.}
 \end{equation*}
 </div>
-<p id="p-343">But since \(w = 1/\overline{z}\) and \(\overline{w} = 1/z\text{,}\) this equation reduces to</p>
+<p id="p-360">But since \(w = 1/\overline{z}\) and \(\overline{w} = 1/z\text{,}\) this equation reduces to</p>
 <div class="displaymath">
 \begin{equation*}
 c +\alpha\cdot w + \overline{\alpha} \cdot \overline{w} +
-dw\overline{w}=0,
+dw\overline{w}=0\text{,}
 \end{equation*}
 </div>
-<p>or</p>
+<p data-braille="continuation">or</p>
 <div class="displaymath">
 \begin{equation*}
-dw\overline{w} + \alpha  \cdot w + \overline{\alpha} \cdot \overline{w} + c = 0.
+dw\overline{w} + \alpha  \cdot w + \overline{\alpha} \cdot \overline{w} + c = 0\text{.}
 \end{equation*}
 </div>
-<p id="p-344">Thus, the image points \(w\) form a cline equation. If \(d = 0\) then the original cline \(C\) passed through the origin, and the image cline is a line. If \(d \neq 0\) then \(C\) did not pass through the origin, and the image cline is a circle. (In fact, we must also check that \(|\alpha |^2 &gt; dc\text{.}\) This is the case because the original cline equation ensures \(|\alpha|^2 &gt; cd\text{.}\))</p></article></div>
-<p id="p-345">We will call two clines <dfn class="terminology">orthogonal</dfn> if they intersect at right angles. For instance, a line is orthogonal to a circle if and only if it goes through the center of the circle.   One very important feature of inversion in \(C\) is that clines orthogonal to \(C\) get inverted to themselves.  To prove this fact, we first prove the following result, which can be found in Euclid's <em class="emphasis">Elements</em> (Book III, Proposition 36).</p>
-<article class="theorem-like" id="lemma-III36"><h6 class="heading">
-<span class="type">Lemma</span> <span class="codenumber">3.2.7</span>
+<p id="p-361">Thus, the image points \(w\) form a cline equation. If \(d = 0\) then the original cline \(C\) passed through the origin, and the image cline is a line. If \(d \neq 0\) then \(C\) did not pass through the origin, and the image cline is a circle. (In fact, we must also check that \(|\alpha |^2 &gt; dc\text{.}\) This is the case because the original cline equation ensures \(|\alpha|^2 &gt; cd\text{.}\))</p></article></div>
+<p id="p-362">We will call two clines <dfn class="terminology">orthogonal</dfn> if they intersect at right angles. For instance, a line is orthogonal to a circle if and only if it goes through the center of the circle.   One very important feature of inversion in \(C\) is that clines orthogonal to \(C\) get inverted to themselves.  To prove this fact, we first prove the following result, which can be found in Euclid's <em class="emphasis">Elements</em> (Book III, Proposition 36).</p>
+<article class="lemma theorem-like" id="lemma-III36"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
 </h6>
-<p id="p-346">Suppose \(C\) is the circle with radius \(r\) centered at \(o\text{,}\) and \(p\) is a point outside \(C\text{.}\)  Let \(s = |p-o|\text{.}\)  If a line through \(p\) intersects \(C\) at points \(m\) and \(n\text{,}\) then</p>
+<p id="p-363">Suppose \(C\) is the circle with radius \(r\) centered at \(o\text{,}\) and \(p\) is a point outside \(C\text{.}\)  Let \(s = |p-o|\text{.}\)  If a line through \(p\) intersects \(C\) at points \(m\) and \(n\text{,}\) then</p>
 <div class="displaymath">
 \begin{equation*}
-|p-m|\cdot|p-n|=s^2-r^2.
+|p-m|\cdot|p-n|=s^2-r^2\text{.}
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-10"><a knowl="" class="id-ref" refid="hk-proof-10"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-10" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-347">Suppose the line through \(p\) does not pass through the center of \(C\text{,}\) as in the diagram below.  Let \(q\) be the midpoint of segment \(mn\text{,}\) and let \(d = |q - o|\) as in the diagram.  Note also that the line through \(q\) and \(o\) is the perpendicular bisector of segment \(mn\text{.}\)  In particular, \(|m-q|=|q-n|\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-prop36bookIII.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-348">The Pythagorean theorem applied to \(\Delta pqo\) gives</p>
+</div></article><article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><p id="p-364">Suppose the line through \(p\) does not pass through the center of \(C\text{,}\) as in the diagram below.  Let \(q\) be the midpoint of segment \(mn\text{,}\) and let \(d = |q - o|\) as in the diagram.  Note also that the line through \(q\) and \(o\) is the perpendicular bisector of segment \(mn\text{.}\)  In particular, \(|m-q|=|q-n|\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-prop36bookIII.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-365">The Pythagorean theorem applied to \(\Delta pqo\) gives</p>
 <div class="displaymath">
 \begin{equation*}
 |p-q|^2 + d^2 = s^2,\tag{1}
 \end{equation*}
 </div>
-<p>and the Pythagorean theorem applied to \(\Delta nqo\) gives</p>
+<p data-braille="continuation">and the Pythagorean theorem applied to \(\Delta nqo\) gives</p>
 <div class="displaymath">
 \begin{equation*}
 |q-n|^2 + d^2 = r^2. \tag{2}
 \end{equation*}
 </div>
-<p>By subtracting equation (2) from (1), we have</p>
+<p data-braille="continuation">By subtracting equation (2) from (1), we have</p>
 <div class="displaymath">
 \begin{equation*}
-|p-q|^2-|q-n|^2 = s^2-r^2,
+|p-q|^2-|q-n|^2 = s^2-r^2\text{,}
 \end{equation*}
 </div>
-<p>which factors as</p>
+<p data-braille="continuation">which factors as</p>
 <div class="displaymath">
 \begin{equation*}
-(|p-q|-|q-n|)(|p-q|+|q-n|) = s^2-r^2.
+(|p-q|-|q-n|)(|p-q|+|q-n|) = s^2-r^2\text{.}
 \end{equation*}
 </div>
-<p>Since \(|p-q|-|q-n| = |p-m|\) and \(|p-q| + |q-n| = |p-n|\text{,}\) the result follows.</p>
-<p id="p-349">The case that the line through \(p\) goes through the center of \(C\) is left as an exercise.</p></article></div>
-<p id="p-350">We note that the quantity \(s^2-r^2\) in the previous lemma is often called the power of the point \(p\) with respect to the circle \(C\text{.}\) That is, if circle \(C\) has radius \(r\) and a point \(p\) is a distance \(s\) from the center of \(C\) then the quantity \(s^2-r^2\) is called the <dfn class="terminology">power of the point</dfn> \(p\text{.}\)</p>
-<article class="theorem-like" id="th_orthcircchar"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.2.8</span>
+<p data-braille="continuation">Since \(|p-q|-|q-n| = |p-m|\) and \(|p-q| + |q-n| = |p-n|\text{,}\) the result follows.</p>
+<p id="p-366">The case that the line through \(p\) goes through the center of \(C\) is left as an exercise.</p></article></div>
+<p id="p-367">We note that the quantity \(s^2-r^2\) in the previous lemma is often called the power of the point \(p\) with respect to the circle \(C\text{.}\) That is, if circle \(C\) has radius \(r\) and a point \(p\) is a distance \(s\) from the center of \(C\) then the quantity \(s^2-r^2\) is called the <dfn class="terminology">power of the point</dfn> \(p\text{.}\)</p>
+<article class="theorem theorem-like" id="th_orthcircchar"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span>
 </h6>
-<p id="p-351">Suppose \(C\) is a circle in \(\mathbb{C}\) centered at \(z_0\text{,}\) and \(z\neq z_0\) is not on \(C\text{.}\) A cline through \(z\) is orthogonal to \(C\) if and only if it goes through \(z^*\text{,}\) the point symmetric to \(z\) with respect to \(C\text{.}\)</p></article><article class="hiddenproof" id="proof-11"><a knowl="" class="id-ref" refid="hk-proof-11"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-11" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-352">Assume \(C\) is the circle of radius \(r\) centered at \(z_0\text{,}\) and \(D\) is a cline through a point \(z \neq z_0\) not on \(C\text{.}\)  Let \(z^*\) denote the point symmetric to \(z\) with respect to \(C\text{.}\)</p>
-<p id="p-353">First, suppose \(D\) is a line through \(z\text{.}\)  A line through \(z\) passes through \(z^*\) if and only if it passes through the center of \(C\text{,}\) which is true if and only if the line is orthogonal to \(C\text{.}\)  Thus, the line \(D\) through \(z\) contains \(z^*\) if and only if it is orthogonal to \(C\text{,}\) and the theorem is proved in this case.</p>
-<p id="p-354">Now assume \(D\) is a circle through \(z\text{.}\)  Let \(o\) and \(k\) denote the center and radius of \(D\text{,}\) respectively.  Set \(s = |z_o-o|\text{,}\) and let \(t\) denote a point of intersection of \(C\) and \(D\) as pictured below.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-invorthcline.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-355">We must argue that \(C\) and \(D\) are orthogonal if and only if \(z^*\) is on \(D\text{.}\)  Now, \(C\) and \(D\) are orthogonal if and only if \(\angle otz_0\) is right, which is the case if and only if \(r^2 = s^2-k^2\) by the Pythagorean theorem.  Applying <a knowl="./knowl/lemma-III36.html" title="Lemma 3.2.7">Lemma 3.2.7</a> to the point \(z_0\) (which is outside \(D\)) and the line through \(z_0\) and \(z\text{,}\) we see that</p>
+<p id="p-368">Suppose \(C\) is a circle in \(\mathbb{C}\) centered at \(z_0\text{,}\) and \(z\neq z_0\) is not on \(C\text{.}\) A cline through \(z\) is orthogonal to \(C\) if and only if it goes through \(z^*\text{,}\) the point symmetric to \(z\) with respect to \(C\text{.}\)</p></article><article class="hiddenproof" id="proof-11"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><p id="p-369">Assume \(C\) is the circle of radius \(r\) centered at \(z_0\text{,}\) and \(D\) is a cline through a point \(z \neq z_0\) not on \(C\text{.}\)  Let \(z^*\) denote the point symmetric to \(z\) with respect to \(C\text{.}\)</p>
+<p id="p-370">First, suppose \(D\) is a line through \(z\text{.}\)  A line through \(z\) passes through \(z^*\) if and only if it passes through the center of \(C\text{,}\) which is true if and only if the line is orthogonal to \(C\text{.}\)  Thus, the line \(D\) through \(z\) contains \(z^*\) if and only if it is orthogonal to \(C\text{,}\) and the theorem is proved in this case.</p>
+<p id="p-371">Now assume \(D\) is a circle through \(z\text{.}\)  Let \(o\) and \(k\) denote the center and radius of \(D\text{,}\) respectively.  Set \(s = |z_o-o|\text{,}\) and let \(t\) denote a point of intersection of \(C\) and \(D\) as pictured below.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-invorthcline.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-372">We must argue that \(C\) and \(D\) are orthogonal if and only if \(z^*\) is on \(D\text{.}\)  Now, \(C\) and \(D\) are orthogonal if and only if \(\angle otz_0\) is right, which is the case if and only if \(r^2 = s^2-k^2\) by the Pythagorean theorem.  Applying <a class="xref" data-knowl="./knowl/lemma-III36.html" title="Lemma 3.2.7">Lemma 3.2.7</a> to the point \(z_0\) (which is outside \(D\)) and the line through \(z_0\) and \(z\text{,}\) we see that</p>
 <div class="displaymath">
 \begin{equation*}
 |z_0-z|\cdot|z_0-w| = s^2-k^2,\tag{1}
 \end{equation*}
 </div>
-<p>where \(w\) is the second point of intersection of the line with circle \(D\text{.}\)</p>
-<p id="p-356">Note also that as symmetric points, \(z\) and \(z^*\) satisfy the equation</p>
+<p data-braille="continuation">where \(w\) is the second point of intersection of the line with circle \(D\text{.}\)</p>
+<p id="p-373">Note also that as symmetric points, \(z\) and \(z^*\) satisfy the equation</p>
 <div class="displaymath">
 \begin{equation*}
 |z_0-z|\cdot|z_0-z^*| = r^2.\tag{2}
 \end{equation*}
 </div>
-<p>Thus, if we assume \(z^*\) is on \(D\text{,}\) then it must be equal to the point \(w\text{,}\) in which case equations (1) and (2) above tell us \(s^2-k^2 = r^2\text{.}\)  It follows that \(D\) is orthogonal to \(C\text{.}\)  Conversely, if \(D\) is orthogonal to \(C\text{,}\) then \(s^2-k^2=r^2\text{,}\) so \(|z_0-w|=|z_0-z^*|\text{.}\) Since \(z^*\) and \(w\) are both on the ray \(\overrightarrow{z_0z}\) it must be that \(z^* = w\text{.}\)  In other words, \(z^*\) is on \(D\text{.}\)</p></article></div>
-<article class="theorem-like" id="th_invorth"><h6 class="heading">
-<span class="type">Corollary</span> <span class="codenumber">3.2.9</span>
+<p data-braille="continuation">Thus, if we assume \(z^*\) is on \(D\text{,}\) then it must be equal to the point \(w\text{,}\) in which case equations (1) and (2) above tell us \(s^2-k^2 = r^2\text{.}\)  It follows that \(D\) is orthogonal to \(C\text{.}\)  Conversely, if \(D\) is orthogonal to \(C\text{,}\) then \(s^2-k^2=r^2\text{,}\) so \(|z_0-w|=|z_0-z^*|\text{.}\) Since \(z^*\) and \(w\) are both on the ray \(\overrightarrow{z_0z}\) it must be that \(z^* = w\text{.}\)  In other words, \(z^*\) is on \(D\text{.}\)</p></article></div>
+<article class="corollary theorem-like" id="th_invorth"><h6 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span>
 </h6>
-<p id="p-357">Inversion in \(C\) takes clines orthogonal to \(C\) to themselves.</p></article><article class="theorem-like" id="th_invconf"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.2.10</span>
+<p id="p-374">Inversion in \(C\) takes clines orthogonal to \(C\) to themselves.</p></article><article class="theorem theorem-like" id="th_invconf"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span>
 </h6>
-<p id="p-358">Inversion in a cline preserves angle magnitudes.</p></article><article class="hiddenproof" id="proof-12"><a knowl="" class="id-ref" refid="hk-proof-12"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-12" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-359">The result was stated for lines in <a knowl="./knowl/th_refconformal.html" title="Theorem 3.1.19">Theorem 3.1.19</a>.  Here we assume \(C\) is a circle of inversion. Consider two curves \(\boldsymbol{r_1}\) and \(\boldsymbol{r_2}\) that intersect at a point \(z\) that is not on \(C\) or at the center of \(C\text{.}\) Recall, \(\angle(\boldsymbol{r_1},\boldsymbol{r_2}) =
-\angle(L_1,L_2)\) where \(L_i\) is the line tangent to curve \(\boldsymbol{r_i}\) at \(z\text{,}\) for \(i = 1,2\text{.}\) We may describe this angle with two circles \(C_1\) and \(C_2\) tangent to the tangent lines \(L_1\) and \(L_2\text{,}\) respectively, with the additional feature that the circles meet the circle of inversion \(C\) at right angles, as in <a knowl="./knowl/fig-invconf.html" title="Figure 3.2.11">Figure 3.2.11</a>. Indeed, \(C_1\) is the circle through \(z\) and \(z^*\) whose center is at the intersection of lines \(m_1\) and \(k\text{,}\) where \(m_1\) is the line through \(z\) that is perpendicular to \(L_1\text{,}\) and \(k\) is the perpendicular bisector of segment \(zz^*\text{.}\) Circle \(C_2\) also goes through \(z\) and \(z^*\text{,}\) and its center is on the intersection of \(k\) and the line \(m_2\) through \(z\) that is perpendicular to \(L_2\text{.}\)</p>
-<figure class="figure-like" id="fig-invconf"><div style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-invconf.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.2.11</span> Inversion in a circle preserves angle magnitudes.</figcaption></figure><p id="p-360">The advantage to describing \(\angle(L_1,L_2)\) with these circles is that the image of the angle, \(\angle(i_C(L_1),i_C(L_2))\text{,}\) is also described by these two circles, at their other intersection point \(z^*\text{.}\) Notice that these angles will have opposite signs. For instance, in <a knowl="./knowl/fig-invconf.html" title="Figure 3.2.11">Figure 3.2.11</a>, our initial angle is negative, described by sweeping arc \(C_1\) clockwise onto \(C_2\text{,}\) but in the image, we sweep \(i_C(C_1)\) counterclockwise onto \(i_C(C_2)\text{.}\) We leave it as an exercise for the reader to check that the angle of intersection of \(C_1\) and \(C_2\) at \(z^*\) is the same magnitude as the angle between \(C_1\) and \(C_2\) at \(z\text{.}\)</p>
-<p id="p-361">Now we show that inversion preserves angle magnitudes for angles that occur on the circle \(C\) (i.e., \(z\) is on \(C\)). Let \(C^\prime\) be a concentric circle to \(C\text{.}\) Then \(i_C(z) =
-S\circ i_{C^\prime}\) where \(S\) is a dilation of \(\mathbb{C}\) whose fixed point is the common center of circles \(C\) and \(C^\prime\) (see <a knowl="./knowl/hmk_invpresmag.html" title="Exercise 3.2.12">Exercise 3.2.12</a>). Since our angle is not on circle \(C^\prime\text{,}\) \(i_{C^\prime}\) preserves the magnitude of the angle by reason of the preceding argument. The dilation \(S\) preserves angles according to <a knowl="./knowl/thm_gltconformal.html" title="Theorem 3.1.12">Theorem 3.1.12</a>. Thus \(i_C\) preserves angle magnitudes as well. We leave the case of the angle occurring at the origin to the next section. Bearing that exception in mind, this completes the proof.</p></article></div>
-<p id="p-362">Another important feature of inversion in a cline is that it preserves symmetry points.</p>
-<article class="theorem-like" id="th_invpressymm"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.2.12</span> <span class="title">Inversion preserves symmetry points</span>
+<p id="p-375">Inversion in a cline preserves angle magnitudes.</p></article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><p id="p-376">The result was stated for lines in <a class="xref" data-knowl="./knowl/th_refconformal.html" title="Theorem 3.1.19">Theorem 3.1.19</a>.  Here we assume \(C\) is a circle of inversion. Consider two curves \(\boldsymbol{r_1}\) and \(\boldsymbol{r_2}\) that intersect at a point \(z\) that is not on \(C\) or at the center of \(C\text{.}\) Recall, \(\angle(\boldsymbol{r_1},\boldsymbol{r_2}) = \angle(L_1,L_2)\) where \(L_i\) is the line tangent to curve \(\boldsymbol{r_i}\) at \(z\text{,}\) for \(i = 1,2\text{.}\) We may describe this angle with two circles \(C_1\) and \(C_2\) tangent to the tangent lines \(L_1\) and \(L_2\text{,}\) respectively, with the additional feature that the circles meet the circle of inversion \(C\) at right angles, as in <a class="xref" data-knowl="./knowl/fig-invconf.html" title="Figure 3.2.11">Figure 3.2.11</a>. Indeed, \(C_1\) is the circle through \(z\) and \(z^*\) whose center is at the intersection of lines \(m_1\) and \(k\text{,}\) where \(m_1\) is the line through \(z\) that is perpendicular to \(L_1\text{,}\) and \(k\) is the perpendicular bisector of segment \(zz^*\text{.}\) Circle \(C_2\) also goes through \(z\) and \(z^*\text{,}\) and its center is on the intersection of \(k\) and the line \(m_2\) through \(z\) that is perpendicular to \(L_2\text{.}\)</p>
+<figure class="figure figure-like" id="fig-invconf"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-invconf.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.11<span class="period">.</span></span><span class="space"> </span>Inversion in a circle preserves angle magnitudes.</figcaption></figure><p id="p-377">The advantage to describing \(\angle(L_1,L_2)\) with these circles is that the image of the angle, \(\angle(i_C(L_1),i_C(L_2))\text{,}\) is also described by these two circles, at their other intersection point \(z^*\text{.}\) Notice that these angles will have opposite signs. For instance, in <a class="xref" data-knowl="./knowl/fig-invconf.html" title="Figure 3.2.11">Figure 3.2.11</a>, our initial angle is negative, described by sweeping arc \(C_1\) clockwise onto \(C_2\text{,}\) but in the image, we sweep \(i_C(C_1)\) counterclockwise onto \(i_C(C_2)\text{.}\) We leave it as an exercise for the reader to check that the angle of intersection of \(C_1\) and \(C_2\) at \(z^*\) is the same magnitude as the angle between \(C_1\) and \(C_2\) at \(z\text{.}\)</p>
+<p id="p-378">Now we show that inversion preserves angle magnitudes for angles that occur on the circle \(C\) (i.e., \(z\) is on \(C\)). Let \(C^\prime\) be a concentric circle to \(C\text{.}\) Then \(i_C(z) = S\circ i_{C^\prime}\) where \(S\) is a dilation of \(\mathbb{C}\) whose fixed point is the common center of circles \(C\) and \(C^\prime\) (see <a class="xref" data-knowl="./knowl/hmk_invpresmag.html" title="Exercise 3.2.12">Exercise 3.2.12</a>). Since our angle is not on circle \(C^\prime\text{,}\) \(i_{C^\prime}\) preserves the magnitude of the angle by reason of the preceding argument. The dilation \(S\) preserves angles according to <a class="xref" data-knowl="./knowl/thm_gltconformal.html" title="Theorem 3.1.12">Theorem 3.1.12</a>. Thus \(i_C\) preserves angle magnitudes as well. We leave the case of the angle occurring at the origin to the next section. Bearing that exception in mind, this completes the proof.</p></article></div>
+<p id="p-379">Another important feature of inversion in a cline is that it preserves symmetry points.</p>
+<article class="theorem theorem-like" id="th_invpressymm"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Inversion preserves symmetry points.</span>
 </h6>
-<p id="p-363">Let \(i_C\) denote inversion in a cline \(C\text{.}\) If \(p\) and \(q\) are symmetric with respect to a cline \(D\text{,}\) then \(i_C(p)\) and \(i_C(q)\) are symmetric with respect to the cline \(i_C(D)\text{.}\)</p></article><article class="hiddenproof" id="proof-13"><a knowl="" class="id-ref" refid="hk-proof-13"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-13" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-364">Assume \(C\) is the cline of inversion, and assume \(p\) and \(q\) are symmetric with respect to a cline \(D\) as in <a knowl="./knowl/fig-invpreservesymm.html" title="Figure 3.2.13">Figure 3.2.13</a> (where \(C\) and \(D\) are represented as circles).</p>
-<figure class="figure-like" id="fig-invpreservesymm"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-invpreservesymm.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.2.13</span> Inversion preserves symmetry points: If \(p\) and \(q\) are symmetric with respect to \(D\) and we invert about cline \(C\) then the image points are symmetric with respect to the image of \(D\text{.}\)</figcaption></figure><p id="p-365">We may construct two clines \(E\) and \(F\) that go through \(p\) and \(q\text{.}\) In the figure, cline \(E\) is a circle and cline \(F\) is a line. These clines intersect \(D\) at right angles (<a knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>). Since inversion preserves clines and angle magnitudes, we know that \(E^*=i_C(E)\) and \(F^*=i_C(F)\) are clines intersecting the cline \(D^*=i_C(D)\) at right angles. Both \(E^*\) and \(F^*\) contain \(p^*=i_C(p)\text{,}\) so they both contain the point symmetric to \(p^*\) with respect to \(D^*\) (<a knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>), but the only other point common to both \(E^*\) and \(F^*\) is \(q^* = i_C(q)\text{.}\) Thus, \(p^*\) and \(q^*\) are symmetric with respect to \(D^*\text{.}\)</p></article></div>
-<p id="p-366">We close the section with two applications of inversion.</p>
-<article class="theorem-like" id="th_apollonian"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.2.14</span> <span class="title">Apollonian Circles Theorem</span>
+<p id="p-380">Let \(i_C\) denote inversion in a cline \(C\text{.}\) If \(p\) and \(q\) are symmetric with respect to a cline \(D\text{,}\) then \(i_C(p)\) and \(i_C(q)\) are symmetric with respect to the cline \(i_C(D)\text{.}\)</p></article><article class="hiddenproof" id="proof-13"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-13"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><p id="p-381">Assume \(C\) is the cline of inversion, and assume \(p\) and \(q\) are symmetric with respect to a cline \(D\) as in <a class="xref" data-knowl="./knowl/fig-invpreservesymm.html" title="Figure 3.2.13">Figure 3.2.13</a> (where \(C\) and \(D\) are represented as circles).</p>
+<figure class="figure figure-like" id="fig-invpreservesymm"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-invpreservesymm.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.13<span class="period">.</span></span><span class="space"> </span>Inversion preserves symmetry points: If \(p\) and \(q\) are symmetric with respect to \(D\) and we invert about cline \(C\) then the image points are symmetric with respect to the image of \(D\text{.}\)</figcaption></figure><p id="p-382">We may construct two clines \(E\) and \(F\) that go through \(p\) and \(q\text{.}\) In the figure, cline \(E\) is a circle and cline \(F\) is a line. These clines intersect \(D\) at right angles (<a class="xref" data-knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>). Since inversion preserves clines and angle magnitudes, we know that \(E^*=i_C(E)\) and \(F^*=i_C(F)\) are clines intersecting the cline \(D^*=i_C(D)\) at right angles. Both \(E^*\) and \(F^*\) contain \(p^*=i_C(p)\text{,}\) so they both contain the point symmetric to \(p^*\) with respect to \(D^*\) (<a class="xref" data-knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>), but the only other point common to both \(E^*\) and \(F^*\) is \(q^* = i_C(q)\text{.}\) Thus, \(p^*\) and \(q^*\) are symmetric with respect to \(D^*\text{.}\)</p></article></div>
+<p id="p-383">We close the section with two applications of inversion.</p>
+<article class="theorem theorem-like" id="th_apollonian"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.14</span><span class="period">.</span><span class="space"> </span><span class="title">Apollonian Circles Theorem.</span>
 </h6>
-<p id="p-367">Let \(p,q\) be distinct points in \(\mathbb{C}\text{,}\) and \(k &gt; 0\) a positive real number. Let \(D\) consist of all points \(z\) in \(\mathbb{C}\) such that \(|z-p| = k|z - q|.\) Then \(D\) is a cline.</p></article><article class="hiddenproof" id="proof-14"><a knowl="" class="id-ref" refid="hk-proof-14"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-14" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-368">If \(k = 1\text{,}\) the set \(D\) is a Euclidean line, according to <a knowl="./knowl/thm_euclines.html" title="Theorem 2.4.2">Theorem 2.4.2</a>, so we assume \(k \neq 1\text{.}\) Let \(C\) be the circle centered at \(p\) with radius 1. Suppose \(z\) is an arbitrary point in the set \(D\text{.}\) Inverting about \(C\text{,}\) let \(z^* =
-i_C(z)\) and \(q^* = i_C(q)\) as in the following diagram.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-apollonian-thm.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-369">Observe first that \(\Delta pz^*q^*\) and \(\Delta pqz\) are similar.</p>
-<p id="p-370">Indeed, \(|p-z|\cdot|p-z^*|=1=|p-q|\cdot|p-q^*|\) by the definition of the inversion transformation, so we have equal side-length ratios</p>
+<p id="p-384">Let \(p,q\) be distinct points in \(\mathbb{C}\text{,}\) and \(k &gt; 0\) a positive real number. Let \(D\) consist of all points \(z\) in \(\mathbb{C}\) such that \(|z-p| = k|z - q|.\) Then \(D\) is a cline.</p></article><article class="hiddenproof" id="proof-14"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-14"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-14"><article class="hiddenproof"><p id="p-385">If \(k = 1\text{,}\) the set \(D\) is a Euclidean line, according to <a class="xref" data-knowl="./knowl/thm_euclines.html" title="Theorem 2.4.2">Theorem 2.4.2</a>, so we assume \(k \neq 1\text{.}\) Let \(C\) be the circle centered at \(p\) with radius 1. Suppose \(z\) is an arbitrary point in the set \(D\text{.}\) Inverting about \(C\text{,}\) let \(z^* = i_C(z)\) and \(q^* = i_C(q)\) as in the following diagram.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-apollonian-thm.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-386">Observe first that \(\Delta pz^*q^*\) and \(\Delta pqz\) are similar.</p>
+<p id="p-387">Indeed, \(|p-z|\cdot|p-z^*|=1=|p-q|\cdot|p-q^*|\) by the definition of the inversion transformation, so we have equal side-length ratios</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{|p-z^*|}{|p-q|}=\frac{|p-q^*|}{|p-z|},
+\frac{|p-z^*|}{|p-q|}=\frac{|p-q^*|}{|p-z|}\text{,}
 \end{equation*}
 </div>
-<p>and the included angles are equal, \(\angle q^*pz^* = \angle qpz.\)</p>
-<p id="p-371">It follows that</p>
+<p data-braille="continuation">and the included angles are equal, \(\angle q^*pz^* = \angle qpz\text{.}\)</p>
+<p id="p-388">It follows that</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{|z-q|}{|p-q|}=\frac{|z^*-q^*|}{|z^*-p|},
+\frac{|z-q|}{|p-q|}=\frac{|z^*-q^*|}{|z^*-p|}\text{,}
 \end{equation*}
 </div>
-<p>from which we derive</p>
+<p data-braille="continuation">from which we derive</p>
 <div class="displaymath">
 \begin{align*}
 |z^*-q^*|\amp =|z^*-p|\cdot\frac{|z-q|}{|p-q|}\\
 \amp =[|z^*-p|\cdot|z-p|]\cdot\frac{|z-q|}{|z-p|}\cdot\frac{1}{|p-q|}\\
-\amp = 1 \cdot \frac{1}{k} \cdot \frac{1}{|p-q|}.
+\amp = 1 \cdot \frac{1}{k} \cdot \frac{1}{|p-q|}\text{.}
 \end{align*}
 </div>
-<p id="p-372">Thus, the set \(D\) of all points \(z\) satisfying \(|z-p|=k|z-q|\) has image \(i_C(D)\) under this inversion consisting of all points \(z^*\) on a circle centered at \(q^*\) with radius \((k|p-q|)^{-1}\text{.}\) Since inversion preserves clines and \(p\) is not on \(i_C(D)\text{,}\) it follows that \(D\) itself is a circle.</p></article></div>
-<p id="p-373">As we let \(k\) run through all positive real numbers, we obtain a family of clines, called the <dfn class="terminology">circles of Apollonius of the points \(\boldsymbol{p}\) and \(\boldsymbol{q}\)</dfn>. We note that \(p\) and \(q\) are symmetric with respect to each cline in this family (see <a knowl="./knowl/hmk_Apollonius.html" title="Exercise 3.3.2">Exercise 3.3.2</a>).</p>
-<figure class="figure-like" id="fig-symmtwoclines"><div style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-symmtwoclines.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.2.15</span> Finding two points symmetric with respect to a line and circle.</figcaption></figure><article class="theorem-like" id="th_symmtwoclines"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.2.16</span>
+<p id="p-389">Thus, the set \(D\) of all points \(z\) satisfying \(|z-p|=k|z-q|\) has image \(i_C(D)\) under this inversion consisting of all points \(z^*\) on a circle centered at \(q^*\) with radius \((k|p-q|)^{-1}\text{.}\) Since inversion preserves clines and \(p\) is not on \(i_C(D)\text{,}\) it follows that \(D\) itself is a circle.</p></article></div>
+<p id="p-390">As we let \(k\) run through all positive real numbers, we obtain a family of clines, called the <dfn class="terminology">circles of Apollonius of the points \(\boldsymbol{p}\) and \(\boldsymbol{q}\)</dfn>. We note that \(p\) and \(q\) are symmetric with respect to each cline in this family (see <a class="xref" data-knowl="./knowl/hmk_Apollonius.html" title="Exercise 3.3.2">Exercise 3.3.2</a>).</p>
+<figure class="figure figure-like" id="fig-symmtwoclines"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-symmtwoclines.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.15<span class="period">.</span></span><span class="space"> </span>Finding two points symmetric with respect to a line and circle.</figcaption></figure><article class="theorem theorem-like" id="th_symmtwoclines"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.16</span><span class="period">.</span>
 </h6>
-<p id="p-374">Suppose we have two clines that do not intersect, and at least one of them is a circle. Then there exist two points, \(p\) and \(q\text{,}\) that are symmetric with respect to both clines.</p></article><article class="hiddenproof" id="proof-15"><a knowl="" class="id-ref" refid="hk-proof-15"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-15" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-375">First, assume one cline is a line \(L\text{,}\) and the other is a circle \(C\) centered at the point \(z_0\) as pictured in <a knowl="./knowl/fig-symmtwoclines.html" title="Figure 3.2.15">Figure 3.2.15</a>. Let \(L_1\) be the line through \(z_0\) that is perpendicular to \(L\text{,}\) and let \(z_1\) be the point of intersection of \(L\) and \(L_1\text{.}\) Next, construct the circle \(C_1\) having the diameter \(z_0z_1\text{.}\) Circle \(C_1\) intersects circle \(C\) at some point, which we call \(t\text{.}\) Notice that \(\angle z_0 t z_1\) is right, and so the circle \(C_2\) centered at \(z_1\) through \(t\) is orthogonal to \(C\text{.}\) Furthermore, the center of \(C_2\text{,}\) \(z_1\text{,}\) lies on line \(L\text{,}\) so \(C_2\) is orthogonal to \(L\text{.}\) Let \(p\) and \(q\) be the two points at which \(C_2\) intersects \(L_1\text{.}\) By construction, and by using <a knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>, \(p\) and \(q\) are symmetric to both \(C\) and \(L\text{.}\)</p>
-<p id="p-376">Now, suppose \(C_1\) and \(C_2\) are circles that do not intersect. We may first perform an inversion in a circle \(C\) that maps \(C_1\) to a line \(C_1^*\text{,}\) and \(C_2\) to another circle, \(C_2^*\text{,}\) as suggested in <a knowl="./knowl/fig-symmtwoclines2.html" title="Figure 3.2.17">Figure 3.2.17</a> (any circle \(C\) centered on a point of \(C_1\) works). Then by reason of the preceeding argument, there exist two points \(p\) and \(q\) that are symmetric with respect to \(C_1^*\) and \(C_2^*\text{.}\) Since inversion preserves symmetry points, \(i_C(p)\) and \(i_C(q)\) are symmetric with respect to both \(i_C(C_1^*)\) and \(i_C(C_2^*)\text{.}\) But \(i_C(C_1^*) = C_1\) and \(i_C(C_2^*) = C_2\) so we're found two points symmetric to both \(C_1\) and \(C_2\text{.}\)  (In fact, we have one exception.  If \(C_1\) and \(C_2\) are concentric circles, this strategy will produce points \(i_C(p)\) and \(i_C(q)\text{,}\) one of which is the center of \(C\text{,}\) and we have not yet extended the notion of inversion to include the center.  We do so in the next section in such a way that the theorem applies to this exceptional case as well.)</p>
-<figure class="figure-like" id="fig-symmtwoclines2"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-symmtwoclines2.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.2.17</span> By inversion we may transform two circles to a circle and a line.</figcaption></figure></article></div></section><section class="exercises" id="exercises-8"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+<p id="p-391">Suppose we have two clines that do not intersect, and at least one of them is a circle. Then there exist two points, \(p\) and \(q\text{,}\) that are symmetric with respect to both clines.</p></article><article class="hiddenproof" id="proof-15"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-15"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><p id="p-392">First, assume one cline is a line \(L\text{,}\) and the other is a circle \(C\) centered at the point \(z_0\) as pictured in <a class="xref" data-knowl="./knowl/fig-symmtwoclines.html" title="Figure 3.2.15">Figure 3.2.15</a>. Let \(L_1\) be the line through \(z_0\) that is perpendicular to \(L\text{,}\) and let \(z_1\) be the point of intersection of \(L\) and \(L_1\text{.}\) Next, construct the circle \(C_1\) having the diameter \(z_0z_1\text{.}\) Circle \(C_1\) intersects circle \(C\) at some point, which we call \(t\text{.}\) Notice that \(\angle z_0 t z_1\) is right, and so the circle \(C_2\) centered at \(z_1\) through \(t\) is orthogonal to \(C\text{.}\) Furthermore, the center of \(C_2\text{,}\) \(z_1\text{,}\) lies on line \(L\text{,}\) so \(C_2\) is orthogonal to \(L\text{.}\) Let \(p\) and \(q\) be the two points at which \(C_2\) intersects \(L_1\text{.}\) By construction, and by using <a class="xref" data-knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>, \(p\) and \(q\) are symmetric to both \(C\) and \(L\text{.}\)</p>
+<p id="p-393">Now, suppose \(C_1\) and \(C_2\) are circles that do not intersect. We may first perform an inversion in a circle \(C\) that maps \(C_1\) to a line \(C_1^*\text{,}\) and \(C_2\) to another circle, \(C_2^*\text{,}\) as suggested in <a class="xref" data-knowl="./knowl/fig-symmtwoclines2.html" title="Figure 3.2.17">Figure 3.2.17</a> (any circle \(C\) centered on a point of \(C_1\) works). Then by reason of the preceeding argument, there exist two points \(p\) and \(q\) that are symmetric with respect to \(C_1^*\) and \(C_2^*\text{.}\) Since inversion preserves symmetry points, \(i_C(p)\) and \(i_C(q)\) are symmetric with respect to both \(i_C(C_1^*)\) and \(i_C(C_2^*)\text{.}\) But \(i_C(C_1^*) = C_1\) and \(i_C(C_2^*) = C_2\) so we're found two points symmetric to both \(C_1\) and \(C_2\text{.}\) (In fact, we have one exception.  If \(C_1\) and \(C_2\) are concentric circles, this strategy will produce points \(i_C(p)\) and \(i_C(q)\text{,}\) one of which is the center of \(C\text{,}\) and we have not yet extended the notion of inversion to include the center.  We do so in the next section in such a way that the theorem applies to this exceptional case as well.)</p>
+<figure class="figure figure-like" id="fig-symmtwoclines2"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-symmtwoclines2.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.17<span class="period">.</span></span><span class="space"> </span>By inversion we may transform two circles to a circle and a line.</figcaption></figure></article></div>
+<section class="exercises" id="exercises-8"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section3-2.html#exercises-8" class="permalink">¶</a><article class="exercise-like" id="hmk_invformula"><h6 class="heading">
-<span class="codenumber">1</span> </h6>
-<p id="p-377">Prove the general formula for inversion in a circle \(C\) centered at \(z_0\) with radius \(r\text{.}\) In particular, show in this case that</p>
+<article class="exercise exercise-like" id="hmk_invformula"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-394">Prove the general formula for inversion in a circle \(C\) centered at \(z_0\) with radius \(r\text{.}\) In particular, show in this case that</p>
 <div class="displaymath">
 \begin{equation*}
 i_C(z) =
 \frac{r^2}{(\overline{z-z_0})} + z_0.
 \end{equation*}
-</div></article><article class="exercise-like" id="exercise-36"><h6 class="heading">
-<span class="codenumber">2</span> </h6>
-<p id="p-378"><em class="emphasis">Constructing the symmetric point to \(z\) when \(z\) is inside the circle of inversion</em>.</p>
-<p id="p-379">Prove that for a point \(z\) inside the circle \(C\) with center \(z_0\) (<a knowl="./knowl/fig-constructsymm.html" title="Figure 3.2.18">Figure 3.2.18</a>(a)), the following construction finds the symmetry point of \(z\text{.}\) (1) Draw the ray from \(z_0\) through \(z\text{.}\) (2) Construct the perpendicular to this ray at \(z\text{.}\) Let \(t\) be a point of intersection of this perpendicular and \(C\text{.}\) (3) Construct the radius \(z_0t\text{.}\) (4) Construct the perpendicular to this radius at \(t\text{.}\) The symmetric point \(z^*\) is the point of intersection of this perpendicular and ray \(\overrightarrow{z_oz}\text{.}\)</p></article><figure class="figure-like" id="fig-constructsymm"><div style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="images/im-constructsymm.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.2.18</span> Constructing the symmetric point (a) if \(z\) is inside the circle of inversion; (b) if \(z\) is outside the circle of inversion.</figcaption></figure><article class="exercise-like" id="exercise-37"><h6 class="heading">
-<span class="codenumber">3</span> </h6>
-<p id="p-380"><em class="emphasis">Constructing the symmetric point to \(z\)  when \(z\) is outside the circle of inversion</em>.</p>
-<p id="p-381">Prove that for a point \(z\) outside the circle \(C\) with center \(z_0\) (<a knowl="./knowl/fig-constructsymm.html" title="Figure 3.2.18">Figure 3.2.18</a>(b)), the following construction finds the symmetry point of \(z\text{.}\) (1) Construct the circle having diameter \(z_0z\text{.}\) Let \(t\) be a point of intersection of the two circles. (2) Construct the perpendicular to \(z_0z\) through \(t\text{.}\) Let \(z^*\) be the intersection of this perpendicular with segment \(z_0z\text{.}\)</p></article><article class="exercise-like" id="hmk_invstretch"><h6 class="heading">
-<span class="codenumber">4</span> </h6>
-<p id="p-382">Suppose \(T_1\) is inversion in the circle \(|z| = r_1\text{,}\) and \(T_2\) is inversion in the circle \(|z| = r_2\text{,}\) where \(r_1, r_2 &gt; 0\text{.}\) Prove that \(T_2 \circ T_1\) is a dilation. Conversely, show any dilation is the composition of two inversions.</p></article><article class="exercise-like" id="exercise-39"><h6 class="heading">
-<span class="codenumber">5</span> </h6>
-<p id="p-383">Determine the image of the line \(y = mx + b\) (when \(b \neq 0)\) under inversion in the unit circle. In particular, show that the image is a circle with center \((-m/2b, 1/2b)\) and radius \(\sqrt{(m^2 + 1)/4b^2}\text{.}\) Hint: Refer to <a knowl="./knowl/ex_lineclineeq.html" title="Exercise 2.4.1">Exercise 2.4.1</a>.</p></article><article class="exercise-like" id="exercise-40"><h6 class="heading">
-<span class="codenumber">6</span> </h6>
-<p id="p-384">Determine the image of the line \(L\) given by \(y = 3x + 4\) under inversion in the unit circle. Give a careful plot of the unit circle, the line \(L\text{,}\) and the image of \(L\) under the inversion.</p></article><article class="exercise-like" id="exercise-41"><h6 class="heading">
-<span class="codenumber">7</span> </h6>
-<p id="p-385">Prove that inversion in the unit circle maps the circle \((x-a)^2 + (y-b)^2 = r^2\) to the circle</p>
+</div></article><article class="exercise exercise-like" id="hmk-constructsymm"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-396"><em class="emphasis">Constructing the symmetric point to \(z\) when \(z\) is inside the circle of inversion</em>.</p>
+<p id="p-397">Prove that for a point \(z\) inside the circle \(C\) with center \(z_0\) (<a class="xref" data-knowl="./knowl/fig-constructsymm.html" title="Figure 3.2.18">Figure 3.2.18</a>(a)), the following construction finds the symmetry point of \(z\text{.}\) (1) Draw the ray from \(z_0\) through \(z\text{.}\) (2) Construct the perpendicular to this ray at \(z\text{.}\) Let \(t\) be a point of intersection of this perpendicular and \(C\text{.}\) (3) Construct the radius \(z_0t\text{.}\) (4) Construct the perpendicular to this radius at \(t\text{.}\) The symmetric point \(z^*\) is the point of intersection of this perpendicular and ray \(\overrightarrow{z_oz}\text{.}\)</p></article><figure class="figure figure-like" id="fig-constructsymm"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="images/im-constructsymm.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.18<span class="period">.</span></span><span class="space"> </span>Constructing the symmetric point (a) if \(z\) is inside the circle of inversion; (b) if \(z\) is outside the circle of inversion.</figcaption></figure><article class="exercise exercise-like" id="exercise-37"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-399"><em class="emphasis">Constructing the symmetric point to \(z\)  when \(z\) is outside the circle of inversion</em>.</p>
+<p id="p-400">Prove that for a point \(z\) outside the circle \(C\) with center \(z_0\) (<a class="xref" data-knowl="./knowl/fig-constructsymm.html" title="Figure 3.2.18">Figure 3.2.18</a>(b)), the following construction finds the symmetry point of \(z\text{.}\) (1) Construct the circle having diameter \(z_0z\text{.}\) Let \(t\) be a point of intersection of the two circles. (2) Construct the perpendicular to \(z_0z\) through \(t\text{.}\) Let \(z^*\) be the intersection of this perpendicular with segment \(z_0z\text{.}\)</p></article><article class="exercise exercise-like" id="hmk_invstretch"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-402">Suppose \(T_1\) is inversion in the circle \(|z| = r_1\text{,}\) and \(T_2\) is inversion in the circle \(|z| = r_2\text{,}\) where \(r_1, r_2 &gt; 0\text{.}\) Prove that \(T_2 \circ T_1\) is a dilation. Conversely, show any dilation is the composition of two inversions.</p></article><article class="exercise exercise-like" id="hmk-invert-line-in-unit-circle"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-404">Determine the image of the line \(y = mx + b\) (when \(b \neq 0)\) under inversion in the unit circle. In particular, show that the image is a circle with center \((-m/2b, 1/2b)\) and radius \(\sqrt{(m^2 + 1)/4b^2}\text{.}\)</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-6" id="hint-6"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-6"><div class="hint solution-like"><p id="p-405">Refer to <a class="xref" data-knowl="./knowl/ex_lineclineeq.html" title="Exercise 2.4.1">Exercise 2.4.1</a>.</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-40"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-407">Determine the image of the line \(L\) given by \(y = 3x + 4\) under inversion in the unit circle. Give a careful plot of the unit circle, the line \(L\text{,}\) and the image of \(L\) under the inversion.</p></article><article class="exercise exercise-like" id="exercise-41"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-409">Prove that inversion in the unit circle maps the circle \((x-a)^2 + (y-b)^2 = r^2\) to the circle</p>
 <div class="displaymath">
 \begin{equation*}
 \bigg(x-\frac{a}{d}\bigg)^2 + \bigg(y-\frac{b}{d}\bigg)^2 =
 \bigg(\frac{r}{d}\bigg)^2
 \end{equation*}
 </div>
-<p>where \(d = a^2+b^2-r^2\text{,}\) provided that \(d \neq 0\text{.}\)</p></article><article class="exercise-like" id="exercise-42"><h6 class="heading">
-<span class="codenumber">8</span> </h6>
-<p id="p-386">Determine in standard form the image of the circle \(C\) given by \((x-1)^2 +
-y^2 = 4\) under inversion in the unit circle. Give a careful plot of the unit circle, the circle \(C\text{,}\) and the image of \(C\) under the inversion.</p></article><article class="exercise-like" id="exercise-43"><h6 class="heading">
-<span class="codenumber">9</span> </h6>
-<p id="p-387">True or False? If a circle \(C\) gets mapped to another circle under inversion in the unit circle, then the center of \(C\) gets mapped to the center of the image circle, \(i_{\mathbb{S}^1}(C)\text{.}\) If the statement is true, prove it; if it is false, provide a counterexample.</p></article><article class="exercise-like" id="hmk_orthinvinterior"><h6 class="heading">
-<span class="codenumber">10</span> </h6>
-<p id="p-388">Suppose \(C\) and \(D\) are orthogonal circles. <a knowl="./knowl/th_invorth.html" title="Corollary 3.2.9">Corollary 3.2.9</a> tells us that inversion in \(C\) maps \(D\) to itself. Prove that this inversion also takes the interior of \(D\) to itself.</p></article><article class="exercise-like" id="exercise-45"><h6 class="heading">
-<span class="codenumber">11</span> </h6>
-<p id="p-389">Finish the proof of <a knowl="./knowl/th_invconf.html" title="Theorem 3.2.10">Theorem 3.2.10</a> by showing that the angle of intersection at \(z^*\) equals the angle of intersection at \(z\) in <a knowl="./knowl/fig-invconf.html" title="Figure 3.2.11">Figure 3.2.11</a>.</p></article><article class="exercise-like" id="hmk_invpresmag"><h6 class="heading">
-<span class="codenumber">12</span> </h6>
-<p id="p-390">Suppose \(C\) is the circle \(|z - z_0| = r\) and \(C^\prime\) is the circle \(|z - z_0| = r^\prime\text{.}\) Find the stretch factor \(k\) in the dilation \(S(z) = k(z-z_0) + z_0\) so that \(i_C = S \circ
-i_{C^\prime}.\)</p></article><article class="exercise-like" id="exercise-47"><h6 class="heading">
-<span class="codenumber">13</span> </h6>
-<p id="p-391">Complete the proof of <a knowl="./knowl/lemma-III36.html" title="Lemma 3.2.7">Lemma 3.2.7</a> by proving the case in which the line through \(p\) passes through the center of \(C\text{.}\)</p></article></section></section></div></main>
+<p data-braille="continuation">where \(d = a^2+b^2-r^2\text{,}\) provided that \(d \neq 0\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-42"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-411">Determine in standard form the image of the circle \(C\) given by \((x-1)^2 +
+y^2 = 4\) under inversion in the unit circle. Give a careful plot of the unit circle, the circle \(C\text{,}\) and the image of \(C\) under the inversion.</p></article><article class="exercise exercise-like" id="exercise-43"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-413">True or False? If a circle \(C\) gets mapped to another circle under inversion in the unit circle, then the center of \(C\) gets mapped to the center of the image circle, \(i_{\mathbb{S}^1}(C)\text{.}\) If the statement is true, prove it; if it is false, provide a counterexample.</p></article><article class="exercise exercise-like" id="hmk_orthinvinterior"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
+<p id="p-415">Suppose \(C\) and \(D\) are orthogonal circles. <a class="xref" data-knowl="./knowl/th_invorth.html" title="Corollary 3.2.9">Corollary 3.2.9</a> tells us that inversion in \(C\) maps \(D\) to itself. Prove that this inversion also takes the interior of \(D\) to itself.</p></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
+<p id="p-418">Finish the proof of <a class="xref" data-knowl="./knowl/th_invconf.html" title="Theorem 3.2.10">Theorem 3.2.10</a> by showing that the angle of intersection at \(z^*\) equals the angle of intersection at \(z\) in <a class="xref" data-knowl="./knowl/fig-invconf.html" title="Figure 3.2.11">Figure 3.2.11</a>.</p></article><article class="exercise exercise-like" id="hmk_invpresmag"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
+<p id="p-420">Suppose \(C\) is the circle \(|z - z_0| = r\) and \(C^\prime\) is the circle \(|z - z_0| = r^\prime\text{.}\) Find the stretch factor \(k\) in the dilation \(S(z) = k(z-z_0) + z_0\) so that \(i_C = S \circ
+i_{C^\prime}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-47"><h6 class="heading"><span class="codenumber">13<span class="period">.</span></span></h6>
+<p id="p-422">Complete the proof of <a class="xref" data-knowl="./knowl/lemma-III36.html" title="Lemma 3.2.7">Lemma 3.2.7</a> by proving the case in which the line through \(p\) passes through the center of \(C\text{.}\)</p></article></section></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

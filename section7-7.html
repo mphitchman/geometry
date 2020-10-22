@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:34-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:50-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Quotient Spaces</title>
+<title>GCT Quotient Spaces</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section7-6.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-8.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section7-6.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter-8.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,209 +146,197 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7" class="active">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section7-7"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section7-7"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.7</span> <span class="title">Quotient Spaces</span>
 </h2>
-<a href="section7-7.html" class="permalink">¶</a><section class="introduction" id="introduction-37"><p id="p-1425">We may bend a sheet of paper and join its left and right edges together to obtain a cylinder. If we let \(\mathbb{I}^2 = \{(x,y) \in \mathbb{R}^2 ~|~ 0 \leq x \leq 1, 0 \leq y \leq 1\}\) represent our square piece of paper, and \(C = \{(x,y,z) \in \mathbb{R}^3 ~|~ x^2
-+ y^2 = 1, 0 \leq z \leq 1 \}\) represent a cylinder, then the map</p>
+<section class="introduction" id="introduction-26"><p id="p-1524">We may bend a sheet of paper and join its left and right edges together to obtain a cylinder. If we let \(\mathbb{I}^2 = \{(x,y) \in \mathbb{R}^2 ~|~ 0 \leq x \leq 1, 0 \leq y \leq 1\}\) represent our square piece of paper, and \(C = \{(x,y,z) \in \mathbb{R}^3 ~|~ x^2 + y^2 = 1, 0 \leq z \leq 1 \}\) represent a cylinder, then the map</p>
 <div class="displaymath">
 \begin{equation*}
 p:\mathbb{I}^2 \to C ~~\text{by}~~p((x,y))= (\cos(2\pi x), \sin(2\pi x), y)
 \end{equation*}
 </div>
-<p>models this gluing process.</p>
-<figure class="figure-like" id="fig-cylinder"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-cylinder.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.7.1</span> Bending a sheet of paper into a cylinder.</figcaption></figure><p id="p-1426">This map tries very hard to be a homeomorphism. The map is continuous, onto, and it is almost one-to-one with a continuous inverse. It fails in this endeavor only where we join the left and right edges: the points \((0,y)\) and \((1,y)\) in \(\mathbb{I}^2\) both get sent by \(p\) to the point \((1,0,y)\text{.}\) But \(p\) is nice enough to <em class="emphasis">induce</em> a homeomorphism between the cylinder and a modified version of the domain \(\mathbb{I}^2\text{,}\) obtained by “dividing out” of \(\mathbb{I}^2\) the mapping redundancies so that the result is one-to-one. The new version of \(\mathbb{I}^2\) is called a quotient space. We develop quotient spaces in this section because all surfaces and candidate three-dimensional universes can be viewed as quotient spaces. We need the notion of an equivalence relation on a set. To get this, we need the notion of a relation.</p>
-<p id="p-1427">A <dfn class="terminology">relation on a set \(\boldsymbol S\)</dfn> is a subset \(R\) of \(S \times S\text{.}\) In other words, a relation \(R\) consists of a set of ordered pairs of the form \((a,b)\) where \(a\) and \(b\) are in \(S\text{.}\) If \((a,b)\) is an element in the relation \(R\text{,}\) we may write \(a R b\text{.}\) It is common to describe equivalence relations, which we define shortly, with the symbol \(\sim\) instead of \(R\text{.}\) So, when you see \(a \sim b\) this means the ordered pair \((a,b)\) is in the relation \(\sim\text{,}\) which is a subset of \(S \times S\text{.}\)</p>
-<article class="definition-like" id="definition-39"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">7.7.2</span>
+<p data-braille="continuation">models this gluing process.</p>
+<figure class="figure figure-like" id="fig-cylinder"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-cylinder.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.7.1<span class="period">.</span></span><span class="space"> </span>Bending a sheet of paper into a cylinder.</figcaption></figure><p id="p-1525">This map tries very hard to be a homeomorphism. The map is continuous, onto, and it is almost one-to-one with a continuous inverse. It fails in this endeavor only where we join the left and right edges: the points \((0,y)\) and \((1,y)\) in \(\mathbb{I}^2\) both get sent by \(p\) to the point \((1,0,y)\text{.}\) But \(p\) is nice enough to <em class="emphasis">induce</em> a homeomorphism between the cylinder and a modified version of the domain \(\mathbb{I}^2\text{,}\) obtained by “dividing out” of \(\mathbb{I}^2\) the mapping redundancies so that the result is one-to-one. The new version of \(\mathbb{I}^2\) is called a quotient space. We develop quotient spaces in this section because all surfaces and candidate three-dimensional universes can be viewed as quotient spaces. We need the notion of an equivalence relation on a set. To get this, we need the notion of a relation.</p>
+<p id="p-1526">A <dfn class="terminology">relation on a set \(\boldsymbol S\)</dfn> is a subset \(R\) of \(S \times S\text{.}\) In other words, a relation \(R\) consists of a set of ordered pairs of the form \((a,b)\) where \(a\) and \(b\) are in \(S\text{.}\) If \((a,b)\) is an element in the relation \(R\text{,}\) we may write \(a R b\text{.}\) It is common to describe equivalence relations, which we define shortly, with the symbol \(\sim\) instead of \(R\text{.}\) So, when you see \(a \sim b\) this means the ordered pair \((a,b)\) is in the relation \(\sim\text{,}\) which is a subset of \(S \times S\text{.}\)</p>
+<article class="definition definition-like" id="definition-39"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.7.2</span><span class="period">.</span>
 </h6>
-<p id="p-1428">An <dfn class="terminology">equivalence relation</dfn> on a set \(A\) is a relation \(\sim\) that satisfies these three conditions:</p>
+<p id="p-1527">An <dfn class="terminology">equivalence relation</dfn> on a set \(A\) is a relation \(\sim\) that satisfies these three conditions:</p>
 <ol class="decimal">
-<li id="li-62"><p id="p-1429">Reflexivity: \(x \sim x\) for all \(x \in A\)</p></li>
-<li id="li-63"><p id="p-1430">Symmetry: If \(x \sim y\) then \(y \sim x\)</p></li>
-<li id="li-64"><p id="p-1431">Transitivity: If \(x \sim y\) and \(y \sim z\) then \(x \sim z\text{.}\)</p></li>
+<li id="li-308">Reflexivity: \(x \sim x\) for all \(x \in A\)</li>
+<li id="li-309">Symmetry: If \(x \sim y\) then \(y \sim x\)</li>
+<li id="li-310">Transitivity: If \(x \sim y\) and \(y \sim z\) then \(x \sim z\text{.}\)</li>
 </ol>
-<p id="p-1432">For any element \(a \in A\text{,}\) the <dfn class="terminology">equivalence class of \(\boldsymbol{a}\)</dfn>, denoted \([a]\text{,}\) is the subset of all elements in \(A\) that are related to \(a\) by \(\sim\text{.}\)  That is,</p>
+<p id="p-1528">For any element \(a \in A\text{,}\) the <dfn class="terminology">equivalence class of \(\boldsymbol{a}\)</dfn>, denoted \([a]\text{,}\) is the subset of all elements in \(A\) that are related to \(a\) by \(\sim\text{.}\)  That is,</p>
 <div class="displaymath">
 \begin{equation*}
 [a] = \{x \in A ~|~ x \sim a\}. 
 \end{equation*}
-</div></article><article class="example-like" id="example-73"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.7.3</span> <span class="title">An equivalence relation</span>
+</div></article><article class="example example-like" id="example-73"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.3</span><span class="period">.</span><span class="space"> </span><span class="title">An equivalence relation.</span>
 </h6>
-<p id="p-1433">Define \(z \sim w\) in \(\mathbb{C}\) if and only if Re\((z) - ~\text{Re}(w)\) is an integer and Im\((z) = ~\text{Im}(w)\text{.}\) For instance, \((-1.6 + 4i) \sim (2.4 + 4i)\) since the difference of the real parts (-1.6 - 2.4 = -4) is an integer and the imaginary parts are equal. To show \(\sim\) is an equivalence relation, we check the three requirements.</p>
+<p id="p-1529">Define \(z \sim w\) in \(\mathbb{C}\) if and only if Re\((z) - ~\text{Re}(w)\) is an integer and Im\((z) = ~\text{Im}(w)\text{.}\) For instance, \((-1.6 + 4i) \sim (2.4 + 4i)\) since the difference of the real parts (-1.6 - 2.4 = -4) is an integer and the imaginary parts are equal. To show \(\sim\) is an equivalence relation, we check the three requirements.</p>
 <ol class="decimal">
-<li id="li-65">Reflexivity: Given \(z = a + bi\text{,}\) it follows that \(z \sim z\) because \(a - a = 0\) is an integer and \(b = b\text{.}\)</li>
-<li id="li-66">Symmetry: Suppose \(z \sim w\text{.}\)  Then Re\((z) - ~\text{Re}(w) = k\) for some integer \(k\) and Im\((z) = ~\text{Im}(w)\text{.}\)  It follows that Re\((w) - ~\text{Re}(z) = -k\) is an integer and Im\((w) = ~\text{Im}(z)\text{.}\)  In other words, \(w \sim z\text{.}\)</li>
-<li id="li-67">Transitivity: Suppose \(z \sim w\) and \(w \sim v\text{.}\)  We must show \(z \sim v\text{.}\)  Since \(z \sim w\text{,}\) Re\((z) - ~\text{Re}(w) = k\) for some integer \(k\text{,}\) and since \(w \sim v\text{,}\) Re\((w) - ~\text{Re}(v) = l\) for some integer \(l\text{.}\)  Notice that<div class="displaymath">
+<li id="li-311">Reflexivity: Given \(z = a + bi\text{,}\) it follows that \(z \sim z\) because \(a - a = 0\) is an integer and \(b = b\text{.}\)</li>
+<li id="li-312">Symmetry: Suppose \(z \sim w\text{.}\)  Then Re\((z) - ~\text{Re}(w) = k\) for some integer \(k\) and Im\((z) = ~\text{Im}(w)\text{.}\)  It follows that Re\((w) - ~\text{Re}(z) = -k\) is an integer and Im\((w) = ~\text{Im}(z)\text{.}\)  In other words, \(w \sim z\text{.}\)</li>
+<li id="li-313">Transitivity: Suppose \(z \sim w\) and \(w \sim v\text{.}\)  We must show \(z \sim v\text{.}\)  Since \(z \sim w\text{,}\) Re\((z) - ~\text{Re}(w) = k\) for some integer \(k\text{,}\) and since \(w \sim v\text{,}\) Re\((w) - ~\text{Re}(v) = l\) for some integer \(l\text{.}\)  Notice that<div class="displaymath">
 \begin{align*}
 k+l \amp =[\text{Re}(z)-~\text{Re}(w)]+[\text{Re}(w) - ~\text{Re}(v)]\\
-\amp = \text{Re}(z) - ~\text{Re}(v).
+\amp = \text{Re}(z) - ~\text{Re}(v)\text{.}
 \end{align*}
 </div>So, Re\((z) - ~\text{Re}(v)\) is an integer.  Furthermore, we have Im\((z) =\) Im\((w) =\) Im\((v)\text{.}\)  Thus, \(z \sim v\text{.}\)</li>
 </ol>
-<p id="p-1434">The equivalence class of a point \(z = a+bi\) consists of all points \(w = c + bi\) where \(a-c\) is an integer. In other words, \(c = a+n\) for some integer \(n\text{,}\) so \(w = z + n\) and we may express the equivalence class as \([z]  = \{ z + n ~|~ n \in \mathbb{Z}\}.\)</p></article><p id="p-1435">A <dfn class="terminology">partition</dfn> of a set \(A\) consists of a collection of non-empty subsets of \(A\) that are mutually disjoint and have union equal to \(A\text{.}\)  An equivalence relation on a set \(A\) serves to partition \(A\) by the equivalence classes.  Indeed, each equivalence class is non-empty since each element is related to itself, and the union of all equivalence classes is all of \(A\) by the same reason. That equivalence classes are mutually disjoint follows from the following lemma.</p>
-<article class="theorem-like" id="lem_equivclass"><h6 class="heading">
-<span class="type">Lemma</span> <span class="codenumber">7.7.4</span>
+<p id="p-1530">The equivalence class of a point \(z = a+bi\) consists of all points \(w = c + bi\) where \(a-c\) is an integer. In other words, \(c = a+n\) for some integer \(n\text{,}\) so \(w = z + n\) and we may express the equivalence class as \([z]  = \{ z + n ~|~ n \in \mathbb{Z}\}\text{.}\)</p></article><p id="p-1531">A <dfn class="terminology">partition</dfn> of a set \(A\) consists of a collection of non-empty subsets of \(A\) that are mutually disjoint and have union equal to \(A\text{.}\)  An equivalence relation on a set \(A\) serves to partition \(A\) by the equivalence classes.  Indeed, each equivalence class is non-empty since each element is related to itself, and the union of all equivalence classes is all of \(A\) by the same reason. That equivalence classes are mutually disjoint follows from the following lemma.</p>
+<article class="lemma theorem-like" id="lem_equivclass"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.7.4</span><span class="period">.</span>
 </h6>
-<p id="p-1436">Suppose \(\sim\) is an equivalence relation on \(A\text{,}\) and \(a\) and \(b\) are any two elements of \(A\text{.}\)  Then either \([a]\) and \([b]\) have no elements in common, or they are equal sets.</p></article><article class="hiddenproof" id="proof-55"><a knowl="" class="id-ref" refid="hk-proof-55"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-55" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1437">Suppose there is some element \(c\) that is in both \([a]\) and \([b]\text{.}\) We show \([a] = [b]\) by arguing that each set is a subset of the other.</p>
-<p id="p-1438">That \([a]\) is a subset of \([b]\text{:}\) Suppose \(x\) is in \([a]\text{.}\) We must show that \(x\) is in \([b]\) as well. Since \(x\) is in \([a]\text{,}\) \(x \sim a\text{.}\) Since \(c\) is in \([a]\) and in \([b]\text{,}\) \(c \sim a\) and \(c \sim b\text{.}\) We may use these facts, along with transitivity and symmetry of the relation, to see that \(x \sim a
-\sim c \sim b\text{.}\) That is, \(x\) is in \([b]\text{.}\) Therefore, everything in \([a]\) is also in \([b]\text{.}\)</p>
-<p id="p-1439">We may repeat the argument above to show that \([b]\) is a subset \([a]\text{.}\) Thus, if \([a]\) and \([b]\) have any element in common, then they are entirely equal sets, and this completes the proof.</p></article></div>
-<p id="p-1440">In light of <a knowl="./knowl/lem_equivclass.html" title="Lemma 7.7.4">Lemma 7.7.4</a>, an equivalence relation on a set provides a natural way to divide its elements into subsets that have no points in common. An equivalence relation on \(A\text{,}\) then, determines a new set whose elements are the distinct equivalence classes.</p>
-<article class="definition-like" id="definition-40"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">7.7.5</span>
+<p id="p-1532">Suppose \(\sim\) is an equivalence relation on \(A\text{,}\) and \(a\) and \(b\) are any two elements of \(A\text{.}\)  Then either \([a]\) and \([b]\) have no elements in common, or they are equal sets.</p></article><article class="hiddenproof" id="proof-55"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-55"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-55"><article class="hiddenproof"><p id="p-1533">Suppose there is some element \(c\) that is in both \([a]\) and \([b]\text{.}\) We show \([a] = [b]\) by arguing that each set is a subset of the other.</p>
+<p id="p-1534">That \([a]\) is a subset of \([b]\text{:}\) Suppose \(x\) is in \([a]\text{.}\) We must show that \(x\) is in \([b]\) as well. Since \(x\) is in \([a]\text{,}\) \(x \sim a\text{.}\) Since \(c\) is in \([a]\) and in \([b]\text{,}\) \(c \sim a\) and \(c \sim b\text{.}\) We may use these facts, along with transitivity and symmetry of the relation, to see that \(x \sim a \sim c \sim b\text{.}\) That is, \(x\) is in \([b]\text{.}\) Therefore, everything in \([a]\) is also in \([b]\text{.}\)</p>
+<p id="p-1535">We may repeat the argument above to show that \([b]\) is a subset \([a]\text{.}\) Thus, if \([a]\) and \([b]\) have any element in common, then they are entirely equal sets, and this completes the proof.</p></article></div>
+<p id="p-1536">In light of <a class="xref" data-knowl="./knowl/lem_equivclass.html" title="Lemma 7.7.4">Lemma 7.7.4</a>, an equivalence relation on a set provides a natural way to divide its elements into subsets that have no points in common. An equivalence relation on \(A\text{,}\) then, determines a new set whose elements are the distinct equivalence classes.</p>
+<article class="definition definition-like" id="definition-40"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.7.5</span><span class="period">.</span>
 </h6>
-<p id="p-1441">If \(\sim\) is an equivalence relation on a set \(A\text{,}\) the <dfn class="terminology">quotient set</dfn> of \(A\) by \(\sim\) is</p>
+<p id="p-1537">If \(\sim\) is an equivalence relation on a set \(A\text{,}\) the <dfn class="terminology">quotient set</dfn> of \(A\) by \(\sim\) is</p>
 <div class="displaymath">
 \begin{equation*}
-A/_\sim = \{[a] ~|~ a \in A\}.
+A/_\sim = \{[a] ~|~ a \in A\}\text{.}
 \end{equation*}
-</div></article><p id="p-1442">We will be interested in quotients of three spaces: the Euclidean plane \(\mathbb{C}\text{,}\) the hyperbolic plane \(\mathbb{D}\text{,}\) and the sphere \(\mathbb{S}^2\text{.}\) If we build a quotient set from one of these spaces, we will call a region of the space a <dfn class="terminology">fundamental domain</dfn> of the quotient set if it contains a representative of each equivalence class of the quotient and at most one representative in its interior.</p></section><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
+</div></article><p id="p-1538">We will be interested in quotients of three spaces: the Euclidean plane \(\mathbb{C}\text{,}\) the hyperbolic plane \(\mathbb{D}\text{,}\) and the sphere \(\mathbb{S}^2\text{.}\) If we build a quotient set from one of these spaces, we will call a region of the space a <dfn class="terminology">fundamental domain</dfn> of the quotient set if it contains a representative of each equivalence class of the quotient and at most one representative in its interior.</p></section><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Orbit Spaces</span>
 </h3>
-<a href="section7-7.html#subsection-7" class="permalink">¶</a><p id="p-1443">We may construct a natural quotient set from a geometry \((X,G)\text{.}\)</p>
-<p id="p-1444">The group structure of \(G\) defines an equivalence relation \(\sim_G\) on \(X\) as follows: For \(x, y \in X\text{,}\) let</p>
+<p id="p-1539">We may construct a natural quotient set from a geometry \((X,G)\text{.}\)</p>
+<p id="p-1540">The group structure of \(G\) defines an equivalence relation \(\sim_G\) on \(X\) as follows: For \(x, y \in X\text{,}\) let</p>
 <div class="displaymath">
 \begin{equation*}
-x \sim_G y ~\text{if and only if}~ T(x) = y ~\text{for some}~T \in G.
+x \sim_G y ~\text{if and only if}~ T(x) = y ~\text{for some}~T \in G\text{.}
 \end{equation*}
 </div>
-<p>Indeed, for each \(x \in X\text{,}\) \(x \sim_G x\) because the group \(G\) must contain the identity transformation, so the relation is reflexive. Next, if \(x \sim_G y\) then \(T(x) = y\) for some \(T\) in \(G\text{.}\) But the group contains inverses, so \(T^{-1}\) is in \(G\) and \(T^{-1}(y) = x\text{.}\) Thus \(y \sim_G x\text{,}\) and so \(\sim_G\) is symmetric.  Third, transitivity of the relation follows from the fact that the composition of two maps in \(G\) is again in \(G\text{.}\)</p>
-<p id="p-1445">Given geometry \((X,G)\) we let \(X/G\) denote the quotient set determined by the equivalence relation \(\sim_G\text{.}\) In this setting we call the equivalence class of a point \(x\) in \(X\text{,}\) the <dfn class="terminology">orbit</dfn> of \(x\text{.}\) So, the orbit of \(x\) consists of all points in the space \(X\) to which \(x\) can be mapped under transformations of the group \(G\text{:}\)</p>
+<p data-braille="continuation">Indeed, for each \(x \in X\text{,}\) \(x \sim_G x\) because the group \(G\) must contain the identity transformation, so the relation is reflexive. Next, if \(x \sim_G y\) then \(T(x) = y\) for some \(T\) in \(G\text{.}\) But the group contains inverses, so \(T^{-1}\) is in \(G\) and \(T^{-1}(y) = x\text{.}\) Thus \(y \sim_G x\text{,}\) and so \(\sim_G\) is symmetric.  Third, transitivity of the relation follows from the fact that the composition of two maps in \(G\) is again in \(G\text{.}\)</p>
+<p id="p-1541">Given geometry \((X,G)\) we let \(X/G\) denote the quotient set determined by the equivalence relation \(\sim_G\text{.}\) In this setting we call the equivalence class of a point \(x\) in \(X\text{,}\) the <dfn class="terminology">orbit</dfn> of \(x\text{.}\) So, the orbit of \(x\) consists of all points in the space \(X\) to which \(x\) can be mapped under transformations of the group \(G\text{:}\)</p>
 <div class="displaymath">
 \begin{equation*}
-[x] = \{ y \in X ~|~ T(x) = y~\text{for some}~T \in G\}.
+[x] = \{ y \in X ~|~ T(x) = y~\text{for some}~T \in G\}\text{.}
 \end{equation*}
 </div>
-<p>Put another way, the orbit of \(x\) is the set of points in \(X\) congruent to \(x\) in the geometry \((X,G)\text{.}\)</p>
-<p id="p-1446">Note that if the geometry \(G\) is homogeneous, then any two points in \(X\) are congruent and, for any \(x \in X\text{,}\) the orbit of \(x\) is all of \(X\text{.}\)  In this case the quotient set \(X/G\) consists of a single point, which is not so interesting.   We typically want to consider orbit spaces \(X/G\) in which \(G\) is a “small” group of transformations.</p>
-<p id="p-1447">We say that a group of transformations \(G\) of \(X\) is a <dfn class="terminology">group of homeomorphisms of \(X\)</dfn> if each transformation in \(G\) is continuous. In this case, we call \(X/G\) an <dfn class="terminology">orbit space</dfn>. If \(X\) has a metric, we say that a group of transformations of \(X\) is a <dfn class="terminology">group of isometries</dfn> if each transformation of the group preserves distance between points.</p>
-<article class="example-like" id="ex-rollcyl"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.7.6</span> <span class="title">Building a topological cylinder</span>
+<p data-braille="continuation">Put another way, the orbit of \(x\) is the set of points in \(X\) congruent to \(x\) in the geometry \((X,G)\text{.}\)</p>
+<p id="p-1542">Note that if the geometry \(G\) is homogeneous, then any two points in \(X\) are congruent and, for any \(x \in X\text{,}\) the orbit of \(x\) is all of \(X\text{.}\)  In this case the quotient set \(X/G\) consists of a single point, which is not so interesting.   We typically want to consider orbit spaces \(X/G\) in which \(G\) is a “small” group of transformations.</p>
+<p id="p-1543">We say that a group of transformations \(G\) of \(X\) is a <dfn class="terminology">group of homeomorphisms of \(X\)</dfn> if each transformation in \(G\) is continuous. In this case, we call \(X/G\) an <dfn class="terminology">orbit space</dfn>. If \(X\) has a metric, we say that a group of transformations of \(X\) is a <dfn class="terminology">group of isometries</dfn> if each transformation of the group preserves distance between points.</p>
+<article class="example example-like" id="ex-rollcyl"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.6</span><span class="period">.</span><span class="space"> </span><span class="title">Building a topological cylinder.</span>
 </h6>
-<p id="p-1448">Consider the horizontal translation \(T_1(z) = z + 1\) of \(\mathbb{C}\text{.}\) This transformation is a (Euclidean) isometry of \(\mathbb{C}\) and it <em class="emphasis">generates</em> a group of isometries of \(\mathbb{C}\) as follows. Put \(T_1\) and \(T_1^{-1}\) in the group, along with any number of compositions of these transformations. Fortunately, any number of compositions of these two maps results in an isometry that is easy to write down. Any finite composition of copies of \(T_1\) and \(T_1^{-1}\) indicates a series of instructions for a point \(z\text{:}\) at each step in the long composition \(z\) moves either one unit to the left if we apply \(T_1^{-1}\) or one unit to the right if we apply \(T_1\text{.}\) In the end, \(z\) has moved horizontally by some integer amount. That is, any such composition can be written as \(T_n(z) = z + n\) for some integer \(n\text{.}\) We let \(\langle T_1 \rangle\) denote the group generated by \(T_1\text{,}\) and we have</p>
+<p id="p-1544">Consider the horizontal translation \(T_1(z) = z + 1\) of \(\mathbb{C}\text{.}\) This transformation is a (Euclidean) isometry of \(\mathbb{C}\) and it <em class="emphasis">generates</em> a group of isometries of \(\mathbb{C}\) as follows. Put \(T_1\) and \(T_1^{-1}\) in the group, along with any number of compositions of these transformations. Fortunately, any number of compositions of these two maps results in an isometry that is easy to write down. Any finite composition of copies of \(T_1\) and \(T_1^{-1}\) indicates a series of instructions for a point \(z\text{:}\) at each step in the long composition \(z\) moves either one unit to the left if we apply \(T_1^{-1}\) or one unit to the right if we apply \(T_1\text{.}\) In the end, \(z\) has moved horizontally by some integer amount. That is, any such composition can be written as \(T_n(z) = z + n\) for some integer \(n\text{.}\) We let \(\langle T_1 \rangle\) denote the group generated by \(T_1\text{,}\) and we have</p>
 <div class="displaymath">
 \begin{equation*}
-\langle T_1 \rangle  = \{T_n(z) = z + n ~|~ n \in \mathbb{Z}\}. 
+\langle T_1 \rangle  = \{T_n(z) = z + n ~|~ n \in \mathbb{Z}\}\text{.}
 \end{equation*}
 </div>
-<p id="p-1449">The orbit of a point \(p\) under this group of isometries is</p>
+<p id="p-1545">The orbit of a point \(p\) under this group of isometries is</p>
 <div class="displaymath">
 \begin{equation*}
-[p] = \{p + n ~|~ n \in \mathbb{Z}\}.
+[p] = \{p + n ~|~ n \in \mathbb{Z}\}\text{.}
 \end{equation*}
 </div>
-<p id="p-1450">A fundamental domain for the orbit space \(\mathbb{C}/\langle T_1 \rangle\) is the vertical strip consisting of all points \(z\) with \(0 \leq \text{Re}(z) \leq 1\text{,}\) as in the following figure. Every point in \(\mathbb{C}\) is related to a point in this shaded vertical strip. Furthermore, no two points in the interior of the strip are related. By passing to the quotient, we are essentially “rolling” up the plane in to an infinitely tall cylinder.  The rolling up process is described by the map \(p:\mathbb{C} \to \mathbb{C}/\langle T_1 \rangle \) given by \(p(z) = [z]\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-rollcyl.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="example-like" id="rotquotient"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.7.7</span> <span class="title">A quotient space from rotations</span>
+<p id="p-1546">A fundamental domain for the orbit space \(\mathbb{C}/\langle T_1 \rangle\) is the vertical strip consisting of all points \(z\) with \(0 \leq \text{Re}(z) \leq 1\text{,}\) as in the following figure. Every point in \(\mathbb{C}\) is related to a point in this shaded vertical strip. Furthermore, no two points in the interior of the strip are related. By passing to the quotient, we are essentially “rolling” up the plane in to an infinitely tall cylinder.  The rolling up process is described by the map \(p:\mathbb{C} \to \mathbb{C}/\langle T_1 \rangle \) given by \(p(z) = [z]\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-rollcyl.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="example example-like" id="rotquotient"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">A quotient space from rotations.</span>
 </h6>
-<p id="p-1451">The rotation \(R_{\frac{\pi}{2}}\) of \(\mathbb{C}\) by \(\pi/2\) about the origin generates a group of isometries of \(\mathbb{C}\) consisting of four transformations. We generate the group as before, by considering all possible compositions of \(R_{\frac{\pi}{2}}\) and \(R_{\frac{\pi}{2}}^{-1}\text{.}\) This group turns out to be finite: Any combination of these rotations produces a rotation by 0, \(\pi/2\text{,}\) \(\pi\text{,}\) or \(3\pi/2\) radians, giving us</p>
+<p id="p-1547">The rotation \(R_{\frac{\pi}{2}}\) of \(\mathbb{C}\) by \(\pi/2\) about the origin generates a group of isometries of \(\mathbb{C}\) consisting of four transformations. We generate the group as before, by considering all possible compositions of \(R_{\frac{\pi}{2}}\) and \(R_{\frac{\pi}{2}}^{-1}\text{.}\) This group turns out to be finite: Any combination of these rotations produces a rotation by 0, \(\pi/2\text{,}\) \(\pi\text{,}\) or \(3\pi/2\) radians, giving us</p>
 <div class="displaymath">
 \begin{equation*}
-\langle R_{\frac{\pi}{2}} \rangle = \{1, R_{\frac{\pi}{2}}, R_\pi, R_{\frac{3\pi}{2}}\}. 
+\langle R_{\frac{\pi}{2}} \rangle = \{1, R_{\frac{\pi}{2}}, R_\pi, R_{\frac{3\pi}{2}}\} \text{.}
 \end{equation*}
 </div>
-<p id="p-1452">The orbit of the point 0 is simply \(\{0\}\) because each transformation in the group fixes 0, but the orbit of any other point in \(\mathbb{C}\) is a four-element set. For instance, the orbit of \(1\) is \([1] = \{i,-1,-i, 1\}\text{.}\)</p></article><p id="p-1453">It turns out that every surface can be viewed as a quotient space of the form \(M/G\text{,}\) where \(M\) is either the Euclidean plane \(\mathbb{C}\text{,}\) the hyperbolic plane \(\mathbb{D}\text{,}\) or the sphere \(\mathbb{S}^2\text{,}\) and \(G\) is a subgroup of the transformation group in Euclidean geometry, hyperbolic geometry, or elliptic geometry, respectively. In topology terminology, the space \(M\) is called a <dfn class="terminology">universal covering space</dfn> of the orbit space \(M/G\text{.}\)</p>
-<article class="example-like" id="ex_torusquotient"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.7.8</span> <span class="title">\(H_1\) as quotient of \(\mathbb{C}\)</span>
+<p id="p-1548">The orbit of the point 0 is simply \(\{0\}\) because each transformation in the group fixes 0, but the orbit of any other point in \(\mathbb{C}\) is a four-element set. For instance, the orbit of \(1\) is \([1] = \{i,-1,-i, 1\}\text{.}\)</p></article><p id="p-1549">It turns out that every surface can be viewed as a quotient space of the form \(M/G\text{,}\) where \(M\) is either the Euclidean plane \(\mathbb{C}\text{,}\) the hyperbolic plane \(\mathbb{D}\text{,}\) or the sphere \(\mathbb{S}^2\text{,}\) and \(G\) is a subgroup of the transformation group in Euclidean geometry, hyperbolic geometry, or elliptic geometry, respectively. In topology terminology, the space \(M\) is called a <dfn class="terminology">universal covering space</dfn> of the orbit space \(M/G\text{.}\)</p>
+<article class="example example-like" id="ex_torusquotient"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.8</span><span class="period">.</span><span class="space"> </span><span class="title">\(H_1\) as quotient of \(\mathbb{C}\).</span>
 </h6>
-<p id="p-1454">Suppose \(a\) and \(b\) are positive real numbers. Let \(\langle T_a,
-T_{bi}\rangle\) be the group of homeomorphisms <em class="emphasis">generated</em> by the horizontal translation \(T_a(z) = z + a\) and the vertical translation \(T_{bi}(z) = z + bi\text{.}\)</p>
-<p id="p-1455">This group contains all possible compositions of these two transformations and their inverses. Thus, the orbit of a point \(z\) consists of all complex numbers to which \(z\) can be sent by moving \(z\) horizontally by some integer multiple of \(a\) units, and vertically by some integer multiple of \(b\) units. An arbitrary transformation in \(\Gamma = \langle T_a,
-T_{bi}\rangle\) has the form</p>
+<p id="p-1550">Suppose \(a\) and \(b\) are positive real numbers. Let \(\langle T_a, T_{bi}\rangle\) be the group of homeomorphisms <em class="emphasis">generated</em> by the horizontal translation \(T_a(z) = z + a\) and the vertical translation \(T_{bi}(z) = z + bi\text{.}\)</p>
+<p id="p-1551">This group contains all possible compositions of these two transformations and their inverses. Thus, the orbit of a point \(z\) consists of all complex numbers to which \(z\) can be sent by moving \(z\) horizontally by some integer multiple of \(a\) units, and vertically by some integer multiple of \(b\) units. An arbitrary transformation in \(\Gamma = \langle T_a, T_{bi}\rangle\) has the form</p>
 <div class="displaymath">
 \begin{equation*}
 T(z) = z + (ma + nbi) 
 \end{equation*}
 </div>
-<p>where \(m\) and \(n\) are integers. A fundamental domain for the orbit space consists of the rectangle with corners \(0, a, a + bi, bi\text{.}\) The resulting quotient space is homeomorphic to the torus. Notice that points on the boundary of this rectangle are identified in pairs. In fact, the fundamental domain, with its boundary point redundancies, corresponds precisely to our polygonal surface representation of the torus.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-rolltorus.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1456">If the space \(M\) has a metric and our group of homeomorphisms is sufficiently nice, then the resulting orbit space inherits a metric from the universal covering space \(M\text{.}\) To be sufficiently nice, we first need our homeomorphisms to be isometries. The group of isometries must also be fixed-point free and properly discontinuous. The group \(G\) is <dfn class="terminology">fixed-point free</dfn> if each isometry in \(G\) (other than the identity map) has no fixed points. The group \(G\) is <dfn class="terminology">properly discontinuous</dfn> if every \(x\) in \(X\) has an open 2-ball \(U_x\) about it whose images under all isometries in \(G\) are pairwise disjoint. The interested reader is encouraged to see <a knowl="./knowl/stillwell.html" title="Bibliographic Entry 10: Geometry on Surfaces">[10]</a> or <a knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a> for more detail. If our group \(G\) is a fixed-point free, properly discontinuous group of isometries, then the resulting orbit space inherits a metric from \(M\text{.}\)</p>
-<p id="p-1457">Consider the quotient space in <a knowl="./knowl/rotquotient.html" title="Example 7.7.7: A quotient space from rotations">Example 7.7.7</a>. The group here is a group of isometries, since rotations preserve Euclidean distance, but it is not fixed-point free. All maps in \(G\) have fixed points (rotation about the origin fixes 0). This prevents the quotient space from inheriting the geometry of its mother space. Indeed, a circle centered at [0] with radius \(r\) would have circumference \(\frac{2\pi r}{4}\text{,}\) which doesn't correspond to Euclidean geometry.</p>
-<p id="p-1458">The group of isometries in the torus example is fixed-point free and properly discontinuous, so the following formula for the distance between two points \([u]\) and \([v]\) in the orbit space \(\mathbb{C}/\langle T_a, T_{bi}\rangle\) is well-defined:</p>
+<p data-braille="continuation">where \(m\) and \(n\) are integers. A fundamental domain for the orbit space consists of the rectangle with corners \(0, a, a + bi, bi\text{.}\) The resulting quotient space is homeomorphic to the torus. Notice that points on the boundary of this rectangle are identified in pairs. In fact, the fundamental domain, with its boundary point redundancies, corresponds precisely to our polygonal surface representation of the torus.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-rolltorus.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1552">If the space \(M\) has a metric and our group of homeomorphisms is sufficiently nice, then the resulting orbit space inherits a metric from the universal covering space \(M\text{.}\) To be sufficiently nice, we first need our homeomorphisms to be isometries. The group of isometries must also be fixed-point free and properly discontinuous. The group \(G\) is <dfn class="terminology">fixed-point free</dfn> if each isometry in \(G\) (other than the identity map) has no fixed points. The group \(G\) is <dfn class="terminology">properly discontinuous</dfn> if every \(x\) in \(X\) has an open 2-ball \(U_x\) about it whose images under all isometries in \(G\) are pairwise disjoint. The interested reader is encouraged to see <a class="xref" data-knowl="./knowl/stillwell.html" title="Bibliographic Entry 10: Geometry on Surfaces">[10]</a> or <a class="xref" data-knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a> for more detail. If our group \(G\) is a fixed-point free, properly discontinuous group of isometries, then the resulting orbit space inherits a metric from \(M\text{.}\)</p>
+<p id="p-1553">Consider the quotient space in <a class="xref" data-knowl="./knowl/rotquotient.html" title="Example 7.7.7: A quotient space from rotations">Example 7.7.7</a>. The group here is a group of isometries, since rotations preserve Euclidean distance, but it is not fixed-point free. All maps in \(G\) have fixed points (rotation about the origin fixes 0). This prevents the quotient space from inheriting the geometry of its mother space. Indeed, a circle centered at [0] with radius \(r\) would have circumference \(\frac{2\pi r}{4}\text{,}\) which doesn't correspond to Euclidean geometry.</p>
+<p id="p-1554">The group of isometries in the torus example is fixed-point free and properly discontinuous, so the following formula for the distance between two points \([u]\) and \([v]\) in the orbit space \(\mathbb{C}/\langle T_a, T_{bi}\rangle\) is well-defined:</p>
 <div class="displaymath">
 \begin{equation*}
-d([u],[v]) = \text{min}\{|z-w| ~|~ z \in [u], w \in [v]\}. 
+d([u],[v]) = \text{min}\{|z-w| ~|~ z \in [u], w \in [v]\}\text{.}
 \end{equation*}
 </div>
-<p id="p-1459"><a knowl="./knowl/fig-t2distance.html" title="Figure 7.7.9">Figure 7.7.9</a> depicts two points in the shaded fundamental domain, \([u]\) and \([v]\text{.}\) The distance between them equals the Euclidean distance in \(\mathbb{C}\) of the shortest path between any point in equivalence class \([u]\) and any point in equivalence class \([v]\text{.}\) There are many such nearest pairs, and one such pair is labeled in <a knowl="./knowl/fig-t2distance.html" title="Figure 7.7.9">Figure 7.7.9</a> where \(z\) is in \([u]\) and \(w\) is in \([v]\text{.}\) Also drawn in the figure is a solid line (in two parts) that corresponds to the shortest path one would take <em class="emphasis">within</em> the fundamental domain to proceed from \([u]\) to \([v]\text{.}\) This path marks the shortest route a ship in the video game from Chapter 1 could take to get from \([u]\) to \([v]\text{.}\)</p>
-<figure class="figure-like" id="fig-t2distance"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-t2distance.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.7.9</span> The distance between two points in the torus viewed as a quotient of \(\mathbb{C}\text{.}\)</figcaption></figure><article class="example-like" id="example-77"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.7.10</span> <span class="title">\(\mathbb{P}^2\) as quotient of \(\mathbb{S}^2\)</span>
+<p id="p-1555"><a class="xref" data-knowl="./knowl/fig-t2distance.html" title="Figure 7.7.9">Figure 7.7.9</a> depicts two points in the shaded fundamental domain, \([u]\) and \([v]\text{.}\) The distance between them equals the Euclidean distance in \(\mathbb{C}\) of the shortest path between any point in equivalence class \([u]\) and any point in equivalence class \([v]\text{.}\) There are many such nearest pairs, and one such pair is labeled in <a class="xref" data-knowl="./knowl/fig-t2distance.html" title="Figure 7.7.9">Figure 7.7.9</a> where \(z\) is in \([u]\) and \(w\) is in \([v]\text{.}\) Also drawn in the figure is a solid line (in two parts) that corresponds to the shortest path one would take <em class="emphasis">within</em> the fundamental domain to proceed from \([u]\) to \([v]\text{.}\) This path marks the shortest route a ship in the video game from Chapter 1 could take to get from \([u]\) to \([v]\text{.}\)</p>
+<figure class="figure figure-like" id="fig-t2distance"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-t2distance.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.7.9<span class="period">.</span></span><span class="space"> </span>The distance between two points in the torus viewed as a quotient of \(\mathbb{C}\text{.}\)</figcaption></figure><article class="example example-like" id="example-77"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.10</span><span class="period">.</span><span class="space"> </span><span class="title">\(\mathbb{P}^2\) as quotient of \(\mathbb{S}^2\).</span>
 </h6>
-<p id="p-1460">Let \(T_a: \mathbb{S}^2 \to \mathbb{S}^2\) be the antipodal map \(T_a(P) = -P\text{.}\) This map is an isometry that sends each point on \(\mathbb{S}^2\) to the point diametrically opposed to it, so it is fixed-point free. Since \(T_a^{-1} = T_a\text{,}\) the group generated by this map consists of just 2 elements: \(T_a\) and the identity map. The quotient space \(\mathbb{S}^2/\langle T_a\rangle\) is the projective plane.</p></article><article class="example-like" id="ex_H2"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.7.11</span> <span class="title">\(H_2\) as quotient of \(\mathbb{D}^2\)</span>
+<p id="p-1556">Let \(T_a: \mathbb{S}^2 \to \mathbb{S}^2\) be the antipodal map \(T_a(P) = -P\text{.}\) This map is an isometry that sends each point on \(\mathbb{S}^2\) to the point diametrically opposed to it, so it is fixed-point free. Since \(T_a^{-1} = T_a\text{,}\) the group generated by this map consists of just 2 elements: \(T_a\) and the identity map. The quotient space \(\mathbb{S}^2/\langle T_a\rangle\) is the projective plane.</p></article><article class="example example-like" id="ex_H2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.11</span><span class="period">.</span><span class="space"> </span><span class="title">\(H_2\) as quotient of \(\mathbb{D}^2\).</span>
 </h6>
-<p id="p-1461">We may build a regular octagon in the hyperbolic plane whose interior angles equal \(\pi/4\) radians. We may also find a hyperbolic transformation that takes an edge of this octagon to another edge. Labelling the edges as in the following diagram, let \(T_{a}\) be the hyperbolic isometry taking one \(a\) edge to the other, being careful to respect the edge orientations. We construct such a map by composing two hyperbolic reflections about hyperbolic lines: the hyperbolic line containing the first \(a\) edge, and the hyperbolic line \(m\) that bisects the \(b\) edge between the \(a\) edges. Since the two lines of reflection do not intersect, the resulting map in \(\cal H\) is a translation in \({\cal H}\) and has no fixed points in \(\mathbb{D}\) (the fixed points are ideal points).</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-H2quotient.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1462">Define \(T_{b},T_{c}\text{,}\) and \(T_{d}\) similarly and consider the group of isometries of \(\mathbb{D}\) generated by these four maps. This group is a fixed-point free, properly discontinuous group of isometries of \(\mathbb{D}\text{,}\) so the resulting quotient space inherits hyperbolic geometry.</p>
-<p id="p-1463">The distance between two points \([u]\) and \([v]\) in the quotient space is given by</p>
+<p id="p-1557">We may build a regular octagon in the hyperbolic plane whose interior angles equal \(\pi/4\) radians. We may also find a hyperbolic transformation that takes an edge of this octagon to another edge. Labelling the edges as in the following diagram, let \(T_{a}\) be the hyperbolic isometry taking one \(a\) edge to the other, being careful to respect the edge orientations. We construct such a map by composing two hyperbolic reflections about hyperbolic lines: the hyperbolic line containing the first \(a\) edge, and the hyperbolic line \(m\) that bisects the \(b\) edge between the \(a\) edges. Since the two lines of reflection do not intersect, the resulting map in \(\cal H\) is a translation in \({\cal H}\) and has no fixed points in \(\mathbb{D}\) (the fixed points are ideal points).</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-H2quotient.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1558">Define \(T_{b},T_{c}\text{,}\) and \(T_{d}\) similarly and consider the group of isometries of \(\mathbb{D}\) generated by these four maps. This group is a fixed-point free, properly discontinuous group of isometries of \(\mathbb{D}\text{,}\) so the resulting quotient space inherits hyperbolic geometry.</p>
+<p id="p-1559">The distance between two points \([u]\) and \([v]\) in the quotient space is given by</p>
 <div class="displaymath">
 \begin{equation*}
-d_H([u],[v]) = ~\text{min}\{d_H(z,w) ~|~ z \in [u], w \in [v]\}. 
+d_H([u],[v]) = ~\text{min}\{d_H(z,w) ~|~ z \in [u], w \in [v]\}\text{.}
 \end{equation*}
 </div>
-<p id="p-1464">Geodesics in the quotient space are determined by geodesics in the hyperbolic plane \(\mathbb{D}\text{.}\)</p>
-<p id="p-1465">Topologically, the quotient space is homeomorphic to \(H_2\text{,}\) and the octagon pictured above serves as a fundamental domain of the quotient space. Moving copies of this octagon by isometries in the group produces a tiling of \(\mathbb{D}\) by this octagon. Each copy of the octagon would serve equally well as a fundamental domain for the quotient space. <a knowl="./knowl/fig-cover.html" title="Figure 7.7.12">Figure 7.7.12</a> displays a portion of this tiling, including a geodesic triangle in the fundamental domain, and images of it in neighboring octagons.</p></article><figure class="figure-like" id="fig-cover"><div style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/coverb.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.7.12</span> A triangle in \(H_2\text{,}\) with various images of it.</figcaption></figure><p id="p-1466">All surfaces \(H_g\) for \(g \geq 2\) and \(C_g\) for \(g \geq 3\) can be viewed as quotients of \(\mathbb{D}\) by following the procedure in the previous example.</p>
-<p id="p-1467">Start with a perfectly sized polygon in \(\mathbb{D}\text{.}\) The polygon must have corner angle sum equal to \(2\pi\) radians, and the edges that get identified must have equal length so that an isometry can take one to the other. (In every example so far, we have used regular polygons in which all sides have the same length, but asymmetric polygons will also work.) Next, for each pair of oriented edges to be identified, find a hyperbolic isometry that maps one onto the other (respecting the orientation of the edges). The group generated by these isometries creates a quotient space homeomorphic to the space represented by the polygon, and it inherits hyperbolic geometry. Note also that the initial polygon can be moved by the isometries in the group to tile all of \(\mathbb{D}\) without gaps or overlaps.</p></section><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
+<p id="p-1560">Geodesics in the quotient space are determined by geodesics in the hyperbolic plane \(\mathbb{D}\text{.}\)</p>
+<p id="p-1561">Topologically, the quotient space is homeomorphic to \(H_2\text{,}\) and the octagon pictured above serves as a fundamental domain of the quotient space. Moving copies of this octagon by isometries in the group produces a tiling of \(\mathbb{D}\) by this octagon. Each copy of the octagon would serve equally well as a fundamental domain for the quotient space. <a class="xref" data-knowl="./knowl/fig-cover.html" title="Figure 7.7.12">Figure 7.7.12</a> displays a portion of this tiling, including a geodesic triangle in the fundamental domain, and images of it in neighboring octagons.</p></article><figure class="figure figure-like" id="fig-cover"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/coverb.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.7.12<span class="period">.</span></span><span class="space"> </span>A triangle in \(H_2\text{,}\) with various images of it.</figcaption></figure><p id="p-1562">All surfaces \(H_g\) for \(g \geq 2\) and \(C_g\) for \(g \geq 3\) can be viewed as quotients of \(\mathbb{D}\) by following the procedure in the previous example.</p>
+<p id="p-1563">Start with a perfectly sized polygon in \(\mathbb{D}\text{.}\) The polygon must have corner angle sum equal to \(2\pi\) radians, and the edges that get identified must have equal length so that an isometry can take one to the other. (In every example so far, we have used regular polygons in which all sides have the same length, but asymmetric polygons will also work.) Next, for each pair of oriented edges to be identified, find a hyperbolic isometry that maps one onto the other (respecting the orientation of the edges). The group generated by these isometries creates a quotient space homeomorphic to the space represented by the polygon, and it inherits hyperbolic geometry. Note also that the initial polygon can be moved by the isometries in the group to tile all of \(\mathbb{D}\) without gaps or overlaps.</p></section><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Dirichlet Domain</span>
 </h3>
-<a href="section7-7.html#subsection-8" class="permalink">¶</a><p id="p-1468">We end this section with a discussion of the Dirichlet domain, which is an important tool in the investigation of the shape of the universe. Suppose we live in a surface described as a quotient \(M/G\) where \(M\) is either \(\mathbb{C}\text{,}\) \(\mathbb{D}\text{,}\) or \(\mathbb{S}^2\text{,}\) and \(G\) is a fixed-point free and properly discontinuous group of isometries of the space. For each point \(x\) in \(M\) define the <dfn class="terminology">Dirichlet domain with basepoint \(x\)</dfn> to consist of all points \(y\) in \(M\) such that</p>
+<p id="p-1564">We end this section with a discussion of the Dirichlet domain, which is an important tool in the investigation of the shape of the universe. Suppose we live in a surface described as a quotient \(M/G\) where \(M\) is either \(\mathbb{C}\text{,}\) \(\mathbb{D}\text{,}\) or \(\mathbb{S}^2\text{,}\) and \(G\) is a fixed-point free and properly discontinuous group of isometries of the space. For each point \(x\) in \(M\) define the <dfn class="terminology">Dirichlet domain with basepoint \(x\)</dfn> to consist of all points \(y\) in \(M\) such that</p>
 <div class="displaymath">
 \begin{equation*}
 d(x,y) \leq d(x,T(y)) 
 \end{equation*}
 </div>
-<p>for all \(T\) in \(G\text{,}\) where it is understood that \(d(x,y)\) is Euclidean distance, hyperbolic distance, or elliptic distance, depending on whether \(M\) is \(\mathbb{C}\text{,}\) \(\mathbb{D}\text{,}\) or \(\mathbb{S}^2\text{,}\) respectively.</p>
-<p id="p-1469">At each basepoint \(x\) in \(M\text{,}\) the Dirichlet domain is itself a fundamental domain for the surface \(M/G\text{,}\) and it represents the fundamental domain that a two-dimensional inhabitant might build from his or her local perspective. It is a polygon in \(M\) (whose edges are lines in the local geometry) consisting of all points \(y\) that are as close to \(x\) or closer to \(x\) than any of its image points \(T(y)\) under transformations in \(G\text{.}\)</p>
-<p id="p-1470">We may visualize a Dirichlet domain with basepoint \(x\) as follows. Consider a small circle in \(M\) centered at \(x\text{.}\) Construct a circle of equal radius about all points in the orbit of \(x\text{.}\) Then, begin inflating the circle (and all of its images). Eventually the circles will touch one another, and as the circles continue to expand let them press into each other so that they form a geodesic boundary edge. When the circle has filled the entire surface, it will have formed a polygon with edges identified in pairs. This polygon is the Dirichlet domain.</p>
-<p id="p-1471">At any basepoint in the torus of <a knowl="./knowl/ex_torusquotient.html" title="Example 7.7.8: \(H_1\) as quotient of \(\mathbb{C}\)">Example 7.7.8</a> the Dirichlet domain will be a rectangle identical in proportions to the fundamental domain. In general, however, the shape of a Dirichlet domain may be different than the polygon on which the surface was built, and the shape of the Dirichlet domain may vary from point to point, which is rather cool.</p>
-<figure class="figure-like" id="fig-6sidedKlein"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-6sidedKlein.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.7.13</span> Building a Klein bottle from a hexagon.</figcaption></figure><article class="example-like" id="ex_dirichletK2"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.7.14</span> <span class="title">Dirichlet domains in a Klein bottle</span>
+<p data-braille="continuation">for all \(T\) in \(G\text{,}\) where it is understood that \(d(x,y)\) is Euclidean distance, hyperbolic distance, or elliptic distance, depending on whether \(M\) is \(\mathbb{C}\text{,}\) \(\mathbb{D}\text{,}\) or \(\mathbb{S}^2\text{,}\) respectively.</p>
+<p id="p-1565">At each basepoint \(x\) in \(M\text{,}\) the Dirichlet domain is itself a fundamental domain for the surface \(M/G\text{,}\) and it represents the fundamental domain that a two-dimensional inhabitant might build from his or her local perspective. It is a polygon in \(M\) (whose edges are lines in the local geometry) consisting of all points \(y\) that are as close to \(x\) or closer to \(x\) than any of its image points \(T(y)\) under transformations in \(G\text{.}\)</p>
+<p id="p-1566">We may visualize a Dirichlet domain with basepoint \(x\) as follows. Consider a small circle in \(M\) centered at \(x\text{.}\) Construct a circle of equal radius about all points in the orbit of \(x\text{.}\) Then, begin inflating the circle (and all of its images). Eventually the circles will touch one another, and as the circles continue to expand let them press into each other so that they form a geodesic boundary edge. When the circle has filled the entire surface, it will have formed a polygon with edges identified in pairs. This polygon is the Dirichlet domain.</p>
+<p id="p-1567">At any basepoint in the torus of <a class="xref" data-knowl="./knowl/ex_torusquotient.html" title="Example 7.7.8: \(H_1\) as quotient of \(\mathbb{C}\)">Example 7.7.8</a> the Dirichlet domain will be a rectangle identical in proportions to the fundamental domain. In general, however, the shape of a Dirichlet domain may be different than the polygon on which the surface was built, and the shape of the Dirichlet domain may vary from point to point, which is rather cool.</p>
+<figure class="figure figure-like" id="fig-6sidedKlein"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-6sidedKlein.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.7.13<span class="period">.</span></span><span class="space"> </span>Building a Klein bottle from a hexagon.</figcaption></figure><article class="example example-like" id="ex_dirichletK2"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.7.14</span><span class="period">.</span><span class="space"> </span><span class="title">Dirichlet domains in a Klein bottle.</span>
 </h6>
-<p id="p-1472">Consider the surface constructed from the hexagon in <a knowl="./knowl/fig-6sidedKlein.html" title="Figure 7.7.13">Figure 7.7.13</a>, which appeared in Levin's paper on cosmic topology <a knowl="./knowl/levin.html" title="Bibliographic Entry 23: Topology and the Cosmic Microwave Background">[23]</a>. Assume the hexagon is placed in \(\mathbb{C}\) with its six corners at the points 0, 1, 2, \(2 + i\text{,}\) \(1+i\) and \(i\text{.}\)</p>
-<p id="p-1473">This polygonal surface represents a cell division of a surface with three edges, two vertices, and one face. The Euler characteristic is thus 0, so the surface is either the torus or Klein bottle. In fact, it is a Klein bottle because it contains a Möbius strip. We may tile the Euclidean plane with copies of this hexagon using the transformations \(T(z) = z + 2i\) (vertical translation) and \(r(z) = \overline{z}+(1+2i)\) (a transformation that reflects a point about the horizontal axis \(y = 1\) and then translates to the right by one unit). The following figure shows the shaded fundamental domain \(A\) and its images under various combinations of \(T\) and \(r\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-k2coversC.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1474">If \(\Gamma\) is the group of transformations generated by \(T\) and \(r\text{,}\) the quotient space \(\mathbb{C}/\Gamma\) is the Klein bottle, and its geometry is Euclidean, inherited from the Euclidean plane \(\mathbb{C}\text{.}\)</p>
-<p id="p-1475">It turns out that the Dirichlet domain at a basepoint in this space can vary in shape from point to point. <a knowl="./knowl/hmk_kleindirichlet.html" title="Exercise 4">Exercise 4</a> investigates the shape of the Dirichlet domain at different points.</p></article></section><section class="exercises" id="exercises-28"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+<p id="p-1568">Consider the surface constructed from the hexagon in <a class="xref" data-knowl="./knowl/fig-6sidedKlein.html" title="Figure 7.7.13">Figure 7.7.13</a>, which appeared in Levin's paper on cosmic topology <a class="xref" data-knowl="./knowl/levin.html" title="Bibliographic Entry 23: Topology and the Cosmic Microwave Background">[23]</a>. Assume the hexagon is placed in \(\mathbb{C}\) with its six corners at the points 0, 1, 2, \(2 + i\text{,}\) \(1+i\) and \(i\text{.}\)</p>
+<p id="p-1569">This polygonal surface represents a cell division of a surface with three edges, two vertices, and one face. The Euler characteristic is thus 0, so the surface is either the torus or Klein bottle. In fact, it is a Klein bottle because it contains a Möbius strip. We may tile the Euclidean plane with copies of this hexagon using the transformations \(T(z) = z + 2i\) (vertical translation) and \(r(z) = \overline{z}+(1+2i)\) (a transformation that reflects a point about the horizontal axis \(y = 1\) and then translates to the right by one unit). The following figure shows the shaded fundamental domain \(A\) and its images under various combinations of \(T\) and \(r\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-k2coversC.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1570">If \(\Gamma\) is the group of transformations generated by \(T\) and \(r\text{,}\) the quotient space \(\mathbb{C}/\Gamma\) is the Klein bottle, and its geometry is Euclidean, inherited from the Euclidean plane \(\mathbb{C}\text{.}\)</p>
+<p id="p-1571">It turns out that the Dirichlet domain at a basepoint in this space can vary in shape from point to point. <a class="xref" data-knowl="./knowl/hmk_kleindirichlet.html" title="Exercise 7.7.4">Exercise 7.7.4</a> investigates the shape of the Dirichlet domain at different points.</p></article></section><section class="exercises" id="exercises-28"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section7-7.html#exercises-28" class="permalink">¶</a><article class="exercise-like" id="exercise-196"><h6 class="heading">
-<span class="codenumber">1</span> </h6>
-<p id="p-1476">Show that the Dirichlet domain at any point of the torus in <a knowl="./knowl/ex_torusquotient.html" title="Example 7.7.8: \(H_1\) as quotient of \(\mathbb{C}\)">Example 7.7.8</a> is an \(a\) by \(b\) rectangle by completing the following parts.</p>
-<p id="p-1477">a. Construct an \(a\) by \(b\) rectangle to be the fundamental domain, and place eight copies of this rectangle around the fundamental domain as in <a knowl="./knowl/fig-t2distance.html" title="Figure 7.7.9">Figure 7.7.9</a>. Then plot a point \(x\) in the fundamental domain, and plot its image in each of the copies.</p>
-<p id="p-1478">b. For each image \(x^\prime\) of \(x\text{,}\) construct the perpendicular bisector of the segment \(xx^\prime\text{.}\) The eight perpendicular bisectors enclose the Dirichlet domain based at \(x\text{.}\) Prove that the Dirichlet domain is also an \(a\) by \(b\) rectangle.</p></article><article class="exercise-like" id="exercise-197"><h6 class="heading">
-<span class="codenumber">2</span> </h6>
-<p id="p-1479">Construct \(C_3\) as a quotient of \(\mathbb{D}\) by a group of isometries of \(\mathbb{D}\text{.}\) Be as explicit as possible when defining the group of isometries.</p></article><article class="exercise-like" id="exercise-198"><h6 class="heading">
-<span class="codenumber">3</span> </h6>
-<p id="p-1480">Explain why the \(g\)-holed torus \(H_g\) can be viewed as a quotient of \(\mathbb{D}\) by hyperbolic isometries for any \(g \geq 2\text{.}\)</p></article><article class="exercise-like" id="hmk_kleindirichlet"><h6 class="heading">
-<span class="codenumber">4</span> </h6>
-<p id="p-1481">Consulting <a knowl="./knowl/ex_dirichletK2.html" title="Example 7.7.14: Dirichlet domains in a Klein bottle">Example 7.7.14</a>, show that the Dirichlet domain at any point \(z\) on the line \(\text{Im}(z)=1/2\text{,}\) such as the one in <a knowl="./knowl/fig-k2dirichlet.html" title="Figure 7.7.15">Figure 7.7.15</a>, is a square.  Show that the Dirichlet domain at any point \(z\) on the line \(\text{Im}(z)=0\) is a rectangle.</p></article><figure class="figure-like" id="fig-k2dirichlet"><div style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/im-k2dirichlet.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.7.15</span> The Dirichlet domain at a point is obtained by considering perpendicular bisectors with its nearest images, and its shape can vary from point to point, as at points \(z\) and \(w\text{.}\)  In the figure all vertically oriented edges are \(c\) edges. All horizontally oriented edges in a given row have the same label, either \(a\) or \(b\) as indicated.</figcaption></figure></section></section></div></main>
+<article class="exercise exercise-like" id="exercise-196"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1572">Show that the Dirichlet domain at any point of the torus in <a class="xref" data-knowl="./knowl/ex_torusquotient.html" title="Example 7.7.8: \(H_1\) as quotient of \(\mathbb{C}\)">Example 7.7.8</a> is an \(a\) by \(b\) rectangle by completing the following parts.</p>
+<ol class="lower-alpha">
+<li id="li-314">Construct an \(a\) by \(b\) rectangle to be the fundamental domain, and place eight copies of this rectangle around the fundamental domain as in <a class="xref" data-knowl="./knowl/fig-t2distance.html" title="Figure 7.7.9">Figure 7.7.9</a>. Then plot a point \(x\) in the fundamental domain, and plot its image in each of the copies.</li>
+<li id="li-315">For each image \(x^\prime\) of \(x\text{,}\) construct the perpendicular bisector of the segment \(xx^\prime\text{.}\) The eight perpendicular bisectors enclose the Dirichlet domain based at \(x\text{.}\) Prove that the Dirichlet domain is also an \(a\) by \(b\) rectangle.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-197"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1573">Construct \(C_3\) as a quotient of \(\mathbb{D}\) by a group of isometries of \(\mathbb{D}\text{.}\) Be as explicit as possible when defining the group of isometries.</p></article><article class="exercise exercise-like" id="exercise-198"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1577">Explain why the \(g\)-holed torus \(H_g\) can be viewed as a quotient of \(\mathbb{D}\) by hyperbolic isometries for any \(g \geq 2\text{.}\)</p></article><article class="exercise exercise-like" id="hmk_kleindirichlet"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1579">Consulting <a class="xref" data-knowl="./knowl/ex_dirichletK2.html" title="Example 7.7.14: Dirichlet domains in a Klein bottle">Example 7.7.14</a>, show that the Dirichlet domain at any point \(z\) on the line \(\text{Im}(z)=1/2\text{,}\) such as the one in <a class="xref" data-knowl="./knowl/fig-k2dirichlet.html" title="Figure 7.7.15">Figure 7.7.15</a>, is a square.  Show that the Dirichlet domain at any point \(z\) on the line \(\text{Im}(z)=0\) is a rectangle.</p></article><figure class="figure figure-like" id="fig-k2dirichlet"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/im-k2dirichlet.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.7.15<span class="period">.</span></span><span class="space"> </span>The Dirichlet domain at a point is obtained by considering perpendicular bisectors with its nearest images, and its shape can vary from point to point, as at points \(z\) and \(w\text{.}\)  In the figure all vertically oriented edges are \(c\) edges. All horizontally oriented edges in a given row have the same label, either \(a\) or \(b\) as indicated.</figcaption></figure></section></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

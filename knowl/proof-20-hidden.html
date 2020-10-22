@@ -1,28 +1,30 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:50-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:25-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>Suppose \(z_1, z_2,\) and \(z_3\) are distinct points in \(\mathbb{C}^+\text{,}\) and \(w_1, w_2\text{,}\) and \(w_3\) are distinct points in \(\mathbb{C}^+\text{.}\) We show there exists a unique Möbius transformation that maps \(z_i \mapsto w_i\) for \(i = 1,2,3\text{.}\) To start, we show there exists a map, built from inversions, that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\) and \(z_3 \mapsto \infty\text{.}\)  We do so in the case that \(z_3 \neq \infty\text{.}\)  This special case is left to the exercises.</p>
-<p>First, invert about any circle centered at \(z_3\text{.}\) This takes \(z_3\) to \(\infty\) as desired. Points \(z_1\) and \(z_2\) no doubt get moved, say to \(z_1^\prime\) and \(z_2^\prime\text{,}\) respectively, neither of which is \(\infty\text{.}\) Second, do a translation that takes \(z_2^\prime\) to 0. Such a translation will keep \(\infty\) fixed, and take \(z_1^\prime\) to some new spot \(z_1^{\prime\prime}\) in \(\mathbb{C}\text{.}\) Third, rotate and dilate about the origin, (which keeps 0 and \(\infty\) fixed) so that \(z_1^{\prime\prime}\) moves to 1. This process yields a composition of inversions that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\text{,}\) and \(z_3 \mapsto \infty\text{.}\) However, this composition actually involves an <em class="emphasis">odd</em> number of inversions, so it's not a Möbius transformation. To make a Möbius transformation out of this composition, we do one last inversion: reflect across the real axis. This keeps 1, 0, and \(\infty\) fixed. Thus, there <em class="emphasis">is</em> a Möbius transformation taking any three distinct points to the points 1, 0, \(\infty\text{.}\) For now, we let \(T\) denote the Möbius transformation that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\) and \(z_3 \mapsto \infty\text{.}\)</p>
-<p>One can similarly construct a Möbius transformation, call it \(S\text{,}\) that takes \(w_1 \mapsto 1\text{,}\) \(w_2 \mapsto 0\text{,}\) and \(w_3 \mapsto \infty\text{.}\)</p>
-<p>If we let \(S^{-1}\) denote the inverse transformation of \(S\text{,}\) then the composition \(S^{-1} \circ T\) is a Möbius transformation, and this transformation does what we set out to accomplish as suggested by <a knowl="./knowl/fig-mob-diagram.html" title="Figure 3.4.9">Figure 3.4.9</a>.  In particular,</p>
-<div class="displaymath">
+<body><article class="hiddenproof"><p xmlns:svg="http://www.w3.org/2000/svg">Suppose \(z_1, z_2,\) and \(z_3\) are distinct points in \(\mathbb{C}^+\text{,}\) and \(w_1, w_2\text{,}\) and \(w_3\) are distinct points in \(\mathbb{C}^+\text{.}\) We show there exists a unique Möbius transformation that maps \(z_i \mapsto w_i\) for \(i = 1,2,3\text{.}\) To start, we show there exists a map, built from inversions, that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\) and \(z_3 \mapsto \infty\text{.}\)  We do so in the case that \(z_3 \neq \infty\text{.}\)  This special case is left to the exercises.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">First, invert about any circle centered at \(z_3\text{.}\) This takes \(z_3\) to \(\infty\) as desired. Points \(z_1\) and \(z_2\) no doubt get moved, say to \(z_1^\prime\) and \(z_2^\prime\text{,}\) respectively, neither of which is \(\infty\text{.}\) Second, do a translation that takes \(z_2^\prime\) to 0. Such a translation will keep \(\infty\) fixed, and take \(z_1^\prime\) to some new spot \(z_1^{\prime\prime}\) in \(\mathbb{C}\text{.}\) Third, rotate and dilate about the origin, (which keeps 0 and \(\infty\) fixed) so that \(z_1^{\prime\prime}\) moves to 1. This process yields a composition of inversions that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\text{,}\) and \(z_3 \mapsto \infty\text{.}\) However, this composition actually involves an <em class="emphasis">odd</em> number of inversions, so it's not a Möbius transformation. To make a Möbius transformation out of this composition, we do one last inversion: reflect across the real axis. This keeps 1, 0, and \(\infty\) fixed. Thus, there <em class="emphasis">is</em> a Möbius transformation taking any three distinct points to the points \(1, 0,\) and \(\infty\text{.}\) For now, we let \(T\) denote the Möbius transformation that maps \(z_1 \mapsto 1\text{,}\) \(z_2 \mapsto 0\) and \(z_3 \mapsto \infty\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">One can similarly construct a Möbius transformation, call it \(S\text{,}\) that takes \(w_1 \mapsto 1\text{,}\) \(w_2 \mapsto 0\text{,}\) and \(w_3 \mapsto \infty\text{.}\)</p>
+<p>If we let \(S^{-1}\) denote the inverse transformation of \(S\text{,}\) then the composition \(S^{-1} \circ T\) is a Möbius transformation, and this transformation does what we set out to accomplish as suggested by <a class="xref" data-knowl="./knowl/fig-mob-diagram.html" title="Figure 3.4.9">Figure 3.4.9</a>.  In particular,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
 S^{-1} \circ T(z_1) \amp = S^{-1}(1) = w_1\\
 S^{-1} \circ T(z_2) \amp = S^{-1}(0) = w_2\\
-S^{-1} \circ T(z_3) \amp = S^{-1}(\infty) = w_3.
+S^{-1} \circ T(z_3) \amp = S^{-1}(\infty) = w_3\text{.}
 \end{align*}
 </div>
-<p><figure class="figure-like"><img src="images/im-mob-diagram.svg" width="50%" style="display: block; margin: 0 auto;" alt=""><figcaption><span class="type">Figure</span> <span class="codenumber">3.4.9</span> A schematic for building a Möbius transformation that sends \(z_i \mapsto w_i\) for \(i=1,2,3\text{.}\)  Go through the points \(1,0,\infty\text{.}\)</figcaption></figure></p>
-<p>Finally, to prove that this Möbius transformation is unique, assume that there are two Möbius transformations \(U\) and \(V\) that map \(z_1 \mapsto w_1\text{,}\) \(z_2 \mapsto w_2\) and \(z_3
-\mapsto w_3\text{.}\) Then \(V^{-1} \circ U\) is a Möbius transformation that fixes \(z_1, z_2\text{,}\) and \(z_3\text{.}\) According to <a knowl="./knowl/th_mobfixedpts.html" title="Theorem 3.4.6">Theorem 3.4.6</a> there is only one Möbius transformation that fixes more than two points, and this is the identity transformation. Thus \(V^{-1} \circ U(z) = z\) for all \(z \in \mathbb{C}^+\text{.}\) Similarly, \(U \circ V^{-1}(z) = z\text{,}\) and it follows that \(U(z) = V(z)\) for all \(z \in \mathbb{C}^+\text{.}\) That is, \(U\) and \(V\) are the same map.</p></article></body>
+<p xmlns:svg="http://www.w3.org/2000/svg"><figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-mob-diagram.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.4.9<span class="period">.</span></span><span class="space"> </span>A schematic for building a Möbius transformation that sends \(z_i \mapsto w_i\) for \(i=1,2,3\text{.}\)  Go through the points \(1,0,\infty\text{.}\)</figcaption></figure></p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Finally, to prove that this Möbius transformation is unique, assume that there are two Möbius transformations \(U\) and \(V\) that map \(z_1 \mapsto w_1\text{,}\) \(z_2 \mapsto w_2\) and \(z_3 \mapsto w_3\text{.}\) Then \(V^{-1} \circ U\) is a Möbius transformation that fixes \(z_1, z_2\text{,}\) and \(z_3\text{.}\) According to <a class="xref" data-knowl="./knowl/th_mobfixedpts.html" title="Theorem 3.4.6">Theorem 3.4.6</a> there is only one Möbius transformation that fixes more than two points, and this is the identity transformation. Thus \(V^{-1} \circ U(z) = z\) for all \(z \in \mathbb{C}^+\text{.}\) Similarly, \(U \circ V^{-1}(z) = z\text{,}\) and it follows that \(U(z) = V(z)\) for all \(z \in \mathbb{C}^+\text{.}\) That is, \(U\) and \(V\) are the same map.</p></article></body>
 </html>

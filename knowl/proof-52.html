@@ -1,40 +1,42 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:55:04-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:25:01-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
-<p>Suppose \(k \in \mathbb{R}\text{.}\)  If \(k = 0\) the equation reduces to \(c^2 = a^2 + b^2\text{,}\) which is true by the <a knowl="./knowl/thm-pythagoras.html" title="Theorem 1.2.1: The Pythagorean Theorem">Pythagorean Theorem 1.2.1</a>!  Otherwise, assume \(k \neq 0\) and let \(s = \frac{1}{\sqrt{|k|}}\text{,}\) as usual.  Without loss of generality we may assume our right triangle is defined by the points \(z = 0\text{,}\) \(p = x\text{,}\) and \(q = yi\text{,}\) where \(0 \lt x,y \lt s\text{.}\)  By construction, the legs \(zp\) and \(zq\) are Euclidean segments, and \(\angle pzq\) is right.</p>
-<p>Let \(a = d_k(z,p), b = d_k(z,q),\) and \(c = d_k(p,q)\text{.}\)  By <a knowl="./knowl/lemma-Gkarea.html" title="Lemma 7.4.6">Lemma 7.4.6</a>,</p>
-<div class="displaymath">
+<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Proof</span></h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Suppose \(k \in \mathbb{R}\text{.}\)  If \(k = 0\) the equation reduces to \(c^2 = a^2 + b^2\text{,}\) which is true by the <a class="xref" data-knowl="./knowl/thm-pythagoras.html" title="Theorem 1.2.1: The Pythagorean Theorem">Pythagorean Theorem 1.2.1</a>!  Otherwise, assume \(k \neq 0\) and let \(s = \frac{1}{\sqrt{|k|}}\text{,}\) as usual.  Without loss of generality we may assume our right triangle is defined by the points \(z = 0\text{,}\) \(p = x\text{,}\) and \(q = yi\text{,}\) where \(0 \lt x,y \lt s\text{.}\)  By construction, the legs \(zp\) and \(zq\) are Euclidean segments, and \(\angle pzq\) is right.</p>
+<p>Let \(a = d_k(z,p), b = d_k(z,q),\) and \(c = d_k(p,q)\text{.}\)  By <a class="xref" data-knowl="./knowl/lemma-Gkarea.html" title="Lemma 7.4.6">Lemma 7.4.6</a>,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-A(a) = \frac{4\pi x^2}{1+kx^2},~~{\text and}~~A(b) = \frac{4\pi y^2}{1+ky^2}.
+A(a) = \frac{4\pi x^2}{1+kx^2},~~{\text and}~~A(b) = \frac{4\pi y^2}{1+ky^2}\text{.}
 \end{equation*}
 </div>
-<p>To find \(A(c)\text{,}\) we first find \(d_k(p,q)\text{.}\)  By invariance of distance,</p>
-<div class="displaymath">
+<p data-braille="continuation">To find \(A(c)\text{,}\) we first find \(d_k(p,q)\text{.}\)  By invariance of distance,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-d_k(p,q)=d_k(0,|T(q)|),
+d_k(p,q)=d_k(0,|T(q)|)\text{,}
 \end{equation*}
 </div>
-<p>where \(T(z) = \frac{z - p}{1+k\overline{p}z}\text{.}\)  Let \(t = |T(q)| =\frac{|yi-x|}{|1+kxyi|}\text{,}\) which is a real number.</p>
+<p data-braille="continuation">where \(T(z) = \frac{z - p}{1+k\overline{p}z}\text{.}\)  Let \(t = |T(q)| =\frac{|yi-x|}{|1+kxyi|}\text{,}\) which is a real number.</p>
 <p>Now, \(A(c)\) is the area of a circle with radius \(c\text{,}\) and the circle centered at 0 through \(t\) has this radius, so</p>
-<div class="displaymath">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-A(c) = \frac{4\pi t^2}{1+kt^2}.
+A(c) = \frac{4\pi t^2}{1+kt^2}\text{.}
 \end{equation*}
 </div>
-<p>Using the fact that \(t^2 = \frac{x^2+y^2}{1 + k^2x^2y^2}\text{,}\) one can now check by direct substitution that</p>
-<div class="displaymath">
+<p data-braille="continuation">Using the fact that \(t^2 = \frac{x^2+y^2}{1 + k^2x^2y^2}\text{,}\) one can now check by direct substitution that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 A(c) = A(a) + A(b)-\frac{k}{2\pi}A(a)A(b)\text{.}
 \end{equation*}

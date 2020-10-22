@@ -1,46 +1,46 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-06-08T13:54:50-07:00    *-->
-<!--*                                    *-->
-<!--*   http://mathbook.pugetsound.edu   *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:24-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
-<p>We first observe that any general linear transformation \(T(z)=az+b\) is the composition of an even number of inversions.  Indeed, such a map is a dilation and rotation followed by a translation. Rotations and translations are each compositions of two reflections (<a knowl="./knowl/th_reflect.html" title="Theorem 3.1.17">Theorem 3.1.17</a>), and a dilation is the composition of two inversions about concentric circles (<a knowl="./knowl/hmk_invstretch.html" title="Exercise 3.2.4">Exericise 3.2.4</a>). So, in total, we have that \(T(z) = az+ b\) is the composition of an even number of inversions.</p>
-<p>Now suppose  \(T\) is the Möbius transformation \(T(z) = (az+b)/(cz+d)\text{.}\)   If \(c = 0\) then \(T\) is a general linear transformation of the form \(T(z) = \frac{a}{d}z + \frac{b}{d}\text{,}\) and we have nothing to show.</p>
+<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Proof</span></h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">We first observe that any general linear transformation \(T(z)=az+b\) is the composition of an even number of inversions.  Indeed, such a map is a dilation and rotation followed by a translation. Rotations and translations are each compositions of two reflections (<a class="xref" data-knowl="./knowl/th_reflect.html" title="Theorem 3.1.17">Theorem 3.1.17</a>), and a dilation is the composition of two inversions about concentric circles (<a class="xref" data-knowl="./knowl/hmk_invstretch.html" title="Exercise 3.2.4">Exericise 3.2.4</a>). So, in total, we have that \(T(z) = az+ b\) is the composition of an even number of inversions.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Now suppose  \(T\) is the Möbius transformation \(T(z) = (az+b)/(cz+d)\text{.}\)   If \(c = 0\) then \(T\) is a general linear transformation of the form \(T(z) = \frac{a}{d}z + \frac{b}{d}\text{,}\) and we have nothing to show.</p>
 <p>So we assume \(c \neq 0\text{.}\) By doing some long division, the Möbius transformation can be rewritten as</p>
-<div class="displaymath">
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-T(z) = \frac{az+b}{cz+d} = \frac{a}{c} + \frac{(bc-ad)/c}{cz+d},
+T(z) = \frac{az+b}{cz+d} = \frac{a}{c} + \frac{(bc-ad)/c}{cz+d}\text{,}
 \end{equation*}
 </div>
-<p>which can be viewed as the composition \(T_3  \circ T_2 \circ T_1(z)\text{,}\) where \(T_1(z) = cz + d\text{,}\) \(T_2(z) = 1/z\) and \(T_3(z) = \frac{bc-ad}{c}z + \frac{a}{c}\text{.}\) Note that \(T_1\) and \(T_3\) are general linear transformations, and</p>
-<div class="displaymath">
+<p data-braille="continuation">which can be viewed as the composition \(T_3  \circ T_2 \circ T_1(z)\text{,}\) where \(T_1(z) = cz + d\text{,}\) \(T_2(z) = 1/z\) and \(T_3(z) = \frac{bc-ad}{c}z + \frac{a}{c}\text{.}\) Note that \(T_1\) and \(T_3\) are general linear transformations, and</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
 T_2(z) = \frac{1}{z} =
 \overline{\bigg[\frac{1}{\overline{z}}\bigg]}
 \end{equation*}
 </div>
-<p>is inversion in the unit circle followed by reflection about the real axis. Thus, each \(T_i\) is the composition of an even number of inversions, and the general Möbius transformation \(T\) is as well.</p>
-<p>To prove the other direction, we show that if \(T\) is the composition of two inversions then it is a Möbius transformation. Then, if \(T\) is the composition of any even number of inversions, it is the composition of half as many Möbius transformations and is itself a Möbius transformation by <a knowl="./knowl/thm_mobcomp.html" title="Theorem 3.4.3">Theorem 3.4.3</a>.</p>
-<p><em class="emphasis">Case 1</em>: \(T\) is the composition of two circle inversions. Suppose \(T = i_{C_1} \circ i_{C_2}\) where \(C_1\) is the circle \(|z - z_1| = r_1\) and \(C_2\) is the circle \(|z-z_2| =
-r_2\text{.}\) For \(i = 1, 2\) the inversion may be described by</p>
-<div class="displaymath">
+<p data-braille="continuation">is inversion in the unit circle followed by reflection about the real axis. Thus, each \(T_i\) is the composition of an even number of inversions, and the general Möbius transformation \(T\) is as well.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">To prove the other direction, we show that if \(T\) is the composition of two inversions then it is a Möbius transformation. Then, if \(T\) is the composition of any even number of inversions, it is the composition of half as many Möbius transformations and is itself a Möbius transformation by <a class="xref" data-knowl="./knowl/thm_mobcomp.html" title="Theorem 3.4.3">Theorem 3.4.3</a>.</p>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Case 1</em>: \(T\) is the composition of two circle inversions. Suppose \(T = i_{C_1} \circ i_{C_2}\) where \(C_1\) is the circle \(|z - z_1| = r_1\) and \(C_2\) is the circle \(|z-z_2| = r_2\text{.}\) For \(i = 1, 2\) the inversion may be described by</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-i_{C_i} = \frac{r_i^2}{\overline{z-z_i}}+z_i,
+i_{C_i} = \frac{r_i^2}{\overline{z-z_i}}+z_i\text{,}
 \end{equation*}
 </div>
-<p>and if we compose these two inversions we do in fact obtain a Möbius transformation. We leave the details of this computation to the reader but note that the determinant of the resulting Möbius transformation is \(r_1^2r_2^2\text{.}\)</p>
-<p><em class="emphasis">Case 2</em>: \(T\) is the composition of one circle inversion and one line reflection. Reflection in the line can be given by \(r_L(z) = e^{i\theta}\overline{z}+b\) and inversion in the circle \(C\) is given by \(i_{C} =
-\frac{r^2}{\overline{z-z_o}}+z_o\) where \(z_0\) and \(r\) are the center and radius of the circle, as usual. Work out the composition and you'll see that we have a Möbius transformation with determinant \(e^{i\theta}r^2\) (which is non-zero). Its inverse, the composition \(i_C \circ r_L\text{,}\) is also a Möbius transformation.</p>
-<p><em class="emphasis">Case 3</em>: \(T\) is the composition of two reflections. Either the two lines of reflection are parallel, in which case the composition gives a translation, or they intersect, in which case we have a rotation about the point of intersection (<a knowl="./knowl/th_reflect.html" title="Theorem 3.1.17">Theorem 3.1.17</a>). In either case we have a Möbius transformation.</p>
-<p>It follows that the composition of any even number of inversions yields a Möbius transformation.</p></article><span class="incontext"><a href="section3-4.html#proof-18">in-context</a></span>
+<p data-braille="continuation">and if we compose these two inversions we do in fact obtain a Möbius transformation. We leave the details of this computation to the reader but note that the determinant of the resulting Möbius transformation is \(r_1^2r_2^2\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg"><em class="emphasis">Case 2</em>: \(T\) is the composition of one circle inversion and one line reflection. Reflection in the line can be given by \(r_L(z) = e^{i\theta}\overline{z}+b\) and inversion in the circle \(C\) is given by \(i_{C} = \frac{r^2}{\overline{z-z_o}}+z_o\) where \(z_0\) and \(r\) are the center and radius of the circle, as usual. Work out the composition and you'll see that we have a Möbius transformation with determinant \(e^{i\theta}r^2\) (which is non-zero). Its inverse, the composition \(i_C \circ r_L\text{,}\) is also a Möbius transformation.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg"><em class="emphasis">Case 3</em>: \(T\) is the composition of two reflections. Either the two lines of reflection are parallel, in which case the composition gives a translation, or they intersect, in which case we have a rotation about the point of intersection (<a class="xref" data-knowl="./knowl/th_reflect.html" title="Theorem 3.1.17">Theorem 3.1.17</a>). In either case we have a Möbius transformation.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">It follows that the composition of any even number of inversions yields a Möbius transformation.</p></article><span class="incontext"><a href="section3-4.html#proof-18">in-context</a></span>
 </body>
 </html>

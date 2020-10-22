@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:28-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:28-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Möbius Transformations: A Closer Look</title>
+<title>GCT Möbius Transformations: A Closer Look</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section3-4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-4.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section3-4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="chapter-4.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5" class="active">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,105 +146,108 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section3-5"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section3-5"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">Möbius Transformations: A Closer Look</span>
 </h2>
-<a href="section3-5.html" class="permalink">¶</a><section class="introduction" id="introduction-14"><p id="p-507">To visualize Möbius transformations it is helpful to focus on fixed points and, in the case of two fixed points, on two families of clines with respect to these points.</p>
-<p id="p-508">Given two points \(p\) and \(q\) in \(\mathbb{C}^+\text{,}\) a <dfn class="terminology">type I cline of \(\boldsymbol{p}\) and \(\boldsymbol{q}\)</dfn> is a cline that goes through \(p\) and \(q\text{,}\) and a <dfn class="terminology">type II cline of \(\boldsymbol{p}\) and \(\boldsymbol{q}\)</dfn> is a cline with respect to which \(p\) and \(q\) are symmetric. Type II clines are also called circles of Apollonius (see <a knowl="./knowl/hmk_Apollonius.html" title="Exercise 3.3.2">Exercise 3.3.2</a>). <a knowl="./knowl/fig-typeIandII.html" title="Figure 3.5.1">Figure 3.5.1</a> shows some type I and type II clines of \(p\) and \(q\text{.}\) The type II clines of \(p\) and \(q\) are dashed.</p>
-<figure class="figure-like" id="fig-typeIandII"><div style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-typeIandII.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.5.1</span> Type I clines (solid) and Type II clines (dashed) of \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-509">By <a knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>, any type II cline of \(p\) and \(q\) intersects any type I cline of \(p\) and \(q\) at right angles. Furthermore, because Möbius transformations preserve clines and symmetry points, we can be assured that Möbius transformations preserve type I clines as well as type II clines. In particular, if \(C\) is a type I cline of \(p\) and \(q\text{,}\) then \(T(C)\) is a type I cline of \(T(p)\) and \(T(q)\text{.}\) Similarly, if \(C\) is a type II cline of \(p\) and \(q\text{,}\) then \(T(C)\) is a type II cline of \(T(p)\) and \(T(q)\text{.}\) We can use this to our advantage.</p>
-<p id="p-510">For instance, the type I clines of the points 0 and \(\infty\) are, precisely, lines through the origin, while the type II clines of 0 and \(\infty\) are circles centered at the origin. (Remember, inversion in a circle takes the center of the circle to \(\infty\text{.}\)) The type I clines in this case are clearly perpendicular to the type II clines, and they combine to create a coordinate system of the plane (polar coordinates), as pictured in <a knowl="./knowl/fig-clinecoord.html" title="Figure 3.5.2">Figure 3.5.2</a>(a).</p>
-<figure class="figure-like" id="fig-clinecoord"><div style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/im-clinecoord.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.5.2</span> (a) Type I clines (solid) and type II clines (dashed) of points 0 and \(\infty\) (solid);  (b) A Möbius transformation sending \(0 \mapsto p\) and \(\infty \mapsto q\) sends type I and II clines of 0 and \(\infty\) to type I and II clines of \(p\) and \(q\text{,}\) respectively.</figcaption></figure><p id="p-511">We can move this system of clines by considering a Möbius transformation that maps 0 to \(p\) and \(\infty\) to \(q\) (where \(p, q \neq \infty\)). Lines through the origin get mapped to type I clines of \(p\) and \(q\text{,}\) and circles centered at the origin get mapped to type II clines of \(p\) and \(q\text{.}\) The result is a system of clines that serves as a general coordinate system for the plane. Each point \(z\) in the plane is at the intersection of a single type I cline of \(p\) and \(q\) and a single type II cline of \(p\) and \(q\text{,}\) and these two clines intersect at right angles.</p>
-<p id="p-512">Let's get back to fixed points and how they can help us describe Möbius transformations.  We consider the case that 0 and \(\infty\) are fixed before proceeding to the general case.</p>
-<article class="example-like" id="ex_mobfix0inf"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.5.3</span> <span class="title">Fixing 0 and \(\infty\)</span>
+<p id="p-554">To visualize Möbius transformations it is helpful to focus on fixed points and, in the case of two fixed points, on two families of clines with respect to these points.</p>
+<p id="p-555">Given two points \(p\) and \(q\) in \(\mathbb{C}^+\text{,}\) a <dfn class="terminology">type I cline of \(\boldsymbol{p}\) and \(\boldsymbol{q}\)</dfn>  is a cline that goes through \(p\) and \(q\text{,}\) and a <dfn class="terminology">type II cline of \(\boldsymbol{p}\) and \(\boldsymbol{q}\)</dfn>  is a cline with respect to which \(p\) and \(q\) are symmetric. Type II clines are also called circles of Apollonius (see <a class="xref" data-knowl="./knowl/hmk_Apollonius.html" title="Exercise 3.3.2">Exercise 3.3.2</a>). <a class="xref" data-knowl="./knowl/fig-typeIandII.html" title="Figure 3.5.1">Figure 3.5.1</a> shows some type I and type II clines of \(p\) and \(q\text{.}\) The type II clines of \(p\) and \(q\) are dashed.</p>
+<figure class="figure figure-like" id="fig-typeIandII"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-typeIandII.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.5.1<span class="period">.</span></span><span class="space"> </span>Type I clines (solid) and Type II clines (dashed) of \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-556">By <a class="xref" data-knowl="./knowl/th_orthcircchar.html" title="Theorem 3.2.8">Theorem 3.2.8</a>, any type II cline of \(p\) and \(q\) intersects any type I cline of \(p\) and \(q\) at right angles. Furthermore, because Möbius transformations preserve clines and symmetry points, we can be assured that Möbius transformations preserve type I clines as well as type II clines. In particular, if \(C\) is a type I cline of \(p\) and \(q\text{,}\) then \(T(C)\) is a type I cline of \(T(p)\) and \(T(q)\text{.}\) Similarly, if \(C\) is a type II cline of \(p\) and \(q\text{,}\) then \(T(C)\) is a type II cline of \(T(p)\) and \(T(q)\text{.}\) We can use this to our advantage.</p>
+<p id="p-557">For instance, the type I clines of the points 0 and \(\infty\) are, precisely, lines through the origin, while the type II clines of 0 and \(\infty\) are circles centered at the origin. (Remember, inversion in a circle takes the center of the circle to \(\infty\text{.}\)) The type I clines in this case are clearly perpendicular to the type II clines, and they combine to create a coordinate system of the plane (polar coordinates), as pictured in <a class="xref" data-knowl="./knowl/fig-clinecoord.html" title="Figure 3.5.2">Figure 3.5.2</a>(a).</p>
+<figure class="figure figure-like" id="fig-clinecoord"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/im-clinecoord.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.5.2<span class="period">.</span></span><span class="space"> </span>(a) Type I clines (solid) and type II clines (dashed) of points 0 and \(\infty\) (solid);  (b) A Möbius transformation sending \(0 \mapsto p\) and \(\infty \mapsto q\) sends type I and II clines of 0 and \(\infty\) to type I and II clines of \(p\) and \(q\text{,}\) respectively.</figcaption></figure><p id="p-558">We can move this system of clines by considering a Möbius transformation that maps 0 to \(p\) and \(\infty\) to \(q\) (where \(p, q \neq \infty\)). Lines through the origin get mapped to type I clines of \(p\) and \(q\text{,}\) and circles centered at the origin get mapped to type II clines of \(p\) and \(q\text{.}\) The result is a system of clines that serves as a general coordinate system for the plane. Each point \(z\) in the plane is at the intersection of a single type I cline of \(p\) and \(q\) and a single type II cline of \(p\) and \(q\text{,}\) and these two clines intersect at right angles.</p>
+<p id="p-559">Let's get back to fixed points and how they can help us describe Möbius transformations.  We consider the case that 0 and \(\infty\) are fixed before proceeding to the general case.</p>
+<article class="example example-like" id="ex_mobfix0inf"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="period">.</span><span class="space"> </span><span class="title">Fixing 0 and \(\infty\).</span>
 </h6>
-<p id="p-513">Suppose \(T(z) = (az+b)/(cz+d)\) is a Möbius transformation that fixes 0 and \(\infty\text{.}\) In this case, the form of the Möbius transformation can be simplified. In particular, since \(T(0) = 0\text{,}\) it follows that \(b=0\text{.}\) And since \(T(\infty)=\infty\text{,}\) it follows that \(c = 0\text{.}\) Thus, \(T(z) = \frac{a}{d}z\) which may be written as</p>
+<p id="p-560">Suppose \(T(z) = (az+b)/(cz+d)\) is a Möbius transformation that fixes 0 and \(\infty\text{.}\) In this case, the form of the Möbius transformation can be simplified. In particular, since \(T(0) = 0\text{,}\) it follows that \(b=0\text{.}\) And since \(T(\infty)=\infty\text{,}\) it follows that \(c = 0\text{.}\) Thus, \(T(z) = \frac{a}{d}z\) which may be written as</p>
 <div class="displaymath">
 \begin{equation*}
-T(z) = re^{i\theta}z.
+T(z) = re^{i\theta}z\text{.}
 \end{equation*}
 </div>
-<p id="p-514">With \(T\) in this form, it is clear that if \(T\) fixes 0 and \(\infty\text{,}\) then \(T\) is a combination of a dilation (by factor \(r\)) and a rotation about the origin (by a factor \(\theta\)). We may assume that \(r &gt; 0\) in the above equation, because if it is negative, we can turn it into a positive constant by adding \(\pi\) to the angle of rotation.</p>
-<p id="p-515">A dilation by \(r\) will push points along lines through the origin. These lines are precisely the type I clines of 0 and \(\infty\text{.}\) All points in the plane either head toward \(\infty\) (if \(r &gt; 1\)) or they all head toward 0 (if \(0 \lt  r \lt  1\)).  Of course, if \(r = 1\) there is no dilation.</p>
-<p id="p-516">Meanwhile, rotation about 0 by \(\theta\) pushes points along circles centered at the origin. These circles are precisely the type II clines of 0 and \(\infty\text{.}\)</p></article><p id="p-517">Now suppose \(T\) is a Möbius transformation that fixes two finite points \(p\) and \(q\) (neither is \(\infty\)). Let</p>
+<p id="p-561">With \(T\) in this form, it is clear that if \(T\) fixes 0 and \(\infty\text{,}\) then \(T\) is a combination of a dilation (by factor \(r\)) and a rotation about the origin (by a factor \(\theta\)). We may assume that \(r &gt; 0\) in the above equation, because if it is negative, we can turn it into a positive constant by adding \(\pi\) to the angle of rotation.</p>
+<p id="p-562">A dilation by \(r\) will push points along lines through the origin. These lines are precisely the type I clines of 0 and \(\infty\text{.}\) All points in the plane either head toward \(\infty\) (if \(r &gt; 1\)) or they all head toward 0 (if \(0 \lt  r \lt  1\)).  Of course, if \(r = 1\) there is no dilation.</p>
+<p id="p-563">Meanwhile, rotation about 0 by \(\theta\) pushes points along circles centered at the origin. These circles are precisely the type II clines of 0 and \(\infty\text{.}\)</p></article><p id="p-564">Now suppose \(T\) is a Möbius transformation that fixes two finite points \(p\) and \(q\) (neither is \(\infty\)). Let</p>
 <div class="displaymath">
 \begin{equation*}
 S(z) = \frac{z - p}{z-q}
 \end{equation*}
 </div>
-<p>be a Möbius transformation that takes \(p\) to 0 and \(q\) to \(\infty\text{.}\) Let \(U\) be the Möbius transformation determined by the composition equation</p>
+<p data-braille="continuation">be a Möbius transformation that takes \(p\) to 0 and \(q\) to \(\infty\text{.}\) Let \(U\) be the Möbius transformation determined by the composition equation</p>
 <div class="displaymath">
 \begin{equation*}
-U = S \circ T \circ S^{-1} \tag{1}
+U = S \circ T \circ S^{-1} \tag{1}\text{.}
 \end{equation*}
 </div>
-<p id="p-518">Notice</p>
+<p id="p-565">Notice</p>
 <div class="displaymath">
 \begin{equation*}
-U(0) = S \circ T \circ S^{-1}(0)= S\circ T(p) = S(p) = 0,
+U(0) = S \circ T \circ S^{-1}(0)= S\circ T(p) = S(p) = 0\text{,}
 \end{equation*}
 </div>
-<p>and</p>
+<p data-braille="continuation">and</p>
 <div class="displaymath">
 \begin{equation*}
-U(\infty) = S \circ T \circ S^{-1}(\infty) = S \circ T(q) = S(q) = \infty.
+U(\infty) = S \circ T \circ S^{-1}(\infty) = S \circ T(q) = S(q) = \infty\text{.}
 \end{equation*}
 </div>
-<p id="p-519">That is, \(U\) is a Möbius transformation that fixes 0 and \(\infty\text{.}\) So, by <a knowl="./knowl/ex_mobfix0inf.html" title="Example 3.5.3: Fixing 0 and \(\infty\)">Example 3.5.3</a>, \(U\) is a rotation, a dilation, or some combination of those, and \(U\) looks like \(U(z) = re^{i\theta}z\text{.}\)</p>
-<p id="p-520">In any event, focusing on \(T\) again and using equation (1), which can be rewritten as \(S \circ T = U \circ S\text{,}\) we arrive at the following equation, called the normal form of the Möbius transformation in this case. <article class="assemblage-like" id="assemblage-6"><h6 class="heading"><span class="title">Normal form, two fixed points</span></h6>
-<p id="p-521">The normal form of a Möbius transformation \(T\) fixing distinct points \(p\) and \(q\) (neither of which is \(\infty\)):</p>
+<p id="p-566">That is, \(U\) is a Möbius transformation that fixes 0 and \(\infty\text{.}\) So, by <a class="xref" data-knowl="./knowl/ex_mobfix0inf.html" title="Example 3.5.3: Fixing 0 and \(\infty\)">Example 3.5.3</a>, \(U\) is a rotation, a dilation, or some combination of those, and \(U\) looks like \(U(z) = re^{i\theta}z\text{.}\)</p>
+<p id="p-567">In any event, focusing on \(T\) again and using equation (1), which can be rewritten as \(S \circ T = U \circ S\text{,}\) we arrive at the following equation, called the normal form of the Möbius transformation in this case. <article class="assemblage assemblage-like" id="assemblage-6"><h6 class="heading"><span class="title">Normal form, two fixed points.</span></h6>
+<p id="p-568">The normal form of a Möbius transformation \(T\) fixing distinct points \(p\) and \(q\) (neither of which is \(\infty\)):</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{T(z) - p}{T(z) - q} = re^{i\theta} \cdot \frac{z - p}{z -q}
 \end{equation*}
 </div></article></p>
-<p id="p-522">This normal form is much more illuminating than the standard \(a,b,c,d\) form because, although the map is still described in terms of four constants (\(p,q,r,\theta\)), each constant now has a simple geometric interpretation: \(p\) and \(q\) are fixed points, \(r\) is a dilation factor along type I clines of \(p\) and \(q\text{,}\) and \(\theta\) is a rotation factor around type II clines of \(p\) and \(q\text{.}\)</p>
-<p id="p-523">In particular, thanks to composition equation (1) we can view \(T\) as the composition \(T = S^{-1}\circ U \circ S.\) With this view, \(T\) moves points according to a three-leg journey. Think of a general point \(z\) clinging to the intersection of a single type II cline of \(p\) and \(q\) and a single type I cline of \(p\) and \(q\) (see <a knowl="./knowl/fig-polarpaper3.html" title="Figure 3.5.4">Figure 3.5.4</a>).</p>
-<figure class="figure-like" id="fig-polarpaper3"><div style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/im-polarpaper3.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.5.4</span> Tracking the image of \(z\) if \(T\) fixes \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-524">First, \(z\) gets sent via \(S\) to \(S(z)\text{,}\) which is at the intersection of a line through the origin and a circle centered at the origin. Second, \(U\) (which has the form \(U(z) = re^{i\theta} z\)), sends \(S(z)\) along this line through the origin (by dilation factor \(r\)), and then around a new circle centered at the origin (by rotation factor \(\theta\)) to the point \(U(S(z))\text{.}\) Third, \(S^{-1}\) sends \(U(S(z))\) back to the intersection of a type I cline of \(p\) and \(q\) and a type II cline of \(p\) and \(q\text{.}\) This point of intersection is \(S^{-1}(U(S(z)))\) and is equivalent to \(T(z)\text{.}\)</p>
-<p id="p-525">Though fatigued, our well-traveled point realizes there's a shortcut. Why go through this complicated wash? We can understand \(T\) as follows: \(T\) will push points along type I clines of \(p\) and \(q\) (according to the dilation factor \(r\)) and along type II clines of \(p\) and \(q\) (according to the rotation factor \(\theta\)).</p>
-<p id="p-526">We emphasize two special cases of this normal form. If \(|re^{i\theta}| = 1\) there is no dilation, and points simply get rotated about type II clines of \(p\) and \(q\) as in <a knowl="./knowl/fig-ellmob.html" title="Figure 3.5.5">Figure 3.5.5</a>. Such a Möbius transformation is called an <dfn class="terminology">elliptic Möbius transformation</dfn>.</p>
-<figure class="figure-like" id="fig-ellmob"><div style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-ellmob.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.5.5</span> An elliptic Möbius transformation fixing \(p\) and \(q\) swirls points around type II clines of \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-527">The second special case occurs when \(\theta = 0\text{.}\) Here we have a dilation factor \(r\text{,}\) but no rotation. All points move along type I clines of \(p\) and \(q\text{,}\) as in <a knowl="./knowl/fig-hypmob.html" title="Figure 3.5.6">Figure 3.5.6</a>. A Möbius transformation of this variety is called a <dfn class="terminology">hyperbolic Möbius transformation</dfn>. A hyperbolic Möbius transformation fixing \(p\) and \(q\) either sends all points away from \(p\) and toward \(q\) or vice versa, depending on the value of \(r\text{.}\)</p>
-<figure class="figure-like" id="fig-hypmob"><div style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-hypmob.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.5.6</span> A hyperbolic Möbius transformation fixing \(p\) and \(q\) pushes points away from one fixed point and toward the other along type I clines of \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-528">If we are not in one of these special cases, then \(T\) is simply a combination of these two, and a Möbius transformation of this type is often called <dfn class="terminology">loxodromic</dfn>.</p>
-<p id="p-529">If a Möbius transformation fixes two finite points, say \(p\) and \(q\text{,}\) and it is not the identity transformation, then some finite point gets sent to \(\infty\text{.}\) Moreover, \(\infty\) gets sent to some finite point. The point sent to infinity is called the <dfn class="terminology">pole</dfn> of the transformation and is often denoted \(z_\infty\text{.}\) That is, \(T(z_\infty) = \infty\text{.}\) The <dfn class="terminology">inverse pole of</dfn> \(\boldsymbol{T}\) is the image of \(\infty\) under the map, which is often denoted as \(w_\infty\text{.}\) That is, \(T(\infty) = w_\infty\text{.}\) There is a simple relationship between the four points \(p,q,z_\infty,\) and \(w_\infty\text{.}\)</p>
-<article class="theorem-like" id="lem_mobparallel"><h6 class="heading">
-<span class="type">Lemma</span> <span class="codenumber">3.5.7</span>
+<p id="p-569">This normal form is much more illuminating than the standard \(a,b,c,d\) form because, although the map is still described in terms of four constants (\(p,q,r,\theta\)), each constant now has a simple geometric interpretation: \(p\) and \(q\) are fixed points, \(r\) is a dilation factor along type I clines of \(p\) and \(q\text{,}\) and \(\theta\) is a rotation factor around type II clines of \(p\) and \(q\text{.}\)</p>
+<p id="p-570">In particular, thanks to composition equation (1) we can view \(T\) as the composition \(T = S^{-1}\circ U \circ S.\) With this view, \(T\) moves points according to a three-leg journey. Think of a general point \(z\) clinging to the intersection of a single type II cline of \(p\) and \(q\) and a single type I cline of \(p\) and \(q\) (see <a class="xref" data-knowl="./knowl/fig-polarpaper3.html" title="Figure 3.5.4">Figure 3.5.4</a>).</p>
+<figure class="figure figure-like" id="fig-polarpaper3"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/im-polarpaper3.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.5.4<span class="period">.</span></span><span class="space"> </span>Tracking the image of \(z\) if \(T\) fixes \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-571">First, \(z\) gets sent via \(S\) to \(S(z)\text{,}\) which is at the intersection of a line through the origin and a circle centered at the origin. Second, \(U\) (which has the form \(U(z) = re^{i\theta} z\)), sends \(S(z)\) along this line through the origin (by dilation factor \(r\)), and then around a new circle centered at the origin (by rotation factor \(\theta\)) to the point \(U(S(z))\text{.}\) Third, \(S^{-1}\) sends \(U(S(z))\) back to the intersection of a type I cline of \(p\) and \(q\) and a type II cline of \(p\) and \(q\text{.}\) This point of intersection is \(S^{-1}(U(S(z)))\) and is equivalent to \(T(z)\text{.}\)</p>
+<p id="p-572">Though fatigued, our well-traveled point realizes there's a shortcut. Why go through this complicated wash? We can understand \(T\) as follows: \(T\) will push points along type I clines of \(p\) and \(q\) (according to the dilation factor \(r\)) and along type II clines of \(p\) and \(q\) (according to the rotation factor \(\theta\)).</p>
+<p id="p-573">We emphasize two special cases of this normal form. If \(|re^{i\theta}| = 1\) there is no dilation, and points simply get rotated about type II clines of \(p\) and \(q\) as in <a class="xref" data-knowl="./knowl/fig-ellmob.html" title="Figure 3.5.5">Figure 3.5.5</a>. Such a Möbius transformation is called an <dfn class="terminology">elliptic Möbius transformation</dfn>.</p>
+<figure class="figure figure-like" id="fig-ellmob"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/im-ellmob.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.5.5<span class="period">.</span></span><span class="space"> </span>An elliptic Möbius transformation fixing \(p\) and \(q\) swirls points around type II clines of \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-574">The second special case occurs when \(\theta = 0\text{.}\) Here we have a dilation factor \(r\text{,}\) but no rotation. All points move along type I clines of \(p\) and \(q\text{,}\) as in <a class="xref" data-knowl="./knowl/fig-hypmob.html" title="Figure 3.5.6">Figure 3.5.6</a>. A Möbius transformation of this variety is called a <dfn class="terminology">hyperbolic Möbius transformation</dfn>. A hyperbolic Möbius transformation fixing \(p\) and \(q\) either sends all points away from \(p\) and toward \(q\) or vice versa, depending on the value of \(r\text{.}\)</p>
+<figure class="figure figure-like" id="fig-hypmob"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-hypmob.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.5.6<span class="period">.</span></span><span class="space"> </span>A hyperbolic Möbius transformation fixing \(p\) and \(q\) pushes points away from one fixed point and toward the other along type I clines of \(p\) and \(q\text{.}\)</figcaption></figure><p id="p-575">If we are not in one of these special cases, then \(T\) is simply a combination of these two, and a Möbius transformation of this type is often called <dfn class="terminology">loxodromic</dfn>.</p>
+<p id="p-576">If a Möbius transformation fixes two finite points, say \(p\) and \(q\text{,}\) and it is not the identity transformation, then some finite point gets sent to \(\infty\text{.}\) Moreover, \(\infty\) gets sent to some finite point. The point sent to infinity is called the <dfn class="terminology">pole</dfn> of the transformation and is often denoted \(z_\infty\text{.}\) That is, \(T(z_\infty) = \infty\text{.}\) The <dfn class="terminology">inverse pole of</dfn> \(\boldsymbol{T}\) is the image of \(\infty\) under the map, which is often denoted as \(w_\infty\text{.}\) That is, \(T(\infty) = w_\infty\text{.}\) There is a simple relationship between the four points \(p,q,z_\infty,\) and \(w_\infty\text{.}\)</p>
+<article class="lemma theorem-like" id="lem_mobparallel"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.5.7</span><span class="period">.</span>
 </h6>
-<p id="p-530">Suppose \(T\) is a Möbius transformation that fixes distinct finite points \(p\) and \(q\text{,}\) sends \(z_\infty\) to \(\infty\text{,}\) and sends \(\infty\) to \(w_\infty\text{.}\) Then \(p+q = z_\infty + w_\infty.\)</p></article><article class="hiddenproof" id="proof-23"><a knowl="" class="id-ref" refid="hk-proof-23"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-23" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-531">Suppose \(T\) satisfies the conditions of the lemma. Then \(T\) has normal form</p>
+<p id="p-577">Suppose \(T\) is a Möbius transformation that fixes distinct finite points \(p\) and \(q\text{,}\) sends \(z_\infty\) to \(\infty\text{,}\) and sends \(\infty\) to \(w_\infty\text{.}\) Then \(p+q = z_\infty + w_\infty\text{.}\)</p></article><article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-23"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof"><p id="p-578">Suppose \(T\) satisfies the conditions of the lemma. Then \(T\) has normal form</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{z-p}{z-q} = \lambda\frac{T(z)-p}{T(z)-q},
+\frac{z-p}{z-q} = \lambda\frac{T(z)-p}{T(z)-q}\text{,}
 \end{equation*}
 </div>
-<p>where \(\lambda = re^{i\theta}\text{.}\)  Plug \(z = z_\infty\) into the normal form to see</p>
+<p data-braille="continuation">where \(\lambda = re^{i\theta}\text{.}\)  Plug \(z = z_\infty\) into the normal form to see</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{z_\infty-p}{z_\infty-q} = \lambda\cdot 1.
+\frac{z_\infty-p}{z_\infty-q} = \lambda\cdot 1\text{.}
 \end{equation*}
 </div>
-<p id="p-532">Plug \(z = \infty\) into the normal form to see</p>
+<p id="p-579">Plug \(z = \infty\) into the normal form to see</p>
 <div class="displaymath">
 \begin{equation*}
-1 = \lambda\frac{w_\infty-p}{w_\infty-q}.
+1 = \lambda\frac{w_\infty-p}{w_\infty-q}\text{.}
 \end{equation*}
 </div>
-<p id="p-533">Next solve each equation for \(\lambda\text{,}\) set them equal, cross multiply, and simplify as follows to get the result:</p>
+<p id="p-580">Next solve each equation for \(\lambda\text{,}\) set them equal, cross multiply, and simplify as follows to get the result:</p>
 <div class="displaymath">
 \begin{align*}
 \frac{z_\infty-p}{z_\infty-q} \amp = \frac{w_\infty-q}{w_\infty-p}\\
@@ -242,111 +255,109 @@ U(\infty) = S \circ T \circ S^{-1}(\infty) = S \circ T(q) = S(q) = \infty.
 p^2-pw_\infty-pz_\infty \amp = q^2-qw_\infty-qz_\infty\\
 p^2-q^2 \amp = p(z_\infty + w_\infty) - q(z_\infty + w_\infty)\\
 (p-q)(p+q) \amp = (p-q)(z_\infty + w_\infty)\\
-p+q \amp = z_\infty + w_\infty. \tag{since $p\neq q$}
+p+q \amp = z_\infty + w_\infty \amp (\text{since } p\neq q)\text{.}
 \end{align*}
 </div>
-<p id="p-534">This completes the proof.</p></article></div>
-<article class="theorem-like" id="th_mobfinitefix"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">3.5.8</span>
+<p id="p-581">This completes the proof.</p></article></div>
+<article class="theorem theorem-like" id="th_mobfinitefix"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.5.8</span><span class="period">.</span>
 </h6>
-<p id="p-535">If \(T\) is a Möbius transformation that fixes two distinct, finite points \(p\) and \(q\text{,}\) sends \(z_\infty\) to \(\infty\text{,}\) and sends \(\infty\) to \(w_\infty\text{,}\) then</p>
+<p id="p-582">If \(T\) is a Möbius transformation that fixes two distinct, finite points \(p\) and \(q\text{,}\) sends \(z_\infty\) to \(\infty\text{,}\) and sends \(\infty\) to \(w_\infty\text{,}\) then</p>
 <div class="displaymath">
 \begin{equation*}
 T(z) =
-\frac{w_\infty z - pq}{z-z_\infty}.
+\frac{w_\infty z - pq}{z-z_\infty}\text{.}
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-24"><a knowl="" class="id-ref" refid="hk-proof-24"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-24" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-536">In the proof of <a knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a>, we found that the constant \(\lambda\) in the normal form of \(T\) is</p>
+</div></article><article class="hiddenproof" id="proof-24"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-24"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-24"><article class="hiddenproof"><p id="p-583">In the proof of <a class="xref" data-knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a>, we found that the constant \(\lambda\) in the normal form of \(T\) is</p>
 <div class="displaymath">
 \begin{equation*}
-\lambda = \frac{z_\infty-p}{z_\infty-q}.
+\lambda = \frac{z_\infty-p}{z_\infty-q}\text{.}
 \end{equation*}
 </div>
-<p id="p-537">It follows that \(T\) has the normal form</p>
+<p id="p-584">It follows that \(T\) has the normal form</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{z-p}{z-q} = \bigg(\frac{z_\infty-p}{z_\infty-q}\bigg)\cdot\frac{T(z)-p}{T(z)-q}.
+\frac{z-p}{z-q} = \left(\frac{z_\infty-p}{z_\infty-q}\right)\cdot\frac{T(z)-p}{T(z)-q}\text{.}
 \end{equation*}
 </div>
-<p id="p-538">Solve this expression for \(T(z)\) and reduce it using the fact that \(p+q=z_\infty+w_\infty\) to get the expression for \(T\) that appears in the statement of the theorem. The details are left to the reader.</p></article></div>
-<article class="example-like" id="example-30"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.5.9</span> <span class="title">Fix -1 and 1 and send \(i \mapsto \infty\)</span>
+<p id="p-585">Solve this expression for \(T(z)\) and reduce it using the fact that \(p+q=z_\infty+w_\infty\) to get the expression for \(T\) that appears in the statement of the theorem. The details are left to the reader.</p></article></div>
+<article class="example example-like" id="example-30"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.9</span><span class="period">.</span><span class="space"> </span><span class="title">Fix -1 and 1 and send \(i \mapsto \infty\).</span>
 </h6>
-<p id="p-539">By <a knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a>, the Möbius transformation sends \(\infty\) to \(-i\text{,}\) so by <a knowl="./knowl/th_mobfinitefix.html" title="Theorem 3.5.8">Theorem 3.5.8</a>,</p>
+<p id="p-586">By <a class="xref" data-knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a>, the Möbius transformation sends \(\infty\) to \(-i\text{,}\) so by <a class="xref" data-knowl="./knowl/th_mobfinitefix.html" title="Theorem 3.5.8">Theorem 3.5.8</a>,</p>
 <div class="displaymath">
 \begin{equation*}
-T(z) = \frac{-iz-(1)(-1)}{z-i} = \frac{-iz+1}{z-i}.
+T(z) = \frac{-iz-(1)(-1)}{z-i} = \frac{-iz+1}{z-i}\text{.}
 \end{equation*}
-</div></article><article class="example-like" id="example-31"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.5.10</span> <span class="title">Analyze a Möbius transformation</span>
+</div></article><article class="example example-like" id="example-31"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.10</span><span class="period">.</span><span class="space"> </span><span class="title">Analyze a Möbius transformation.</span>
 </h6>
-<p id="p-540">Consider the Möbius transformation</p>
+<p id="p-587">Consider the Möbius transformation</p>
 <div class="displaymath">
 \begin{equation*}
-T(z) = \frac{(6+3i)z+(2-3i)}{z+3}.
+T(z) = \frac{(6+3i)z+(2-3i)}{z+3}\text{.}
 \end{equation*}
 </div>
-<p id="p-541">First we find the fixed points and the normal form of \(T\text{.}\) To find the fixed points we solve \(T(z) = z\) for \(z\text{.}\)</p>
+<p id="p-588">First we find the fixed points and the normal form of \(T\text{.}\) To find the fixed points we solve \(T(z) = z\) for \(z\text{.}\)</p>
 <div class="displaymath">
 \begin{align*}
 \frac{(6+3i)z+(2-3i)}{z+3}\amp = z\\
 (6+3i)z + (2-3i)\amp = z^2+3z\\
-z^2 - (3+3i)z - (2-3i) \amp = 0.
+z^2 - (3+3i)z - (2-3i) \amp = 0\text{.}
 \end{align*}
 </div>
-<p id="p-542">Hey! Wait a moment! This looks familiar. Let's see \(\ldots\) yes! We showed in <a knowl="./knowl/ex_quadroot.html" title="Example 2.4.4: Solving a quadratic equation">Example 2.4.4</a> that this quadratic equation has solutions \(z = i\) and \(z = 3+2i\text{.}\)</p>
-<p id="p-543">So the map has these two fixed points, and the normal form of \(T\) is</p>
+<p id="p-589">Hey! Wait a moment! This looks familiar. Let's see \(\ldots\) yes! We showed in <a class="xref" data-knowl="./knowl/ex_quadroot.html" title="Example 2.4.4: Solving a quadratic equation">Example 2.4.4</a> that this quadratic equation has solutions \(z = i\) and \(z = 3+2i\text{.}\)</p>
+<p id="p-590">So the map has these two fixed points, and the normal form of \(T\) is</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{T(z)-i}{T(z)-(3+2i)}=\lambda\frac{z-i}{z-(3+2i)}.
+\frac{T(z)-i}{T(z)-(3+2i)}=\lambda\frac{z-i}{z-(3+2i)}\text{.}
 \end{equation*}
 </div>
-<p id="p-544">To find the value of \(\lambda\text{,}\) plug into the normal form a convenient value of \(z\text{.}\) For instance, \(T(-3)=\infty\text{,}\) so</p>
+<p id="p-591">To find the value of \(\lambda\text{,}\) plug into the normal form a convenient value of \(z\text{.}\) For instance, \(T(-3)=\infty\text{,}\) so</p>
 <div class="displaymath">
 \begin{equation*}
-1=\lambda\frac{-3-i}{-3-(3+2i)}.
+1=\lambda\frac{-3-i}{-3-(3+2i)}\text{.}
 \end{equation*}
 </div>
-<p id="p-545">It follows that \(\lambda = 2\text{,}\) so \(T\) is a hyperbolic map that pushes points along clines through \(i\) and \(3+2i\text{.}\) Below is a schematic for how the map pushes points around in \(\mathbb{C}^+\text{.}\) Notice \(T(0) =\frac{2}{3}-i\text{,}\) \(T(1)=2\text{,}\) and \(T(4i) = 2.16+4.12i\text{.}\) Points are moving along type I clines of \(i\) and \(3+2i\) away from \(i\) and toward \(3 + 2i\text{.}\)</p>
-<p id="p-546">From the original description of \(T\) we observe that the pole of the map is \(z_\infty = -3\text{,}\) and the inverse pole of the map is \(w_{\infty} = 6+3i\text{.}\) Notice that \(z_\infty\text{,}\) \(w_\infty\text{,}\) and the two fixed points all lie on the same Euclidean line. This will always be the case for a hyperbolic Möbius transformation (<a knowl="./knowl/hmk_pqpoles.html" title="Exercise 3.5.9">Exercise 3.5.9</a>).</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-ex-analyze-mob.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="example-like" id="example-32"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.5.11</span> <span class="title">Fix \(i\) and \(0\) and send \(1 \mapsto 2\)</span>
+<p id="p-592">It follows that \(\lambda = 2\text{,}\) so \(T\) is a hyperbolic map that pushes points along clines through \(i\) and \(3+2i\text{.}\) Below is a schematic for how the map pushes points around in \(\mathbb{C}^+\text{.}\) Notice \(T(0) =\frac{2}{3}-i\text{,}\) \(T(1)=2\text{,}\) and \(T(4i) = 2.16+4.12i\text{.}\) Points are moving along type I clines of \(i\) and \(3+2i\) away from \(i\) and toward \(3 + 2i\text{.}\)</p>
+<p id="p-593">From the original description of \(T\) we observe that the pole of the map is \(z_\infty = -3\text{,}\) and the inverse pole of the map is \(w_{\infty} = 6+3i\text{.}\) Notice that \(z_\infty\text{,}\) \(w_\infty\text{,}\) and the two fixed points all lie on the same Euclidean line. This will always be the case for a hyperbolic Möbius transformation (<a class="xref" data-knowl="./knowl/hmk_pqpoles.html" title="Exercise 3.5.9">Exercise 3.5.9</a>).</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:27.5%;margin-right:27.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-ex-analyze-mob.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="example example-like" id="example-32"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.11</span><span class="period">.</span><span class="space"> </span><span class="title">Fix \(i\) and \(0\) and send \(1 \mapsto 2\).</span>
 </h6>
-<p id="p-547">The normal form of this map is</p>
+<p id="p-594">The normal form of this map is</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{T(z)-i}{T(z)-0}=\lambda\frac{z-i}{z-0}.
+\frac{T(z)-i}{T(z)-0}=\lambda\frac{z-i}{z-0}\text{.}
 \end{equation*}
 </div>
-<p id="p-548">Since \(T(1) = 2\) we know that</p>
+<p id="p-595">Since \(T(1) = 2\) we know that</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{2-i}{2}=\lambda(1-i).
+\frac{2-i}{2}=\lambda(1-i)\text{.}
 \end{equation*}
 </div>
-<p id="p-549">Solving for \(\lambda\) we have</p>
+<p id="p-596">Solving for \(\lambda\) we have</p>
 <div class="displaymath">
 \begin{equation*}
-\lambda = \frac{3}{4}+\frac{1}{4}i,
+\lambda = \frac{3}{4}+\frac{1}{4}i\text{,}
 \end{equation*}
 </div>
-<p>and the map is loxodromic.</p>
-<p id="p-550">Expressing \(\lambda\) in polar form, \(\lambda = re^{i\theta}\text{,}\) gives \(r = \frac{\sqrt{10}}{4}\) and \(\theta=\arctan(1/3)\text{.}\)  So \(T\) pushes points along type I clines of \(i\) and \(0\) according to the scale factor \(r\) and along type II clines of \(i\) and \(0\) according to the angle \(\theta\text{.}\)</p></article><p id="p-551">Now we consider Möbius transformations that fix just one point. One such Möbius transformation comes to mind immediately. For any complex number \(d\text{,}\) the translation \(T(z) = z + d\) fixes just \(\infty\text{.}\) In the exercises, you prove that translations are the <em class="emphasis">only</em> Möbius transformations that fix \(\infty\) and no other point.</p>
-<p id="p-552">Now suppose \(T\) fixes \(p \neq \infty\) (and no other point). Let \(S(z) = \frac{1}{z-p}\) be a Möbius transformation taking \(p\) to \(\infty\text{,}\) and let \(U
-= S \circ T \circ S^{-1}\text{.}\) Then \(U(\infty) =
-S(T(S^{-1}(\infty)))=S(T(p))=S(p)=\infty\text{,}\) and \(U\) fixes no other point. Thus, \(U(z) = z + d\) for some complex constant \(d\text{.}\)</p>
-<p id="p-553">The composition equation \(S \circ T = U \circ S\) gives the following equation called the <dfn class="terminology">normal form of a Möbius transformation \(\boldsymbol{T}\) fixing \(p \neq \infty\)</dfn> (and no other point): <article class="assemblage-like" id="assemblage-7"><h6 class="heading"><span class="title">Normal form, one fixed point \(p\neq\infty\)</span></h6>
-<div class="displaymath" id="p-554">
+<p data-braille="continuation">and the map is loxodromic.</p>
+<p id="p-597">Expressing \(\lambda\) in polar form, \(\lambda = re^{i\theta}\text{,}\) gives \(r = \frac{\sqrt{10}}{4}\) and \(\theta=\arctan(1/3)\text{.}\)  So \(T\) pushes points along type I clines of \(i\) and \(0\) according to the scale factor \(r\) and along type II clines of \(i\) and \(0\) according to the angle \(\theta\text{.}\)</p></article><p id="p-598">Now we consider Möbius transformations that fix just one point. One such Möbius transformation comes to mind immediately. For any complex number \(d\text{,}\) the translation \(T(z) = z + d\) fixes just \(\infty\text{.}\) In the exercises, you prove that translations are the <em class="emphasis">only</em> Möbius transformations that fix \(\infty\) and no other point.</p>
+<p id="p-599">Now suppose \(T\) fixes \(p \neq \infty\) (and no other point). Let \(S(z) = \frac{1}{z-p}\) be a Möbius transformation taking \(p\) to \(\infty\text{,}\) and let \(U = S \circ T \circ S^{-1}\text{.}\) Then \(U(\infty) = S(T(S^{-1}(\infty)))=S(T(p))=S(p)=\infty\text{,}\) and \(U\) fixes no other point. Thus, \(U(z) = z + d\) for some complex constant \(d\text{.}\)</p>
+<p id="p-600">The composition equation \(S \circ T = U \circ S\) gives the following equation called the <dfn class="terminology">normal form of a Möbius transformation \(\boldsymbol{T}\) fixing \(p \neq \infty\)</dfn> (and no other point): <article class="assemblage assemblage-like" id="assemblage-7"><h6 class="heading"><span class="title">Normal form, one fixed point \(p\neq\infty\).</span></h6>
+<div class="displaymath" id="p-601">
 \begin{equation*}
 \frac{1}{T(z) - p} = \frac{1}{z-p} + d
 \end{equation*}
 </div></article></p>
-<p id="p-555">Observe that \(U(z)=z+d\) pushes points along lines parallel to one another in the direction of \(d\) (as in the right of <a knowl="./knowl/fig-parmap.html" title="Figure 3.5.12">Figure 3.5.12</a>).  All of these parallel lines meet at \(\infty\) and are mutually tangent at this point. The map \(S^{-1}\) takes this system of clines to a system of clines that meet just at \(p\text{,}\) and are tangent to one another at \(p\text{,}\) as pictured. The slope of the single line in this system depends on the value of the constant \(d\text{.}\) In fact, the single line in the system of clines is the line through \(p\) and \(T(\infty)\) (see <a knowl="./knowl/hmk_parmap.html" title="Exercise 3.5.12">Exercise 3.5.12</a> for details).</p>
-<figure class="figure-like" id="fig-parmap"><div style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/im-parmap.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">3.5.12</span> A parabolic map fixing \(p\) pushes points along clines that are mutually tangent at \(p\text{.}\)</figcaption></figure><p id="p-556">A map that fixes just \(p\) will push points along such a system of clines that are mutually tangent at \(p\text{.}\) Such a map is called <dfn class="terminology">parabolic</dfn>. In a sense, a parabolic map sends points both toward and away from \(p\) along these clines, just as any translation pushes points along a line toward \(\infty\) and also away from \(\infty\text{.}\)</p>
-<article class="example-like" id="example-33"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">3.5.13</span> <span class="title">Normal form, one fixed point.</span>
+<p id="p-602">Observe that \(U(z)=z+d\) pushes points along lines parallel to one another in the direction of \(d\) (as in the right of <a class="xref" data-knowl="./knowl/fig-parmap.html" title="Figure 3.5.12">Figure 3.5.12</a>).  All of these parallel lines meet at \(\infty\) and are mutually tangent at this point. The map \(S^{-1}\) takes this system of clines to a system of clines that meet just at \(p\text{,}\) and are tangent to one another at \(p\text{,}\) as pictured. The slope of the single line in this system depends on the value of the constant \(d\text{.}\) In fact, the single line in the system of clines is the line through \(p\) and \(T(\infty)\) (see <a class="xref" data-knowl="./knowl/hmk_parmap.html" title="Exercise 3.5.12">Exercise 3.5.12</a> for details).</p>
+<figure class="figure figure-like" id="fig-parmap"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/im-parmap.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.5.12<span class="period">.</span></span><span class="space"> </span>A parabolic map fixing \(p\) pushes points along clines that are mutually tangent at \(p\text{.}\)</figcaption></figure><p id="p-603">A map that fixes just \(p\) will push points along such a system of clines that are mutually tangent at \(p\text{.}\) Such a map is called <dfn class="terminology">parabolic</dfn>. In a sense, a parabolic map sends points both toward and away from \(p\) along these clines, just as any translation pushes points along a line toward \(\infty\) and also away from \(\infty\text{.}\)</p>
+<article class="example example-like" id="example-33"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.5.13</span><span class="period">.</span><span class="space"> </span><span class="title">Normal form, one fixed point..</span>
 </h6>
-<p id="p-557">Consider \(T(z) = (7z-12)/(3z-5)\text{.}\)  To find its normal form we start by finding its fixed points.</p>
+<p id="p-604">Consider \(T(z) = (7z-12)/(3z-5)\text{.}\)  To find its normal form we start by finding its fixed points.</p>
 <div class="displaymath">
 \begin{align*}
 z\amp =T(z)\\
@@ -354,87 +365,77 @@ z(3z-5) \amp = 7z-12\\
 3z^2-12z + 12 \amp = 0\\
 z^2-4z + 4 \amp = 0\\
 (z-2)^2 \amp = 0\\
-z\amp = 2.
+z\amp = 2\text{.}
 \end{align*}
 </div>
-<p id="p-558">So \(T\) is parabolic and has normal form</p>
+<p id="p-605">So \(T\) is parabolic and has normal form</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{1}{T(z)-2} =
-\frac{1}{z-2}+d.
+\frac{1}{z-2}+d\text{.}
 \end{equation*}
 </div>
-<p id="p-559">To find \(d\) plug in the image of another point. Using the original description of the map, we know \(T(0)=2.4\) so</p>
+<p id="p-606">To find \(d\) plug in the image of another point. Using the original description of the map, we know \(T(0)=2.4\text{,}\) so</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{1}{0.4}=\frac{1}{-2}+d
 \end{equation*}
 </div>
-<p>so that \(d = 3\text{.}\) The normal form is then</p>
+<p data-braille="continuation">so that \(d = 3\text{.}\) The normal form is then</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{1}{T(z)-2} = \frac{1}{z-2}+3.
+\frac{1}{T(z)-2} = \frac{1}{z-2}+3\text{.}
 \end{equation*}
-</div></article></section><section class="exercises" id="exercises-11"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</div></article><section class="exercises" id="exercises-11"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section3-5.html#exercises-11" class="permalink">¶</a><article class="exercise-like" id="exercise-67"><h6 class="heading">
-<span class="codenumber">1</span> </h6>
-<p id="p-560">Complete the proof of <a knowl="./knowl/th_mobfinitefix.html" title="Theorem 3.5.8">Theorem 3.5.8</a>.</p></article><article class="exercise-like" id="exercise-68"><h6 class="heading">
-<span class="codenumber">2</span> </h6>
-<p id="p-561">Analyze each of the Möbius transformations below by finding the fixed points, finding the normal form, and sketching the appropriate coordinate system of clines, being sure to indicate the motion of the transformation.</p>
-<p id="p-562">a. \(T(z) = \frac{z}{2z-1}\)</p>
-<p id="p-563">b. \(T(z) = \frac{-z}{(1+i)z - i}\)</p>
-<p id="p-564">c. \(T(z) = \frac{3iz-5}{z-i}\)</p></article><article class="exercise-like" id="exercise-69"><h6 class="heading">
-<span class="codenumber">3</span> </h6>
-<p id="p-565">A transformation \(T\) is called an <dfn class="terminology">involution</dfn> if it is its own inverse. If this is the case, then \(T\circ T\) is the identity transformation. Prove that if a Möbius transformation \(T\) is an involution and not the identity transformation, it must be elliptic.</p></article><article class="exercise-like" id="exercise-70"><h6 class="heading">
-<span class="codenumber">4</span> </h6>
-<p id="p-566">Suppose a Möbius transformation \(T\) has the following property: There are distinct points \(a, b, c\) in the complex plane \(\mathbb{C}\) such that \(T(a) = b, T(b) = c, T(c) = a\text{.}\)</p>
-<p id="p-567">a. What is the image of the unique cline through \(a, b,\) and \(c\) under \(T\text{?}\)</p>
-<p id="p-568">b. Explain why the triple composition \(T\circ T \circ T\) is the identity transformation.</p>
-<p id="p-569">c. Prove that \(T\) is elliptic.</p></article><article class="exercise-like" id="exercise-71"><h6 class="heading">
-<span class="codenumber">5</span> </h6>
-<p id="p-570">Prove that if the Möbius transformation \(T\) fixes just \(\infty\text{,}\) then \(T(z) = z + d\) for some complex constant \(d\text{.}\)</p></article><article class="exercise-like" id="exercise-72"><h6 class="heading">
-<span class="codenumber">6</span> </h6>
-<p id="p-571">Find the Möbius transformation that fixes 2 and 4 and sends \(2+i\) to \(\infty\text{.}\)</p></article><article class="exercise-like" id="exercise-73"><h6 class="heading">
-<span class="codenumber">7</span> </h6>
-<p id="p-572">Use the normal form to build and classify a Möbius transformation that fixes 4 and 8 and sends \(i\) to 0.</p></article><article class="exercise-like" id="hmk_elliptic2inv"><h6 class="heading">
-<span class="codenumber">8</span> </h6>
-<p id="p-573">Suppose \(T\) is an elliptic Möbius transformation that fixes the distinct, finite points \(p\) and \(q\text{.}\)</p>
-<p id="p-574">a. Prove that the points \(z_\infty\) and \(w_\infty\) as defined in <a knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a> lie on the perpendicular bisector of segment \(pq\text{.}\)</p>
-<p id="p-575">b. Show that \(T\) is the composition of two inversions about clines that contain \(p\) and \(q\text{.}\) Hint: Think about which inversion fixes \(p\) and \(q\) and takes \(z_\infty\) to \(\infty\text{?}\)</p></article><article class="exercise-like" id="hmk_pqpoles"><h6 class="heading">
-<span class="codenumber">9</span> </h6>
-<p id="p-576">Suppose the Möbius transformation \(T\) fixes the distinct, finite points \(p\) and \(q\) and sends \(z_\infty\) to \(\infty\) and \(\infty\) to \(w_\infty\text{.}\) By <a knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a> we know \(p+q=z_\infty+w_\infty\text{.}\) Use the normal form of \(T\) to prove the following facts:</p>
-<p id="p-577">a. If \(T\) is elliptic then the four points \(p\text{,}\) \(q\text{,}\) \(z_\infty\text{,}\) and \(w_\infty\) form a rhombus. Under what conditions is this rhombus actually a square?</p>
-<p id="p-578">b. If \(T\) is hyperbolic then these 4 points all lie on the same Euclidean line.</p>
-<p id="p-579">c. If \(T\) is loxodromic, then under what conditions do these four points determine a rectangle?</p></article><article class="exercise-like" id="exercise-76"><h6 class="heading">
-<span class="codenumber">10</span> </h6>
-<p id="p-580">Prove that any pair of nonintersecting clines in \(\mathbb{C}\) may be mapped by a Möbius transformation to concentric circles. Hint: By <a knowl="./knowl/th_symmtwoclines.html" title="Theorem 3.2.16">Theorem 3.2.16</a> there are two points \(p\) and \(q\) in \(\mathbb{C}\) that are symmetric with respect to both clines. What happens if we apply a Möbius transformation that takes one of these points to \(\infty\text{?}\)</p></article><article class="exercise-like" id="exercise-77"><h6 class="heading">
-<span class="codenumber">11</span> </h6>
-<p id="p-581">Suppose \(T = i_{C_1} \circ i_{C_2}\) where \(C_1\) and \(C_2\) are clines that do not intersect. Prove that \(T\) has two fixed points and these points are on all clines perpendicular to both \(C_1\) and \(C_2\text{.}\)</p></article><article class="exercise-like" id="hmk_parmap"><h6 class="heading">
-<span class="codenumber">12</span> </h6>
-<p id="p-582">Suppose \(T(z)\) is parabolic with normal form</p>
+<article class="exercise exercise-like" id="exercise-67"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-607">Complete the proof of <a class="xref" data-knowl="./knowl/th_mobfinitefix.html" title="Theorem 3.5.8">Theorem 3.5.8</a>.</p></article><article class="exercise exercise-like" id="exercise-68"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-609">Analyze each of the Möbius transformations below by finding the fixed points, finding the normal form, and sketching the appropriate coordinate system of clines, being sure to indicate the motion of the transformation.</p>
+<ol class="lower-alpha">
+<li id="li-86">\(\displaystyle T(z) = \frac{z}{2z-1}\)</li>
+<li id="li-87">\(\displaystyle T(z) = \frac{-z}{(1+i)z - i}\)</li>
+<li id="li-88">\(\displaystyle T(z) = \frac{3iz-5}{z-i}\)</li>
+</ol></article><article class="exercise exercise-like" id="exercise-69"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-611">A transformation \(T\) is called an <dfn class="terminology">involution</dfn> if it is its own inverse. If this is the case, then \(T\circ T\) is the identity transformation. Prove that if a Möbius transformation \(T\) is an involution and not the identity transformation, it must be elliptic.</p></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-614">Suppose a Möbius transformation \(T\) has the following property: There are distinct points \(a, b, c\) in the complex plane \(\mathbb{C}\) such that \(T(a) = b, T(b) = c, T(c) = a\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-92">What is the image of the unique cline through \(a, b,\) and \(c\) under \(T\text{?}\)</li>
+<li id="li-93">Explain why the triple composition \(T\circ T \circ T\) is the identity transformation.</li>
+<li id="li-94">Prove that \(T\) is elliptic.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-616">Prove that if the Möbius transformation \(T\) fixes just \(\infty\text{,}\) then \(T(z) = z + d\) for some complex constant \(d\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-72"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-618">Find the Möbius transformation that fixes 2 and 4 and sends \(2+i\) to \(\infty\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
+<p id="p-620">Use the normal form to build and classify a Möbius transformation that fixes 4 and 8 and sends \(i\) to 0.</p></article><article class="exercise exercise-like" id="hmk_elliptic2inv"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
+<p id="p-622">Suppose \(T\) is an elliptic Möbius transformation that fixes the distinct, finite points \(p\) and \(q\text{.}\)</p>
+<ol class="lower-alpha">
+<li id="li-98">Prove that the points \(z_\infty\) and \(w_\infty\) as defined in <a class="xref" data-knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a> lie on the perpendicular bisector of segment \(pq\text{.}\)</li>
+<li id="li-99">Show that \(T\) is the composition of two inversions about clines that contain \(p\) and \(q\text{.}\)</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-12" id="hint-12"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-12"><div class="hint solution-like">For part b, think about which inversion fixes \(p\) and \(q\) and takes \(z_\infty\) to \(\infty\text{?}\)</div></div>
+</div></article><article class="exercise exercise-like" id="hmk_pqpoles"><h6 class="heading"><span class="codenumber">9<span class="period">.</span></span></h6>
+<p id="p-624">Suppose the Möbius transformation \(T\) fixes the distinct, finite points \(p\) and \(q\) and sends \(z_\infty\) to \(\infty\) and \(\infty\) to \(w_\infty\text{.}\) By <a class="xref" data-knowl="./knowl/lem_mobparallel.html" title="Lemma 3.5.7">Lemma 3.5.7</a> we know \(p+q=z_\infty+w_\infty\text{.}\) Use the normal form of \(T\) to prove the following facts.</p>
+<ol class="lower-alpha">
+<li id="li-102">If \(T\) is elliptic then the four points \(p\text{,}\) \(q\text{,}\) \(z_\infty\text{,}\) and \(w_\infty\) form a rhombus. Under what conditions is this rhombus actually a square?</li>
+<li id="li-103">If \(T\) is hyperbolic then these 4 points all lie on the same Euclidean line.</li>
+<li id="li-104">If \(T\) is loxodromic, then under what conditions do these four points determine a rectangle?</li>
+</ol></article><article class="exercise exercise-like" id="exercise-76"><h6 class="heading"><span class="codenumber">10<span class="period">.</span></span></h6>
+<p id="p-626">Prove that any pair of nonintersecting clines in \(\mathbb{C}\) may be mapped by a Möbius transformation to concentric circles.</p>
+<div class="solutions">
+<a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-13" id="hint-13"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-13"><div class="hint solution-like">By <a class="xref" data-knowl="./knowl/th_symmtwoclines.html" title="Theorem 3.2.16">Theorem 3.2.16</a> there are two points \(p\) and \(q\) in \(\mathbb{C}\) that are symmetric with respect to both clines. What happens if we apply a Möbius transformation that takes one of these points to \(\infty\text{?}\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading"><span class="codenumber">11<span class="period">.</span></span></h6>
+<p id="p-628">Suppose \(T = i_{C_1} \circ i_{C_2}\) where \(C_1\) and \(C_2\) are clines that do not intersect. Prove that \(T\) has two fixed points and these points are on all clines perpendicular to both \(C_1\) and \(C_2\text{.}\)</p></article><article class="exercise exercise-like" id="hmk_parmap"><h6 class="heading"><span class="codenumber">12<span class="period">.</span></span></h6>
+<p id="p-630">Suppose \(T(z)\) is parabolic with normal form</p>
 <div class="displaymath">
 \begin{equation*}
-\frac{1}{T(z)-p} = \frac{1}{z-p}+d.
+\frac{1}{T(z)-p} = \frac{1}{z-p}+d\text{.}
 \end{equation*}
 </div>
-<p id="p-583">Prove that the line through \(p\) and \(p+\frac{1}{d}\) gets sent to itself by \(T\text{.}\)</p></article><article class="exercise-like" id="exercise-79"><h6 class="heading">
-<span class="codenumber">13</span> </h6>
-<p id="p-584">Analyze \(T(z) = [(1+3i)z-9i]/[iz+(1-3i)]\) by finding the fixed points, finding the normal form, and sketching the appropriate system of clines indicating the motion of the transformation.</p></article><article class="exercise-like" id="exercise-80"><h6 class="heading">
-<span class="codenumber">14</span> </h6>
-<p id="p-585">Find a parabolic transformation with fixed point \(2+i\) for which \(T(\infty)=8\text{.}\)</p></article><article class="exercise-like" id="hmk-typeIIpqz"><h6 class="heading">
-<span class="codenumber">15</span> </h6>
-<p id="p-586">Given distinct points \(p\text{,}\) \(q\text{,}\) and \(z\) in \(\mathbb{C}\text{,}\) prove there exists a type II cline of \(p\) and \(q\) that goes through \(z\text{.}\)</p></article></section></section></div></main>
+<p id="p-631">Prove that the line through \(p\) and \(p+\frac{1}{d}\) gets sent to itself by \(T\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-79"><h6 class="heading"><span class="codenumber">13<span class="period">.</span></span></h6>
+<p id="p-634">Analyze \(T(z) = [(1+3i)z-9i]/[iz+(1-3i)]\) by finding the fixed points, finding the normal form, and sketching the appropriate system of clines indicating the motion of the transformation.</p></article><article class="exercise exercise-like" id="exercise-80"><h6 class="heading"><span class="codenumber">14<span class="period">.</span></span></h6>
+<p id="p-636">Find a parabolic transformation with fixed point \(2+i\) for which \(T(\infty)=8\text{.}\)</p></article><article class="exercise exercise-like" id="hmk-typeIIpqz"><h6 class="heading"><span class="codenumber">15<span class="period">.</span></span></h6>
+<p id="p-638">Given distinct points \(p\text{,}\) \(q\text{,}\) and \(z\) in \(\mathbb{C}\text{,}\) prove there exists a type II cline of \(p\) and \(q\) that goes through \(z\text{.}\)</p></article></section></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>

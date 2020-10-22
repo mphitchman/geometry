@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:24:19-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><div class="solution solution-like">
+<p>To reflect about \(y = mx + b\) where \(m \neq 0\text{,}\) notice that the line intersects the \(x\)-axis at the point \(-b/m\text{,}\) and the angle of intersection with the \(x\)-axis is \(\theta = \tan^{-1}(m)\text{.}\)  To reflect across the line we proceed as follows:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+z \amp\mapsto z - (-b/m)      \amp\text{(translate)}\\
+\amp\mapsto e^{-i\theta}(z+b/m) \amp\text{(rotate)}\\
+\amp\mapsto \overline{e^{-i\theta}(z+b/m)} \amp\text{(reflect)}\\
+\amp= e^{i\theta}(\overline{z}+b/m) \\
+\amp\mapsto e^{i\theta}e^{i\theta}(\overline{z}+b/m) \amp\text{(rotate back)}\\
+\amp=e^{2i\theta}(\overline{z}+b/m)\\
+\amp\mapsto e^{2i\theta}(\overline{z}+b/m)+b/m \amp\text{(translate back)} \text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Thus, reflection about the line \(y = mx + b\) with \(m \neq 0\) is given by \(T(z) = e^{2i\theta}(\overline{z}+b/m)+b/m\text{,}\) where \(\theta=\tan^{-1}(m)\) is the angle of intersection of the line with the \(x\)-axis.</p>
+</div></body>
+</html>

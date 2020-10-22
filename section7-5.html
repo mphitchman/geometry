@@ -1,18 +1,20 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2018-12-06T09:47:33-08:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-10-22T11:23:48-07:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Surfaces</title>
+<title>GCT Surfaces</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']]
@@ -24,7 +26,7 @@ MathJax.Hub.Config({
     jax: ["input/AsciiMath"],
     extensions: ["asciimath2jax.js"],
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
         // scrolling to fragment identifiers is controlled by other Javascript
         positionToHash: false,
         equationNumbers: { autoNumber: "none", useLabelIds: true, },
@@ -41,93 +43,101 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.1/pretext.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/stylesheets/mathbook-4.css" rel="stylesheet" type="text/css">
-<link href="https://aimath.org/mathbook/mathbook-add-on2.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="custom-styles.css">
-<link rel="stylesheet" type="text/css" href="title-period-fix.css">
-<link href="https://pretextbook.org/css/0.1/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
-<body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
+<body id="mph-GCT" class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\require{cancel}\newcommand{\nin}{}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href="" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="index.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
+<a id="logo-link" href="https://mphitchman.com/geometry" target="_blank"><img src="images/im-coverimage-icon.svg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="gct-toc.html"><span class="title">Geometry with an Introduction to Cosmic Topology</span></a></h1>
 <p class="byline">Michael P. Hitchman</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
 <a class="index-button toolbar-item button" href="index-part.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section7-4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section7-6.html" title="Next">Next</a></span>
 </div>
-<button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section7-4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section7-6.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></h2>
-<ul>
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
 <li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
 <li><a href="preface.html" data-scroll="preface">Preface</a></li>
 <li><a href="acknowledgment.html" data-scroll="acknowledgment">Acknowledgements</a></li>
 <li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
 </ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span> <span class="title">An Invitation to Geometry</span></a><ul>
 <li><a href="section1-1.html" data-scroll="section1-1">Introduction</a></li>
 <li><a href="section1-2.html" data-scroll="section1-2">A Brief History of Geometry</a></li>
 <li><a href="section1-3.html" data-scroll="section1-3">Geometry on Surfaces: A First Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">The Complex Plane</span></a><ul>
 <li><a href="section2-1.html" data-scroll="section2-1">Basic Notions</a></li>
 <li><a href="section2-2.html" data-scroll="section2-2">Polar Form of a Complex Number</a></li>
 <li><a href="section2-3.html" data-scroll="section2-3">Division and Angle Measure</a></li>
 <li><a href="section2-4.html" data-scroll="section2-4">Complex Expressions</a></li>
 </ul>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span> <span class="title">Transformations</span></a><ul>
 <li><a href="section3-1.html" data-scroll="section3-1">Basic Transformations of \(\mathbb{C}\)</a></li>
 <li><a href="section3-2.html" data-scroll="section3-2">Inversion</a></li>
 <li><a href="section3-3.html" data-scroll="section3-3">The Extended Plane</a></li>
 <li><a href="section3-4.html" data-scroll="section3-4">Möbius Transformations</a></li>
 <li><a href="section3-5.html" data-scroll="section3-5">Möbius Transformations: A Closer Look</a></li>
 </ul>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Geometry</span></a><ul>
 <li><a href="section4-1.html" data-scroll="section4-1">The Basics</a></li>
 <li><a href="section4-2.html" data-scroll="section4-2">Möbius Geometry</a></li>
 </ul>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Hyperbolic Geometry</span></a><ul>
 <li><a href="section5-1.html" data-scroll="section5-1">The Poincaré Disk Model</a></li>
 <li><a href="section5-2.html" data-scroll="section5-2">Figures of Hyperbolic Geometry</a></li>
 <li><a href="section5-3.html" data-scroll="section5-3">Measurement in Hyperbolic Geometry</a></li>
 <li><a href="section5-4.html" data-scroll="section5-4">Area and Triangle Trigonometry</a></li>
 <li><a href="section5-5.html" data-scroll="section5-5">The Upper Half-Plane Model</a></li>
 </ul>
-<h2 class="link"><a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Elliptic Geometry</span></a><ul>
 <li><a href="section6-1.html" data-scroll="section6-1">Antipodal Points</a></li>
 <li><a href="section6-2.html" data-scroll="section6-2">Elliptic Geometry</a></li>
 <li><a href="section6-3.html" data-scroll="section6-3">Measurement in Elliptic Geometry</a></li>
 <li><a href="section6-4.html" data-scroll="section6-4">Revisiting Euclid's Postulates</a></li>
 </ul>
-<h2 class="link"><a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Geometry on Surfaces</span></a><ul>
 <li><a href="section7-1.html" data-scroll="section7-1">Curvature</a></li>
 <li><a href="section7-2.html" data-scroll="section7-2">Elliptic Geometry with Curvature \(k \gt 0\)</a></li>
 <li><a href="section7-3.html" data-scroll="section7-3">Hyperbolic Geometry with Curvature \(k \lt 0\)</a></li>
@@ -136,270 +146,258 @@ var login_required = false;
 <li><a href="section7-6.html" data-scroll="section7-6">Geometry of Surfaces</a></li>
 <li><a href="section7-7.html" data-scroll="section7-7">Quotient Spaces</a></li>
 </ul>
-<h2 class="link"><a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a></h2>
-<ul>
+</li>
+<li class="link">
+<a href="chapter-8.html" data-scroll="chapter-8"><span class="codenumber">8</span> <span class="title">Cosmic Topology</span></a><ul>
 <li><a href="section8-1.html" data-scroll="section8-1">Three-Dimensional Geometry and 3-Manifolds</a></li>
 <li><a href="section8-2.html" data-scroll="section8-2">Cosmic Crystallography</a></li>
 <li><a href="section8-3.html" data-scroll="section8-3">Circles in the Sky</a></li>
 <li><a href="section8-4.html" data-scroll="section8-4">Our Universe</a></li>
 </ul>
-<h2 class="link"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></h2>
-<h2 class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></h2>
-<h2 class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></h2>
-<h2 class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></h2></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="notation.html" data-scroll="notation"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></li>
+<li class="link"><a href="references.html" data-scroll="references"><span class="title">References</span></a></li>
+<li class="link"><a href="index-part.html" data-scroll="index-part"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="mathbook-content"><section class="section" id="section7-5"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section7-5"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.5</span> <span class="title">Surfaces</span>
 </h2>
-<a href="section7-5.html" class="permalink">¶</a><section class="introduction" id="introduction-34"><p id="p-1317">Back in Chapter 1 we motivated the study of non-Euclidean geometry with a question in cosmology: What is the shape of the universe? We discussed the idea that different shapes inherit different types of geometry. Indeed, the rules of geometry are different on a sphere than on a flat plane. In this section we take a break from geometry in order to discuss the shapes themselves.</p>
-<p id="p-1318">In topology one studies those features of a space that remain unchanged if the space is stretched or otherwise continuously deformed. Such features of a space are called topological features.</p>
-<p id="p-1319">The features of a space that <em class="emphasis">do</em> change under such deformations are geometric features. For instance, as a ball is inflated its volume, curvature, and surface area change; these are geometric properties. On the other hand, no matter how big or lumpy the ball gets, or how it is stretched (unless it pops!), a loop drawn on the surface of the ball separates the surface into two disjoint pieces. This is a topological property of the ball. A second topological property of a space is whether any loop drawn on it can be continuously contracted (while staying in the space) to a point. The sphere also has this feature. Nothing about the sphere's shape prevents a loop from shrinking on the surface to a point.</p>
-<figure class="figure-like" id="fig-cutsets"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-cutsets.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.1</span> The sphere and torus are topologically distinct.</figcaption></figure><p id="p-1320">On the surface of a donut there are loops one can draw that do <em class="emphasis">not</em> separate the surface into disjoint pieces. The loop that goes around the donut like an armband in <a knowl="./knowl/fig-cutsets.html" title="Figure 7.5.1">Figure 7.5.1</a> is one such loop. Furthermore, this loop cannot be continuously contracted to a point while staying on the surface. This suggests the surface of a ball and the surface of a donut are topologically different shapes.</p>
-<p id="p-1321">The sphere is an example of a <dfn class="terminology">simply connected space</dfn> because any loop drawn on the surface can be contracted to a point. The torus is an example of a <dfn class="terminology">multiconnected space</dfn> because there exist loops in the torus that cannot be contracted to a point.</p>
-<p id="p-1322">Roughly speaking, two spaces are topologically equivalent, or <dfn class="terminology">homeomorphic</dfn>, if one can be continuously deformed to look like the other. For instance, a circle is topologically equivalent to a square. One can be mapped onto the other via a <dfn class="terminology">homeomorphism</dfn>: a continuous bijection between the objects that has a continuous inverse. One homeomorphism is suggested in the following example.</p>
-<article class="example-like" id="example-63"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.5.2</span> <span class="title">A circle is homeomorphic to a square</span>
+<section class="introduction" id="introduction-23"><p id="p-1408">Back in Chapter 1 we motivated the study of non-Euclidean geometry with a question in cosmology: What is the shape of the universe? We discussed the idea that different shapes inherit different types of geometry. Indeed, the rules of geometry are different on a sphere than on a flat plane. In this section we take a break from geometry in order to discuss the shapes themselves.</p>
+<p id="p-1409">In topology one studies those features of a space that remain unchanged if the space is stretched or otherwise continuously deformed. Such features of a space are called topological features.</p>
+<p id="p-1410">The features of a space that <em class="emphasis">do</em> change under such deformations are geometric features. For instance, as a ball is inflated its volume, curvature, and surface area change; these are geometric properties. On the other hand, no matter how big or lumpy the ball gets, or how it is stretched (unless it pops!), a loop drawn on the surface of the ball separates the surface into two disjoint pieces. This is a topological property of the ball. A second topological property of a space is whether any loop drawn on it can be continuously contracted (while staying in the space) to a point. The sphere also has this feature. Nothing about the sphere's shape prevents a loop from shrinking on the surface to a point.</p>
+<figure class="figure figure-like" id="fig-cutsets"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-cutsets.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.1<span class="period">.</span></span><span class="space"> </span>The sphere and torus are topologically distinct.</figcaption></figure><p id="p-1411">On the surface of a donut there are loops one can draw that do <em class="emphasis">not</em> separate the surface into disjoint pieces. The loop that goes around the donut like an armband in <a class="xref" data-knowl="./knowl/fig-cutsets.html" title="Figure 7.5.1">Figure 7.5.1</a> is one such loop. Furthermore, this loop cannot be continuously contracted to a point while staying on the surface. This suggests the surface of a ball and the surface of a donut are topologically different shapes.</p>
+<p id="p-1412">The sphere is an example of a <dfn class="terminology">simply connected space</dfn> because any loop drawn on the surface can be contracted to a point. The torus is an example of a <dfn class="terminology">multiconnected space</dfn> because there exist loops in the torus that cannot be contracted to a point.</p>
+<p id="p-1413">Roughly speaking, two spaces are topologically equivalent, or <dfn class="terminology">homeomorphic</dfn>, if one can be continuously deformed to look like the other. For instance, a circle is topologically equivalent to a square. One can be mapped onto the other via a <dfn class="terminology">homeomorphism</dfn>: a continuous bijection between the objects that has a continuous inverse. One homeomorphism is suggested in the following example.</p>
+<article class="example example-like" id="example-63"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">A circle is homeomorphic to a square.</span>
 </h6>
-<p id="p-1323">Construct a homeomorphism as follows. Assume the square and circle are concentric as shown below, and that \(z_0\) is the center of the circle. Then, for each point \(z\) on the square, define \(T(z)\) to be the point on the circle through which the ray \(\overrightarrow{z_0z}\) passes. One can show that \(T\) is a homeomorphism: it is a 1-1 and onto function that is continuous, and its inverse is continuous as well.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-circsquare.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1324">We are quickly heading into the realm of topology, and must resist the temptation to dive headlong and formally into this rich subject. In this text we restrict our focus to a whirlwind tour of topological tools that are used to investigate possible shapes for two- and three-dimensional universes.  We encourage the reader interested in a more formal approach to the subject to consult any number of good texts, including <a knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a>.</p>
-<p id="p-1325">Our candidate universes are examples of manifolds. A topological \(n\)-manifold is a space with the feature that each point in the space has a neighborhood that looks like a patch of \(\mathbb{R}^n\text{.}\) In cosmology, the spatial section of space-time is assumed to be a 3-manifold, and when we ask about the shape of the universe, we are asking about the shape of this 3-manifold. In this section we focus on 2-manifolds.</p>
-<p id="p-1326">A bit more formally, \(\mathbb{R}^n\)  consists of all \(n\)-tuples of real numbers \(\boldsymbol{p} = (x_1, x_2, \ldots, x_n)\text{.}\)  The <dfn class="terminology">open \(n\)-ball</dfn> centered at a point \(\boldsymbol{p}\) in \(\mathbb{R}^n\) with radius \(r \gt 0\text{,}\) denoted \(B_n(\boldsymbol{p},r)\text{,}\) is the set</p>
+<p id="p-1414">Construct a homeomorphism as follows. Assume the square and circle are concentric as shown below, and that \(z_0\) is the center of the circle. Then, for each point \(z\) on the square, define \(T(z)\) to be the point on the circle through which the ray \(\overrightarrow{z_0z}\) passes. One can show that \(T\) is a homeomorphism: it is a 1-1 and onto function that is continuous, and its inverse is continuous as well.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-circsquare.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-1415">We are quickly heading into the realm of topology, and must resist the temptation to dive headlong and formally into this rich subject. In this text we restrict our focus to a whirlwind tour of topological tools that are used to investigate possible shapes for two- and three-dimensional universes.  We encourage the reader interested in a more formal approach to the subject to consult any number of good texts, including <a class="xref" data-knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a>.</p>
+<p id="p-1416">Our candidate universes are examples of manifolds. A topological \(n\)-manifold is a space with the feature that each point in the space has a neighborhood that looks like a patch of \(\mathbb{R}^n\text{.}\) In cosmology, the spatial section of space-time is assumed to be a 3-manifold, and when we ask about the shape of the universe, we are asking about the shape of this 3-manifold.  In this section we focus on 2-manifolds.</p>
+<p id="p-1417">A bit more formally, \(\mathbb{R}^n\) consists of all \(n\)-tuples of real numbers \(\boldsymbol{p} = (x_1, x_2, \ldots, x_n)\text{.}\)  The <dfn class="terminology">open \(n\)-ball</dfn> centered at a point \(\boldsymbol{p}\) in \(\mathbb{R}^n\) with radius \(r \gt 0\text{,}\) denoted \(B_n(\boldsymbol{p},r)\text{,}\) is the set</p>
 <div class="displaymath">
 \begin{equation*}
 B_n(\boldsymbol{p},r) = \{\boldsymbol{x} \in \mathbb{R}^n~|~ |\boldsymbol{x} - \boldsymbol{p}| \lt  r \}, 
 \end{equation*}
 </div>
-<p>where \(|\boldsymbol{x} - \boldsymbol{p}|\) is the Euclidean distance between the points \(\boldsymbol{x}\) and \(\boldsymbol{p}\text{.}\)</p>
-<p id="p-1327">For instance, an open 1-ball is an open interval in \(\mathbb{R}\text{.}\)  The open 2-ball \(B_2(z_0,r)\) consists of all points \(z\) in \(\mathbb{C}\) such that \(|z - z_0| \lt  r\text{.}\) The open 3-ball \(B_3(\boldsymbol{p},r)\) consists of all points in \(\mathbb{R}^3\) inside the sphere centered at \(\boldsymbol{p}\) with radius \(r\text{.}\)</p>
-<figure class="figure-like" id="fig-nballs"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-nballs.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.3</span> Open \(n\)-balls for \(n=1,2,3\text{.}\)</figcaption></figure><p id="p-1328">A <dfn class="terminology">topological \(n\)-manifold</dfn> is a space \(X\) with the feature that each point in \(X\) has a neighborhood that is homeomorphic to an open \(n\)-ball.</p>
-<p id="p-1329">A circle is an example of a 1-manifold: each point on a circle has a neighborhood homeomorphic to an open interval. The surface of a sphere is a 2-manifold: each point on the sphere has a neighborhood that is homeomorphic to an open 2-ball.</p>
-<article class="example-like" id="example-2manifolds"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.5.4</span> <span class="title">Some 2-manifolds</span>
+<p data-braille="continuation">where \(|\boldsymbol{x} - \boldsymbol{p}|\) is the Euclidean distance between the points \(\boldsymbol{x}\) and \(\boldsymbol{p}\text{.}\)</p>
+<p id="p-1418">For instance, an open 1-ball is an open interval in \(\mathbb{R}\text{.}\)  The open 2-ball \(B_2(z_0,r)\) consists of all points \(z\) in \(\mathbb{C}\) such that \(|z - z_0| \lt  r\text{.}\) The open 3-ball \(B_3(\boldsymbol{p},r)\) consists of all points in \(\mathbb{R}^3\) inside the sphere centered at \(\boldsymbol{p}\) with radius \(r\text{.}\)</p>
+<figure class="figure figure-like" id="fig-nballs"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-nballs.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.3<span class="period">.</span></span><span class="space"> </span>Open \(n\)-balls for \(n=1,2,3\text{.}\)</figcaption></figure><p id="p-1419">A <dfn class="terminology">topological \(n\)-manifold</dfn> is a space \(X\) with the feature that each point in \(X\) has a neighborhood that is homeomorphic to an open \(n\)-ball.</p>
+<p id="p-1420">A circle is an example of a 1-manifold: each point on a circle has a neighborhood homeomorphic to an open interval. The surface of a sphere is a 2-manifold: each point on the sphere has a neighborhood that is homeomorphic to an open 2-ball.</p>
+<article class="example example-like" id="example-2manifolds"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">Some 2-manifolds.</span>
 </h6>
-<p id="p-1330">a. Let \(S\) consist of parallel planes in \(\mathbb{R}^3.\) In particular, let \(S = \{(x,y,z) \in \mathbb{R}^3 ~|~ z = 0~\text{or}~z=1\}\) as in part (a) of the following diagram. Each point in \(S\) has a neighborhood of points that is an open 2-ball.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-2manifolds.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1331">b. The open unit disk \(\mathbb{D} = \{z \in \mathbb{C} ~|~ |z| \lt 1\}\) is a 2-manifold. Each point in \(\mathbb{D}\) has a neighborhood that is an open 2-ball in the plane. In particular, if \(|z| = r \lt  1\text{,}\) let \(s = 1-r\text{.}\) Then \(B_2(z,s)\) does the trick.</p>
-<p id="p-1332">c. <em class="emphasis">The flat torus.</em> Consider the flat torus of chapter 1, which has been redrawn in <a knowl="./knowl/fig-t2man.html" title="Figure 7.5.5">Figure 7.5.5</a>. It consists of all points in a rectangle drawn in the Euclidean plane, with the additional feature that each point on the top edge is identified with the point on the bottom edge having the same \(x\)-coordinate; and each point on the left edge is identified with the point on the right edge having the same \(y\)-coordinate.  In <a knowl="./knowl/fig-t2man.html" title="Figure 7.5.5">Figure 7.5.5</a> we indicate this edge identification with oriented labels: the \(a\) edges get identified by matching the arrow orientations, as do the \(b\) edges.</p>
-<p id="p-1333">Each point in the flat torus has a neighborhood homeomorphic to an open 2-ball.</p>
-<p id="p-1334">If a point \(p\) is not on an edge, as in <a knowl="./knowl/fig-t2man.html" title="Figure 7.5.5">Figure 7.5.5</a>, then by choosing a radius small enough, there is an open 2-ball about the point that misses the edges.</p>
-<p id="p-1335">If a point \(q\) is on an edge but not at a corner, then by choosing a radius small enough, there is an open 2-ball about the point that misses the corners. This open 2-ball consists of parts of two open 2-balls from \(\mathbb{R}^2\text{.}\) Because of the edge identification, these open 2-ball halves come together to form a perfect open 2-ball about the point.</p>
-<p id="p-1336">If a point \(u\) is at a corner of the rectangle, there is an open 2-ball about the point that consists of parts of four different open 2-balls from \(\mathbb{R}^2\text{.}\) Because of the edge identification, these four “quarter balls” come together to form a single open 2-ball of points around the corner point.</p></article><figure class="figure-like" id="fig-t2man"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-t2man.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.5</span> The flat torus is a 2-manifold as well as a surface</figcaption></figure><article class="definition-like" id="definition-35"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">7.5.6</span>
+<p id="p-1421">a. Let \(S\) consist of parallel planes in \(\mathbb{R}^3.\) In particular, let \(S = \{(x,y,z) \in \mathbb{R}^3 ~|~ z = 0~\text{or}~z=1\}\) as in part (a) of the following diagram. Each point in \(S\) has a neighborhood of points that is an open 2-ball.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-2manifolds.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1422">b. The open unit disk \(\mathbb{D} = \{z \in \mathbb{C} ~|~ |z| \lt 1\}\) is a 2-manifold. Each point in \(\mathbb{D}\) has a neighborhood that is an open 2-ball in the plane. In particular, if \(|z| = r \lt  1\text{,}\) let \(s = 1-r\text{.}\) Then \(B_2(z,s)\) does the trick.</p>
+<p id="p-1423">c. <em class="emphasis">The flat torus.</em> Consider the flat torus of chapter 1, which has been redrawn in <a class="xref" data-knowl="./knowl/fig-t2man.html" title="Figure 7.5.5">Figure 7.5.5</a>. It consists of all points in a rectangle drawn in the Euclidean plane, with the additional feature that each point on the top edge is identified with the point on the bottom edge having the same \(x\)-coordinate; and each point on the left edge is identified with the point on the right edge having the same \(y\)-coordinate.  In <a class="xref" data-knowl="./knowl/fig-t2man.html" title="Figure 7.5.5">Figure 7.5.5</a> we indicate this edge identification with oriented labels: the \(a\) edges get identified by matching the arrow orientations, as do the \(b\) edges.</p>
+<p id="p-1424">Each point in the flat torus has a neighborhood homeomorphic to an open 2-ball.</p>
+<p id="p-1425">If a point \(p\) is not on an edge, as in <a class="xref" data-knowl="./knowl/fig-t2man.html" title="Figure 7.5.5">Figure 7.5.5</a>, then by choosing a radius small enough, there is an open 2-ball about the point that misses the edges.</p>
+<p id="p-1426">If a point \(q\) is on an edge but not at a corner, then by choosing a radius small enough, there is an open 2-ball about the point that misses the corners. This open 2-ball consists of parts of two open 2-balls from \(\mathbb{R}^2\text{.}\) Because of the edge identification, these open 2-ball halves come together to form a perfect open 2-ball about the point.</p>
+<p id="p-1427">If a point \(u\) is at a corner of the rectangle, there is an open 2-ball about the point that consists of parts of four different open 2-balls from \(\mathbb{R}^2\text{.}\) Because of the edge identification, these four “quarter balls” come together to form a single open 2-ball of points around the corner point.</p></article><figure class="figure figure-like" id="fig-t2man"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-t2man.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.5<span class="period">.</span></span><span class="space"> </span>The flat torus is a 2-manifold as well as a surface</figcaption></figure><article class="definition definition-like" id="definition-35"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.5.6</span><span class="period">.</span>
 </h6>
-<p id="p-1337">A <dfn class="terminology">surface</dfn> is a closed, bounded, and connected topological 2-manifold.</p></article><p id="p-1338">Of the 2-manifolds in <a knowl="./knowl/example-2manifolds.html" title="Example 7.5.4: Some 2-manifolds">Example 7.5.4</a>, only the third is a surface according to this definition. A set in \(\mathbb{R}^n\) is <dfn class="terminology">bounded</dfn> if it lives entirely within some open \(n\)-ball of finite radius. The parallel planes manifold extends infinitely far away from the origin in \(\mathbb{R}^3\) so this manifold is not bounded. This manifold is not connected either.  Informally, a space is connected if it has just one piece. The parallel planes manifold has two distinct pieces (the two planes) that are separated in space, so it is not connected. The open unit disk \(\mathbb{D}\) is bounded and connected, but not closed as a set in \(\mathbb{R}^2\text{.}\) A set \(S\) in \(\mathbb{R}^n\) is <dfn class="terminology">closed</dfn> if it has the following feature: if \(\{z_k\}\) is a sequence of points in \(S\) that converges to a point \(z\text{,}\) then \(z\) is also in \(S\text{.}\)</p>
-<p id="p-1339">To see that \(\mathbb{D}\) is not closed, consider the sequence \(\{\frac{1}{2},\frac{2}{3}, \frac{3}{4}, \frac{4}{5},\ldots \}\text{.}\)  Each point in this sequence lives in \(\mathbb{D}\text{,}\) but the limit of the sequence, which is 1, does not.  The torus, on the other hand, is closed, boundede, and connected, so we call it a surface.  We note that another topological term, compactness, is often used when discussing surfaces. A space living in \(\mathbb{R}^n\) is <em class="emphasis">compact</em> if and only if it is closed and bounded. Thus, for us, a surface is a compact, connected 2-manifold.</p>
-<p id="p-1340">Rather than concern ourselves with a formal development of these topological concepts, we take with us this informal introduction to help us to pursue the construction of surfaces. It turns out that all surfaces can be built from the three venerable surfaces in <a knowl="./knowl/fig-vensurfaces.html" title="Figure 7.5.7">Figure 7.5.7</a> by a process called the connected sum.</p>
-<figure class="figure-like" id="fig-vensurfaces"><div style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/im-vensurfaces.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.7</span> The sphere \(\mathbb{S}^2\text{,}\) the torus \(\mathbb{T}^2\text{,}\) and the projective plane \(\mathbb{P}^2\text{.}\)</figcaption></figure><article class="paragraphs" id="paragraphs-9"><h5 class="heading"><span class="title">Connected Sum</span></h5>
-<p id="p-1341">If \(X_1\) and \(X_2\) are surfaces, the <dfn class="terminology">connected sum</dfn> surface, denoted \(X_1 \#
+<p id="p-1428">A <dfn class="terminology">surface</dfn> is a closed, bounded, and connected topological 2-manifold.</p></article><p id="p-1429">Of the 2-manifolds in <a class="xref" data-knowl="./knowl/example-2manifolds.html" title="Example 7.5.4: Some 2-manifolds">Example 7.5.4</a>, only the third is a surface according to this definition. A set in \(\mathbb{R}^n\) is <dfn class="terminology">bounded</dfn> if it lives entirely within some open \(n\)-ball of finite radius. The parallel planes manifold extends infinitely far away from the origin in \(\mathbb{R}^3\) so this manifold is not bounded. This manifold is not connected either.  Informally, a space is connected if it has just one piece. The parallel planes manifold has two distinct pieces (the two planes) that are separated in space, so it is not connected.  The open unit disk \(\mathbb{D}\) is bounded and connected, but not closed as a set in \(\mathbb{R}^2\text{.}\) A set \(S\) in \(\mathbb{R}^n\) is <dfn class="terminology">closed</dfn> if it has the following feature: if \(\{z_k\}\) is a sequence of points in \(S\) that converges to a point \(z\text{,}\) then \(z\) is also in \(S\text{.}\)</p>
+<p id="p-1430">To see that \(\mathbb{D}\) is not closed, consider the sequence \(\{\frac{1}{2},\frac{2}{3}, \frac{3}{4}, \frac{4}{5},\ldots \}\text{.}\)  Each point in this sequence lives in \(\mathbb{D}\text{,}\) but the limit of the sequence, which is 1, does not.  The torus, on the other hand, is closed, boundede, and connected, so we call it a surface.  We note that another topological term, compactness, is often used when discussing surfaces. A space living in \(\mathbb{R}^n\) is <em class="emphasis">compact</em> if and only if it is closed and bounded. Thus, for us, a surface is a compact, connected 2-manifold.</p>
+<p id="p-1431">Rather than concern ourselves with a formal development of these topological concepts, we take with us this informal introduction to help us to pursue the construction of surfaces. It turns out that all surfaces can be built from the three venerable surfaces in <a class="xref" data-knowl="./knowl/fig-vensurfaces.html" title="Figure 7.5.7">Figure 7.5.7</a> by a process called the connected sum.</p>
+<figure class="figure figure-like" id="fig-vensurfaces"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/im-vensurfaces.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.7<span class="period">.</span></span><span class="space"> </span>The sphere \(\mathbb{S}^2\text{,}\) the torus \(\mathbb{T}^2\text{,}\) and the projective plane \(\mathbb{P}^2\text{.}\)</figcaption></figure><article class="paragraphs" id="paragraphs-9"><h5 class="heading"><span class="title">Connected Sum.</span></h5>
+<p id="p-1432">If \(X_1\) and \(X_2\) are surfaces, the <dfn class="terminology">connected sum</dfn> surface, denoted \(X_1 \#
 X_2\text{,}\) is obtained as follows:</p>
 <ol class="decimal">
-<li id="li-58">Remove an open 2-ball from \(X_1\) and an open 2-ball from \(X_2\text{;}\)</li>
-<li id="li-59">Connect the boundaries of these open 2-ball with a cylinder.</li>
+<li id="li-300">Remove an open 2-ball from \(X_1\) and an open 2-ball from \(X_2\text{;}\)</li>
+<li id="li-301">Connect the boundaries of these open 2-ball with a cylinder.</li>
 </ol>
-<p id="p-1342">Note that since \(X_i\) is a surface, each point in each space has a neighborhood homeomorphic to an open 2-ball, so we may always achieve the connected sum of two surfaces. The result is a new surface: it is still closed, bounded, and connected, and each point still has an open neighborhood homeomorphic to an open 2-ball.</p></article><figure class="figure-like" id="fig-connsum"><div style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-connsum.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.8</span> Some connected sums.</figcaption></figure><article class="example-like" id="example-65"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.5.9</span> <span class="title">Some connected sums</span>
+<p id="p-1433">Note that since \(X_i\) is a surface, each point in each space has a neighborhood homeomorphic to an open 2-ball, so we may always achieve the connected sum of two surfaces. The result is a new surface: it is still closed, bounded, and connected, and each point still has an open neighborhood homeomorphic to an open 2-ball.</p></article><figure class="figure figure-like" id="fig-connsum"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-connsum.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.8<span class="period">.</span></span><span class="space"> </span>Some connected sums.</figcaption></figure><article class="example example-like" id="example-65"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.9</span><span class="period">.</span><span class="space"> </span><span class="title">Some connected sums.</span>
 </h6>
-<p id="p-1343">Let \(\mathbb{T}^2\) denote the torus surface in \(\mathbb{R}^3\) and \(\mathbb{S}^2\) denote the sphere, as usual. <a knowl="./knowl/fig-connsum.html" title="Figure 7.5.8">Figure 7.5.8</a> depicts two connected sums: \(\mathbb{T}^2 \# \mathbb{T}^2\text{,}\) and \(\mathbb{S}^2 \# \mathbb{T}^2\text{.}\)   The surface \(\mathbb{T}^2 \# \mathbb{T}^2\) is called the two-holed torus, and it is topologically equivalent to the surface labeled \(H_2\) in <a knowl="./knowl/fig-handlebodies.html" title="Figure 7.5.10">Figure 7.5.10</a>.  One can shrink the length dimension of the connecting cylinder to make the one look like the other.  The surface \(\mathbb{S}^2 \# \mathbb{T}^2\) is homeomorphic to the torus \(\mathbb{T}^2\text{.}\) To see this, observe that if one removes an open-2 ball from a sphere and attaches one end of a cylinder to the sphere along the boundary of the removed disk, the result is homeomorphic to a closed disk, as suggested in the following diagram. So, if one removes an open 2-ball from a surface \(X\) and then caps the hole with this sphere-with-cylinder shape, the net effect is patching the hole. In the arithmetic of connected sums, the sphere plays the role of \(0\text{:}\) \(\mathbb{S}^2 \# X = X\) for any surface \(X\text{.}\)</p>
+<p id="p-1434">Let \(\mathbb{T}^2\) denote the torus surface in \(\mathbb{R}^3\) and \(\mathbb{S}^2\) denote the sphere, as usual. <a class="xref" data-knowl="./knowl/fig-connsum.html" title="Figure 7.5.8">Figure 7.5.8</a> depicts two connected sums: \(\mathbb{T}^2 \# \mathbb{T}^2\text{,}\) and \(\mathbb{S}^2 \# \mathbb{T}^2\text{.}\)   The surface \(\mathbb{T}^2 \# \mathbb{T}^2\) is called the two-holed torus, and it is topologically equivalent to the surface labeled \(H_2\) in <a class="xref" data-knowl="./knowl/fig-handlebodies.html" title="Figure 7.5.10">Figure 7.5.10</a>.  One can shrink the length dimension of the connecting cylinder to make the one look like the other.  The surface \(\mathbb{S}^2 \# \mathbb{T}^2\) is homeomorphic to the torus \(\mathbb{T}^2\text{.}\) To see this, observe that if one removes an open-2 ball from a sphere and attaches one end of a cylinder to the sphere along the boundary of the removed disk, the result is homeomorphic to a closed disk, as suggested in the following diagram. So, if one removes an open 2-ball from a surface \(X\) and then caps the hole with this sphere-with-cylinder shape, the net effect is patching the hole. In the arithmetic of connected sums, the sphere plays the role of \(0\text{:}\) \(\mathbb{S}^2 \# X = X\) for any surface \(X\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
-<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-a.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-b.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-c.svg" style="width: 100%; height: auto;" alt=""></div>
-<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-d.svg" style="width: 100%; height: auto;" alt=""></div>
-</div></div></article><p id="p-1344">For each integer \(g \geq 1\text{,}\) the <dfn class="terminology">handlebody surface of genus \(g\)</dfn>, denoted \(H_g\text{,}\) is defined as</p>
+<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-a.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-b.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-c.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<div class="sbspanel" style="width:21.0526315789474%;justify-content:center;"><img src="images/im-zeroconnsum-d.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+</div></div></article><p id="p-1435">For each integer \(g \geq 1\text{,}\) the <dfn class="terminology">handlebody surface of genus \(g\)</dfn>, denoted \(H_g\text{,}\) is defined as</p>
 <div class="displaymath">
 \begin{equation*}
-H_g = \overbrace{\mathbb{T}^2\# \mathbb{T}^2 \# \cdots \#\mathbb{T}^2}^{g~\text{copies}}. 
+H_g = \overbrace{\mathbb{T}^2\# \mathbb{T}^2 \# \cdots \#\mathbb{T}^2}^{g~\text{copies}}\text{.}
 \end{equation*}
 </div>
-<p id="p-1345">The surface \(H_g\) gets its name from the fact that it is topologically equivalent to a sphere with \(g\) handles attached to it. For this reason, we set \(H_0 = \mathbb{S}^2\text{.}\)  A few handlebody surfaces are pictured in <a knowl="./knowl/fig-handlebodies.html" title="Figure 7.5.10">Figure 7.5.10</a>.</p>
-<figure class="figure-like" id="fig-handlebodies"><div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/im-handlebodies.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.10</span> Some handlebody surfaces.</figcaption></figure><p id="p-1346">For each integer \(g \geq 1\text{,}\) define <dfn class="terminology">the cross-cap surface of genus \(g\)</dfn> by</p>
+<p id="p-1436">The surface \(H_g\) gets its name from the fact that it is topologically equivalent to a sphere with \(g\) handles attached to it. For this reason, we set \(H_0 = \mathbb{S}^2\text{.}\)  A few handlebody surfaces are pictured in <a class="xref" data-knowl="./knowl/fig-handlebodies.html" title="Figure 7.5.10">Figure 7.5.10</a>.</p>
+<figure class="figure figure-like" id="fig-handlebodies"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/im-handlebodies.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.10<span class="period">.</span></span><span class="space"> </span>Some handlebody surfaces.</figcaption></figure><p id="p-1437">For each integer \(g \geq 1\text{,}\) define <dfn class="terminology">the cross-cap surface of genus \(g\)</dfn> by</p>
 <div class="displaymath">
 \begin{equation*}
-C_g =\overbrace{\mathbb{P}^2\# \mathbb{P}^2 \# \cdots \#\mathbb{P}^2}^{g~ \text{copies}}.
+C_g =\overbrace{\mathbb{P}^2\# \mathbb{P}^2 \# \cdots \#\mathbb{P}^2}^{g~ \text{copies}}\text{.}
 \end{equation*}
 </div>
-<p id="p-1347">A <dfn class="terminology">cross-cap</dfn> is the space obtained by removing an open 2-ball from the projective plane \(\mathbb{P}^2\text{.}\) The cross-cap surface \(C_g\) is topologically equivalent to a sphere with \(g\) open 2-balls removed and replaced with cross-caps.</p>
-<p id="p-1348">The surface \(C_1\) is the projective plane. This space does not embed in \(\mathbb{R}^3\) as the handlebody surfaces do, but it can be represented as a disk with antipodal points identified, as we did in Chapter 6. <a knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a> depicts the connected sum \(C_1 \# C_1\text{.}\) In <a knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a>(a), we have removed an open ball from each copy of \(C_1\text{.}\) The boundary circles of these open 2-balls must be joined, and we indicate this by orienting the boundary circles and giving each one the same label of \(c\text{.}\) In <a knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a>(b), we have sliced open each copy of \(C_1\) at the vertex to which the \(c\) loops are joined. The \(c\) loops are now edges that we identify together in <a knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a>(c). Thus, we may view \(C_2\) as the square with edge identifications as indicated in part (c) of the figure. It turns out this space \(C_2\) is homeomorphic to the Klein bottle, a famous surface we consider shortly.</p>
-<figure class="figure-like" id="fig-C2"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-C2.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.11</span> Constructing \(C_2\text{.}\)</figcaption></figure></section><section class="subsection" id="subsection-5"><h3 class="heading hide-type">
+<p id="p-1438">A <dfn class="terminology">cross-cap</dfn> is the space obtained by removing an open 2-ball from the projective plane \(\mathbb{P}^2\text{.}\) The cross-cap surface \(C_g\) is topologically equivalent to a sphere with \(g\) open 2-balls removed and replaced with cross-caps.</p>
+<p id="p-1439">The surface \(C_1\) is the projective plane. This space does not embed in \(\mathbb{R}^3\) as the handlebody surfaces do, but it can be represented as a disk with antipodal points identified, as we did in Chapter 6. <a class="xref" data-knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a> depicts the connected sum \(C_1 \# C_1\text{.}\) In <a class="xref" data-knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a>(a), we have removed an open ball from each copy of \(C_1\text{.}\) The boundary circles of these open 2-balls must be joined, and we indicate this by orienting the boundary circles and giving each one the same label of \(c\text{.}\) In <a class="xref" data-knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a>(b), we have sliced open each copy of \(C_1\) at the vertex to which the \(c\) loops are joined. The \(c\) loops are now edges that we identify together in <a class="xref" data-knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a>(c). Thus, we may view \(C_2\) as the square with edge identifications as indicated in part (c) of the figure. It turns out this space \(C_2\) is homeomorphic to the Klein bottle, a famous surface we consider shortly.</p>
+<figure class="figure figure-like" id="fig-C2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-C2.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.11<span class="period">.</span></span><span class="space"> </span>Constructing \(C_2\text{.}\)</figcaption></figure></section><section class="subsection" id="subsection-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Polygonal Surfaces</span>
 </h3>
-<a href="section7-5.html#subsection-5" class="permalink">¶</a><p id="p-1349">Our representation of \(C_2\) is an example of a <dfn class="terminology">polygonal surface</dfn>. To build a polygonal surface, start with a finite number of polygons having an even number of edges and then identify edges in pairs.</p>
-<p id="p-1350">If the surface is built from a single polygon, the edge identifications of the polygon can be encoded in a <dfn class="terminology">boundary label</dfn>. Each edge of the polygon gets assigned a letter and an orientation. Edges that are identified have the same letter, and we obtain a boundary label by traversing the boundary of our polygon in the counter-clockwise direction (by convention) and recording the letters we encounter, with an exponent of +1 if our walk is in the direction of the oriented edge, and an exponent of -1 if our walk is in the opposite direction of the oriented edge. For instance, a boundary label for the surface \(C_2\) found in <a knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a> is \(a_1a_1a_2a_2\text{.}\) Furthermore, we may inductively show that by repeating the connected sum operation of <a knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a> to \(C_{g-1}\#C_1\text{,}\) the surface \(C_g\) can be represented as a \(2g\)-gon having boundary label</p>
+<p id="p-1440">Our representation of \(C_2\) is an example of a <dfn class="terminology">polygonal surface</dfn>. To build a polygonal surface, start with a finite number of polygons having an even number of edges and then identify edges in pairs.</p>
+<p id="p-1441">If the surface is built from a single polygon, the edge identifications of the polygon can be encoded in a <dfn class="terminology">boundary label</dfn>. Each edge of the polygon gets assigned a letter and an orientation. Edges that are identified have the same letter, and we obtain a boundary label by traversing the boundary of our polygon in the counter-clockwise direction (by convention) and recording the letters we encounter, with an exponent of +1 if our walk is in the direction of the oriented edge, and an exponent of -1 if our walk is in the opposite direction of the oriented edge. For instance, a boundary label for the surface \(C_2\) found in <a class="xref" data-knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a> is \(a_1a_1a_2a_2\text{.}\) Furthermore, we may inductively show that by repeating the connected sum operation of <a class="xref" data-knowl="./knowl/fig-C2.html" title="Figure 7.5.11">Figure 7.5.11</a> to \(C_{g-1}\#C_1\text{,}\) the surface \(C_g\) can be represented as a \(2g\)-gon having boundary label</p>
 <div class="displaymath">
 \begin{equation*}
-a_1a_1a_2a_2\cdots a_ga_g.
+a_1a_1a_2a_2\cdots a_ga_g\text{.}
 \end{equation*}
 </div>
-<p id="p-1351">It turns out that <em class="emphasis">all</em> surfaces can be constructed this way, an important and useful result. We have seen that the torus can be constructed as a polygonal surface: take a rectangle and identify the edges according to the boundary label \(aba^{-1}b^{-1}\text{.}\) In <a knowl="./knowl/fig-H2octagon.html" title="Figure 7.5.13">Figure 7.5.13</a> we demonstrate that the 2-holed torus can be represented as a regular octagon with boundary label</p>
+<p id="p-1442">It turns out that <em class="emphasis">all</em> surfaces can be constructed this way, an important and useful result. We have seen that the torus can be constructed as a polygonal surface: take a rectangle and identify the edges according to the boundary label \(aba^{-1}b^{-1}\text{.}\) In <a class="xref" data-knowl="./knowl/fig-H2octagon.html" title="Figure 7.5.13">Figure 7.5.13</a> we demonstrate that the 2-holed torus can be represented as a regular octagon with boundary label</p>
 <div class="displaymath">
 \begin{equation*}
 (a_1b_1a_1^{-1}b_1^{-1})(a_2b_2a_2^{-1}b_2^{-1}).
 \end{equation*}
 </div>
-<p>In general, for \(g \geq 1\) the surface \(H_g\) can be represented by a regular \(4g\)-gon having boundary label</p>
+<p data-braille="continuation">In general, for \(g \geq 1\)  the surface \(H_g\) can be represented by a regular \(4g\)-gon having boundary label</p>
 <div class="displaymath">
 \begin{equation*}
-(a_1b_1a_1^{-1}b_1^{-1})(a_2b_2a_2^{-1}b_2^{-1})\cdots(a_gb_ga_g^{-1}b_g^{-1}).
+(a_1b_1a_1^{-1}b_1^{-1})(a_2b_2a_2^{-1}b_2^{-1})\cdots(a_gb_ga_g^{-1}b_g^{-1})\text{.}
 \end{equation*}
 </div>
-<p id="p-1352">The remarkable theorem here is that the handlebody surfaces and the cross-cap surfaces account for all possible surfaces, without redundancy.</p>
-<article class="theorem-like" id="th_surfclass"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">7.5.12</span>
+<p id="p-1443">The remarkable theorem here is that the handlebody surfaces and the cross-cap surfaces account for all possible surfaces, without redundancy.</p>
+<article class="theorem theorem-like" id="th_surfclass"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.5.12</span><span class="period">.</span>
 </h6>
-<p id="p-1353">Any surface is homeomorphic to the sphere \(\mathbb{S}^2\text{,}\) a handlebody surface \(H_g\) with \(g \geq 1\text{,}\) or a crosscap surface \(C_g\) with \(g \geq 1\text{.}\) Moreover, no two surfaces in this list are homeomoprhic to each other.</p></article><p id="p-1354">Two proofs of this theorem are floating around the literature now. The classic proof, which makes use of cell divisions, can be found, for instance, in <a knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a>. The new proof, due to John Conway, bypasses the artificial constructs in the classic proof, and can be found in <a knowl="./knowl/weeks.html" title="Bibliographic Entry 12: The Shape of Space, 2nd Ed.">[12]</a>.</p>
-<p id="p-1355">To summarize, we have two ways to think about surfaces. First, the classification theorem above can be restated as follows: any surface is homeomorphic to the sphere, the sphere with some number of handles attached, or the sphere with some number of cross-caps attached. Second, any surface can be constructed from a 2m-gon with its edges identified in pairs, for some \(m \geq 1\text{.}\)</p>
-<figure class="figure-like" id="fig-H2octagon"><div style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="images/im-H2octagon.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.13</span> \(H_2\) constructed from an octagon.</figcaption></figure></section><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
+<p id="p-1444">Any surface is homeomorphic to the sphere \(\mathbb{S}^2\text{,}\) a handlebody surface \(H_g\) with \(g \geq 1\text{,}\) or a crosscap surface \(C_g\) with \(g \geq 1\text{.}\) Moreover, no two surfaces in this list are homeomoprhic to each other.</p></article><p id="p-1445">Two proofs of this theorem are floating around the literature now. The classic proof, which makes use of cell divisions, can be found, for instance, in <a class="xref" data-knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a>. The new proof, due to John Conway, bypasses the artificial constructs in the classic proof, and can be found in <a class="xref" data-knowl="./knowl/weeks.html" title="Bibliographic Entry 12: The Shape of Space, 2nd Ed.">[12]</a>.</p>
+<p id="p-1446">To summarize, we have two ways to think about surfaces. First, the classification theorem above can be restated as follows: any surface is homeomorphic to the sphere, the sphere with some number of handles attached, or the sphere with some number of cross-caps attached. Second, any surface can be constructed from a \(2m\)-gon with its edges identified in pairs, for some \(m \geq 1\text{.}\)</p>
+<figure class="figure figure-like" id="fig-H2octagon"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="images/im-H2octagon.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.13<span class="period">.</span></span><span class="space"> </span>\(H_2\) constructed from an octagon.</figcaption></figure></section><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Characterizing a surface</span>
 </h3>
-<a href="section7-5.html#subsection-6" class="permalink">¶</a><section class="introduction" id="introduction-35"><p id="p-1356">If somebody throws a surface at us, how do we know which one we're catching? One way to characterize a surface is to determine two particular topological invariants: its orientability status and its Euler characteristic. Let's discuss what these features of a surface are.</p></section><section class="subsubsection" id="subsubsection-1"><h4 class="heading hide-type">
+<section class="introduction" id="introduction-24"><p id="p-1447">If somebody throws a surface at us, how do we know which one we're catching? One way to characterize a surface is to determine two particular topological invariants: its orientability status and its Euler characteristic. Let's discuss what these features of a surface are.</p></section><section class="subsubsection" id="subsubsection-1"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber"></span> <span class="title">Orientability status</span>
 </h4>
-<a href="section7-5.html#subsubsection-1" class="permalink">¶</a><p id="p-1357">The <dfn class="terminology">Möbius strip</dfn> is obtained from a rectangle by identifying the left and right edges with a twist:</p>
-<figure class="figure-like" id="fig-mobius"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-mobius.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.14</span> A Möbius strip.</figcaption></figure><p id="p-1358">Notice that a Möbius strip has an orientation-reversing path. A clock rotating clockwise, if it heads along the Möbius strip, will eventually return to its starting place to find that it is now rotating counterclockwise.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/mobclock.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1359">A surface is called <dfn class="terminology">non-orientable</dfn> if it contains a Möbius strip. If a surface does not contain a Möbius strip then it is <dfn class="terminology">orientable</dfn>. The Möbius strip itself is not a surface as we've defined it because it has an edge. Points on this edge don't have any neighborhoods that look like open 2-balls (they look more like half balls). But the Klein bottle in the following example is a non-orientable surface.</p>
-<article class="example-like" id="ex_klein"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.5.15</span> <span class="title">The Klein bottle</span>
+<p id="p-1448">The <dfn class="terminology">Möbius strip</dfn> is obtained from a rectangle by identifying the left and right edges with a twist:</p>
+<figure class="figure figure-like" id="fig-mobius"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-mobius.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.14<span class="period">.</span></span><span class="space"> </span>A Möbius strip.</figcaption></figure><p id="p-1449">Notice that a Möbius strip has an orientation-reversing path. A clock rotating clockwise, if it heads along the Möbius strip, will eventually return to its starting place to find that it is now rotating counterclockwise.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/mobclock.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1450">A surface is called <dfn class="terminology">non-orientable</dfn> if it contains a Möbius strip. If a surface does not contain a Möbius strip then it is <dfn class="terminology">orientable</dfn>. The Möbius strip itself is not a surface as we've defined it because it has an edge. Points on this edge don't have any neighborhoods that look like open 2-balls (they look more like half balls). But the Klein bottle in the following example is a non-orientable surface.</p>
+<article class="example example-like" id="ex_klein"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.15</span><span class="period">.</span><span class="space"> </span><span class="title">The Klein bottle.</span>
 </h6>
-<p id="p-1360">The Klein bottle looks a lot like the torus, but there's a twist. The top and bottom edges are identified as they were for the torus, but the left and right edges are oriented oppositely. More formally, it is the polygonal surface obtained from a square with boundary label \(aba^{-1}b\text{,}\) and the Klein bottle is denoted by \(\mathbb{K}^2\text{.}\)</p>
-<p id="p-1361">Why is the Klein bottle non-orientable? A bug leaving the screen on the right near the top would reappear on the left near the bottom. But take a closer look, the bug has become mirror-reversed.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-kleinbottle.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1362">This orientation-reversing path exists because of a Möbius strip lurking in the Klein bottle. (Conisder, for instance, the thin horizontal strip formed by the dashed segments in the figure.)</p>
-<p id="p-1363">The same bug living in the torus would never find itself mirror reversed as a result of traveling in its surface. The torus is orientable.</p></article><p id="p-1364">A surface's orientability status is a topological invariant. This means that if \(S\) and \(T\) are homeomorphic surfaces then they must have the same orientability status. Notice that there exists a Möbius strip in each \(C_g\) (take a thin strip from the middle of one \(a_1\) edge to the middle of the other), so that all cross-cap surfaces are non-orientable. On the other hand, all the handlebody surfaces \(H_g\) (\(g \geq 0)\) are orientable.</p></section><section class="subsubsection" id="subsubsection-2"><h4 class="heading hide-type">
+<p id="p-1451">The Klein bottle looks a lot like the torus, but there's a twist. The top and bottom edges are identified as they were for the torus, but the left and right edges are oriented oppositely. More formally, it is the polygonal surface obtained from a square with boundary label \(aba^{-1}b\text{,}\) and the Klein bottle is denoted by \(\mathbb{K}^2\text{.}\)</p>
+<p id="p-1452">Why is the Klein bottle non-orientable? A bug leaving the screen on the right near the top would reappear on the left near the bottom. But take a closer look, the bug has become mirror-reversed.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-kleinbottle.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1453">This orientation-reversing path exists because of a Möbius strip lurking in the Klein bottle. (Conisder, for instance, the thin horizontal strip formed by the dashed segments in the figure.)</p>
+<p id="p-1454">The same bug living in the torus would never find itself mirror reversed as a result of traveling in its surface. The torus is orientable.</p></article><p id="p-1455">A surface's orientability status is a topological invariant. This means that if \(S\) and \(T\) are homeomorphic surfaces then they must have the same orientability status. Notice that there exists a Möbius strip in each \(C_g\) (take a thin strip from the middle of one \(a_1\) edge to the middle of the other), so that all cross-cap surfaces are non-orientable. On the other hand, all the handlebody surfaces \(H_g\) (\(g \geq 0)\) are orientable.</p></section><section class="subsubsection" id="subsubsection-2"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber"></span> <span class="title">Euler Characteristic</span>
 </h4>
-<a href="section7-5.html#subsubsection-2" class="permalink">¶</a><p id="p-1365">In addition to an orientability status, each surface has attached to it an integer called the Euler characteristic. The Euler characteristic is a topological invariant, and it can be calculated from a cell division of a surface, which is a kind of tiling of the surface by planar faces.  Let's make this more precise.</p>
-<p id="p-1366">An <dfn class="terminology">\(n\)-dimensional cell</dfn>, or <dfn class="terminology">\(n\)-cell</dfn>, is a subset of a space whose interior is homeomorphic to an open \(n\)-ball in \({\mathbb{R}}^n\text{.}\)  For instance, a 1-cell, also called an <em class="emphasis">edge</em>, is a set whose interior is homeomorphic to an open interval; a 2-cell, or <em class="emphasis">face</em>, is a set whose interior is homeomorphic to an open 2-ball in the plane.  We call points in a space 0-cells. A 0-cell is also called a <em class="emphasis">vertex</em> (plural <em class="emphasis">vertices</em>).</p>
-<article class="definition-like" id="definition-36"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">7.5.16</span>
+<p id="p-1456">In addition to an orientability status, each surface has attached to it an integer called the Euler characteristic. The Euler characteristic is a topological invariant, and it can be calculated from a cell division of a surface, which is a kind of tiling of the surface by planar faces.  Let's make this more precise.</p>
+<p id="p-1457">An <dfn class="terminology">\(n\)-dimensional cell</dfn>, or <dfn class="terminology">\(n\)-cell</dfn>, is a subset of a space whose interior is homeomorphic to an open \(n\)-ball in \({\mathbb{R}}^n\text{.}\)  For instance, a 1-cell, also called an <em class="emphasis">edge</em>, is a set whose interior is homeomorphic to an open interval; a 2-cell, or <em class="emphasis">face</em>, is a set whose interior is homeomorphic to an open 2-ball in the plane.  We call points in a space 0-cells. A 0-cell is also called a <em class="emphasis">vertex</em> (plural <em class="emphasis">vertices</em>).</p>
+<article class="definition definition-like" id="definition-36"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.5.16</span><span class="period">.</span>
 </h6>
-<p id="p-1367">A <dfn class="terminology">cell complex</dfn> \(C\) is a collection of cells in some space subject to these two conditions:</p>
+<p id="p-1458">A <dfn class="terminology">cell complex</dfn> \(C\) is a collection of cells in some space subject to these two conditions:</p>
 <ol class="decimal">
-<li id="li-60"><p id="p-1368">The interiors of any two cells in the complex are disjoint</p></li>
-<li id="li-61"><p id="p-1369">The boundary of each cell is the union of lower-dimensional cells in \(C\text{.}\)</p></li>
+<li id="li-302"><p id="p-1459">The interiors of any two cells in the complex are disjoint</p></li>
+<li id="li-303"><p id="p-1460">The boundary of each cell is the union of lower-dimensional cells in \(C\text{.}\)</p></li>
 </ol>
-<p id="p-1370">A cell complex \(C\) is called an <dfn class="terminology">\(\mathbf{n}\)-dimensional cell complex</dfn>, or \(n\)-complex, if it contains an \(n\)-cell, but no higher-dimensional cells.</p></article><article class="example-like" id="example-67"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.5.17</span> <span class="title">Some cell complexes</span>
+<p id="p-1461">A cell complex \(C\) is called an <dfn class="terminology">\(\mathbf{n}\)-dimensional cell complex</dfn>, or \(n\)-complex, if it contains an \(n\)-cell, but no higher-dimensional cells.</p></article><article class="example example-like" id="example-67"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.17</span><span class="period">.</span><span class="space"> </span><span class="title">Some cell complexes.</span>
 </h6>
-<p id="p-1371">A 1-complex is commonly called a <em class="emphasis">graph</em>: it consists of vertices and edges. At each end of an edge is a vertex (possibly the same vertex at each end), and no two edges intersect in their interiors. The left side of the following diagram shows a 1-complex with seven 0-cells and five 1-cells. To the right is a 2-complex with one 0-cell and one 2-cell. The entire boundary of the 2-cell is attached to the single 0-cell, thus creating a well-known surface, the 2-sphere.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-cellcomplexes.svg" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="example-like" id="ex-platonicsolids"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.5.18</span> <span class="title">The Platonic solids.</span>
+<p id="p-1462">A 1-complex is commonly called a <em class="emphasis">graph</em>: it consists of vertices and edges. At each end of an edge is a vertex (possibly the same vertex at each end), and no two edges intersect in their interiors. The left side of the following diagram shows a 1-complex with seven 0-cells and five 1-cells. To the right is a 2-complex with one 0-cell and one 2-cell. The entire boundary of the 2-cell is attached to the single 0-cell, thus creating a well-known surface, the 2-sphere.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-cellcomplexes.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="example example-like" id="ex-platonicsolids"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.18</span><span class="period">.</span><span class="space"> </span><span class="title">The Platonic solids..</span>
 </h6>
-<p id="p-1372">The five Platonic solids can be viewed as 2-complexes if we ignore the space bounded by their faces. We've pictured all five, and given vertex, edge, and face counts for each one.</p>
-<p id="p-1373">Of course, the region bounded by the faces of each Platonic solid is homeomorphic to an open 3-ball, so the Platonic solids can also be viewed as 3-complexes; each solid having exactly one 3-cell. <div class="sidebyside"><div class="sbsrow" style="margin-left:17.5%;margin-right:17.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/platonic_solids.svg" style="width: 100%; height: auto;" alt=""></div></div></div></p></article><article class="definition-like" id="definition-37"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">7.5.19</span>
+<p id="p-1463">The five Platonic solids can be viewed as 2-complexes if we ignore the space bounded by their faces. We've pictured all five, and given vertex, edge, and face counts for each one.</p>
+<p id="p-1464">Of course, the region bounded by the faces of each Platonic solid is homeomorphic to an open 3-ball, so the Platonic solids can also be viewed as 3-complexes; each solid having exactly one 3-cell. <div class="sidebyside"><div class="sbsrow" style="margin-left:17.5%;margin-right:17.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/platonic_solids.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></p></article><article class="definition definition-like" id="definition-37"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.5.19</span><span class="period">.</span>
 </h6>
-<p id="p-1374">A <dfn class="terminology">cell division</dfn> of a space \(X\) is a cell complex \(C\) that is homeomorphic to \(X\text{.}\)</p></article><p id="p-1375">For instance, each Platonic solid (viewed as a 2-complex) is a cell division of \(\mathbb{S}^2\text{.}\) To construct a homeomorphism, map each point of the Platonic solid to a point on a sphere by projection as suggested in <a knowl="./knowl/fig-dodsphere.html" title="Figure 7.5.20">Figure 7.5.20</a>.</p>
-<figure class="figure-like" id="fig-dodsphere"><div style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/plato_homeo.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.20</span> A dodecahedron and sphere are homeomorphic.</figcaption></figure><article class="example-like" id="ex-cell-div-H1"><h6 class="heading">
-<span class="type">Example</span> <span class="codenumber">7.5.21</span> <span class="title">Attempted cell divisions of \(\boldsymbol{H_1}\)</span>
+<p id="p-1465">A <dfn class="terminology">cell division</dfn> of a space \(X\) is a cell complex \(C\) that is homeomorphic to \(X\text{.}\)</p></article><p id="p-1466">For instance, each Platonic solid (viewed as a 2-complex) is a cell division of \(\mathbb{S}^2\text{.}\) To construct a homeomorphism, map each point of the Platonic solid to a point on a sphere by projection as suggested in <a class="xref" data-knowl="./knowl/fig-dodsphere.html" title="Figure 7.5.20">Figure 7.5.20</a>.</p>
+<figure class="figure figure-like" id="fig-dodsphere"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/plato_homeo.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.20<span class="period">.</span></span><span class="space"> </span>A dodecahedron and sphere are homeomorphic.</figcaption></figure><article class="example example-like" id="ex-cell-div-H1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.5.21</span><span class="period">.</span><span class="space"> </span><span class="title">Attempted cell divisions of \(\boldsymbol{H_1}\).</span>
 </h6>
-<p id="p-1376">Three cell divisions of the torus are pictured below, along with one failed cell division. In each valid cell division, we count the number of faces, edges, and vertices of the cell division. To make an accurate count, one must take the edge identification into account.</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-T2decomp.svg" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1377">Cell division (a) has two vertices, six edges, and four faces. One vertex is in the center of the rectangle, and the other vertex is in the corner (remember, all four corners get identified to a single point). As for the edges, four emanate from the center vertex, and we have two others: the horizontal edge along the boundary of the rectangle (appearing twice), and the vertical edge along the boundary (also appearing twice). Thus, the edges of the rectangle are also edges of the cell division, so the faces in this cell division are triangles, and there are four of them.</p>
-<p id="p-1378">Cell division (b) has six vertices, eight edges, and two faces. There are four vertices in the interior of the rectangle, one vertex on the horizontal boundary of the rectangle, and one vertex on the vertical boundary. Notice that the corner point of the rectangle is not a vertex of the cell division. To count the edges, observe that four edges form the inner diamond, and one edge leaves each vertex of the diamond, for a total of eight edges. The boundary edges of the rectangle do <em class="emphasis">not</em> form edges in this cell division. Counting faces, we have one inside the diamond and one outside the diamond. Convince yourself that the region outside the diamond makes just one face.</p>
-<p id="p-1379">You can check that cell division (c) has one vertex in the center of the rectangle, two edges (one is horizontal, the other is vertical), and one face.</p>
-<p id="p-1380">The attempt (d) fails to be a cell division of the torus. Why is this? At first glance, we have four vertices, four edges, and two faces. The trouble here is the “face” outside the inner square. It is not a 2-cell - that is, its interior is not homeomorphic to an open 2-ball. To see this, note that this region contains a loop that does not separate the “face” into two pieces. Can you find such a loop? Since no open 2-ball has this feature, the region in question is not homeomorphic to an open 2-ball.</p></article><article class="definition-like" id="note_euler"><h6 class="heading">
-<span class="type">Definition</span> <span class="codenumber">7.5.22</span>
+<p id="p-1467">Three cell divisions of the torus are pictured below, along with one failed cell division. In each valid cell division, we count the number of faces, edges, and vertices of the cell division. To make an accurate count, one must take the edge identification into account.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-T2decomp.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
+<p id="p-1468">Cell division (a) has two vertices, six edges, and four faces. One vertex is in the center of the rectangle, and the other vertex is in the corner (remember, all four corners get identified to a single point). As for the edges, four emanate from the center vertex, and we have two others: the horizontal edge along the boundary of the rectangle (appearing twice), and the vertical edge along the boundary (also appearing twice). Thus, the edges of the rectangle are also edges of the cell division, so the faces in this cell division are triangles, and there are four of them.</p>
+<p id="p-1469">Cell division (b) has six vertices, eight edges, and two faces. There are four vertices in the interior of the rectangle, one vertex on the horizontal boundary of the rectangle, and one vertex on the vertical boundary. Notice that the corner point of the rectangle is not a vertex of the cell division. To count the edges, observe that four edges form the inner diamond, and one edge leaves each vertex of the diamond, for a total of eight edges. The boundary edges of the rectangle do <em class="emphasis">not</em> form edges in this cell division. Counting faces, we have one inside the diamond and one outside the diamond. Convince yourself that the region outside the diamond makes just one face.</p>
+<p id="p-1470">You can check that cell division (c) has one vertex in the center of the rectangle, two edges (one is horizontal, the other is vertical), and one face.</p>
+<p id="p-1471">The attempt (d) fails to be a cell division of the torus. Why is this? At first glance, we have four vertices, four edges, and two faces. The trouble here is the “face” outside the inner square. It is not a 2-cell - that is, its interior is not homeomorphic to an open 2-ball. To see this, note that this region contains a loop that does not separate the “face” into two pieces. Can you find such a loop? Since no open 2-ball has this feature, the region in question is not homeomorphic to an open 2-ball.</p></article><article class="definition definition-like" id="note_euler"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.5.22</span><span class="period">.</span>
 </h6>
-<p id="p-1381">The <dfn class="terminology">Euler characteristic</dfn> of a surface \(S\text{,}\) denoted \(\chi(S)\text{,}\) is</p>
+<p id="p-1472">The <dfn class="terminology">Euler characteristic</dfn> of a surface \(S\text{,}\) denoted \(\chi(S)\text{,}\) is</p>
 <div class="displaymath">
 \begin{equation*}
 \chi(S) = v - e + f
 \end{equation*}
 </div>
-<p>where \(v\text{,}\) \(e\text{,}\) and \(f\) denote the number of 0-cells (vertices), 1-cells (edges), and 2-cells (faces), respectively, of a cell division of the surface.</p></article><p id="p-1382">The Euler characteristic is well-defined. This means that different cell divisions of the same surface will determine the same value of \(\chi\text{.}\) Furthermore, this simple number is a powerful topological invariant: If two surfaces have different Euler characteristics then they are not homeomorphic. However, the Euler characteristic alone doesn't completely characterize a surface: if two surfaces have the same Euler characteristic, they need not be homeomorphic.</p>
-<p id="p-1383">The Euler characteristic of the sphere is 2. Each Platonic solid in <a knowl="./knowl/ex-platonicsolids.html" title="Example 7.5.18: The Platonic solids.">Example 7.5.18</a> is a cell division of \(\mathbb{S}^2\text{,}\) and a count reveals \(\chi(\mathbb{S}^2) = 2.\)</p>
-<p id="p-1384">The Euler characteristic of the torus \(\mathbb{T}^2\) is 0. Each valid cell division in <a knowl="./knowl/ex-cell-div-H1.html" title="Example 7.5.21: Attempted cell divisions of \(\boldsymbol{H_1}\)">Example 7.5.21</a> yields \(v - e + f = 0\text{.}\)</p>
-<p id="p-1385">Each polygonal surface induces a cell division of the surface. This cell division has a single face, and after identifying the edges in pairs, the corners and edges of the underlying polygon correspond to vertices and edges in the cell division of the surface. To determine the Euler characteristic of a polygonal surface, be careful to make edge and vertex counts <em class="emphasis">after</em> the edge identifications.</p>
-<article class="theorem-like" id="theorem-63"><h6 class="heading">
-<span class="type">Theorem</span> <span class="codenumber">7.5.23</span>
+<p data-braille="continuation">where \(v\text{,}\) \(e\text{,}\) and \(f\) denote the number of 0-cells (vertices), 1-cells (edges), and 2-cells (faces), respectively, of a cell division of the surface.</p></article><p id="p-1473">The Euler characteristic is well-defined. This means that different cell divisions of the same surface will determine the same value of \(\chi\text{.}\) Furthermore, this simple number is a powerful topological invariant: If two surfaces have different Euler characteristics then they are not homeomorphic. However, the Euler characteristic alone doesn't completely characterize a surface: if two surfaces have the same Euler characteristic, they need not be homeomorphic.</p>
+<p id="p-1474">The Euler characteristic of the sphere is 2. Each Platonic solid in <a class="xref" data-knowl="./knowl/ex-platonicsolids.html" title="Example 7.5.18: The Platonic solids.">Example 7.5.18</a> is a cell division of \(\mathbb{S}^2\text{,}\) and a count reveals \(\chi(\mathbb{S}^2) = 2.\)</p>
+<p id="p-1475">The Euler characteristic of the torus \(\mathbb{T}^2\) is 0. Each valid cell division in <a class="xref" data-knowl="./knowl/ex-cell-div-H1.html" title="Example 7.5.21: Attempted cell divisions of \(\boldsymbol{H_1}\)">Example 7.5.21</a> yields \(v - e + f = 0\text{.}\)</p>
+<p id="p-1476">Each polygonal surface induces a cell division of the surface. This cell division has a single face, and after identifying the edges in pairs, the corners and edges of the underlying polygon correspond to vertices and edges in the cell division of the surface. To determine the Euler characteristic of a polygonal surface, be careful to make edge and vertex counts <em class="emphasis">after</em> the edge identifications.</p>
+<article class="theorem theorem-like" id="theorem-63"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.5.23</span><span class="period">.</span>
 </h6>
-<p id="p-1386">The handlebody surface \(H_g\) has Euler characteristic \(\chi(H_g)=2-2g\text{,}\) for all \(g \geq 0\text{.}\) The cross-cap surface \(C_g\) has Euler characteristic \(\chi(C_g)=2 - g\text{,}\) for all \(g \geq 1\text{.}\)</p></article><article class="hiddenproof" id="proof-53"><a knowl="" class="id-ref" refid="hk-proof-53"><h6 class="heading"><span class="type">Proof</span></h6></a></article><div id="hk-proof-53" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-1387">We have already seen that the Euler characteristic of the sphere is 2, so the result holds for \(H_0\text{.}\) For \(g \geq 1\) consider the standard polygonal representation of \(H_g\) as a \(4g\)-gon with boundary label \((a_1b_1a_1^{-1}b_1^{-1})\cdots(a_gb_ga_g^{-1}b_g^{-1}).\) One checks that all the corners come together at a single point, so our cell division of \(H_g\) has a single vertex. For instance, consider the 2-holed torus in <a knowl="./knowl/fig-H2corners.html" title="Figure 7.5.24">Figure 7.5.24</a>. Starting at the lower right-hand corner labeled (1), begin traversing the corner point in a clockwise direction. After hitting the \(b_1\) edge near its initial point, one reappears on the other \(b_1\) edge near its initial point. Keep circling the corner (according to the sequence indicated) until you return to the starting point. Notice that all eight corners are traversed before returning to the starting point. So the cell division determined by the polygon will have a single vertex. Since the \(4g\) edges are identified in pairs, the cell division has 2\(g\) edges, and there is one face, the interior of the polygon. Thus, \(\chi(H_g)=1 - 2g + 1 = 2 - 2g\text{.}\)</p>
-<figure class="figure-like" id="fig-H2corners"><div style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-H2corners.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.24</span> This cell division of \(H_2\) has a single vertex.</figcaption></figure><p id="p-1388">The cross-cap surface \(C_g\) can be represented by the polygonal surface obtained by identifying the edges of a \(2g\)-gon according to the boundary label \((a_1a_1)\cdots(a_ga_g).\) Once again, all the corners come together at a single point in the edge identification, and the number of edges in the cell division is half the number of edges in the \(2g\)-gon. So the cell division determined by the polygon has one vertex, \(g\) edges, and one face. Thus, \(\chi(C_g)=2-g\text{.}\)</p></article></div></section><section class="conclusion" id="conclusion-1"><p id="p-1389">In light of the previous theorem and the surface classification theorem, a surface is uniquely determined by its orientability status and Euler characteristic. We summarize the classification in the table below.</p>
-<figure class="figure-like" id="table-1"><table>
+<p id="p-1477">The handlebody surface \(H_g\) has Euler characteristic \(\chi(H_g)=2-2g\text{,}\) for all \(g \geq 0\text{.}\) The cross-cap surface \(C_g\) has Euler characteristic \(\chi(C_g)=2 - g\text{,}\) for all \(g \geq 1\text{.}\)</p></article><article class="hiddenproof" id="proof-53"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-53"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-53"><article class="hiddenproof"><p id="p-1478">We have already seen that the Euler characteristic of the sphere is 2, so the result holds for \(H_0\text{.}\) For \(g \geq 1\) consider the standard polygonal representation of \(H_g\) as a \(4g\)-gon with boundary label \((a_1b_1a_1^{-1}b_1^{-1})\cdots(a_gb_ga_g^{-1}b_g^{-1}).\) One checks that all the corners come together at a single point, so our cell division of \(H_g\) has a single vertex. For instance, consider the 2-holed torus in <a class="xref" data-knowl="./knowl/fig-H2corners.html" title="Figure 7.5.24">Figure 7.5.24</a>. Starting at the lower right-hand corner labeled (1), begin traversing the corner point in a clockwise direction. After hitting the \(b_1\) edge near its initial point, one reappears on the other \(b_1\) edge near its initial point. Keep circling the corner (according to the sequence indicated) until you return to the starting point. Notice that all eight corners are traversed before returning to the starting point. So the cell division determined by the polygon will have a single vertex. Since the \(4g\) edges are identified in pairs, the cell division has 2\(g\) edges, and there is one face, the interior of the polygon. Thus, \(\chi(H_g)=1 - 2g + 1 = 2 - 2g\text{.}\)</p>
+<figure class="figure figure-like" id="fig-H2corners"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-H2corners.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.24<span class="period">.</span></span><span class="space"> </span>This cell division of \(H_2\) has a single vertex.</figcaption></figure><p id="p-1479">The cross-cap surface \(C_g\) can be represented by the polygonal surface obtained by identifying the edges of a \(2g\)-gon according to the boundary label \((a_1a_1)\cdots(a_ga_g).\) Once again, all the corners come together at a single point in the edge identification, and the number of edges in the cell division is half the number of edges in the \(2g\)-gon. So the cell division determined by the polygon has one vertex, \(g\) edges, and one face. Thus, \(\chi(C_g)=2-g\text{.}\)</p></article></div></section><section class="conclusion" id="conclusion-1"><p id="p-1480">In light of the previous theorem and the surface classification theorem, a surface is uniquely determined by its orientability status and Euler characteristic. We summarize the classification in the table below.</p>
+<figure class="table table-like" id="table-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.5.25<span class="period">.</span></span><span class="space"> </span>Classification of surfaces</figcaption><table>
 <tr>
 <td class="c m b2 r2 l1 t1 lines">\(\chi\)</td>
 <td class="c m b2 r1 l0 t1 lines">orientable</td>
-<td class="c m b2 r1 l0 t1 lines">non-orientable</td>
+<td class="c m b2 r1 l0 t1 lines" data-braille="last-cell">non-orientable</td>
 </tr>
 <tr>
 <td class="c m b0 r2 l1 t0 lines">2</td>
 <td class="c m b0 r1 l0 t0 lines">\(H_0\)</td>
-<td class="c m b0 r1 l0 t0 lines"></td>
+<td class="c m b0 r1 l0 t0 lines" data-braille="last-cell"></td>
 </tr>
 <tr>
 <td class="c m b0 r2 l1 t0 lines">1</td>
 <td class="c m b0 r1 l0 t0 lines"></td>
-<td class="c m b0 r1 l0 t0 lines">\(C_1\)</td>
+<td class="c m b0 r1 l0 t0 lines" data-braille="last-cell">\(C_1\)</td>
 </tr>
 <tr>
 <td class="c m b0 r2 l1 t0 lines">0</td>
 <td class="c m b0 r1 l0 t0 lines">\(H_1\)</td>
-<td class="c m b0 r1 l0 t0 lines">\(C_2\)</td>
+<td class="c m b0 r1 l0 t0 lines" data-braille="last-cell">\(C_2\)</td>
 </tr>
 <tr>
 <td class="c m b0 r2 l1 t0 lines">-1</td>
 <td class="c m b0 r1 l0 t0 lines"></td>
-<td class="c m b0 r1 l0 t0 lines">\(C_3\)</td>
+<td class="c m b0 r1 l0 t0 lines" data-braille="last-cell">\(C_3\)</td>
 </tr>
 <tr>
 <td class="c m b0 r2 l1 t0 lines">-2</td>
 <td class="c m b0 r1 l0 t0 lines">\(H_2\)</td>
-<td class="c m b0 r1 l0 t0 lines">\(C_4\)</td>
+<td class="c m b0 r1 l0 t0 lines" data-braille="last-cell">\(C_4\)</td>
 </tr>
 <tr>
 <td class="c m b0 r2 l1 t0 lines">-3</td>
 <td class="c m b0 r1 l0 t0 lines"></td>
-<td class="c m b0 r1 l0 t0 lines">\(C_5\)</td>
+<td class="c m b0 r1 l0 t0 lines" data-braille="last-cell">\(C_5\)</td>
 </tr>
 <tr>
 <td class="c m b0 r2 l1 t0 lines">-4</td>
 <td class="c m b0 r1 l0 t0 lines">\(H_3\)</td>
-<td class="c m b0 r1 l0 t0 lines">\(C_6\)</td>
+<td class="c m b0 r1 l0 t0 lines" data-braille="last-cell">\(C_6\)</td>
 </tr>
 <tr>
 <td class="c m b1 r2 l1 t0 lines">\(\vdots\)</td>
 <td class="c m b1 r1 l0 t0 lines">\(\vdots\)</td>
-<td class="c m b1 r1 l0 t0 lines">\(\vdots\)</td>
+<td class="c m b1 r1 l0 t0 lines" data-braille="last-cell">\(\vdots\)</td>
 </tr>
-</table>
-<figcaption><span class="type">Table</span> <span class="codenumber">7.5.25</span> Classification of surfaces</figcaption></figure></section></section><section class="conclusion" id="conclusion-2"><p id="p-1390">This completes our brief, somewhat informal foray into the topology of surfaces. Again, several good sources provide a rigorous development of these ideas, including <a knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a>.  In the next section we turn to the task of attaching geometry to a surface.</p>
-<figure class="figure-like" id="fig-psexample"><div style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-psexample.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.26</span> Four polygonal surfaces.</figcaption></figure></section><section class="exercises" id="exercises-26"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</table></figure></section></section><section class="conclusion" id="conclusion-2"><p id="p-1481">This completes our brief, somewhat informal foray into the topology of surfaces. Again, several good sources provide a rigorous development of these ideas, including <a class="xref" data-knowl="./knowl/sieradski.html" title="Bibliographic Entry 9: An Introduction to Topology and Homotopy">[9]</a>.  In the next section we turn to the task of attaching geometry to a surface.</p>
+<figure class="figure figure-like" id="fig-psexample"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/im-psexample.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.26<span class="period">.</span></span><span class="space"> </span>Four polygonal surfaces.</figcaption></figure></section><section class="exercises" id="exercises-26"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
-<a href="section7-5.html#exercises-26" class="permalink">¶</a><article class="exercise-like" id="exercise-187"><h6 class="heading">
-<span class="codenumber">1</span> </h6>
-<p id="p-1391">Find the Euler characteristic of each surface in <a knowl="./knowl/fig-psexample.html" title="Figure 7.5.26">Figure 7.5.26</a>.  Then determine whether each surface is orientable or non-orientable. Then classify the surface.</p></article><article class="exercise-like" id="exercise-188"><h6 class="heading">
-<span class="codenumber">2</span> </h6>
-<p id="p-1392">Classify the polygonal surface built from a hexagon having boundary label \(abca^{-1}b^{-1}c^{-1}\text{.}\)</p></article><article class="exercise-like" id="exercise-189"><h6 class="heading">
-<span class="codenumber">3</span> </h6>
-<p id="p-1393">With the aid of <a knowl="./knowl/fig-c2isklein.html" title="Figure 7.5.27">Figure 7.5.27</a>, convince yourself that the connected sum of two projective planes is homeomorphic to the Klein bottle as defined in <a knowl="./knowl/ex_klein.html" title="Example 7.5.15: The Klein bottle">Example 7.5.15</a>. At the top of <a knowl="./knowl/fig-c2isklein.html" title="Figure 7.5.27">Figure 7.5.27</a> there are two projective planes (with boundary labels \(a_1a_1\) and \(a_2a_2\)), each with a disk removed. In the connected sum, join the boundaries of the removed disks, which can be achieved by joining the \(s_1\) arcs together and the \(s_2\) arcs together. The \(b\) and \(c\) edges in the first projective plane (and the \(d\) and \(e\) edges in the second projective plane) indicate cuts we will make to the space, portrayed in the subsequent pictures. Thus, by removing a disk from each projective plane, and cutting as indicated by the \(b, c, d\text{,}\) and \(e\) edges, we obtain four rectangles (topologically), all of whose edges get identified as indicated. Convince yourself that by moving these rectangles around (either by rotation, or reflection about a vertical or horizontal axis) we produce the Klein bottle.</p></article><article class="exercise-like" id="exercise-190"><h6 class="heading">
-<span class="codenumber">4</span> </h6>
-<p id="p-1394">What surface in our catalog do we obtain from the connected sum of a torus and a projective plane? That is, what is \(H_1 \# C_1\text{?}\) Explain your answer.</p></article><article class="exercise-like" id="exercise-191"><h6 class="heading">
-<span class="codenumber">5</span> </h6>
-<p id="p-1395">Show that in the polygonal representation of \(C_g\text{,}\) all corner points come together at a single point when the edges are identified.</p></article><figure class="figure-like" id="fig-c2isklein"><div style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="images/c2isklein.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span> <span class="codenumber">7.5.27</span> \(C_2\) is homeomorphic to the Klein bottle \(\mathbb{K}^2\text{.}\)</figcaption></figure></section></section></div></main>
+<article class="exercise exercise-like" id="exercise-187"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-1482">Find the Euler characteristic of each surface in <a class="xref" data-knowl="./knowl/fig-psexample.html" title="Figure 7.5.26">Figure 7.5.26</a>.  Then determine whether each surface is orientable or non-orientable. Then classify the surface.</p></article><article class="exercise exercise-like" id="exercise-188"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1483">Classify the polygonal surface built from a hexagon having boundary label \(abca^{-1}b^{-1}c^{-1}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-189"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1485">With the aid of <a class="xref" data-knowl="./knowl/fig-c2isklein.html" title="Figure 7.5.27">Figure 7.5.27</a>, convince yourself that the connected sum of two projective planes is homeomorphic to the Klein bottle as defined in <a class="xref" data-knowl="./knowl/ex_klein.html" title="Example 7.5.15: The Klein bottle">Example 7.5.15</a>. At the top of <a class="xref" data-knowl="./knowl/fig-c2isklein.html" title="Figure 7.5.27">Figure 7.5.27</a> there are two projective planes (with boundary labels \(a_1a_1\) and \(a_2a_2\)), each with a disk removed. In the connected sum, join the boundaries of the removed disks, which can be achieved by joining the \(s_1\) arcs together and the \(s_2\) arcs together. The \(b\) and \(c\) edges in the first projective plane (and the \(d\) and \(e\) edges in the second projective plane) indicate cuts we will make to the space, portrayed in the subsequent pictures. Thus, by removing a disk from each projective plane, and cutting as indicated by the \(b, c, d\text{,}\) and \(e\) edges, we obtain four rectangles (topologically), all of whose edges get identified as indicated. Convince yourself that by moving these rectangles around (either by rotation, or reflection about a vertical or horizontal axis) we produce the Klein bottle.</p></article><article class="exercise exercise-like" id="exercise-190"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-1487">What surface in our catalog do we obtain from the connected sum of a torus and a projective plane? That is, what is \(H_1 \# C_1\text{?}\) Explain your answer.</p></article><article class="exercise exercise-like" id="exercise-191"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-1489">Show that in the polygonal representation of \(C_g\text{,}\) all corner points come together at a single point when the edges are identified.</p></article><figure class="figure figure-like" id="fig-c2isklein"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="images/c2isklein.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.5.27<span class="period">.</span></span><span class="space"> </span>\(C_2\) is homeomorphic to the Klein bottle \(\mathbb{K}^2\text{.}\)</figcaption></figure></section></section></div></main>
 </div>
-<!--Start: StatCounter code--><script>
-var sc_project=11625953;
-var sc_invisible=1;
-var sc_security="f68ed8d5";
-var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "https://www.");
-document.write("<sc"+"ript src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
-</script><noscript><div class="statcounter"><a title="web analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/11625953/0/f68ed8d5/1/" alt="web analytics"></a></div></noscript>
-<!--End: StatCounter code--><div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.1/login.js"></script>
 </body>
 </html>
