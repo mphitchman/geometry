@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:26-07:00       *-->
+<!--*       on 2020-11-19T16:32:59-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,14 +15,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The result follows from properties of conjugates.</p>
+<p>Let \(R(z) = (z,2;1,4)\) and \(S(w) = (w,0;3,4)\text{.}\) We want \(T = S^{-1} \circ R\) so we solve the following equation for \(w\text{:}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-\overline{(z,z_1;z_2,z_3)}\amp= \overline{\left[\frac{z-z_2}{z-z_3}\cdot\frac{z_1-z_3}{z_1-z_2}\right]}\\
-\amp= \frac{\overline{z}-\overline{z_2}}{\overline{z}-\overline{z_3}}\cdot\frac{\overline{z_1}-\overline{z_3}}{\overline{z_1}-\overline{z_2}}\\
-\amp= (\overline{z},\overline{z_1};\overline{z_2},\overline{z_3})\text{.}
-\end{align*}
+\begin{equation*}
+\frac{z-1}{z-4}\cdot\frac{2-4}{2-1} = \frac{w-3}{w-4}\cdot \frac{0-4}{0-3}\text{.}
+\end{equation*}
 </div>
+<p data-braille="continuation">The result is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+w = \frac{-18z+36}{-5z+11} = T(z)\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">\(T(0) = 36/11\) and \(T(\infty)=18/5\text{.}\)</p>
 <span class="incontext"><a href="section3-4.html#p-531">in-context</a></span>
 </body>
 </html>

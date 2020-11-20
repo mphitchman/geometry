@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:59:47-07:00       *-->
+<!--*       on 2020-11-19T16:32:13-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -164,8 +164,8 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section7-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Elliptic Geometry with Curvature \(k \gt 0\)</span>
 </h2>
-<section class="introduction" id="introduction-19"><p id="p-1269">One may model elliptic geometry on spheres of varying radii, and a change in radius will cause a change in the curvature of the space as well as a change in the relationship between the area of a triangle and its angle sum.</p></section><p id="p-1270">For any real number \(k \gt  0\text{,}\) we may construct a sphere with constant curvature \(k\text{.}\)  According to <a class="xref" data-knowl="./knowl/ex_spherecurv.html" title="Example 7.1.5: The curvature of a sphere">Example 7.1.5</a>, the sphere centered at the origin with radius \(1/\sqrt{k}\) works. Geometry on this sphere can be modeled down in the extended plane via stereographic projection. This geometry will be called elliptic geometry with curvature \(k &gt; 0\text{.}\)</p>
-<p id="p-1271">Consider the sphere \(\mathbb{S}^2_k\) centered at the origin of \(\mathbb{R}^3\) with radius \(1/\sqrt{k}\text{.}\) Define stereographic projection \(\phi_k: \mathbb{S}^2_k \to \mathbb{C}^+\text{,}\) just as we did in Section 3.3, to obtain the formula</p>
+<section class="introduction" id="introduction-19"><p id="p-1271">One may model elliptic geometry on spheres of varying radii, and a change in radius will cause a change in the curvature of the space as well as a change in the relationship between the area of a triangle and its angle sum.</p></section><p id="p-1272">For any real number \(k \gt  0\text{,}\) we may construct a sphere with constant curvature \(k\text{.}\)  According to <a class="xref" data-knowl="./knowl/ex_spherecurv.html" title="Example 7.1.5: The curvature of a sphere">Example 7.1.5</a>, the sphere centered at the origin with radius \(1/\sqrt{k}\) works. Geometry on this sphere can be modeled down in the extended plane via stereographic projection. This geometry will be called elliptic geometry with curvature \(k &gt; 0\text{.}\)</p>
+<p id="p-1273">Consider the sphere \(\mathbb{S}^2_k\) centered at the origin of \(\mathbb{R}^3\) with radius \(1/\sqrt{k}\text{.}\) Define stereographic projection \(\phi_k: \mathbb{S}^2_k \to \mathbb{C}^+\text{,}\) just as we did in Section 3.3, to obtain the formula</p>
 <div class="displaymath">
 \begin{equation*}
 \phi_k(a,b,c) = 
@@ -175,55 +175,55 @@ MathJax.Hub.Config({
 \end{cases}\text{.}
 \end{equation*}
 </div>
-<p id="p-1272">Diametrically opposed points on \(\mathbb{S}^2_k\) get mapped via \(\phi_k\) to points \(z\) and \(z_a\) that satisfy the equation \(z_a =\frac{-1}{k\overline{z}}\text{,}\) by analogy with <a class="xref" data-knowl="./knowl/th_antipodal.html" title="Lemma 6.1.2">Lemma 6.1.2</a>. We call two such points in \(\mathbb{C}^+\) antipodal with respect to \(\mathbb{S}^2_k\text{,}\) or just antipodal points if the value of \(k\) is understood.</p>
-<p id="p-1273">Our model for elliptic geometry with curvature \(k\) has space \(\mathbb{P}^2_k\) equal to the closed disk in \(\mathbb{C}\) of radius \(1/\sqrt{k}\text{,}\) with antipodal points of the boundary identified.  This space is simply a scaled version of the projective plane from Chapter 6.</p>
-<p id="p-1274">The group of transformations, denoted \({\cal S}_k\text{,}\) consists of those Möbius transformations that preserve antipodal points with respect to \(\mathbb{S}^2_k\text{.}\)  That is, \(T \in {\cal S}_k\) if and only if the following holds:</p>
+<p id="p-1274">Diametrically opposed points on \(\mathbb{S}^2_k\) get mapped via \(\phi_k\) to points \(z\) and \(z_a\) that satisfy the equation \(z_a =\frac{-1}{k\overline{z}}\text{,}\) by analogy with <a class="xref" data-knowl="./knowl/th_antipodal.html" title="Lemma 6.1.2">Lemma 6.1.2</a>. We call two such points in \(\mathbb{C}^+\) antipodal with respect to \(\mathbb{S}^2_k\text{,}\) or just antipodal points if the value of \(k\) is understood.</p>
+<p id="p-1275">Our model for elliptic geometry with curvature \(k\) has space \(\mathbb{P}^2_k\) equal to the closed disk in \(\mathbb{C}\) of radius \(1/\sqrt{k}\text{,}\) with antipodal points of the boundary identified.  This space is simply a scaled version of the projective plane from Chapter 6.</p>
+<p id="p-1276">The group of transformations, denoted \({\cal S}_k\text{,}\) consists of those Möbius transformations that preserve antipodal points with respect to \(\mathbb{S}^2_k\text{.}\)  That is, \(T \in {\cal S}_k\) if and only if the following holds:</p>
 <div class="displaymath">
 \begin{equation*}
 \text{if }~ z_a = -\frac{1}{k\overline{z}}~~ \text{then }~ T(z_a) = -\frac{1}{k\overline{T(z)}}\text{.}
 \end{equation*}
 </div>
-<p id="p-1275">The geometry \((\mathbb{P}^2_k,{\cal S}_k)\) with \(k \gt 0\) is called <dfn class="terminology">elliptic geometry with curvature \(k\)</dfn>.  Note that \((\mathbb{P}^2_1,{\cal S}_1)\) is precisely the geometry we studied in Chapter 6.</p>
-<p id="p-1276">The transformations of \(\mathbb{C}^+\) in the group \({\cal S}_k\) correspond precisely with rotations of the sphere \(\mathbb{S}^2_k\text{.}\)  One can show that transformations in \({\cal S}_k\) have the form</p>
+<p id="p-1277">The geometry \((\mathbb{P}^2_k,{\cal S}_k)\) with \(k \gt 0\) is called <dfn class="terminology">elliptic geometry with curvature \(k\)</dfn>.  Note that \((\mathbb{P}^2_1,{\cal S}_1)\) is precisely the geometry we studied in Chapter 6.</p>
+<p id="p-1278">The transformations of \(\mathbb{C}^+\) in the group \({\cal S}_k\) correspond precisely with rotations of the sphere \(\mathbb{S}^2_k\text{.}\)  One can show that transformations in \({\cal S}_k\) have the form</p>
 <div class="displaymath">
 \begin{equation*}
 T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z}\text{.}
 \end{equation*}
 </div>
-<p id="p-1277">We define lines in elliptic geometry with curvature \(k\) to be clines with the property that if they go through \(z\) then they go through \(z_a = -\frac{1}{k\overline{z}}\text{.}\)  These lines correspond precisely to great circles on the sphere \(\mathbb{S}^2_k\text{.}\)</p>
-<p id="p-1278">The arc-length and area formulas also slip gently over from Chapter 6 to this more general setting.</p>
-<p id="p-1279">The arc-length of a smooth curve \(\boldsymbol{r}\) in \(\mathbb{P}^2_k\) is</p>
+<p id="p-1279">We define lines in elliptic geometry with curvature \(k\) to be clines with the property that if they go through \(z\) then they go through \(z_a = -\frac{1}{k\overline{z}}\text{.}\)  These lines correspond precisely to great circles on the sphere \(\mathbb{S}^2_k\text{.}\)</p>
+<p id="p-1280">The arc-length and area formulas also slip gently over from Chapter 6 to this more general setting.</p>
+<p id="p-1281">The arc-length of a smooth curve \(\boldsymbol{r}\) in \(\mathbb{P}^2_k\) is</p>
 <div class="displaymath">
 \begin{equation*}
 {\cal L}(\boldsymbol{r}) = \int_a^b \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt\text{.}
 \end{equation*}
 </div>
-<p id="p-1280">As before, arc-length is an invariant, and the shortest path between two points is along the elliptic line through them.  In the exercises we derive a formula for the distance between points in this geometry.  The greatest possible distance between two points in \((\mathbb{P}^2_k,{\cal S}_k)\) turns out to be \(\pi/(2\sqrt{k})\text{.}\)</p>
-<p id="p-1281">The area of a region \(R\) given in polar form is computed by the formula</p>
+<p id="p-1282">As before, arc-length is an invariant, and the shortest path between two points is along the elliptic line through them.  In the exercises we derive a formula for the distance between points in this geometry.  The greatest possible distance between two points in \((\mathbb{P}^2_k,{\cal S}_k)\) turns out to be \(\pi/(2\sqrt{k})\text{.}\)</p>
+<p id="p-1283">The area of a region \(R\) given in polar form is computed by the formula</p>
 <div class="displaymath">
 \begin{equation*}
 A(R) = \iint_R \frac{4r}{(1+kr^2)^2}dr d\theta\text{.}
 \end{equation*}
 </div>
-<p id="p-1282">To compute the area of a triangle, proceed as in Chapter 6. First, tackle the area of a <dfn class="terminology">lune</dfn>, a 2-gon whose sides are elliptic lines in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</p>
+<p id="p-1284">To compute the area of a triangle, proceed as in Chapter 6. First, tackle the area of a <dfn class="terminology">lune</dfn>, a 2-gon whose sides are elliptic lines in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</p>
 <article class="lemma theorem-like" id="lemma-lune-Gk"><h6 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-1283">Assume \(k \gt 0\text{.}\)  A lune in \((\mathbb{P}^2_k,{\cal S}_k)\) with interior angle \(\alpha\) has area  \(2\alpha/k\text{.}\)</p></article><article class="hiddenproof" id="proof-46"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-46"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-46"><article class="hiddenproof"><p id="p-1284">Without loss of generality, we may consider the vertex of our lune to be the origin. As before, elliptic lines through the origin must also pass through \(\infty\text{,}\) so our two lines forming the lune are Euclidean lines. After a convenient rotation, we may further assume one of these lines is the real axis, so that the lune resembles the one in <a class="xref" data-knowl="./knowl/fig-lune2.html" title="Figure 6.3.10">Figure 6.3.10</a>. To compute the area of the lune, compute the integral</p>
+<p id="p-1285">Assume \(k \gt 0\text{.}\)  A lune in \((\mathbb{P}^2_k,{\cal S}_k)\) with interior angle \(\alpha\) has area  \(2\alpha/k\text{.}\)</p></article><article class="hiddenproof" id="proof-46"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-46"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-46"><article class="hiddenproof"><p id="p-1286">Without loss of generality, we may consider the vertex of our lune to be the origin. As before, elliptic lines through the origin must also pass through \(\infty\text{,}\) so our two lines forming the lune are Euclidean lines. After a convenient rotation, we may further assume one of these lines is the real axis, so that the lune resembles the one in <a class="xref" data-knowl="./knowl/fig-lune2.html" title="Figure 6.3.10">Figure 6.3.10</a>. To compute the area of the lune, compute the integral</p>
 <div class="displaymath">
 \begin{equation*}
 A = 2 \int_0^\alpha \int_0^{1/\sqrt{k}}\frac{4r}{(1+kr^2)^2}drd\theta\text{.}
 \end{equation*}
 </div>
-<p id="p-1285">Letting \(u = 1 + kr^2\) so that \(du = 2krdr\text{,}\) the bounds of integration change from \([0,1/\sqrt{k}]\) to \([1,2]\text{.}\)  Then,</p>
+<p id="p-1287">Letting \(u = 1 + kr^2\) so that \(du = 2krdr\text{,}\) the bounds of integration change from \([0,1/\sqrt{k}]\) to \([1,2]\text{.}\)  Then,</p>
 <div class="displaymath">
 \begin{equation*}
 A = 2 \int^\alpha_0 \frac{2}{k}\int_1^2 \frac{du}{u^2}d\theta = \frac{4}{k}\int_0^\alpha \frac{1}{2} d\theta =\frac{2\alpha}{k}\text{.}
 \end{equation*}
 </div>
 <p data-braille="continuation">Thus, the angle of a lune with interior angle \(\alpha\) is \(2\alpha/k\text{.}\)</p></article></div>
-<p id="p-1286">We remark that the lune with angle \(\pi\) actually covers the entire disk of radius \(1/\sqrt{k}\text{.}\)  Thus, the area of the entire space \(\mathbb{P}^2_k\) is \(2\pi/k\text{,}\) which matches half the surface area of a sphere of radius \(1/\sqrt{k}\text{.}\) We often call \(s = 1/\sqrt{k}\)  the <dfn class="terminology">radius of curvature</dfn> for the geometry; it is the radius of the disk on which we model the geometry.</p>
-<p id="p-1287">Also, the integral computation in the proof of <a class="xref" data-knowl="./knowl/lemma-lune-Gk.html" title="Lemma 7.2.1">Lemma 7.2.1</a> reveals the following useful antiderivative:</p>
+<p id="p-1288">We remark that the lune with angle \(\pi\) actually covers the entire disk of radius \(1/\sqrt{k}\text{.}\)  Thus, the area of the entire space \(\mathbb{P}^2_k\) is \(2\pi/k\text{,}\) which matches half the surface area of a sphere of radius \(1/\sqrt{k}\text{.}\) We often call \(s = 1/\sqrt{k}\)  the <dfn class="terminology">radius of curvature</dfn> for the geometry; it is the radius of the disk on which we model the geometry.</p>
+<p id="p-1289">Also, the integral computation in the proof of <a class="xref" data-knowl="./knowl/lemma-lune-Gk.html" title="Lemma 7.2.1">Lemma 7.2.1</a> reveals the following useful antiderivative:</p>
 <div class="displaymath">
 \begin{equation*}
 \int \frac{4r}{(1+kr^2)^2}dr = \frac{-2}{k(1+kr^2)} + C\text{.}
@@ -233,16 +233,16 @@ A = 2 \int^\alpha_0 \frac{2}{k}\int_1^2 \frac{du}{u^2}d\theta = \frac{4}{k}\int_
 <article class="lemma theorem-like" id="lem-ktri-ell"><h6 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span>
 </h6>
-<p id="p-1288">In elliptic geometry with curvature \(k\text{,}\) the area of a triangle with angles \(\alpha, \beta,\) and \(\gamma\) is</p>
+<p id="p-1290">In elliptic geometry with curvature \(k\text{,}\) the area of a triangle with angles \(\alpha, \beta,\) and \(\gamma\) is</p>
 <div class="displaymath">
 \begin{equation*}
 A = \frac{1}{k}(\alpha+\beta+\gamma -\pi)\text{.}
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-47"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-47"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-47"><article class="hiddenproof"><p id="p-1289">As in the case \(k = 1\text{,}\) the area of any triangle may be determined from the area of three lunes and the total area of \(\mathbb{P}^2_k\text{,}\) as depicted in <a class="xref" data-knowl="./knowl/ex-elltriangle.html" title="Example 6.3.11: Triangle area in \((\mathbb{P}^2,{\cal S})\)">Example 6.3.11</a>.</p></article></div>
+</div></article><article class="hiddenproof" id="proof-47"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-47"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-47"><article class="hiddenproof"><p id="p-1291">As in the case \(k = 1\text{,}\) the area of any triangle may be determined from the area of three lunes and the total area of \(\mathbb{P}^2_k\text{,}\) as depicted in <a class="xref" data-knowl="./knowl/ex-elltriangle.html" title="Example 6.3.11: Triangle area in \((\mathbb{P}^2,{\cal S})\)">Example 6.3.11</a>.</p></article></div>
 <article class="example example-like" id="example-61"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Triangles on the Earth.</span>
 </h6>
-<p id="p-1290">The surface of the Earth is approximately spherical with radius about 6375 km. Therefore, the geometry on the surface of the Earth can be reasonably modeled by \((\mathbb{P}^2_k, {\cal S}_k)\) where \(k = 1/6375^2~ \text{km}^{-2}\text{.}\)  The area of a triangle on the Earth's surface having angles \(\alpha, \beta,\) and  \(\gamma\) is</p>
+<p id="p-1292">The surface of the Earth is approximately spherical with radius about 6375 km. Therefore, the geometry on the surface of the Earth can be reasonably modeled by \((\mathbb{P}^2_k, {\cal S}_k)\) where \(k = 1/6375^2~ \text{km}^{-2}\text{.}\)  The area of a triangle on the Earth's surface having angles \(\alpha, \beta,\) and  \(\gamma\) is</p>
 <div class="displaymath">
 \begin{equation*}
 A = \frac{1}{k}(\alpha + \beta + \gamma - \pi)\text{.}
@@ -252,7 +252,7 @@ A = \frac{1}{k}(\alpha + \beta + \gamma - \pi)\text{.}
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-165"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1291">Prove that for \(k &gt; 0\text{,}\) any transformation in \({\cal S}_k\) has the form</p>
+<p id="p-1293">Prove that for \(k &gt; 0\text{,}\) any transformation in \({\cal S}_k\) has the form</p>
 <div class="displaymath">
 \begin{equation*}
 T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z}\text{,}
@@ -262,34 +262,34 @@ T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z}\text{,}
 <div class="solutions">
 <a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-21" id="hint-21"><span class="type">Hint</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-21"><div class="hint solution-like">Follow the derivation of the transformations in \({\cal S}\) found in Chapter 6.</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-166"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1293">Verify the formula for the stereographic projection map \(\phi_k\text{.}\)</p></article><article class="exercise exercise-like" id="hmk_Gkpos"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-1295">Assume \(k \gt 0\) and let \(s = 1/\sqrt{k}\text{.}\)  Derive the following measurement formulas in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</p>
+<p id="p-1295">Verify the formula for the stereographic projection map \(\phi_k\text{.}\)</p></article><article class="exercise exercise-like" id="hmk_Gkpos"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-1297">Assume \(k \gt 0\) and let \(s = 1/\sqrt{k}\text{.}\)  Derive the following measurement formulas in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-267">The length of a line segment from \(0\) to \(x\text{,}\) where \(0 \lt x \leq s\) is<div class="displaymath">
+<li id="li-269">The length of a line segment from \(0\) to \(x\text{,}\) where \(0 \lt x \leq s\) is<div class="displaymath">
 \begin{equation*}
 d_{k}(0,x) = 2s\arctan(x/s)\text{.}
 \end{equation*}
 </div>
 </li>
-<li id="li-268">The circumference of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(C=2\pi s\sin(r/s)\text{.}\)</li>
-<li id="li-269">The area of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(\displaystyle A = 4\pi s^2 \sin^2\left(\frac{r}{2s}\right)\text{.}\)</li>
+<li id="li-270">The circumference of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(C=2\pi s\sin(r/s)\text{.}\)</li>
+<li id="li-271">The area of the circle centered at the origin with elliptic radius \(r \lt \pi/(2\sqrt{k})\) is \(\displaystyle A = 4\pi s^2 \sin^2\left(\frac{r}{2s}\right)\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-168"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-1296">In this exercise we investigate the idea that the elliptic formulas in <a class="xref" data-knowl="./knowl/hmk_Gkpos.html" title="Exercise 7.2.3">Exercise 7.2.3</a> for distance, circumference, and area approach Euclidean formulas when \(k \to 0^+\text{.}\)</p>
+<p id="p-1298">In this exercise we investigate the idea that the elliptic formulas in <a class="xref" data-knowl="./knowl/hmk_Gkpos.html" title="Exercise 7.2.3">Exercise 7.2.3</a> for distance, circumference, and area approach Euclidean formulas when \(k \to 0^+\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-273">Show that the elliptic distance \(d_{k}(0,x)\) from \(0\) to \(x\text{,}\) where \(0 \lt x \leq s,\) approaches \(2x\) as \(k \to 0^+\) (twice the usual notion of Euclidean distance).</li>
-<li id="li-274">Show that the elliptic circumference of a circle with elliptic radius \(r\) approaches \(2\pi r\) as \(k \to 0^+\text{.}\)</li>
-<li id="li-275">Show that the elliptic area of this circle approaches \(\pi r^2\) as \(k \to 0^+\text{.}\)</li>
+<li id="li-275">Show that the elliptic distance \(d_{k}(0,x)\) from \(0\) to \(x\text{,}\) where \(0 \lt x \leq s,\) approaches \(2x\) as \(k \to 0^+\) (twice the usual notion of Euclidean distance).</li>
+<li id="li-276">Show that the elliptic circumference of a circle with elliptic radius \(r\) approaches \(2\pi r\) as \(k \to 0^+\text{.}\)</li>
+<li id="li-277">Show that the elliptic area of this circle approaches \(\pi r^2\) as \(k \to 0^+\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="hmk-law-of-cosines-posk"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-1297"><em class="emphasis">Triangle trigonometry in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</em></p>
-<p id="p-1298">Suppose we have a triangle in \((\mathbb{P}^2_k,{\cal S}_k)\) with side lengths \(a,b,c\) and angles \(\alpha, \beta, \gamma\) as pictured in <a class="xref" data-knowl="./knowl/fig-elltrig.html" title="Figure 6.3.13">Figure 6.3.13</a>.</p>
+<p id="p-1299"><em class="emphasis">Triangle trigonometry in \((\mathbb{P}^2_k,{\cal S}_k)\text{.}\)</em></p>
+<p id="p-1300">Suppose we have a triangle in \((\mathbb{P}^2_k,{\cal S}_k)\) with side lengths \(a,b,c\) and angles \(\alpha, \beta, \gamma\) as pictured in <a class="xref" data-knowl="./knowl/fig-elltrig.html" title="Figure 6.3.13">Figure 6.3.13</a>.</p>
 <ol class="lower-alpha">
-<li id="li-279">Prove the elliptic law of cosines in \((\mathbb{P}^2_k,{\cal S}_k)\text{:}\)<div class="displaymath">
+<li id="li-281">Prove the elliptic law of cosines in \((\mathbb{P}^2_k,{\cal S}_k)\text{:}\)<div class="displaymath">
 \begin{equation*}
 \cos(\sqrt{k}c)=\cos(\sqrt{k}a)\cos(\sqrt{k}b)+\sin(\sqrt{k}a)\sin(\sqrt{k}b)\cos(\gamma)\text{.}
 \end{equation*}
 </div>
 </li>
-<li id="li-280">Prove the elliptic law of sines in \((\mathbb{P}^2_k,{\cal S}_k)\text{:}\)<div class="displaymath">
+<li id="li-282">Prove the elliptic law of sines in \((\mathbb{P}^2_k,{\cal S}_k)\text{:}\)<div class="displaymath">
 \begin{equation*}
 \frac{\sin(\sqrt{k}a)}{\sin(\alpha)}=\frac{\sin(\sqrt{k}b)}{\sin(\beta)}=\frac{\sin(\sqrt{k}c)}{\sin(\gamma)}\text{.}
 \end{equation*}

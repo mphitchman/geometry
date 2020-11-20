@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:59-07:00       *-->
+<!--*       on 2020-11-19T16:33:36-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,12 +16,8 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-{\cal L}(\boldsymbol{r}) \amp= \int_0^x \frac{1}{1-\sqrt{|k|}t}~dt + \int_0^x \frac{1}{1+\sqrt{|k|}t}~dt\\
-\amp= -\frac{1}{\sqrt{|k|}}\ln(1 - \sqrt{|k|}t) + \frac{1}{\sqrt{|k|}}\ln(1 + \sqrt{|k|}t)\bigg|_0^x\\
-\amp=-\frac{1}{\sqrt{|k|}}\ln(1 - \sqrt{|k|}x) + \frac{1}{\sqrt{|k|}}\ln(1 + \sqrt{|k|}x)\\
-\amp=\frac{1}{\sqrt{|k|}}\ln\left(\frac{1+\sqrt{|k|}x}{1-\sqrt{|k|}x}\right)\\
-\amp= s\ln\left(\frac{1 + \frac{x}{s}}{1-\frac{x}{s}}\right)\\
-\amp=s\ln\left(\frac{s + x}{s-x}\right)
+{\cal L}(\boldsymbol{r}) \amp= \int_0^x \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt\\
+\amp=\int_0^x \frac{2\cdot 1}{1 + kt^2}~dt
 \end{align*}
 </div>
 <span class="incontext"><a href="section7-3.html#mjx-eqn-mrow-499">in-context</a></span>

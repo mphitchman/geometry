@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:26-07:00       *-->
+<!--*       on 2020-11-19T16:32:59-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,10 +15,18 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>We may use <a class="xref" data-knowl="./knowl/thm_inverse_mob.html" title="Theorem 3.4.2">Theorem 3.4.2</a>:</p>
+<p>First, translate the point of rotation (\(2i)\) to the origin. Second, rotate by \(\pi/4\text{.}\)  Third, translate the origin back to \(2i\text{.}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+z \amp\mapsto z - 2i \\
+\amp\mapsto e^{i\frac{\pi}{4}}(z - 2i) \\
+\amp\mapsto e^{i\frac{\pi}{4}}(z - 2i) + 2i 
+\end{align*}
+</div>
+<p data-braille="continuation">which can be written as</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-T(z) = \frac{-z + i}{2z - 3}\text{.}
+T(z) = \frac{e^{i\frac{\pi}{4}}z+(2i-e^{i\frac{\pi}{4}}2i)}{0z + 1}\text{.}
 \end{equation*}
 </div>
 <span class="incontext"><a href="section3-4.html#p-521">in-context</a></span>

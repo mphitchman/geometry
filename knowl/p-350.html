@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:19-07:00       *-->
+<!--*       on 2020-11-19T16:32:51-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,22 +15,16 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Given \(c, d \in \mathbb{R}\text{,}\) \(\alpha \in \mathbb{C}\text{,}\) if \(c \neq 0\text{,}\) the cline equation</p>
+<p>If \(c \neq 0\text{,}\)</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-cz\overline{z} + \alpha z + \overline{\alpha}
-\overline{z} + d = 0
-\end{equation*}
+\begin{align*}
+c(x^2+y^2) + 2ax - 2by + d \amp = 0\\
+x^2 + \frac{2a}{c}x + y^2 - \frac{2b}{c}y \amp = -\frac{d}{c}\\
+x^2 + \frac{2a}{c}x + \bigg(\frac{a}{c}\bigg)^2 + y^2 - \frac{2b}{c}y + \left(\frac{b}{c}\right)^2 \amp = -\frac{d}{c}+\left(\frac{a}{c}\right)^2+\left(\frac{b}{c}\right)^2\\
+\left(x+\frac{a}{c}\right)^2+\left(y-\frac{b}{c}\right)^2\amp =\frac{ a^2 + b^2-cd}{c^2}
+\end{align*}
 </div>
-<p data-braille="continuation">gives a circle with center \(z_0\) and radius \(r\text{,}\) where</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-z_0=\bigg(-\frac{\text{Re}(\alpha)}{c},
-\frac{\text{Im}(\alpha)}{c}\bigg)~~~\text{and}~~~ r =
-\sqrt{\frac{|\alpha|^2-cd}{c^2}}\text{,}
-\end{equation*}
-</div>
-<p data-braille="continuation">so long as \(|\alpha|^2 &gt; cd\text{.}\)  If \(c = 0\text{,}\) the cline equation gives a line.</p>
+<p data-braille="continuation">and we have the equation of a circle so long as the right-hand side (the radius term) is positive.  In other words, we have the equation of a circle so long as \(a^2 + b^2&gt;cd\text{.}\)  We summarize this information below.</p>
 <span class="incontext"><a href="section3-2.html#p-350">in-context</a></span>
 </body>
 </html>

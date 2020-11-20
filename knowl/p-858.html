@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:38-07:00       *-->
+<!--*       on 2020-11-19T16:33:13-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,18 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Now, as \(\Delta t \to 0\text{,}\) the numerator in the above quotient goes to \(|\boldsymbol{r}^\prime(t)|\) and the denominator goes to \(1 - |\boldsymbol{r}(t)|^2\text{,}\) and we arrive at the following hyperbolic arc-length differential.</p>
+<p>In the hyperbolic plane, we may deduce the arc-length differential by a similar argument. Suppose \(\boldsymbol{r}\) is a smooth curve in \(\mathbb{D}\) given by \(\boldsymbol{r}(t) = x(t) + iy(t)\text{,}\) for \(a \leq t \leq b\text{.}\) One may approximate the length of a tiny portion of the curve, say from \(\boldsymbol{r}(t)\) to \(\boldsymbol{r}(t + \Delta t)\text{,}\) by the hyperbolic distance between these two points, \(d_H(\boldsymbol{r}(t), \boldsymbol{r}(t + \Delta t))\text{.}\) To compute this distance, we first send the point \(\boldsymbol{r}(t)\) to 0 by the transformation</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = \frac{z-\boldsymbol{r}(t)}{1-\overline{\boldsymbol{r}(t)}z}\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">so that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+d_H(\boldsymbol{r}(t),\boldsymbol{r}(t+\Delta t)) = \ln[1 + |T(\boldsymbol{r}(t+\Delta t))|]-\ln[1 - |T(\boldsymbol{r}(t+\Delta t))|]\text{.}
+\end{equation*}
+</div>
 <span class="incontext"><a href="section5-3.html#p-858">in-context</a></span>
 </body>
 </html>

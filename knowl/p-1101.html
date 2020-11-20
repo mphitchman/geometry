@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:49-07:00       *-->
+<!--*       on 2020-11-19T16:33:26-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,11 +15,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The transformation on the right also has determinant one, so these two transformations are identical up to sign. We can assume that \(d = -\bar a\) and that \(c = \bar b\text{,}\) so that \(T\) may be expressed as follows:</p>
+<p>Assume \(T(z) = (az + b)/(cz + d)\text{,}\) and that it has determinant \(ad- bc = 1\text{.}\) (Recall, from <a class="xref" data-knowl="./knowl/hmk_mobdet1.html" title="Exercise 3.4.4">Exercise 3.4.4</a> that we can always write a Möbius transformation in a form with determinant 1, and this form is unique up to sign.) Now,</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-T(z) = \frac{az + b}{\bar b z - \bar a}\text{.}
-\end{equation*}
+\begin{align*}
+\overline{T(-1/\bar z)} \amp = \overline{\left[\frac{-a/\bar z + b}{-c/\bar z + d}\right]}\\
+\amp =\frac{-\bar{a}/{z} + \bar{b}}{-\bar{c}/z +\bar{d}}\\
+\amp =\frac{\bar b z - \bar a}{\bar{d} z - \bar{c}}\text{.}
+\end{align*}
 </div>
 <span class="incontext"><a href="section6-2.html#p-1101">in-context</a></span>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:57-07:00       *-->
+<!--*       on 2020-11-19T16:33:34-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,18 +15,49 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The line through the north pole \(N = (0,0,\frac{1}{\sqrt{k}})\) and a point \(P = (a,b,c) \neq N\) on the sphere may be expressed parametrically as  \({\cal L}(t) = \langle 0,0,\frac{1}{\sqrt{k}}\rangle + t\langle a-0, b-0, c - \frac{1}{\sqrt{k}}\rangle\text{.}\)  This line intersects the \(xy\)-plane when</p>
+<p>Assume \(T\) is a Möbius transformation in \(G_k\) with \(k \gt 0\text{.}\)  That is, if \(z_a = \frac{-1}{k\overline{z}}\) then</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+T(z) \amp= \frac{-1}{k\overline{T(z_a)}}\tag{1} \text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Assume</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\frac{1}{\sqrt{k}}+t\left(c -\frac{1}{\sqrt{k}}\right) = 0\text{.}
+T(z) = \frac{az+b}{cz+d}
 \end{equation*}
 </div>
-<p data-braille="continuation">This intersection occurs when \(t = \frac{1}{1-\sqrt{k}c}\text{.}\) So,</p>
+<p data-braille="continuation">and \(ad - bc = 1\text{.}\)  Then</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\overline{T\left(\frac{-1}{k\overline{z}}\right)} \amp= \overline{\left[\frac{a(\frac{-1}{k\overline{z}})+b}{c(\frac{-1}{k\overline{z}})+d}\right]}\\
+\amp= \frac{\frac{-\overline{a}}{kz} + \overline{b}}{\frac{-\overline{c}}{kz} + \overline{d}}\\
+\amp= \frac{k\overline{b}z - \overline{a}}{k\overline{d}z - \overline{c}}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Plugging this expression into equation (1) above yields</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+T(z) \amp= \frac{-1}{k\left[\frac{k\overline{b}z - \overline{a}}{k\overline{d}z - \overline{c}}\right]}\\
+\amp= \frac{-k\overline{d}z + \overline{c}}{k^2\overline{b}z - k\overline{a}}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">One checks the determinant of this Möbius transformation is \(k^2\) since \(ad - bc = 1\) so</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\phi_k((a,b,c)) = \frac{a}{1-c\sqrt{k}}+\frac{b}{1-c\sqrt{k}}i\text{.}
+\frac{az+b}{cz+d} = \frac{-\overline{d}z + \frac{1}{k}\overline{c}}{k\overline{b}z-\overline{a}}
 \end{equation*}
 </div>
+<p data-braille="continuation">are equal transformations with determinant equal to 1.  Since this Möbius transformation is unique up to sign, we assume \(d = -\overline{a}\) and \(c = k\overline{b}\text{.}\)  Plugging in to the original description of \(T\) we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+T(z) \amp= \frac{az+b}{k\overline{b}z - \overline{a}}\\
+\amp= \frac{-\frac{a}{\overline{a}}z - \frac{b}{\overline{a}}}{-k\frac{\overline{b}}{\overline{a}}z+1}\\
+\amp= \frac{-\frac{a}{\overline{a}}(z + \frac{b}{a})}{1 - k\overline{[\frac{b}{a}]}z}\\
+\amp= e^{i\theta}\frac{z - z_0}{1 + k\overline{z_0}z}\text{,}
+\end{align*}
+</div>
+<p data-braille="continuation">where \(e^{i\theta} =-\frac{a}{\overline{a}}\) and \(z_0 = -\frac{b}{a}\text{.}\)</p>
 <span class="incontext"><a href="section7-2.html#p-1294">in-context</a></span>
 </body>
 </html>

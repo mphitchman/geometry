@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:29-07:00       *-->
+<!--*       on 2020-11-19T16:33:03-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,11 +15,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<ol class="lower-alpha">
-<li>The image of the cline through \(a,b,c\) is itself since the images of \(a,b,\) and \(c\) all live on this cline, and a cline is determined by three points.</li>
-<li>Note that \(T(T(T(z))) = z\) for \(z = a,b,c\) so the triple composition fixes three points and must be the identity.</li>
-<li>We may show, much as in the previous exercise, that \(T\) cannot fix just one point, and if \(T\) fixes two points then, in the normal form, \(\lambda^3 = 1\) so that the map is elliptic.</li>
-</ol>
+<p>Can \(T\) fix just one point?  If so, \(T\) has normal form</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{T(z) - d} = \frac{1}{z-p} + d\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Plug in \(T(z)\) for \(z\) to see that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{1}{z-p} = \frac{1}{T(z)-p}+d\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">and these two equations combine to show \(d = 0\) which is not possible since \(T\) isn't the identity map.</p>
 <span class="incontext"><a href="section3-5.html#p-615">in-context</a></span>
 </body>
 </html>

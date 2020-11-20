@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:59:38-07:00       *-->
+<!--*       on 2020-11-19T16:31:57-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -164,14 +164,14 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section5-3"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Measurement in Hyperbolic Geometry</span>
 </h2>
-<section class="introduction" id="introduction-10"><p id="p-822">In this section we develop a notion of distance in the hyperbolic plane. If someone is standing at point \(p\) and wants to get to point \(q\text{,}\) he or she should be able to say how far it is to get there, whatever the route taken.</p>
-<p id="p-823">The distance formula is derived following the approach given in Section 30 of Boas' text <a class="xref" data-knowl="./knowl/boas.html" title="Bibliographic Entry 2: Invitation to Complex Analysis">[2]</a>. We first list features our distance function ought to have, and use the notation that \(d_H(p,q)\) represents the hyperbolic distance from \(p\) to \(q\) in the hyperbolic plane \(\mathbb{D}\text{.}\)</p>
+<section class="introduction" id="introduction-10"><p id="p-824">In this section we develop a notion of distance in the hyperbolic plane. If someone is standing at point \(p\) and wants to get to point \(q\text{,}\) he or she should be able to say how far it is to get there, whatever the route taken.</p>
+<p id="p-825">The distance formula is derived following the approach given in Section 30 of Boas' text <a class="xref" data-knowl="./knowl/boas.html" title="Bibliographic Entry 2: Invitation to Complex Analysis">[2]</a>. We first list features our distance function ought to have, and use the notation that \(d_H(p,q)\) represents the hyperbolic distance from \(p\) to \(q\) in the hyperbolic plane \(\mathbb{D}\text{.}\)</p>
 <ol class="decimal">
 <li id="li-169">The distance between 2 distinct points should be positive.</li>
-<li id="li-170"><p id="p-824">The shortest path between 2 points should be on the hyperbolic line connecting them.</p></li>
-<li id="li-171"><p id="p-825">If \(p,q\text{,}\) and \(r\) are three points on a hyperbolic line with \(q\) between the other two then \(d_H(p,q) + d_H(q,r) = d_H(p,r)\text{.}\)</p></li>
+<li id="li-170"><p id="p-826">The shortest path between 2 points should be on the hyperbolic line connecting them.</p></li>
+<li id="li-171"><p id="p-827">If \(p,q\text{,}\) and \(r\) are three points on a hyperbolic line with \(q\) between the other two then \(d_H(p,q) + d_H(q,r) = d_H(p,r)\text{.}\)</p></li>
 <li id="li-172">
-<p id="p-826">Distance should be preserved by transformations in \(\cal H\text{.}\) (A lunch pail shouldn't shrink if it is moved to another table.)  In other words, the distance formula should satisfy</p>
+<p id="p-828">Distance should be preserved by transformations in \(\cal H\text{.}\) (A lunch pail shouldn't shrink if it is moved to another table.)  In other words, the distance formula should satisfy</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(p,q) = d_H(T(p),T(q))
@@ -179,49 +179,49 @@ d_H(p,q) = d_H(T(p),T(q))
 </div>
 <p data-braille="continuation">for any points \(p\) and \(q\) in \(\mathbb{D}\text{,}\) and any transformation \(T\) in \({\cal H}\text{.}\)</p>
 </li>
-<li id="li-173"><p id="p-827">In the limit for small distances, hyperbolic distance should be proportional to Euclidean distance.</p></li>
+<li id="li-173"><p id="p-829">In the limit for small distances, hyperbolic distance should be proportional to Euclidean distance.</p></li>
 </ol>
-<p id="p-828">Perhaps the least obvious of the features listed is the last one. One theme of this text is that locally, on small scales, non-Euclidean geometry behaves much like Euclidean geometry. A small segment in the hyperbolic plane is approximated to the first order by a Euclidean segment. Small hyperbolic triangles look like Euclidean triangles and hyperbolic angles correspond to Euclidean angles; the hyperbolic distance formula will fit with this theme.</p>
-<p id="p-829">To find the distance function, start with a point's distance from the origin. Given a point \(z\) in \(\mathbb{D}\text{,}\) rotate about 0 so that \(z\) gets sent to the point \(x = |z|\) on the positive real axis.</p>
-<p id="p-830">We may find a hyperbolic line \(L\) about which \(x\) gets reflected to the origin. Such a hyperbolic line is constructed in the proof of <a class="xref" data-knowl="./knowl/th_hyptrans.html" title="Theorem 5.1.3">Theorem 5.1.3</a>. Recall, the line \(L\) is on the circle centered at \(x^*\) (the point symmetric to \(x\) with respect to to \(\mathbb{S}^1_\infty\)) that goes through the points at which \(\mathbb{S}^1_\infty\) intersects the circle with diameter \(0x^*\text{.}\) Let \(x + h\) be a point near \(x\) on the positive real axis, and suppose \(x + h\) gets inverted to the point \(w\text{,}\) as depicted in <a class="xref" data-knowl="./knowl/fig-xto0.html" title="Figure 5.3.1">Figure 5.3.1</a>. One can show (in <a class="xref" data-knowl="./knowl/ex_5point3point1.html" title="Exercise 5.3.1">Exercise 5.3.1</a>) that</p>
+<p id="p-830">Perhaps the least obvious of the features listed is the last one. One theme of this text is that locally, on small scales, non-Euclidean geometry behaves much like Euclidean geometry. A small segment in the hyperbolic plane is approximated to the first order by a Euclidean segment. Small hyperbolic triangles look like Euclidean triangles and hyperbolic angles correspond to Euclidean angles; the hyperbolic distance formula will fit with this theme.</p>
+<p id="p-831">To find the distance function, start with a point's distance from the origin. Given a point \(z\) in \(\mathbb{D}\text{,}\) rotate about 0 so that \(z\) gets sent to the point \(x = |z|\) on the positive real axis.</p>
+<p id="p-832">We may find a hyperbolic line \(L\) about which \(x\) gets reflected to the origin. Such a hyperbolic line is constructed in the proof of <a class="xref" data-knowl="./knowl/th_hyptrans.html" title="Theorem 5.1.3">Theorem 5.1.3</a>. Recall, the line \(L\) is on the circle centered at \(x^*\) (the point symmetric to \(x\) with respect to to \(\mathbb{S}^1_\infty\)) that goes through the points at which \(\mathbb{S}^1_\infty\) intersects the circle with diameter \(0x^*\text{.}\) Let \(x + h\) be a point near \(x\) on the positive real axis, and suppose \(x + h\) gets inverted to the point \(w\text{,}\) as depicted in <a class="xref" data-knowl="./knowl/fig-xto0.html" title="Figure 5.3.1">Figure 5.3.1</a>. One can show (in <a class="xref" data-knowl="./knowl/ex_5point3point1.html" title="Exercise 5.3.1">Exercise 5.3.1</a>) that</p>
 <div class="displaymath">
 \begin{equation*}
 w = \frac{-h}{1 - x^2 - hx}\text{.}
 \end{equation*}
 </div>
 <figure class="figure figure-like" id="fig-xto0"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-xto0.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.1<span class="period">.</span></span><span class="space"> </span>Reflection of the hyperbolic plane sending \(x\) to 0 and \(x+h\) to \(w\text{.}\)</figcaption></figure><p id="p-831">If distance is to be preserved by transformations in \({\cal H}\text{,}\)</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.1<span class="period">.</span></span><span class="space"> </span>Reflection of the hyperbolic plane sending \(x\) to 0 and \(x+h\) to \(w\text{.}\)</figcaption></figure><p id="p-833">If distance is to be preserved by transformations in \({\cal H}\text{,}\)</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(x,x+h) = d_H(0,w) \tag{1}\text{.}
 \end{equation*}
 </div>
-<p id="p-832">Also, \(0, x\text{,}\) and \(x+h\) are all on the same hyperbolic line (the real axis), so assuming \(h &gt; 0\)</p>
+<p id="p-834">Also, \(0, x\text{,}\) and \(x+h\) are all on the same hyperbolic line (the real axis), so assuming \(h &gt; 0\)</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(0,x)+d_H(x,x+h) = d_H(0,x+h) \tag{2}\text{.}
 \end{equation*}
 </div>
-<p id="p-833">For \(x \in \mathbb{R}\) define the function \(d(x) = d_H(0,x)\) which is the hyperbolic distance of \(x\) to the origin. Then (2) and (1) may be combined to give</p>
+<p id="p-835">For \(x \in \mathbb{R}\) define the function \(d(x) = d_H(0,x)\) which is the hyperbolic distance of \(x\) to the origin. Then (2) and (1) may be combined to give</p>
 <div class="displaymath">
 \begin{equation*}
 d(x+h)-d(x)=d(w)\text{.}
 \end{equation*}
 </div>
-<p id="p-834">Divide both sides by \(h\) to get</p>
+<p id="p-836">Divide both sides by \(h\) to get</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{d(x+h)-d(x)}{h}=\frac{d(w)}{h}\text{.}
 \end{equation*}
 </div>
-<p id="p-835">As \(h \to 0\) we obtain</p>
+<p id="p-837">As \(h \to 0\) we obtain</p>
 <div class="displaymath">
 \begin{equation*}
 d^\prime(x) = \lim_{h \to 0}
 \frac{d(w)}{h}\text{.}
 \end{equation*}
 </div>
-<p id="p-836">We now interrupt this derivation with an important point. In the limit for small \(w\text{,}\) the hyperbolic distance of \(w\) from 0, \(d(w)\text{,}\) is proportional to the Euclidean distance \(|w - 0| = |w|\text{.}\) Since \(w\) is the image of \(x+h\) under the inversion and \(x\) gets inverted to 0, it follows that \(w \to 0\) as \(h \to 0\text{.}\) So, we assume that</p>
+<p id="p-838">We now interrupt this derivation with an important point. In the limit for small \(w\text{,}\) the hyperbolic distance of \(w\) from 0, \(d(w)\text{,}\) is proportional to the Euclidean distance \(|w - 0| = |w|\text{.}\) Since \(w\) is the image of \(x+h\) under the inversion and \(x\) gets inverted to 0, it follows that \(w \to 0\) as \(h \to 0\text{.}\) So, we assume that</p>
 <div class="displaymath">
 \begin{equation*}
 \lim_{h \to 0} \frac{d(w)}{|w|} = k
@@ -236,7 +236,7 @@ d^\prime(x) \amp =  \lim_{h \to 0} \frac{d(w)}{h}\\
 \amp = \frac{2}{1-x^2}\text{.}
 \end{align*}
 </div>
-<p id="p-837">To get back to the distance function \(d(x)\) we integrate:</p>
+<p id="p-839">To get back to the distance function \(d(x)\) we integrate:</p>
 <div class="displaymath">
 \begin{align*}
 \int \frac{2}{1-x^2} ~dx \amp = \int \bigg( \frac{1}{1-x} + \frac{1}{1+x}\bigg)~dx \tag{partial~fractions}\\
@@ -245,29 +245,29 @@ d(x) \amp = \ln\left(\frac{1+x}{1-x}\right)\text{,}
 \end{align*}
 </div>
 <p data-braille="continuation">so we arrive at the following distance formula.</p>
-<p id="p-838"><article class="assemblage assemblage-like" id="assemblage-9"><h6 class="heading"><span class="title">The hyperbolic distance from 0 to \(z\).</span></h6>
-<p id="p-839">The hyperbolic distance from 0 to a point \(z\) in \(\mathbb{D}\) is</p>
+<p id="p-840"><article class="assemblage assemblage-like" id="assemblage-9"><h6 class="heading"><span class="title">The hyperbolic distance from 0 to \(z\).</span></h6>
+<p id="p-841">The hyperbolic distance from 0 to a point \(z\) in \(\mathbb{D}\) is</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(0,z) =
 \ln\left(\frac{1+|z|}{1-|z|}\right)\text{.}
 \end{equation*}
 </div></article></p>
-<p id="p-840">Notice that if \(z\) inches its way in \(\mathbb{D}\) out toward the circle at infinity (i.e., \(|z| \to 1\)), the hyperbolic distance from \(0\) to \(z\) approaches \(\infty\text{.}\) This is a good thing. Thinking of Euclid's postulates, this notion of distance satisfies one of our fundamental requirements: <em class="emphasis">One can produce a hyperbolic segment to any finite length.</em></p>
-<p id="p-841">To arrive at a general distance formula \(d_H(p,q)\text{,}\) observe something curious. The hyperbolic line through \(0\) and \(x\) has ideal points -1 and 1. Furthermore, the expression \((1+x)/(1-x)\) corresponds to the cross ratio of the points \(0\text{,}\) \(x\text{,}\) 1, and -1. In particular,</p>
+<p id="p-842">Notice that if \(z\) inches its way in \(\mathbb{D}\) out toward the circle at infinity (i.e., \(|z| \to 1\)), the hyperbolic distance from \(0\) to \(z\) approaches \(\infty\text{.}\) This is a good thing. Thinking of Euclid's postulates, this notion of distance satisfies one of our fundamental requirements: <em class="emphasis">One can produce a hyperbolic segment to any finite length.</em></p>
+<p id="p-843">To arrive at a general distance formula \(d_H(p,q)\text{,}\) observe something curious. The hyperbolic line through \(0\) and \(x\) has ideal points -1 and 1. Furthermore, the expression \((1+x)/(1-x)\) corresponds to the cross ratio of the points \(0\text{,}\) \(x\text{,}\) 1, and -1. In particular,</p>
 <div class="displaymath">
 \begin{equation*}
 (0,x;1,-1) = \frac{0 - 1}{0 + 1}\cdot  \frac{x + 1}{x - 1} = \frac{1 +
 x}{1 - x}\text{.}
 \end{equation*}
 </div>
-<p id="p-842">Thus,</p>
+<p id="p-844">Thus,</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(0,x) = \ln((0,x;1,-1))\text{.}
 \end{equation*}
 </div>
-<p id="p-843">We can now derive a general distance formula, assuming the invariance of distance under transformations in \({\cal H}\text{.}\) There is a transformation \(T\) in \({\cal H}\) that takes \(p\) to the origin and \(q\) to some spot on the positive real-axis, call this spot \(x\) (see <a class="xref" data-knowl="./knowl/fig-pqtoreal.html" title="Figure 5.3.2">Figure 5.3.2</a>). Thus,</p>
+<p id="p-845">We can now derive a general distance formula, assuming the invariance of distance under transformations in \({\cal H}\text{.}\) There is a transformation \(T\) in \({\cal H}\) that takes \(p\) to the origin and \(q\) to some spot on the positive real-axis, call this spot \(x\) (see <a class="xref" data-knowl="./knowl/fig-pqtoreal.html" title="Figure 5.3.2">Figure 5.3.2</a>). Thus,</p>
 <div class="displaymath">
 \begin{align*}
 d_H(p,q) \amp = d_H(T(p),T(q)) \tag{invariance of distance}\\
@@ -281,24 +281,24 @@ d_H(p,q) \amp = d_H(T(p),T(q)) \tag{invariance of distance}\\
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.2<span class="period">.</span></span><span class="space"> </span>To find the distance between \(p\) and \(q\text{,}\) we may first transform \(p\) to \(0\) and \(q\) to the positive real axis.</figcaption></figure></section><section class="subsection" id="subsection-1"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">A working formula for \(\mathbf{d_H(p,q)}\)</span>
 </h3>
-<p id="p-844">One may compute the hyperbolic distance between \(p\) and \(q\) by first finding the ideal points \(u\) and \(v\) of the hyperbolic line through \(p\) and \(q\) and then using the formula \(d_H(p,q)=\ln((p,q;u,v))\text{.}\) In practice, finding coordinates for these ideal points can be a difficult task, and it is often simpler to compute the distance between points by first moving one of them to the origin. (This simpler approach uses the fact that hyperbolic distance is preserved under transformations in \(\cal H\text{.}\) This fact will be proved shortly.)</p>
-<p id="p-845">One transformation in \({\cal H}\) that sends \(p\) to 0 has the form</p>
+<p id="p-846">One may compute the hyperbolic distance between \(p\) and \(q\) by first finding the ideal points \(u\) and \(v\) of the hyperbolic line through \(p\) and \(q\) and then using the formula \(d_H(p,q)=\ln((p,q;u,v))\text{.}\) In practice, finding coordinates for these ideal points can be a difficult task, and it is often simpler to compute the distance between points by first moving one of them to the origin. (This simpler approach uses the fact that hyperbolic distance is preserved under transformations in \(\cal H\text{.}\) This fact will be proved shortly.)</p>
+<p id="p-847">One transformation in \({\cal H}\) that sends \(p\) to 0 has the form</p>
 <div class="displaymath">
 \begin{equation*}
 T(z) = \frac{z-p}{1-\overline{p}z}\text{.}
 \end{equation*}
 </div>
-<p id="p-846">The map \(T\) sends \(q\) to some other point, \(T(q)\text{,}\) in \(\mathbb{D}\text{.}\) Assuming again that \(T\) preserves distance, it follows that \(d_H(p,q) = d_H(0,T(q))\text{,}\) and</p>
+<p id="p-848">The map \(T\) sends \(q\) to some other point, \(T(q)\text{,}\) in \(\mathbb{D}\text{.}\) Assuming again that \(T\) preserves distance, it follows that \(d_H(p,q) = d_H(0,T(q))\text{,}\) and</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(p,q) = \ln\left(\frac{1+|T(q)|}{1-|T(q)|}\right)\text{.}
 \end{equation*}
 </div>
-<p id="p-847">Making the substitution \(\displaystyle T(q) = \frac{q-p}{1-\overline{p}q}\) provides us with the following working formula for the hyperbolic distance between two points.</p>
+<p id="p-849">Making the substitution \(\displaystyle T(q) = \frac{q-p}{1-\overline{p}q}\) provides us with the following working formula for the hyperbolic distance between two points.</p>
 <article class="theorem theorem-like" id="thm_hypdist"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
 </h6>
-<p id="p-848">Given two points \(p\) and \(q\) in \(\mathbb{D}\text{,}\) the hyperbolic distance between them is</p>
+<p id="p-850">Given two points \(p\) and \(q\) in \(\mathbb{D}\text{,}\) the hyperbolic distance between them is</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(p,q) = 
@@ -307,22 +307,22 @@ d_H(p,q) =
 </div></article><article class="example example-like" id="example-43"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">The distance between two points.</span>
 </h6>
-<p id="p-849">For instance, suppose \(p = \frac{1}{2}i\text{,}\) \(q = \frac{1}{2} + \frac{1}{2}i\text{,}\) \(z = .95e^{i5\pi/6}\) and \(w=-.95\text{.}\) Then \(d_H(p,q) \approx 1.49\) units, while \(d_H(z,w) \approx 4.64 \) units.</p>
+<p id="p-851">For instance, suppose \(p = \frac{1}{2}i\text{,}\) \(q = \frac{1}{2} + \frac{1}{2}i\text{,}\) \(z = .95e^{i5\pi/6}\) and \(w=-.95\text{.}\) Then \(d_H(p,q) \approx 1.49\) units, while \(d_H(z,w) \approx 4.64 \) units.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-hyp-distances.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article></section><section class="subsection" id="subsection-2"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">The arc-length differential</span>
 </h3>
-<p id="p-850">Now that we can compute the distance between two points in the hyperbolic plane, we turn our attention to measuring the length of <em class="emphasis">any path</em> that takes us from \(p\) to \(q\text{.}\)</p>
+<p id="p-852">Now that we can compute the distance between two points in the hyperbolic plane, we turn our attention to measuring the length of <em class="emphasis">any path</em> that takes us from \(p\) to \(q\text{.}\)</p>
 <article class="definition definition-like" id="definition-19"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
 </h6>
-<p id="p-851">A <dfn class="terminology">smooth curve</dfn> is a differentiable map from an interval of real numbers to the plane</p>
+<p id="p-853">A <dfn class="terminology">smooth curve</dfn> is a differentiable map from an interval of real numbers to the plane</p>
 <div class="displaymath">
 \begin{equation*}
 \boldsymbol{r}: [a,b] \to \mathbb{C}
 \end{equation*}
 </div>
-<p data-braille="continuation">such that \(\boldsymbol{r}^\prime(t)\) exists for all \(t\) and never equals \(0\text{.}\)</p></article><p id="p-852">In the spirit of this text, we write \(\boldsymbol{r}(t) = x(t) + i y(t)\text{,}\) in which case \(\boldsymbol{r}^\prime(t) = x^\prime(t) + iy^\prime(t)\text{.}\)</p>
-<p id="p-853">Recall that in calculus we first approximate the Euclidean length of a given smooth curve \(\boldsymbol{r}(t) = x(t) + iy(t)\) by summing the contributions of small straight line segments having Euclidean length</p>
+<p data-braille="continuation">such that \(\boldsymbol{r}^\prime(t)\) exists for all \(t\) and never equals \(0\text{.}\)</p></article><p id="p-854">In the spirit of this text, we write \(\boldsymbol{r}(t) = x(t) + i y(t)\text{,}\) in which case \(\boldsymbol{r}^\prime(t) = x^\prime(t) + iy^\prime(t)\text{.}\)</p>
+<p id="p-855">Recall that in calculus we first approximate the Euclidean length of a given smooth curve \(\boldsymbol{r}(t) = x(t) + iy(t)\) by summing the contributions of small straight line segments having Euclidean length</p>
 <div class="displaymath">
 \begin{align*}
 \Delta s \amp = |\boldsymbol{r}(t+\Delta t) - \boldsymbol{r}(t)|\\
@@ -331,7 +331,7 @@ d_H(p,q) =
 \end{align*}
 </div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-arclength.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-854">As \(\Delta t \to 0\) we obtain the Euclidean arc-length differential</p>
+<p id="p-856">As \(\Delta t \to 0\) we obtain the Euclidean arc-length differential</p>
 <div class="displaymath">
 \begin{equation*}
 ds = \sqrt{(dx/dt)^2 + (dy/dt)^2}~dt\text{,}
@@ -343,7 +343,7 @@ ds = \sqrt{(dx/dt)^2 + (dy/dt)^2}~dt\text{,}
 ds = |\boldsymbol{r}^\prime(t)|~dt\text{.}
 \end{equation*}
 </div>
-<p id="p-855">For instance, we may compute the (Euclidean) circumference of a circle with radius \(a\) as follows.  Consider \(\boldsymbol{r}: [0, 2\pi] \to \mathbb{C}\) by \(\boldsymbol{r}(t) = a \cos(t) + i a \sin(t)\text{.}\) This map traces a circle of radius \(a\) centered at the origin. To find the length of this curve, which we denote as \({\cal L}(\boldsymbol{r})\text{,}\) compute the integral</p>
+<p id="p-857">For instance, we may compute the (Euclidean) circumference of a circle with radius \(a\) as follows.  Consider \(\boldsymbol{r}: [0, 2\pi] \to \mathbb{C}\) by \(\boldsymbol{r}(t) = a \cos(t) + i a \sin(t)\text{.}\) This map traces a circle of radius \(a\) centered at the origin. To find the length of this curve, which we denote as \({\cal L}(\boldsymbol{r})\text{,}\) compute the integral</p>
 <div class="displaymath">
 \begin{align*}
 {\cal L}(\boldsymbol{r}) \amp = \int_0^{2\pi} |\boldsymbol{r}^\prime(t)|~dt\\
@@ -353,7 +353,7 @@ ds = |\boldsymbol{r}^\prime(t)|~dt\text{.}
 \amp = 2\pi a\text{.}
 \end{align*}
 </div>
-<p id="p-856">In the hyperbolic plane, we may deduce the arc-length differential by a similar argument. Suppose \(\boldsymbol{r}\) is a smooth curve in \(\mathbb{D}\) given by \(\boldsymbol{r}(t) = x(t) + iy(t)\text{,}\) for \(a \leq t \leq b\text{.}\) One may approximate the length of a tiny portion of the curve, say from \(\boldsymbol{r}(t)\) to \(\boldsymbol{r}(t + \Delta t)\text{,}\) by the hyperbolic distance between these two points, \(d_H(\boldsymbol{r}(t), \boldsymbol{r}(t + \Delta t))\text{.}\) To compute this distance, we first send the point \(\boldsymbol{r}(t)\) to 0 by the transformation</p>
+<p id="p-858">In the hyperbolic plane, we may deduce the arc-length differential by a similar argument. Suppose \(\boldsymbol{r}\) is a smooth curve in \(\mathbb{D}\) given by \(\boldsymbol{r}(t) = x(t) + iy(t)\text{,}\) for \(a \leq t \leq b\text{.}\) One may approximate the length of a tiny portion of the curve, say from \(\boldsymbol{r}(t)\) to \(\boldsymbol{r}(t + \Delta t)\text{,}\) by the hyperbolic distance between these two points, \(d_H(\boldsymbol{r}(t), \boldsymbol{r}(t + \Delta t))\text{.}\) To compute this distance, we first send the point \(\boldsymbol{r}(t)\) to 0 by the transformation</p>
 <div class="displaymath">
 \begin{equation*}
 T(z) = \frac{z-\boldsymbol{r}(t)}{1-\overline{\boldsymbol{r}(t)}z}\text{,}
@@ -365,7 +365,7 @@ T(z) = \frac{z-\boldsymbol{r}(t)}{1-\overline{\boldsymbol{r}(t)}z}\text{,}
 d_H(\boldsymbol{r}(t),\boldsymbol{r}(t+\Delta t)) = \ln[1 + |T(\boldsymbol{r}(t+\Delta t))|]-\ln[1 - |T(\boldsymbol{r}(t+\Delta t))|]\text{.}
 \end{equation*}
 </div>
-<p id="p-857">To arrive at an arc-length differential, we want to let \(\Delta t\) approach 0. As this happens, \(T(\boldsymbol{r}(t+\Delta t))\) approaches \(T(\boldsymbol{r}(t))\text{,}\) which is 0. From calculus we also know that \(\ln(1+x) \approx x\) for \(x\) very close to 0. Thus, for small \(\Delta t\text{,}\) we have</p>
+<p id="p-859">To arrive at an arc-length differential, we want to let \(\Delta t\) approach 0. As this happens, \(T(\boldsymbol{r}(t+\Delta t))\) approaches \(T(\boldsymbol{r}(t))\text{,}\) which is 0. From calculus we also know that \(\ln(1+x) \approx x\) for \(x\) very close to 0. Thus, for small \(\Delta t\text{,}\) we have</p>
 <div class="displaymath">
 \begin{align*}
 d_H(\boldsymbol{r}(t),\boldsymbol{r}(t+\Delta t)) \amp \approx |T(\boldsymbol{r}(t+\Delta t))| + |T(\boldsymbol{r}(t+\Delta t))|\\
@@ -373,71 +373,71 @@ d_H(\boldsymbol{r}(t),\boldsymbol{r}(t+\Delta t)) \amp \approx |T(\boldsymbol{r}
 \amp =2\cdot  \frac{\left|\frac{\boldsymbol{r}(t+\Delta t) - \boldsymbol{r}(t)}{\Delta t}\right|}{|1 - \overline{\boldsymbol{r}(t)}\boldsymbol{r}(t+\Delta t)|}\cdot | \Delta t |\text{.}
 \end{align*}
 </div>
-<p id="p-858">Now, as \(\Delta t \to 0\text{,}\) the numerator in the above quotient goes to \(|\boldsymbol{r}^\prime(t)|\) and the denominator goes to \(1 - |\boldsymbol{r}(t)|^2\text{,}\) and we arrive at the following hyperbolic arc-length differential.</p>
+<p id="p-860">Now, as \(\Delta t \to 0\text{,}\) the numerator in the above quotient goes to \(|\boldsymbol{r}^\prime(t)|\) and the denominator goes to \(1 - |\boldsymbol{r}(t)|^2\text{,}\) and we arrive at the following hyperbolic arc-length differential.</p>
 <article class="definition definition-like" id="definition-20"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span>
 </h6>
-<p id="p-859">If \(\boldsymbol{r}: [a,b] \to \mathbb{D}\) is a smooth curve in the hyperbolic plane, define the <dfn class="terminology">length of \(\boldsymbol{r}\)</dfn>, denoted \({\cal L}(\boldsymbol{r})\text{,}\) to be</p>
+<p id="p-861">If \(\boldsymbol{r}: [a,b] \to \mathbb{D}\) is a smooth curve in the hyperbolic plane, define the <dfn class="terminology">length of \(\boldsymbol{r}\)</dfn>, denoted \({\cal L}(\boldsymbol{r})\text{,}\) to be</p>
 <div class="displaymath">
 \begin{equation*}
 {\cal L}(\boldsymbol{r}) = \int_a^b \frac{2}{1 - |\boldsymbol{r}(t)|^2}~|\boldsymbol{r}^\prime(t)|dt\text{.}
 \end{equation*}
-</div></article><p id="p-860">One can immediately check that the hyperbolic distance between two points in \(\mathbb{D}\) corresponds to the length of the hyperbolic line segment connecting them.</p>
+</div></article><p id="p-862">One can immediately check that the hyperbolic distance between two points in \(\mathbb{D}\) corresponds to the length of the hyperbolic line segment connecting them.</p>
 <article class="theorem theorem-like" id="thm_hyplngthinv"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
 </h6>
-<p id="p-861">The arc-length defined above is an invariant of hyperbolic geometry. That is, if \(\boldsymbol{r}\) is a smooth curve in \(\mathbb{D}\text{,}\) and \(T\) is any transformation in \(\cal H\text{,}\) then \({\cal L}(\boldsymbol{r}) = {\cal L}(T(\boldsymbol{r}))\text{.}\)</p></article><p id="p-862">The proof of this theorem is left as an exercise. One can prove that hyperbolic reflections preserve arc-length as well. This should come as no surprise, given the construction of the distance formula at the start of this section. Still, one can prove this fact from our definition of arc-length (<a class="xref" data-knowl="./knowl/hmk_hypreflectdist.html" title="Exercise 5.3.6">Exercise 5.3.6</a>). Thus, all hyperbolic reflections and all transformations in \(\cal H\) are <dfn class="terminology">hyperbolic isometries</dfn>: they preserve the hyperbolic distance between points in \(\mathbb{D}\text{.}\)</p>
-<p id="p-863">Another consequence of the invariance of distance, when applied to hyperbolic rotations, is the following:</p>
+<p id="p-863">The arc-length defined above is an invariant of hyperbolic geometry. That is, if \(\boldsymbol{r}\) is a smooth curve in \(\mathbb{D}\text{,}\) and \(T\) is any transformation in \(\cal H\text{,}\) then \({\cal L}(\boldsymbol{r}) = {\cal L}(T(\boldsymbol{r}))\text{.}\)</p></article><p id="p-864">The proof of this theorem is left as an exercise. One can prove that hyperbolic reflections preserve arc-length as well. This should come as no surprise, given the construction of the distance formula at the start of this section. Still, one can prove this fact from our definition of arc-length (<a class="xref" data-knowl="./knowl/hmk_hypreflectdist.html" title="Exercise 5.3.6">Exercise 5.3.6</a>). Thus, all hyperbolic reflections and all transformations in \(\cal H\) are <dfn class="terminology">hyperbolic isometries</dfn>: they preserve the hyperbolic distance between points in \(\mathbb{D}\text{.}\)</p>
+<p id="p-865">Another consequence of the invariance of distance, when applied to hyperbolic rotations, is the following:</p>
 <article class="corollary theorem-like" id="corollary-3"><h6 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.3.8</span><span class="period">.</span>
 </h6>
-<p id="p-864">All points on a hyperbolic circle centered at \(p\) are equidistant from \(p\text{.}\)</p></article><article class="hiddenproof" id="proof-32"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-32"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><p id="p-865">Suppose \(u\) and \(v\) are on the same hyperbolic circle centered at \(p\text{.}\) That is, these points are on the same type II cline with respect to \(p\) and \(p^*\text{,}\) so there exists a hyperbolic rotation that fixes \(p\) and maps \(u\) to \(v\text{.}\) Thus, \(d_H(p,u) = d_H(T(p),T(u)) = d_H(p,v)\text{.}\)  It follows that any two points on the hyperbolic circle centered at \(p\) are equidistant from \(p\text{.}\)</p></article></div>
-<p id="p-866">We are now in a position to argue that in the hyperbolic plane, the <em class="emphasis">shortest path</em> (geodesic) connecting two points \(p\) and \(q\) is along the hyperbolic line through them.</p>
+<p id="p-866">All points on a hyperbolic circle centered at \(p\) are equidistant from \(p\text{.}\)</p></article><article class="hiddenproof" id="proof-32"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-32"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><p id="p-867">Suppose \(u\) and \(v\) are on the same hyperbolic circle centered at \(p\text{.}\) That is, these points are on the same type II cline with respect to \(p\) and \(p^*\text{,}\) so there exists a hyperbolic rotation that fixes \(p\) and maps \(u\) to \(v\text{.}\) Thus, \(d_H(p,u) = d_H(T(p),T(u)) = d_H(p,v)\text{.}\)  It follows that any two points on the hyperbolic circle centered at \(p\) are equidistant from \(p\text{.}\)</p></article></div>
+<p id="p-868">We are now in a position to argue that in the hyperbolic plane, the <em class="emphasis">shortest path</em> (geodesic) connecting two points \(p\) and \(q\) is along the hyperbolic line through them.</p>
 <article class="theorem theorem-like" id="theorem-37"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.3.9</span><span class="period">.</span>
 </h6>
-<p id="p-867">Hyperbolic lines are geodesics; that is, the shortest path between two points in \((\mathbb{D},{\cal H})\) is along the hyperbolic segment between them.</p></article><p id="p-868"><em class="emphasis">Proof Sketch</em>: We first argue that the geodesic from 0 to a point \(c\) on the positive real axis is the real axis itself.</p>
-<p id="p-869">Suppose \(\boldsymbol{r}(t) = x(t) + iy(t)\) for \(a \leq t \leq b\text{,}\) is an arbitrary smooth curve from 0 to \(c\) (so \(\boldsymbol{r}(a) = 0\) and \(\boldsymbol{r}(b) = c\)).</p>
-<p id="p-870">Suppose further that \(x(t)\) is nondecreasing (if our path backtracks in the \(x\) direction, we claim the path cannot possibly be a geodesic). Then</p>
+<p id="p-869">Hyperbolic lines are geodesics; that is, the shortest path between two points in \((\mathbb{D},{\cal H})\) is along the hyperbolic segment between them.</p></article><p id="p-870"><em class="emphasis">Proof Sketch</em>: We first argue that the geodesic from 0 to a point \(c\) on the positive real axis is the real axis itself.</p>
+<p id="p-871">Suppose \(\boldsymbol{r}(t) = x(t) + iy(t)\) for \(a \leq t \leq b\text{,}\) is an arbitrary smooth curve from 0 to \(c\) (so \(\boldsymbol{r}(a) = 0\) and \(\boldsymbol{r}(b) = c\)).</p>
+<p id="p-872">Suppose further that \(x(t)\) is nondecreasing (if our path backtracks in the \(x\) direction, we claim the path cannot possibly be a geodesic). Then</p>
 <div class="displaymath">
 \begin{equation*}
 {\cal L}(\boldsymbol{r}) = \int_a^b\frac{2}{1-[(x(t))^2 +
 (y(t))^2]}\sqrt{(x^\prime(t))^2 + (y^\prime(t))^2}~dt.
 \end{equation*}
 </div>
-<p id="p-871">The hyperbolic line segment from 0 to \(c\) can be parameterized by \(\boldsymbol{r}_0(t) = x(t) + 0i\) for \(a \leq t \leq b\text{,}\) which has length</p>
+<p id="p-873">The hyperbolic line segment from 0 to \(c\) can be parameterized by \(\boldsymbol{r}_0(t) = x(t) + 0i\) for \(a \leq t \leq b\text{,}\) which has length</p>
 <div class="displaymath">
 \begin{equation*}
 {\cal L}(\boldsymbol{r}_0) =
 \int_a^b\frac{2}{1-[x(t)]^2}\sqrt{(x^\prime(t))^2}~dt\text{.}
 \end{equation*}
 </div>
-<p id="p-872">The curve \(\boldsymbol{r}_0\) is essentially the shadow of \(\boldsymbol{r}\) on the real axis.</p>
-<p id="p-873">One can compare the integrands directly to see that \({\cal L}(\boldsymbol{r}) \geq {\cal L}(\boldsymbol{r}_0)\text{.}\)</p>
-<p id="p-874">Since transformations in \({\cal H}\) preserve arc-length and hyperbolic lines, it follows that the shortest path between any two points in \(\mathbb{D}\) is along the hyperbolic line through them.</p>
+<p id="p-874">The curve \(\boldsymbol{r}_0\) is essentially the shadow of \(\boldsymbol{r}\) on the real axis.</p>
+<p id="p-875">One can compare the integrands directly to see that \({\cal L}(\boldsymbol{r}) \geq {\cal L}(\boldsymbol{r}_0)\text{.}\)</p>
+<p id="p-876">Since transformations in \({\cal H}\) preserve arc-length and hyperbolic lines, it follows that the shortest path between any two points in \(\mathbb{D}\) is along the hyperbolic line through them.</p>
 <article class="corollary theorem-like" id="corollary-4"><h6 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.3.10</span><span class="period">.</span>
 </h6>
-<p id="p-875">The hyperbolic distance function is a metric on the hyperbolic plane. In particular, for any points \(p,q,u\) in \(\mathbb{D}\)</p>
+<p id="p-877">The hyperbolic distance function is a metric on the hyperbolic plane. In particular, for any points \(p,q,u\) in \(\mathbb{D}\)</p>
 <ol class="decimal">
 <li id="li-174">\(d_H(p,q) \geq 0\text{,}\) and \(d_H(p,q)=0\) if and only if \(p = q\text{;}\)</li>
 <li id="li-175">\(d_H(p,q) = d_H(q,p)\text{;}\) and</li>
 <li id="li-176">\(d_H(p,q)+d_H(q,u) \geq d_H(p,u)\text{.}\)</li>
-</ol></article><article class="hiddenproof" id="proof-33"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-33"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-33"><article class="hiddenproof"><p id="p-876">Recall our formula for the hyperbolic distance between two points in <a class="xref" data-knowl="./knowl/thm_hypdist.html" title="Theorem 5.3.3">Theorem 5.3.3</a>:</p>
+</ol></article><article class="hiddenproof" id="proof-33"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-33"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-33"><article class="hiddenproof"><p id="p-878">Recall our formula for the hyperbolic distance between two points in <a class="xref" data-knowl="./knowl/thm_hypdist.html" title="Theorem 5.3.3">Theorem 5.3.3</a>:</p>
 <div class="displaymath">
 \begin{equation*}
 d_H(p,q) = \ln\left[\frac{|1-\overline{p}q|+|q-p|}{|1-\overline{p}q|-|q-p|}\right].
 \end{equation*}
 </div>
-<p id="p-877">This expression is always non-negative because the quotient inside the natural log is always greater than or equal to 1. In fact, the expression equals 1 (so that the distance equals 0) if and only if \(p = q\text{.}\)</p>
-<p id="p-878">Note further that this formula is symmetric. Interchanging \(p\) and \(q\) leaves the distance unchanged.</p>
-<p id="p-879">Finally, the hyperbolic distance formula satisfies the triangle inequality because hyperbolic lines are geodesics.</p></article></div>
+<p id="p-879">This expression is always non-negative because the quotient inside the natural log is always greater than or equal to 1. In fact, the expression equals 1 (so that the distance equals 0) if and only if \(p = q\text{.}\)</p>
+<p id="p-880">Note further that this formula is symmetric. Interchanging \(p\) and \(q\) leaves the distance unchanged.</p>
+<p id="p-881">Finally, the hyperbolic distance formula satisfies the triangle inequality because hyperbolic lines are geodesics.</p></article></div>
 <article class="example example-like" id="example-44"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.11</span><span class="period">.</span><span class="space"> </span><span class="title">Two paths from \(\boldsymbol{p}\) to \(\boldsymbol{q}\).</span>
 </h6>
-<p id="p-880">Two paths from \(p = .5i\) to \(q = .5+.5i\) are shown below: the (solid) hyperbolic segment from \(p\) to \(q\text{,}\) and the (dashed) path \(\boldsymbol{r}\) that looks like a Euclidean segment.  Which path is shorter?</p>
-<p id="p-881">We may compute the length of the hyperbolic segment connecting \(p\) and \(q\) with the distance formula from <a class="xref" data-knowl="./knowl/thm_hypdist.html" title="Theorem 5.3.3">Theorem 5.3.3</a>.  This distance is approximately 1.49 units.</p>
-<p id="p-882">By contrast, consider the path in \(\mathbb{D}\) corresponding to the Euclidean line segment from \(p\) to \(q\text{.}\) This path may be described by \(\boldsymbol{r}(t) = t + \frac{1}{2}i\) for \(0 \leq t \leq \frac{1}{2}\text{.}\)  Then \(\boldsymbol{r}^\prime(t) = 1\) and</p>
+<p id="p-882">Two paths from \(p = .5i\) to \(q = .5+.5i\) are shown below: the (solid) hyperbolic segment from \(p\) to \(q\text{,}\) and the (dashed) path \(\boldsymbol{r}\) that looks like a Euclidean segment.  Which path is shorter?</p>
+<p id="p-883">We may compute the length of the hyperbolic segment connecting \(p\) and \(q\) with the distance formula from <a class="xref" data-knowl="./knowl/thm_hypdist.html" title="Theorem 5.3.3">Theorem 5.3.3</a>.  This distance is approximately 1.49 units.</p>
+<p id="p-884">By contrast, consider the path in \(\mathbb{D}\) corresponding to the Euclidean line segment from \(p\) to \(q\text{.}\) This path may be described by \(\boldsymbol{r}(t) = t + \frac{1}{2}i\) for \(0 \leq t \leq \frac{1}{2}\text{.}\)  Then \(\boldsymbol{r}^\prime(t) = 1\) and</p>
 <div class="displaymath">
 \begin{align*}
 {\cal L}(\boldsymbol{r}) \amp =
@@ -445,29 +445,29 @@ d_H(p,q) = \ln\left[\frac{|1-\overline{p}q|+|q-p|}{|1-\overline{p}q|-|q-p|}\righ
 \amp \approx 1.52\text{.}
 \end{align*}
 </div>
-<p id="p-883">It is no surprise that the hyperbolic segment connecting \(p\) to \(q\) is a shorter path in \((\mathbb{D},{\cal H})\) than the Euclidean line segment connecting them.</p>
+<p id="p-885">It is no surprise that the hyperbolic segment connecting \(p\) to \(q\) is a shorter path in \((\mathbb{D},{\cal H})\) than the Euclidean line segment connecting them.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-workhypdist.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><article class="example example-like" id="ex_perpbisector"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Perpendicular bisectors in \((\mathbb{D},{\cal H})\).</span>
 </h6>
-<p id="p-884">For any two points \(p\) and \(q\) in \(\mathbb{D}\text{,}\) we may construct the perpendicular bisector to hyperbolic segment \(pq\) by following the construction in Euclidean geometry. Construct both the hyperbolic circle centered at \(p\) that goes through \(q\) and the hyperbolic circle centered at \(q\) that goes through \(p\text{.}\) The hyperbolic line through the two points of intersection of these circles is the perpendicular bisector to segment \(pq\text{,}\) labeled \(L\) in the following diagram.</p>
-<p id="p-885">Hyperbolic reflection about \(L\) maps \(p\) to \(q\) and \(q\) to \(p\text{.}\) Since hyperbolic reflections preserve hyperbolic distances, each point on \(L\) is hyperbolic equidistant from \(p\) and \(q\text{.}\) That is, for each \(z\) on \(L\text{,}\) \(d_H(z,p)=d_H(z,q)\text{.}\)</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-perpbisector.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-886">In Euclidean geometry one uses perpendicular bisectors to construct the circle through three noncollinear points. This construction can break down in hyperbolic geometry. Consider the three points \(p, q\text{,}\) and \(r\) in <a class="xref" data-knowl="./knowl/fig-nocircle.html" title="Figure 5.3.13">Figure 5.3.13</a>.  The corresponding perpendicular bisectors do not intersect. There is no point in \(\mathbb{D}\) hyperbolic equidistant from all three of these points. In particular, in hyperbolic geometry, there need not be a hyperbolic circle through three noncollinear points.</p>
+<p id="p-886">For any two points \(p\) and \(q\) in \(\mathbb{D}\text{,}\) we may construct the perpendicular bisector to hyperbolic segment \(pq\) by following the construction in Euclidean geometry. Construct both the hyperbolic circle centered at \(p\) that goes through \(q\) and the hyperbolic circle centered at \(q\) that goes through \(p\text{.}\) The hyperbolic line through the two points of intersection of these circles is the perpendicular bisector to segment \(pq\text{,}\) labeled \(L\) in the following diagram.</p>
+<p id="p-887">Hyperbolic reflection about \(L\) maps \(p\) to \(q\) and \(q\) to \(p\text{.}\) Since hyperbolic reflections preserve hyperbolic distances, each point on \(L\) is hyperbolic equidistant from \(p\) and \(q\text{.}\) That is, for each \(z\) on \(L\text{,}\) \(d_H(z,p)=d_H(z,q)\text{.}\)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-perpbisector.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div></article><p id="p-888">In Euclidean geometry one uses perpendicular bisectors to construct the circle through three noncollinear points. This construction can break down in hyperbolic geometry. Consider the three points \(p, q\text{,}\) and \(r\) in <a class="xref" data-knowl="./knowl/fig-nocircle.html" title="Figure 5.3.13">Figure 5.3.13</a>.  The corresponding perpendicular bisectors do not intersect. There is no point in \(\mathbb{D}\) hyperbolic equidistant from all three of these points. In particular, in hyperbolic geometry, there need not be a hyperbolic circle through three noncollinear points.</p>
 <figure class="figure figure-like" id="fig-nocircle"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/im-nocircle.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3.13<span class="period">.</span></span><span class="space"> </span>Three noncollinear points need not determine a circle in hyperbolic geometry.</figcaption></figure></section><section class="exercises" id="exercises-16"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="ex_5point3point1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-887">Suppose \(0\lt  x \lt  1\) and \(L\) is a hyperbolic line about which \(x\) gets inverted to the origin. (Such an inversion was constructed in <a class="xref" data-knowl="./knowl/th_hyptrans.html" title="Theorem 5.1.3">Theorem 5.1.3</a>.) For a real number \(h\text{,}\) let \(w\) be the image of \(x+h\) under this inversion. Prove that \(w = \frac{-h}{1-x^2-hx}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-113"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-889">Determine a point in \(\mathbb{D}\) whose hyperbolic distance from the origin is 2,003,007.4 units.</p></article><article class="exercise exercise-like" id="exercise-114"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-891">Suppose \(L\) is any hyperbolic line, and \(C\) is any cline through the ideal points of \(L\text{.}\) For any point \(z\) on \(L\text{,}\) its perpendicular distance to \(C\) is the length of the hyperbolic segment from \(z\) to \(C\) that meets \(C\) at right angles. Prove that the perpendicular distance from \(C\) to \(L\) is the same at every point of \(L\text{.}\) Hint: Use the fact that distance is an invariant of hyperbolic geometry.</p></article><article class="exercise exercise-like" id="exercise-115"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-892">Determine the hyperbolic distance from the point \(p = 0.5\) to the point \(q = 0.25 + 0.5i\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-116"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-894">Prove <a class="xref" data-knowl="./knowl/thm_hyplngthinv.html" title="Theorem 5.3.7">Theorem 5.3.7</a>.</p></article><article class="exercise exercise-like" id="hmk_hypreflectdist"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-899">Hyperbolic reflections preserve distance in \((\mathbb{D},{\cal H})\)</p>
+<p id="p-889">Suppose \(0\lt  x \lt  1\) and \(L\) is a hyperbolic line about which \(x\) gets inverted to the origin. (Such an inversion was constructed in <a class="xref" data-knowl="./knowl/th_hyptrans.html" title="Theorem 5.1.3">Theorem 5.1.3</a>.) For a real number \(h\text{,}\) let \(w\) be the image of \(x+h\) under this inversion. Prove that \(w = \frac{-h}{1-x^2-hx}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-113"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-891">Determine a point in \(\mathbb{D}\) whose hyperbolic distance from the origin is 2,003,007.4 units.</p></article><article class="exercise exercise-like" id="exercise-114"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-893">Suppose \(L\) is any hyperbolic line, and \(C\) is any cline through the ideal points of \(L\text{.}\) For any point \(z\) on \(L\text{,}\) its perpendicular distance to \(C\) is the length of the hyperbolic segment from \(z\) to \(C\) that meets \(C\) at right angles. Prove that the perpendicular distance from \(C\) to \(L\) is the same at every point of \(L\text{.}\) Hint: Use the fact that distance is an invariant of hyperbolic geometry.</p></article><article class="exercise exercise-like" id="exercise-115"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-894">Determine the hyperbolic distance from the point \(p = 0.5\) to the point \(q = 0.25 + 0.5i\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-116"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-896">Prove <a class="xref" data-knowl="./knowl/thm_hyplngthinv.html" title="Theorem 5.3.7">Theorem 5.3.7</a>.</p></article><article class="exercise exercise-like" id="hmk_hypreflectdist"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
+<p id="p-901">Hyperbolic reflections preserve distance in \((\mathbb{D},{\cal H})\)</p>
 <ol class="lower-alpha">
 <li id="li-177">Use the definition of arc-length to prove that hyperbolic reflection about the real axis preserves arc-length.</li>
 <li id="li-178">Use part (a) and <a class="xref" data-knowl="./knowl/thm_hyplngthinv.html" title="Theorem 5.3.7">Theorem 5.3.7</a> to argue that hyperbolic reflection about any hyperbolic line preserves arc-length in \((\mathbb{D}, {\cal H})\text{.}\)</li>
 </ol></article><article class="exercise exercise-like" id="exercise-118"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-901">Suppose \(z_0\) is in the hyperbolic plane and \(r &gt; 0\text{.}\) Prove that the set \(C\) consisting of all points \(z\) in \(\mathbb{D}\) such that \(d_H(z,z_0) = r\) is a Euclidean circle.</p></article></section></section></div></main>
+<p id="p-903">Suppose \(z_0\) is in the hyperbolic plane and \(r &gt; 0\text{.}\) Prove that the set \(C\) consisting of all points \(z\) in \(\mathbb{D}\) such that \(d_H(z,z_0) = r\) is a Euclidean circle.</p></article></section></section></div></main>
 </div>
 <!--Start: StatCounter code--><script>
 var sc_project=11625953;

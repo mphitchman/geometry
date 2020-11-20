@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:31-07:00       *-->
+<!--*       on 2020-11-19T16:33:05-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,8 +15,16 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">\(\cal T\) has closure:  Suppose \(T_b\) and \(T_c\) are in \(\cal T\text{.}\)  Then \(T_b \circ T_c(z) = T_b(z + c) = (z+c)+b = z +
-(b+c)\text{.}\)  But this map is exactly the translation \(T_{b+c}\text{,}\) which is in \(\cal T\) since \(b + c \in \mathbb{C}\text{.}\)  Thus, the composition of two translations is again a translation.   Notationally, we have shown that \(T_b \circ T_c(z) = T_{b+c}(z)\text{.}\)</p>
+<p>To verify \(\cal T\) forms a group, we must check the three properties.</p>
+<ol class="decimal">
+<li><p xmlns:svg="http://www.w3.org/2000/svg">\(\cal T\) contains the identity:  Since \(0 \in \mathbb{C}\text{,}\) \({\cal T}\) contains \(T_0(z) = z + 0
+= z\text{,}\) which is the identity transformation of \(\mathbb{C}\text{.}\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">\(\cal T\) has closure:  Suppose \(T_b\) and \(T_c\) are in \(\cal T\text{.}\)  Then \(T_b \circ T_c(z) = T_b(z + c) = (z+c)+b = z +
+(b+c)\text{.}\)  But this map is exactly the translation \(T_{b+c}\text{,}\) which is in \(\cal T\) since \(b + c \in \mathbb{C}\text{.}\)  Thus, the composition of two translations is again a translation.   Notationally, we have shown that \(T_b \circ T_c(z) = T_{b+c}(z)\text{.}\)</p></li>
+<li><p xmlns:svg="http://www.w3.org/2000/svg">\(\cal T\) contains inverses:  Suppose \(T_b\) is in \(\cal T\text{,}\) and consider \(T_{-b}\text{,}\) which is in \(\cal T\) since \(-b \in \mathbb{C}\text{.}\)  Note that \(T_b \circ T_{-b}(z) = T_b(z
+- b) = (z - b)+b = z\text{,}\) and \(T_{-b}\circ T_b(z) = T_{-b}(z+b) = (z
++ b)-b  = z\text{.}\)  Thus, \(T_{-b}\) is the inverse of \(T_b\text{,}\) and this inverse is in \(\cal T\text{.}\)  Notationally, \(T^{-1}_b = T_{-b}\text{:}\) the inverse of translation by \(b\) is translation back by \(-b\text{.}\)</p></li>
+</ol>
 <span class="incontext"><a href="section4-1.html#p-653">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:46-07:00       *-->
+<!--*       on 2020-11-19T16:33:22-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,11 +15,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The length of a smooth curve \(\boldsymbol{r}(t)\) for \(a \leq t \leq b\) in the upper half-plane model \((\mathbb{U},{\cal U})\text{,}\) denoted \({\cal L}(\boldsymbol{r})\text{,}\) is given by</p>
+<p>Since \(z = V^{-1}(w) = \frac{iw+1}{w+i}\) we may work out the arc-length differential in terms of \(dw\text{.}\) We will need to take the derivative of a complex expression, which can be done just as if it were a real valued expression. Here we go:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-{\cal L}(\boldsymbol{r}) = \int_a^b \frac{|\boldsymbol{r}^\prime(t)|}{\text{Im}(\boldsymbol{r}(t))}~dt\text{.}
-\end{equation*}
+\begin{align*}
+ds \amp = \frac{2|dz|}{1-|z|^2}\\
+\amp =\frac{2|d\bigg(\frac{iw+1}{w+i}\bigg)|}{1-\bigg|\frac{iw+1}{w+i}
+\bigg|^2} \tag{$z = \frac{iw+1}{w+i}$}\\
+\amp =\frac{2|i(w+i)dw-(iw+1)dw|}{|w+i|^2}\bigg/\bigg[1-\frac{|iw+1|^2}{|w+i|^2}\bigg]\tag{chain rule}\\
+\amp = \frac{4|dw|}{|w+i|^2-|iw+1|^2}\\
+\amp =
+\frac{4|dw|}{(w+i)(\overline{w}-i)-(iw+1)(-i\overline{w}+1)}\\
+\amp = \frac{4|dw|}{2i(\overline{w}-w)}\\
+\amp = \frac{|dw|}{{ Im}(w)}\text{.}
+\end{align*}
 </div>
 <span class="incontext"><a href="section5-5.html#p-1023">in-context</a></span>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:25:13-07:00       *-->
+<!--*       on 2020-11-19T16:33:51-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,11 +16,11 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-|uv|^2 \amp= a^2x^2 + b^2y^2 + c^2z^2 + d^2w^2 + a^2y^2 + b^2x^2 + c^2w^2 + d^2z^2 \\
-\amp~~~+ a^2z^2 + b^2w^2 + c^2x^2+d^2y^2+ a^2w^2+b^2z^2+c^2y^2+d^2x^2\\
-\amp= a^2(x^2+y^2+z^2+w^2)+b^2(x^2+y^2+z^2+w^2)+c^2(x^2+y^2+z^2+w^2)+d^2(x^2+y^2+z^2+w^2)\\
-\amp= (a^2+b^2+c^2+d^2)(x^2+y^2+z^2+w^2)\\
-\amp= |u|^2|v|^2
+|uv|^2 \amp= (ax-by-cz-dw)^2+(ay + bx + cw - dz)^2 + (az - bw + cx + dy)^2 + (aw + bz - cy + dx)^2\\
+\amp= a^2x^2 + b^2y^2 + c^2z^2 + d^2w^2 - 2abxy - 2acxz - 2adxw + 2bcyz+ 2bdyw+2cdzw\\
+\amp~~~+ a^2y^2 + b^2x^2 + c^2w^2 + d^2z^2 + 2abxy + 2acyw-2adyz + 2bcxw - 2bdxz-2cdzw \\
+\amp~~~+ a^2z^2 + b^2w^2 + c^2x^2+d^2y^2 - 2abzw + 2acxz + 2adyz - 2bcxw- 2bdyw+2cdxy\\
+\amp~~~+ a^2w^2+b^2z^2+c^2y^2+d^2x^2+2abzw- 2acyw+2adxw-2bcyz+2bdxz-2cdxy
 \end{align*}
 </div>
 <span class="incontext"><a href="section8-1.html#mjx-eqn-mrow-588">in-context</a></span>

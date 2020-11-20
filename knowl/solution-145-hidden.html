@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:50-07:00       *-->
+<!--*       on 2020-11-19T16:33:28-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -33,5 +33,17 @@ T(z)\overline{T(z_a)} \amp= e^{i\theta}\frac{z - z_0}{1 + \overline{z_0}z}\cdot 
 \end{align*}
 </div>
 </li>
+<li>Suppose \(z\) and \(z_a\) are antipodal points and<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{1}{z}\text{.}
+\end{equation*}
+</div>We show \(T(z)\) and \(T(z_a)\) are antipodal.<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+T(z)\overline{T(z_a)} \amp= e^{i\theta}\frac{1}{z}\cdot e^{-i\theta}\frac{1}{\overline{z_a}}\\
+\amp= \frac{1}{z\cdot\overline{z_a}}\\
+-1\text{,}
+\end{align*}
+</div>since \(z\cdot\overline{z_a}=-1\text{.}\)</li>
+<li>Suppose \(p, q \in \mathbb{C}^+\text{.}\)  First we prove there exists a map in \(\cal S\) that sends \(p\) to the origin.  If \(p = \infty\text{,}\) the map \(T(z) = \frac{1}{z}\) sends \(p\) to \(0\text{,}\) and this map is in \(\cal S\) by part (c).  If \(p \neq \infty\text{,}\) the map \(T(z)=\frac{z-p}{1+\overline{p}z}\) sends \(p\) to \(0\text{,}\) and this map is in \(\cal S\) by part (b).  In either case, we have a map \(T\) in \(\cal S\) that sends \(p\) to \(0\text{.}\)  Then, we may rotate about the origin to fix the origin and move \(T(q)\) to the positive real axis.  This rotation is also in \(\cal S\text{,}\) so the composition will be too, and we have a map in \(\cal S\) sending \(p\) to \(0\) and \(q\) to the positive real axis.</li>
 </ol></div></body>
 </html>

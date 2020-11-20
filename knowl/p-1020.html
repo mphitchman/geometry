@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:46-07:00       *-->
+<!--*       on 2020-11-19T16:33:22-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,11 +15,10 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>We now derive the hyperbolic arc-length differential for the upper half-plane model working once again through the disk model. Recall the arc-length differential in the disk model is</p>
+<p>By the transformation \(V^{-1}\) we send \(w_1\) and \(w_2\) back to \(\mathbb{D}\text{.}\)  We let \(z_1 = V^{-1}(w_1)\) and \(z_2 = V^{-1}(w_2)\text{.}\)  Then, let \(S(z) = e^{i\theta}\frac{z-z_1}{1-\overline{z_1}z}\) be the transformation in \((\mathbb{D},{\cal H})\) that sends \(z_1\) to 0 with \(\theta\) chosen carefully so that \(z_2\) gets sent to the positive imaginary axis.  In fact, \(z_2\) gets sent to the point \(ki\) where \(k = |S(z_2)| = |S(V^{-1}(w_2))|\) (and \(0 \lt  k \lt  1\)). Then, applying \(V\) to the situation, \(0\) gets sent to \(i\) and \(ki\) gets sent to \(\frac{1+k}{1-k}i\text{.}\) Thus, \(V \circ S \circ V^{-1}\) sends \(w_1\) to \(i\) and \(w_2\) to \(\frac{1+k}{1-k}i\text{,}\) where by the previous example the distance between the points is known:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-ds =
-\frac{2|dz|}{1-|z|^2}\text{.}
+d_U(w_1,w_2) = \ln(1+k) - \ln(1-k)\text{.}
 \end{equation*}
 </div>
 <span class="incontext"><a href="section5-5.html#p-1020">in-context</a></span>

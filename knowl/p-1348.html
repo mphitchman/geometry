@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:25:00-07:00       *-->
+<!--*       on 2020-11-19T16:33:38-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,29 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">As we have seen, these geometries manifest themselves in strikingly different ways. If \(k \gt 0\text{,}\) the sum of the angles of a triangle must be greater than \(\pi\text{;}\) and if \(k \lt  0\) the sum of the angles of a triangle must be less than \(\pi\text{.}\) If \(k \gt 0\) the space \(X_k = \mathbb{P}^2_k\) has finite area; if \(k \lt  0\text{,}\) \(X_k = \mathbb{D}_k\) has infinite area. If \(k \gt 0\) the circumference of a circle with radius \(r\) is less than \(2\pi r\text{;}\) if \(k \lt  0\) the circumference is greater than \(2\pi r\text{.}\)</p>
+<p>For each real number \(k\) the <dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">geometry \(\boldsymbol{(X_k,G_k)}\)</dfn> has space</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+X_k =
+\begin{cases}
+\mathbb{D}_k \amp  \text{ if \(k \lt 0\); }  \\
+\mathbb{C} \amp  \text{ if \(k = 0\); }  \\
+\mathbb{P}^2_k \amp  \text{ if \(k \gt 0\), }
+\end{cases} 
+\end{equation*}
+</div>
+<p data-braille="continuation">and group of transformations \(G_k\) consisting of all Möbius transformations of the form</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+T(z) = e^{i\theta}\frac{z-z_0}{1+k\overline{z_0}z}\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(\theta \in \mathbb{R}\) and \(z_0\) is a point in \(X_k\text{.}\)  Moreover, the unique line through two points \(p\) and \(q\) in \((X_k,G_k)\) is the unique cline through the points \(p, q\text{,}\) and \(-1/(k\overline{p})\text{.}\)  A smooth curve \(\boldsymbol{r}:[a,b]\to X_k\) has arc-length given by</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{r}) = \int_a^b \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt\text{.}
+\end{equation*}
+</div>
 <span class="incontext"><a href="section7-4.html#p-1348">in-context</a></span>
 </body>
 </html>

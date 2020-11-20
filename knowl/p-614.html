@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:29-07:00       *-->
+<!--*       on 2020-11-19T16:33:03-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,25 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Suppose a Möbius transformation \(T\) has the following property: There are distinct points \(a, b, c\) in the complex plane \(\mathbb{C}\) such that \(T(a) = b, T(b) = c, T(c) = a\text{.}\)</p>
+<p>Suppose \(T(T(z)) = z\text{.}\)  If \(T\) isn't the identity then \(T\) fixes one or two points.  If \(T\) fixes two points, it has normal form</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{T(z) - p}{T(z)-q}=\lambda\frac{z-p}{z-q}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Plug in \(T(z)\) for \(z\) to see</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{z-p}{z-q} = \lambda\frac{T(z) - p}{T(z)-q}
+\end{equation*}
+</div>
+<p data-braille="continuation">which implies that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{z-p}{z-q} = \lambda\bigg[\lambda\frac{z-p}{z-q}\bigg]
+\end{equation*}
+</div>
+<p data-braille="continuation">which means that \(\lambda^2 = 1\) so that \(|\lambda| = 1\) and \(T\) is elliptic.</p>
 <span class="incontext"><a href="section3-5.html#p-614">in-context</a></span>
 </body>
 </html>

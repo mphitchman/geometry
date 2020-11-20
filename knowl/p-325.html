@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:18-07:00       *-->
+<!--*       on 2020-11-19T16:32:51-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Reflection about the horizontal line \(y = k\) is obtained by translating the horizontal line to the \(x\)-axis, reflecting about the \(x\)-axis, and translating back. The map is given by \(T(z) = \overline{z - ki} + ki = \overline{z}+2ki\text{.}\)</p>
+<p>First translate the line \(x = k\) to the \(y\)-axis, then rotate by \(-\pi/2\text{,}\) sending the \(y\)-axis to the \(x\)-axis. Then reflect across the \(x\)-axis, rotate back, and translate back:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+z \amp\mapsto z - k \amp \text{(translate)} \\
+\amp\mapsto e^{-i\pi/2}(z-k) \amp \text{(rotate)}\\
+\amp\mapsto \overline{e^{-i\pi/2}(z-k)} \amp \text{(reflect)}\\
+\amp= e^{i\pi/2}(\overline{z}-k) \\
+\amp\mapsto e^{i\pi/2}e^{i\pi/2}(\overline{z}-k) \amp \text{(rotate back)}\\
+\amp=-(\overline{z}-k) \amp (e^{i\pi} = -1)\\
+\amp\mapsto -(\overline{z}-k) + k \amp \text{(translate back)} \\
+\amp= 2k - \overline{z}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Thus reflection about the vertical line \(x = k\) is given by \(T(z) = 2k - \overline{z}\text{.}\)</p>
 <span class="incontext"><a href="section3-1.html#p-325">in-context</a></span>
 </body>
 </html>

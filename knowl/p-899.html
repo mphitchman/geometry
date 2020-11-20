@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:40-07:00       *-->
+<!--*       on 2020-11-19T16:33:15-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,24 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Hyperbolic reflections preserve distance in \((\mathbb{D},{\cal H})\)</p>
+<p>Then</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{s}(t)) = \int_a^b \frac{2|\boldsymbol{s}^\prime(t)|}{1 - |\boldsymbol{s}(t)|^2} ~dt\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the integrand equals</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\frac{2|\boldsymbol{s}^\prime(t)|}{1 - |\boldsymbol{s}(t)|^2} \amp= \frac{2\bigg|\frac{1-|\overline{z_0}|^2}{(1-\overline{z_0}\boldsymbol{r}(t))^2}\cdot \boldsymbol{r}^\prime(t)\bigg|}{1-\bigg|\frac{\boldsymbol{r}(t)-z_0}{1-\overline{z_0}\boldsymbol{r}(t)}\bigg|^2}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|\cdot\frac{1}{|1-\overline{z_0} \boldsymbol{r}(t)|^2}}{\frac{|1-\overline{z_0}\boldsymbol{r}(t)|^2 - |\boldsymbol{r}(t) - z_0|^2}{|1-\overline{z_0}\boldsymbol{r}(t)|^2}}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{|1-\overline{z_0}\boldsymbol{r}(t)|^2 - |\boldsymbol{r}(t) - z_0|^2}\\
+\amp=\frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{(1 - \overline{z_0}\boldsymbol{r}(t)-z_0\overline{\boldsymbol{r}(t)} + |z_0|^2|\boldsymbol{r}(t)|^2)-(|\boldsymbol{r}(t)|^2 - \boldsymbol{r}(t)\overline{z_0}- \overline{\boldsymbol{r}(t)}z_0 + |z_0|^2)}\\
+\amp=\frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{1 - |\boldsymbol{r}(t)|^2 - |z_0|^2 + |z_0|^2|\boldsymbol{r}(t)|^2}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|\cdot |1 - |z_0|^2|}{(1-|z_0|^2)(1-|\boldsymbol{r}(t)|^2)}\\
+\amp= \frac{2|\boldsymbol{r}^\prime(t)|}{1 - |\boldsymbol{r}(t)|^2}\text{.}
+\end{align*}
+</div>
 <span class="incontext"><a href="section5-3.html#p-899">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:40-07:00       *-->
+<!--*       on 2020-11-19T16:33:15-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,25 +15,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The set of all points in \(\mathbb{D}\) a hyperbolic distance \(r\) from \(z_0\) can be found as follows.  Suppose first \(z_0\) is at the origin in \(\mathbb{D}\text{.}\)  Any point \(z\) in \(\mathbb{D}\) has distance to the origin equal to</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+<ol class="lower-alpha">
+<li>If \(\boldsymbol{r}(t) = x(t) + i y(t)\) is a smooth curve in \(\mathbb{D}\) its image under reflection about the \(x\)-axis is \(\overline{\boldsymbol{r}(t)} = x(t) - i y(t)\text{,}\) and \(|\boldsymbol{r}(t)| = |\overline{\boldsymbol{r}(t)}|\text{.}\)  Moreover, \(\overline{\boldsymbol{r}^\prime(t)} = x^\prime(t) - i y^\prime(t)\) so \(|\boldsymbol{r}^\prime(t)| = |\overline{\boldsymbol{r}^\prime(t)}|\) and it follows that the the length of \(\boldsymbol{r}\) is equal to the length of \(\overline{\boldsymbol{r}}\text{.}\)</li>
+<li>Consider a hyperbolic line \(L\) and a smooth curve \(\boldsymbol{r}\) in \(\mathbb{D}\text{.}\) Let \(\overline{\boldsymbol{r}}\) denote the inversion of \(\boldsymbol{r}\) about \(L\text{.}\)  We want \({\cal L}(\boldsymbol{r}) = {\cal L}(\overline{\boldsymbol{r}})\text{.}\)  There exists a map \(T\) in \(\cal H\) that sends \(L\) to the real axis.  Since \(T\) is a Möbius transformation it preserves symmetry points, so \(T(\overline{\boldsymbol{r}})\) is reflection of \(T(\boldsymbol{r})\) across the real axis.  By part (a),<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-d_H(0,z)=\ln\left(\frac{1+|z|}{1-|z|}\right)\text{.}
+{\cal L}(T(\boldsymbol{r})) = {\cal L}(T(\overline{\boldsymbol{r}}))
+\end{equation*}
+</div>and by <a class="xref" data-knowl="./knowl/thm_hyplngthinv.html" title="Theorem 5.3.7">Theorem 5.3.7</a><div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{\cal L}(\boldsymbol{r}) = {\cal L}(\overline{\boldsymbol{r}})\text{.}
 \end{equation*}
 </div>
-<p data-braille="continuation">Thus, \(z\) is on \(C\) if and only if</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\ln\bigg(\frac{1+|z|}{1-|z|}\bigg) = r
-\end{equation*}
-</div>
-<p data-braille="continuation">which is true if and only if</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-|z| = \frac{e^r - 1}{e^r + 1}\text{.}
-\end{equation*}
-</div>
-<p data-braille="continuation">This collection of points is precisely a Euclidean circle centered at the origin.</p>
+</li>
+</ol>
 <span class="incontext"><a href="section5-3.html#p-902">in-context</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:25:01-07:00       *-->
+<!--*       on 2020-11-19T16:33:39-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Suppose \(k \in \mathbb{R}\text{.}\)  If \(k = 0\) the equation reduces to \(c^2 = a^2 + b^2\text{,}\) which is true by the <a class="xref" data-knowl="./knowl/thm-pythagoras.html" title="Theorem 1.2.1: The Pythagorean Theorem">Pythagorean Theorem 1.2.1</a>!  Otherwise, assume \(k \neq 0\) and let \(s = \frac{1}{\sqrt{|k|}}\text{,}\) as usual.  Without loss of generality we may assume our right triangle is defined by the points \(z = 0\text{,}\) \(p = x\text{,}\) and \(q = yi\text{,}\) where \(0 \lt x,y \lt s\text{.}\)  By construction, the legs \(zp\) and \(zq\) are Euclidean segments, and \(\angle pzq\) is right.</p>
+<p>Consider the circle centered at the origin that goes through the point \(x\) on the positive real axis, where \(0 \lt x \lt s\text{.}\) The circular region matches the polar rectangle \(0 \lt \theta \lt 2\pi\) and \(0 \lt r \lt x\text{,}\) so the area is given by</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\int_0^{2\pi} \int_0^x \frac{4r}{(1+kr^2)^2}dr d\theta\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Evaluating this integral gives the result, and the details are left as an exercise.</p>
 <span class="incontext"><a href="section7-4.html#p-1371">in-context</a></span>
 </body>
 </html>

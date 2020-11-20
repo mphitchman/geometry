@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:43-07:00       *-->
+<!--*       on 2020-11-19T16:33:19-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -12,29 +12,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>$(function () {
-    // Make *any* div with class 'sagecell-sage' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
-                           linked: true,
-                           languages: ['sage'],
-                           evalButtonText: 'Evaluate (Sage)'});
-});
-</script>
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>To find the angle at another corner, we first transform the triangle so that the corner is moved to the origin (since angles are preserved by maps in \(\cal H\) this is fine to do).  A Sage cell is handy here.  We can use the following Sage code to build a map in \(\cal H\) that moves 1/2 to the origin, and tracks the image of the other two points.  Then we can compute the angle of the corner using \(\angle uvw = \text{arg}((w-v)/(u-v)).\) <div class="sagecell-sage" id="sage-1"><script type="text/x-sage">var('z')
-t=0
-z0=1/2
-T(z)=e^(I*t)*(z-z0)/(1-conjugate(z0)*z)
-print("T(0)=",T(0), "and T(1/2+1/2*I)=",T(1/2+1/2*I))
-</script></div> The angle at 1/2 is about \(71.57^\circ\text{,}\) at \(\frac{1}{2}+\frac{1}{2}i\) it is about \(26.57^\circ\) so the triangle has area</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-A \approx \pi - \frac{\pi}{180}(45+71.57+26.57) = 0.64 {\rm ~units}^2\text{.}
-\end{equation*}
-</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">Consider the hyperbolic triangle with vertices at 0, \(\frac{1}{2}\text{,}\) and \(\frac{1}{2} + \frac{1}{2}i\text{.}\) Calculate the area of this triangle by determining the angle at each vertex.</p>
 <span class="incontext"><a href="section5-4.html#p-977">in-context</a></span>
 </body>
 </html>

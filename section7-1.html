@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:59:46-07:00       *-->
+<!--*       on 2020-11-19T16:32:12-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -164,44 +164,44 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section7-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">Curvature</span>
 </h2>
-<section class="introduction" id="introduction-18"><p id="p-1248">Consider the smooth curve in <a class="xref" data-knowl="./knowl/fig-kcurve.html" title="Figure 7.1.1">Figure 7.1.1</a>. The curvature of the curve at a point is a measure of how drastically the curve bends away from its tangent line, and this curvature is often studied in a multivariable calculus course. The radius of curvature at a point corresponds to the radius of the circle that best approximates the curve at this point. The radius \(r\) of this circle is the reciprocal of the curvature \(k\) of the curve at the point: \(k = 1/r\text{.}\)</p>
+<section class="introduction" id="introduction-18"><p id="p-1250">Consider the smooth curve in <a class="xref" data-knowl="./knowl/fig-kcurve.html" title="Figure 7.1.1">Figure 7.1.1</a>. The curvature of the curve at a point is a measure of how drastically the curve bends away from its tangent line, and this curvature is often studied in a multivariable calculus course. The radius of curvature at a point corresponds to the radius of the circle that best approximates the curve at this point. The radius \(r\) of this circle is the reciprocal of the curvature \(k\) of the curve at the point: \(k = 1/r\text{.}\)</p>
 <figure class="figure figure-like" id="fig-kcurve"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/im-kcurve.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.1<span class="period">.</span></span><span class="space"> </span>The curvature of a curve.</figcaption></figure><p id="p-1249">The curvature of a surface (such as the graph of a function \(z = f(x,y)\)) at a particular point is a measure of how drastically the surface bends away from its tangent plane at the point. There are three fundamental types of curvature. A surface has positive curvature at a point if the surface lives entirely on one side of the tangent plane, at least near the point of interest. The surface has negative curvature at a point if it is saddle-shaped, in the sense that the tangent plane cuts through the surface. Between these two cases is the case of zero curvature. In this case the surface has a line along which the surface agrees with the tangent plane. For instance, a cylinder has zero curvature, as suggested in <a class="xref" data-knowl="./knowl/fig-curvature.html" title="Figure 7.1.2">Figure 7.1.2</a>(c).</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.1<span class="period">.</span></span><span class="space"> </span>The curvature of a curve.</figcaption></figure><p id="p-1251">The curvature of a surface (such as the graph of a function \(z = f(x,y)\)) at a particular point is a measure of how drastically the surface bends away from its tangent plane at the point. There are three fundamental types of curvature. A surface has positive curvature at a point if the surface lives entirely on one side of the tangent plane, at least near the point of interest. The surface has negative curvature at a point if it is saddle-shaped, in the sense that the tangent plane cuts through the surface. Between these two cases is the case of zero curvature. In this case the surface has a line along which the surface agrees with the tangent plane. For instance, a cylinder has zero curvature, as suggested in <a class="xref" data-knowl="./knowl/fig-curvature.html" title="Figure 7.1.2">Figure 7.1.2</a>(c).</p>
 <figure class="figure figure-like" id="fig-curvature"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/curvature.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.2<span class="period">.</span></span><span class="space"> </span>The curvature of a surface at a point can be (a) positive; (b) negative; or (c) zero.</figcaption></figure><p id="p-1250">This informal description of curvature makes use of how the surface is embedded in space. One of Gauss' great theorems, one he called his <em class="emphasis">Theorem Egregium</em>, states that the curvature of a surface is an intrinsic property of the surface. The curvature doesn't change if the surface is bent without stretching, and our tireless two-dimensional inhabitant living in the space can determine the curvature by taking measurements.</p>
-<p id="p-1251">A two-dimensional bug living in the hyperbolic plane, the projective plane, or the Euclidean plane would notice that a small circle's circumference is related to its radius by the Euclidean formula \(c \approx 2\pi r\text{.}\) In Euclidean geometry this formula applies to all circles, but in the non-Euclidean cases, the observant bug might notice in large circles a significant difference between the actual circumference of a circle and the circumference predicted by \(c = 2\pi r\text{.}\) Large circles about a cup-shaped point with positive curvature will have circumference less than that predicted by Euclidean geometry. This fact explains why a large chunk of orange peel fractures if pressed flat onto a table. Large circles drawn around a saddle-shaped point with negative curvature will have circumference greater than that predicted by the Euclidean formula.</p>
-<p id="p-1252">Calculus may be used to precisely capture this deviation between the Euclidean-predicted circumference \(2\pi r\) and the actual circumference \(c\) for circles of radius \(r\) in the different geometries.</p>
-<p id="p-1253">Recall that in the hyperbolic plane, \(c = 2\pi \sinh(r)\text{;}\) in the Euclidean plane \(c = 2\pi r\text{;}\) and in the elliptic plane \(c = 2\pi \sin(r)\text{.}\)  In <a class="xref" data-knowl="./knowl/fig-circratio.html" title="Figure 7.1.3">Figure 7.1.3</a> we have graphed the ratio \(\frac{c}{2\pi r}\) where \(c\) is the circumference of a circle with radius \(r\) in (a) the hyperbolic plane; (b) the Euclidean plane; and (c) the elliptic plane.</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.2<span class="period">.</span></span><span class="space"> </span>The curvature of a surface at a point can be (a) positive; (b) negative; or (c) zero.</figcaption></figure><p id="p-1252">This informal description of curvature makes use of how the surface is embedded in space. One of Gauss' great theorems, one he called his <em class="emphasis">Theorem Egregium</em>, states that the curvature of a surface is an intrinsic property of the surface. The curvature doesn't change if the surface is bent without stretching, and our tireless two-dimensional inhabitant living in the space can determine the curvature by taking measurements.</p>
+<p id="p-1253">A two-dimensional bug living in the hyperbolic plane, the projective plane, or the Euclidean plane would notice that a small circle's circumference is related to its radius by the Euclidean formula \(c \approx 2\pi r\text{.}\) In Euclidean geometry this formula applies to all circles, but in the non-Euclidean cases, the observant bug might notice in large circles a significant difference between the actual circumference of a circle and the circumference predicted by \(c = 2\pi r\text{.}\) Large circles about a cup-shaped point with positive curvature will have circumference less than that predicted by Euclidean geometry. This fact explains why a large chunk of orange peel fractures if pressed flat onto a table. Large circles drawn around a saddle-shaped point with negative curvature will have circumference greater than that predicted by the Euclidean formula.</p>
+<p id="p-1254">Calculus may be used to precisely capture this deviation between the Euclidean-predicted circumference \(2\pi r\) and the actual circumference \(c\) for circles of radius \(r\) in the different geometries.</p>
+<p id="p-1255">Recall that in the hyperbolic plane, \(c = 2\pi \sinh(r)\text{;}\) in the Euclidean plane \(c = 2\pi r\text{;}\) and in the elliptic plane \(c = 2\pi \sin(r)\text{.}\)  In <a class="xref" data-knowl="./knowl/fig-circratio.html" title="Figure 7.1.3">Figure 7.1.3</a> we have graphed the ratio \(\frac{c}{2\pi r}\) where \(c\) is the circumference of a circle with radius \(r\) in (a) the hyperbolic plane; (b) the Euclidean plane; and (c) the elliptic plane.</p>
 <figure class="figure figure-like" id="fig-circratio"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/im-circratio.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span>Plotting the ratio \(c/2\pi r\) against \(r\) in (a) hyperbolic geometry, (b) Euclidean geometry, and (c) elliptic geometry.</figcaption></figure><p id="p-1254">In all three cases, the ratio \(c/2\pi r\) approaches 1 as \(r\) shrinks to 0. Furthermore, in all three cases the <em class="emphasis">derivative</em> of the ratio approaches 0 as \(r \to 0^+\text{.}\) But with the <em class="emphasis">second</em> derivative of the ratio we may distinguish these geometries. It can be shown that the curvature at a point is proportional to this second derivative evaluated in the limit as \(r \rightarrow 0^+\text{.}\) We will not derive this formula for curvature, but will use this working definition as it appears in Thurston's book <a class="xref" data-knowl="./knowl/thurston.html" title="Bibliographic Entry 11: Three-Dimensional Geometry and Topology, Vol. I">[11]</a>.</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span>Plotting the ratio \(c/2\pi r\) against \(r\) in (a) hyperbolic geometry, (b) Euclidean geometry, and (c) elliptic geometry.</figcaption></figure><p id="p-1256">In all three cases, the ratio \(c/2\pi r\) approaches 1 as \(r\) shrinks to 0. Furthermore, in all three cases the <em class="emphasis">derivative</em> of the ratio approaches 0 as \(r \to 0^+\text{.}\) But with the <em class="emphasis">second</em> derivative of the ratio we may distinguish these geometries. It can be shown that the curvature at a point is proportional to this second derivative evaluated in the limit as \(r \rightarrow 0^+\text{.}\) We will not derive this formula for curvature, but will use this working definition as it appears in Thurston's book <a class="xref" data-knowl="./knowl/thurston.html" title="Bibliographic Entry 11: Three-Dimensional Geometry and Topology, Vol. I">[11]</a>.</p>
 <article class="definition definition-like" id="def-curvature"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span>
 </h6>
-<p id="p-1255">Suppose a circle of radius \(r\) about a point \(p\) is drawn in a space<a data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-5" id="fn-5"><sup> 1 </sup></a>, and its circumference is \(c\text{.}\) The <dfn class="terminology">curvature of the space at \(p\)</dfn>  is</p>
+<p id="p-1257">Suppose a circle of radius \(r\) about a point \(p\) is drawn in a space<a data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-5" id="fn-5"><sup> 1 </sup></a>, and its circumference is \(c\text{.}\) The <dfn class="terminology">curvature of the space at \(p\)</dfn>  is</p>
 <div class="displaymath">
 \begin{equation*}
 k = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[\frac{c}{2\pi r}\bigg]\text{.}
 \end{equation*}
 </div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-5"><div class="fn">the term `space' is intentionally vague here. Our space needs to have a well-defined metric, so that it makes sense to talk about radius and circumference.  The space might be the Euclidean plane, the hyperbolic plane or the sphere. Other spaces are discussed in Section 7.5.</div></div></article><p id="p-1256">Since we are interested in worlds that are homogeneous and isotropic, we will focus our attention on worlds in which the curvature is the same at all points.  That is, we investigate surfaces of constant curvature.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-5"><div class="fn">the term `space' is intentionally vague here. Our space needs to have a well-defined metric, so that it makes sense to talk about radius and circumference.  The space might be the Euclidean plane, the hyperbolic plane or the sphere. Other spaces are discussed in Section 7.5.</div></div></article><p id="p-1258">Since we are interested in worlds that are homogeneous and isotropic, we will focus our attention on worlds in which the curvature is the same at all points.  That is, we investigate surfaces of constant curvature.</p>
 <article class="example example-like" id="ex_spherecurv"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">The curvature of a sphere.</span>
 </h6>
-<p id="p-1257">Consider the sphere with radius \(s\) in the following diagram, and note the circle centered at the north pole \(N\) having surface radius \(r\text{.}\) The circle is parallel to the plane \(z = 0\text{,}\) has Euclidean radius \(x\text{,}\) and hence circumference \(2\pi x\text{.}\)</p>
+<p id="p-1259">Consider the sphere with radius \(s\) in the following diagram, and note the circle centered at the north pole \(N\) having surface radius \(r\text{.}\) The circle is parallel to the plane \(z = 0\text{,}\) has Euclidean radius \(x\text{,}\) and hence circumference \(2\pi x\text{.}\)</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel" style="width:100%;justify-content:flex-start;"><img src="images/im-spherecurve.svg" role="img" style="width: 100%; height: auto;" alt=""></div></div></div>
-<p id="p-1258">But \(x = s\sin(\theta)\) and \(r = \theta\cdot s\text{,}\) from which we deduce \(x = s\sin(\frac{r}{s})\text{,}\) and in terms of the surface radius \(r\) of the circle, its circumference is</p>
+<p id="p-1260">But \(x = s\sin(\theta)\) and \(r = \theta\cdot s\text{,}\) from which we deduce \(x = s\sin(\frac{r}{s})\text{,}\) and in terms of the surface radius \(r\) of the circle, its circumference is</p>
 <div class="displaymath">
 \begin{equation*}
 c = 2\pi s\sin\bigg(\frac{r}{s}\bigg)\text{.}
 \end{equation*}
 </div>
-<p id="p-1259">The curvature of the sphere at \(N\) is thus</p>
+<p id="p-1261">The curvature of the sphere at \(N\) is thus</p>
 <div class="displaymath">
 \begin{equation*}
 k = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\bigg[\frac{2\pi s\sin(r/s)}{2\pi r}\bigg]\text{.}
 \end{equation*}
 </div>
-<p id="p-1260">Cancelling the \(2\pi\) terms and replacing \(\sin(r/s)\) with its power series expansion, we have</p>
+<p id="p-1262">Cancelling the \(2\pi\) terms and replacing \(\sin(r/s)\) with its power series expansion, we have</p>
 <div class="displaymath">
 \begin{align*}
 k \amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[\frac{s(\frac{r}{s}-\frac{r^3}{6s^3}+\frac{r^5}{120s^5}-\cdots)}{r}\right]\\
@@ -209,7 +209,7 @@ k \amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[\frac{s(\frac{r}{s}-\frac{r^3}
 \amp = -3\lim_{r \to 0^+}\left[\frac{-1}{3s^2} + \frac{12r^2}{120s^4} - \cdots \right]\text{.}
 \end{align*}
 </div>
-<p id="p-1261">Note that all the terms of the second derivative after the first have powers of \(r\) in the numerator, so these terms go to 0 as \(r \to 0^+\text{,}\) and the curvature of the sphere at the north pole is \(1/s^2\text{.}\) In fact because the sphere is homogeneous, the curvature at any point is</p>
+<p id="p-1263">Note that all the terms of the second derivative after the first have powers of \(r\) in the numerator, so these terms go to 0 as \(r \to 0^+\text{,}\) and the curvature of the sphere at the north pole is \(1/s^2\text{.}\) In fact because the sphere is homogeneous, the curvature at any point is</p>
 <div class="displaymath">
 \begin{equation*}
 k=\frac{1}{s^2}\text{.}
@@ -217,8 +217,8 @@ k=\frac{1}{s^2}\text{.}
 </div></article><article class="example example-like" id="example-60"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Curvature of the hyperbolic plane.</span>
 </h6>
-<p id="p-1262">Because hyperbolic geometry is homogeneous and its transformations preserve circles and lengths, the curvature is the same at all points in the hyperbolic plane. We choose to compute the curvature at the origin.</p>
-<p id="p-1263">Recall, the circumference of a circle in \((\mathbb{D},\cal{H})\) is \(c = 2\pi \sinh(r).\) To compute the curvature, use the power series expansion</p>
+<p id="p-1264">Because hyperbolic geometry is homogeneous and its transformations preserve circles and lengths, the curvature is the same at all points in the hyperbolic plane. We choose to compute the curvature at the origin.</p>
+<p id="p-1265">Recall, the circumference of a circle in \((\mathbb{D},\cal{H})\) is \(c = 2\pi \sinh(r).\) To compute the curvature, use the power series expansion</p>
 <div class="displaymath">
 \begin{equation*}
 \sinh(r)=r + \frac{r^3}{3!}+\frac{r^5}{5!}+\cdots\text{.}
@@ -231,12 +231,12 @@ k \amp = -3 \lim_{r \to 0^+}\frac{d^2}{dr^2}\left[\frac{2\pi \sinh(r)}{2\pi r}\r
 \amp = -3 \lim_{r \to 0^+}\left[\frac{1}{3}+\frac{12r^2}{5!}+\cdots\right]\text{.}
 \end{align*}
 </div>
-<p id="p-1264">Again, each term of the second derivative after the first has a power of \(r\) in its numerator, so in the limit as \(r \to 0^+\text{,}\) each of these terms vanishes. Thus, the curvature of the hyperbolic plane in (\(\mathbb{D},{\cal H})\) is \(k = -1.\)</p></article></section><section class="exercises" id="exercises-22"><h3 class="heading hide-type">
+<p id="p-1266">Again, each term of the second derivative after the first has a power of \(r\) in its numerator, so in the limit as \(r \to 0^+\text{,}\) each of these terms vanishes. Thus, the curvature of the hyperbolic plane in (\(\mathbb{D},{\cal H})\) is \(k = -1.\)</p></article></section><section class="exercises" id="exercises-22"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-163"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-1265">Use our working definition to show that the curvature of the projective plane in elliptic geometry is 1. Recall, \(c = 2\pi\sin(r)\) in this geometry.</p></article><article class="exercise exercise-like" id="exercise-164"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-1267">Use our working definition to explain why the curvature of the Euclidean plane is \(k = 0\text{.}\)</p></article></section></section></div></main>
+<p id="p-1267">Use our working definition to show that the curvature of the projective plane in elliptic geometry is 1. Recall, \(c = 2\pi\sin(r)\) in this geometry.</p></article><article class="exercise exercise-like" id="exercise-164"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-1269">Use our working definition to explain why the curvature of the Euclidean plane is \(k = 0\text{.}\)</p></article></section></section></div></main>
 </div>
 <!--Start: StatCounter code--><script>
 var sc_project=11625953;

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-22T11:24:57-07:00       *-->
+<!--*       on 2020-11-19T16:33:34-08:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -16,9 +16,12 @@
 <body>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-{\cal L}(\boldsymbol{r}) \amp= \int_0^{2\pi} \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt\\
-\amp=\int_0^{2\pi} \frac{2\cdot x}{1 + kx^2}~dt\\
-\amp= 2\pi \frac{2\cdot x}{1 + kx^2}
+{\cal L}(\boldsymbol{r}) \amp= \int_0^x \frac{2|\boldsymbol{r}^\prime(t)|}{1 + k|\boldsymbol{r}(t)|^2}~dt\\
+\amp=\int_0^x \frac{2\cdot 1}{1 + kt^2}~dt\\
+\amp= \frac{2}{\sqrt{k}}\int_0^x \frac{\sqrt{k}}{1+(\sqrt{k}t)^2}~dt\\
+\amp=\frac{2}{\sqrt{k}}\int_0^{\sqrt{k}x}\frac{1}{1+u^2}~du\\
+\amp= \frac{2}{\sqrt{k}}\arctan(\sqrt{k}x)\\
+\amp= 2s \arctan\left(\frac{x}{s}\right)
 \end{align*}
 </div>
 <span class="incontext"><a href="section7-2.html#mjx-eqn-mrow-478">in-context</a></span>
